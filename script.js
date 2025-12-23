@@ -151,6 +151,8 @@
     "LightRoom": "https://ik.imagekit.io/dkdlgynlu/New-Project-52-75A8C0F.png",
     "Wattpad": "https://ik.imagekit.io/dkdlgynlu/Wattpad%20_DF63C42_.png",
     "Photoshop": "https://ik.imagekit.io/dkdlgynlu/Photoshop%20_83C7623_.png",
+    "Adobe Creative Cloud": "https://ik.imagekit.io/dkdlgynlu/Wattpad%20_3DECB4E_.png?updatedAt=1766482936190",
+    "HMA VPN": "https://ik.imagekit.io/dkdlgynlu/Wattpad%20_A5A675F_.png?updatedAt=1766482936062",
   };
 
   const productData = { 
@@ -202,7 +204,7 @@
       "Educational(Invite)": [
         { duration: "Lifetime", price: "5,000 Kyats" } 
       ],
-      "Pro Private": [{ duration: "1 Month", price: "5,000 Kyats" }] 
+      "Pro Private": [{ duration: "1 Month", price: "5,000 Kyats" }, { duration: "3 Months", price: "15,000 Kyats" }] 
     }, 
     "PhotoRoom": { Share: [{ duration: "1 Year", price: "6,500 Kyats" }], Private: [] }, 
     "VSCO": { Share: [{ duration: "1 Year", price: "6,500 Kyats" }], Private: [] }, 
@@ -500,6 +502,19 @@
         "Web Private": [
             { "duration": "12 Months", price: "12,000 Kyats" }
         ]
+    },
+    "Adobe Creative Cloud": {
+        "Private": [
+            { "duration": "4 Months", price: "40,000 Kyats" }
+        ],
+        "OwnMail Private": [
+            { "duration": "4 Months", price: "45,000 Kyats" }
+        ]
+    },
+    "HMA VPN": {
+        "Private": [
+            { "duration": "1 Month", price: "8,000 Kyats" }
+        ]
     }
   };
 
@@ -705,7 +720,7 @@ Supports all devices.` + generalDetailsBlock,
     "PlaySafeCard": `Voucher Code
 Expires in 7 Days.
 Please contact admin for usage details.` + generalDetailsBlock,
-    "TikTok Official": `Official Coin sales via login method. Price may change frequently.` + generalDetailsBlock,
+    "TikTok Official": `Coinက TikTok official boostတဲ့နေရာမာ Coin တေကိုသုံးရတာပါ။အဲ့ Coin ကိုရောင်းပေးတာပါ။ Login ဝင်ပီးဝယ်ရတာပါ။ buttt email password ဘာမပေးစရာမလိုပါဘူး။` + generalDetailsBlock,
     "TikTok Non Official": `Views (NoDrop)
     No dropဆိုပေမဲ့ TikTok ကစာပို့ပီးဖျက်ချသွားရင်တာ့ပြန်မထည့်ပေးပါဘူး။ထည့်ရင်လဲအကောင့် warning ထိမာပါ။
     
@@ -729,6 +744,22 @@ Normal Plan
     "Photoshop": `Web Private\nwarranty back free only.` + generalDetailsBlock,
     "NordVpn": `Share\n1-Year: 6-months warranty\nOne device only\n\nPrivate\nFull warranty for full duration\nUp to 6 devices` + generalDetailsBlock, 
     "Surfshark Vpn": `Share\nFull warranty for full duration\nOne device only` + generalDetailsBlock, 
+    "Adobe Creative Cloud": `Adobe Creative Cloud မာဆိုရင်
+
+Photoshop → edit photos & images
+
+Illustrator → make logos & vector designs
+
+Premiere Pro → edit videos
+
+After Effects → add animations & effects
+
+InDesign → design posters, books, layouts
+
+Acrobat Pro → edit & sign PDFs
+
+စတဲ့ App တေရဲ့ Pro version တေအပြင်တခြား audio, animation, UI design, and content creationလုပ်ဖို့လိုတဲ့ Appတေပါပါမာပါ။` + generalDetailsBlock,
+    "HMA VPN": `Can use 5 to 10 devices. Recommend for desktop devices.` + generalDetailsBlock,
   };
    
   const deviceSupport = { 
@@ -784,6 +815,8 @@ Normal Plan
     "LightRoom": ["android", "ios", "pc"],
     "Wattpad": ["android", "ios", "pc"],
     "Photoshop": ["pc"],
+    "Adobe Creative Cloud": ["pc", "android", "ios"],
+    "HMA VPN": ["pc", "android", "ios"],
   };
 
   const deviceIconMap = { "android": '<i class="fa-brands fa-android"></i>', "ios": '<i class="fa-brands fa-apple"></i>', "pc": '<i class="fa-solid fa-desktop"></i>', "tv": '<i class="fa-solid fa-tv"></i>' };

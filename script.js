@@ -505,10 +505,10 @@
     },
     "Adobe Creative Cloud": {
         "Private": [
-            { "duration": "4 Months", price: "40,000 Kyats" }
+            { "duration": "4 Months", price: "20,000 Kyats" }
         ],
         "OwnMail Private": [
-            { "duration": "4 Months", price: "45,000 Kyats" }
+            { "duration": "4 Months", price: "25,000 Kyats" }
         ]
     },
     "HMA VPN": {

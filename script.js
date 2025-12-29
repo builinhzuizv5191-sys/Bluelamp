@@ -2,8 +2,8 @@
   "use strict";
 
   /* =========================
-  DOM ELEMENTS
-  ========================= */
+     DOM ELEMENTS
+     ========================= */
   const dom = {
     views: {
       home: document.getElementById('home-view'),
@@ -53,8 +53,8 @@
   };
 
   /* =========================
-  STARFIELD BACKGROUND
-  ========================= */
+     STARFIELD BACKGROUND
+     ========================= */
   (function starfield() {
     const canvas = document.getElementById('starfield');
     if (!canvas) return;
@@ -96,8 +96,8 @@
   })();
 
   /* =========================
-  PRODUCT DATA & ASSETS
-  ========================= */
+     PRODUCT DATA & ASSETS
+     ========================= */
   const imageFor = { 
     "CapCut": "https://ik.imagekit.io/dkdlgynlu/New-Project-52-C695-D25-1.png", 
     "AlightMotion": "https://ik.imagekit.io/dkdlgynlu/New-Project-52-9675-E38-1.png", 
@@ -436,46 +436,95 @@
       ]
     },
     "Facebook Boosting": {
-      "Video Views": [
-        { "duration": "10,000 Views", price: "4,500 Kyats" },
-        { "duration": "100,000 Views", price: "45,000 Kyats" },
-        { "duration": "1,000,000 Views", price: "430,000 Kyats" }
-      ],
-      "Video Likes": [
-        { "duration": "1,000 Likes", price: "4,500 Kyats" },
-        { "duration": "10,000 Likes", price: "45,000 Kyats" },
-        { "duration": "100,000 Likes", price: "430,000 Kyats" }
-      ],
-      "Profile Followers": [
-        { "duration": "1,000 Followers", price: "10,000 Kyats" },
-        { "duration": "10,000 Followers", price: "100,000 Kyats" }
-      ],
-      "Page follower(No Drop 2Year Warranty)": [ 
-        { "duration": "1,000 Followers", price: "15,000 Kyats" },
-        { "duration": "10,000 Followers", price: "150,000 Kyats" }
-      ],
-      "Page follower(30Days Refill)": [ 
-        { "duration": "1,000 followers", price: "10,000 Kyats" },
-        { "duration": "10,000 followers", price: "100,000 Kyats" }
-      ],
-      "Live Stream Views": [
-        { "duration": "1,000 Views", price: "10,000 Kyats" }
-      ]
+        "Video Views(Lifetime Refill)": [
+            { "duration": "1,000 Views", "price": "1,000 Kyats" },
+            { "duration": "10,000 Views", "price": "4,500 Kyats" },
+            { "duration": "100,000 Views", "price": "40,000 Kyats" },
+            { "duration": "1,000,000 Views", "price": "390,000 Kyats" }
+        ],
+        "Post Like(30Days Refill)": [
+            { "duration": "1,000 Likes", "price": "4,500 Kyats" },
+            { "duration": "10,000 Likes", "price": "45,000 Kyats" },
+            { "duration": "100,000 Likes", "price": "430,000 Kyats" }
+        ],
+        "Post Like(1Year Refill)": [
+            { "duration": "1,000 Likes", "price": "5,500 Kyats" },
+            { "duration": "10,000 Likes", "price": "55,000 Kyats" },
+            { "duration": "100,000 Likes", "price": "530,000 Kyats" }
+        ],
+        "Post Like(Lifetime Refill)": [
+            { "duration": "1,000 Likes", "price": "6,500 Kyats" },
+            { "duration": "10,000 Likes", "price": "65,000 Kyats" },
+            { "duration": "100,000 Likes", "price": "630,000 Kyats" }
+        ],
+        "Profile Followers(Lifetime Refill)": [
+            { "duration": "1,000 Followers", "price": "10,000 Kyats" },
+            { "duration": "10,000 Followers", "price": "100,000 Kyats" }
+        ],
+        "Page follower(No Drop 2Year Warranty)": [
+            { "duration": "1,000 Followers", "price": "15,000 Kyats" },
+            { "duration": "10,000 Followers", "price": "150,000 Kyats" }
+        ],
+        "Follower(Page&Profile)(30Days Refill)": [
+            { "duration": "1,000 followers", "price": "3,000 Kyats" },
+            { "duration": "10,000 followers", "price": "30,000 Kyats" }
+        ],
+        "Live Stream Views": [
+            { "duration": "1,000 Views", "price": "10,000 Kyats" }
+        ]
     },
     "Instagram Boosting": {
-      "Video Views & Reels": [
-        { "duration": "1,000 Views", price: "500 Kyats" },
-        { "duration": "10,000 Views", price: "1,000 Kyats" },
-        { "duration": "100,000 Views", price: "1,500 Kyats" },
-        { "duration": "1,000,000 Views", price: "10,000 Kyats" }
-      ],
-      "Likes": [
-        { "duration": "1,000 Likes", price: "1,000 Kyats" },
-        { "duration": "10,000 Likes", price: "10,000 Kyats" }
-      ],
-      "Followers": [
-        { "duration": "1,000 Followers", price: "10,000 Kyats" }
-      ]
+        "Video Views & Reels(SLOW)": [
+            { "duration": "1,000 Views", "price": "400 Kyats" },
+            { "duration": "10,000 Views", "price": "900 Kyats" },
+            { "duration": "100,000 Views", "price": "1,800 Kyats" },
+            { "duration": "1,000,000 Views", "price": "17,000 Kyats" }
+        ],
+        "Video Views & Reels(FAST)": [
+            { "duration": "1,000 Views", "price": "500 Kyats" },
+            { "duration": "10,000 Views", "price": "1,000 Kyats" },
+            { "duration": "100,000 Views", "price": "2,700 Kyats" },
+            { "duration": "1,000,000 Views", "price": "25,000 Kyats" }
+        ],
+        "Likes(FAST & 30DAYS REFILL)": [
+            { "duration": "1,000 Likes", "price": "1,500 Kyats" },
+            { "duration": "10,000 Likes", "price": "15,000 Kyats" },
+            { "duration": "100,000 Likes", "price": "140,000 Kyats" }
+        ],
+        "Likes(SUPER FAST & LIFETIME)": [
+            { "duration": "1,000 Likes", "price": "2,200 Kyats" },
+            { "duration": "10,000 Likes", "price": "22,000 Kyats" },
+            { "duration": "100,000 Likes", "price": "210,000 Kyats" }
+        ],
+        "Share(Slow but Cheapest)": [
+            { "duration": "1,000 Shares", "price": "500 Kyats" },
+            { "duration": "10,000 Shares", "price": "1,500 Kyats" },
+            { "duration": "100,000 Shares", "price": "12,000 Kyats" }
+        ],
+        "Share(FAST)": [
+            { "duration": "1,000 Shares", "price": "1,000 Kyats" },
+            { "duration": "10,000 Shares", "price": "2,000 Kyats" },
+            { "duration": "100,000 Shares", "price": "8,000 Kyats" }
+        ],
+        "Save(FAST)": [
+            { "duration": "1,000 Saves", "price": "1,000 Kyats" },
+            { "duration": "10,000 Saves", "price": "7,500 Kyats" },
+            { "duration": "100,000 Saves", "price": "72,000 Kyats" }
+        ],
+        "Reach+Impression(Normal Speed)": [
+            { "duration": "1,000 RI", "price": "1,000 Kyats" },
+            { "duration": "10,000 RI", "price": "8,000 Kyats" },
+            { "duration": "100,000 RI", "price": "78,000Kyats" }
+        ],
+        "Followers(SLOW)": [
+            { "duration": "1,000(30Days Refill)", "price": "8,000 Kyats" },
+            { "duration": "1,000(1Year Refill)", "price": "11,000 Kyats" },
+            { "duration": "1,000(Lifetime Refill)", "price": "13,500 Kyats" }
+        ],
+        "Followers(FAST)": [
+            { "duration": "1,000(30Days Refill)", "price": "11,000 Kyats" },
+            { "duration": "1,000(1Year Refill)", "price": "13,000 Kyats" }
+        ]
     },
     "Custom Website Service": { 
         "Base Service": [
@@ -649,11 +698,16 @@ Private Whole Account (1 Month)
 5 Profile` + generalDetailsBlock, 
     "Prime Video": `Share\nFull warranty • One device only\n\nPrivate\nFull warranty • Up to 3 devices` + generalDetailsBlock, 
     "Spotify": `Individual Plan(Private)
-Individual plan မို့လို့1 person 1 device ပဲသုံးသင့်ပါတယ်။ Visa Card payment နဲ့လုပ် ပေးမာပါ။ 3 Months အတွင်း full warranty ဖြစ်လို့တခုခုဖြစ်ခဲ့ရင် warranty အနေနဲ့အခုပြန်လဲ ပေးမာပါ တခါပဲလဲ ပေးမာပါ။ Setting ထဲသွားပီး account delete တာတို့တော့မပါပါဘူး။` + generalDetailsBlock,
+Individual plan မို့လို့1 person 1 device ပဲသုံးသင့်ပါတယ်။ Visa Card payment နဲ့လုပ် ပေးမာပါ။ 3 Months အတွင်း full warranty ဖြစ်လို့တခုခုဖြစ်ခဲ့ရင် warranty အနေနဲ့အခုပြန်လဲ ပေးမာပါ တခါပဲလဲ ပေးမာပါ။ Setting ထဲသွားပီး account delete တာတို့တော့မပါပါဘူး။
+
+Official appမာသုံးရတာဆိုပေမဲ့တစ်လကို$11.99ပေးပီးဝယ်တာမဟုတ်လို့ Risk ကတော့ရှိပါတယ်။အဆင်ပြေတယ်ဆိုမယူပါ။
+
+Old account က Playlist, Favorite Artist, Favorite Songs, Favorite albums,Liked Songsအကုန်အကာင့်အသစ်ကိုပြောင်းပေးပါတယ်။` + generalDetailsBlock,
     "Apple Music": `Individual Plan
 Only for Android.
 This did not work on iOS.
-Full warranty.` + generalDetailsBlock,
+Full warranty.
+Renewလို့ရပါတယ်။သက်တန်းတိုးရင်တော့တစ်လကို6,000Ksပါ။` + generalDetailsBlock,
     "Qobuz": `Individual Plan
 Recommend for iOS device
 Full warranty.` + generalDetailsBlock,
@@ -701,7 +755,19 @@ An active payment method is required to activate the code.
 The code can only be activated once per IP address or payment method. 
 The code must be used within 1 week. 
 The code must be activated via the https://discord.com/billing/promotions/(YOURKEY)` + generalDetailsBlock,
-    "Perplexity Ai": `Share\nOne device only\nFull warranty.\n\nPrivate\nCan use up to 5 devices.\nFull warranty.\n\nOwnMail Private\nCan use up to 5 devices.\nFull warranty.` + generalDetailsBlock, 
+    "Perplexity Ai": `Share
+One device only
+Full warranty.
+
+Private
+Can use up to 5 devices.
+Full warranty.
+ကုန်ရင်သက်တန်းတိုးလို့ရပါတယ်။
+
+OwnMail Private
+Can use up to 5 devices.
+Full warranty.
+ကုန်ရင်သက်တန်းတိုးလို့ရပါတယ်။` + generalDetailsBlock, 
     "GAGAOOLALA": `Private\nFull warranty.` + generalDetailsBlock, 
     "BSTATION": `Private\nFull warranty.` + generalDetailsBlock, 
     "INSHOT": `Lifetime Premium
@@ -822,8 +888,8 @@ Acrobat Pro → edit & sign PDFs
   const deviceIconMap = { "android": '<i class="fa-brands fa-android"></i>', "ios": '<i class="fa-brands fa-apple"></i>', "pc": '<i class="fa-solid fa-desktop"></i>', "tv": '<i class="fa-solid fa-tv"></i>' };
    
   /* =========================
-  STATE
-  ========================= */
+     STATE
+     ========================= */
   let cart = [];
   let lastScroll = 0;
   let lastViewBeforeCheckout = 'home';
@@ -831,8 +897,8 @@ Acrobat Pro → edit & sign PDFs
   let productCards = []; 
 
   /* =========================
-  UTILITY FUNCTIONS
-  ========================= */
+     UTILITY FUNCTIONS
+     ========================= */
   const escapeHTML = s => String(s).replace(/[&<>"']/g, m => ({ '&': '&amp;', '<': '&lt;', '>': '&gt;', '"': '&quot;', "'": '&#39;' })[m]);
    
   const parseKyats = t => { const m = (t || "").replace(/,/g, "").replace(/Ks/g, "").replace(/≈/g, "").trim().match(/(\d+(\.\d+)?)/); return m ? Number(m[1]) : null; }; 
@@ -841,8 +907,8 @@ Acrobat Pro → edit & sign PDFs
   const cartKey = ({ product, section, duration, priceText }) => [product, section, duration, priceText].join("|");
 
   /* =========================
-  CART LOGIC
-  ========================= */
+     CART LOGIC
+     ========================= */
   function addToCart(item) {
     const key = cartKey(item);
     const existing = cart.find(x => cartKey(x) === key);
@@ -879,8 +945,8 @@ Acrobat Pro → edit & sign PDFs
   }
 
   /* =========================
-  RENDERING FUNCTIONS
-  ========================= */
+     RENDERING FUNCTIONS
+     ========================= */
   function renderCart() {
     if (!cart.length) {
       dom.cart.bar.style.display = "none";
@@ -917,12 +983,12 @@ Acrobat Pro → edit & sign PDFs
   function showView(viewName) {
     // Hide all views first
     Object.values(dom.views).forEach(v => v.classList.remove('active'));
-     
+      
     // Add active class and ensure animation restarts by re-adding the class
     if (dom.views[viewName]) {
       dom.views[viewName].classList.add('active');
     }
-     
+      
     // Control search bar visibility based on view
     if (viewName === 'home') {
         dom.search.container.style.display = 'flex';
@@ -935,14 +1001,14 @@ Acrobat Pro → edit & sign PDFs
   }
    
   /* =========================
-  SEARCH LOGIC 
-  ========================= */
+     SEARCH LOGIC 
+     ========================= */
   function filterProducts(query) {
     query = query.toLowerCase().trim();
-     
+      
     // Show/hide the clear button
     dom.search.clearBtn.style.display = query.length > 0 ? 'block' : 'none';
-     
+      
     // Toggle the search state class on the home view
     dom.views.home.classList.toggle('is-searching', query.length > 0);
 
@@ -953,7 +1019,7 @@ Acrobat Pro → edit & sign PDFs
     }
 
     let matchCount = 0;
-     
+      
     productCards.forEach(card => {
         const name = card.dataset.productName.toLowerCase();
         
@@ -968,8 +1034,8 @@ Acrobat Pro → edit & sign PDFs
   }
 
   /* =========================
-  POPULAR SECTION LOGIC
-  ========================= */
+     POPULAR SECTION LOGIC
+     ========================= */
   const popularList = ["Express Vpn", "ChatGPT Plus", "CapCut", "Netflix", "Wink"];
   function renderPopular(containerId, excludeName) {
     const cont = document.getElementById(containerId);
@@ -1013,11 +1079,11 @@ Acrobat Pro → edit & sign PDFs
   }
 
   /* =========================
-  PRODUCT PAGE LOGIC
-  ========================= */
+     PRODUCT PAGE LOGIC
+     ========================= */
   function openProduct(productName) {
     lastScroll = window.scrollY;
-     
+      
     const devices = deviceSupport[productName] || [];
     const deviceIconsHtml = devices.length > 0 ? `
         <div class="supported-devices">
@@ -1147,8 +1213,8 @@ Acrobat Pro → edit & sign PDFs
   }
 
   /* =========================
-  CHECKOUT FLOW
-  ========================= */
+     CHECKOUT FLOW
+     ========================= */
   function getNoteForCartItem(item) {
     const productName = item.product.replace(/ \(.+\)$/, '');
     
@@ -1242,7 +1308,7 @@ Share plan မို့လို့ 1 device ပဲသုံးလို့ရ�
           const durationRegex = /\b(\d+\s*(?:Month|Months|Year|Week|Lifetime|Days)):?.*|6-Months accounts are rare.*/gi; 
           
           filteredNotes = filteredNotes.filter(line => {
-              if (line.toLowerCase().includes('device') || line.toLowerCase().includes('warranty') || line.toLowerCase().includes('guarantee') || line.toLowerCase().includes('profile') || line.toLowerCase().includes('account') || line.toLowerCase().includes('users') || line.toLowerCase().includes('screen') || line.toLowerCase().includes('phones') || line.toLowerCase().includes('sharing') || line.toLowerCase().includes('history') || line.toLowerCase().includes('အဆင်ပြေ')) {
+              if (line.toLowerCase().includes('device') || line.toLowerCase().includes('warranty') || line.toLowerCase().includes('guarantee') || line.toLowerCase().includes('profile') || line.toLowerCase().includes('account') || line.toLowerCase().includes('users') || line.toLowerCase().includes('screen') || line.toLowerCase().includes('phones') || line.toLowerCase().includes('sharing') || line.toLowerCase().includes('history') || line.toLowerCase().includes('အဆင်ပြေ') || line.includes('သက်တန်းတိုး') || line.includes('Official app')) { 
                   return true;
               }
               if (durationRegex.test(line)) {
@@ -1428,7 +1494,7 @@ ${firstLine}
         ${noteContent.split('\n').filter(l => l.trim().length > 0).map(l => {
           const trimmed = l.trim();
           
-          if (trimmed.includes('ဒါက') || trimmed.includes('•') || trimmed.includes('renew') || item.product === 'Telegram' || item.product === 'Express Vpn' || item.product === 'ChatGPT Plus' || item.product === 'PicsArt' || item.product === 'Canva' || item.product === 'Microsoft 365' || item.product === 'Netflix' || item.product === 'CapCut' || item.product === 'Spotify' || item.product === 'YouTube' || item.product === 'InShot' || item.product === 'HBO Max' || trimmed.includes('Deactivate errorဖြစ်နိုင်လို့') || trimmed.includes('Any kinds of Website')) { 
+          if (trimmed.includes('ဒါက') || trimmed.includes('•') || trimmed.includes('renew') || item.product === 'Telegram' || item.product === 'Express Vpn' || item.product === 'ChatGPT Plus' || item.product === 'PicsArt' || item.product === 'Canva' || item.product === 'Microsoft 365' || item.product === 'Netflix' || item.product === 'CapCut' || item.product === 'Spotify' || item.product === 'Apple Music' || item.product === 'YouTube' || item.product === 'InShot' || item.product === 'HBO Max' || trimmed.includes('Deactivate errorဖြစ်နိုင်လို့') || trimmed.includes('Any kinds of Website')) { 
               let burmeseText = trimmed.replace(/(\d+)\s*(‌ယောက်)/g, '$1 $2');
               if (item.product === 'Microsoft 365' && burmeseText.includes('သုံးလို့ရသွားမာပါ။')) {
                   burmeseText = burmeseText.replace('သုံးလို့ရသွားမာပါ။', '<span style="white-space: nowrap;">သုံးလို့ရသွားမာပါ။</span>');
@@ -1507,8 +1573,8 @@ ${firstLine}
   }
 
   /* =========================
-  FORMATTERS
-  ========================= */
+     FORMATTERS
+     ========================= */
   function formatDetails(raw) {
     const headers = /^(Share|Private|SemiPrivate|FullPrivate|Tinder Plus Share|Login|Gift Plan & Link Plan|Gift Plan|Link Plan|Views \(NoDrop\)|Likes \(NoDrop\)|Comment - Emoji Type|Comment - Custom Type|Package Plan|Livestream Views|Livestream Likes|Livestream Share|Post Views|Positive Reactions|Negative Reactions|Custom Reactions|Premium Reactions|Members \(30Days Refill\)|Livestream Views|Comment - Impression Type|Comment - Custom Type|Video Views|Video Likes|Post Likes|Profile Followers|Page Followers|Live Stream Views|Video Views & Reels|Likes|Followers|Personal Plus \(Share\)|Personal Plus \(Private\)|Business - Invite Own Email|Business - Own|Private Own Mail|Private \(Own Mail\)|Base Service|1 Profile\(Semiprivate\)|5 Profiles\(Whole Account\)|Nitro Basic \(Key\)|Individual|Invite with email|Sharing Pro|Plan Basic|Plan Premium|HBO MAX \(ULTIMATE\) 1 Month|Private Whole Account \(1 Month\)|1 Profile|Whole Account|OwnMail Private|Individual Plan|Business Own\(Full Warranty\)|Business Plus Own\(Full Warranty\)|Business Plus Own|Normal Plan|Family Head\(Can Invite 5 email\)|Invite Private|Web Private|Pro Share|Pro Private|Lifetime Premium|Educational\(Invite\)|Individual Plan\(Private\))$/i;
     
@@ -1581,8 +1647,8 @@ ${firstLine}
   }
 
   /* =========================
-  INITIALIZATION & EVENT LISTENERS
-  ========================= */
+     INITIALIZATION & EVENT LISTENERS
+     ========================= */
    
   dom.search.input.addEventListener('input', (e) => {
     if (dom.views.home.classList.contains('active')) {

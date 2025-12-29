@@ -478,13 +478,13 @@
             { "duration": "1,000 Views", "price": "400 Kyats" },
             { "duration": "10,000 Views", "price": "900 Kyats" },
             { "duration": "100,000 Views", "price": "1,800 Kyats" },
-            { "duration": "1,000,000 Views", "price": "17,000 Kyats" }
+            { "duration": "1,000,000 Views", "price": "13,000 Kyats" }
         ],
         "Video Views & Reels(FAST)": [
             { "duration": "1,000 Views", "price": "500 Kyats" },
             { "duration": "10,000 Views", "price": "1,000 Kyats" },
             { "duration": "100,000 Views", "price": "2,700 Kyats" },
-            { "duration": "1,000,000 Views", "price": "25,000 Kyats" }
+            { "duration": "1,000,000 Views", "price": "20,000 Kyats" }
         ],
         "Likes(FAST & 30DAYS REFILL)": [
             { "duration": "1,000 Likes", "price": "1,500 Kyats" },

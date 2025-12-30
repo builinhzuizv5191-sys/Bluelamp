@@ -153,6 +153,17 @@
     "Photoshop": "https://ik.imagekit.io/dkdlgynlu/Photoshop%20_83C7623_.png",
     "Adobe Creative Cloud": "https://ik.imagekit.io/dkdlgynlu/Wattpad%20_3DECB4E_.png?updatedAt=1766482936190",
     "HMA VPN": "https://ik.imagekit.io/dkdlgynlu/Wattpad%20_A5A675F_.png?updatedAt=1766482936062",
+    "Crunchyroll": "https://ik.imagekit.io/dkdlgynlu/Wattpad%20_A70E5F8_.png",
+    "Telegram Star": "https://ik.imagekit.io/dkdlgynlu/Wattpad%20_AEF396E_.png",
+    "Google Play Gift Card": "https://ik.imagekit.io/dkdlgynlu/Wattpad%20_E847DAF_.png?updatedAt=1767023159606",
+  };
+
+  const regionalProducts = {
+      "Google Play Gift Card": [
+          { name: "Google Play Japan", img: "https://ik.imagekit.io/dkdlgynlu/New%20Project%207%20_42752FB_.png" },
+          { name: "Google Play US", img: "https://ik.imagekit.io/dkdlgynlu/New%20Project%207%20_3BDD96E_.png" },
+          { name: "Google Play UK", img: "https://ik.imagekit.io/dkdlgynlu/New%20Project%207%20_BD37C1B_.png" }
+      ]
   };
 
   const productData = { 
@@ -564,6 +575,34 @@
         "Private": [
             { "duration": "1 Month", price: "8,000 Kyats" }
         ]
+    },
+    "Crunchyroll": {
+        "Share": [
+            { "duration": "9 Months", price: "20,000 Kyats" }
+        ]
+    },
+    "Telegram Star": {
+        "Stars": [
+            { "duration": "50 Stars", price: "3,800 Kyats" },
+            { "duration": "100 Stars", price: "7,600 Kyats" }
+        ]
+    },
+    "Google Play Japan": {
+        "Japan Region (¥)": [
+            { "duration": "¥500", price: "17,500 Kyats" },
+            { "duration": "¥1,000", price: "35,000 Kyats" },
+            { "duration": "¥1,500", price: "52,500 Kyats" }
+        ]
+    },
+    "Google Play US": {
+        "US Region ($)": [
+             { "duration": "Out of stock", price: "Out of stock" }
+        ]
+    },
+    "Google Play UK": {
+        "UK Region (£)": [
+            { "duration": "Out of stock", price: "Out of stock" }
+        ]
     }
   };
 
@@ -826,6 +865,8 @@ Acrobat Pro → edit & sign PDFs
 
 စတဲ့ App တေရဲ့ Pro version တေအပြင်တခြား audio, animation, UI design, and content creationလုပ်ဖို့လိုတဲ့ Appတေပါပါမာပါ။` + generalDetailsBlock,
     "HMA VPN": `Can use 5 to 10 devices. Recommend for desktop devices.` + generalDetailsBlock,
+    "Crunchyroll": `Share\n5-Months warranty • One device only` + generalDetailsBlock,
+    "Telegram Star": `Usernameပဲလိုပါမယ်` + generalDetailsBlock,
   };
    
   const deviceSupport = { 
@@ -883,6 +924,9 @@ Acrobat Pro → edit & sign PDFs
     "Photoshop": ["pc"],
     "Adobe Creative Cloud": ["pc", "android", "ios"],
     "HMA VPN": ["pc", "android", "ios"],
+    "Crunchyroll": ["android", "ios", "pc"],
+    "Telegram Star": ["android", "ios", "pc"],
+    "Google Play Gift Card": ["android", "ios", "pc"],
   };
 
   const deviceIconMap = { "android": '<i class="fa-brands fa-android"></i>', "ios": '<i class="fa-brands fa-apple"></i>', "pc": '<i class="fa-solid fa-desktop"></i>', "tv": '<i class="fa-solid fa-tv"></i>' };
@@ -1083,6 +1127,12 @@ Acrobat Pro → edit & sign PDFs
      ========================= */
   function openProduct(productName) {
     lastScroll = window.scrollY;
+    
+    // --- NEW: Handle Regional Products (Google Play Gift Card) ---
+    if (regionalProducts[productName]) {
+        renderRegionalSelector(productName, regionalProducts[productName]);
+        return;
+    }
       
     const devices = deviceSupport[productName] || [];
     const deviceIconsHtml = devices.length > 0 ? `
@@ -1189,7 +1239,7 @@ Acrobat Pro → edit & sign PDFs
     const pageHTML = `
       <button class="back-btn" id="product-back-btn">← Back</button>
       <div class="product-hero">
-        <div class="hero-img-wrap"><img src="${imageFor[productName]}" alt="${escapeHTML(productName)} logo" /></div>
+        <div class="hero-img-wrap"><img src="${imageFor[productName] || imageFor['Google Play Gift Card']}" alt="${escapeHTML(productName)} logo" /></div>
         <div class="hero-title">${escapeHTML(productName)}</div>
         ${deviceIconsHtml} 
         <div class="button-container">
@@ -1210,6 +1260,30 @@ Acrobat Pro → edit & sign PDFs
     renderPopular("popular-product", productName);
     showView('product');
     window.scrollTo(0, 0);
+  }
+
+  // --- NEW FUNCTION: Render Region Grid for Gift Cards ---
+  function renderRegionalSelector(productName, regions) {
+      const pageHTML = `
+      <button class="back-btn" id="product-back-btn">← Back</button>
+      <div class="product-hero">
+        <div class="hero-img-wrap"><img src="${imageFor[productName]}" alt="${escapeHTML(productName)} logo" /></div>
+        <div class="hero-title">${escapeHTML(productName)}</div>
+        <div class="hero-subtitle" style="opacity:0.8; margin-bottom:10px;">Select Region</div>
+      </div>
+      
+      <div class="grid" style="grid-template-columns: repeat(3, 1fr); gap: 10px;">
+        ${regions.map(region => `
+            <div class="card tap" data-product-name="${escapeHTML(region.name)}">
+                <img src="${region.img}" alt="${escapeHTML(region.name)}">
+            </div>
+        `).join('')}
+      </div>
+      `;
+      
+      dom.views.product.innerHTML = pageHTML;
+      showView('product');
+      window.scrollTo(0, 0);
   }
 
   /* =========================
@@ -1235,7 +1309,7 @@ Share plan မို့လို့ 1 device ပဲသုံးလို့ရ�
     
     const rawDetails = fullText.trim();
     
-    const sectionHeaders = /^(Share|Private|SemiPrivate|FullPrivate|Tinder Plus Share|Login|Gift Plan & Link Plan|Gift Plan|Link Plan|Views \(NoDrop\)|Likes \(NoDrop\)|Comment - Emoji Type|Comment - Custom Type|Package Plan|Livestream Views|Livestream Likes|Livestream Share|Post Views|Positive Reactions|Negative Reactions|Custom Reactions|Premium Reactions|Members \(30Days Refill\)|Livestream Views|Comment - Impression Type|Comment - Custom Type|Video Views|Video Likes|Post Likes|Profile Followers|Page Followers|Live Stream Views|Video Views & Reels|Likes|Followers|Personal Plus \(Share\)|Personal Plus \(Private\)|Business - Invite Own Email|Business - Own|Private Own Mail|Private \(Own Mail\)|Base Service|1 Profile\(Semiprivate\)|5 Profiles\(Whole Account\)|Nitro Basic \(Key\)|Individual|Invite with email|Sharing Pro|Plan Basic|Plan Premium|HBO MAX \(ULTIMATE\) 1 Month|Private Whole Account \(1 Month\)|1 Profile|Whole Account|OwnMail Private|Individual Plan|Business Own\(Full Warranty\)|Business Plus Own\(Full Warranty\)|Business Plus Own|Normal Plan|Family Head\(Can Invite 5 email\)|Invite Private|Web Private|Pro Share|Pro Private|Lifetime Premium|Educational\(Invite\)|Individual Plan\(Private\))$/i; 
+    const sectionHeaders = /^(Share|Private|SemiPrivate|FullPrivate|Tinder Plus Share|Login|Gift Plan & Link Plan|Gift Plan|Link Plan|Views \(NoDrop\)|Likes \(NoDrop\)|Comment - Emoji Type|Comment - Custom Type|Package Plan|Livestream Views|Livestream Likes|Livestream Share|Post Views|Positive Reactions|Negative Reactions|Custom Reactions|Premium Reactions|Members \(30Days Refill\)|Livestream Views|Comment - Impression Type|Comment - Custom Type|Video Views|Video Likes|Post Likes|Profile Followers|Page Followers|Live Stream Views|Video Views & Reels|Likes|Followers|Personal Plus \(Share\)|Personal Plus \(Private\)|Business - Invite Own Email|Business - Own|Private Own Mail|Private \(Own Mail\)|Base Service|1 Profile\(Semiprivate\)|5 Profiles\(Whole Account\)|Nitro Basic \(Key\)|Individual|Invite with email|Sharing Pro|Plan Basic|Plan Premium|HBO MAX \(ULTIMATE\) 1 Month|Private Whole Account \(1 Month\)|1 Profile|Whole Account|OwnMail Private|Individual Plan|Business Own\(Full Warranty\)|Business Plus Own\(Full Warranty\)|Business Plus Own|Normal Plan|Family Head\(Can Invite 5 email\)|Invite Private|Web Private|Pro Share|Pro Private|Lifetime Premium|Educational\(Invite\)|Individual Plan\(Private\)|Stars|Japan Region \(¥\)|US Region \(\$\)|UK Region \(£\))$/i; 
     
     const lines = rawDetails.split('\n').map(l => l.trim()).filter(l => l.length > 0);
     
@@ -1305,10 +1379,10 @@ Share plan မို့လို့ 1 device ပဲသုံးလို့ရ�
               filteredNotes = filteredNotes.filter(line => !line.includes("warrantyအပြည့်ပေး"));
           }
       } else {
-          const durationRegex = /\b(\d+\s*(?:Month|Months|Year|Week|Lifetime|Days)):?.*|6-Months accounts are rare.*/gi; 
+          const durationRegex = /\b(\d+\s*(?:Month|Months|Year|Week|Lifetime|Days|Stars)):?.*|6-Months accounts are rare.*/gi; 
           
           filteredNotes = filteredNotes.filter(line => {
-              if (line.toLowerCase().includes('device') || line.toLowerCase().includes('warranty') || line.toLowerCase().includes('guarantee') || line.toLowerCase().includes('profile') || line.toLowerCase().includes('account') || line.toLowerCase().includes('users') || line.toLowerCase().includes('screen') || line.toLowerCase().includes('phones') || line.toLowerCase().includes('sharing') || line.toLowerCase().includes('history') || line.toLowerCase().includes('အဆင်ပြေ') || line.includes('သက်တန်းတိုး') || line.includes('Official app')) { 
+              if (line.toLowerCase().includes('device') || line.toLowerCase().includes('warranty') || line.toLowerCase().includes('guarantee') || line.toLowerCase().includes('profile') || line.toLowerCase().includes('account') || line.toLowerCase().includes('users') || line.toLowerCase().includes('screen') || line.toLowerCase().includes('phones') || line.toLowerCase().includes('sharing') || line.toLowerCase().includes('history') || line.toLowerCase().includes('အဆင်ပြေ') || line.includes('သက်တန်းတိုး') || line.includes('Official app') || line.includes('Username')) { 
                   return true;
               }
               if (durationRegex.test(line)) {
@@ -1576,7 +1650,7 @@ ${firstLine}
      FORMATTERS
      ========================= */
   function formatDetails(raw) {
-    const headers = /^(Share|Private|SemiPrivate|FullPrivate|Tinder Plus Share|Login|Gift Plan & Link Plan|Gift Plan|Link Plan|Views \(NoDrop\)|Likes \(NoDrop\)|Comment - Emoji Type|Comment - Custom Type|Package Plan|Livestream Views|Livestream Likes|Livestream Share|Post Views|Positive Reactions|Negative Reactions|Custom Reactions|Premium Reactions|Members \(30Days Refill\)|Livestream Views|Comment - Impression Type|Comment - Custom Type|Video Views|Video Likes|Post Likes|Profile Followers|Page Followers|Live Stream Views|Video Views & Reels|Likes|Followers|Personal Plus \(Share\)|Personal Plus \(Private\)|Business - Invite Own Email|Business - Own|Private Own Mail|Private \(Own Mail\)|Base Service|1 Profile\(Semiprivate\)|5 Profiles\(Whole Account\)|Nitro Basic \(Key\)|Individual|Invite with email|Sharing Pro|Plan Basic|Plan Premium|HBO MAX \(ULTIMATE\) 1 Month|Private Whole Account \(1 Month\)|1 Profile|Whole Account|OwnMail Private|Individual Plan|Business Own\(Full Warranty\)|Business Plus Own\(Full Warranty\)|Business Plus Own|Normal Plan|Family Head\(Can Invite 5 email\)|Invite Private|Web Private|Pro Share|Pro Private|Lifetime Premium|Educational\(Invite\)|Individual Plan\(Private\))$/i;
+    const headers = /^(Share|Private|SemiPrivate|FullPrivate|Tinder Plus Share|Login|Gift Plan & Link Plan|Gift Plan|Link Plan|Views \(NoDrop\)|Likes \(NoDrop\)|Comment - Emoji Type|Comment - Custom Type|Package Plan|Livestream Views|Livestream Likes|Livestream Share|Post Views|Positive Reactions|Negative Reactions|Custom Reactions|Premium Reactions|Members \(30Days Refill\)|Livestream Views|Comment - Impression Type|Comment - Custom Type|Video Views|Video Likes|Post Likes|Profile Followers|Page Followers|Live Stream Views|Video Views & Reels|Likes|Followers|Personal Plus \(Share\)|Personal Plus \(Private\)|Business - Invite Own Email|Business - Own|Private Own Mail|Private \(Own Mail\)|Base Service|1 Profile\(Semiprivate\)|5 Profiles\(Whole Account\)|Nitro Basic \(Key\)|Individual|Invite with email|Sharing Pro|Plan Basic|Plan Premium|HBO MAX \(ULTIMATE\) 1 Month|Private Whole Account \(1 Month\)|1 Profile|Whole Account|OwnMail Private|Individual Plan|Business Own\(Full Warranty\)|Business Plus Own\(Full Warranty\)|Business Plus Own|Normal Plan|Family Head\(Can Invite 5 email\)|Invite Private|Web Private|Pro Share|Pro Private|Lifetime Premium|Educational\(Invite\)|Individual Plan\(Private\)|Stars|Japan Region \(¥\)|US Region \(\$\)|UK Region \(£\))$/i;
     
     const vpnAlertTag = 'CAN\'T USE IN MYANMAR';
     
@@ -1690,6 +1764,13 @@ ${firstLine}
     }
 
     if (target.id === 'product-back-btn') {
+      // If we are deep inside a Google Play region sub-menu, go back to the Google Play main menu (Region Selector)
+      const currentTitle = document.querySelector('.hero-title').innerText;
+      if (currentTitle.includes('Google Play') && !currentTitle.includes('Gift Card')) {
+          renderRegionalSelector("Google Play Gift Card", regionalProducts["Google Play Gift Card"]);
+          return;
+      }
+      
       showView('home');
       window.scrollTo(0, lastScroll);
       return;

@@ -1426,10 +1426,17 @@ Acrobat Pro → edit & sign PDFs
         }).join("");
     }
 
+    // --- FIX: Override Image Logic ---
+    let heroImageSrc = imageFor[productName];
+    // If opening a Google Play specific region (e.g. Google Play India), force the base image
+    if (productName.startsWith("Google Play")) {
+        heroImageSrc = imageFor["Google Play Gift Card"];
+    }
+
     const pageHTML = `
       <button class="back-btn" id="product-back-btn">← Back</button>
       <div class="product-hero">
-        <div class="hero-img-wrap"><img src="${imageFor[productName] || imageFor['Google Play Gift Card']}" alt="${escapeHTML(productName)} logo" /></div>
+        <div class="hero-img-wrap"><img src="${heroImageSrc || imageFor['Google Play Gift Card']}" alt="${escapeHTML(productName)} logo" /></div>
         <div class="hero-title">${escapeHTML(productName)}</div>
         ${deviceIconsHtml} 
         <div class="button-container">
@@ -1484,7 +1491,7 @@ Acrobat Pro → edit & sign PDFs
                  priceDisplay.textContent = "0 Kyats";
              } else {
                  // VALID STATE
-                 addBtn.style.backgroundColor = 'var(--primary)'; // Will revert to CSS default
+                 addBtn.style.removeProperty('background-color'); // Revert to CSS
                  addBtn.textContent = "Add to Cart";
                  const price = Math.floor(val * customConf.rate);
                  priceDisplay.textContent = formatKyats(price);

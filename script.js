@@ -2,8 +2,8 @@
   "use strict";
 
   /* =========================
-     DOM ELEMENTS
-     ========================= */
+      DOM ELEMENTS
+      ========================= */
   const dom = {
     views: {
       home: document.getElementById('home-view'),
@@ -53,8 +53,8 @@
   };
 
   /* =========================
-     STARFIELD BACKGROUND
-     ========================= */
+      STARFIELD BACKGROUND
+      ========================= */
   (function starfield() {
     const canvas = document.getElementById('starfield');
     if (!canvas) return;
@@ -96,8 +96,8 @@
   })();
 
   /* =========================
-     PRODUCT DATA & ASSETS
-     ========================= */
+      PRODUCT DATA & ASSETS
+      ========================= */
   const imageFor = { 
     "CapCut": "https://ik.imagekit.io/dkdlgynlu/New-Project-52-C695-D25-1.png", 
     "AlightMotion": "https://ik.imagekit.io/dkdlgynlu/New-Project-52-9675-E38-1.png", 
@@ -156,14 +156,56 @@
     "Crunchyroll": "https://ik.imagekit.io/dkdlgynlu/Wattpad%20_A70E5F8_.png",
     "Telegram Star": "https://ik.imagekit.io/dkdlgynlu/Wattpad%20_AEF396E_.png",
     "Google Play Gift Card": "https://ik.imagekit.io/dkdlgynlu/Wattpad%20_E847DAF_.png?updatedAt=1767023159606",
+    // NEW REGION FLAGS
+    "Google Play Turkey": "https://ik.imagekit.io/dkdlgynlu/New%20Project%207%20_C5A9149_.png",
+    "Google Play Indonesia": "https://ik.imagekit.io/dkdlgynlu/New%20Project%207%20_9D4756B_.png",
+    "Google Play Brazil": "https://ik.imagekit.io/dkdlgynlu/New%20Project%207%20_294445A_.png",
+    "Google Play South Korea": "https://ik.imagekit.io/dkdlgynlu/New%20Project%207%20_3A8F735_.png",
+    "Google Play India": "https://ik.imagekit.io/dkdlgynlu/New%20Project%207%20_1A15120_.png",
+    "Google Play Australia": "https://ik.imagekit.io/dkdlgynlu/New%20Project%207%20_9B033CA_.png",
+    "Google Play Germany": "https://ik.imagekit.io/dkdlgynlu/New%20Project%207%20_1AEDA1C_.png",
+    "Google Play France": "https://ik.imagekit.io/dkdlgynlu/New%20Project%207%20_8426624_.png",
+    "Google Play Italy": "https://ik.imagekit.io/dkdlgynlu/New%20Project%207%20_21CBE50_.png",
+    "Google Play Switzerland": "https://ik.imagekit.io/dkdlgynlu/New%20Project%207%20_9A39E21_.png",
+    "Google Play Canada": "https://ik.imagekit.io/dkdlgynlu/New%20Project%207%20_E5C533F_.png",
+    "Google Play UAE": "https://ik.imagekit.io/dkdlgynlu/New%20Project%207%20_3833C90_.png",
+    "Google Play Poland": "https://ik.imagekit.io/dkdlgynlu/New%20Project%207%20_CAAF62D_.png?updatedAt=1767116441268",
+    "Google Play Japan": "https://ik.imagekit.io/dkdlgynlu/New%20Project%207%20_42752FB_.png",
+    "Google Play US": "https://ik.imagekit.io/dkdlgynlu/New%20Project%207%20_3BDD96E_.png",
+    "Google Play UK": "https://ik.imagekit.io/dkdlgynlu/New%20Project%207%20_BD37C1B_.png"
   };
 
   const regionalProducts = {
       "Google Play Gift Card": [
-          { name: "Google Play Japan", img: "https://ik.imagekit.io/dkdlgynlu/New%20Project%207%20_42752FB_.png" },
-          { name: "Google Play US", img: "https://ik.imagekit.io/dkdlgynlu/New%20Project%207%20_3BDD96E_.png" },
-          { name: "Google Play UK", img: "https://ik.imagekit.io/dkdlgynlu/New%20Project%207%20_BD37C1B_.png" }
+          { name: "Google Play Turkey", img: imageFor["Google Play Turkey"] },
+          { name: "Google Play Indonesia", img: imageFor["Google Play Indonesia"] },
+          { name: "Google Play Brazil", img: imageFor["Google Play Brazil"] },
+          { name: "Google Play South Korea", img: imageFor["Google Play South Korea"] },
+          { name: "Google Play India", img: imageFor["Google Play India"] },
+          { name: "Google Play Australia", img: imageFor["Google Play Australia"] },
+          { name: "Google Play Germany", img: imageFor["Google Play Germany"] },
+          { name: "Google Play France", img: imageFor["Google Play France"] },
+          { name: "Google Play Italy", img: imageFor["Google Play Italy"] },
+          { name: "Google Play Switzerland", img: imageFor["Google Play Switzerland"] },
+          { name: "Google Play Canada", img: imageFor["Google Play Canada"] },
+          { name: "Google Play UAE", img: imageFor["Google Play UAE"] },
+          { name: "Google Play Poland", img: imageFor["Google Play Poland"] },
+          { name: "Google Play US", img: imageFor["Google Play US"] },
+          { name: "Google Play UK", img: imageFor["Google Play UK"] },
+          { name: "Google Play Japan", img: imageFor["Google Play Japan"] }
       ]
+  };
+
+  // --- CONFIG FOR CUSTOM AMOUNT CALCULATOR ---
+  const customConfigs = {
+    "Google Play US": { min: 5, max: 200, rate: 5000, curr: "$" },
+    "Google Play UK": { min: 1, max: 500, rate: 6500, curr: "£" },
+    "Google Play Australia": { min: 1, max: 500, rate: 6000, curr: "A$" },
+    "Google Play Germany": { min: 1, max: 500, rate: 6000, curr: "€" },
+    "Google Play France": { min: 1, max: 500, rate: 6000, curr: "€" },
+    "Google Play Italy": { min: 1, max: 500, rate: 6000, curr: "€" },
+    "Google Play Switzerland": { min: 1, max: 1000, rate: 6500, curr: "CHF" },
+    "Google Play UAE": { min: 5, max: 1000, rate: 1380, curr: "AED" }
   };
 
   const productData = { 
@@ -587,6 +629,7 @@
             { "duration": "100 Stars", price: "7,600 Kyats" }
         ]
     },
+    // --- UPDATED GOOGLE PLAY PLANS ---
     "Google Play Japan": {
         "Japan Region (¥)": [
             { "duration": "¥500", price: "17,500 Kyats" },
@@ -596,13 +639,129 @@
     },
     "Google Play US": {
         "US Region ($)": [
-             { "duration": "Out of stock", price: "Out of stock" }
+             { "duration": "$5", price: "25,000 Kyats" },
+             { "duration": "$10", price: "50,000 Kyats" },
+             { "duration": "$50", price: "250,000 Kyats" },
+             { "duration": "$100", price: "500,000 Kyats" }
         ]
     },
     "Google Play UK": {
         "UK Region (£)": [
-            { "duration": "Out of stock", price: "Out of stock" }
+            { "duration": "£5", price: "32,500 Kyats" },
+            { "duration": "£10", price: "65,000 Kyats" },
+            { "duration": "£50", price: "325,000 Kyats" },
+            { "duration": "£100", price: "650,000 Kyats" },
+            { "duration": "£500", price: "3,250,000 Kyats" }
         ]
+    },
+    "Google Play Turkey": {
+        "Turkey Region (TL)": [
+             { "duration": "25 TL", price: "3,150 Kyats" },
+             { "duration": "50 TL", price: "6,300 Kyats" },
+             { "duration": "75 TL", price: "9,450 Kyats" },
+             { "duration": "100 TL", price: "12,600 Kyats" }
+        ]
+    },
+    "Google Play Indonesia": {
+        "Indonesia Region (IDR)": [
+             { "duration": "5,000 IDR", price: "1,450 Kyats" },
+             { "duration": "10,000 IDR", price: "2,900 Kyats" },
+             { "duration": "100,000 IDR", price: "29,000 Kyats" }
+        ]
+    },
+    "Google Play Brazil": {
+        "Brazil Region (BRL)": [
+             { "duration": "15 BRL", price: "14,500 Kyats" },
+             { "duration": "20 BRL", price: "19,333 Kyats" },
+             { "duration": "25 BRL", price: "24,167 Kyats" },
+             { "duration": "30 BRL", price: "29,000 Kyats" },
+             { "duration": "40 BRL", price: "38,667 Kyats" },
+             { "duration": "50 BRL", price: "48,333 Kyats" },
+             { "duration": "75 BRL", price: "72,500 Kyats" },
+             { "duration": "150 BRL", price: "145,000 Kyats" },
+             { "duration": "250 BRL", price: "241,667 Kyats" },
+             { "duration": "300 BRL", price: "290,000 Kyats" }
+        ]
+    },
+    "Google Play South Korea": {
+        "Korea Region (₩)": [
+             { "duration": "5,000 ₩", price: "18,500 Kyats" },
+             { "duration": "10,000 ₩", price: "37,000 Kyats" },
+             { "duration": "30,000 ₩", price: "111,000 Kyats" }
+        ]
+    },
+    "Google Play India": {
+        "India Region (₹)": [
+             { "duration": "10 ₹", price: "800 Kyats" },
+             { "duration": "25 ₹", price: "1,725 Kyats" },
+             { "duration": "30 ₹", price: "2,010 Kyats" },
+             { "duration": "50 ₹", price: "2,935 Kyats" },
+             { "duration": "100 ₹", price: "5,875 Kyats" },
+             { "duration": "300 ₹", price: "17,625 Kyats" },
+             { "duration": "500 ₹", price: "29,375 Kyats" },
+             { "duration": "1000 ₹", price: "58,750 Kyats" }
+        ]
+    },
+    "Google Play Australia": {
+        "Australia Region (A$)": [
+             { "duration": "$5", price: "30,000 Kyats" },
+             { "duration": "$10", price: "60,000 Kyats" },
+             { "duration": "$50", price: "300,000 Kyats" },
+             { "duration": "$100", price: "600,000 Kyats" }
+        ]
+    },
+    "Google Play Germany": {
+        "Germany Region (€)": [
+             { "duration": "€5", price: "30,000 Kyats" },
+             { "duration": "€10", price: "60,000 Kyats" },
+             { "duration": "€50", price: "300,000 Kyats" },
+             { "duration": "€100", price: "600,000 Kyats" }
+        ]
+    },
+    "Google Play France": {
+        "France Region (€)": [
+             { "duration": "€5", price: "30,000 Kyats" },
+             { "duration": "€10", price: "60,000 Kyats" },
+             { "duration": "€50", price: "300,000 Kyats" },
+             { "duration": "€100", price: "600,000 Kyats" }
+        ]
+    },
+    "Google Play Italy": {
+        "Italy Region (€)": [
+             { "duration": "€5", price: "30,000 Kyats" },
+             { "duration": "€10", price: "60,000 Kyats" },
+             { "duration": "€50", price: "300,000 Kyats" },
+             { "duration": "€100", price: "600,000 Kyats" }
+        ]
+    },
+    "Google Play Switzerland": {
+        "Switzerland Region (CHF)": [
+             { "duration": "5 CHF", price: "32,500 Kyats" },
+             { "duration": "10 CHF", price: "65,000 Kyats" },
+             { "duration": "50 CHF", price: "325,000 Kyats" },
+             { "duration": "100 CHF", price: "650,000 Kyats" }
+        ]
+    },
+    "Google Play Canada": {
+        "Canada Region (C$)": [
+             { "duration": "$10", price: "49,300 Kyats" },
+             { "duration": "$20", price: "80,000 Kyats" },
+             { "duration": "$30", price: "118,850 Kyats" },
+             { "duration": "$75", price: "297,150 Kyats" },
+             { "duration": "$100", price: "396,200 Kyats" }
+        ]
+    },
+    "Google Play Poland": {
+        "Poland Region (PLN)": [
+             { "duration": "20 PLN", price: "29,500 Kyats" },
+             { "duration": "30 PLN", price: "36,650 Kyats" },
+             { "duration": "50 PLN", price: "73,400 Kyats" },
+             { "duration": "75 PLN", price: "100,400 Kyats" },
+             { "duration": "150 PLN", price: "220,000 Kyats" }
+        ]
+    },
+    "Google Play UAE": {
+         "UAE Region (AED)": [] // Custom only
     }
   };
 
@@ -828,10 +987,10 @@ Please contact admin for usage details.` + generalDetailsBlock,
     "TikTok Official": `Coinက TikTok official boostတဲ့နေရာမာ Coin တေကိုသုံးရတာပါ။အဲ့ Coin ကိုရောင်းပေးတာပါ။ Login ဝင်ပီးဝယ်ရတာပါ။ buttt email password ဘာမပေးစရာမလိုပါဘူး။` + generalDetailsBlock,
     "TikTok Non Official": `Views (NoDrop)
     No dropဆိုပေမဲ့ TikTok ကစာပို့ပီးဖျက်ချသွားရင်တာ့ပြန်မထည့်ပေးပါဘူး။ထည့်ရင်လဲအကောင့် warning ထိမာပါ။
-    
+     
     Likes (NoDrop)
     No dropဆိုပေမဲ့ TikTok ကစာပို့ပီးဖျက်ချသွားရင်တာ့ပြန်မထည့်ပေးပါဘူး။ထည့်ရင်လဲအကောင့် warning ထိမာပါ။
-    
+     
     Package Plan
     No dropဆိုပေမဲ့ TikTok ကစာပို့ပီးဖျက်ချသွားရင်တာ့ပြန်မထည့်ပေးပါဘူး။ထည့်ရင်လဲအကောင့် warning ထိမာပါ။` + generalDetailsBlock,
     "Telegram Boosting": `Post Reactions are Lifetime No-Drop. Members have a 30-day refill guarantee.` + generalDetailsBlock,
@@ -867,6 +1026,20 @@ Acrobat Pro → edit & sign PDFs
     "HMA VPN": `Can use 5 to 10 devices. Recommend for desktop devices.` + generalDetailsBlock,
     "Crunchyroll": `Share\n5-Months warranty • One device only` + generalDetailsBlock,
     "Telegram Star": `Usernameပဲလိုပါမယ်` + generalDetailsBlock,
+    // DEFAULT DESCRIPTIONS FOR NEW GOOGLE PLAY REGIONS
+    "Google Play Turkey": "Region: Turkey (TL)\nBuy specific amounts for Turkey Region accounts." + generalDetailsBlock,
+    "Google Play Indonesia": "Region: Indonesia (IDR)\nBuy specific amounts for Indonesia Region accounts." + generalDetailsBlock,
+    "Google Play Brazil": "Region: Brazil (BRL)\nBuy specific amounts for Brazil Region accounts." + generalDetailsBlock,
+    "Google Play South Korea": "Region: South Korea (Won)\nBuy specific amounts for Korea Region accounts." + generalDetailsBlock,
+    "Google Play India": "Region: India (INR)\nBuy specific amounts for India Region accounts." + generalDetailsBlock,
+    "Google Play Australia": "Region: Australia (AUD)\nBuy specific amounts or custom amount." + generalDetailsBlock,
+    "Google Play Germany": "Region: Germany (EUR)\nBuy specific amounts or custom amount." + generalDetailsBlock,
+    "Google Play France": "Region: France (EUR)\nBuy specific amounts or custom amount." + generalDetailsBlock,
+    "Google Play Italy": "Region: Italy (EUR)\nBuy specific amounts or custom amount." + generalDetailsBlock,
+    "Google Play Switzerland": "Region: Switzerland (CHF)\nBuy specific amounts or custom amount." + generalDetailsBlock,
+    "Google Play Canada": "Region: Canada (CAD)\nBuy specific amounts." + generalDetailsBlock,
+    "Google Play UAE": "Region: UAE (AED)\nCustom amount only." + generalDetailsBlock,
+    "Google Play Poland": "Region: Poland (PLN)\nBuy specific amounts." + generalDetailsBlock
   };
    
   const deviceSupport = { 
@@ -927,13 +1100,30 @@ Acrobat Pro → edit & sign PDFs
     "Crunchyroll": ["android", "ios", "pc"],
     "Telegram Star": ["android", "ios", "pc"],
     "Google Play Gift Card": ["android", "ios", "pc"],
+    // ADD NEW REGIONS SUPPORT
+    "Google Play Turkey": ["android", "ios", "pc"],
+    "Google Play Indonesia": ["android", "ios", "pc"],
+    "Google Play Brazil": ["android", "ios", "pc"],
+    "Google Play South Korea": ["android", "ios", "pc"],
+    "Google Play India": ["android", "ios", "pc"],
+    "Google Play Australia": ["android", "ios", "pc"],
+    "Google Play Germany": ["android", "ios", "pc"],
+    "Google Play France": ["android", "ios", "pc"],
+    "Google Play Italy": ["android", "ios", "pc"],
+    "Google Play Switzerland": ["android", "ios", "pc"],
+    "Google Play Canada": ["android", "ios", "pc"],
+    "Google Play UAE": ["android", "ios", "pc"],
+    "Google Play Poland": ["android", "ios", "pc"],
+    "Google Play Japan": ["android", "ios", "pc"],
+    "Google Play US": ["android", "ios", "pc"],
+    "Google Play UK": ["android", "ios", "pc"]
   };
 
   const deviceIconMap = { "android": '<i class="fa-brands fa-android"></i>', "ios": '<i class="fa-brands fa-apple"></i>', "pc": '<i class="fa-solid fa-desktop"></i>', "tv": '<i class="fa-solid fa-tv"></i>' };
    
   /* =========================
-     STATE
-     ========================= */
+      STATE
+      ========================= */
   let cart = [];
   let lastScroll = 0;
   let lastViewBeforeCheckout = 'home';
@@ -941,8 +1131,8 @@ Acrobat Pro → edit & sign PDFs
   let productCards = []; 
 
   /* =========================
-     UTILITY FUNCTIONS
-     ========================= */
+      UTILITY FUNCTIONS
+      ========================= */
   const escapeHTML = s => String(s).replace(/[&<>"']/g, m => ({ '&': '&amp;', '<': '&lt;', '>': '&gt;', '"': '&quot;', "'": '&#39;' })[m]);
    
   const parseKyats = t => { const m = (t || "").replace(/,/g, "").replace(/Ks/g, "").replace(/≈/g, "").trim().match(/(\d+(\.\d+)?)/); return m ? Number(m[1]) : null; }; 
@@ -951,8 +1141,8 @@ Acrobat Pro → edit & sign PDFs
   const cartKey = ({ product, section, duration, priceText }) => [product, section, duration, priceText].join("|");
 
   /* =========================
-     CART LOGIC
-     ========================= */
+      CART LOGIC
+      ========================= */
   function addToCart(item) {
     const key = cartKey(item);
     const existing = cart.find(x => cartKey(x) === key);
@@ -989,8 +1179,8 @@ Acrobat Pro → edit & sign PDFs
   }
 
   /* =========================
-     RENDERING FUNCTIONS
-     ========================= */
+      RENDERING FUNCTIONS
+      ========================= */
   function renderCart() {
     if (!cart.length) {
       dom.cart.bar.style.display = "none";
@@ -1045,8 +1235,8 @@ Acrobat Pro → edit & sign PDFs
   }
    
   /* =========================
-     SEARCH LOGIC 
-     ========================= */
+      SEARCH LOGIC 
+      ========================= */
   function filterProducts(query) {
     query = query.toLowerCase().trim();
       
@@ -1078,8 +1268,8 @@ Acrobat Pro → edit & sign PDFs
   }
 
   /* =========================
-     POPULAR SECTION LOGIC
-     ========================= */
+      POPULAR SECTION LOGIC
+      ========================= */
   const popularList = ["Express Vpn", "ChatGPT Plus", "CapCut", "Netflix", "Wink"];
   function renderPopular(containerId, excludeName) {
     const cont = document.getElementById(containerId);
@@ -1123,12 +1313,12 @@ Acrobat Pro → edit & sign PDFs
   }
 
   /* =========================
-     PRODUCT PAGE LOGIC
-     ========================= */
+      PRODUCT PAGE LOGIC
+      ========================= */
   function openProduct(productName) {
     lastScroll = window.scrollY;
-    
-    // --- NEW: Handle Regional Products (Google Play Gift Card) ---
+     
+    // --- Handle Regional Products (Google Play Gift Card) ---
     if (regionalProducts[productName]) {
         renderRegionalSelector(productName, regionalProducts[productName]);
         return;
@@ -1257,12 +1447,78 @@ Acrobat Pro → edit & sign PDFs
       </section>`;
 
     dom.views.product.innerHTML = pageHTML;
+    
+    // --- UPDATED: DYNAMIC CUSTOM CALCULATOR FOR MULTIPLE REGIONS ---
+    const customConf = customConfigs[productName];
+    if (customConf) {
+        const customHTML = `
+        <div class="plan-box">
+          <div class="plan-title">Custom Amount (${customConf.min} - ${customConf.max} ${customConf.curr})</div>
+          <div style="padding:10px; display:flex; flex-direction:column; gap:10px;">
+             <label style="font-size:14px; color:#ccc;">Enter Amount</label>
+             <div style="display:flex; gap:10px;">
+                <input type="number" id="custom-amount-input" min="${customConf.min}" max="${customConf.max}" placeholder="${customConf.min}-${customConf.max}" 
+                       style="flex:1; padding:12px; border-radius:8px; border:1px solid rgba(255,255,255,0.2); background:rgba(255,255,255,0.05); color:white; font-size:16px;">
+                <div id="custom-calc-price" style="align-self:center; font-weight:bold; color:#00e676; min-width:100px; text-align:right;">0 Kyats</div>
+             </div>
+             <button id="btn-add-custom" class="btn btn-primary" style="width:100%;">Add to Cart</button>
+          </div>
+        </div>`;
+        
+        // Insert it BEFORE the Popular Section
+        const popularSection = dom.views.product.querySelector('.popular-section');
+        popularSection.insertAdjacentHTML('beforebegin', customHTML);
+        
+        // Attach Logic
+        const input = document.getElementById('custom-amount-input');
+        const priceDisplay = document.getElementById('custom-calc-price');
+        const addBtn = document.getElementById('btn-add-custom');
+        
+        input.addEventListener('input', () => {
+             const val = parseFloat(input.value);
+             // VALIDATION VISUAL
+             if (!val || val < customConf.min || val > customConf.max) {
+                 // ERROR STATE (Red Button Style)
+                 addBtn.style.backgroundColor = '#ff4444'; 
+                 addBtn.textContent = `⚠️ Limit: ${customConf.min} - ${customConf.max}`;
+                 priceDisplay.textContent = "0 Kyats";
+             } else {
+                 // VALID STATE
+                 addBtn.style.backgroundColor = 'var(--primary)'; // Will revert to CSS default
+                 addBtn.textContent = "Add to Cart";
+                 const price = Math.floor(val * customConf.rate);
+                 priceDisplay.textContent = formatKyats(price);
+             }
+        });
+        
+        addBtn.addEventListener('click', () => {
+             const val = parseFloat(input.value);
+             if (!val || val < customConf.min || val > customConf.max) {
+                 // The button is already red, but we prevent action
+                 return;
+             }
+             const price = Math.floor(val * customConf.rate);
+             const item = { 
+                 product: productName, 
+                 section: "Custom Amount", 
+                 duration: `${customConf.curr}${val}`, 
+                 unitPrice: price, 
+                 priceText: formatKyats(price) 
+             };
+             addToCart(item);
+             
+             // Visual feedback
+             addBtn.textContent = "Added!";
+             setTimeout(() => addBtn.textContent = "Add to Cart", 1000);
+        });
+    }
+
     renderPopular("popular-product", productName);
     showView('product');
     window.scrollTo(0, 0);
   }
 
-  // --- NEW FUNCTION: Render Region Grid for Gift Cards ---
+  // --- Render Region Grid for Gift Cards ---
   function renderRegionalSelector(productName, regions) {
       const pageHTML = `
       <button class="back-btn" id="product-back-btn">← Back</button>
@@ -1287,8 +1543,8 @@ Acrobat Pro → edit & sign PDFs
   }
 
   /* =========================
-     CHECKOUT FLOW
-     ========================= */
+      CHECKOUT FLOW
+      ========================= */
   function getNoteForCartItem(item) {
     const productName = item.product.replace(/ \(.+\)$/, '');
     
@@ -1309,7 +1565,7 @@ Share plan မို့လို့ 1 device ပဲသုံးလို့ရ�
     
     const rawDetails = fullText.trim();
     
-    const sectionHeaders = /^(Share|Private|SemiPrivate|FullPrivate|Tinder Plus Share|Login|Gift Plan & Link Plan|Gift Plan|Link Plan|Views \(NoDrop\)|Likes \(NoDrop\)|Comment - Emoji Type|Comment - Custom Type|Package Plan|Livestream Views|Livestream Likes|Livestream Share|Post Views|Positive Reactions|Negative Reactions|Custom Reactions|Premium Reactions|Members \(30Days Refill\)|Livestream Views|Comment - Impression Type|Comment - Custom Type|Video Views|Video Likes|Post Likes|Profile Followers|Page Followers|Live Stream Views|Video Views & Reels|Likes|Followers|Personal Plus \(Share\)|Personal Plus \(Private\)|Business - Invite Own Email|Business - Own|Private Own Mail|Private \(Own Mail\)|Base Service|1 Profile\(Semiprivate\)|5 Profiles\(Whole Account\)|Nitro Basic \(Key\)|Individual|Invite with email|Sharing Pro|Plan Basic|Plan Premium|HBO MAX \(ULTIMATE\) 1 Month|Private Whole Account \(1 Month\)|1 Profile|Whole Account|OwnMail Private|Individual Plan|Business Own\(Full Warranty\)|Business Plus Own\(Full Warranty\)|Business Plus Own|Normal Plan|Family Head\(Can Invite 5 email\)|Invite Private|Web Private|Pro Share|Pro Private|Lifetime Premium|Educational\(Invite\)|Individual Plan\(Private\)|Stars|Japan Region \(¥\)|US Region \(\$\)|UK Region \(£\))$/i; 
+    const sectionHeaders = /^(Share|Private|SemiPrivate|FullPrivate|Tinder Plus Share|Login|Gift Plan & Link Plan|Gift Plan|Link Plan|Views \(NoDrop\)|Likes \(NoDrop\)|Comment - Emoji Type|Comment - Custom Type|Package Plan|Livestream Views|Livestream Likes|Livestream Share|Post Views|Positive Reactions|Negative Reactions|Custom Reactions|Premium Reactions|Members \(30Days Refill\)|Livestream Views|Comment - Impression Type|Comment - Custom Type|Video Views|Video Likes|Post Likes|Profile Followers|Page Followers|Live Stream Views|Video Views & Reels|Likes|Followers|Personal Plus \(Share\)|Personal Plus \(Private\)|Business - Invite Own Email|Business - Own|Private Own Mail|Private \(Own Mail\)|Base Service|1 Profile\(Semiprivate\)|5 Profiles\(Whole Account\)|Nitro Basic \(Key\)|Individual|Invite with email|Sharing Pro|Plan Basic|Plan Premium|HBO MAX \(ULTIMATE\) 1 Month|Private Whole Account \(1 Month\)|1 Profile|Whole Account|OwnMail Private|Individual Plan|Business Own\(Full Warranty\)|Business Plus Own\(Full Warranty\)|Business Plus Own|Normal Plan|Family Head\(Can Invite 5 email\)|Invite Private|Web Private|Pro Share|Pro Private|Lifetime Premium|Educational\(Invite\)|Individual Plan\(Private\)|Stars|Japan Region \(¥\)|US Region \(\$\)|UK Region \(£\)|Custom Amount|Turkey Region \(TL\)|Indonesia Region \(IDR\)|Brazil Region \(BRL\)|Korea Region \(₩\)|India Region \(₹\)|Australia Region \(A\$\)|Germany Region \(€\)|France Region \(€\)|Italy Region \(€\)|Switzerland Region \(CHF\)|Canada Region \(C\$\)|UAE Region \(AED\)|Poland Region \(PLN\))/i; 
     
     const lines = rawDetails.split('\n').map(l => l.trim()).filter(l => l.length > 0);
     
@@ -1379,10 +1635,10 @@ Share plan မို့လို့ 1 device ပဲသုံးလို့ရ�
               filteredNotes = filteredNotes.filter(line => !line.includes("warrantyအပြည့်ပေး"));
           }
       } else {
-          const durationRegex = /\b(\d+\s*(?:Month|Months|Year|Week|Lifetime|Days|Stars)):?.*|6-Months accounts are rare.*/gi; 
+          const durationRegex = /\b(\d+\s*(?:Month|Months|Year|Week|Lifetime|Days|Stars|TL|IDR|BRL|₹|₩|\$|£|€|CHF|C\$|AED|PLN)):?.*|6-Months accounts are rare.*/gi; 
           
           filteredNotes = filteredNotes.filter(line => {
-              if (line.toLowerCase().includes('device') || line.toLowerCase().includes('warranty') || line.toLowerCase().includes('guarantee') || line.toLowerCase().includes('profile') || line.toLowerCase().includes('account') || line.toLowerCase().includes('users') || line.toLowerCase().includes('screen') || line.toLowerCase().includes('phones') || line.toLowerCase().includes('sharing') || line.toLowerCase().includes('history') || line.toLowerCase().includes('အဆင်ပြေ') || line.includes('သက်တန်းတိုး') || line.includes('Official app') || line.includes('Username')) { 
+              if (line.toLowerCase().includes('device') || line.toLowerCase().includes('warranty') || line.toLowerCase().includes('guarantee') || line.toLowerCase().includes('profile') || line.toLowerCase().includes('account') || line.toLowerCase().includes('users') || line.toLowerCase().includes('screen') || line.toLowerCase().includes('phones') || line.toLowerCase().includes('sharing') || line.toLowerCase().includes('history') || line.toLowerCase().includes('အဆင်ပြေ') || line.includes('သက်တန်းတိုး') || line.includes('Official app') || line.includes('Username') || line.includes('Region') || line.includes('Buy specific')) { 
                   return true;
               }
               if (durationRegex.test(line)) {
@@ -1647,10 +1903,10 @@ ${firstLine}
   }
 
   /* =========================
-     FORMATTERS
-     ========================= */
+      FORMATTERS
+      ========================= */
   function formatDetails(raw) {
-    const headers = /^(Share|Private|SemiPrivate|FullPrivate|Tinder Plus Share|Login|Gift Plan & Link Plan|Gift Plan|Link Plan|Views \(NoDrop\)|Likes \(NoDrop\)|Comment - Emoji Type|Comment - Custom Type|Package Plan|Livestream Views|Livestream Likes|Livestream Share|Post Views|Positive Reactions|Negative Reactions|Custom Reactions|Premium Reactions|Members \(30Days Refill\)|Livestream Views|Comment - Impression Type|Comment - Custom Type|Video Views|Video Likes|Post Likes|Profile Followers|Page Followers|Live Stream Views|Video Views & Reels|Likes|Followers|Personal Plus \(Share\)|Personal Plus \(Private\)|Business - Invite Own Email|Business - Own|Private Own Mail|Private \(Own Mail\)|Base Service|1 Profile\(Semiprivate\)|5 Profiles\(Whole Account\)|Nitro Basic \(Key\)|Individual|Invite with email|Sharing Pro|Plan Basic|Plan Premium|HBO MAX \(ULTIMATE\) 1 Month|Private Whole Account \(1 Month\)|1 Profile|Whole Account|OwnMail Private|Individual Plan|Business Own\(Full Warranty\)|Business Plus Own\(Full Warranty\)|Business Plus Own|Normal Plan|Family Head\(Can Invite 5 email\)|Invite Private|Web Private|Pro Share|Pro Private|Lifetime Premium|Educational\(Invite\)|Individual Plan\(Private\)|Stars|Japan Region \(¥\)|US Region \(\$\)|UK Region \(£\))$/i;
+    const headers = /^(Share|Private|SemiPrivate|FullPrivate|Tinder Plus Share|Login|Gift Plan & Link Plan|Gift Plan|Link Plan|Views \(NoDrop\)|Likes \(NoDrop\)|Comment - Emoji Type|Comment - Custom Type|Package Plan|Livestream Views|Livestream Likes|Livestream Share|Post Views|Positive Reactions|Negative Reactions|Custom Reactions|Premium Reactions|Members \(30Days Refill\)|Livestream Views|Comment - Impression Type|Comment - Custom Type|Video Views|Video Likes|Post Likes|Profile Followers|Page Followers|Live Stream Views|Video Views & Reels|Likes|Followers|Personal Plus \(Share\)|Personal Plus \(Private\)|Business - Invite Own Email|Business - Own|Private Own Mail|Private \(Own Mail\)|Base Service|1 Profile\(Semiprivate\)|5 Profiles\(Whole Account\)|Nitro Basic \(Key\)|Individual|Invite with email|Sharing Pro|Plan Basic|Plan Premium|HBO MAX \(ULTIMATE\) 1 Month|Private Whole Account \(1 Month\)|1 Profile|Whole Account|OwnMail Private|Individual Plan|Business Own\(Full Warranty\)|Business Plus Own\(Full Warranty\)|Business Plus Own|Normal Plan|Family Head\(Can Invite 5 email\)|Invite Private|Web Private|Pro Share|Pro Private|Lifetime Premium|Educational\(Invite\)|Individual Plan\(Private\)|Stars|Japan Region \(¥\)|US Region \(\$\)|UK Region \(£\)|Custom Amount)/i;
     
     const vpnAlertTag = 'CAN\'T USE IN MYANMAR';
     
@@ -1721,8 +1977,8 @@ ${firstLine}
   }
 
   /* =========================
-     INITIALIZATION & EVENT LISTENERS
-     ========================= */
+      INITIALIZATION & EVENT LISTENERS
+      ========================= */
    
   dom.search.input.addEventListener('input', (e) => {
     if (dom.views.home.classList.contains('active')) {

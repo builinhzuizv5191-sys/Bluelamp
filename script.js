@@ -629,6 +629,10 @@
             { "duration": "100 Stars", price: "7,600 Kyats" }
         ]
     },
+    "Google Play Gift Card": {
+        // This is a placeholder since we use regions now
+        "Select Region": []
+    },
     // --- UPDATED GOOGLE PLAY PLANS ---
     "Google Play Japan": {
         "Japan Region (¥)": [
@@ -790,7 +794,7 @@
     "CapCut": `Share
 One device only
 ဖုန်းတလုံးပဲသုံးလို့ရပါတယ် Android & iOS
-Shareအကောင့်တေက Pro ပြုတ်တယ်ပါတယ်။
+• Sharing အကောင့်တေက Pro ပြုတ်တယ်ပါတယ်။
 Device limit ကျော်သုံးရင်တခြားလူနဲ့ Shareသုံးရတာမလို့ဖြစ်လာရင်ဘယ်သူလုပ်လဲမသိရတာမလို့ warranty 15ရက်ပဲ ပေးပါတယ်။
 (we fully renew if Pro stops)
 
@@ -896,7 +900,7 @@ Private Whole Account (1 Month)
 5 Profile` + generalDetailsBlock, 
     "Prime Video": `Share\nFull warranty • One device only\n\nPrivate\nFull warranty • Up to 3 devices` + generalDetailsBlock, 
     "Spotify": `Individual Plan(Private)
-Individual plan မို့လို့1 person 1 device ပဲသုံးသင့်ပါတယ်။ Visa Card payment နဲ့လုပ် ပေးမာပါ။ 3 Months အတွင်း full warranty ဖြစ်လို့တခုခုဖြစ်ခဲ့ရင် warranty အနေနဲ့အခုပြန်လဲ ပေးမာပါ တခါပဲလဲ ပေးမာပါ။ Setting ထဲသွားပီး account delete တာတို့တော့မပါပါဘူး။
+• Private Plan မို့လို့ 1 person 1 device ပဲသုံးသင့်ပါတယ်။ Visa Card payment နဲ့လုပ် ပေးမာပါ။ 3 Months အတွင်း full warranty ဖြစ်လို့တခုခုဖြစ်ခဲ့ရင် warranty အနေနဲ့အခုပြန်လဲ ပေးမာပါ တခါပဲလဲ ပေးမာပါ။ Setting ထဲသွားပီး account delete တာတို့တော့မပါပါဘူး။
 
 Official appမာသုံးရတာဆိုပေမဲ့တစ်လကို$11.99ပေးပီးဝယ်တာမဟုတ်လို့ Risk ကတော့ရှိပါတယ်။အဆင်ပြေတယ်ဆိုမယူပါ။
 
@@ -942,7 +946,7 @@ Including YouTube music.` + generalDetailsBlock,
     "Telegram": `Login
 • 1 Month — 21,000 Kyats
 • 1 Year — 112,000 Kyats
-Login planကကျနော်တို့ဘက်ကအကောင့်ထဲဝင်ပီး Premium ဝယ်ပေးမာပါ။2 to 3Minလောက်ကြာနိုင်ပါတယ်။
+• Login planကကျနော်တို့ဘက်ကအကောင့်ထဲဝင်ပီး Premium ဝယ်ပေးမာပါ။2 to 3Minလောက်ကြာနိုင်ပါတယ်။
 
 Gift Plan & Link Plan
 GiftPlan and Link Plan are same premium features.
@@ -987,10 +991,10 @@ Please contact admin for usage details.` + generalDetailsBlock,
     "TikTok Official": `Coinက TikTok official boostတဲ့နေရာမာ Coin တေကိုသုံးရတာပါ။အဲ့ Coin ကိုရောင်းပေးတာပါ။ Login ဝင်ပီးဝယ်ရတာပါ။ buttt email password ဘာမပေးစရာမလိုပါဘူး။` + generalDetailsBlock,
     "TikTok Non Official": `Views (NoDrop)
     No dropဆိုပေမဲ့ TikTok ကစာပို့ပီးဖျက်ချသွားရင်တာ့ပြန်မထည့်ပေးပါဘူး။ထည့်ရင်လဲအကောင့် warning ထိမာပါ။
-     
+      
     Likes (NoDrop)
     No dropဆိုပေမဲ့ TikTok ကစာပို့ပီးဖျက်ချသွားရင်တာ့ပြန်မထည့်ပေးပါဘူး။ထည့်ရင်လဲအကောင့် warning ထိမာပါ။
-     
+      
     Package Plan
     No dropဆိုပေမဲ့ TikTok ကစာပို့ပီးဖျက်ချသွားရင်တာ့ပြန်မထည့်ပေးပါဘူး။ထည့်ရင်လဲအကောင့် warning ထိမာပါ။` + generalDetailsBlock,
     "Telegram Boosting": `Post Reactions are Lifetime No-Drop. Members have a 30-day refill guarantee.` + generalDetailsBlock,
@@ -1217,12 +1221,12 @@ Acrobat Pro → edit & sign PDFs
   function showView(viewName) {
     // Hide all views first
     Object.values(dom.views).forEach(v => v.classList.remove('active'));
-      
+     
     // Add active class and ensure animation restarts by re-adding the class
     if (dom.views[viewName]) {
       dom.views[viewName].classList.add('active');
     }
-      
+     
     // Control search bar visibility based on view
     if (viewName === 'home') {
         dom.search.container.style.display = 'flex';
@@ -1239,10 +1243,10 @@ Acrobat Pro → edit & sign PDFs
       ========================= */
   function filterProducts(query) {
     query = query.toLowerCase().trim();
-      
+     
     // Show/hide the clear button
     dom.search.clearBtn.style.display = query.length > 0 ? 'block' : 'none';
-      
+     
     // Toggle the search state class on the home view
     dom.views.home.classList.toggle('is-searching', query.length > 0);
 
@@ -1253,7 +1257,7 @@ Acrobat Pro → edit & sign PDFs
     }
 
     let matchCount = 0;
-      
+     
     productCards.forEach(card => {
         const name = card.dataset.productName.toLowerCase();
         
@@ -1323,7 +1327,7 @@ Acrobat Pro → edit & sign PDFs
         renderRegionalSelector(productName, regionalProducts[productName]);
         return;
     }
-      
+     
     const devices = deviceSupport[productName] || [];
     const deviceIconsHtml = devices.length > 0 ? `
         <div class="supported-devices">
@@ -1614,7 +1618,7 @@ Share plan မို့လို့ 1 device ပဲသုံးလို့ရ�
               filteredNotes = [durationLine].concat(generalNote.split('\n').map(l => l.trim()));
 
           } else if (item.section === 'Login') {
-              const loginNote = 'Login planကကျနော်တို့ဘက်ကအကောင့်ထဲဝင်ပီး Premium ဝယ်ပေးမာပါ။2 to 3Minလောက်ကြာနိုင်ပါတယ်။';
+              const loginNote = '• Login planကကျနော်တို့ဘက်ကအကောင့်ထဲဝင်ပီး Premium ဝယ်ပေးမာပါ။2 to 3Minလောက်ကြာနိုင်ပါတယ်။';
 
               filteredNotes = [durationLine, loginNote];
           }
@@ -1913,7 +1917,7 @@ ${firstLine}
       FORMATTERS
       ========================= */
   function formatDetails(raw) {
-    const headers = /^(Share|Private|SemiPrivate|FullPrivate|Tinder Plus Share|Login|Gift Plan & Link Plan|Gift Plan|Link Plan|Views \(NoDrop\)|Likes \(NoDrop\)|Comment - Emoji Type|Comment - Custom Type|Package Plan|Livestream Views|Livestream Likes|Livestream Share|Post Views|Positive Reactions|Negative Reactions|Custom Reactions|Premium Reactions|Members \(30Days Refill\)|Livestream Views|Comment - Impression Type|Comment - Custom Type|Video Views|Video Likes|Post Likes|Profile Followers|Page Followers|Live Stream Views|Video Views & Reels|Likes|Followers|Personal Plus \(Share\)|Personal Plus \(Private\)|Business - Invite Own Email|Business - Own|Private Own Mail|Private \(Own Mail\)|Base Service|1 Profile\(Semiprivate\)|5 Profiles\(Whole Account\)|Nitro Basic \(Key\)|Individual|Invite with email|Sharing Pro|Plan Basic|Plan Premium|HBO MAX \(ULTIMATE\) 1 Month|Private Whole Account \(1 Month\)|1 Profile|Whole Account|OwnMail Private|Individual Plan|Business Own\(Full Warranty\)|Business Plus Own\(Full Warranty\)|Business Plus Own|Normal Plan|Family Head\(Can Invite 5 email\)|Invite Private|Web Private|Pro Share|Pro Private|Lifetime Premium|Educational\(Invite\)|Individual Plan\(Private\)|Stars|Japan Region \(¥\)|US Region \(\$\)|UK Region \(£\)|Custom Amount)/i;
+    const headers = /^(Share|Private|SemiPrivate|FullPrivate|Tinder Plus Share|Login|Gift Plan & Link Plan|Gift Plan|Link Plan|Views \(NoDrop\)|Likes \(NoDrop\)|Comment - Emoji Type|Comment - Custom Type|Package Plan|Livestream Views|Livestream Likes|Livestream Share|Post Views|Positive Reactions|Negative Reactions|Custom Reactions|Premium Reactions|Members \(30Days Refill\)|Livestream Views|Comment - Impression Type|Comment - Custom Type|Video Views|Video Likes|Post Likes|Profile Followers|Page Followers|Live Stream Views|Video Views & Reels|Likes|Followers|Personal Plus \(Share\)|Personal Plus \(Private\)|Business - Invite Own Email|Business - Own|Private Own Mail|Private \(Own Mail\)|Base Service|1 Profile\(Semiprivate\)|5 Profiles\(Whole Account\)|Nitro Basic \(Key\)|Individual|Invite with email|Sharing Pro|Plan Basic|Plan Premium|HBO MAX \(ULTIMATE\) 1 Month|Private Whole Account \(1 Month\)|1 Profile|Whole Account|OwnMail Private|Individual Plan|Business Own\(Full Warranty\)|Business Plus Own\(Full Warranty\)|Business Plus Own|Normal Plan|Family Head\(Can Invite 5 email\)|Invite Private|Web Private|Pro Share|Pro Private|Lifetime Premium|Educational\(Invite\)|Individual Plan\(Private\)|Stars|Japan Region \(¥\)|US Region \(\$\)|UK Region \(£\)|Custom Amount)/i; 
     
     const vpnAlertTag = 'CAN\'T USE IN MYANMAR';
     
@@ -2043,7 +2047,7 @@ ${firstLine}
     if (moreDetailsBtn) {
       moreDetailsBtn.classList.add('tap-anim');
       setTimeout(() => moreDetailsBtn.classList.remove('tap-anim'), 120);
-        
+       
       const productName = moreDetailsBtn.dataset.productName;
       const raw = moreDetailsByProduct[productName] || "More details coming soon.";
       dom.explain.text.innerHTML = formatDetails(raw);

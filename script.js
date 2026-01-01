@@ -289,7 +289,7 @@
     "Microsoft 365": { "Individual": [{ duration: "1 Month", price: "Out of stock" }], "Invite with email": [{ duration: "1 Month", price: "5,000 Kyats" }], "Family Head(Can Invite 5 email)": [{ duration: "1 Month", price: "12,000 Kyats" }] }, 
     "Netflix": { 
       "1 Profile": [ 
-        { duration: "(Semiprivate 2 devices 1Month)", price: "12,500 Kyats" }
+        { duration: "(Semiprivate 2 devices 1Month)", price: "15,000 Kyats" }
       ], 
       "Whole Account": [ 
         { duration: "5 Profiles (1 Month)", price: "45,000 Kyats" } 
@@ -306,7 +306,7 @@
     }, 
     "HBO Max": { 
         "HBO MAX (ULTIMATE) 1 Month": [ 
-            { duration: "1P 2U", price: "7,000 Kyats" }, 
+            { duration: "1P 2U", price: "8,000 Kyats" }, 
             { duration: "Semiprivate", price: "12,000 Kyats" } 
         ],
         "Private Whole Account (1 Month)": [ 
@@ -368,7 +368,12 @@
             { "duration": "1 Month", "price": "8,599 Kyats" }
         ] 
     }, 
-    "YouTube": { "Private": [{ "duration": "1 Month", "price": "5,000 Kyats" }, { "duration": "3 Months", "price": "15,000 Kyats" }] }, 
+    "YouTube": { 
+      "Private": [
+        { "duration": "1 Month", "price": "6,000 Kyats" }, 
+        { "duration": "3 Months", "price": "16,500 Kyats" } 
+      ] 
+    }, 
     "Tinder": { "Tinder Plus Share": [{ "duration": "6 Months", "price": "Out of stock" }] }, 
     "Telegram": { 
       "Login": [
@@ -1626,8 +1631,12 @@ Share plan မို့လို့ 1 device ပဲသုံးလို့ရ�
           // STRICT filter for HBO Max
           if (item.duration === "1P 2U") { // Check duration, not section
               filteredNotes = filteredNotes.filter(line => line.includes("1P 2U") || line.includes("1 Profile / 2 Users"));
+              // --- INJECTED BURMESE NOTE (1P 2U) ---
+              filteredNotes.push("ဒါက ကိုယ်ကတခြားတယောက်နဲ့သုံးရတာကိုပြောတာပါ။");
           } else if (item.duration === "Semiprivate") { // Check duration
                filteredNotes = filteredNotes.filter(line => line.includes("Semiprivate") || line.includes("1 Profile / Semi-Private"));
+               // --- INJECTED BURMESE NOTE (Semiprivate) ---
+               filteredNotes.push("ဒါကကိုယ့် device နှစ်ခုသုံးလို့ရပါတယ်။");
           } else if (item.section.includes("Private Whole Account")) {
                filteredNotes = filteredNotes.filter(line => line.includes("Private") || line.includes("5 Profile"));
           }

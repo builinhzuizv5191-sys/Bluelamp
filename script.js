@@ -156,7 +156,7 @@
     "Crunchyroll": "https://ik.imagekit.io/dkdlgynlu/Wattpad%20_A70E5F8_.png",
     "Telegram Star": "https://ik.imagekit.io/dkdlgynlu/Wattpad%20_AEF396E_.png",
     "Google Play Gift Card": "https://ik.imagekit.io/dkdlgynlu/Wattpad%20_E847DAF_.png?updatedAt=1767023159606",
-    // NEW REGION FLAGS
+    // GOOGLE PLAY REGIONS
     "Google Play Turkey": "https://ik.imagekit.io/dkdlgynlu/New%20Project%207%20_C5A9149_.png",
     "Google Play Indonesia": "https://ik.imagekit.io/dkdlgynlu/New%20Project%207%20_9D4756B_.png",
     "Google Play Brazil": "https://ik.imagekit.io/dkdlgynlu/New%20Project%207%20_294445A_.png",
@@ -172,7 +172,17 @@
     "Google Play Poland": "https://ik.imagekit.io/dkdlgynlu/New%20Project%207%20_CAAF62D_.png?updatedAt=1767116441268",
     "Google Play Japan": "https://ik.imagekit.io/dkdlgynlu/New%20Project%207%20_42752FB_.png",
     "Google Play US": "https://ik.imagekit.io/dkdlgynlu/New%20Project%207%20_3BDD96E_.png",
-    "Google Play UK": "https://ik.imagekit.io/dkdlgynlu/New%20Project%207%20_BD37C1B_.png"
+    "Google Play UK": "https://ik.imagekit.io/dkdlgynlu/New%20Project%207%20_BD37C1B_.png",
+    // STEAM IMAGES
+    "Steam Gift Card": "https://ik.imagekit.io/dkdlgynlu/Wattpad%20_48A1713_.png?updatedAt=1767864363832",
+    "Steam Argentina": "https://ik.imagekit.io/dkdlgynlu/New%20Project%207%20_67858F0_.png?updatedAt=1767864363692",
+    "Steam Hong Kong": "https://ik.imagekit.io/dkdlgynlu/New%20Project%207%20_CC0AB44_.png?updatedAt=1767864363831",
+    "Steam Thailand": "https://ik.imagekit.io/dkdlgynlu/New%20Project%207%20_BA9D06B_.png?updatedAt=1767864363754",
+    "Steam Philippines": "https://ik.imagekit.io/dkdlgynlu/New%20Project%207%20_EE0C5A0_.png?updatedAt=1767864363682",
+    "Steam Malaysia": "https://ik.imagekit.io/dkdlgynlu/New%20Project%207%20_DB2E914_.png?updatedAt=1767864363745",
+    "Steam Singapore": "https://ik.imagekit.io/dkdlgynlu/New%20Project%207%20_ACECCF0_.png?updatedAt=1767864363623",
+    "Steam Taiwan": "https://ik.imagekit.io/dkdlgynlu/New%20Project%207%20_FA03D13_.png?updatedAt=1767864363581",
+    "Steam Vietnam": "https://ik.imagekit.io/dkdlgynlu/New%20Project%207%20_1095A5F_.png?updatedAt=1767864363591"
   };
 
   const regionalProducts = {
@@ -193,7 +203,24 @@
           { name: "Google Play US", img: imageFor["Google Play US"] },
           { name: "Google Play UK", img: imageFor["Google Play UK"] },
           { name: "Google Play Japan", img: imageFor["Google Play Japan"] }
-      ]
+      ],
+      "Steam Gift Card": [
+        { name: "Steam United States", img: imageFor["Google Play US"] },
+        { name: "Steam Turkey", img: imageFor["Google Play Turkey"] },
+        { name: "Steam Argentina", img: imageFor["Steam Argentina"] },
+        { name: "Steam Hong Kong", img: imageFor["Steam Hong Kong"] },
+        { name: "Steam India", img: imageFor["Google Play India"] },
+        { name: "Steam Brazil", img: imageFor["Google Play Brazil"] },
+        { name: "Steam Europe", img: imageFor["Google Play Germany"] }, 
+        { name: "Steam Thailand", img: imageFor["Steam Thailand"] },
+        { name: "Steam Indonesia", img: imageFor["Google Play Indonesia"] },
+        { name: "Steam Philippines", img: imageFor["Steam Philippines"] },
+        { name: "Steam Malaysia", img: imageFor["Steam Malaysia"] },
+        { name: "Steam Singapore", img: imageFor["Steam Singapore"] },
+        { name: "Steam United Kingdom", img: imageFor["Google Play UK"] },
+        { name: "Steam Taiwan", img: imageFor["Steam Taiwan"] },
+        { name: "Steam Vietnam", img: imageFor["Steam Vietnam"] }
+    ]
   };
 
   // --- CONFIG FOR CUSTOM AMOUNT CALCULATOR ---
@@ -420,8 +447,8 @@
             { duration: "1 Month", price: "25,000 Kyats" }
         ]
     },
-    "PlaySafeCard": { "Voucher": [{ duration: "1 Card", price: "3,000 Kyats" }] }, 
-    "TikTok Official": {
+    "PlaySafeCard": { "Voucher": [{ duration: "1 Card", price: "3,000 Kyats" }] },
+"TikTok Official": {
       "Login method": [
         { "duration": "100 Coin", "price": "5,300 Kyats" }
       ]
@@ -638,6 +665,23 @@
         // This is a placeholder since we use regions now
         "Select Region": []
     },
+    // --- STEAM REGIONS ---
+    "Steam Gift Card": { "Select Region": [] },
+    "Steam United States": { "United States (USD)": [] },
+    "Steam Turkey": { "Turkey (TRY)": [] },
+    "Steam Argentina": { "Argentina (USD)": [] },
+    "Steam Hong Kong": { "Hong Kong (HKD)": [] },
+    "Steam India": { "India (INR)": [] },
+    "Steam Brazil": { "Brazil (BRL)": [] },
+    "Steam Europe": { "Europe (EUR)": [] },
+    "Steam Thailand": { "Thailand (THB)": [] },
+    "Steam Indonesia": { "Indonesia (IDR)": [] },
+    "Steam Philippines": { "Philippines (PHP)": [] },
+    "Steam Malaysia": { "Malaysia (MYR)": [] },
+    "Steam Singapore": { "Singapore (SGD)": [] },
+    "Steam United Kingdom": { "United Kingdom (GBP)": [] },
+    "Steam Taiwan": { "Taiwan (TWD)": [] },
+    "Steam Vietnam": { "Vietnam (VND)": [] },
     // --- UPDATED GOOGLE PLAY PLANS ---
     "Google Play Japan": {
         "Japan Region (¥)": [
@@ -1048,7 +1092,9 @@ Acrobat Pro → edit & sign PDFs
     "Google Play Switzerland": "Region: Switzerland (CHF)\nBuy specific amounts or custom amount." + generalDetailsBlock,
     "Google Play Canada": "Region: Canada (CAD)\nBuy specific amounts." + generalDetailsBlock,
     "Google Play UAE": "Region: UAE (AED)\nCustom amount only." + generalDetailsBlock,
-    "Google Play Poland": "Region: Poland (PLN)\nBuy specific amounts." + generalDetailsBlock
+    "Google Play Poland": "Region: Poland (PLN)\nBuy specific amounts." + generalDetailsBlock,
+    // STEAM DEFAULT
+    "Steam Gift Card": "Region: Global/Specific\nSelect your region to view available Steam Wallet Code amounts." + generalDetailsBlock
   };
    
   const deviceSupport = { 
@@ -1108,24 +1154,41 @@ Acrobat Pro → edit & sign PDFs
     "HMA VPN": ["pc", "android", "ios"],
     "Crunchyroll": ["android", "ios", "pc"],
     "Telegram Star": ["android", "ios", "pc"],
-    "Google Play Gift Card": ["android", "ios", "pc"],
-    // ADD NEW REGIONS SUPPORT
-    "Google Play Turkey": ["android", "ios", "pc"],
-    "Google Play Indonesia": ["android", "ios", "pc"],
-    "Google Play Brazil": ["android", "ios", "pc"],
-    "Google Play South Korea": ["android", "ios", "pc"],
-    "Google Play India": ["android", "ios", "pc"],
-    "Google Play Australia": ["android", "ios", "pc"],
-    "Google Play Germany": ["android", "ios", "pc"],
-    "Google Play France": ["android", "ios", "pc"],
-    "Google Play Italy": ["android", "ios", "pc"],
-    "Google Play Switzerland": ["android", "ios", "pc"],
-    "Google Play Canada": ["android", "ios", "pc"],
-    "Google Play UAE": ["android", "ios", "pc"],
-    "Google Play Poland": ["android", "ios", "pc"],
-    "Google Play Japan": ["android", "ios", "pc"],
-    "Google Play US": ["android", "ios", "pc"],
-    "Google Play UK": ["android", "ios", "pc"]
+    "Google Play Gift Card": [],
+    // GOOGLE PLAY REGIONS (EMPTY = NO ICONS)
+    "Google Play Turkey": [],
+    "Google Play Indonesia": [],
+    "Google Play Brazil": [],
+    "Google Play South Korea": [],
+    "Google Play India": [],
+    "Google Play Australia": [],
+    "Google Play Germany": [],
+    "Google Play France": [],
+    "Google Play Italy": [],
+    "Google Play Switzerland": [],
+    "Google Play Canada": [],
+    "Google Play UAE": [],
+    "Google Play Poland": [],
+    "Google Play Japan": [],
+    "Google Play US": [],
+    "Google Play UK": [],
+    // STEAM REGIONS (EMPTY = NO ICONS)
+    "Steam Gift Card": [],
+    "Steam United States": [],
+    "Steam Turkey": [],
+    "Steam Argentina": [],
+    "Steam Hong Kong": [],
+    "Steam India": [],
+    "Steam Brazil": [],
+    "Steam Europe": [],
+    "Steam Thailand": [],
+    "Steam Indonesia": [],
+    "Steam Philippines": [],
+    "Steam Malaysia": [],
+    "Steam Singapore": [],
+    "Steam United Kingdom": [],
+    "Steam Taiwan": [],
+    "Steam Vietnam": []
   };
 
   const deviceIconMap = { "android": '<i class="fa-brands fa-android"></i>', "ios": '<i class="fa-brands fa-apple"></i>', "pc": '<i class="fa-solid fa-desktop"></i>', "tv": '<i class="fa-solid fa-tv"></i>' };
@@ -2051,6 +2114,11 @@ ${firstLine}
       const currentTitle = document.querySelector('.hero-title').innerText;
       if (currentTitle.includes('Google Play') && !currentTitle.includes('Gift Card')) {
           renderRegionalSelector("Google Play Gift Card", regionalProducts["Google Play Gift Card"]);
+          return;
+      }
+      // If inside Steam region sub-menu
+      if (currentTitle.includes('Steam') && !currentTitle.includes('Gift Card')) {
+          renderRegionalSelector("Steam Gift Card", regionalProducts["Steam Gift Card"]);
           return;
       }
       

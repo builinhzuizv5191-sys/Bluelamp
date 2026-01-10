@@ -447,8 +447,8 @@
             { duration: "1 Month", price: "25,000 Kyats" }
         ]
     },
-    "PlaySafeCard": { "Voucher": [{ duration: "1 Card", price: "3,000 Kyats" }] },
-"TikTok Official": {
+    "PlaySafeCard": { "Voucher": [{ duration: "1 Card", price: "3,000 Kyats" }] }, 
+    "TikTok Official": {
       "Login method": [
         { "duration": "100 Coin", "price": "5,300 Kyats" }
       ]
@@ -496,7 +496,7 @@
       ],
       "Negative Reactions": [
         { "duration": "1,000 Reactions", price: "500 Kyats" }, 
-        { "duration": "10,000 Reactions", price: "3,500 Kyats" }
+        { "duration": "10,000 Reactions", price: "500 Kyats" }
       ],
       "Custom Reactions": [
         { "duration": "1,000 Reactions", price: "500 Kyats" }
@@ -1500,9 +1500,15 @@ Acrobat Pro → edit & sign PDFs
 
     // --- FIX: Override Image Logic ---
     let heroImageSrc = imageFor[productName];
-    // If opening a Google Play specific region (e.g. Google Play India), force the base image
+    
+    // 1. If opening a Google Play specific region, force the Google Play Gift Card image
     if (productName.startsWith("Google Play")) {
         heroImageSrc = imageFor["Google Play Gift Card"];
+    }
+    
+    // 2. If opening a Steam specific region, ALWAYS use the Steam Gift Card image
+    if (productName.startsWith("Steam")) {
+        heroImageSrc = imageFor["Steam Gift Card"];
     }
 
     const pageHTML = `

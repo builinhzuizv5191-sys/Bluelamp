@@ -2124,6 +2124,11 @@
           }
         } else if (productName === 'Spotify') {
           title += ' <span style="background:#39ff14; color:#000; padding:2px 6px; border-radius:4px; font-size:11px; margin-left:8px; font-weight:900; box-shadow:0 0 5px #39ff14;">VPNမလို</span>';
+        } else if (productName === 'Gemini Veo 3') {
+          if (sectionName.includes('OwnMail')) {
+            title = 'OwnMail Invite';
+            style = 'style="color: #ffeb3b;"'; // <--- Yellow Text Applied Here
+          }
         }
         return `<div class="plan-box"><div class="plan-title" ${style}>${title}</div><div class="plan-rows">${rows}</div></div>`;
       }).join("");
@@ -2272,10 +2277,10 @@ Device limit ကျော်သုံးရင်တခြားလူနဲ့ 
 (we fully renew if Pro stops)
 
 Private
-2 devices max. Full warranty for the entire plan duration.
+2 to 3 devices. Full warranty for the entire plan duration.
 
 Private Own Mail
-2 devices max. Full warranty for the entire plan duration.` + generalDetailsBlock,
+2 to 3 devices. Full warranty for the entire plan duration.` + generalDetailsBlock,
     "AlightMotion": `Share
 Full warranty for full duration
 Covers premium subscription errors

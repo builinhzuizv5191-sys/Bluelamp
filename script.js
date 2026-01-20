@@ -133,13 +133,17 @@
     "iCloud": "https://ik.imagekit.io/dkdlgynlu/New-Project-52-30-EDAEA.png",
     "ChatGPT Plus": "https://ik.imagekit.io/dkdlgynlu/New-Project-52-6-CB3-A91-1.png",
     "Gemini Veo 3": "https://ik.imagekit.io/dkdlgynlu/New-Project-52-906-D5-F0.png",
+    "Flow AI": "https://ik.imagekit.io/dkdlgynlu/Wattpad%20_A4B3FC6_.png?updatedAt=1768837724112",
+    "NotebookLM": "https://ik.imagekit.io/dkdlgynlu/Wattpad%20_363313A_.png?updatedAt=1768837724010",
     "Grammarly AI": "https://ik.imagekit.io/dkdlgynlu/New-Project-52-087-AC47.png",
     "Zoom": "https://ik.imagekit.io/dkdlgynlu/New-Project-52-5270010.png",
     "YouTube": "https://ik.imagekit.io/dkdlgynlu/New-Project-52-2-DCD6-D5.png",
     "Tinder": "https://ik.imagekit.io/dkdlgynlu/New-Project-52-DCDE0-B9.png",
-    "Telegram": "https://ik.imagekit.io/dkdlgynlu/New-Project-52-A162-FC1.png",
+    "Telegram Premium": "https://ik.imagekit.io/dkdlgynlu/New-Project-52-A162-FC1.png",
     "Discord": "https://ik.imagekit.io/dkdlgynlu/New-Project-52-D060367.png",
     "Perplexity Ai": "https://ik.imagekit.io/dkdlgynlu/New-Project-52-F59-EE5-A.png",
+    "Flow AI": "https://ik.imagekit.io/dkdlgynlu/Wattpad%20_A4B3FC6_.png?updatedAt=1768837724112",
+    "NotebookLM": "https://ik.imagekit.io/dkdlgynlu/Wattpad%20_363313A_.png?updatedAt=1768837724010",
     "GAGAOOLALA": "https://ik.imagekit.io/dkdlgynlu/New-Project-52-B18851-D.png",
     "BSTATION": "https://ik.imagekit.io/dkdlgynlu/New-Project-52-631-CC84.png",
     "INSHOT": "https://ik.imagekit.io/dkdlgynlu/Picsart-25-10-16-13-54-58-884.png",
@@ -164,6 +168,23 @@
     "Crunchyroll": "https://ik.imagekit.io/dkdlgynlu/Wattpad%20_A70E5F8_.png",
     "Telegram Star": "https://ik.imagekit.io/dkdlgynlu/Wattpad%20_AEF396E_.png",
     "Google Play Gift Card": "https://ik.imagekit.io/dkdlgynlu/Wattpad%20_E847DAF_.png?updatedAt=1767023159606",
+    "Adobe Premiere Pro": "https://ik.imagekit.io/dkdlgynlu/Wattpad%20_C6AC5BD_.png?updatedAt=1768837723586",
+    "Adobe Illustrator": "https://ik.imagekit.io/dkdlgynlu/Wattpad%20_C1803E2_.png?updatedAt=1768837723546",
+    "Adobe After Effects": "https://ik.imagekit.io/dkdlgynlu/Wattpad%20_EDDA3E8_.png?updatedAt=1768837723640",
+    "Adobe Acrobat Pro": "https://ik.imagekit.io/dkdlgynlu/Wattpad%20_2F8B05A_.png?updatedAt=1768837722226",
+    "Adobe InDesign": "https://ik.imagekit.io/dkdlgynlu/Wattpad%20_B177A1B_.png?updatedAt=1768837723406",
+    "Adobe Audition": "https://ik.imagekit.io/dkdlgynlu/Wattpad%20_C04DA03_.png?updatedAt=1768837723617",
+    "Adobe Animate": "https://ik.imagekit.io/dkdlgynlu/Wattpad%20_DE488C6_.png?updatedAt=1768837723581",
+    "Adobe Dreamweaver": "https://ik.imagekit.io/dkdlgynlu/Wattpad%20_A940617_.png?updatedAt=1768837723688",
+    "Adobe Fresco": "https://ik.imagekit.io/dkdlgynlu/Wattpad%20_551D86A_.png?updatedAt=1768837723327",
+    "Adobe Media Encoder": "https://ik.imagekit.io/dkdlgynlu/Wattpad%20_64C8CFC_.png?updatedAt=1768837723673",
+    "Adobe Character Animator": "https://ik.imagekit.io/dkdlgynlu/Wattpad%20_0A8896F_.png?updatedAt=1768837723721",
+    "Adobe Firefly": "https://ik.imagekit.io/dkdlgynlu/Wattpad%20_88B2A40_.png?updatedAt=1768837723447",
+    "Adobe Bridge": "https://ik.imagekit.io/dkdlgynlu/ICON%20_A903907_.png?updatedAt=1768903201168",
+"Adobe Express": "https://ik.imagekit.io/dkdlgynlu/Wattpad%20_F486975_.png?updatedAt=1768837723481",
+"Adobe Capture": "https://ik.imagekit.io/dkdlgynlu/Wattpad%20_2256076_.png?updatedAt=1768837723698",
+"Adobe Aero": "https://ik.imagekit.io/dkdlgynlu/ICON%20_499A5C1_.png?updatedAt=1768903451221",
+"Adobe Fonts": "https://ik.imagekit.io/dkdlgynlu/Wattpad%20_7EAC5B9_.png?updatedAt=1768837723659",
     // GOOGLE PLAY REGIONS
     "Google Play Turkey": "https://ik.imagekit.io/dkdlgynlu/New%20Project%207%20_C5A9149_.png",
     "Google Play Indonesia": "https://ik.imagekit.io/dkdlgynlu/New%20Project%207%20_9D4756B_.png",
@@ -184,13 +205,13 @@
     // STEAM IMAGES
     "Steam Gift Card": "https://ik.imagekit.io/dkdlgynlu/Wattpad%20_48A1713_.png?updatedAt=1767864363832",
     "Steam Argentina": "https://ik.imagekit.io/dkdlgynlu/New%20Project%207%20_67858F0_.png?updatedAt=1767864363692",
-    "Steam Hong Kong": "https://ik.imagekit.io/dkdlgynlu/New%20Project%207%20_FA03D13_.png?updatedAt=1767864363581", // Corrected
-    "Steam Thailand": "https://ik.imagekit.io/dkdlgynlu/New%20Project%207%20_CC0AB44_.png?updatedAt=1767864363831", // Corrected
-    "Steam Philippines": "https://ik.imagekit.io/dkdlgynlu/New%20Project%207%20_BA9D06B_.png?updatedAt=1767864363754", // Corrected
+    "Steam Hong Kong": "https://ik.imagekit.io/dkdlgynlu/New%20Project%207%20_FA03D13_.png?updatedAt=1767864363581",
+    "Steam Thailand": "https://ik.imagekit.io/dkdlgynlu/New%20Project%207%20_CC0AB44_.png?updatedAt=1767864363831",
+    "Steam Philippines": "https://ik.imagekit.io/dkdlgynlu/New%20Project%207%20_BA9D06B_.png?updatedAt=1767864363754",
     "Steam Malaysia": "https://ik.imagekit.io/dkdlgynlu/New%20Project%207%20_DB2E914_.png?updatedAt=1767864363745",
-    "Steam Singapore": "https://ik.imagekit.io/dkdlgynlu/New%20Project%207%20_EE0C5A0_.png?updatedAt=1767864363682", // Corrected
-    "Steam Taiwan": "https://ik.imagekit.io/dkdlgynlu/New%20Project%207%20_1095A5F_.png?updatedAt=1767864363591", // Corrected
-    "Steam Vietnam": "https://ik.imagekit.io/dkdlgynlu/New%20Project%207%20_ACECCF0_.png?updatedAt=1767864363623" // Corrected
+    "Steam Singapore": "https://ik.imagekit.io/dkdlgynlu/New%20Project%207%20_EE0C5A0_.png?updatedAt=1767864363682",
+    "Steam Taiwan": "https://ik.imagekit.io/dkdlgynlu/New%20Project%207%20_1095A5F_.png?updatedAt=1767864363591",
+    "Steam Vietnam": "https://ik.imagekit.io/dkdlgynlu/New%20Project%207%20_ACECCF0_.png?updatedAt=1767864363623"
   };
 
   const regionalProducts = {
@@ -243,9 +264,7 @@
       name: "Google Play Japan",
       img: imageFor["Google Play Japan"]
     }],
-    "Steam Gift Card": [
-      // ROW 1
-      {
+    "Steam Gift Card": [{
         name: "Steam United States",
         img: imageFor["Google Play US"]
       }, {
@@ -255,7 +274,6 @@
         name: "Steam Argentina",
         img: imageFor["Steam Argentina"]
       },
-      // ROW 2
       {
         name: "Steam Thailand",
         img: imageFor["Steam Thailand"]
@@ -266,7 +284,6 @@
         name: "Steam Brazil",
         img: imageFor["Google Play Brazil"]
       },
-      // ROW 3
       {
         name: "Steam Europe",
         img: imageFor["Google Play Germany"]
@@ -277,7 +294,6 @@
         name: "Steam Indonesia",
         img: imageFor["Google Play Indonesia"]
       },
-      // ROW 4
       {
         name: "Steam Singapore",
         img: imageFor["Steam Singapore"]
@@ -288,7 +304,6 @@
         name: "Steam Vietnam",
         img: imageFor["Steam Vietnam"]
       },
-      // ROW 5
       {
         name: "Steam United Kingdom",
         img: imageFor["Google Play UK"]
@@ -302,7 +317,6 @@
     ]
   };
 
-  // --- CONFIG FOR CUSTOM AMOUNT CALCULATOR ---
   const customConfigs = {
     "Google Play US": {
       min: 5,
@@ -675,7 +689,20 @@
         "duration": "1 Year",
         "price": "15,000 Kyats"
       }]
-    },
+    },"Flow AI": {
+  "OwnMail Invite": [{
+    "duration": "1 Year",
+    "price": "15,000 Kyats"
+  }]
+},
+
+"NotebookLM": {
+  "OwnMail Invite": [{
+    "duration": "1 Year",
+    "price": "15,000 Kyats"
+  }]
+},
+
     "Grammarly AI": {
       "Share": [{
         "duration": "1 Month",
@@ -707,7 +734,7 @@
         "price": "Out of stock"
       }]
     },
-    "Telegram": {
+    "Telegram Premium": {
       "Login": [{
         "duration": "1 Month",
         "price": "21,000 Kyats"
@@ -1126,6 +1153,10 @@
       "Share": [{
         "duration": "1 Year",
         "price": "10,599 Kyats"
+      }],
+      "App&Web Private": [{
+        "duration": "4 Months",
+        "price": "20,000 Kyats"
       }]
     },
     "Wattpad": {
@@ -1147,6 +1178,10 @@
       "Web Private": [{
         "duration": "12 Months",
         "price": "12,000 Kyats"
+      }],
+      "App&Web Private": [{
+        "duration": "4 Months",
+        "price": "20,000 Kyats"
       }]
     },
     "Adobe Creative Cloud": {
@@ -1159,6 +1194,34 @@
         "price": "25,000 Kyats"
       }]
     },
+    "Adobe Premiere Pro": { "Private": [{ "duration": "4 Months", "price": "20,000 Kyats" }] },
+    "Adobe Illustrator": { "Private": [{ "duration": "4 Months", "price": "20,000 Kyats" }] },
+    "Adobe After Effects": { "Private": [{ "duration": "4 Months", "price": "20,000 Kyats" }] },
+    "Adobe Acrobat Pro": { "Private": [{ "duration": "4 Months", "price": "20,000 Kyats" }] },
+    "Adobe InDesign": { "Private": [{ "duration": "4 Months", "price": "20,000 Kyats" }] },
+    "Adobe Audition": { "Private": [{ "duration": "4 Months", "price": "20,000 Kyats" }] },
+    "Adobe Animate": { "Private": [{ "duration": "4 Months", "price": "20,000 Kyats" }] },
+    "Adobe Dreamweaver": { "Private": [{ "duration": "4 Months", "price": "20,000 Kyats" }] },
+    "Adobe Fresco": { "Private": [{ "duration": "4 Months", "price": "20,000 Kyats" }] },
+    "Adobe Media Encoder": { "Private": [{ "duration": "4 Months", "price": "20,000 Kyats" }] },
+    "Adobe Character Animator": { "Private": [{ "duration": "4 Months", "price": "20,000 Kyats" }] },
+    "Adobe Firefly": { "Private": [{ "duration": "4 Months", "price": "20,000 Kyats" }] },
+   "Adobe Bridge": {
+  "Private": [{ "duration": "4 Months", "price": "20,000 Kyats" }]
+},
+"Adobe Express": {
+  "Private": [{ "duration": "4 Months", "price": "20,000 Kyats" }]
+},
+"Adobe Capture": {
+  "Private": [{ "duration": "4 Months", "price": "20,000 Kyats" }]
+},
+"Adobe Aero": {
+  "Private": [{ "duration": "4 Months", "price": "20,000 Kyats" }]
+},
+"Adobe Fonts": {
+  "Private": [{ "duration": "4 Months", "price": "20,000 Kyats" }]
+},
+
     "HMA VPN": {
       "Private": [{
         "duration": "1 Month",
@@ -1435,17 +1498,23 @@
         "duration": "100 TWD",
         "price": "16,150 Kyats"
       }, {
-        "duration": "150 TWD", "price": "24,450 Kyats"
+        "duration": "150 TWD",
+        "price": "24,450 Kyats"
       }, {
-        "duration": "200 TWD", "price": "32,200 Kyats"
+        "duration": "200 TWD",
+        "price": "32,200 Kyats"
       }, {
-        "duration": "300 TWD", "price": "49,000 Kyats"
+        "duration": "300 TWD",
+        "price": "49,000 Kyats"
       }, {
-        "duration": "400 TWD", "price": "65,250 Kyats"
+        "duration": "400 TWD",
+        "price": "65,250 Kyats"
       }, {
-        "duration": "800 TWD", "price": "129,700 Kyats"
+        "duration": "800 TWD",
+        "price": "129,700 Kyats"
       }, {
-        "duration": "1000 TWD", "price": "161,000 Kyats"
+        "duration": "1000 TWD",
+        "price": "161,000 Kyats"
       }]
     },
     // GOOGLE PLAY
@@ -1708,7 +1777,6 @@
       "UAE Region (AED)": []
     }
   };
-
   const deviceSupport = {
     "CapCut": ["android", "ios", "pc"],
     "AlightMotion": ["android", "ios"],
@@ -1738,10 +1806,12 @@
     "ChatGPT Plus": ["android", "ios", "pc"],
     "Gemini Veo 3": ["android", "ios", "pc"],
     "Grammarly AI": ["pc", "android", "ios"],
+    "Flow AI": ["android", "ios", "pc"],
+    "NotebookLM": ["android", "ios", "pc"],
     "Zoom": ["pc", "android", "ios"],
     "YouTube": ["pc", "android", "ios", "tv"],
     "Tinder": ["android", "ios"],
-    "Telegram": ["android", "ios", "pc"],
+    "Telegram Premium": ["android", "ios", "pc"],
     "Discord": ["android", "ios", "pc"],
     "Perplexity Ai": ["android", "ios", "pc"],
     "GAGAOOLALA": ["android", "ios", "pc", "tv"],
@@ -1763,6 +1833,23 @@
     "Wattpad": ["android", "ios", "pc"],
     "Photoshop": ["pc"],
     "Adobe Creative Cloud": ["pc", "android", "ios"],
+    "Adobe Premiere Pro": ["pc"],
+    "Adobe Illustrator": ["pc", "ios"],
+    "Adobe After Effects": ["pc"],
+    "Adobe Acrobat Pro": ["pc", "android", "ios"],
+    "Adobe InDesign": ["pc"],
+    "Adobe Audition": ["pc"],
+    "Adobe Animate": ["pc"],
+    "Adobe Dreamweaver": ["pc"],
+    "Adobe Fresco": ["ios", "pc"],
+    "Adobe Media Encoder": ["pc"],
+    "Adobe Character Animator": ["pc"],
+    "Adobe Firefly": ["pc", "android", "ios"],
+    "Adobe Bridge": ["pc"],
+"Adobe Express": ["android", "ios", "pc"],
+"Adobe Capture": ["android", "ios"],
+"Adobe Aero": ["ios", "pc"],
+"Adobe Fonts": ["pc", "android", "ios"],
     "HMA VPN": ["pc", "android", "ios"],
     "Crunchyroll": ["android", "ios", "pc"],
     "Telegram Star": ["android", "ios", "pc"],
@@ -1811,6 +1898,27 @@
   };
 
   /* =========================
+    ADOBE GROUP (shared notes)
+    ========================= */
+const adobeGroup = [
+  "Photoshop",
+  "LightRoom",
+  "Adobe Creative Cloud",
+  "Adobe Premiere Pro",
+  "Adobe Illustrator",
+  "Adobe After Effects",
+  "Adobe Acrobat Pro",
+  "Adobe InDesign",
+  "Adobe Audition",
+  "Adobe Animate",
+  "Adobe Dreamweaver",
+  "Adobe Fresco",
+  "Adobe Media Encoder",
+  "Adobe Character Animator",
+  "Adobe Firefly"
+];
+  
+  /* =========================
       STATE
       ========================= */
   let cart = [];
@@ -1849,7 +1957,8 @@
     const key = cartKey(item);
     const existing = cart.find(x => cartKey(x) === key);
     if (existing) existing.qty += 1;
-    else cart.push({ ...item,
+    else cart.push({
+      ...item,
       qty: 1
     });
     renderCart();
@@ -1945,12 +2054,12 @@
       return;
     }
 
-    let matchCount = 0;
     productCards.forEach(card => {
       const name = card.dataset.productName.toLowerCase();
-      if (name.includes(query)) {
+      // Rule Kron: Enhanced search to check category headers
+      const section = card.closest('.grid')?.previousElementSibling?.textContent?.toLowerCase() || '';
+      if (name.includes(query) || section.includes(query)) {
         card.classList.add('search-match');
-        matchCount++;
       } else {
         card.classList.remove('search-match');
       }
@@ -2010,7 +2119,6 @@
       passive: true
     }));
   }
-
   /* =========================
       PRODUCT PAGE LOGIC
       ========================= */
@@ -2103,6 +2211,8 @@
         }).join("");
         let title = sectionName;
         let style = '';
+        
+        // --- VISUAL LOGIC HANDLERS ---
         if (productName === 'Express Vpn') {
           if (sectionName === 'Share') {
             title = 'Share 1 device Only';
@@ -2110,6 +2220,17 @@
             title = 'Private Own 9 Devices';
             style = 'style="color: #ffeb3b;"';
           }
+        } else if (productName === 'Photoshop' || productName === 'LightRoom' || productName.startsWith('Adobe ')) {
+          if (productName !== 'Adobe Creative Cloud' && sectionName === 'Private') {
+            title += ' <span style="background:#ffeb3b; color:#000; padding:2px 6px; border-radius:4px; font-size:11px; margin-left:8px; font-weight:900; box-shadow:0 0 5px #ffeb3b;">Powered by AdobeCreativeCloud</span>';
+          } else if (sectionName === 'App&Web Private') {
+             title += ' <span style="background:#ffeb3b; color:#000; padding:2px 6px; border-radius:4px; font-size:11px; margin-left:8px; font-weight:900; box-shadow:0 0 5px #ffeb3b;">Powered by AdobeCreativeCloud</span>';
+          }
+        } else if (productName === 'Flow AI' || productName === 'NotebookLM') {
+         if (sectionName === 'Invite OwnMail' || sectionName === 'OwnMail Invite') {
+            title += ' <span style="background:#ffeb3b; color:#000; padding:2px 6px; border-radius:4px; font-size:11px; margin-left:8px; font-weight:900; box-shadow:0 0 5px #ffeb3b;">Powered By GoogleOneGemini</span>';
+          }
+
         } else if (productName === 'HBO Max') {
           if (sectionName.includes('(ULTIMATE)')) {
             title = 'HBO MAX (ULTIMATE) 1 Month';
@@ -2127,7 +2248,7 @@
         } else if (productName === 'Gemini Veo 3') {
           if (sectionName.includes('OwnMail')) {
             title = 'OwnMail Invite';
-            style = 'style="color: #ffeb3b;"'; // <--- Yellow Text Applied Here
+            style = 'style="color: #ffeb3b;"';
           }
         }
         return `<div class="plan-box"><div class="plan-title" ${style}>${title}</div><div class="plan-rows">${rows}</div></div>`;
@@ -2164,7 +2285,7 @@
 
     dom.views.product.innerHTML = pageHTML;
 
-    // --- CUSTOM CALCULATOR LOGIC (RESTORED) ---
+    // --- CUSTOM CALCULATOR LOGIC ---
     const customConf = customConfigs[productName];
     if (customConf) {
       const customHTML = `
@@ -2222,7 +2343,6 @@
 
   // --- Render Region Grid for Gift Cards ---
   function renderRegionalSelector(productName, regions) {
-    // FIX: Use imageFor directly here because heroImageSrc was undefined
     const pageHTML = `
       <button class="back-btn" id="product-back-btn">← Back</button>
       <div class="product-hero">
@@ -2248,9 +2368,9 @@
   /* =========================
       CHECKOUT FLOW
       ========================= */
-  // Note: Constants for notes are reused from previous context as they are lengthy strings
   const paymentInfoBlock = `\n\nWe only accept KBZpay & Wave pay\nWe only use this number for both Payments\nKBZpay-09771664207\n(Name MyinMyintMaw)\nWave - 09771664207\n(Name MyinMyintMaw)\n\nWATCH OUT FOR SCAMMER!!`;
   const generalDetailsBlock = `\n\nWe only accept KBZpay & Wave pay\nWe only use this number for both Payments\nKBZpay-09771664207\n(Name MyinMyintMaw)\nWave - 09771664207\n(Name MyinMyintMaw)\n\nWATCH OUT FOR SCAMMER!!`;
+  
   const expressVpnShareNoteBase = `
 တခါတလေအကောင့်ကထွက်တာမျိုးနေဖြစ်နိုင်တယ်but ပြန်ဝင်လို့ရပါတယ်
 
@@ -2265,10 +2385,7 @@
 •Works on all devices (TV, phone, tablet, laptop)
 •Includes full Netflix library (movies, series, originals)`;
 
-  // Note: Only listing new/changed notes to save space, assuming logic uses what's available
-  // But for completeness in the file, we keep the object.
   const moreDetailsByProduct = {
-    // (Pasting the full dictionary to ensure nothing breaks)
     "CapCut": `Share
 One device only
 ဖုန်းတလုံးပဲသုံးလို့ရပါတယ် Android & iOS
@@ -2418,6 +2535,19 @@ Includes 2000GB Google storage• Unlimited devices
 
 OwnMail Invite
 ဒါကကိုယ့်ရဲ့GmailကိုပဲProလုပ်ပေးတာမလို့။အလုပ်လဲမရှုပ်ပါဘူး။ Password လဲပေးစရာမလိုပါဘူး။ Device ကလဲဝင်ထားသလောက်သုံးလို့ရနေမာပါ။` + generalDetailsBlock,
+    "Flow AI": `OwnMail Invite
+
+ဒီဟာကGoogle One Pro,Gemini Proဝယ်ရင်ပါတဲ့ဟာပါ။
+ဒီဟာဝယ်ရင်
+Google One Storage2TB 1Year
+Gemini Veo 3 Pro 2TB 1Yearပါရမာပါ။` + generalDetailsBlock,
+
+"NotebookLM": `OwnMail Invite
+
+ဒီဟာကGoogle One Pro,Gemini Proဝယ်ရင်ပါတဲ့ဟာပါ။
+ဒီဟာဝယ်ရင်
+Google One Storage2TB 1Year
+Gemini Veo 3 Pro 2TB 1Yearပါရမာပါ။` + generalDetailsBlock,
     "Grammarly AI": `Share\nFull warranty • One device only` + generalDetailsBlock,
     "Zoom": `Full warranty.\nAll pro features unlock.\nCan use 2-5 devices.` + generalDetailsBlock,
     "YouTube": `Private (Individual Plan)
@@ -2425,7 +2555,7 @@ Full warranty.
 No ads with all YouTube premium features.
 Including YouTube music.` + generalDetailsBlock,
     "Tinder": `Code redeem use.\n1× warranty. Can only use one devices` + generalDetailsBlock,
-    "Telegram": `Login
+    "Telegram Premium": `Login
 • 1 Month — 21,000 Kyats
 • 1 Year — 112,000 Kyats
 • Login planကကျနော်တို့ဘက်ကအကောင့်ထဲဝင်ပီး Premium ဝယ်ပေးမာပါ။2 to 3Minလောက်ကြာနိုင်ပါတယ်။
@@ -2489,9 +2619,64 @@ More information on DM. Price may vary based on complexity.
 
 Normal Plan
 ဒါက Any kinds of Website ကိုလိုချင်တဲ့ functionတေfully functionalဖြစ်တဲ့ထိလုပ်ပေးမာပါ။ Custom Design packageဖြစ်လို့ Inspired Design တေစိတ်ကြိုက်ဖြစ်တဲ့ထိလုပ်‌ပေးမာပါ။ Website Codeတေက‌တော့အပိုင်မရပါဘူး။` + generalDetailsBlock,
-    "LightRoom": `Share\nOne device only\nSharing account will mix projects with others user.` + generalDetailsBlock,
+    "LightRoom": `Share
+One device only
+Sharing account will mix projects with others user.
+
+App&Web Private
+ဒါတေအကုန်လုံးပါမာပါ။သုံးလို့ရတဲ့ထဲမာ။
+Include Adobe Creative Cloud Pro
+With All Supported other apps like
+Photoshop — Photo Editing
+Lightroom / Lightroom Classic — Photo Editing
+Illustrator — Vector Design
+InDesign — Page Layout
+Premiere Pro — Video Editing
+After Effects — Motion Graphics
+Audition — Audio Editing
+Adobe Animate — Animation
+Character Animator — Animation
+Media Encoder — Media Encoding
+Adobe Fresco — Digital Drawing
+Adobe Express — Quick Design
+Adobe Capture — Asset Capture
+Dreamweaver — Web Development
+Adobe XD — UI/UX Design
+Acrobat Pro — PDF & Documents
+Adobe Firefly — Generative AI
+Adobe Fonts — Fonts
+Creative Cloud Libraries — Asset Management
+Adobe Portfolio — Portfolio Websites
+Behance — Creative Community` + generalDetailsBlock,
     "Wattpad": `Sharing\nOne device only\nFull warranty.` + generalDetailsBlock,
-    "Photoshop": `Web Private\nwarranty back free only.` + generalDetailsBlock,
+    "Photoshop": `Web Private
+warranty back free only.
+
+App&Web Private
+ဒါတေအကုန်လုံးပါမာပါ။သုံးလို့ရတဲ့ထဲမာ။
+Include Adobe Creative Cloud Pro
+With All Supported other apps like
+Photoshop — Photo Editing
+Lightroom / Lightroom Classic — Photo Editing
+Illustrator — Vector Design
+InDesign — Page Layout
+Premiere Pro — Video Editing
+After Effects — Motion Graphics
+Audition — Audio Editing
+Adobe Animate — Animation
+Character Animator — Animation
+Media Encoder — Media Encoding
+Adobe Fresco — Digital Drawing
+Adobe Express — Quick Design
+Adobe Capture — Asset Capture
+Dreamweaver — Web Development
+Adobe XD — UI/UX Design
+Acrobat Pro — PDF & Documents
+Adobe Firefly — Generative AI
+Adobe Fonts — Fonts
+Creative Cloud Libraries — Asset Management
+Adobe Portfolio — Portfolio Websites
+Behance — Creative Community` + generalDetailsBlock,
     "Adobe Creative Cloud": `Adobe Creative Cloud မာဆိုရင်
 
 Photoshop → edit photos & images
@@ -2510,7 +2695,6 @@ Acrobat Pro → edit & sign PDFs
     "HMA VPN": `Can use 5 to 10 devices. Recommend for desktop devices.` + generalDetailsBlock,
     "Crunchyroll": `Share\n5-Months warranty • One device only` + generalDetailsBlock,
     "Telegram Star": `Usernameပဲလိုပါမယ်` + generalDetailsBlock,
-    // DEFAULT DESCRIPTIONS FOR NEW GOOGLE PLAY REGIONS
     "Google Play Turkey": "Region: Turkey (TL)\nBuy specific amounts for Turkey Region accounts." + generalDetailsBlock,
     "Google Play Indonesia": "Region: Indonesia (IDR)\nBuy specific amounts for Indonesia Region accounts." + generalDetailsBlock,
     "Google Play Brazil": "Region: Brazil (BRL)\nBuy specific amounts for Brazil Region accounts." + generalDetailsBlock,
@@ -2524,102 +2708,54 @@ Acrobat Pro → edit & sign PDFs
     "Google Play Canada": "Region: Canada (CAD)\nBuy specific amounts." + generalDetailsBlock,
     "Google Play UAE": "Region: UAE (AED)\nCustom amount only." + generalDetailsBlock,
     "Google Play Poland": "Region: Poland (PLN)\nBuy specific amounts." + generalDetailsBlock,
-    // STEAM DEFAULT
     "Steam Gift Card": "Region: Global/Specific\nSelect your region to view available Steam Wallet Code amounts." + generalDetailsBlock
   };
 
   function getNoteForCartItem(item) {
     const productName = item.product.replace(/ \(.+\)$/, '');
+      const isAdobeProduct = adobeGroup.includes(productName);
+  const forceNoteProductName =
+    isAdobeProduct && productName !== "LightRoom"
+      ? "LightRoom"
+      : productName;
 
-    // --- DIRECT BYPASS FOR GEMINI VEO 3 ---
+  const forceNoteSectionName =
+    isAdobeProduct ? "App&Web Private" : item.section;
+
     if (productName === 'Gemini Veo 3') {
         const standardNote = `Includes 2000GB Google storage• Unlimited devices\nဒါမဲ့ဝယ်ရင်စစချင်းသိထားရမာတေရှိပါတယ်။ Admin ပြောပြပါလိမ့်မယ်။`;
-        
-        // 1. OwnMail Plan
-        if (item.section.includes('OwnMail')) {
-            return `ဒါကကိုယ့်ရဲ့GmailကိုပဲProလုပ်ပေးတာမလို့။အလုပ်လဲမရှုပ်ပါဘူး။ Password လဲပေးစရာမလိုပါဘူး။ Device ကလဲဝင်ထားသလောက်သုံးလို့ရနေမာပါ။`;
-        }
-        
-        // 2. 1 Month Plan
-        if (item.duration.includes('1 Month')) {
-            return `${standardNote}\n1 Month (Full Warranty) — 1 Month လုံး Full Warranty ပေးပါတယ်။`;
-        }
-
-        // 3. 1 Year (Full Warranty) Plan
-        if (item.duration.includes('Full Warranty')) { // Checks for "1 Year (Full Warranty)"
-             return `${standardNote}\n1 Year (Full Warranty) — 1 Year လုံး Full Warranty ပေးပါတယ်။`;
-        }
-
-        // 4. 1 Year Standard Plan (Default fallback if not Full Warranty)
+        if (item.section.includes('OwnMail')) return `ဒါကကိုယ့်ရဲ့GmailကိုပဲProလုပ်ပေးတာမလို့။အလုပ်လဲမရှုပ်ပါဘူး။ Password လဲပေးစရာမလိုပါဘူး။ Device ကလဲဝင်ထားသလောက်သုံးလို့ရနေမာပါ။`;
+        if (item.duration.includes('1 Month')) return `${standardNote}\n1 Month (Full Warranty) — 1 Month လုံး Full Warranty ပေးပါတယ်။`;
+        if (item.duration.includes('Full Warranty')) return `${standardNote}\n1 Year (Full Warranty) — 1 Year လုံး Full Warranty ပေးပါတယ်။`;
         return standardNote;
     }
-    // --------------------------------------
-
-    if (productName === "TikTok Non Official" && item.section.toLowerCase().includes("livestream")) {
-      return null;
-    }
-
-    const fullText = moreDetailsByProduct[productName];
-
-    if (productName === "InShot") {
-      return `Mod appမဟုတ်ပါဘူး။Android onlyပဲသူံးလို့ရပါတယ်။ Playstore ကappမာပဲသုံးလို့ရပါမယ်။
-Warranty 3လပေးပါတယ်။
-Share plan မို့လို့ 1 device ပဲသုံးလို့ရပါမယ်။`;
-    }
-
+    if (productName === "TikTok Non Official" && item.section.toLowerCase().includes("livestream")) return null;
+    const fullText = moreDetailsByProduct[forceNoteProductName];
+        if (productName === "INSHOT") return `Mod appမဟုတ်ပါဘူး။Android onlyပဲသူံးလို့ရပါတယ်။ Playstore ကappမာပဲသုံးလို့ရပါမယ်။\nWarranty 3လပေးပါတယ်။\nShare plan မို့လို့ 1 device ပဲသုံးလို့ရပါမယ်။`;
     if (!fullText) return null;
-
     const rawDetails = fullText.trim();
-
-    const sectionHeaders = /^(Share|Private|SemiPrivate|FullPrivate|Tinder Plus Share|Login|Gift Plan & Link Plan|Gift Plan|Link Plan|Views \(NoDrop\)|Likes \(NoDrop\)|Comment - Emoji Type|Comment - Custom Type|Package Plan|Livestream Views|Livestream Likes|Livestream Share|Post Views|Positive Reactions|Negative Reactions|Custom Reactions|Premium Reactions|Members \(30Days Refill\)|Livestream Views|Comment - Impression Type|Comment - Custom Type|Video Views|Video Likes|Post Likes|Profile Followers|Page Followers|Live Stream Views|Video Views & Reels|Likes|Followers|Personal Plus \(Share\)|Personal Plus \(Private\)|Business - Invite Own Email|Business - Own|Private Own Mail|Private \(Own Mail\)|Base Service|1 Profile\(Semiprivate\)|5 Profiles\(Whole Account\)|Nitro Basic \(Key\)|Individual|Invite with email|Sharing Pro|Plan Basic|Plan Premium|HBO MAX \(ULTIMATE\) 1 Month|Private Whole Account \(1 Month\)|1 Profile|Whole Account|OwnMail Private|OwnMail Invite|Individual Plan|Business Own\(Full Warranty\)|Business Plus Own\(Full Warranty\)|Business Plus Own|Normal Plan|Family Head\(Can Invite 5 email\)|Invite Private|Web Private|Pro Share|Pro Private|Lifetime Premium|Educational\(Invite\)|Individual Plan\(Private\)|Stars|Japan Region \(¥\)|US Region \(\$\)|UK Region \(£\)|Custom Amount|Turkey Region \(TL\)|Indonesia Region \(IDR\)|Brazil Region \(BRL\)|Korea Region \(₩\)|India Region \(₹\)|Australia Region \(A\$\)|Germany Region \(€\)|France Region \(€\)|Italy Region \(€\)|Switzerland Region \(CHF\)|Canada Region \(C\$\)|UAE Region \(AED\)|Poland Region \(PLN\)|Nitro \(Key\))/i;
-
+    const sectionHeaders = /^(Share|Private|SemiPrivate|FullPrivate|Tinder Plus Share|Login|Gift Plan & Link Plan|Gift Plan|Link Plan|Views \(NoDrop\)|Likes \(NoDrop\)|Comment - Emoji Type|Comment - Custom Type|Package Plan|Livestream Views|Livestream Likes|Livestream Share|Post Views|Positive Reactions|Negative Reactions|Custom Reactions|Premium Reactions|Members \(30Days Refill\)|Livestream Views|Comment - Impression Type|Comment - Custom Type|Video Views|Video Likes|Post Likes|Profile Followers|Page Followers|Live Stream Views|Video Views & Reels|Likes|Followers|Personal Plus \(Share\)|Personal Plus \(Private\)|Business - Invite Own Email|Business - Own|Private Own Mail|Private \(Own Mail\)|Base Service|1 Profile\(Semiprivate\)|5 Profiles\(Whole Account\)|Nitro Basic \(Key\)|Individual|Invite with email|Sharing Pro|Plan Basic|Plan Premium|HBO MAX \(ULTIMATE\) 1 Month|Private Whole Account \(1 Month\)|1 Profile|Whole Account|OwnMail Private|OwnMail Invite|Individual Plan|Business Own\(Full Warranty\)|Business Plus Own\(Full Warranty\)|Business Plus Own|Normal Plan|Family Head\(Can Invite 5 email\)|Invite Private|Web Private|App&Web Private|Pro Share|Pro Private|Lifetime Premium|Educational\(Invite\)|Individual Plan\(Private\)|Stars|Japan Region \(¥\)|US Region \(\$\)|UK Region \(£\)|Custom Amount|Turkey Region \(TL\)|Indonesia Region \(IDR\)|Brazil Region \(BRL\)|Korea Region \(₩\)|India Region \(₹\)|Australia Region \(A\$\)|Germany Region \(€\)|France Region \(€\)|Italy Region \(€\)|Switzerland Region \(CHF\)|Canada Region \(C\$\)|UAE Region \(AED\)|Poland Region \(PLN\)|Nitro \(Key\))/i;
     const lines = rawDetails.split('\n').map(l => l.trim()).filter(l => l.length > 0);
-
-    let targetSection = item.section.replace(/ \(.*\)/, '');
-
-    if (productName === 'HBO Max') {
-      targetSection = item.section;
-    }
-
+    let targetSection = forceNoteSectionName.replace(/ \(.*\)/, '');
+    if (productName === 'HBO Max') targetSection = item.section;
     const sectionStartIndex = lines.findIndex(line => line.toLowerCase().includes(targetSection.toLowerCase()));
-
-    if (productName === 'Telegram' && (item.section === 'Gift Plan' || item.section === 'Link Plan')) {
-      targetSection = 'Gift Plan & Link Plan';
-    }
+    if (productName === 'Telegram Premium' && (item.section === 'Gift Plan' || item.section === 'Link Plan')) targetSection = 'Gift Plan & Link Plan';
     const sectionStartIndex_fixed = lines.findIndex(line => line.toLowerCase().includes(targetSection.toLowerCase()));
-
     if (sectionStartIndex_fixed !== -1) {
       let sectionEndIndex = lines.findIndex((line, index) => index > sectionStartIndex_fixed && (sectionHeaders.test(line) || line.includes("We only accept KBZpay")));
       if (sectionEndIndex === -1) sectionEndIndex = lines.length;
-
       let noteLines = lines.slice(sectionStartIndex_fixed + 1, sectionEndIndex).filter(l => l.length > 0);
       let noteText = noteLines.join('\n');
-
       if (productName === "NordVpn" || productName === "Surfshark Vpn") {
-        const vpnAlert = "CAN'T USE IN MYANMAR";
-        noteText = vpnAlert + '\n' + noteText;
+        noteText = "CAN'T USE IN MYANMAR\n" + noteText;
       }
-
-      let filteredNotes = noteText.split('\n').filter(line => line.trim().length > 0);
-
-      const rawVpnAlertTag = "CAN'T USE IN MYANMAR";
-      filteredNotes = filteredNotes.filter(line => !line.includes(rawVpnAlertTag));
-
-
-      if (productName === 'Telegram') {
+      let filteredNotes = noteText.split('\n').filter(line => line.trim().length > 0 && !line.includes("CAN'T USE IN MYANMAR"));
+      if (productName === 'Telegram Premium') {
         const durationLine = `• ${item.duration} — ${item.priceText}`;
-        let generalNote = '';
-
         if (item.section === 'Gift Plan' || item.section === 'Link Plan') {
-          generalNote = 'GiftPlan and Link Plan are same premium features.\nContact admin for more details.';
-
-          filteredNotes = filteredNotes.filter(line => !line.includes('—'));
-          filteredNotes = [durationLine].concat(generalNote.split('\n').map(l => l.trim()));
-
+          filteredNotes = [durationLine, 'GiftPlan and Link Plan are same premium features.', 'Contact admin for more details.'];
         } else if (item.section === 'Login') {
-          const loginNote = '• Login planကကျနော်တို့ဘက်ကအကောင့်ထဲဝင်ပီး Premium ဝယ်ပေးမာပါ။2 to 3Minလောက်ကြာနိုင်ပါတယ်။';
-
-          filteredNotes = [durationLine, loginNote];
+          filteredNotes = [durationLine, '• Login planကကျနော်တို့ဘက်ကအကောင့်ထဲဝင်ပီး Premium ဝယ်ပေးမာပါ။2 to 3Minလောက်ကြာနိုင်ပါတယ်။'];
         }
       } else if (productName === 'HBO Max') {
         if (item.duration === "1P 2U") {
@@ -2632,235 +2768,62 @@ Share plan မို့လို့ 1 device ပဲသုံးလို့ရ�
           filteredNotes = filteredNotes.filter(line => line.includes("Private") || line.includes("5 Profile"));
         }
       } else if (productName === 'CapCut') {
-        if (item.section === "Private") {
-          filteredNotes = filteredNotes.filter(line => !line.toLowerCase().includes("own mail"));
-        }
+        if (item.section === "Private") filteredNotes = filteredNotes.filter(line => !line.toLowerCase().includes("own mail"));
       } else if (productName === 'Netflix') {
-        if (item.section === "1 Profile") {} else if (item.section === "Whole Account") {
-          filteredNotes = filteredNotes.filter(line => !line.includes("warrantyအပြည့်ပေး"));
-        }
+        if (item.section === "Whole Account") filteredNotes = filteredNotes.filter(line => !line.includes("warrantyအပြည့်ပေး"));
       } else {
         const durationRegex = /\b(\d+\s*(?:Month|Months|Year|Week|Lifetime|Days|Stars|TL|IDR|BRL|₹|₩|\$|£|€|CHF|C\$|AED|PLN)):?.*|6-Months accounts are rare.*/gi;
-
         filteredNotes = filteredNotes.filter(line => {
-          if (line.toLowerCase().includes('device') || line.toLowerCase().includes('warranty') || line.toLowerCase().includes('guarantee') || line.toLowerCase().includes('profile') || line.toLowerCase().includes('account') || line.toLowerCase().includes('users') || line.toLowerCase().includes('screen') || line.toLowerCase().includes('phones') || line.toLowerCase().includes('sharing') || line.toLowerCase().includes('history') || line.toLowerCase().includes('အဆင်ပြေ') || line.includes('သက်တန်းတိုး') || line.includes('Official app') || line.includes('Username') || line.includes('Region') || line.includes('Buy specific')) {
-            return true;
-          }
-          if (durationRegex.test(line)) {
-            return line.includes(item.duration);
-          }
-          
+          if (line.toLowerCase().includes('device') || line.toLowerCase().includes('warranty') || line.toLowerCase().includes('guarantee') || line.toLowerCase().includes('profile') || line.toLowerCase().includes('account') || line.toLowerCase().includes('users') || line.toLowerCase().includes('screen') || line.toLowerCase().includes('phones') || line.toLowerCase().includes('sharing') || line.toLowerCase().includes('history') || line.toLowerCase().includes('အဆင်ပြေ') || line.includes('သက်တန်းတိုး') || line.includes('Official app') || line.includes('Username') || line.includes('Region') || line.includes('Buy specific')) return true;
+          if (durationRegex.test(line)) return line.includes(item.duration);
           return true;
         });
       }
-
       return filteredNotes.filter(l => l.trim().length > 0).join('\n').trim();
     }
-
     return rawDetails.replace(generalDetailsBlock.trim(), '');
   }
 
   function goCheckoutView() {
-    if (!cart.length) {
-      alert("Your cart is empty.");
-      return;
-    }
+    if (!cart.length) { alert("Your cart is empty."); return; }
     lastViewBeforeCheckout = dom.views.product.classList.contains('active') ? 'product' : 'home';
-    try {
-      localStorage.setItem('blp_cart', JSON.stringify(cart));
-    } catch {}
-
+    try { localStorage.setItem('blp_cart', JSON.stringify(cart)); } catch {}
     const copyBtn = dom.checkout.copyReceiptBtn;
     copyBtn.textContent = 'Copy';
     copyBtn.classList.remove('copied');
     copyBtn.disabled = false;
-
     let quantityWarning = '';
     const multiQuantityItem = cart.find(item => item.qty > 1 && item.product === 'Express Vpn' && item.section === 'Share');
-
     if (multiQuantityItem) {
-      const qty = multiQuantityItem.qty;
-      let burmeseQtyText;
-
-      if (qty >= 2 && qty <= 8) {
-        burmeseQtyText = `ဒါက${qty}လစာဝယ်တာမဟုတ်ပါဘူး။1လစာကိုမ Phone ${qty}လုံးစာယူတဲ့သဘောပါ။`;
-        burmeseQtyText = burmeseQtyText.replace(/(\d+)/g, '<span class="warning-num">$1</span>');
-      } else {
-        burmeseQtyText = `This is a multi-device purchase, not a multi-month subscription.`;
-      }
-
-      quantityWarning = `<div class="payment-warning-block">
-            <div class="nt-line" style="color: #ffca28; font-weight: 700; text-transform: uppercase;">
-                ATTENTION: YOU HAVE ITEMS WITH QUANTITY > 1.
-            </div>
-            <div class="nt-line burmese-font">
-                ${burmeseQtyText}
-            </div>
-            <div class="nt-line" style="color: #ffcdd2;">
-                NOT extending the duration. Please confirm this is correct for your ORDER.
-            </div>
-        </div>`;
+      let burmeseQtyText = `ဒါက${multiQuantityItem.qty}လစာဝယ်တာမဟုတ်ပါဘူး။1လစာကိုမ Phone ${multiQuantityItem.qty}လုံးစာယူတဲ့သဘောပါ။`.replace(/(\d+)/g, '<span class="warning-num">$1</span>');
+      quantityWarning = `<div class="payment-warning-block"><div class="nt-line" style="color:#ffca28;font-weight:700;text-transform:uppercase;">ATTENTION: MULTI-QUANTITY</div><div class="nt-line burmese-font">${burmeseQtyText}</div></div>`;
     }
-
-    const netflixMultiItem = cart.find(item =>
-      item.product === 'Netflix' &&
-      item.section === '1 Profile' &&
-      item.duration === '(Semiprivate 2 devices 1Month)' &&
-      item.qty > 1
-    );
-
+    const netflixMultiItem = cart.find(item => item.product === 'Netflix' && item.section === '1 Profile' && item.qty > 1);
     if (netflixMultiItem) {
-      const qty = netflixMultiItem.qty;
-      let burmeseText = `ဒါက${qty}လစာဆိုပေမဲ့တစ်လတခါအကောင့်ပြောင်းနေရမာပဲမလို့တစ်လချင်းပဲယူရင်ယူပါ`;
-      burmeseText = burmeseText.replace(/(\d+)/g, '<span class="warning-num">$1</span>');
-
-      quantityWarning += `<div class="payment-warning-block">
-            <div class="nt-line" style="color: #ffca28; font-weight: 700; text-transform: uppercase;">
-                ATTENTION: MULTIPLE MONTHS SELECTED
-            </div>
-            <div class="nt-line burmese-font">
-                ${burmeseText}
-            </div>
-        </div>`;
+      let burmeseText = `ဒါက${netflixMultiItem.qty}လစာဆိုပေမဲ့တစ်လတခါအကောင့်ပြောင်းနေရမာပဲမလို့တစ်လချင်းပဲယူရင်ယူပါ`.replace(/(\d+)/g, '<span class="warning-num">$1</span>');
+      quantityWarning += `<div class="payment-warning-block"><div class="nt-line" style="color:#ffca28;font-weight:700;text-transform:uppercase;">ATTENTION: MULTIPLE MONTHS</div><div class="nt-line burmese-font">${burmeseText}</div></div>`;
     }
-
-    let expressVpnShareNote = null;
-    const expressVpnShareItem = cart.find(item =>
-      item.product === 'Express Vpn' &&
-      item.section === 'Share' &&
-      item.duration === '1 Month'
-    );
-
-    if (expressVpnShareItem) {
-      const qty = expressVpnShareItem.qty;
-
-      if (qty >= 1 && qty <= 7) {
-        const remainingUsers = 8 - qty;
-        const userCountText = (remainingUsers === 1) ? `1` : `${remainingUsers}`;
-        const firstLine = `Share ကတခြားလူ ${userCountText} ‌ယောက်နဲ့တူတူသုံးရတာမျိုးပါ`;
-
-        expressVpnShareNote = `
-${firstLine}
-            
-တခါတလေအကောင့်ကထွက်တာမျိုးနေဖြစ်နိုင်တယ်but ပြန်ဝင်လို့ရပါတယ်
-
-ပီးတော့စဝယ်တဲ့ရက်ကနေ premium ရက် 25ကနေ 31ရက်ကြားက stock ရှိတာရမာပါ။
-`;
-      }
-    }
-
-    let tiktokWarningHtml = '';
-    const hasTikTokNoDrop = cart.some(item =>
-      item.product === 'TikTok Non Official' &&
-      (item.section.includes('Views (NoDrop)') || item.section.includes('Likes (NoDrop)')) &&
-      !item.section.toLowerCase().includes('livestream')
-    );
-
-    if (hasTikTokNoDrop) {
-      tiktokWarningHtml = `<div class="payment-warning-block">
-            <div class="nt-line burmese-font">No dropဆိုပေမဲ့ TikTok ကစာပို့ပီးဖျက်ချသွားရင်တာ့ပြန်မထည့်ပေးပါဘူး။ထည့်ရင်လဲအကောင့် warning ထိမာပါ။</div>
-        </div>`;
-    }
-
-    let vpnAlertBlock = '';
-    const needsVpnAlert = cart.some(item => item.product === 'NordVpn' || item.product === 'Surfshark Vpn');
-    if (needsVpnAlert) {
-      vpnAlertBlock = `<div class="payment-warning-block vpn-warning">
-          <div class="nt-line vpn-alert-text" style="color: #ff5757; font-weight: 800; text-transform: uppercase;">
-              CAN'T USE IN MYANMAR
-          </div>
-      </div>`;
-    }
-
     const uniqueProductNotes = new Map();
-
     cart.forEach(item => {
       const productKey = item.product + item.section;
       let noteContent = getNoteForCartItem(item);
-
-      if (item.product === 'Express Vpn' && item.section === 'Share' && item.duration === '1 Month' && expressVpnShareNote !== null) {
-        noteContent = expressVpnShareNote;
-      }
-
-      if (item.product === 'YouTube') {
-        if (!noteContent.includes("Renew")) {
-          noteContent += "\nRenew လို့ရပါတယ်။သက်တန်းတိုးရင်တော့ 1Month ကို 6000ပါ။";
-        }
-      }
-
-      if (noteContent && noteContent.length > 0) {
-        if (!uniqueProductNotes.has(productKey)) {
-          uniqueProductNotes.set(productKey, {
-            item,
-            noteContent
-          });
-        }
-      }
+      if (item.product === 'YouTube' && !noteContent.includes("Renew")) noteContent += "\nRenew လို့ရပါတယ်။သက်တန်းတိုးရင်တော့ 1Month ကို 6000ပါ။";
+      if (noteContent) uniqueProductNotes.set(productKey, { item, noteContent });
     });
-
-    const tiktokViewsKey = "TikTok Non OfficialViews (NoDrop)";
-    const tiktokLikesKey = "TikTok Non OfficialLikes (NoDrop)";
-
-    if (uniqueProductNotes.has(tiktokViewsKey) && uniqueProductNotes.has(tiktokLikesKey)) {
-      const noteData = uniqueProductNotes.get(tiktokViewsKey);
-      uniqueProductNotes.delete(tiktokViewsKey);
-      uniqueProductNotes.delete(tiktokLikesKey);
-      const mergedItem = {
-        product: "TikTok Non Official",
-        section: "Views,Likes (NoDrop)"
-      };
-      uniqueProductNotes.set("TikTokMergedNoDrop", {
-        item: mergedItem,
-        noteContent: noteData.noteContent
-      });
-    }
-
-    const noteBlocks = Array.from(uniqueProductNotes.values()).map(({
-      item,
-      noteContent
-    }) => {
-      const title = `${item.product} • ${item.section}`;
-
-      return `<div style="margin-bottom:12px"><strong>${escapeHTML(title)}</strong>
-        ${noteContent.split('\n').filter(l => l.trim().length > 0).map(l => {
-          const trimmed = l.trim();
-           
-          if (trimmed.includes('ဒါက') || trimmed.includes('•') || trimmed.includes('renew') || item.product === 'Telegram' || item.product === 'Express Vpn' || item.product === 'ChatGPT Plus' || item.product === 'PicsArt' || item.product === 'Canva' || item.product === 'Microsoft 365' || item.product === 'Netflix' || item.product === 'CapCut' || item.product === 'Spotify' || item.product === 'Apple Music' || item.product === 'YouTube' || item.product === 'InShot' || item.product === 'HBO Max' || trimmed.includes('Deactivate errorဖြစ်နိုင်လို့') || trimmed.includes('Any kinds of Website')) { 
-              let burmeseText = trimmed.replace(/(\d+)\s*(‌ယောက်)/g, '$1 $2');
-              if (item.product === 'Microsoft 365' && burmeseText.includes('သုံးလို့ရသွားမာပါ။')) {
-                  burmeseText = burmeseText.replace('သုံးလို့ရသွားမာပါ။', '<span style="white-space: nowrap;">သုံးလို့ရသွားမာပါ။</span>');
-              }
-              return `<div class="nt-line burmese-font" style="font-weight: 400; opacity: .95;">${burmeseText}</div>`;
-          }
-
-          return `<div class="nt-line" style="font-weight: 400; opacity: .95;">${escapeHTML(trimmed)}</div>`;
-        }).join('')}
-      </div>`;
-    }).filter(Boolean);
-
-    let netflixBlock = '';
-    if (cart.some(item => item.product === 'Netflix')) {
-      netflixBlock = `<div style="margin-bottom:12px"><strong>Netflix Features</strong>
-            ${netflixUhdNote.split('\n').filter(l=>l.trim()).map(l => `<div class="nt-line" style="font-weight: 400; opacity: .95;">${escapeHTML(l.trim())}</div>`).join('')}
-        </div>`;
-    }
-
-    let finalHtml = quantityWarning + tiktokWarningHtml + vpnAlertBlock + (noteBlocks.length > 0 ? noteBlocks.join('') : (hasTikTokNoDrop ? "" : "<em>No specific notes for your items.</em>")) + netflixBlock + formatNotes(paymentInfoBlock.trim());
-
-    dom.checkout.noteText.innerHTML = finalHtml;
-
-    const telegramCustomPlans = ['1 Year', 'Gift Plan', 'Link Plan'];
-    const requiresCustomTelegram = cart.some(item =>
-      item.product === 'Telegram' && (item.section === 'Login' && item.duration.includes('1 Year') || telegramCustomPlans.some(plan => item.section.includes(plan)))
-    );
-
-    const checkoutLink = requiresCustomTelegram ? 'https://t.me/Fury_edtz' : 'https://t.me/leokron';
-    dom.checkout.nextBtn.href = checkoutLink;
-
+    const noteBlocks = Array.from(uniqueProductNotes.values()).map(({ item, noteContent }) => {
+      return `<div style="margin-bottom:12px"><strong>${escapeHTML(item.product + ' • ' + item.section)}</strong>${noteContent.split('\n').filter(l => l.trim()).map(l => {
+          const t = l.trim();
+          const isBurmese = /[\u1000-\u109F]/.test(t) || t.includes('•') || t.includes('Kyats') || t.includes('renew');
+          return `<div class="nt-line${isBurmese ? ' burmese-font' : ''}" style="font-weight:400;opacity:.95;">${t.replace(/(\d+)\s*(‌ယောက်)/g, '$1 $2')}</div>`;
+      }).join('')}</div>`;
+    }).join('');
+    let netflixBlock = cart.some(i => i.product === 'Netflix') ? `<div style="margin-bottom:12px"><strong>Netflix Features</strong>${netflixUhdNote.split('\n').map(l => `<div class="nt-line" style="font-weight:400;opacity:.95;">${escapeHTML(l.trim())}</div>`).join('')}</div>` : '';
+    dom.checkout.noteText.innerHTML = quantityWarning + noteBlocks + netflixBlock + formatNotes(paymentInfoBlock.trim());
+    const telegramCustom = cart.some(i => i.product === 'Telegram Premium' && (i.duration.includes('1 Year') || i.section.includes('Gift') || i.section.includes('Link')));
+    dom.checkout.nextBtn.href = telegramCustom ? 'https://t.me/Fury_edtz' : 'https://t.me/leokron';
     dom.checkout.noteStep.style.display = 'block';
     dom.checkout.receiptStep.style.display = 'none';
     dom.checkout.nextBtn.style.display = 'none';
-
     showView('checkout');
     window.scrollTo(0, 0);
     dom.cart.bar.style.display = 'none';
@@ -2868,20 +2831,9 @@ ${firstLine}
 
   function buildReceipt() {
     const c = JSON.parse(localStorage.getItem('blp_cart') || '[]');
-    if (!c.length) {
-      dom.checkout.receiptStep.innerHTML = '<p>Your cart is empty.</p>';
-      return;
-    }
-
-    const items = c.map(i => ({
-      name: i.product,
-      plan: i.section,
-      duration: i.duration,
-      qty: i.qty,
-      sub: i.unitPrice * i.qty
-    }));
+    if (!c.length) { dom.checkout.receiptStep.innerHTML = '<p>Your cart is empty.</p>'; return; }
+    const items = c.map(i => ({ name: i.product, plan: i.section, duration: i.duration, qty: i.qty, sub: i.unitPrice * i.qty }));
     const total = items.reduce((s, x) => s + x.sub, 0);
-
     if (items.length === 1) {
       const x = items[0];
       dom.checkout.receipts.single.style.display = 'block';
@@ -2893,266 +2845,98 @@ ${firstLine}
     } else {
       dom.checkout.receipts.single.style.display = 'none';
       dom.checkout.receipts.multi.style.display = 'block';
-      const itemsHtml = items.map(item => `
-            <div class="receipt-line-item">
-                <div class="title">${escapeHTML(item.name)}${item.qty > 1 ? ` (x${item.qty})` : ''}</div>
-                <div class="details">${escapeHTML(item.plan)} • ${escapeHTML(item.duration)}</div>
-                <div class="price">${formatKyats(item.sub)}</div>
-            </div>
-        `).join('');
-      dom.checkout.receipts.rm_itemList.innerHTML = itemsHtml;
+      dom.checkout.receipts.rm_itemList.innerHTML = items.map(item => `<div class="receipt-line-item"><div class="title">${escapeHTML(item.name)}${item.qty > 1 ? ` (x${item.qty})` : ''}</div><div class="details">${escapeHTML(item.plan)} • ${escapeHTML(item.duration)}</div><div class="price">${formatKyats(item.sub)}</div></div>`).join('');
       dom.checkout.receipts.rm_total.textContent = formatKyats(total);
     }
-
-    const textLines = items.map(item =>
-      `- ${item.name} (${item.plan} • ${item.duration})${item.qty > 1 ? ` x${item.qty}` : ''}\n  Price: ${formatKyats(item.sub)}`
-    );
-    const clipboardText = textLines.join('\n\n') + `\n-------------------\nTotal: ${formatKyats(total)}`;
+    const clipboardText = items.map(i => `- ${i.name} (${i.plan} • ${i.duration})${i.qty > 1 ? ` x${i.qty}` : ''}\n  Price: ${formatKyats(i.sub)}`).join('\n\n') + `\n-------------------\nTotal: ${formatKyats(total)}`;
     dom.checkout.receiptText.value = clipboardText;
   }
 
-  /* =========================
-      FORMATTERS
-      ========================= */
   function formatDetails(raw) {
-    const headers = /^(Share|Private|SemiPrivate|FullPrivate|Tinder Plus Share|Login|Gift Plan & Link Plan|Gift Plan|Link Plan|Views \(NoDrop\)|Likes \(NoDrop\)|Comment - Emoji Type|Comment - Custom Type|Package Plan|Livestream Views|Livestream Likes|Livestream Share|Post Views|Positive Reactions|Negative Reactions|Custom Reactions|Premium Reactions|Members \(30Days Refill\)|Livestream Views|Comment - Impression Type|Comment - Custom Type|Video Views|Video Likes|Post Likes|Profile Followers|Page Followers|Live Stream Views|Video Views & Reels|Likes|Followers|Personal Plus \(Share\)|Personal Plus \(Private\)|Business - Invite Own Email|Business - Own|Private Own Mail|Private \(Own Mail\)|Base Service|1 Profile\(Semiprivate\)|5 Profiles\(Whole Account\)|Nitro Basic \(Key\)|Individual|Invite with email|Sharing Pro|Plan Basic|Plan Premium|HBO MAX \(ULTIMATE\) 1 Month|Private Whole Account \(1 Month\)|1 Profile|Whole Account|OwnMail Private|OwnMail Invite|Individual Plan|Business Own\(Full Warranty\)|Business Plus Own\(Full Warranty\)|Business Plus Own|Normal Plan|Family Head\(Can Invite 5 email\)|Invite Private|Web Private|Pro Share|Pro Private|Lifetime Premium|Educational\(Invite\)|Individual Plan\(Private\)|Stars|Japan Region \(¥\)|US Region \(\$\)|UK Region \(£\)|Custom Amount|Turkey Region \(TL\)|Indonesia Region \(IDR\)|Brazil Region \(BRL\)|Korea Region \(₩\)|India Region \(₹\)|Australia Region \(A\$\)|Germany Region \(€\)|France Region \(€\)|Italy Region \(€\)|Switzerland Region \(CHF\)|Canada Region \(C\$\)|UAE Region \(AED\)|Poland Region \(PLN\)|Nitro \(Key\))/i;
-
-    const vpnAlertTag = 'CAN\'T USE IN MYANMAR';
-
-    let mainDetailsRaw = raw.replace(new RegExp(vpnAlertTag.replace(/[\/\\^$*+?.()|[\]{}]/g, '\\$&'), 'g'), '').replace(generalDetailsBlock, '').trim();
-
-    const paymentDetailsRaw = generalDetailsBlock.trim();
-
-    const mainHtml = mainDetailsRaw.split(/\n+/).map(line => {
-      let t = line.trim();
-      if (!t) return "";
+    const headers = /^(Share|Private|SemiPrivate|FullPrivate|Tinder Plus Share|Login|Gift Plan & Link Plan|Gift Plan|Link Plan|Views \(NoDrop\)|Likes \(NoDrop\)|Package Plan|Livestream Views|Livestream Likes|Livestream Share|Post Views|Positive Reactions|Negative Reactions|Members \(30Days Refill\)|Comment - Impression Type|Comment - Custom Type|Video Views|Post Like|Profile Followers|Page follower|Live Stream Views|Video Views & Reels|Likes|Share|Save|Reach|Followers|Personal Plus|Business|Private Own Mail|Private \(Own Mail\)|Base Service|Normal Plan|Family Head|Invite Private|Web Private|App&Web Private|Pro Share|Pro Private|Lifetime Premium|Educational|Individual|Stars|Japan Region|US Region|UK Region|Custom Amount|Turkey Region|Indonesia Region|Brazil Region|Korea Region|India Region|Australia Region|Germany Region|France Region|Italy Region|Switzerland Region|Canada Region|Poland Region|UAE Region|Nitro)/i;
+    let mainDetails = raw.replace(/CAN'T USE IN MYANMAR/g, '').replace(generalDetailsBlock, '').trim();
+    const mainHtml = mainDetails.split(/\n+/).map(line => {
+      let t = line.trim(); if (!t) return "";
       if (headers.test(t)) return `<div class="md-h">${escapeHTML(t)}</div>`;
-
-      if (t.includes('ဒါကကိုယ်သုံးနေတဲ့ Emailကို GPT Plus ပြောင်းပေးတာဖြစ်ပီး history ကလဲကိုယ့်အကောင့်ပဲမို့ private history နဲ့သုံးရမာပါ။')) {
-        return `<div class="md-p burmese-font">${escapeHTML(t)}</div>`;
-      }
-
-      if (t.includes('—') && t.includes('Kyats') && t.includes('Month') && t.includes('Login')) {
-        return `<div class="md-p burmese-font">${escapeHTML(t)}</div>`;
-      }
-
-      return `<div class="md-p">${escapeHTML(t)}</div>`;
+      const isBurmese = /[\u1000-\u109F]/.test(t) || t.includes('Kyats') || t.includes('Login');
+      return `<div class="md-p${isBurmese ? ' burmese-font' : ''}">${escapeHTML(t)}</div>`;
     }).join("");
-
-    const paymentHtml = `<div class="payment-warning-block">${
-        paymentDetailsRaw.split(/\n+/).map(line => {
-            let t = line.trim(); if (!t) return "";
-            return `<div class="md-p">${escapeHTML(t)}</div>`;
-        }).join("")
-    }</div>`;
-
-    return mainHtml + paymentHtml;
+    return mainHtml + `<div class="payment-warning-block">${generalDetailsBlock.trim().split(/\n+/).map(l => `<div class="md-p">${escapeHTML(l.trim())}</div>`).join("")}</div>`;
   }
 
   function formatNotes(raw) {
-    const containsPaymentInfo = raw.includes(paymentInfoBlock.trim());
-
+    const containsPayment = raw.includes(paymentInfoBlock.trim());
     const lines = String(raw).split(/\n+/).map(line => {
-      const trimmedLine = line.trim();
-      if (!trimmedLine) return "";
-
-      if (trimmedLine.includes('CAN\'T USE IN MYANMAR')) {
-        return `<div class="vpn-alert">${trimmedLine}</div>`;
-      }
-
-      if (trimmedLine.includes('ဒါက') || trimmedLine.includes('This is a multi-device purchase')) {
-        return `<div class="nt-line burmese-font">${trimmedLine}</div>`;
-      }
-
-      if (trimmedLine.includes('ဒါက') || trimmedLine.includes('•') && trimmedLine.includes('Kyats')) {
-        return `<div class="nt-line burmese-font">${escapeHTML(trimmedLine)}</div>`;
-      }
-
-      if (trimmedLine.includes('Share ကတခြားလူ')) {
-        const burmeseText = trimmedLine.replace(/(\d+)\s*(‌ယောက်)/g, '$1 $2');
-        return `<div class="nt-line burmese-font">${burmeseText}</div>`;
-      }
-
-      if (trimmedLine.includes('Deactivate errorဖြစ်နိုင်လို့')) {
-        return `<div class="nt-line burmese-font">${escapeHTML(trimmedLine)}</div>`;
-      }
-
-      return `<div class="nt-line" style="font-weight: 400; opacity: .95;">${escapeHTML(trimmedLine)}</div>`;
+      const t = line.trim(); if (!t) return "";
+      if (t.includes('CAN\'T USE IN MYANMAR')) return `<div class="vpn-alert">${t}</div>`;
+      const isBurmese = /[\u1000-\u109F]/.test(t) || t.includes('multi-device') || t.includes('•') || t.includes('Share ကတခြားလူ') || t.includes('Deactivate');
+      return `<div class="nt-line${isBurmese ? ' burmese-font' : ''}" style="font-weight:400;opacity:.95;">${t.replace(/(\d+)\s*(‌ယောက်)/g, '$1 $2')}</div>`;
     }).join("");
-
-    if (containsPaymentInfo) {
-      return `<div class="payment-warning-block">${lines}</div>`;
-    }
-    return lines;
+    return containsPayment ? `<div class="payment-warning-block">${lines}</div>` : lines;
   }
 
   /* =========================
-      INITIALIZATION & EVENT LISTENERS
+      EVENT LISTENERS
       ========================= */
-
-  dom.search.input.addEventListener('input', (e) => {
-    if (dom.views.home.classList.contains('active')) {
-      filterProducts(e.target.value);
-    }
-  });
-
-  dom.search.clearBtn.addEventListener('click', () => {
-    dom.search.input.value = '';
-    dom.search.input.focus();
-    filterProducts('');
-  });
-
-  document.addEventListener('DOMContentLoaded', () => {
-    productCards = Array.from(dom.views.home.querySelectorAll('.card[data-product-name]'));
-    renderPopular("popular-home");
-    dom.search.container.style.display = 'flex';
-  });
-
+  dom.search.input.addEventListener('input', (e) => { if (dom.views.home.classList.contains('active')) filterProducts(e.target.value); });
+  dom.search.clearBtn.addEventListener('click', () => { dom.search.input.value = ''; dom.search.input.focus(); filterProducts(''); });
+  document.addEventListener('DOMContentLoaded', () => { productCards = Array.from(dom.views.home.querySelectorAll('.card[data-product-name]')); renderPopular("popular-home"); dom.search.container.style.display = 'flex'; });
   const checkoutBtn = document.getElementById('checkout-btn');
-  if (checkoutBtn) {
-    checkoutBtn.addEventListener('click', (e) => {
-      e.preventDefault();
-      e.stopPropagation();
-      goCheckoutView();
-    });
-  }
+  if (checkoutBtn) checkoutBtn.addEventListener('click', (e) => { e.preventDefault(); e.stopPropagation(); goCheckoutView(); });
 
   document.body.addEventListener('click', async (e) => {
     const target = e.target;
-
     const productCard = target.closest('[data-product-name]');
     if (productCard && (productCard.classList.contains('card') || productCard.classList.contains('pop-card'))) {
       productCard.classList.add('tap-anim');
       setTimeout(() => productCard.classList.remove('tap-anim'), 120);
-
       openProduct(productCard.dataset.productName);
       return;
     }
-
     if (target.id === 'product-back-btn') {
-      const currentTitle = document.querySelector('.hero-title').innerText;
-      if (currentTitle.includes('Google Play') && !currentTitle.includes('Gift Card')) {
-        renderRegionalSelector("Google Play Gift Card", regionalProducts["Google Play Gift Card"]);
-        return;
+      const title = document.querySelector('.hero-title').innerText;
+      if ((title.includes('Google Play') || title.includes('Steam')) && !title.includes('Gift Card')) {
+          const cat = title.includes('Google Play') ? "Google Play Gift Card" : "Steam Gift Card";
+          renderRegionalSelector(cat, regionalProducts[cat]);
+          return;
       }
-      if (currentTitle.includes('Steam') && !currentTitle.includes('Gift Card')) {
-        renderRegionalSelector("Steam Gift Card", regionalProducts["Steam Gift Card"]);
-        return;
-      }
-
-      showView('home');
-      window.scrollTo(0, lastScroll);
-      return;
+      showView('home'); window.scrollTo(0, lastScroll); return;
     }
-
     const moreDetailsBtn = target.closest('.hero-more');
     if (moreDetailsBtn) {
-      moreDetailsBtn.classList.add('tap-anim');
-      setTimeout(() => moreDetailsBtn.classList.remove('tap-anim'), 120);
-
-      const productName = moreDetailsBtn.dataset.productName;
-      const raw = moreDetailsByProduct[productName] || "More details coming soon.";
-      dom.explain.text.innerHTML = formatDetails(raw);
-      dom.explain.overlay.style.display = "grid";
-      return;
+      moreDetailsBtn.classList.add('tap-anim'); setTimeout(() => moreDetailsBtn.classList.remove('tap-anim'), 120);
+      dom.explain.text.innerHTML = formatDetails(moreDetailsByProduct[moreDetailsBtn.dataset.productName] || "Coming soon.");
+      dom.explain.overlay.style.display = "grid"; return;
     }
-
     const whyBuyBtn = target.closest('#why-buy-btn');
     if (whyBuyBtn) {
-      whyBuyBtn.classList.add('tap-anim');
-      setTimeout(() => whyBuyBtn.classList.remove('tap-anim'), 120);
-      dom.whyBuy.overlay.style.display = "grid";
-      return;
+      whyBuyBtn.classList.add('tap-anim'); setTimeout(() => whyBuyBtn.classList.remove('tap-anim'), 120);
+      dom.whyBuy.overlay.style.display = "grid"; return;
     }
-
-    if (target.id === 'explain-ok-btn' || target.closest('#explain-ok-btn')) {
-      dom.explain.overlay.style.display = "none";
-      return;
-    }
-
-    if (target.id === 'why-buy-back-btn' || target.closest('#why-buy-back-btn')) {
-      dom.whyBuy.overlay.style.display = "none";
-      return;
-    }
-
+    if (target.id === 'explain-ok-btn' || target.closest('#explain-ok-btn')) { dom.explain.overlay.style.display = "none"; return; }
+    if (target.id === 'why-buy-back-btn' || target.closest('#why-buy-back-btn')) { dom.whyBuy.overlay.style.display = "none"; return; }
     const tapTarget = target.closest('.tap-anim-target');
-    if (tapTarget) {
-      tapTarget.classList.add('tap-anim');
-      setTimeout(() => tapTarget.classList.remove('tap-anim'), 120);
-    }
-
+    if (tapTarget) { tapTarget.classList.add('tap-anim'); setTimeout(() => tapTarget.classList.remove('tap-anim'), 120); }
     const qtyBtn = target.closest('.qty-btn');
-    if (qtyBtn) {
-      try {
-        const item = JSON.parse(qtyBtn.dataset.item);
-        if (qtyBtn.dataset.action === "inc") addToCart(item);
-        else if (qtyBtn.dataset.action === "dec") decFromCart(item);
-      } catch {}
-      return;
-    }
-
+    if (qtyBtn) { try { const item = JSON.parse(qtyBtn.dataset.item); if (qtyBtn.dataset.action === "inc") addToCart(item); else decFromCart(item); } catch {} return; }
     const removeBtn = target.closest('.remove-btn');
-    if (removeBtn) {
-      removeItemFromCart(removeBtn.dataset.cartKey);
-      return;
-    }
-
+    if (removeBtn) { removeItemFromCart(removeBtn.dataset.cartKey); return; }
     if (target.id === 'cart-toggle-btn') {
       dom.cart.bar.classList.toggle('collapsed');
-      requestAnimationFrame(() => {
-        let cartBarHeight = dom.cart.bar.classList.contains('collapsed') ? 60 : dom.cart.bar.offsetHeight;
-        document.body.style.paddingBottom = (cartBarHeight) + "px";
-      });
+      requestAnimationFrame(() => { let h = dom.cart.bar.classList.contains('collapsed') ? 60 : dom.cart.bar.offsetHeight; document.body.style.paddingBottom = h + "px"; });
       return;
     }
-
-    if (target.id === 'clear-cart-btn') {
-      clearCart();
-      return;
-    }
-
-    if (target.id === 'checkout-back-btn') {
-      if (cart.length) dom.cart.bar.style.display = 'block';
-      showView(lastViewBeforeCheckout);
-      return;
-    }
-
-    if (target.id === 'note-ok-btn' || target.closest('#note-ok-btn')) {
-      dom.checkout.noteStep.style.display = 'none';
-      dom.checkout.receiptStep.style.display = 'block';
-      buildReceipt();
-
-      dom.checkout.receiptStep.style.pointerEvents = 'none';
-      setTimeout(() => {
-        dom.checkout.receiptStep.style.pointerEvents = 'auto';
-      }, 50);
-      return;
-    }
-
+    if (target.id === 'clear-cart-btn') { clearCart(); return; }
+    if (target.id === 'checkout-back-btn') { if (cart.length) dom.cart.bar.style.display = 'block'; showView(lastViewBeforeCheckout); return; }
+    if (target.id === 'note-ok-btn' || target.closest('#note-ok-btn')) { dom.checkout.noteStep.style.display = 'none'; dom.checkout.receiptStep.style.display = 'block'; buildReceipt(); return; }
     if (target.id === 'copy-receipt-btn' || target.closest('#copy-receipt-btn')) {
-      const ta = dom.checkout.receiptText;
-      const btn = dom.checkout.copyReceiptBtn;
-
+      const ta = dom.checkout.receiptText; const btn = dom.checkout.copyReceiptBtn;
       try {
-        if (navigator.clipboard) {
-          await navigator.clipboard.writeText(ta.value);
-        } else {
-          ta.select();
-          ta.setSelectionRange(0, 99999);
-          document.execCommand('copy');
-        }
-
-        btn.textContent = 'Copied!';
-        btn.classList.add('copied');
-        btn.disabled = true;
-
+        if (navigator.clipboard) await navigator.clipboard.writeText(ta.value);
+        else { ta.select(); document.execCommand('copy'); }
+        btn.textContent = 'Copied!'; btn.classList.add('copied'); btn.disabled = true;
         dom.checkout.nextBtn.style.display = 'inline-block';
-
-      } catch (err) {
-        console.error('Failed to copy:', err);
-      }
-      return;
+      } catch (err) { console.error(err); }
     }
   });
-
 })();

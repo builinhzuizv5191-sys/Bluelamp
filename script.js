@@ -693,10 +693,12 @@
   "OwnMail Invite": [{
     "duration": "1 Year",
     "price": "15,000 Kyats"
-  }]
-},
-
-"NotebookLM": {
+  }],
+      "Private": [{
+        "duration": "1 Year",
+       "price": "30,000 Kyats"
+      }]
+},"NotebookLM": {
   "OwnMail Invite": [{
     "duration": "1 Year",
     "price": "15,000 Kyats"
@@ -1850,7 +1852,7 @@
 "Adobe Capture": ["android", "ios"],
 "Adobe Aero": ["ios", "pc"],
 "Adobe Fonts": ["pc", "android", "ios"],
-    "HMA VPN": ["pc", "android", "ios"],
+    "HMA VPN": ["pc", "android"],
     "Crunchyroll": ["android", "ios", "pc"],
     "Telegram Star": ["android", "ios", "pc"],
     "Google Play Gift Card": [],
@@ -2227,7 +2229,7 @@ const adobeGroup = [
              title += ' <span style="background:#ffeb3b; color:#000; padding:2px 6px; border-radius:4px; font-size:11px; margin-left:8px; font-weight:900; box-shadow:0 0 5px #ffeb3b;">Powered by AdobeCreativeCloud</span>';
           }
         } else if (productName === 'Flow AI' || productName === 'NotebookLM') {
-         if (sectionName === 'Invite OwnMail' || sectionName === 'OwnMail Invite') {
+         if (sectionName === 'Invite OwnMail' || sectionName === 'OwnMail Invite' || sectionName === 'Private') {
             title += ' <span style="background:#ffeb3b; color:#000; padding:2px 6px; border-radius:4px; font-size:11px; margin-left:8px; font-weight:900; box-shadow:0 0 5px #ffeb3b;">Powered By GoogleOneGemini</span>';
           }
 
@@ -2351,7 +2353,7 @@ const adobeGroup = [
         <div class="hero-subtitle" style="opacity:0.8; margin-bottom:10px;">Select Region</div>
       </div>
         
-      <div class="grid" style="grid-template-columns: repeat(3, 1fr); gap: 10px;">
+      <div class="grid region-grid" style="grid-template-columns: repeat(3, 1fr); gap: 10px;">
         ${regions.map(region => `
             <div class="card tap" data-product-name="${escapeHTML(region.name)}">
                 <img src="${region.img}" alt="${escapeHTML(region.name)}">
@@ -2536,18 +2538,18 @@ Includes 2000GB Google storage• Unlimited devices
 OwnMail Invite
 ဒါကကိုယ့်ရဲ့GmailကိုပဲProလုပ်ပေးတာမလို့။အလုပ်လဲမရှုပ်ပါဘူး။ Password လဲပေးစရာမလိုပါဘူး။ Device ကလဲဝင်ထားသလောက်သုံးလို့ရနေမာပါ။` + generalDetailsBlock,
     "Flow AI": `OwnMail Invite
-
 ဒီဟာကGoogle One Pro,Gemini Proဝယ်ရင်ပါတဲ့ဟာပါ။
+Invite Planမို့လို့Ai Credit တစ်လ 1000ကိုတော့ Share Useရမာပါ။
+ဆိုလိုတာကတခြားFamily Membersတေသုံးရင်လဲCreditsတေကလျှော့နိုင်ပါတယ်။
 ဒီဟာဝယ်ရင်
-Google One Storage2TB 1Year
-Gemini Veo 3 Pro 2TB 1Yearပါရမာပါ။` + generalDetailsBlock,
+Google One Storage2TB 1Year(Share)
+Gemini Veo 3 Pro 1Yearပါရမာပါ။` + generalDetailsBlock,
 
 "NotebookLM": `OwnMail Invite
-
 ဒီဟာကGoogle One Pro,Gemini Proဝယ်ရင်ပါတဲ့ဟာပါ။
 ဒီဟာဝယ်ရင်
-Google One Storage2TB 1Year
-Gemini Veo 3 Pro 2TB 1Yearပါရမာပါ။` + generalDetailsBlock,
+Google One Storage2TB 1Year(Share)
+Gemini Veo 3 Pro 1Yearပါရမာပါ။` + generalDetailsBlock,
     "Grammarly AI": `Share\nFull warranty • One device only` + generalDetailsBlock,
     "Zoom": `Full warranty.\nAll pro features unlock.\nCan use 2-5 devices.` + generalDetailsBlock,
     "YouTube": `Private (Individual Plan)
@@ -2692,7 +2694,8 @@ InDesign → design posters, books, layouts
 Acrobat Pro → edit & sign PDFs
 
 စတဲ့ App တေရဲ့ Pro version တေအပြင်တခြား audio, animation, UI design, and content creationလုပ်ဖို့လိုတဲ့ Appတေပါပါမာပါ။` + generalDetailsBlock,
-    "HMA VPN": `Can use 5 to 10 devices. Recommend for desktop devices.` + generalDetailsBlock,
+    "HMA VPN": `Can use 5 to 10 devices.
+Can't use on iOS devices.` + generalDetailsBlock,
     "Crunchyroll": `Share\n5-Months warranty • One device only` + generalDetailsBlock,
     "Telegram Star": `Usernameပဲလိုပါမယ်` + generalDetailsBlock,
     "Google Play Turkey": "Region: Turkey (TL)\nBuy specific amounts for Turkey Region accounts." + generalDetailsBlock,
@@ -2713,6 +2716,11 @@ Acrobat Pro → edit & sign PDFs
 
   function getNoteForCartItem(item) {
     const productName = item.product.replace(/ \(.+\)$/, '');
+      // --- Flow AI / NotebookLM Checkout Notes ---
+   if ((productName === 'Flow AI' || productName === 'NotebookLM') && item.section === 'Private') {
+    return `Includes 2000GB Google storage• Unlimited devices
+    ဒါမဲ့ဝယ်ရင်စစချင်းသိထားရမာတေရှိပါတယ်။ Admin ပြောပြပါလိမ့်မယ်။`;
+   }
       const isAdobeProduct = adobeGroup.includes(productName);
   const forceNoteProductName =
     isAdobeProduct && productName !== "LightRoom"

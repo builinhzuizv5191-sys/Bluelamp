@@ -6,7 +6,8 @@
     /* Noto Serif Myanmar is the font loaded by the HTML <link> tag */
     font-family: 'Noto Serif Myanmar', 'Chivo', sans-serif !important; 
     line-height: 1.8 !important; /* Ensure readability for Burmese font */
-    color: #ffeb3b !important; /* Brighter gold/yellow for high contrast */
+    color: #7dd3fc !important;
+    text-shadow: 0 0 6px rgba(125, 211, 252, 0.4);
     font-weight: 700 !important;
 }
 

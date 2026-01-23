@@ -378,14 +378,14 @@
         "duration": "7 Days",
         "price": "3,000 Kyats"
       }, {
-        "duration": "1 Month",
+        "duration": "1 Month (30~35 Days)",
         "price": "10,000 Kyats"
       }],
       "Private Own Mail": [{
         "duration": "7 Days",
         "price": "4,000 Kyats"
       }, {
-        "duration": "1 Month",
+        "duration": "1 Month (30~35 Days)",
         "price": "12,000 Kyats"
       }]
     },
@@ -503,17 +503,24 @@
       }]
     },
     "Express Vpn": {
+      "Private": [{
+        "duration": "1 Month",
+        "price": "7,900 Kyats"
+      }],
       "Share": [{
         "duration": "1 Month",
         "price": "1,000 Kyats"
       }, {
-        "duration": "PC / Laptop (1 Month)",
+        "duration": "WindowsPC / Laptop(1 Month)",
         "price": "2,000 Kyats"
-      }],
-      "Private": [{
-        "duration": "1 Month",
-        "price": "7,900 Kyats"
+      }, {
+        "duration": "MacBook(1 Month)",
+        "price": "2,000 Kyats"
+      }, {
+        "duration": "Linux(1 Month)",
+        "price": "2,000 Kyats"
       }]
+     
     },
     "NordVpn": {
       "Share": [{
@@ -2716,6 +2723,47 @@ Can't use on iOS devices.` + generalDetailsBlock,
 
   function getNoteForCartItem(item) {
     const productName = item.product.replace(/ \(.+\)$/, '');
+    // ================= CAPCUT CHECKOUT NOTES =================
+    if (productName === "CapCut") {
+      // Private 1 Month
+   if (item.section === "Private" && item.duration.includes("1 Month")) {
+    return `<div class="burmese-font">30~35 ဆိုတာက ကျနော်က တစ်လလို့ရေးထားပေးမယ်။
+    30ရက်တစ်လအတိလဲပါနိုင်တယ်၊အများဆုံး 35 ရက်ထိပါနိုင်တာကိုပြောချင်တာပါ။  
+    2 to 3 devices. Full warranty for the entire plan duration.
+    </div>`;
+   }
+     
+     // Own Mail 1 Month
+   if (item.section === "Private Own Mail" && item.duration.includes("1 Month")) {
+    return `<div class="burmese-font">OwnMail နဲ့လုပ်ဖို့ဆို CapCut တခါမမဖွင့်ဖူးတဲ့ Email လိုပါမယ်။ အဲ့တာနဲ့မရမာပါ။
+    CapCut က အကောင့်ပြောင်းလဲ Project တေမပျက်တာမလို့ Private ကပိုရွေးချယ်သင့်ပါတယ်။  
+    30~35 ဆိုတာက ကျနော်က တစ်လလို့ရေးထားပေးမယ်။30ရက်တစ်လအတိလဲပါနိုင်တယ်
+    အများဆုံး 35 ရက်ထိပါနိုင်တာကိုပြောချင်တာပါ။  
+    2 to 3 devices. Full warranty for the entire plan duration.
+    </div>`;
+   }
+
+     // Own Mail 1 Week
+   if (item.section === "Private Own Mail" && item.duration.includes("7 Days")) {
+    return `<div class="burmese-font">OwnMail နဲ့လုပ်ဖို့ဆို CapCut တခါမမဖွင့်ဖူးတဲ့ Email လိုပါမယ်။ အဲ့တာနဲ့မရမာပါ။
+    CapCut က အကောင့်ပြောင်းလဲ Project တေမပျက်တာမလို့ Private ကပိုရွေးချယ်သင့်ပါတယ်။   
+    2 to 3 devices. Full warranty for the entire plan duration.
+    </div>`;
+   }
+      
+   }
+   // ================= END CAPCUT NOTES ================= 
+      // Express VPN Windows plan note (Share → WindowsPC/Laptop)
+   if (productName === "Express Vpn" && /windowspc/i.test(item.duration)) {
+    return "Windows deviceတေမာပဲသုံးလို့ရပါမယ်။Full warrenty.";
+   }
+   if (/macbook/i.test(item.duration)) {
+    return "MacBookမာပဲသုံးလို့ရပါမယ်။Full Warranty.";
+   }
+   if (/linux/i.test(item.duration)) {
+    return "Linux deviceတေမာပဲသုံးလို့ရပါမယ်။Full Warranty.";
+   }
+
       // --- Flow AI / NotebookLM Checkout Notes ---
    if ((productName === 'Flow AI' || productName === 'NotebookLM') && item.section === 'Private') {
     return `Includes 2000GB Google storage• Unlimited devices

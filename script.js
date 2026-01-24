@@ -1958,6 +1958,14 @@ const adobeGroup = [
     duration,
     priceText
   }) => [product, section, duration, priceText].join("|");
+  // ✅ Convert product name to URL-friendly text
+  function toSlug(name) {
+  return String(name)
+    .trim()
+    .toLowerCase()
+    .replace(/\s+/g, '-')      // spaces -> -
+    .replace(/[^\w-]/g, '');   // remove weird symbols
+  }
 
   /* =========================
       CART LOGIC
@@ -2133,6 +2141,8 @@ const adobeGroup = [
       ========================= */
   function openProduct(productName) {
     lastScroll = window.scrollY;
+    // ✅ Update URL so you can copy/share this product page
+    history.replaceState(null, "", "#" + toSlug(productName));
 
     // --- Handle Regional Products ---
     if (regionalProducts[productName]) {
@@ -2995,4 +3005,19 @@ Can't use on iOS devices.` + generalDetailsBlock,
       } catch (err) { console.error(err); }
     }
   });
+     // ✅ Auto open product when user comes from shared link (example: #capcut)
+     window.addEventListener("load", () => {
+     const slug = location.hash.replace("#", "");
+     if (!slug) return;
+
+     // find the matching product card using slug
+     const card = [...document.querySelectorAll('[data-product-name]')].find(el => {
+     return toSlug(el.dataset.productName) === slug;
+  });
+
+     if (card) {
+     card.click();
+  }
+});
+
 })();

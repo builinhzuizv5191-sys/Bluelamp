@@ -137,7 +137,7 @@
     "NotebookLM": "https://ik.imagekit.io/dkdlgynlu/Wattpad%20_363313A_.png?updatedAt=1768837724010",
     "Grammarly AI": "https://ik.imagekit.io/dkdlgynlu/New-Project-52-087-AC47.png",
     "Zoom": "https://ik.imagekit.io/dkdlgynlu/New-Project-52-5270010.png",
-    "YouTube": "https://ik.imagekit.io/dkdlgynlu/New-Project-52-2-DCD6-D5.png",
+    "YouTube Premium": "https://ik.imagekit.io/dkdlgynlu/New-Project-52-2-DCD6-D5.png",
     "Tinder": "https://ik.imagekit.io/dkdlgynlu/New-Project-52-DCDE0-B9.png",
     "Telegram Premium": "https://ik.imagekit.io/dkdlgynlu/New-Project-52-A162-FC1.png",
     "Discord": "https://ik.imagekit.io/dkdlgynlu/New-Project-52-D060367.png",
@@ -668,7 +668,7 @@
         "duration": "1 Month",
         "price": "15,000 Kyats"
       }],
-      "Business - Invite Own Email": [{
+      "Business Plus - Invite Own Email": [{
         "duration": "1 Month",
         "price": "12,000 Kyats"
       }],
@@ -728,7 +728,7 @@
         "price": "8,599 Kyats"
       }]
     },
-    "YouTube": {
+    "YouTube Premium": {
       "Private": [{
         "duration": "1 Month",
         "price": "6,000 Kyats"
@@ -1818,7 +1818,7 @@
     "Flow AI": ["android", "ios", "pc"],
     "NotebookLM": ["android", "ios", "pc"],
     "Zoom": ["pc", "android", "ios"],
-    "YouTube": ["pc", "android", "ios", "tv"],
+    "YouTube Premium": ["pc", "android", "ios", "tv"],
     "Tinder": ["android", "ios"],
     "Telegram Premium": ["android", "ios", "pc"],
     "Discord": ["android", "ios", "pc"],
@@ -2249,6 +2249,10 @@ const adobeGroup = [
          if (sectionName === 'Invite OwnMail' || sectionName === 'OwnMail Invite' || sectionName === 'Private') {
             title += ' <span style="background:#ffeb3b; color:#000; padding:2px 6px; border-radius:4px; font-size:11px; margin-left:8px; font-weight:900; box-shadow:0 0 5px #ffeb3b;">Powered By GoogleOneGemini</span>';
           }
+        } else if (productName === 'AlightMotion') {
+         if (sectionName === 'Private (Own Mail)') {
+            title += ' <span style="background:#00ff9c; color:#002b1f; padding:2px 6px; border-radius:4px; font-size:11px; margin-left:8px; font-weight:900; box-shadow:0 0 10px #00ff9c;">Recommended</span>';
+          }
 
         } else if (productName === 'HBO Max') {
           if (sectionName.includes('(ULTIMATE)')) {
@@ -2418,21 +2422,25 @@ Private
 Private Own Mail
 2 to 3 devices. Full warranty for the entire plan duration.` + generalDetailsBlock,
     "AlightMotion": `Share
-Full warranty for full duration
+Full warranty for 6Months
 Covers premium subscription errors
 We'll renew a new one if any error occurs
 
 Private
 Full warranty for full duration
 8 devices max
-Covers premium subscription errors
-We'll renew a new one if any error occurs
+Private က Tempmailနဲ့လုပ်ထားတာပါ။
+Full Warranty က 1Yearအတွင်းတခုခုဖြစ်ရင်တခါပြန်လဲပေးပါတယ်။
+Riskကင်းတဲ့ OwnMail ယူလဲရပါတယ်။
 
 Private (Own Mail)
 Full warranty for full duration
 8 devices max
-Covers premium subscription errors
-We'll renew a new one if any error occurs` + generalDetailsBlock,
+Gmail/Email and password ပေးရပါတယ်။
+အကောင့်ရဲ့ Password ပါ။
+Alight Motionမာထားမဲ့ Password မဟုတ်ပါဘူး။
+Google အကောင့်ကိုဝင်ပီးလုပ်ပေးမာပါ။
+ပီးရင်ပြန်ထွက်မာပါ။` + generalDetailsBlock,
     "Wink": `Share
 One device only
 Full warranty for full duration
@@ -2535,7 +2543,7 @@ Full warranty for plan duration.` + generalDetailsBlock,
 Up to 5 devices (not recommended)
 ${chatGptWarrantyNote}
 
-Business - Invite Own Email
+Business Plus - Invite Own Email
 1 device
 ဒါကကိုယ်သုံးနေတဲ့ Emailကို GPT Plus ပြောင်းပေးတာဖြစ်ပီး history ကလဲကိုယ့်အကောင့်ပဲမို့ private history နဲ့သုံးရမာပါ။
 ${chatGptWarrantyNote}
@@ -2569,7 +2577,7 @@ Google One Storage2TB 1Year(Share)
 Gemini Veo 3 Pro 1Yearပါရမာပါ။` + generalDetailsBlock,
     "Grammarly AI": `Share\nFull warranty • One device only` + generalDetailsBlock,
     "Zoom": `Full warranty.\nAll pro features unlock.\nCan use 2-5 devices.` + generalDetailsBlock,
-    "YouTube": `Private (Individual Plan)
+    "YouTube Premium": `Private (Individual Plan)
 Full warranty.
 No ads with all YouTube premium features.
 Including YouTube music.` + generalDetailsBlock,
@@ -2733,6 +2741,30 @@ Can't use on iOS devices.` + generalDetailsBlock,
 
   function getNoteForCartItem(item) {
     const productName = item.product.replace(/ \(.+\)$/, '');
+    if (productName === "AlightMotion") {
+    if (item.section === "Share") {
+    return `Full warranty for 6Months
+    Covers premium subscription errors
+    We'll renew a new one if any error occurs`;
+    }
+    if (item.section === "Private") {
+    return `Full warranty for full duration
+    8 devices max
+    Private က Tempmailနဲ့လုပ်ထားတာပါ။
+    Full Warranty က 1Yearအတွင်းတခုခုဖြစ်ရင်တခါပြန်လဲပေးပါတယ်။
+    Riskကင်းတဲ့ OwnMail ယူလဲရပါတယ်။`;
+    }
+    if (item.section === "Private (Own Mail)" || item.section === "Private (Own Mail)") {
+    return `Full warranty for full duration
+    8 devices max
+    Gmail/Email and password ပေးရပါတယ်။
+    အကောင့်ရဲ့ Password ပါ။
+    Alight Motionမာထားမဲ့ Password မဟုတ်ပါဘူး။
+    Google အကောင့်ကိုဝင်ပီးလုပ်ပေးမာပါ။
+    ပီးရင်ပြန်ထွက်မာပါ။`;
+    }
+    }
+
     // ================= CAPCUT CHECKOUT NOTES =================
     if (productName === "CapCut") {
       // Private 1 Month
@@ -2800,7 +2832,7 @@ Can't use on iOS devices.` + generalDetailsBlock,
         if (productName === "INSHOT") return `Mod appမဟုတ်ပါဘူး။Android onlyပဲသူံးလို့ရပါတယ်။ Playstore ကappမာပဲသုံးလို့ရပါမယ်။\nWarranty 3လပေးပါတယ်။\nShare plan မို့လို့ 1 device ပဲသုံးလို့ရပါမယ်။`;
     if (!fullText) return null;
     const rawDetails = fullText.trim();
-    const sectionHeaders = /^(Share|Private|SemiPrivate|FullPrivate|Tinder Plus Share|Login|Gift Plan & Link Plan|Gift Plan|Link Plan|Views \(NoDrop\)|Likes \(NoDrop\)|Comment - Emoji Type|Comment - Custom Type|Package Plan|Livestream Views|Livestream Likes|Livestream Share|Post Views|Positive Reactions|Negative Reactions|Custom Reactions|Premium Reactions|Members \(30Days Refill\)|Livestream Views|Comment - Impression Type|Comment - Custom Type|Video Views|Video Likes|Post Likes|Profile Followers|Page Followers|Live Stream Views|Video Views & Reels|Likes|Followers|Personal Plus \(Share\)|Personal Plus \(Private\)|Business - Invite Own Email|Business - Own|Private Own Mail|Private \(Own Mail\)|Base Service|1 Profile\(Semiprivate\)|5 Profiles\(Whole Account\)|Nitro Basic \(Key\)|Individual|Invite with email|Sharing Pro|Plan Basic|Plan Premium|HBO MAX \(ULTIMATE\) 1 Month|Private Whole Account \(1 Month\)|1 Profile|Whole Account|OwnMail Private|OwnMail Invite|Individual Plan|Business Own\(Full Warranty\)|Business Plus Own\(Full Warranty\)|Business Plus Own|Normal Plan|Family Head\(Can Invite 5 email\)|Invite Private|Web Private|App&Web Private|Pro Share|Pro Private|Lifetime Premium|Educational\(Invite\)|Individual Plan\(Private\)|Stars|Japan Region \(¥\)|US Region \(\$\)|UK Region \(£\)|Custom Amount|Turkey Region \(TL\)|Indonesia Region \(IDR\)|Brazil Region \(BRL\)|Korea Region \(₩\)|India Region \(₹\)|Australia Region \(A\$\)|Germany Region \(€\)|France Region \(€\)|Italy Region \(€\)|Switzerland Region \(CHF\)|Canada Region \(C\$\)|UAE Region \(AED\)|Poland Region \(PLN\)|Nitro \(Key\))/i;
+    const sectionHeaders = /^(Share|Private|SemiPrivate|FullPrivate|Tinder Plus Share|Login|Gift Plan & Link Plan|Gift Plan|Link Plan|Views \(NoDrop\)|Likes \(NoDrop\)|Comment - Emoji Type|Comment - Custom Type|Package Plan|Livestream Views|Livestream Likes|Livestream Share|Post Views|Positive Reactions|Negative Reactions|Custom Reactions|Premium Reactions|Members \(30Days Refill\)|Livestream Views|Comment - Impression Type|Comment - Custom Type|Video Views|Video Likes|Post Likes|Profile Followers|Page Followers|Live Stream Views|Video Views & Reels|Likes|Followers|Personal Plus \(Share\)|Personal Plus \(Private\)|Business Plus - Invite Own Email|Business - Own|Private Own Mail|Private \(Own Mail\)|Base Service|1 Profile\(Semiprivate\)|5 Profiles\(Whole Account\)|Nitro Basic \(Key\)|Individual|Invite with email|Sharing Pro|Plan Basic|Plan Premium|HBO MAX \(ULTIMATE\) 1 Month|Private Whole Account \(1 Month\)|1 Profile|Whole Account|OwnMail Private|OwnMail Invite|Individual Plan|Business Own\(Full Warranty\)|Business Plus Own\(Full Warranty\)|Business Plus Own|Normal Plan|Family Head\(Can Invite 5 email\)|Invite Private|Web Private|App&Web Private|Pro Share|Pro Private|Lifetime Premium|Educational\(Invite\)|Individual Plan\(Private\)|Stars|Japan Region \(¥\)|US Region \(\$\)|UK Region \(£\)|Custom Amount|Turkey Region \(TL\)|Indonesia Region \(IDR\)|Brazil Region \(BRL\)|Korea Region \(₩\)|India Region \(₹\)|Australia Region \(A\$\)|Germany Region \(€\)|France Region \(€\)|Italy Region \(€\)|Switzerland Region \(CHF\)|Canada Region \(C\$\)|UAE Region \(AED\)|Poland Region \(PLN\)|Nitro \(Key\))/i;
     const lines = rawDetails.split('\n').map(l => l.trim()).filter(l => l.length > 0);
     let targetSection = forceNoteSectionName.replace(/ \(.*\)/, '');
     if (productName === 'HBO Max') targetSection = item.section;
@@ -2873,7 +2905,7 @@ Can't use on iOS devices.` + generalDetailsBlock,
     cart.forEach(item => {
       const productKey = item.product + item.section;
       let noteContent = getNoteForCartItem(item);
-      if (item.product === 'YouTube' && !noteContent.includes("Renew")) noteContent += "\nRenew လို့ရပါတယ်။သက်တန်းတိုးရင်တော့ 1Month ကို 6000ပါ။";
+      if (item.product === 'YouTube Premium' && !noteContent.includes("Renew")) noteContent += "\nRenew လို့ရပါတယ်။သက်တန်းတိုးရင်တော့ 1Month ကို 6000ပါ။";
       if (noteContent) uniqueProductNotes.set(productKey, { item, noteContent });
     });
     const noteBlocks = Array.from(uniqueProductNotes.values()).map(({ item, noteContent }) => {

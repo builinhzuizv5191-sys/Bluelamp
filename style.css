@@ -396,6 +396,7 @@ main#home-view > .popular-section {
 .plan-rows{display:flex;flex-direction:column;gap:12px}
 
 .plan-row{
+  grid-template-columns: minmax(0, 1fr) auto; /* ✅ allows text to wrap properly */
   display:grid;
   grid-template-columns: 1fr auto;
   grid-template-areas: "title qty" "price qty";
@@ -406,16 +407,24 @@ main#home-view > .popular-section {
 }
 .plan-row.tap-anim{transform:scale(.985); background: rgba(56, 189, 248, 0.15);} /* New Active BG */
 .plan-left{
-    /* Layout Fix: Ensure plan duration/titles fit on one line in the product view */
-    grid-area:title;
-    font-size:15px; /* Decreased font size slightly for better fit */
-    font-weight:800;
-    color: var(--text); /* Used new primary text color */
-    letter-spacing:.2px;
-    white-space: nowrap; /* Forces text onto a single line */
-    overflow: hidden;
-    text-overflow: ellipsis;
+  grid-area:title;
+  font-size: clamp(13px, 3.6vw, 15px); /* auto scale on small screens */
+  font-weight: 800;
+  color: var(--text);
+  letter-spacing: .2px;
+
+  /* ✅ allow wrapping instead of cutting */
+  white-space: normal;
+  overflow: visible;
+  text-overflow: unset;
+
+  /* ✅ nice 2-line clamp (no ugly cut in middle) */
+  display: -webkit-box;
+  -webkit-box-orient: vertical;
+  -webkit-line-clamp: 2;   /* show max 2 lines */
+  line-clamp: 2;
 }
+
 .plan-price{grid-area:price;font-size:16px;font-weight:900;color:var(--accent-2)}
 .plan-qty{grid-area:qty;display:flex;justify-content:flex-end}
 

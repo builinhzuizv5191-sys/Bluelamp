@@ -735,7 +735,11 @@
       }, {
         "duration": "3 Months",
         "price": "16,500 Kyats"
-      }]
+      }],
+      "OwnMail Invite(Family Plan)": [{
+         "duration": "1 Month",
+         "price": "5,000 Kyats"
+      }] 
     },
     "Tinder": {
       "Tinder Plus Share": [{
@@ -2580,7 +2584,14 @@ Gemini Veo 3 Pro 1Yearပါရမာပါ။` + generalDetailsBlock,
     "YouTube Premium": `Private (Individual Plan)
 Full warranty.
 No ads with all YouTube premium features.
-Including YouTube music.` + generalDetailsBlock,
+Including YouTube music.
+
+OwnMail Invite(Family Plan)
+YouTube Account ပေးရမာပါ။
+ဝင်ပီး Region Changeပေးမာပါ။Gmail&Passwordလိုပါတယ်။
+လုပ်ပီးရင်ပြန်ထွက်မာပါ။လတိုင်းသက်တန်းတိုးလို့ရပါတယ်။
+Warranty ကတခုခုဖြစ်ခဲ့ရင်တခါပြန်လဲပေးပါတယ်။` + generalDetailsBlock,
+
     "Tinder": `Code redeem use.\n1× warranty. Can only use one devices` + generalDetailsBlock,
     "Telegram Premium": `Login
 • 1 Month — 21,000 Kyats
@@ -2795,6 +2806,22 @@ Can't use on iOS devices.` + generalDetailsBlock,
       
    }
    // ================= END CAPCUT NOTES ================= 
+   // ================= YOUTUBE PREMIUM CHECKOUT NOTES =================
+   if (productName === "YouTube Premium") {
+
+   if (item.section === "OwnMail Invite(Family Plan)" && item.duration.includes("1 Month")) {
+    return `<div class="burmese-font">
+    YouTube Account ပေးရမာပါ။
+    ဝင်ပီး Region Changeပေးမာပါ။Gmail&Passwordလိုပါတယ်။
+    လုပ်ပီးရင်ပြန်ထွက်မာပါ။
+    လတိုင်းသက်တန်းတိုးလို့ရပါတယ်။
+    Warranty ကတခုခုဖြစ်ခဲ့ရင်တခါပြန်လဲပေးပါတယ်။
+</div>`;
+  }
+
+}
+// ================= END YOUTUBE PREMIUM NOTES =================
+
       // Express VPN Windows plan note (Share → WindowsPC/Laptop)
    if (productName === "Express Vpn" && /windowspc/i.test(item.duration)) {
     return "Windows deviceတေမာပဲသုံးလို့ရပါမယ်။Full warrenty.";
@@ -2905,7 +2932,9 @@ Can't use on iOS devices.` + generalDetailsBlock,
     cart.forEach(item => {
       const productKey = item.product + item.section;
       let noteContent = getNoteForCartItem(item);
-      if (item.product === 'YouTube Premium' && !noteContent.includes("Renew")) noteContent += "\nRenew လို့ရပါတယ်။သက်တန်းတိုးရင်တော့ 1Month ကို 6000ပါ။";
+      if (item.product === 'YouTube Premium' && noteContent && !noteContent.includes("Renew")) {
+      noteContent += "\nRenew လို့ရပါတယ်။သက်တန်းတိုးရင်တော့ 1Month ကို 6000ပါ။";
+      }
       if (noteContent) uniqueProductNotes.set(productKey, { item, noteContent });
     });
     const noteBlocks = Array.from(uniqueProductNotes.values()).map(({ item, noteContent }) => {

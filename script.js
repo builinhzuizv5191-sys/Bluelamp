@@ -2257,6 +2257,10 @@ const adobeGroup = [
          if (sectionName === 'Private (Own Mail)') {
             title += ' <span style="background:#00ff9c; color:#002b1f; padding:2px 6px; border-radius:4px; font-size:11px; margin-left:8px; font-weight:900; box-shadow:0 0 10px #00ff9c;">Recommended</span>';
           }
+        } else if (productName === 'NordVpn' || productName === 'Surfshark Vpn') {
+         if (sectionName === 'Share' || sectionName === 'Private' || sectionName === 'Share' || sectionName === 'Private') {
+            title += ' <span style="background:#1e90ff; color:#ffffff; padding:2px 6px; border-radius:4px; font-size:11px; margin-left:8px; font-weight:900; box-shadow:0 0 6px #1e90ff;">Myanmarမာသုံးမရပါ</span>';
+          }
 
         } else if (productName === 'HBO Max') {
           if (sectionName.includes('(ULTIMATE)')) {

@@ -694,12 +694,12 @@
       }],
       "OwnMail Invite": [{
         "duration": "1 Year",
-        "price": "15,000 Kyats"
+        "price": "17,900 Kyats"
       }]
     },"Flow AI": {
   "OwnMail Invite": [{
     "duration": "1 Year",
-    "price": "15,000 Kyats"
+    "price": "17,900 Kyats"
   }],
       "Private": [{
         "duration": "1 Year",
@@ -708,7 +708,7 @@
 },"NotebookLM": {
   "OwnMail Invite": [{
     "duration": "1 Year",
-    "price": "15,000 Kyats"
+    "price": "17,900 Kyats"
   }]
 },
 

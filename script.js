@@ -576,7 +576,7 @@
       }],
       "Whole Account": [{
         "duration": "5 Profiles (1 Month)",
-        "price": "45,000 Kyats"
+        "price": "5,5000 Kyats"
       }]
     },
     "Disney+": {
@@ -2366,6 +2366,87 @@ const adobeGroup = [
         setTimeout(() => addBtn.textContent = "Add to Cart", 1000);
       });
     }
+    // --- NETFLIX: CUSTOM MONTHS (like Google Play custom amount) ---
+if (productName === "Netflix") {
+  // Base monthly price for "1 Profile" (Semiprivate) from your data
+  const netflixMonthly = parseKyats(productData["Netflix"]?.["1 Profile"]?.[0]?.price) || 15000;
+
+  const netflixMonthsHTML = `
+    <div class="plan-box">
+      <div class="plan-title">More Months (1 Profile)</div>
+      <div style="padding:10px; display:flex; flex-direction:column; gap:10px;">
+        <label style="font-size:14px; color:#ccc;">Enter Months (1 - 12)</label>
+
+        <div style="display:flex; gap:10px;">
+          <input
+            type="number"
+            id="netflix-months-input"
+            min="1"
+            max="12"
+            placeholder="1-12"
+            style="flex:1; padding:12px; border-radius:8px; border:1px solid rgba(255,255,255,0.2); background:rgba(255,255,255,0.05); color:white; font-size:16px;"
+          />
+          <div id="netflix-calc-price" style="align-self:center; font-weight:bold; color:#00e676; min-width:120px; text-align:right;">
+            0 Kyats
+          </div>
+        </div>
+
+        <button id="btn-add-netflix-months" class="btn btn-primary" style="width:100%;">
+          Add to Cart
+        </button>
+      </div>
+    </div>
+  `;
+
+  const popularSection = dom.views.product.querySelector(".popular-section");
+  if (popularSection) {
+    popularSection.insertAdjacentHTML("beforebegin", netflixMonthsHTML);
+
+    const input = document.getElementById("netflix-months-input");
+    const priceDisplay = document.getElementById("netflix-calc-price");
+    const addBtn = document.getElementById("btn-add-netflix-months");
+
+    input.addEventListener("input", () => {
+      const months = parseInt(input.value, 10);
+      if (!months || months < 1 || months > 12) {
+        addBtn.style.backgroundColor = "#ff4444";
+        addBtn.textContent = "⚠️ Limit: 1 - 12";
+        priceDisplay.textContent = "0 Kyats";
+      } else {
+        addBtn.style.removeProperty("background-color");
+        addBtn.textContent = "Add to Cart";
+        const totalPrice = netflixMonthly * months;
+        priceDisplay.textContent = formatKyats(totalPrice);
+      }
+    });
+
+    addBtn.addEventListener("click", () => {
+      const months = parseInt(input.value, 10);
+      if (!months || months < 1 || months > 12) return;
+
+      const totalPrice = netflixMonthly * months;
+
+      const item = {
+        product: "Netflix",
+        section: "1 Profile",
+        duration: `${months} Month${months > 1 ? "s" : ""}`,
+        unitPrice: totalPrice,
+        priceText: formatKyats(totalPrice)
+      };
+
+      addToCart(item);
+
+      // ✅ RESET after adding (like Google Play custom amount)
+      input.value = "";
+      priceDisplay.textContent = "0 Kyats";
+      addBtn.style.removeProperty("background-color");
+
+      addBtn.textContent = "Added!";
+      setTimeout(() => (addBtn.textContent = "Add to Cart"), 1000);
+    });
+  }
+}
+
 
     renderPopular("popular-product", productName);
     showView('product');
@@ -2511,8 +2592,8 @@ Only 1 device per invite
 Family Head(Can Invite 5 email)
 ကျနော်ပေးမဲ့ Head အကောင့်အပါအဝင်တခြား email 5ခုလုံးက(Word, Excel, etc.) and 1TB of OneDrive storageစတဲ့ Microsoft Copilot Proမာပါတဲ့ features တေအကုန်သုံးလို့ရသွားမာပါ။` + generalDetailsBlock,
     "Netflix": `1 Profile
-Own 1 profile you can use 2 devices
-Netflix အကောင့်တေကိုwarrantyအပြည့်ပေးထားပါတယ်ဒါပေမဲ့ setting တေကလိပီးဖြစ်လာတဲ့ error တေအတွက်fixing time 1 to 2Days လောက်ထိကြာနိုင်ပါတယ်။ကိုယ်ကဘာမမလုပ်ရင်တောင်တခြားpfကလူတေလုပ်လို့ဖြစ်ရင်လဲfixing time စောင့်ရမာပါ။
+Own 1 profile you can use 2 devices.Tv Support.
+Full Warrenty.
 
 Whole Account
 Own 5 profiles you can use 10 devices` + generalDetailsBlock,
@@ -2929,7 +3010,7 @@ Can't use on iOS devices.` + generalDetailsBlock,
     }
     const netflixMultiItem = cart.find(item => item.product === 'Netflix' && item.section === '1 Profile' && item.qty > 1);
     if (netflixMultiItem) {
-      let burmeseText = `ဒါက${netflixMultiItem.qty}လစာဆိုပေမဲ့တစ်လတခါအကောင့်ပြောင်းနေရမာပဲမလို့တစ်လချင်းပဲယူရင်ယူပါ`.replace(/(\d+)/g, '<span class="warning-num">$1</span>');
+      let burmeseText = `ဒါက${netflixMultiItem.qty}Profile စာဝယ်တာပါ။${netflixMultiItem.qty}လစာသဘောမျိုးမဟုတ်ပါဘူး။စာသေချာဖတ်ပေးပါ။`.replace(/(\d+)/g, '<span class="warning-num">$1</span>');
       quantityWarning += `<div class="payment-warning-block"><div class="nt-line" style="color:#ffca28;font-weight:700;text-transform:uppercase;">ATTENTION: MULTIPLE MONTHS</div><div class="nt-line burmese-font">${burmeseText}</div></div>`;
     }
     const uniqueProductNotes = new Map();

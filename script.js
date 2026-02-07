@@ -861,6 +861,10 @@
       "Login method": [{
         "duration": "100 Coin",
         "price": "5,300 Kyats"
+      }],
+    "NoLoginBoost": [{
+      "duration": "100 Coin",
+      "price": "5,300 Kyats"
       }]
     },
     "TikTok Non Official": {
@@ -1956,6 +1960,59 @@ const adobeGroup = [
   };
 
   const formatKyats = n => (n || 0).toLocaleString("en-US") + " Kyats";
+  // ===============================
+  // TOTAL UNITS HELPER (100 Coin x5 → 500 Coins)
+  // ===============================
+  function computeTotalUnits(duration, qty) {
+  if (!duration || !qty || qty <= 1) return null;
+
+  // grab first "<number> <word>" found (e.g. "100 Coin", "10,000 Views", "3 Months")
+  const m = String(duration)
+    .replace(/,/g, "")
+    .match(/\b(\d+(?:\.\d+)?)\s*([A-Za-z]+)\b/);
+
+  if (!m) return null;
+
+  const baseNum = Number(m[1]);
+  let unit = m[2];
+
+  // only allow units we actually want to show totals for
+  const allowedUnits = new Set([
+    "Coin","Coins",
+    "Star","Stars",
+    "View","Views",
+    "Like","Likes",
+    "Follower","Followers",
+    "Member","Members",
+    "Month","Months",
+    "Year","Years",
+    "Day","Days",
+    "Week","Weeks"
+  ]);
+
+  if (!allowedUnits.has(unit)) return null;
+
+  const total = baseNum * qty;
+
+  // normalize plural (Coin -> Coins, Month -> Months, etc.)
+  const pluralMap = {
+    Coin:"Coins",
+    Star:"Stars",
+    View:"Views",
+    Like:"Likes",
+    Follower:"Followers",
+    Member:"Members",
+    Month:"Months",
+    Year:"Years",
+    Day:"Days",
+    Week:"Weeks"
+  };
+
+  if (total !== 1 && pluralMap[unit]) unit = pluralMap[unit];
+
+  return `Total • ${total.toLocaleString("en-US")} ${unit}`;
+}
+
   const cartKey = ({
     product,
     section,
@@ -2446,8 +2503,204 @@ if (productName === "Netflix") {
     });
   }
 }
+    // --- TIKTOK OFFICIAL: CUSTOM COINS (like Google Play custom amount) ---
+if (productName === "TikTok Official") {
+  // Use your existing price as base: 100 Coin = 5,300 Kyats
+  const basePriceText = productData["TikTok Official"]?.["Login method"]?.[0]?.price;
+  const baseCoinsText = productData["TikTok Official"]?.["Login method"]?.[0]?.duration;
 
+  const basePrice = parseKyats(basePriceText) || 5300; // fallback
+  const baseCoinsMatch = String(baseCoinsText || "").match(/(\d+)/);
+  const baseCoins = baseCoinsMatch ? parseInt(baseCoinsMatch[1], 10) : 100; // fallback
 
+  // Kyats per coin (example: 5300/100 = 53)
+  const kyatsPerCoin = Math.max(1, Math.round(basePrice / baseCoins));
+
+  // You can change these limits if you want
+  const MIN_COINS = 100;
+  const MAX_COINS = 100000;
+
+  const tiktokCoinsHTML = `
+    <div class="plan-box">
+      <div class="plan-title">Custom Coins (TikTok Official)</div>
+      <div style="padding:10px; display:flex; flex-direction:column; gap:10px;">
+        <label style="font-size:14px; color:#ccc;">Enter Coins (${MIN_COINS} - ${MAX_COINS})</label>
+
+        <div style="display:flex; gap:10px;">
+          <input
+            type="number"
+            id="tiktok-coins-input"
+            min="${MIN_COINS}"
+            max="${MAX_COINS}"
+            placeholder="${MIN_COINS}-${MAX_COINS}"
+            style="flex:1; padding:12px; border-radius:8px; border:1px solid rgba(255,255,255,0.2); background:rgba(255,255,255,0.05); color:white; font-size:16px;"
+          />
+          <div id="tiktok-calc-price" style="align-self:center; font-weight:bold; color:#00e676; min-width:120px; text-align:right;">
+            0 Kyats
+          </div>
+        </div>
+
+        <div style="font-size:12px; opacity:.75; line-height:1.4;">
+          Rate: ~${kyatsPerCoin} Kyats / Coin (based on ${baseCoins} Coin = ${basePrice.toLocaleString("en-US")} Kyats)
+        </div>
+
+        <button id="btn-add-tiktok-coins" class="btn btn-primary" style="width:100%;">
+          Add to Cart
+        </button>
+      </div>
+    </div>
+  `;
+
+  const popularSection = dom.views.product.querySelector(".popular-section");
+  if (popularSection) {
+    popularSection.insertAdjacentHTML("beforebegin", tiktokCoinsHTML);
+
+    const input = document.getElementById("tiktok-coins-input");
+    const priceDisplay = document.getElementById("tiktok-calc-price");
+    const addBtn = document.getElementById("btn-add-tiktok-coins");
+
+    input.addEventListener("input", () => {
+      const coins = parseInt(input.value, 10);
+
+      if (!coins || coins < MIN_COINS || coins > MAX_COINS) {
+        addBtn.style.backgroundColor = "#ff4444";
+        addBtn.textContent = `⚠️ Limit: ${MIN_COINS} - ${MAX_COINS}`;
+        priceDisplay.textContent = "0 Kyats";
+        return;
+      }
+
+      addBtn.style.removeProperty("background-color");
+      addBtn.textContent = "Add to Cart";
+
+      const totalPrice = coins * kyatsPerCoin;
+      priceDisplay.textContent = formatKyats(totalPrice);
+    });
+
+    addBtn.addEventListener("click", () => {
+      const coins = parseInt(input.value, 10);
+      if (!coins || coins < MIN_COINS || coins > MAX_COINS) return;
+
+      const totalPrice = coins * kyatsPerCoin;
+
+      const item = {
+        product: "TikTok Official",
+        section: "Login method",
+        duration: `${coins} Coin`,
+        unitPrice: totalPrice,
+        priceText: formatKyats(totalPrice)
+      };
+
+      addToCart(item);
+
+      // ✅ RESET after add
+      input.value = "";
+      priceDisplay.textContent = "0 Kyats";
+      addBtn.style.removeProperty("background-color");
+
+      addBtn.textContent = "Added!";
+      setTimeout(() => (addBtn.textContent = "Add to Cart"), 1000);
+    });
+  }
+}
+    // --- TELEGRAM STAR: CUSTOM STARS (like TikTok custom coins) ---
+if (productName === "Telegram Star") {
+  // Base: use your existing "50 Stars" price as reference
+  const basePriceText = productData["Telegram Star"]?.["Stars"]?.[0]?.price;      // e.g. "3,800 Kyats"
+  const baseStarsText = productData["Telegram Star"]?.["Stars"]?.[0]?.duration;   // e.g. "50 Stars"
+
+  const basePrice = parseKyats(basePriceText) || 3800; // fallback
+  const baseStarsMatch = String(baseStarsText || "").match(/(\d+)/);
+  const baseStars = baseStarsMatch ? parseInt(baseStarsMatch[1], 10) : 50; // fallback
+
+  // Kyats per star (3800/50 = 76)
+  const kyatsPerStar = Math.max(1, Math.round(basePrice / baseStars));
+
+  // Limits (you can adjust)
+  const MIN_STARS = 50;
+  const MAX_STARS = 100000;
+
+  const tgStarsHTML = `
+    <div class="plan-box">
+      <div class="plan-title">Custom Stars (Telegram)</div>
+      <div style="padding:10px; display:flex; flex-direction:column; gap:10px;">
+        <label style="font-size:14px; color:#ccc;">Enter Stars (${MIN_STARS} - ${MAX_STARS})</label>
+
+        <div style="display:flex; gap:10px;">
+          <input
+            type="number"
+            id="tg-stars-input"
+            min="${MIN_STARS}"
+            max="${MAX_STARS}"
+            placeholder="${MIN_STARS}-${MAX_STARS}"
+            style="flex:1; padding:12px; border-radius:8px; border:1px solid rgba(255,255,255,0.2); background:rgba(255,255,255,0.05); color:white; font-size:16px;"
+          />
+          <div id="tg-stars-calc-price" style="align-self:center; font-weight:bold; color:#00e676; min-width:120px; text-align:right;">
+            0 Kyats
+          </div>
+        </div>
+
+        <div style="font-size:12px; opacity:.75; line-height:1.4;">
+          Rate: ~${kyatsPerStar} Kyats / Star (based on ${baseStars} Stars = ${basePrice.toLocaleString("en-US")} Kyats)
+        </div>
+
+        <button id="btn-add-tg-stars" class="btn btn-primary" style="width:100%;">
+          Add to Cart
+        </button>
+      </div>
+    </div>
+  `;
+
+  const popularSection = dom.views.product.querySelector(".popular-section");
+  if (popularSection) {
+    popularSection.insertAdjacentHTML("beforebegin", tgStarsHTML);
+
+    const input = document.getElementById("tg-stars-input");
+    const priceDisplay = document.getElementById("tg-stars-calc-price");
+    const addBtn = document.getElementById("btn-add-tg-stars");
+
+    input.addEventListener("input", () => {
+      const stars = parseInt(input.value, 10);
+
+      if (!stars || stars < MIN_STARS || stars > MAX_STARS) {
+        addBtn.style.backgroundColor = "#ff4444";
+        addBtn.textContent = `⚠️ Limit: ${MIN_STARS} - ${MAX_STARS}`;
+        priceDisplay.textContent = "0 Kyats";
+        return;
+      }
+
+      addBtn.style.removeProperty("background-color");
+      addBtn.textContent = "Add to Cart";
+
+      const totalPrice = stars * kyatsPerStar;
+      priceDisplay.textContent = formatKyats(totalPrice);
+    });
+
+    addBtn.addEventListener("click", () => {
+      const stars = parseInt(input.value, 10);
+      if (!stars || stars < MIN_STARS || stars > MAX_STARS) return;
+
+      const totalPrice = stars * kyatsPerStar;
+
+      const item = {
+        product: "Telegram Star",
+        section: "Stars",
+        duration: `${stars} Stars`,
+        unitPrice: totalPrice,
+        priceText: formatKyats(totalPrice)
+      };
+
+      addToCart(item);
+
+      // ✅ RESET after add
+      input.value = "";
+      priceDisplay.textContent = "0 Kyats";
+      addBtn.style.removeProperty("background-color");
+
+      addBtn.textContent = "Added!";
+      setTimeout(() => (addBtn.textContent = "Add to Cart"), 1000);
+    });
+  }
+}
     renderPopular("popular-product", productName);
     showView('product');
     window.scrollTo(0, 0);
@@ -2723,7 +2976,13 @@ Supports all devices.` + generalDetailsBlock,
     "PlaySafeCard": `Voucher Code
 Expires in 7 Days.
 Please contact admin for usage details.` + generalDetailsBlock,
-    "TikTok Official": `Coinက TikTok official boostတဲ့နေရာမာ Coin တေကိုသုံးရတာပါ။အဲ့ Coin ကိုရောင်းပေးတာပါ။ Login ဝင်ပီးဝယ်ရတာပါ။ buttt email password ဘာမပေးစရာမလိုပါဘူး။` + generalDetailsBlock,
+    "TikTok Official": `Login method
+     Coinက TikTok official boostတဲ့နေရာမာ Coin တေကိုသုံးရတာပါ။ Login ဝင်ပီးဝယ်ရတာပါ။ buttt email password ဘာမပေးစရာမလိုပါဘူး။
+
+     NoLoginBoost
+     ဒါကအကောင့်ဝင်မရတာတေ။မဝင်စေချင်တာတေအတွက်Video Linkပေးရုံနဲ့ Boost ပေးတာပါ။`
+     + generalDetailsBlock,
+
     "TikTok Non Official": `Views (NoDrop)
     No dropဆိုပေမဲ့ TikTok ကစာပို့ပီးဖျက်ချသွားရင်တာ့ပြန်မထည့်ပေးပါဘူး။ထည့်ရင်လဲအကောင့် warning ထိမာပါ။
         
@@ -2837,6 +3096,11 @@ Can't use on iOS devices.` + generalDetailsBlock,
 
   function getNoteForCartItem(item) {
     const productName = item.product.replace(/ \(.+\)$/, '');
+    // --- TikTok Official: NoLoginBoost checkout note ---
+    if (productName === "TikTok Official" && item.section === "NoLoginBoost") {
+    return `<div class="burmese-font">ဒါကအကောင့်ဝင်မရတာတေ။မဝင်စေချင်တာတေအတွက်Video Linkပေးရုံနဲ့ Boost ပေးတာပါ။</div>`;
+    }
+
     if (productName === "AlightMotion") {
     if (item.section === "Share") {
     return `Full warranty for 6Months
@@ -3060,7 +3324,16 @@ Can't use on iOS devices.` + generalDetailsBlock,
       dom.checkout.receipts.rm_itemList.innerHTML = items.map(item => `<div class="receipt-line-item"><div class="title">${escapeHTML(item.name)}${item.qty > 1 ? ` (x${item.qty})` : ''}</div><div class="details">${escapeHTML(item.plan)} • ${escapeHTML(item.duration)}</div><div class="price">${formatKyats(item.sub)}</div></div>`).join('');
       dom.checkout.receipts.rm_total.textContent = formatKyats(total);
     }
-    const clipboardText = items.map(i => `- ${i.name} (${i.plan} • ${i.duration})${i.qty > 1 ? ` x${i.qty}` : ''}\n  Price: ${formatKyats(i.sub)}`).join('\n\n') + `\n-------------------\nTotal: ${formatKyats(total)}`;
+    const clipboardText =
+    items.map(i => {
+    const qtyPart = i.qty > 1 ? ` x${i.qty}` : '';
+    const totalUnitsLine = computeTotalUnits(i.duration, i.qty);
+
+    return `- ${i.name} (${i.plan} • ${i.duration})${qtyPart}`
+      + (totalUnitsLine ? `\n  ${totalUnitsLine}` : '')
+      + `\n  Price: ${formatKyats(i.sub)}`;
+  }).join('\n\n')
+  + `\n-------------------\nTotal: ${formatKyats(total)}`;
     dom.checkout.receiptText.value = clipboardText;
   }
 

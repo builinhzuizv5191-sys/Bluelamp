@@ -160,6 +160,7 @@
     "Facebook Boosting": "https://ik.imagekit.io/dkdlgynlu/New-Project-52-10387-D3.png",
     "Instagram Boosting": "https://ik.imagekit.io/dkdlgynlu/New-Project-52-01-CA830.png",
     "Custom Website Service": "https://ik.imagekit.io/dkdlgynlu/Picsart-25-10-26-17-49-23-686.png",
+    "Domain": "https://ik.imagekit.io/dkdlgynlu/ICON%20_6176291_.png?updatedAt=1770475710430",
     "LightRoom": "https://ik.imagekit.io/dkdlgynlu/New-Project-52-75A8C0F.png",
     "Wattpad": "https://ik.imagekit.io/dkdlgynlu/Wattpad%20_DF63C42_.png",
     "Photoshop": "https://ik.imagekit.io/dkdlgynlu/Photoshop%20_83C7623_.png",
@@ -1166,6 +1167,12 @@
         "price": "150,000 Kyats"
       }]
     },
+    "Domain": {
+      "My.ID/my.id": [{
+        "duration": "1 Year",
+        "price": "30,000 Kyats"
+      }]
+    },
     "LightRoom": {
       "Share": [{
         "duration": "1 Year",
@@ -1958,6 +1965,31 @@ const adobeGroup = [
     const m = (t || "").replace(/,/g, "").replace(/Ks/g, "").replace(/≈/g, "").trim().match(/(\d+(\.\d+)?)/);
     return m ? Number(m[1]) : null;
   };
+// =========================
+// DOMAIN CHECK (.my.id)
+// =========================
+async function checkMyIdAvailability(name) {
+  const clean = String(name || "")
+    .trim()
+    .toLowerCase()
+    .replace(/[^a-z0-9-]/g, "")
+    .replace(/^-+|-+$/g, "");
+
+  if (!clean) return { status: "invalid" };
+
+  const domain = clean + ".my.id";
+
+  try {
+    const res = await fetch("https://rdap.org/domain/" + domain);
+
+    if (res.status === 404) return { status: "available", domain };
+    if (res.ok) return { status: "taken", domain };
+
+    return { status: "unknown", domain };
+  } catch (e) {
+    return { status: "error", domain };
+  }
+}
 
   const formatKyats = n => (n || 0).toLocaleString("en-US") + " Kyats";
   // ===============================
@@ -2372,6 +2404,133 @@ const adobeGroup = [
       </section>`;
 
     dom.views.product.innerHTML = pageHTML;
+    // =========================
+    // =========================
+// DOMAIN CHECK UI (under 1 Year 30k) + ADD TO CART WHEN AVAILABLE
+// =========================
+if (productName === "Domain") {
+  const DOMAIN_PRICE_TEXT = "30,000 Kyats";
+  const DOMAIN_PRICE = parseKyats(DOMAIN_PRICE_TEXT) || 30000;
+
+  const checkerHTML = `
+    <div class="plan-box" id="domain-checker-box">
+      <div class="plan-title">Check Domain Availability</div>
+
+      <div style="padding:10px; display:flex; flex-direction:column; gap:10px;">
+        <label style="font-size:14px; color:#ccc;">Enter Domain Name</label>
+
+        <div style="display:flex; gap:10px; align-items:center;">
+          <input
+            id="domain-check-input"
+            placeholder="example: bluelamp"
+            style="flex:1;padding:12px;border-radius:8px;border:1px solid rgba(255,255,255,0.2);background:rgba(255,255,255,0.05);color:white;font-size:16px;"
+          />
+          <div style="font-weight:800; opacity:.8;">.my.id</div>
+        </div>
+
+        <button id="domain-check-btn" class="btn btn-primary" style="width:100%;">
+          Check
+        </button>
+
+        <div id="domain-check-result" style="font-size:14px;"></div>
+
+        <!-- Hidden by default, only appears when available -->
+        <button
+          id="domain-add-btn"
+          class="btn btn-primary"
+          style="width:100%; display:none;"
+        >
+          Add to Cart
+        </button>
+      </div>
+    </div>
+  `;
+
+  // Put it right after the first plan-box (My.ID/my.id)
+  const planBoxes = dom.views.product.querySelectorAll(".plan-box");
+  if (planBoxes.length > 0) {
+    planBoxes[0].insertAdjacentHTML("afterend", checkerHTML);
+  } else {
+    const popularSection = dom.views.product.querySelector(".popular-section");
+    if (popularSection) popularSection.insertAdjacentHTML("beforebegin", checkerHTML);
+  }
+
+  const input = document.getElementById("domain-check-input");
+  const btn = document.getElementById("domain-check-btn");
+  const addBtn = document.getElementById("domain-add-btn");
+  const result = document.getElementById("domain-check-result");
+
+  let lastAvailableDomain = null; // store "name.my.id" when available
+
+  const renderResult = (type, text) => {
+    const map = {
+      ok: "#00e676",
+      bad: "#ff5252",
+      warn: "#ffd54f",
+      info: "#b0bec5"
+    };
+    result.innerHTML = `<span style="color:${map[type] || map.info};font-weight:800;">${text}</span>`;
+  };
+
+  const hideAdd = () => {
+    addBtn.style.display = "none";
+    lastAvailableDomain = null;
+  };
+
+  btn.addEventListener("click", async () => {
+    hideAdd();
+    btn.textContent = "Checking...";
+    btn.disabled = true;
+    result.textContent = "";
+
+    const raw = input.value;
+    const r = await checkMyIdAvailability(raw);
+
+    if (r.status === "invalid") {
+      renderResult("warn", "Type a name first");
+    } else if (r.status === "available") {
+      lastAvailableDomain = r.domain; // e.g. "hello.my.id"
+      renderResult("ok", `${r.domain} is Available ✓`);
+      addBtn.style.display = "block";
+    } else if (r.status === "taken") {
+      renderResult("bad", `${r.domain} is Taken ✕`);
+    } else {
+      renderResult("warn", "Can't check right now (blocked/offline)");
+    }
+
+    btn.textContent = "Check";
+    btn.disabled = false;
+  });
+
+  // Optional: press Enter to check
+  input.addEventListener("keydown", (ev) => {
+    if (ev.key === "Enter") btn.click();
+  });
+
+  // If user changes input after availability, hide the add button again
+  input.addEventListener("input", () => {
+    hideAdd();
+    result.textContent = "";
+  });
+
+  // Add to cart when available
+  addBtn.addEventListener("click", () => {
+    if (!lastAvailableDomain) return;
+
+    const item = {
+      product: "Domain",
+      section: "My.ID/my.id",
+      duration: `${lastAvailableDomain} (1 Year)`,
+      unitPrice: DOMAIN_PRICE,
+      priceText: DOMAIN_PRICE_TEXT
+    };
+
+    addToCart(item);
+
+    addBtn.textContent = "Added!";
+    setTimeout(() => (addBtn.textContent = "Add to Cart"), 900);
+  });
+}
 
     // --- CUSTOM CALCULATOR LOGIC ---
     const customConf = customConfigs[productName];
@@ -2976,6 +3135,10 @@ Supports all devices.` + generalDetailsBlock,
     "PlaySafeCard": `Voucher Code
 Expires in 7 Days.
 Please contact admin for usage details.` + generalDetailsBlock,
+    "Domain": `My.ID/my.id
+    1 Year — 30,000 Kyats
+    ဒါကကိုယ့်မာ Website ရှိပီး Domain မရှိရင်သုံးဖို့အတွက်ပါ။ နှစ်တိုင်းသက်တန်းတိုးသွားလို့ရပါတယ်။` + generalDetailsBlock,
+
     "TikTok Official": `Login method
      Coinက TikTok official boostတဲ့နေရာမာ Coin တေကိုသုံးရတာပါ။ Login ဝင်ပီးဝယ်ရတာပါ။ buttt email password ဘာမပေးစရာမလိုပါဘူး။
 
@@ -3096,6 +3259,10 @@ Can't use on iOS devices.` + generalDetailsBlock,
 
   function getNoteForCartItem(item) {
     const productName = item.product.replace(/ \(.+\)$/, '');
+    if (productName === "Domain") {
+    return "ဒါကကိုယ့်မာ Website ရှိပီး Domain မရှိရင်သုံးဖို့အတွက်ပါ။ နှစ်တိုင်းသက်တန်းတိုးသွားလို့ရပါတယ်။";
+    }
+
     // --- TikTok Official: NoLoginBoost checkout note ---
     if (productName === "TikTok Official" && item.section === "NoLoginBoost") {
     return `<div class="burmese-font">ဒါကအကောင့်ဝင်မရတာတေ။မဝင်စေချင်တာတေအတွက်Video Linkပေးရုံနဲ့ Boost ပေးတာပါ။</div>`;

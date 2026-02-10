@@ -435,9 +435,6 @@
     },
     "Meitu": {
       "Private": [{
-        "duration": "1 Week",
-        "price": "3,000 Kyats"
-      }, {
         "duration": "20 Days",
         "price": "8,000 Kyats"
       }],
@@ -2015,11 +2012,7 @@ async function checkMyIdAvailability(name) {
     "View","Views",
     "Like","Likes",
     "Follower","Followers",
-    "Member","Members",
-    "Month","Months",
-    "Year","Years",
-    "Day","Days",
-    "Week","Weeks"
+    "Member","Members"
   ]);
 
   if (!allowedUnits.has(unit)) return null;
@@ -2044,6 +2037,316 @@ async function checkMyIdAvailability(name) {
 
   return `Total • ${total.toLocaleString("en-US")} ${unit}`;
 }
+  /* =========================
+   PRODUCT HELPER POPUP SYSTEM (ALL PRODUCTS)
+   ========================= */
+
+let _helperTimer = null;
+
+function removeProductHelper() {
+  if (_helperTimer) {
+    clearTimeout(_helperTimer);
+    _helperTimer = null;
+  }
+  const old = document.getElementById("product-helper-wrap");
+  if (old) old.remove();
+}
+/* =========================
+   POPUP TEXT CONFIG (ALL PRODUCTS)
+   ========================= */
+
+const popupTextByProduct = {
+  "CapCut": {
+    title: "CapCut Info",
+    button: "Planတေကအများရီးပဲနားမလည်ဘူး။",
+    nextText: "ဘာတေကွာလဲ?",
+    backText: "Back",
+    steps: [
+    "တွေ့ရတဲ့တိုင်းCapCut မာရ္စေးချယ်စရာPlanသုံးခုရှိပါတယ်။ Share,Private,OwnMail",
+    "ဘာကွာလဲဆိုရင်....သိထားရမာကProချင်းတူတူပါပဲ။ အရင်ဆုံးSharePlanကဘယ်လိုလဲဆိုရင်။ သူကဝယ်ရင်တခြားလူ 2ယောက် 2 Devicesဝင်ပီးသားအကောင့်ကိုရမာပါ။ Riskတေရှိတယ်၊ကိုယ်က1 deviceပဲဝင်လို့ရမယ်။ ကိုယ်ကဖြစ်ဖြစ်တခြားနှစ်ယောက်ကဖြစ်ဖြစ် device limit ကျော်ဝင်ခဲ့ရင်အကောင့်ကပျက်သွားမာပါတစ်လမပြည့်ခင်။ Shareအကောင့်မလို့ကျနော့်ဘက်က Warranty 15ရက်ပဲပေးပါတယ်။ တခုခုဖြစ်လာခဲ့ရင်ဘယ်သူကပိုဝင်လဲမသိနိုင်လို့ Warranty မပေးတာပါနားလည်ပေးပါ။",
+    "သူကအကောင့်ကိုအပိုင်ရတာပါ။ ဖုန်းထဲထည့်ထားရတဲ့Gmailမဟုတ်ပါဘူး။ CapCut appထဲမာထည့်သုံးရတဲ့TempEmailပါ။ ကျနော်တို့ဘက်ကအကောင့်ပေးမာပါ။ ပေးတဲ့အကောင့်ကို CapCut appရဲ့ Email sign inမာဝင်သုံးရုံပါပဲ။",
+    "သူကဝယ်သူရဲ့ email ကိုလုပ်ပေးတာပါ။ ဒါပေမဲ့ CapCut မဖွင့်ရသေးတဲ့ email မပဲရပါမယ်။ ပြောရရင် Private ကပိုပီးရွေးချယ်သင့်တာပါ။ ဘာလို့ဆို CapCut ကအကောင့်ပြောင်းလဲ Project တေမပျက်ပါဘူး။",
+    "Share Planကဖုန်းတလုံးပဲသုံးလို့ရပါတယ်။ Private and OwnMail က Android, iOS, PC, Laptop All Device ရပါတယ်။"
+  ],
+    stepButtons: [
+    "ဘာတေကွာလဲ?",
+    "Privateကရော?",
+    "OwnMailကရော?",
+    "All Devices<br>ရလား?"
+  ]
+  },
+"AlightMotion": {
+    title: "AlightMotion Info",
+    button: "Planတေကအများရီးပဲနားမလည်ဘူး။",
+    nextText: "ဘာတေကွာလဲ?",
+    backText: "Back",
+    steps: [
+    "တွေ့ရတဲ့တိုင်း AlightMotion မာရ္စေးချယ်စရာPlanသုံးခုရှိပါတယ်။ Share,Private,OwnMail",
+    "ဘာကွာလဲဆိုရင်....သိထားရမာကProချင်းတူတူပါပဲ။ အရင်ဆုံးSharePlanကဘယ်လိုလဲဆိုရင်။ သူကဝယ်ရင်တခြားလူ 7ယောက်နဲ့တူတူသုံးရမာပါ။ ဒါမဲ့စိတ်မပူပါနဲ့ Project တေကတော့မရောပါဘူး Private ပဲသုံးရမာပါ။ 6လအတွင်းတခုခုဖြစ်ခဲ့ရင်တခါပြန်လဲပေးပါတယ်။ Shareမို့လို့တခါပါပဲ။ Device changeလို့လဲမရပါ။ (ဆိုလိုတာကကိုယ်ကဖုန်းတခုနဲ့ဝင်ပီး‌၊နောက်ပိုင်းမဖုန်းလဲတာတေဘာတေမရဘူးပြောတာပါ။)",
+    "သူက အကောင့်ကိုအပိုင်ရတာပါ။ ဖုန်းထဲထည့်ထားရတဲ့Gmailမဟုတ်ပါဘူး။ Alight Motion appထဲမာထည့်သုံးရတဲ့TempEmailပါ။ ကျနော်တို့ဘက်ကအကောင့်ပေးမာပါ။ ပေးတဲ့အကောင့်ကို Alight Motion appရဲ့ Email sign inမာဝင်သုံးရုံပါပဲ။ Full Warranty က 1Yearအတွင်းတခုခုဖြစ်ရင်တခါပြန်လဲပေးပါတယ်။ Riskကင်းတဲ့ OwnMail ယူလဲရပါတယ်။",
+    "သူကဝယ်သူရဲ့ email ကိုလုပ်ပေးတာပါ။ Gmail/Email and password ပေးရပါတယ်။ အကောင့်ရဲ့ Password ပါ။ Alight Motionမာထားမဲ့ Password မဟုတ်ပါဘူး။ Google အကောင့်ကိုဝင်ပီးလုပ်ပေးမာပါ။ ပီးရင်ပြန်ထွက်မာပါ။ အကောင့်ရှိပီးသားဆိုလဲရပါတယ်။ သက်တန်းတိုးလို့လဲရပါတယ်။ ကိုယ့်Mailနဲ့ကိုယ်မလို့Errorလဲကင်းပါတယ်။ အဲ့တာကြောင့် OwnMail ကပိုပီးရွေးချယ်သင့်ပါတယ်။",
+    "Android ရော iOS ရောနှစ်ခုလုံးရပါတယ်။ Playstore & AppStore က official appတေမာပဲသုံးရမာပါ။"
+  ],
+    stepButtons: [
+    "ဘာတေကွာလဲ?",
+    "Privateကရော?",
+    "OwnMailကရော?",
+    "All Devices<br>ရလား?"
+  ]
+  },
+  "Wink": {
+    title: "Wink Info",
+    button: "Planတေကအများရီးပဲနားမလည်ဘူး။",
+    nextText: "ဘာတေကွာလဲ?",
+    backText: "Back",
+    steps: [
+    "Winkမာကရ္စေးချယ်စရာPlan 3ခုပဲရှိတာပါ။ Share,Private,OwnMail",
+    "ဘာကွာလဲဆိုရင်....သိထားရမာက VIP ချင်းတူတူပါပဲ။ Shareဆိုတာကတော့သိတဲ့အတိုင်း 1Device ပဲဝင်လို့ရမယ်။ တခြားသူတေနဲ့တူတူသုံးရမယ်။ ဒါပေမဲ့ Private ပါ Project တေလုံးဝမရောပါဘူး။<br>(Stockကတော့ရှားတာမလို့အမြဲမရနိုင်ပါ။)",
+    "Privateကအကောင့်အပိုင်ရတာပါ။ ပီးတော့ ဘယ်ချိန်ဝယ်ဝယ် ဝယ်လို့ရပါတယ်။ 3 Devices ထိဝင်သုံးလို့ရပါတယ်။",
+    "OwnMail ဆိုတာကတော့ Private နဲ့အကုန်တူတူပါပဲ။ ဒါပေမဲ့ကျနော်ပေးတဲ့ Mail password မဟုတ်ပဲဝယ်သူရဲ့ account ကို VIP ဝယ်ပေးတာပါ။",
+    "Android ရော iOS ရောနှစ်ခုလုံးရပါတယ်။ Appကတော့ Android ဆိုရင်တော့ကျနော် China version official app ပေးမာပါ။<br>Playstore က App နဲ့က Vip သုံးလိူ့မရလို့ပါ။"
+  ],
+    stepButtons: [
+    "ဘာတေကွာလဲ?",
+    "Privateကရော?",
+    "OwnMailကရော?",
+    "All Devices<br>ရလား?"
+  ]
+  },
+  "Meitu": {
+    title: "Meitu Info",
+    button: "ဒီနှစ်ခုကရောဘယ်လိုလဲ?",
+    nextText: "ဘာတေကွာလဲ?",
+    backText: "Back",
+    steps: [
+    "ဒါက Meitu ရဲ့ VIP Planပါ။ ရွေးစရာကနှစ်ခုပဲရှိပါတယ်။<br>Share & Private.",
+    "VIP ကတူတူပါပဲ။ ကွာတာက Share ဆိုရင် 1Device ပဲဝင်လို့ရမယ်။ တခြားသူတေနဲ့တူတူသုံးရမယ်။<br>(ဒါပေမဲ့ Demand နဲတာကြောင့် Private ပဲရဖို့များပါတယ်။)",
+    "Private ကတော့ 3 devices ဝင်သုံးလို့ရမယ်။ ဒီကပေးတဲ့အကောင့်ကို Meitu App မာထည့်သုံးရုံပါပဲ။ သူက Stock ရှားတာမို့လို့အရင်မေးပီးမဝယ်ပါ။ Full warranty.",
+    "Android ရော iOS ရောနှစ်ခုလုံးရပါတယ်။ Appကတော့ Android ဆိုရင်တော့ကျနော် China version official app ပေးမာပါ။<br>Playstore က App နဲ့က Vip သုံးလိူ့မရလို့ပါ။"
+  ],
+    stepButtons: [
+    "ဘာတေကွာလဲ?",
+    "Private ဆိုတာက?",
+    "All Devices<br>ရလား?"
+  ]
+  },
+  "PicsArt": {
+    title: "PicsArt Info",
+    button: "Plan 2 ခုကိုရှင်းပြပေးပါ။",
+    nextText: "ဘာတေကွာလဲ?",
+    backText: "Back",
+    steps: [
+    "PicsArt မာကရ္စေးချယ်စရာ Plan 2 ခုပဲရှိတာပါ။<br>Share & Private",
+    "ဘာကွာလဲဆိုရင် Pro ချင်းတူတူပါပဲ။ Shareဆိုတာကတော့သိတဲ့အတိုင်း 1Device ပဲဝင်လို့ရမယ်။ တခြားသူတေနဲ့တူတူသုံးရမယ်။ Edit History တေလဲရောပါတယ်။ သူ Edit တာလဲကိုယ်မြင်နေရမာဖြစ်သလို၊ကိုယ် Edit တာကိုလဲတခြားသူတေမြင်ရမာပါ။",
+    "Private ကတော့ Total 5 Devices ထိဝင်သုံးလို့ရမယ်။ Private History. ပီးတော့ Full warranty. ကျနော်ပေးတဲ့အကောင့်ကို PicsArt App မာဝင်သုံးရုံပါပဲ။",
+    "Android ရော iOS ရောနှစ်ခုလုံးရပါတယ်။ Playstore & AppStore က official appတေမာပဲသုံးရမာပါ။"
+  ],
+    stepButtons: [
+    "ဘာတေကွာလဲ?",
+    "Private ဆိုတာက?",
+    "All Devices<br>ရလား?"
+  ]
+  },
+  "Canva": {
+    title: "Canva Info",
+    button: "Planတေကအများရီးပဲနားမလည်ဘူး။",
+    nextText: "ဘာတေကွာလဲ?",
+    backText: "Back",
+    steps: [
+    "တွေ့ရတဲ့တိုင်း Canva မာရ္စေးချယ်စရာPlan 3 ခုရှိပါတယ်။<br>Share,Private,Educational",
+    "ဘာကွာလဲဆိုရင်တော်တော်ကွာပါတယ်။ ဒီထဲက Share Invite ဆိုတာကဝယ်သူရဲ့ Email ကို invite လုပ်ပေးလိုက်မာပါ။ Pro features တေရတယ်ဆိုပေမဲ့ Members အနေနဲ့မို့လို့ Limited access သဘောပါပဲ(ဥပမာFontတေကိုထည့်ချင်တာထည့်မရတာမျိုးလိုပေါ့။) Total 20~30Daysကြားပဲရမာပါ။ ဒါကဘာကိုပြောတာလဲဆိုရင်ဥပမာကိုယ်က1ရက်နေ့ကဝယ်လိုက်တယ်ဆိုရင် 20 ရက့်နေ့မလဲကုန်နိုင်တယ်အဲ့ကနေ 30 ထိလဲအများဆုံးရနိုင်တယ်။ အနဲဆုံးကတော့ 20 ရက်ပေါ့။",
+    "Private ကတော့သူက Pro features ကိုမ full access ရနေမယ်။ ကျနော်ပေးတဲ့အကောင့်ကို Canva app မာဝင်သုံးရုံပါပဲ။ Email အခု 100 ကို Pro ပြန်ပေးလို့ရတယ်။ ဒါကဘာကိုဆိုလဲလဲဆိုရင် Share 1500 တန်အခု 100 ပေါ့။ ကိုယ့်ရဲ့ Email ကိုလဲ Admin အနေနဲ့ပြန် Invite လို့ရတယ်။",
+    "Educationalဆိုတာကကျောင်းသားတေအတွက်ပါ။ Lifetime ဆိုတော့ Features တေကလဲကျောင်းမာလိုသလောက်ပဲပါတာပါ။ ပြောရရင် Limited Features ပေါ့။ သူကဝယ်သူရဲ့ Email ကို Invite ပေးတာပါ။ Warranty 5 လပေးထားပါတယ်။",
+    "Android ရော iOS ရော PC,laptop အကုန်ရပါတယ်။ Playstore & AppStore က official appတေမာပဲသုံးရမာပါ။"
+  ],
+    stepButtons: [
+    "ဘာတေကွာလဲ?",
+    "Privateကရော?",
+    "Educational<br>ကရော?",
+    "All Devices<br>ရလား?"
+  ]
+  },
+  "Netflix": {
+    title: "Netflix Info",
+    body: "hi"
+  },
+
+  "TikTok Official": {
+    title: "TikTok Boost",
+    body: "hi"
+  }
+};
+
+function initProductHelper(productName) {
+  removeProductHelper();
+
+  const conf = popupTextByProduct[productName] || null;
+
+  // ✅ steps support (if not provided, fallback to single body)
+  const steps = Array.isArray(conf?.steps) && conf.steps.length
+    ? conf.steps
+    : [conf?.body || "Tap the button to continue..."];
+  const nextLabel = conf?.nextText || "Next";
+  const backLabel = conf?.backText || "Back";
+  const doneLabel = conf?.doneText || conf?.doneLabel || "နားလည်ပါပီ။";
+
+  let stepIndex = 0;
+
+  const wrap = document.createElement("div");
+  wrap.className = "helper-wrap";
+  wrap.id = "product-helper-wrap";
+
+  wrap.innerHTML = `
+    <div class="helper-panel" id="product-helper-panel">
+      <p class="t" id="helper-title">${escapeHTML(conf?.title || (productName + " Helper"))}</p>
+      <p class="p" id="helper-body">${escapeHTML(steps[0])}</p>
+
+      <!-- buttons container (hidden at first) -->
+    <div class="helper-nav" id="helper-nav" style="display:none; margin-top:10px; gap:8px;">
+      <button type="button" class="helper-nav-btn" id="helper-back" disabled>
+      ${escapeHTML(conf?.backText || "Back")}
+      </button>
+
+      <button type="button" class="helper-nav-btn" id="helper-next">
+      ${escapeHTML(conf?.nextText || "Next")}
+      </button>
+     </div>
+    </div>
+
+ <div class="helper-main-stack" id="helper-main-stack">
+
+    <button class="helper-btn anim-neon-bounce" id="product-helper-btn" type="button">
+    <span class="dot"></span>
+    <span class="label">${escapeHTML(conf?.button || "Still Developing")}</span>
+    </button>
+
+    <button class="helper-btn helper-btn-cancel anim-neon-bounce"
+          id="product-helper-cancel"
+          type="button">
+    <span class="dot"></span>
+    <span class="label">အကုန်နားလည်ပီးသားပါ။</span>
+  </button>
+
+</div>
+  `;
+
+  dom.views.product.appendChild(wrap);
+
+  const btn = document.getElementById("product-helper-btn");
+  const panel = document.getElementById("product-helper-panel");
+  const titleEl = document.getElementById("helper-title");
+  const bodyEl  = document.getElementById("helper-body");
+
+  const nav = document.getElementById("helper-nav");
+  const backBtn = document.getElementById("helper-back");
+  const nextBtn = document.getElementById("helper-next");
+
+  let navTimer = null;
+
+  function updateNavUI() {
+   // if only 1 step → no nav at all
+    if (steps.length <= 1) {
+    nav.style.display = "none";
+    return;
+   }
+
+    backBtn.disabled = stepIndex === 0;
+
+    // back button label
+    backBtn.textContent = backLabel;
+
+    // per-step next button labels
+    const stepBtnTexts = Array.isArray(conf?.stepButtons) ? conf.stepButtons : [];
+
+    // last step button label
+    if (stepIndex === steps.length - 1) {
+    nextBtn.textContent = doneLabel;
+    } else {
+    nextBtn.innerHTML = stepBtnTexts[stepIndex] || escapeHTML(nextLabel);
+  }
+  }
+
+  function renderStep() {
+    titleEl.textContent = conf?.title || (productName + " Helper");
+    bodyEl.innerHTML = steps[stepIndex];
+    updateNavUI();
+  }
+
+  // Appear after 3 seconds
+  const cancelBtn = document.getElementById("product-helper-cancel");
+
+  _helperTimer = setTimeout(() => {
+    wrap.classList.add("is-active");
+    btn.classList.add("is-visible");
+    cancelBtn?.classList.add("is-visible");
+  }, 2000);
+  // Cancel: remove both buttons + panel
+cancelBtn?.addEventListener("click", () => {
+  wrap.classList.remove("is-active");
+  btn.classList.remove("is-visible");
+  cancelBtn.classList.remove("is-visible");
+  panel.classList.remove("show");
+  nav.classList.remove("show");
+  nav.style.display = "none";
+
+  setTimeout(() => removeProductHelper(), 250);
+});
+
+
+  // Click: show/hide panel
+  btn.addEventListener("click", () => {
+    if (cancelBtn) cancelBtn.classList.remove("is-visible");
+    panel.classList.toggle("show");
+
+    // when panel opens → show nav after 1 second (only if multiple steps)
+    if (panel.classList.contains("show")) {
+      renderStep();
+
+      if (navTimer) clearTimeout(navTimer);
+      nav.classList.remove("show");
+      nav.style.display = "none";
+
+      if (steps.length > 1) {
+        navTimer = setTimeout(() => {
+          nav.style.display = "flex";
+          updateNavUI();
+          // allow browser to apply display:flex first, then animate
+          setTimeout(() => {
+           nav.classList.add("show");
+          }, 20);
+        }, 1000);
+      }
+    } else {
+      // panel closed → reset nav timer
+      if (navTimer) clearTimeout(navTimer);
+      nav.classList.remove("show");
+      nav.style.display = "none";
+    }
+  });
+
+  backBtn.addEventListener("click", () => {
+    if (stepIndex > 0) {
+      stepIndex--;
+      renderStep();
+    }
+  });
+
+  nextBtn.addEventListener("click", () => {
+    if (stepIndex < steps.length - 1) {
+      stepIndex++;
+      renderStep();
+     } else {
+     wrap.classList.remove("is-active");
+     btn.classList.remove("is-visible");
+     panel.classList.remove("show");
+     nav.classList.remove("show");
+     nav.style.display = "none";
+
+     setTimeout(() => removeProductHelper(), 250);
+    }
+  });
+}
+
 
   const cartKey = ({
     product,
@@ -2404,6 +2707,8 @@ async function checkMyIdAvailability(name) {
       </section>`;
 
     dom.views.product.innerHTML = pageHTML;
+    initProductHelper(productName);
+
     // =========================
     // =========================
 // DOMAIN CHECK UI (under 1 Year 30k) + ADD TO CART WHEN AVAILABLE

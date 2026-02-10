@@ -440,23 +440,30 @@ main#home-view > .popular-section {
 .btn-secondary{background: #1e293b; color:var(--text);border:1px solid var(--stroke);} /* New Secondary BG */
 .btn-outline{background:transparent;color:var(--text);border:1px solid rgba(255,255,255,.3)} /* Deepened outline button */
 
-/* back button style */
 .back-btn {
-  margin-bottom: 20px;
-  background: var(--cap);
-  border: 1px solid var(--stroke);
+  position: fixed;
+  top: 90px;
+  top: 100px;
+  top: 70px;
+  left: 14px;       /* distance from left */
+  z-index: 9999;
+
+  background: rgba(15,23,42,.7);
+  backdrop-filter: blur(10px);
+  border: 1px solid rgba(255,255,255,.15);
+
   color: var(--text);
-  font-size: 15px;
-  font-weight: 600;
+  font-size: 14px;
+  font-weight: 700;
   cursor: pointer;
-  padding: 8px 16px;
-  border-radius: 50px;
-  transition: background-color 0.2s, transform 0.1s;
-  width: fit-content;
-  display: inline-block;
+  padding: 10px 16px;
+  border-radius: 999px;
+
+  transition: all .1s;
 }
 .back-btn:hover { background: var(--card-strong); }
 .back-btn:active { transform: scale(0.97); }
+
 
 /* --- community button --- */
 .community-btn {
@@ -747,13 +754,8 @@ main#home-view > .popular-section {
 
 /* ===== ADDED FOR PAGE TRANSITION ===== */
 @keyframes fadeIn {
-  from {
-    opacity: 0;
-    transform: translateY(15px);
-  }
-  to {
-    transform: translateY(0);
-  }
+  from { opacity: 0; }
+  to   { opacity: 1; }
 }
 
 /* ===== OVERLAY ANIMATIONS ===== */

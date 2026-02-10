@@ -788,3 +788,209 @@ main#home-view > .popular-section {
         object-fit: contain;
     }
 }
+/* =========================
+   PRODUCT HELPER POPUP (GLOBAL)
+   ========================= */
+.helper-wrap{
+  position: fixed;
+  right: 14px;
+  top: 50%;
+  transform: translateY(-50%);
+  z-index: 9999;
+  pointer-events: none; /* becomes enabled when visible */
+}
+
+.helper-btn{
+  display:flex;
+  gap:10px;
+  align-items:center;
+  padding:12px 14px;
+  border-radius:999px;
+  border:1px solid rgba(0,200,255,.35);
+  background: rgba(0,0,0,0.35);
+  backdrop-filter: blur(16px);
+  -webkit-backdrop-filter: blur(16px);
+  color:#eaf6ff;
+  cursor:pointer;
+  box-shadow:
+    0 10px 24px rgba(0,0,0,.35),
+    0 0 22px rgba(0,200,255,.18),
+    inset 0 0 14px rgba(0,200,255,.15);
+
+  transform-origin: 85% 50%;
+  opacity:0;
+  transform: translateY(16px) scale(.75);
+  pointer-events:none;
+  user-select:none;
+  -webkit-tap-highlight-color: transparent;
+}
+
+.helper-btn .dot{
+  width:10px;height:10px;border-radius:50%;
+  background:#00c8ff;
+  box-shadow: 0 0 14px rgba(0,200,255,.8);
+}
+
+.helper-btn .label{
+  font-weight:900;
+  font-size:13px;
+  letter-spacing:.2px;
+  white-space:nowrap;
+}
+
+/* Panel */
+.helper-panel{
+  position:absolute;
+  right:0;
+  top: calc(100% + 10px);
+  width: min(320px, 80vw);
+  padding:14px;
+  border-radius:16px;
+  border:1px solid rgba(255,255,255,.16);
+  background: rgba(0,0,0,.35);
+  backdrop-filter: blur(10px);
+  box-shadow: 0 16px 50px rgba(0,0,0,.35);
+  opacity:0;
+  transform: translateY(8px);
+  pointer-events:none;
+}
+
+.helper-panel.show{
+  opacity:1;
+  transform: translateY(0);
+  pointer-events:auto;
+  transition: opacity .16s ease, transform .16s ease;
+}
+
+.helper-panel .t{ font-weight:900; margin:0 0 6px; }
+.helper-panel .p{
+  margin:0;
+  font-size:14px;
+  line-height:1.6;
+  opacity:.9;
+
+  /* 🔥 BURMESE WRAP FIX */
+  word-break: break-word;
+  overflow-wrap: anywhere;
+  white-space: normal;
+}
+
+/* Visible + animations */
+.helper-btn.is-visible{
+  opacity:1;
+  pointer-events:auto;
+}
+
+.helper-wrap.is-active{
+  pointer-events:auto;
+}
+
+/* COMBO: Neon Glow + Bounce In */
+.helper-btn.is-visible.anim-neon-bounce{
+  animation: helperBounceIn .38s cubic-bezier(.2,.8,.2,1) forwards,
+             helperNeonPulse 1.35s ease-in-out .38s infinite;
+}
+
+@keyframes helperBounceIn{
+  0%{ transform: translateY(18px) scale(.75); opacity:0; }
+  60%{ transform: translateY(-3px) scale(1.06); opacity:1; }
+  80%{ transform: translateY(1px) scale(.99); }
+  100%{ transform: translateY(0px) scale(1); opacity:1; }
+}
+
+@keyframes helperNeonPulse{
+  0%,100%{
+    box-shadow:
+      0 10px 24px rgba(0,0,0,.35),
+      0 0 0 rgba(0,200,255,0);
+  }
+  50%{
+    box-shadow:
+      0 10px 24px rgba(0,0,0,.35),
+      0 0 24px rgba(0,200,255,.35),
+      0 0 44px rgba(123,255,218,.18);
+  }
+}
+
+/* Mobile tuning */
+@media (max-width: 480px){
+   .helper-panel .p{
+   font-size:14px;
+   line-height:1.7;
+   letter-spacing:0.2px;
+ }
+
+  .helper-wrap{ right: 10px; }
+  .helper-btn{ padding: 11px 12px; }
+  .helper-panel{ width: min(300px, 86vw); }
+}
+.helper-nav{
+  display:flex;
+  justify-content:space-between;
+}
+
+.helper-nav-btn{
+  flex:1;
+  padding:10px 12px;
+  border-radius:10px;
+  border:1px solid rgba(255,255,255,.18);
+  background: rgba(255,255,255,.08);
+  color:#fff;
+  font-weight:800;
+  cursor:pointer;
+}
+
+.helper-nav-btn:disabled{
+  opacity:.45;
+  cursor:not-allowed;
+}
+/* helper nav fade */
+.helper-nav {
+  opacity:0;
+  transform: translateY(10px);
+  transition: opacity .35s ease, transform .35s ease;
+}
+
+.helper-nav.show {
+  opacity:1;
+  transform: translateY(0px);
+}
+.done-btn {
+  opacity: 1;
+  transition: opacity 0.25s ease;
+}
+
+.done-btn.fade-out {
+  opacity: 0;
+  pointer-events: none; /* Optional: disable interaction while faded out */
+}
+.helper-main-stack{
+  display:flex;
+  flex-direction:column;
+  align-items:center;
+  gap:10px;
+}
+
+/* Cancel button: when hidden, it should NOT take space */
+.helper-btn-cancel{
+  display:none;
+  opacity:0;
+
+  background: rgba(0,0,0,0.35);
+  backdrop-filter: blur(5px);
+  -webkit-backdrop-filter: blur(5px);
+
+  border:1px solid rgba(0,200,255,.25);
+
+  box-shadow:
+    0 10px 24px rgba(0,0,0,.35),
+    0 0 18px rgba(0,200,255,.15),
+    inset 0 0 10px rgba(0,200,255,.15);
+}
+/* When visible, show it normally */
+#product-helper-cancel.is-visible{
+  display: flex;          /* or display:block; (use flex because your button uses flex) */
+  opacity: 1;
+}
+
+

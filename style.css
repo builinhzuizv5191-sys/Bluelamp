@@ -994,5 +994,20 @@ main#home-view > .popular-section {
   display: flex;          /* or display:block; (use flex because your button uses flex) */
   opacity: 1;
 }
+/* Remove the blue focus ring on mouse/tap */
+.helper-nav-btn:focus,
+.helper-nav-btn:focus-visible,
+.done-btn:focus,
+.done-btn:focus-visible,
+.back-btn:focus,
+.back-btn:focus-visible {
+  outline: none;
+  box-shadow: none;
+}
 
-
+/* Mobile tap highlight (blue/gray flash) */
+.helper-nav-btn,
+.done-btn,
+.back-btn {
+  -webkit-tap-highlight-color: transparent;
+}

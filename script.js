@@ -506,7 +506,7 @@
         "price": "7,900 Kyats"
       }],
       "Share": [{
-        "duration": "1 Month",
+        "duration": "Phone (1 Month)",
         "price": "1,000 Kyats"
       }, {
         "duration": "WindowsPC / Laptop(1 Month)",
@@ -3776,11 +3776,52 @@ Can't use on iOS devices.` + generalDetailsBlock,
     window.scrollTo(0, 0);
     dom.cart.bar.style.display = 'none';
   }
+  // =======================
+// SAFE UNIT CALCULATOR
+// (prevents crash)
+// =======================
+function computeTotalUnits(duration, qty) {
+  if (!duration || !qty || qty <= 1) return "";
+
+  const t = String(duration);
+  const m = t.match(/([\d,]+)\s*([A-Za-z]+)/);
+  if (!m) return "";
+
+  const num = parseInt(m[1].replace(/,/g, ""), 10);
+  if (!Number.isFinite(num)) return "";
+
+  const unit = m[2];
+  return `${num * qty} ${unit}`;
+}
+  
+function getReceiptExtraLine(product, plan, duration, qty, unitPrice) {
+  if (qty <= 1) return "";
+  if (plan !== "Share") return "";
+
+  // Express VPN: apply to ALL Share plans (Phone / Windows / Mac / Linux etc.)
+  if (product === "Express Vpn") {
+    return `${qty} Devices (Not ${qty} Months)`;
+  }
+
+  // CapCut: ONLY Share 6,000Ks plan
+  if (product === "CapCut" && unitPrice === 6000) {
+    return `${qty} Account (Not ${qty} Months)`;
+  }
+
+  return "";
+}
 
   function buildReceipt() {
     const c = JSON.parse(localStorage.getItem('blp_cart') || '[]');
     if (!c.length) { dom.checkout.receiptStep.innerHTML = '<p>Your cart is empty.</p>'; return; }
-    const items = c.map(i => ({ name: i.product, plan: i.section, duration: i.duration, qty: i.qty, sub: i.unitPrice * i.qty }));
+    const items = c.map(i => ({
+    name: i.product,
+    plan: i.section,
+    duration: i.duration,
+    qty: i.qty,
+    unitPrice: i.unitPrice,
+    sub: i.unitPrice * i.qty
+}));
     const total = items.reduce((s, x) => s + x.sub, 0);
     if (items.length === 1) {
       const x = items[0];
@@ -3793,20 +3834,33 @@ Can't use on iOS devices.` + generalDetailsBlock,
     } else {
       dom.checkout.receipts.single.style.display = 'none';
       dom.checkout.receipts.multi.style.display = 'block';
-      dom.checkout.receipts.rm_itemList.innerHTML = items.map(item => `<div class="receipt-line-item"><div class="title">${escapeHTML(item.name)}${item.qty > 1 ? ` (x${item.qty})` : ''}</div><div class="details">${escapeHTML(item.plan)} • ${escapeHTML(item.duration)}</div><div class="price">${formatKyats(item.sub)}</div></div>`).join('');
+      dom.checkout.receipts.rm_itemList.innerHTML = items.map(item => {
+  const extraLine = getReceiptExtraLine(item.name, item.plan, item.duration, item.qty, item.unitPrice);
+
+  return `<div class="receipt-line-item">
+    <div class="title">${escapeHTML(item.name)}${item.qty > 1 ? ` (x${item.qty})` : ''}</div>
+    <div class="details">
+      ${escapeHTML(item.plan)} • ${escapeHTML(item.duration)}
+      ${extraLine ? `<br>${escapeHTML(extraLine)}` : ''}
+    </div>
+    <div class="price">${formatKyats(item.sub)}</div>
+  </div>`;
+}).join('');
+
       dom.checkout.receipts.rm_total.textContent = formatKyats(total);
     }
     const clipboardText =
     items.map(i => {
     const qtyPart = i.qty > 1 ? ` x${i.qty}` : '';
-    const totalUnitsLine = computeTotalUnits(i.duration, i.qty);
+    const extraLine = getReceiptExtraLine(i.name, i.plan, i.duration, i.qty, i.unitPrice);
 
     return `- ${i.name} (${i.plan} • ${i.duration})${qtyPart}`
-      + (totalUnitsLine ? `\n  ${totalUnitsLine}` : '')
+      + (extraLine ? `\n  ${extraLine}` : '')
       + `\n  Price: ${formatKyats(i.sub)}`;
   }).join('\n\n')
   + `\n-------------------\nTotal: ${formatKyats(total)}`;
-    dom.checkout.receiptText.value = clipboardText;
+  dom.checkout.receiptText.value = clipboardText;
+
   }
 
   function formatDetails(raw) {

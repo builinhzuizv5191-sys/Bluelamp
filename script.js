@@ -2063,13 +2063,15 @@ const popupTextByProduct = {
     backText: "Back",
     steps: [
     "တွေ့ရတဲ့တိုင်းCapCut မာရ္စေးချယ်စရာPlanသုံးခုရှိပါတယ်။ Share,Private,OwnMail",
-    "ဘာကွာလဲဆိုရင်....သိထားရမာကProချင်းတူတူပါပဲ။ အရင်ဆုံးSharePlanကဘယ်လိုလဲဆိုရင်။ သူကဝယ်ရင်တခြားလူ 2ယောက် 2 Devicesဝင်ပီးသားအကောင့်ကိုရမာပါ။ Riskတေရှိတယ်၊ကိုယ်က1 deviceပဲဝင်လို့ရမယ်။ ကိုယ်ကဖြစ်ဖြစ်တခြားနှစ်ယောက်ကဖြစ်ဖြစ် device limit ကျော်ဝင်ခဲ့ရင်အကောင့်ကပျက်သွားမာပါတစ်လမပြည့်ခင်။ Shareအကောင့်မလို့ကျနော့်ဘက်က Warranty 15ရက်ပဲပေးပါတယ်။ တခုခုဖြစ်လာခဲ့ရင်ဘယ်သူကပိုဝင်လဲမသိနိုင်လို့ Warranty မပေးတာပါနားလည်ပေးပါ။",
+    "ဘာကွာလဲဆိုရင်....သိထားရမာကProချင်းတူတူပါပဲ။ အရင်ဆုံးSharePlanကဘယ်လိုလဲဆိုရင်။ သူကဝယ်ရင်တခြားလူ 2ယောက် 2 Devicesဝင်ပီးသားအကောင့်ကိုရမာပါ။ Riskတေရှိတယ်၊ကိုယ်က1 deviceပဲဝင်လို့ရမယ်။ ကိုယ်ကဖြစ်ဖြစ်တခြားနှစ်ယောက်ကဖြစ်ဖြစ် device limit ကျော်ဝင်ခဲ့ရင်အကောင့်ကပျက်သွားမာပါတစ်လမပြည့်ခင်။",
+    "Shareအကောင့်မလို့ကျနော့်ဘက်က Warranty 15ရက်ပဲပေးပါတယ်။ တခုခုဖြစ်လာခဲ့ရင်ဘယ်သူကပိုဝင်လဲမသိနိုင်လို့ Warranty မပေးတာပါနားလည်ပေးပါ။",
     "သူကအကောင့်ကိုအပိုင်ရတာပါ။ ဖုန်းထဲထည့်ထားရတဲ့Gmailမဟုတ်ပါဘူး။ CapCut appထဲမာထည့်သုံးရတဲ့TempEmailပါ။ ကျနော်တို့ဘက်ကအကောင့်ပေးမာပါ။ ပေးတဲ့အကောင့်ကို CapCut appရဲ့ Email sign inမာဝင်သုံးရုံပါပဲ။",
     "သူကဝယ်သူရဲ့ email ကိုလုပ်ပေးတာပါ။ ဒါပေမဲ့ CapCut မဖွင့်ရသေးတဲ့ email မပဲရပါမယ်။ ပြောရရင် Private ကပိုပီးရွေးချယ်သင့်တာပါ။ ဘာလို့ဆို CapCut ကအကောင့်ပြောင်းလဲ Project တေမပျက်ပါဘူး။",
     "Share Planကဖုန်းတလုံးပဲသုံးလို့ရပါတယ်။ Private and OwnMail က Android, iOS, PC, Laptop All Device ရပါတယ်။"
   ],
     stepButtons: [
     "ဘာတေကွာလဲ?",
+    "ဆက်ရန်",
     "Privateကရော?",
     "OwnMailကရော?",
     "All Devices<br>ရလား?"
@@ -2082,13 +2084,15 @@ const popupTextByProduct = {
     backText: "Back",
     steps: [
     "တွေ့ရတဲ့တိုင်း AlightMotion မာရ္စေးချယ်စရာPlanသုံးခုရှိပါတယ်။ Share,Private,OwnMail",
-    "ဘာကွာလဲဆိုရင်....သိထားရမာကProချင်းတူတူပါပဲ။ အရင်ဆုံးSharePlanကဘယ်လိုလဲဆိုရင်။ သူကဝယ်ရင်တခြားလူ 7ယောက်နဲ့တူတူသုံးရမာပါ။ ဒါမဲ့စိတ်မပူပါနဲ့ Project တေကတော့မရောပါဘူး Private ပဲသုံးရမာပါ။ 6လအတွင်းတခုခုဖြစ်ခဲ့ရင်တခါပြန်လဲပေးပါတယ်။ Shareမို့လို့တခါပါပဲ။ Device changeလို့လဲမရပါ။ (ဆိုလိုတာကကိုယ်ကဖုန်းတခုနဲ့ဝင်ပီး‌၊နောက်ပိုင်းမဖုန်းလဲတာတေဘာတေမရဘူးပြောတာပါ။)",
+    "ဘာကွာလဲဆိုရင်....သိထားရမာကProချင်းတူတူပါပဲ။ အရင်ဆုံးSharePlanကဘယ်လိုလဲဆိုရင်။ သူကဝယ်ရင်တခြားလူ 7ယောက်နဲ့တူတူသုံးရမာပါ။ ဒါမဲ့စိတ်မပူပါနဲ့ Project တေကတော့မရောပါဘူး Private ပဲသုံးရမာပါ။",
+    "6လအတွင်းတခုခုဖြစ်ခဲ့ရင်တခါပြန်လဲပေးပါတယ်။ Shareမို့လို့တခါပါပဲ။ Device changeလို့လဲမရပါ။ (ဆိုလိုတာကကိုယ်ကဖုန်းတခုနဲ့ဝင်ပီး‌၊နောက်ပိုင်းမဖုန်းလဲတာတေဘာတေမရဘူးပြောတာပါ။)",
     "သူက အကောင့်ကိုအပိုင်ရတာပါ။ ဖုန်းထဲထည့်ထားရတဲ့Gmailမဟုတ်ပါဘူး။ Alight Motion appထဲမာထည့်သုံးရတဲ့TempEmailပါ။ ကျနော်တို့ဘက်ကအကောင့်ပေးမာပါ။ ပေးတဲ့အကောင့်ကို Alight Motion appရဲ့ Email sign inမာဝင်သုံးရုံပါပဲ။ Full Warranty က 1Yearအတွင်းတခုခုဖြစ်ရင်တခါပြန်လဲပေးပါတယ်။ Riskကင်းတဲ့ OwnMail ယူလဲရပါတယ်။",
     "သူကဝယ်သူရဲ့ email ကိုလုပ်ပေးတာပါ။ Gmail/Email and password ပေးရပါတယ်။ အကောင့်ရဲ့ Password ပါ။ Alight Motionမာထားမဲ့ Password မဟုတ်ပါဘူး။ Google အကောင့်ကိုဝင်ပီးလုပ်ပေးမာပါ။ ပီးရင်ပြန်ထွက်မာပါ။ အကောင့်ရှိပီးသားဆိုလဲရပါတယ်။ သက်တန်းတိုးလို့လဲရပါတယ်။ ကိုယ့်Mailနဲ့ကိုယ်မလို့Errorလဲကင်းပါတယ်။ အဲ့တာကြောင့် OwnMail ကပိုပီးရွေးချယ်သင့်ပါတယ်။",
     "Android ရော iOS ရောနှစ်ခုလုံးရပါတယ်။ Playstore & AppStore က official appတေမာပဲသုံးရမာပါ။"
   ],
     stepButtons: [
     "ဘာတေကွာလဲ?",
+    "ဆက်ရန်",
     "Privateကရော?",
     "OwnMailကရော?",
     "All Devices<br>ရလား?"
@@ -2154,18 +2158,28 @@ const popupTextByProduct = {
     backText: "Back",
     steps: [
     "တွေ့ရတဲ့တိုင်း Canva မာရ္စေးချယ်စရာPlan 3 ခုရှိပါတယ်။<br>Share,Private,Educational",
-    "ဘာကွာလဲဆိုရင်တော်တော်ကွာပါတယ်။ ဒီထဲက Share Invite ဆိုတာကဝယ်သူရဲ့ Email ကို invite လုပ်ပေးလိုက်မာပါ။ Pro features တေရတယ်ဆိုပေမဲ့ Members အနေနဲ့မို့လို့ Limited access သဘောပါပဲ(ဥပမာFontတေကိုထည့်ချင်တာထည့်မရတာမျိုးလိုပေါ့။) Total 20~30Daysကြားပဲရမာပါ။ ဒါကဘာကိုပြောတာလဲဆိုရင်ဥပမာကိုယ်က1ရက်နေ့ကဝယ်လိုက်တယ်ဆိုရင် 20 ရက့်နေ့မလဲကုန်နိုင်တယ်အဲ့ကနေ 30 ထိလဲအများဆုံးရနိုင်တယ်။ အနဲဆုံးကတော့ 20 ရက်ပေါ့။",
+    "ဘာကွာလဲဆိုရင်တော်တော်ကွာပါတယ်။ ဒီထဲက Share Invite ဆိုတာကဝယ်သူရဲ့ Email ကို invite လုပ်ပေးလိုက်မာပါ။ Pro features တေရတယ်ဆိုပေမဲ့ Members အနေနဲ့မို့လို့ Limited access သဘောပါပဲ(ဥပမာFontတေကိုထည့်ချင်တာထည့်မရတာမျိုးလိုပေါ့။)",
+    "Total 20~30Daysကြားပဲရမာပါ။ ဒါကဘာကိုပြောတာလဲဆိုရင်ဥပမာကိုယ်က1ရက်နေ့ကဝယ်လိုက်တယ်ဆိုရင် 20 ရက့်နေ့မလဲကုန်နိုင်တယ်အဲ့ကနေ 30 ထိလဲအများဆုံးရနိုင်တယ်။ အနဲဆုံးကတော့ 20 ရက်ပေါ့။",
     "Private ကတော့သူက Pro features ကိုမ full access ရနေမယ်။ ကျနော်ပေးတဲ့အကောင့်ကို Canva app မာဝင်သုံးရုံပါပဲ။ Email အခု 100 ကို Pro ပြန်ပေးလို့ရတယ်။ ဒါကဘာကိုဆိုလဲလဲဆိုရင် Share 1500 တန်အခု 100 ပေါ့။ ကိုယ့်ရဲ့ Email ကိုလဲ Admin အနေနဲ့ပြန် Invite လို့ရတယ်။",
     "Educationalဆိုတာကကျောင်းသားတေအတွက်ပါ။ Lifetime ဆိုတော့ Features တေကလဲကျောင်းမာလိုသလောက်ပဲပါတာပါ။ ပြောရရင် Limited Features ပေါ့။ သူကဝယ်သူရဲ့ Email ကို Invite ပေးတာပါ။ Warranty 5 လပေးထားပါတယ်။",
     "Android ရော iOS ရော PC,laptop အကုန်ရပါတယ်။ Playstore & AppStore က official appတေမာပဲသုံးရမာပါ။"
   ],
     stepButtons: [
     "ဘာတေကွာလဲ?",
+    "ဆက်ရန်",
     "Privateကရော?",
     "Educational<br>ကရော?",
     "All Devices<br>ရလား?"
   ]
   },
+  "VSCO": {
+  title: "VSCO Info",
+  button: "ဒါကဘာလဲရှင်းပြပါ",
+  doneText: "နားလည်ပါပီ။",
+  steps: [
+    "တကယ်တမ်းပြောရရင်ကျနော်လဲသေချာမသိပါဘူး။ Slow motion videoတေလုပ်လို့‌ရတဲ့ App ပါ။ Instock လဲမရှိလို့ CapCut က Slow motion ပဲသုံးလိုက်တာပိုကောင်းပါတယ်။"
+  ]
+},
   "Netflix": {
     title: "Netflix Info",
     body: "hi"
@@ -2176,7 +2190,7 @@ const popupTextByProduct = {
     body: "hi"
   }
 };
-
+  
 function initProductHelper(productName) {
   removeProductHelper();
 
@@ -2242,26 +2256,24 @@ function initProductHelper(productName) {
   const nextBtn = document.getElementById("helper-next");
 
   let navTimer = null;
-
   function updateNavUI() {
-   // if only 1 step → no nav at all
-    if (steps.length <= 1) {
-    nav.style.display = "none";
+  // ✅ if only 1 step → show ONLY "Done" button (no Back)
+  if (steps.length <= 1) {
+    nav.style.display = "flex";
+    backBtn.style.display = "none";
+    nextBtn.textContent = doneLabel; // "နားလည်ပါပီ။"
     return;
-   }
+  }
 
-    backBtn.disabled = stepIndex === 0;
+  backBtn.style.display = "";
+  backBtn.disabled = stepIndex === 0;
+  backBtn.textContent = backLabel;
 
-    // back button label
-    backBtn.textContent = backLabel;
+  const stepBtnTexts = Array.isArray(conf?.stepButtons) ? conf.stepButtons : [];
 
-    // per-step next button labels
-    const stepBtnTexts = Array.isArray(conf?.stepButtons) ? conf.stepButtons : [];
-
-    // last step button label
-    if (stepIndex === steps.length - 1) {
+  if (stepIndex === steps.length - 1) {
     nextBtn.textContent = doneLabel;
-    } else {
+  } else {
     nextBtn.innerHTML = stepBtnTexts[stepIndex] || escapeHTML(nextLabel);
   }
   }
@@ -2306,16 +2318,13 @@ cancelBtn?.addEventListener("click", () => {
       nav.classList.remove("show");
       nav.style.display = "none";
 
-      if (steps.length > 1) {
-        navTimer = setTimeout(() => {
-          nav.style.display = "flex";
-          updateNavUI();
-          // allow browser to apply display:flex first, then animate
-          setTimeout(() => {
-           nav.classList.add("show");
-          }, 20);
-        }, 1000);
-      }
+      navTimer = setTimeout(() => {
+      nav.style.display = "flex";
+      updateNavUI();
+      setTimeout(() => {
+      nav.classList.add("show");
+      }, 20);
+      }, 500);
     } else {
       // panel closed → reset nav timer
       if (navTimer) clearTimeout(navTimer);

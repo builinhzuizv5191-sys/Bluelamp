@@ -2141,7 +2141,7 @@ const popupTextByProduct = {
     backText: "Back",
     steps: [
     "PicsArt မာကရ္စေးချယ်စရာ Plan 2 ခုပဲရှိတာပါ။<br>Share & Private",
-    "ဘာကွာလဲဆိုရင် Pro ချင်းတူတူပါပဲ။ Shareဆိုတာကတော့သိတဲ့အတိုင်း 1Device ပဲဝင်လို့ရမယ်။ တခြားသူတေနဲ့တူတူသုံးရမယ်။ Edit History တေလဲရောပါတယ်။ သူ Edit တာလဲကိုယ်မြင်နေရမာဖြစ်သလို၊ကိုယ် Edit တာကိုလဲတခြားသူတေမြင်ရမာပါ။",
+    "ဘာကွာလဲဆိုရင် Pro ချင်းတူတူပါပဲ။ Shareဆိုတာကတော့သိတဲ့အတိုင်း 1Device ပဲဝင်လို့ရမယ်။ တခြားသူတေနဲ့တူတူသုံးရမယ်။ Edit History တေလဲရောပါတယ်။ သူ Edit တာလဲကိုယ်မြင်နေရမာဖြစ်သလို၊ကိုယ် Edit တာကိုလဲတခြားသူတေမြင်ရမာပါ။<br>Warrenty 15Days.",
     "Private ကတော့ Total 5 Devices ထိဝင်သုံးလို့ရမယ်။ Private History. ပီးတော့ Full warranty. ကျနော်ပေးတဲ့အကောင့်ကို PicsArt App မာဝင်သုံးရုံပါပဲ။",
     "Android ရော iOS ရောနှစ်ခုလုံးရပါတယ်။ Playstore & AppStore က official appတေမာပဲသုံးရမာပါ။"
   ],
@@ -2175,9 +2175,33 @@ const popupTextByProduct = {
   "VSCO": {
   title: "VSCO Info",
   button: "ဒါကဘာလဲရှင်းပြပါ",
-  doneText: "နားလည်ပါပီ။",
+  doneText: "Aww okok",
   steps: [
     "တကယ်တမ်းပြောရရင်ကျနော်လဲသေချာမသိပါဘူး။ Slow motion videoတေလုပ်လို့‌ရတဲ့ App ပါ။ Instock လဲမရှိလို့ CapCut က Slow motion ပဲသုံးလိုက်တာပိုကောင်းပါတယ်။"
+  ]
+},
+  "PhotoRoom": {
+  title: "PhotoRoom Info",
+  button: "ဒါကဘာလဲရှင်းပြပါ",
+  doneText: "Aww okok",
+  steps: [
+    "ဒါက Photo editing appပါပဲ Ai ကိုသုံးပီး Background removeတာတေ Generate တာတေလုပ်လို့ရပါတယ်။ Stock ရှားပါတယ်။ သူ့လိုဟာမျိုးထဲကဆို PicsArt ရှိပါမယ်။"
+  ]
+},
+  "Remini": {
+  title: "Remini Info",
+  button: "ဒါကဘာလဲရှင်းပြပါ",
+  doneText: "Aww okok",
+  steps: [
+    "Remini ဆိုတာက ပုံတေကအကြည်လုပ်တာအရမ်းကောင်းပါတယ်။ သုံးဖူးတဲ့သူတေပိုသိပါတယ်။ ဒါပေမဲ့ Stock ရှားတာမလို့ PicsArt ကလဲသူ့လောက်တော့မကောင်းပေမဲ့သူ့နီးနီးတော့အကြည်လုပ်နိုင်ပါတယ်။"
+  ]
+},
+  "INSHOT": {
+  title: "INSHOT Info",
+  button: "ဒါကဘာလဲရှင်းပြပါ",
+  doneText: "Aww okok",
+  steps: [
+    "ဘာမရှင်းပြစရာမရှိပါဘူး။ Android ပဲသူံးလိူ့ရပါမယ်။ Playstore က official app ထဲမာပဲသုံးရမာပါ။ Share Planမို့လို့ 1 Device ပဲသုံးလိူ့ရပါမယ် Warranty 3လပေးပါတယ်။"
   ]
 },
   "Netflix": {

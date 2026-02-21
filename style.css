@@ -82,10 +82,10 @@ header{
     right: 0;
     z-index: 15;
     padding: 6px 10px;
-    background: rgba(2, 6, 23, 0.3); /* New Search Container BG */
-    backdrop-filter: blur(2px);
-    -webkit-backdrop-filter: blur(2px);
-    border-bottom: 1px solid var(--stroke);
+    background: rgba(0, 0, 0, 0); /* New Search Container BG */
+    backdrop-filter: blur(0px);
+    -webkit-backdrop-filter: blur(0px);
+    border-bottom: 0px solid var(--stroke);
     /* KEY FIX: Use flexbox alignment for reliable vertical centering */
     display: flex;
     align-items: center; 
@@ -809,9 +809,9 @@ main#home-view > .popular-section {
   padding:12px 14px;
   border-radius:999px;
   border:1px solid rgba(0,200,255,.35);
-  background: rgba(0,0,0,0.35);
-  backdrop-filter: blur(16px);
-  -webkit-backdrop-filter: blur(16px);
+  background: rgba(0,0,0,0.25);
+  backdrop-filter: blur(8px);
+  -webkit-backdrop-filter: blur(8px);
   color:#eaf6ff;
   cursor:pointer;
   box-shadow:

@@ -568,11 +568,15 @@
       }]
     },
     "Netflix": {
-      "1 Profile": [{
+      "1 Profile(UHD 4K)": [{
         "duration": "(Semiprivate 2 devices 1Month)",
         "price": "15,000 Kyats"
       }],
-      "Whole Account": [{
+      "1 Profile(FHD 1080P)": [{
+        "duration": "(Semiprivate 2 devices 1Month)",
+        "price": "10,000 Kyats"
+      }],
+      "Whole Account(UHD 4K)": [{
         "duration": "5 Profiles (1 Month)",
         "price": "5,5000 Kyats"
       }]
@@ -615,8 +619,12 @@
     },
     "Spotify": {
       "Individual Plan(Private)": [{
-        "duration": "3 Months",
-        "price": "25,000 Kyats"
+        "duration": "2 Months",
+        "price": "18,000 Kyats"
+      }],
+      "Family Plan": [{
+        "duration": "2 Months",
+        "price": "15,000 Kyats"
       }]
     },
     "Apple Music": {
@@ -649,10 +657,13 @@
       "Private": []
     },
     "Google One": {
-      "Share": [],
+      "OwnMail invite": [{
+        "duration": "3 Months (2000GB + Veo3 Gemini AI)",
+        "price": "10,000 Kyats"
+      }],
       "Private": [{
-        "duration": "1 Year (2000GB + Veo3 Gemini AI)",
-        "price": "20,000 Kyats"
+        "duration": "3 Months (2000GB + Veo3 Gemini AI)",
+        "price": "15,000 Kyats"
       }]
     },
     "TeraBox": {
@@ -684,29 +695,29 @@
         "duration": "1 Month (+2000GB storage)",
         "price": "9,500 Kyats"
       }, {
-        "duration": "1 Year (+2000GB storage)",
-        "price": "30,000 Kyats"
-      }, {
-        "duration": "1 Year (Full Warranty)",
-        "price": "35,000 Kyats"
+        "duration": "3 Months (+2000GB storage)",
+        "price": "15,000 Kyats"
       }],
       "OwnMail Invite": [{
-        "duration": "1 Year",
-        "price": "17,900 Kyats"
+        "duration": "1Month",
+        "price": "5,000 Kyats"
+      }, {
+        "duration": "3 Months",
+        "price": "10,000 Kyats"
       }]
     },"Flow AI": {
   "OwnMail Invite": [{
-    "duration": "1 Year",
-    "price": "17,900 Kyats"
+    "duration": "3 Months",
+    "price": "10,000 Kyats"
   }],
       "Private": [{
-        "duration": "1 Year",
-       "price": "30,000 Kyats"
+        "duration": "3 Months",
+       "price": "15,000 Kyats"
       }]
 },"NotebookLM": {
   "OwnMail Invite": [{
-    "duration": "1 Year",
-    "price": "17,900 Kyats"
+    "duration": "3 Months",
+    "price": "10,000 Kyats"
   }]
 },
 
@@ -733,10 +744,6 @@
       }, {
         "duration": "3 Months",
         "price": "16,500 Kyats"
-      }],
-      "OwnMail Invite(Family Plan)": [{
-         "duration": "1 Month",
-         "price": "5,000 Kyats"
       }] 
     },
     "Tinder": {
@@ -2204,6 +2211,143 @@ const popupTextByProduct = {
     "ဘာမရှင်းပြစရာမရှိပါဘူး။ Android ပဲသူံးလိူ့ရပါမယ်။ Playstore က official app ထဲမာပဲသုံးရမာပါ။ Share Planမို့လို့ 1 Device ပဲသုံးလိူ့ရပါမယ် Warranty 3လပေးပါတယ်။"
   ]
 },
+  "NordVpn": {
+  title: "NordVpn Info",
+  button: "ဒါကဘာလဲရှင်းပြပါ",
+  doneText: "Aww okok",
+  steps: [
+    "မြန်မာမာသုံးမရဘူး။ အဲ့တော့မဝယ်ပါနဲ့။"
+  ]
+},
+  "Surfshark Vpn": {
+  title: "Surfshark Vpn Info",
+  button: "ဒါကဘာလဲရှင်းပြပါ",
+  doneText: "Aww okok",
+  steps: [
+    "မြန်မာမာသုံးမရဘူး။ အဲ့တော့မဝယ်ပါနဲ့။"
+  ]
+},
+  "Express Vpn": {
+    title: "Express Vpn Info",
+    button: "Shareနဲ့Privateဘာကွာလဲ?",
+    nextText: "ဘာတေကွာလဲ?",
+    backText: "Back",
+    steps: [
+    "ဘာကွာလဲဆိုရင်အများကြီးကွာပါတယ်။ Shareဆိုတာကအကျန်အကောင့်ပါ ရှေ့မာ လူတေဝင်ပီးသားအကောင့်မာ 1 Device စာဝယ်ရင်တခုလွတ်တာပေးမာပါ။ အဲ့ထဲမာဝင်သုံးရမာ။ တခါတလေအကောင့်ကထွက်ထွက်သွားဝာာမျိုးဖြစ်တတ်ပေမဲ့ပြန်ဝင်လို့ရပါတယ်။",
+    "အများနဲ့တူတူသုံးရတာမို့လို့တစ်ခုစာဝယ်ပီးတစ်ခုထက်ပိုဝင်တဲ့အခါမျိုးတေမာကိုယ်ကဝင်ဝင်တခြား 7 ယောက်ထဲကတယောက်ယောက်ကခိုးသုံးရင်ဖြစ်ဖြစ်အကောင့်ကပျက်သွားမာပါ။ Share ကို warranty 15ရက်ပေးပါတယ်။",
+    "1000ထဲနဲ့ရောင်းပေးထားတာက။ လူတိုင်း Vpn သုံးနိုင်အောင် Budget Plan အနေနဲ့ထားပေးထားမလို့ဘာမလဲမမြတ်ပါဘူးဗျ။ အဲ့တာကြောင့်ဖြစ်တိုင်းပြန်လဲမပေးနိုင်တာနားလည်ပေးကြပါ။",
+    "Private ဆိုတာကတော့အကောင့်တခုလုံးကိုအပိုင်ရတာမျိုးပါ။ Share လိုမျိုး 8 ‌Devices ပဲသုံးလိူ့ရဝာာမဟုတ်တော့ပဲ ဖုန်းကြီးပဲဆို 9 Devices ထိရပါတယ်။ PC ကြီးပဲဆို 5 PC(Laptop လဲတူတူပဲ)PC 5ခုသုံးရင်တော့ ဖုန်းတော့သုံးလိူ့မရဘူးပေါ့။ ပီးတော့ကိုယ့် အကောင့်အပိုင်ဖြစ်တာမလို့ Password လဲကိုယ်ကြိုက်တာထားလို့ရပါတယ်။",
+    "ဘာဝယ်သင့်လဲဆိုတာထက်ကိုယ်က Budget ဘက်မာရှိတယ်သုံးစရာကလဲကိုယ့်ဖုန်းတခုပဲရှိတာဆိုရင် Share Plan ပဲယူပါ။ တခြားသူတေနဲ့လဲ တူတူမသုံးချင်ဘူး တယောက်ထဲ သက်သက်သုံးချင်တယ် ဖုန်းတစ်ခု၊ Laptop တခု၊ PC တခုဆိုရင်တော့ Private ယူချင်ရင်ယူလို့ရပါတယ်။",
+    "အိမ်မာလူများတဲ့သူတေ အလုပ်မာလူများတဲ့သူတေကလဲ Private နဲ့ဆိုအဆင်ပြေပါတယ်။ Private account တေကိုတော့ Full warranty ပေးထားပါတယ်။ Share နဲ့ Private မာလိုင်းကသိသိသာသာကြီးကွာသွားတာမရှိပါဘူး။ Warranty နဲ့ device limit ပဲကွာတာပါ။",
+    "Combo for Private account<br>9 Phones<br>8 Phones + 1 PCဒါမမဟုတ်Laptop<br>5 Phones + 2 PCဒါမမဟုတ်Laptop<br>5 PCဒါမမဟုတ်Laptop",
+    "သူ့ Plan အလိုက်ရွေးဝယ်ပါ။ Android,iOS,PC,Laptopအကုန်ရပါတယ်။"
+  ],
+    stepButtons: [
+    "ဆက်ရန်",
+    "ဆက်ရန်",
+    "Privateကရော?",
+    "ဘာဝယ်သင့်လဲ?",
+    "ဆက်ရန်",
+    "ဆက်ရန်",
+    "All Devices<br>ရလား?"
+  ]
+  },
+  "HMA VPN": {
+    title: "HMA VPN Info",
+    button: "ဒါကဘာလဲရှင်းပြပါ",
+    nextText: "ဘာတေကွာလဲ?",
+    backText: "Back",
+    steps: [
+    "HMA က Express လိုမဟုတ်ဘူး။ iOS တေမာသုံးလိူ့မရဘူး။ ဒါပေမဲ့ ရွေးချယ်စရာ Region တေ Express ထက်ပိုများများချိတ်လို့ရတယ်။ သုံးလို့လဲရတယ်။",
+    "သူ့မာ Budget Plan မရှိပါဘူး။ Private ပဲရပါမယ်။ Android & Windows Devicesတေမာပဲသုံးလိူ့ရမယ်။ 5 to 8 Devicesထိရမယ်။ Full warranty။"
+  ],
+    stepButtons: [
+    "ဆက်ရန်"
+  ]
+  },
+  "ChatGPT Plus": {
+    title: "ChatGPT Plus Info",
+    button: "Planတေကအများရီးပဲနားမလည်ဘူး။",
+    nextText: "ဘာတေကွာလဲ?",
+    backText: "Back",
+    steps: [
+    "တွေ့ရတဲ့တိုင်း ChatGpt မာရ္စေးချယ်စရာPlan 3 ခုရှိပါတယ်။<br>Personal Plus, Business Plus Invite and Business Plus Own",
+    "ဘာတေကွာလဲဆိုရင်သိထားရမာပါ Plus ချင်းတူတူပါပဲ။ အရင်ဆုံး Personal Plus ကိုပြောပါမယ်။ သူကဒီကအကောင့်ပေးတာကို ChatGpt app or Website မာထည့်သုံးရတာပါ။ ဖုန်းထဲထည့်ထားစရာမလိူပါဘူး။ Device limit အနေနဲ့ 3 Devices လောက်ထိသုံးလို့ရပါတယ်။",
+    "Business Plus invite ဆိုတာက Personal Plus လိုမျိုး ကျနော်ပေးတဲ့အကောင့်ကိုသုံးရတာမဟုတ်ပဲ ဝယ်သူရဲ့ Email ကို Gpt plus ပြောင်းပေးတာပါ။ Email ကနေ Invite ပေးတာမလို့ Password ပေးစရာမလိုပါဘူး။ ဒါမဲ့ Device ကတော့ 1~2 Devices လောက်ပဲသုံးလို့ရပါမယ်။",
+    "Business Plus Own ဆိုတာကအလွယ်ပြောရင် 12K invite plan 4ခုရတာကိုပြောတာပါ။ ကျနော်ဒီကပေးတဲ့အကောင့်ကိုဝင်ပီးအဲ့အကောင့်ကနေ ဝယ်သူ ChatGpt Plus လုပ်ချင်တဲ့ email 4ခုကို Plus လုပ်လို့ရသွားမာပါ။",
+    "Device အနေနဲ့က ကျနော်ပေးတဲ့ Head account အပါအဝင်နောက် Email 4 ခုမာတခုကို 2 devices သုံးလို့ရတာဆိုတော့ Total 10 Devices ထိရနေမာပါ။",
+    "ကျနော်ခုဏပြောသွားတာတေအကုန်လုံးက $20≈$30 နဲ့ဝယ်တဲ့ဟာတေမဟုတ်လို့ Deactivate error ဖြစ်နိုင်ပါတယ်။ Deactivate ဆိုတာကဘာလဲဆိုရင် သုံးနေရင်း Plus features မရတော့တာမျိုး ကိုပြောတာပါ။",
+    "Full warranty လို့မရေးထားတဲ့ Personal Plus,Business Plus Invite and Business Plus Own တေက warranty အနေနဲ့တခုခုဖြစ်ခဲ့ရင် 1 ခုအသစ်ပြန်လဲပေးမာပါ။ တခါပဲလဲပေးမာမလို့အဆင်ပြေမယူပေးပါ။ Full Warranty လို့ရေးထားတဲ့ 25,900Ks Plan ကတော့ Warranty အပြည့်ပါပါတယ်။",
+    "ဒါကသုံးတဲ့သူပေါ်မာမူတည်ပါတယ်။ ဥပမာကိုယ်က Device 2ခု 3ခုလောက်ရှိတယ် OwnMail မဟုတ်လဲရတယ်ဆိုရင် Personal Plus က Deactivate %လဲနဲတာမလို့အဲ့တာယူသင့်ပါတယ်။",
+    "တကယ်လို့ကိုယ်က ကိုယ့် Email နဲ့ပဲသုံးချင်တယ် Device ကလဲ ဖုန်း or laptop တခုနှစ်ခုလောက်ပဲရှိတယ်ဆိုရင်တော့ Business Plus Invite ကရွေးချင်သင့်ပါတယ်။ ကျနော်ထည့်မရေးထားပေမဲ့ Business Plus invite မာ Normal Warranty 12K or Full Warranty 15K ဆိုပီးရွေးလို့ရပါတယ်။",
+    "အဲ့လိုမမဟုတ်ပဲ ကိုယ်ကပြန်ရောင်းချင်တာဖြစ်ဖြစ်သူငယ်ချင်းတေ အလုပ်ကလူတေကိုပေးချင်တာပဲဖြစ်ဖြစ်ဆိုရင်တော့ Business Plus Own နှစ်ခုက Device limit လဲများသလို Private history တေနဲ့သုံးရတာမလို့ အဲ့တာအတန်ဆုံးပါပဲ။",
+    "ရှင်းပြတာတေလဲအကုန်ကြည့်ပီးပီဆိုတော့ကိုယ့်ရဲ့ Budget နဲ့သုံးမဲ့အပေါ်လိုက်ပီးအဆင်ပြေတာရွေးဝယ်ကြပါ။<br>Official App and Official Webတေမာသူံးရမာပါ။ Android, iOS, PC, Laptop အကုန် Support ပါတယ်။"
+  ],
+    stepButtons: [
+    "ဘာတေကွာလဲ?",
+    "Business Plus invite<br>ကရော?",
+    "Business Plus Own<br>ဆိုတာကရော?",
+    "ဆက်ရန်",
+    "Full Warranty<br>ကရော?",
+    "ဆက်ရန်",
+    "ဘာဝယ်သင့်လဲ?",
+    "ဆက်ရန်",
+    "ဆက်ရန်",
+    "ဆက်ရန်"
+  ]
+  },
+  "Gemini Veo 3": {
+    title: "Gemini Veo 3 Info",
+    button: "Plan 2 ခုကိုရှင်းပြပေးပါ။",
+    nextText: "ဘာတေကွာလဲ?",
+    backText: "Back",
+    steps: [
+    "Gemini Pro မာကရ္စေးချယ်စရာ Plan 2 ခုပဲရှိတာပါ။<br>OwnMail Invite & Private Head",
+    "ဘာကွာလဲဆိုရင် Invite OwnMail ဆိုတာကဝယ်သူရဲ့ Email ကို Pro လုပ်ပေးတာပါ။ Region မတူတေတေဘာတေဖြစ်ပီးဝင်မရရင်ကျနော်ဝင်လုပ်ပေးဖို့လိုပါတယ်။ Password တေပေးရမာပါ။",
+    "Privacy တေဘာတေရှိလို့ပေးဝင်လို့မရဘူးဆိုတဲ့သူတေကတော့ခုထဲကမဝယ်လို့ရပါပီ။ ကျနော်ကတော့လုပ်စရာရှိတာလုပ်ပီးပြန်ထွက်မာပါပဲ။ မယုံရင်တော့ Private Head ပဲယူပါ။",
+    "Private Head ဆိုတာက အဲ့အကောင့်ကနေ OwnMail invite plan လိုမျိုး Email 5ခုကိုပြန် Invite လို့ရပါတယ်။ ဒါပေမဲ့ Region တေပြောင်းတတ်မရမာပါ။ ဝင်မဲ့သူတေက Head account နဲ့ Region တူမရမာကိုပြောတာပါ။",
+    "ဘာဝယ်သင့်လဲဆိုရင်တော့ Gemini Pro features တေကတူတူပါပဲကွာသွားတာက Ai Credit ကို OwnMail Plan က Share သုံးရတာပါ။ Private ကတော့ကိုယ်တယောက်ထဲသုံးရတာပါ။ အဲ့ Credit ကဘာအတွက်လဲဆိုတာမသိရင်တော့ OwnMail Plan ကိုသာရွေးလိုက်ပါ။",
+    "ပီးတော့ Private မာက 2TB ကိုကိုယ်‌တယောက်ထဲသုံးရမာဖြစ်ပီး၊ OwnMail Planမာတော့ Sharing သဘောပါ။ ဒါပေမဲ့ကိုယ်တိုင်တာတေကိုဘယ်သူမမြင်ရပါဘူး။ Storage ပြည့်ပီးစာမဝင်တော့တဲ့သူတေအတွက်အသုံးဝင်ပါတယ်။",
+    "Android, iOS, PC, Laptop အကုန်ရပါတယ်။ Official App တေ Website တေမာပဲသုံးရမာပါ။"
+  ],
+    stepButtons: [
+    "ဘာတေကွာလဲ?",
+    "ဆက်ရန်",
+    "Private Head<br>ဆိုတာက?",
+    "ဘာဝယ်သင့်လဲ?",
+    "ဆက်ရန်",
+    "All Devices<br>ရလား?"
+  ]
+  },
+  "Grammarly AI": {
+  title: "Grammarly AI Info",
+  button: "ဒါရှင်းပြပေးပါ။",
+  doneText: "ဟုတ်ပီဟုတ်ပီ",
+  steps: [
+    "ဒါကလောလောဆယ်ကျနော်မရောင်းသေးပါဘူးဗျ။ လုပ်လို့မရတာလဲပါပါတယ်။ အဲ့တာကြောင့်တခြားတခုခုရှာယူကြည့်ပါ။"
+  ]
+},
+  "Perplexity Ai": {
+    title: "Perplexity Ai Info",
+    button: "Planတေကအများရီးပဲနားမလည်ဘူး။",
+    nextText: "ဘာတေကွာလဲ?",
+    backText: "Back",
+    steps: [
+    "တွေ့ရတဲ့တိုင်း Perplexity Ai မာရ္စေးချယ်စရာ Plan 3 ခုရှိပါတယ်။<br>Share,Private,OwnMail",
+    "ဘာတေကွာလဲဆိုရင် အရင်ဆုံး Perplexity Ai ဆိုတာဘာလဲပြောပြပါမယ်။ သူက ChatGpt, Gemini, Claude, Grok တို့လို့ Ai အစုံကိုတခုဝယ်ရုံနဲ့သုံးလို့ရမာပါ။ ခုပြောသွားတာတေရဲ့တကယ့် Website တေ App တေမာသုံးရတာတော့မဟုတ်ပါဘူး Model အနေနဲ့သုံးလို့တာကိုပြောတာပါ။",
+    "အဲ့တော့ Plan တေအကြောင်းဆက်ပြောပြပါမယ် Share ဆိုတာကသိတဲ့အတိုင်း 1 Device ပဲဝင်လို့ရမယ်။ တခြား User တေနဲ့တူတူ Share သုံးရမယ်။ Chat history တေရောနေမယ်။ Warranty 15ရက်ပေးထားပါတယ်။ ဒီ Ai ကလူသိလဲနဲသလို demand လဲနဲတာမလို့ Share ကရချင်မရမာပါ။",
+    "Private ဆိုတာကအကောင့်ကိုအပိုင်ရတာကျနော်ပေးတဲ့ Mail Pass ကို Perplexity App or Web မာထည့်သုံးရုံပဲ။ 5 Devices လောက်ထိသုံးလို့ရပါတယ်။ And Full warranty.",
+    "OwnMail ဆိုတာက Private နဲ့အကုန်တူတူပဲ။ ဒါပေမဲ့ကျနော်ပေးတဲ့အကောင့်ကိုသုံးရတာမဟုတ်ပဲ ဝယ်သူရဲ့ Email နဲ့လုပ်ပေးတာပါ။ သူလဲ Full warranty ပါပဲ။",
+    "Android ရော iOS ရော PC, Laptop အကုန်ရပါတယ်။ Official App and Website တေမာပဲသုံးရမာပါ"
+  ],
+    stepButtons: [
+    "ဘာတေကွာလဲ?",
+    "ဆက်ရန်",
+    "Private ဆိုတာက?",
+    "OwnMail ဆိုတာက?",
+    "All Devices<br>ရလား?"
+  ]
+  },
   "Netflix": {
     title: "Netflix Info",
     body: "hi"
@@ -2694,10 +2838,10 @@ cancelBtn?.addEventListener("click", () => {
             title = 'Private Whole Account (1 Month)';
           }
         } else if (productName === 'Netflix') {
-          if (sectionName.includes('1 Profile')) {
-            title = '1 Profile';
+          if (sectionName.includes('1 Profile(UHD 4K)')) {
+            title = '1 Profile(UHD 4K)';
           } else if (sectionName.includes('Whole Account')) {
-            title = 'Whole Account';
+            title = 'Whole Account(UHD 4K)';
           }
         } else if (productName === 'Spotify') {
           title += ' <span style="background:#39ff14; color:#000; padding:2px 6px; border-radius:4px; font-size:11px; margin-left:8px; font-weight:900; box-shadow:0 0 5px #39ff14;">VPNမလို</span>';
@@ -2920,48 +3064,64 @@ if (productName === "Domain") {
         setTimeout(() => addBtn.textContent = "Add to Cart", 1000);
       });
     }
-    // --- NETFLIX: CUSTOM MONTHS (like Google Play custom amount) ---
+    // --- NETFLIX: CUSTOM MONTHS (UHD + FHD) ---
 if (productName === "Netflix") {
-  // Base monthly price for "1 Profile" (Semiprivate) from your data
-  const netflixMonthly = parseKyats(productData["Netflix"]?.["1 Profile"]?.[0]?.price) || 15000;
 
-  const netflixMonthsHTML = `
-    <div class="plan-box">
-      <div class="plan-title">More Months (1 Profile)</div>
-      <div style="padding:10px; display:flex; flex-direction:column; gap:10px;">
-        <label style="font-size:14px; color:#ccc;">Enter Months (1 - 12)</label>
+  // helper to find monthly price from productData by matching section text
+  function getNetflixMonthlyPrice(sectionName, fallback) {
+    const plans = productData["Netflix"]?.[sectionName];
+    const first = Array.isArray(plans) ? plans[0] : null;
+    const p = parseKyats(first?.price);
+    return p || fallback;
+  }
 
-        <div style="display:flex; gap:10px;">
-          <input
-            type="number"
-            id="netflix-months-input"
-            min="1"
-            max="12"
-            placeholder="1-12"
-            style="flex:1; padding:12px; border-radius:8px; border:1px solid rgba(255,255,255,0.2); background:rgba(255,255,255,0.05); color:white; font-size:16px;"
-          />
-          <div id="netflix-calc-price" style="align-self:center; font-weight:bold; color:#00e676; min-width:120px; text-align:right;">
-            0 Kyats
+  // ✅ set your section names EXACTLY like in productData
+  const UHD_SECTION = "1 Profile (UHD 4K)";
+  const FHD_SECTION = "1 Profile (FHD 1080P)";
+
+  // ✅ monthly prices (fallback if parse fails)
+  const uhdMonthly = getNetflixMonthlyPrice(UHD_SECTION, 15000);
+  const fhdMonthly = getNetflixMonthlyPrice(FHD_SECTION, 10000); // change fallback if needed
+
+  function mountNetflixMonthsBox({ title, inputId, priceId, btnId, monthlyPrice, sectionName }) {
+    const html = `
+      <div class="plan-box">
+        <div class="plan-title">${escapeHTML(title)}</div>
+        <div style="padding:10px; display:flex; flex-direction:column; gap:10px;">
+          <label style="font-size:14px; color:#ccc;">Enter Months (1 - 12)</label>
+
+          <div style="display:flex; gap:10px;">
+            <input
+              type="number"
+              id="${inputId}"
+              min="1"
+              max="12"
+              placeholder="1-12"
+              style="flex:1; padding:12px; border-radius:8px; border:1px solid rgba(255,255,255,0.2); background:rgba(255,255,255,0.05); color:white; font-size:16px;"
+            />
+            <div id="${priceId}" style="align-self:center; font-weight:bold; color:#00e676; min-width:120px; text-align:right;">
+              0 Kyats
+            </div>
           </div>
+
+          <button id="${btnId}" class="btn btn-primary" style="width:100%;">
+            Add to Cart
+          </button>
         </div>
-
-        <button id="btn-add-netflix-months" class="btn btn-primary" style="width:100%;">
-          Add to Cart
-        </button>
       </div>
-    </div>
-  `;
+    `;
 
-  const popularSection = dom.views.product.querySelector(".popular-section");
-  if (popularSection) {
-    popularSection.insertAdjacentHTML("beforebegin", netflixMonthsHTML);
+    const popularSection = dom.views.product.querySelector(".popular-section");
+    if (!popularSection) return;
+    popularSection.insertAdjacentHTML("beforebegin", html);
 
-    const input = document.getElementById("netflix-months-input");
-    const priceDisplay = document.getElementById("netflix-calc-price");
-    const addBtn = document.getElementById("btn-add-netflix-months");
+    const input = document.getElementById(inputId);
+    const priceDisplay = document.getElementById(priceId);
+    const addBtn = document.getElementById(btnId);
 
     input.addEventListener("input", () => {
       const months = parseInt(input.value, 10);
+
       if (!months || months < 1 || months > 12) {
         addBtn.style.backgroundColor = "#ff4444";
         addBtn.textContent = "⚠️ Limit: 1 - 12";
@@ -2969,8 +3129,7 @@ if (productName === "Netflix") {
       } else {
         addBtn.style.removeProperty("background-color");
         addBtn.textContent = "Add to Cart";
-        const totalPrice = netflixMonthly * months;
-        priceDisplay.textContent = formatKyats(totalPrice);
+        priceDisplay.textContent = formatKyats(monthlyPrice * months);
       }
     });
 
@@ -2978,11 +3137,11 @@ if (productName === "Netflix") {
       const months = parseInt(input.value, 10);
       if (!months || months < 1 || months > 12) return;
 
-      const totalPrice = netflixMonthly * months;
+      const totalPrice = monthlyPrice * months;
 
       const item = {
         product: "Netflix",
-        section: "1 Profile",
+        section: sectionName, // ✅ IMPORTANT: UHD or FHD plan name
         duration: `${months} Month${months > 1 ? "s" : ""}`,
         unitPrice: totalPrice,
         priceText: formatKyats(totalPrice)
@@ -2990,7 +3149,7 @@ if (productName === "Netflix") {
 
       addToCart(item);
 
-      // ✅ RESET after adding (like Google Play custom amount)
+      // reset
       input.value = "";
       priceDisplay.textContent = "0 Kyats";
       addBtn.style.removeProperty("background-color");
@@ -2999,6 +3158,26 @@ if (productName === "Netflix") {
       setTimeout(() => (addBtn.textContent = "Add to Cart"), 1000);
     });
   }
+
+  // ✅ Box 1: UHD
+  mountNetflixMonthsBox({
+    title: "More Months (1 Profile UHD 4K)",
+    inputId: "netflix-uhd-months-input",
+    priceId: "netflix-uhd-calc-price",
+    btnId: "btn-add-netflix-uhd-months",
+    monthlyPrice: uhdMonthly,
+    sectionName: UHD_SECTION
+  });
+
+  // ✅ Box 2: FHD
+  mountNetflixMonthsBox({
+    title: "More Months (1 Profile FHD 1080P)",
+    inputId: "netflix-fhd-months-input",
+    priceId: "netflix-fhd-calc-price",
+    btnId: "btn-add-netflix-fhd-months",
+    monthlyPrice: fhdMonthly,
+    sectionName: FHD_SECTION
+  });
 }
     // --- TIKTOK OFFICIAL: CUSTOM COINS (like Google Play custom amount) ---
 if (productName === "TikTok Official") {
@@ -3323,7 +3502,7 @@ Private
 Support All device
 Full Warranty` + generalDetailsBlock,
     "NordVpn": `Share\n1-Year: 6-months warranty\nOne device only\n\nPrivate\nFull warranty for full duration\nUp to 6 devices` + generalDetailsBlock,
-    "Express Vpn": `Share\nFull warranty for full duration\nOne device only\n\nPrivate\nFull warranty for full duration\nUp to 9 devices: 8 Phones & 1 PC or Laptop\nCustom Password` + generalDetailsBlock,
+    "Express Vpn": `Share\n15 Days Warranty.\nOne device only\n\nPrivate\nFull warranty for full duration\nUp to 9 devices: 8 Phones & 1 PC or Laptop\nCustom Password` + generalDetailsBlock,
     "Surfshark Vpn": `Share
 Full warranty for full duration
 One device only
@@ -3360,7 +3539,10 @@ Private Whole Account (1 Month)
 5 Profile` + generalDetailsBlock,
     "Prime Video": `Share\nFull warranty • One device only\n\nPrivate\nFull warranty • Up to 3 devices` + generalDetailsBlock,
     "Spotify": `Individual Plan(Private)
-• Private Plan မို့လို့ 1 person 1 device ပဲသုံးသင့်ပါတယ်။ Visa Card payment နဲ့လုပ် ပေးမာပါ။ 3 Months အတွင်း full warranty ဖြစ်လို့တခုခုဖြစ်ခဲ့ရင် warranty အနေနဲ့အခုပြန်လဲ ပေးမာပါ တခါပဲလဲ ပေးမာပါ။ Setting ထဲသွားပီး account delete တာတို့တော့မပါပါဘူး။
+• Private Plan မို့လို့ 1 person 1 device ပဲသုံးသင့်ပါတယ်။ Visa Card payment နဲ့လုပ် ပေးမာပါ။ 2 Months အတွင်း full warranty ဖြစ်လို့တခုခုဖြစ်ခဲ့ရင် warranty အနေနဲ့အခုပြန်လဲ ပေးမာပါ တခါပဲလဲ ပေးမာပါ။ Setting ထဲသွားပီး account delete တာတို့တော့မပါပါဘူး။
+
+Family Plan
+• Full Warranty.
 
 Official appမာသုံးရတာဆိုပေမဲ့တစ်လကို$11.99ပေးပီးဝယ်တာမဟုတ်လို့ Risk ကတော့ရှိပါတယ်။အဆင်ပြေတယ်ဆိုမယူပါ။
 
@@ -3397,7 +3579,7 @@ Full Warranty for full duration. Deactivateဖြစ်လဲတစ်လပြ�
 Includes 2000GB Google storage• Unlimited devices
 ဒါမဲ့ဝယ်ရင်စစချင်းသိထားရမာတေရှိပါတယ်။ Admin ပြောပြပါလိမ့်မယ်။
 1 Month (Full Warranty) — 1 Month လုံး Full Warranty ပေးပါတယ်။
-1 Year (Full Warranty) — 1 Year လုံး Full Warranty ပေးပါတယ်။
+3 Months (Full Warranty) — 3 Months လုံး Full Warranty ပေးပါတယ်။
 
 OwnMail Invite
 ဒါကကိုယ့်ရဲ့GmailကိုပဲProလုပ်ပေးတာမလို့။အလုပ်လဲမရှုပ်ပါဘူး။ Password လဲပေးစရာမလိုပါဘူး။ Device ကလဲဝင်ထားသလောက်သုံးလို့ရနေမာပါ။` + generalDetailsBlock,
@@ -3406,26 +3588,20 @@ OwnMail Invite
 Invite Planမို့လို့Ai Credit တစ်လ 1000ကိုတော့ Share Useရမာပါ။
 ဆိုလိုတာကတခြားFamily Membersတေသုံးရင်လဲCreditsတေကလျှော့နိုင်ပါတယ်။
 ဒီဟာဝယ်ရင်
-Google One Storage2TB 1Year(Share)
-Gemini Veo 3 Pro 1Yearပါရမာပါ။` + generalDetailsBlock,
+Google One Storage2TB 3 Months(Share)
+Gemini Veo 3 Pro 3 Monthsပါရမာပါ။` + generalDetailsBlock,
 
 "NotebookLM": `OwnMail Invite
 ဒီဟာကGoogle One Pro,Gemini Proဝယ်ရင်ပါတဲ့ဟာပါ။
 ဒီဟာဝယ်ရင်
-Google One Storage2TB 1Year(Share)
-Gemini Veo 3 Pro 1Yearပါရမာပါ။` + generalDetailsBlock,
+Google One Storage2TB 3 Months(Share)
+Gemini Veo 3 Pro 3 Monthsပါရမာပါ။` + generalDetailsBlock,
     "Grammarly AI": `Share\nFull warranty • One device only` + generalDetailsBlock,
     "Zoom": `Full warranty.\nAll pro features unlock.\nCan use 2-5 devices.` + generalDetailsBlock,
     "YouTube Premium": `Private (Individual Plan)
 Full warranty.
 No ads with all YouTube premium features.
-Including YouTube music.
-
-OwnMail Invite(Family Plan)
-YouTube Account ပေးရမာပါ။
-ဝင်ပီး Region Changeပေးမာပါ။Gmail&Passwordလိုပါတယ်။
-လုပ်ပီးရင်ပြန်ထွက်မာပါ။လတိုင်းသက်တန်းတိုးလို့ရပါတယ်။
-Warranty ကတခုခုဖြစ်ခဲ့ရင်တခါပြန်လဲပေးပါတယ်။` + generalDetailsBlock,
+Including YouTube music.` + generalDetailsBlock,
 
     "Tinder": `Code redeem use.\n1× warranty. Can only use one devices` + generalDetailsBlock,
     "Telegram Premium": `Login
@@ -3597,6 +3773,10 @@ Can't use on iOS devices.` + generalDetailsBlock,
 
   function getNoteForCartItem(item) {
     const productName = item.product.replace(/ \(.+\)$/, '');
+    // ✅ Spotify Family Plan: ONLY show Full Warranty (no extra text)
+    if (productName === "Spotify" && item.section === "Family Plan") {
+    return "Full Warranty.";
+    }
     if (productName === "Domain") {
     return "ဒါကကိုယ့်မာ Website ရှိပီး Domain မရှိရင်သုံးဖို့အတွက်ပါ။ နှစ်တိုင်းသက်တန်းတိုးသွားလို့ရပါတယ်။";
     }
@@ -3678,13 +3858,13 @@ Can't use on iOS devices.` + generalDetailsBlock,
 
       // Express VPN Windows plan note (Share → WindowsPC/Laptop)
    if (productName === "Express Vpn" && /windowspc/i.test(item.duration)) {
-    return "Windows deviceတေမာပဲသုံးလို့ရပါမယ်။Full warrenty.";
+    return "Windows deviceတေမာပဲသုံးလို့ရပါမယ်။15 Days warrenty.";
    }
    if (/macbook/i.test(item.duration)) {
-    return "MacBookမာပဲသုံးလို့ရပါမယ်။Full Warranty.";
+    return "MacBookမာပဲသုံးလို့ရပါမယ်။15 Days Warranty.";
    }
    if (/linux/i.test(item.duration)) {
-    return "Linux deviceတေမာပဲသုံးလို့ရပါမယ်။Full Warranty.";
+    return "Linux deviceတေမာပဲသုံးလို့ရပါမယ်။15 Days Warranty.";
    }
 
       // --- Flow AI / NotebookLM Checkout Notes ---
@@ -3705,7 +3885,7 @@ Can't use on iOS devices.` + generalDetailsBlock,
         const standardNote = `Includes 2000GB Google storage• Unlimited devices\nဒါမဲ့ဝယ်ရင်စစချင်းသိထားရမာတေရှိပါတယ်။ Admin ပြောပြပါလိမ့်မယ်။`;
         if (item.section.includes('OwnMail')) return `ဒါကကိုယ့်ရဲ့GmailကိုပဲProလုပ်ပေးတာမလို့။အလုပ်လဲမရှုပ်ပါဘူး။ Password လဲပေးစရာမလိုပါဘူး။ Device ကလဲဝင်ထားသလောက်သုံးလို့ရနေမာပါ။`;
         if (item.duration.includes('1 Month')) return `${standardNote}\n1 Month (Full Warranty) — 1 Month လုံး Full Warranty ပေးပါတယ်။`;
-        if (item.duration.includes('Full Warranty')) return `${standardNote}\n1 Year (Full Warranty) — 1 Year လုံး Full Warranty ပေးပါတယ်။`;
+        if (item.duration.includes('Full Warranty')) return `${standardNote}\n3 Months (Full Warranty) — 3 Months လုံး Full Warranty ပေးပါတယ်။`;
         return standardNote;
     }
     if (productName === "TikTok Non Official" && item.section.toLowerCase().includes("livestream")) return null;
@@ -3715,7 +3895,7 @@ Can't use on iOS devices.` + generalDetailsBlock,
     const rawDetails = fullText.trim();
     const sectionHeaders = /^(Share|Private|SemiPrivate|FullPrivate|Tinder Plus Share|Login|Gift Plan & Link Plan|Gift Plan|Link Plan|Views \(NoDrop\)|Likes \(NoDrop\)|Comment - Emoji Type|Comment - Custom Type|Package Plan|Livestream Views|Livestream Likes|Livestream Share|Post Views|Positive Reactions|Negative Reactions|Custom Reactions|Premium Reactions|Members \(30Days Refill\)|Livestream Views|Comment - Impression Type|Comment - Custom Type|Video Views|Video Likes|Post Likes|Profile Followers|Page Followers|Live Stream Views|Video Views & Reels|Likes|Followers|Personal Plus \(Share\)|Personal Plus \(Private\)|Business Plus - Invite Own Email|Business - Own|Private Own Mail|Private \(Own Mail\)|Base Service|1 Profile\(Semiprivate\)|5 Profiles\(Whole Account\)|Nitro Basic \(Key\)|Individual|Invite with email|Sharing Pro|Plan Basic|Plan Premium|HBO MAX \(ULTIMATE\) 1 Month|Private Whole Account \(1 Month\)|1 Profile|Whole Account|OwnMail Private|OwnMail Invite|Individual Plan|Business Own\(Full Warranty\)|Business Plus Own\(Full Warranty\)|Business Plus Own|Normal Plan|Family Head\(Can Invite 5 email\)|Invite Private|Web Private|App&Web Private|Pro Share|Pro Private|Lifetime Premium|Educational\(Invite\)|Individual Plan\(Private\)|Stars|Japan Region \(¥\)|US Region \(\$\)|UK Region \(£\)|Custom Amount|Turkey Region \(TL\)|Indonesia Region \(IDR\)|Brazil Region \(BRL\)|Korea Region \(₩\)|India Region \(₹\)|Australia Region \(A\$\)|Germany Region \(€\)|France Region \(€\)|Italy Region \(€\)|Switzerland Region \(CHF\)|Canada Region \(C\$\)|UAE Region \(AED\)|Poland Region \(PLN\)|Nitro \(Key\))/i;
     const lines = rawDetails.split('\n').map(l => l.trim()).filter(l => l.length > 0);
-    let targetSection = forceNoteSectionName.replace(/ \(.*\)/, '');
+    let targetSection = String(forceNoteSectionName).replace(/\s*\(.*\)/, '');
     if (productName === 'HBO Max') targetSection = item.section;
     const sectionStartIndex = lines.findIndex(line => line.toLowerCase().includes(targetSection.toLowerCase()));
     if (productName === 'Telegram Premium' && (item.section === 'Gift Plan' || item.section === 'Link Plan')) targetSection = 'Gift Plan & Link Plan';
@@ -3750,6 +3930,10 @@ Can't use on iOS devices.` + generalDetailsBlock,
         if (item.section === "Private") filteredNotes = filteredNotes.filter(line => !line.toLowerCase().includes("own mail"));
       } else if (productName === 'Netflix') {
         if (item.section === "Whole Account") filteredNotes = filteredNotes.filter(line => !line.includes("warrantyအပြည့်ပေး"));
+        // ✅ Spotify Family Plan checkout note
+        if (productName === "Spotify" && item.section === "Family Plan") {
+        return "Full Warranty.";
+        }
       } else {
         const durationRegex = /\b(\d+\s*(?:Month|Months|Year|Week|Lifetime|Days|Stars|TL|IDR|BRL|₹|₩|\$|£|€|CHF|C\$|AED|PLN)):?.*|6-Months accounts are rare.*/gi;
         filteredNotes = filteredNotes.filter(line => {
@@ -3777,7 +3961,11 @@ Can't use on iOS devices.` + generalDetailsBlock,
       let burmeseQtyText = `ဒါက${multiQuantityItem.qty}လစာဝယ်တာမဟုတ်ပါဘူး။1လစာကိုမ Phone ${multiQuantityItem.qty}လုံးစာယူတဲ့သဘောပါ။`.replace(/(\d+)/g, '<span class="warning-num">$1</span>');
       quantityWarning = `<div class="payment-warning-block"><div class="nt-line" style="color:#ffca28;font-weight:700;text-transform:uppercase;">ATTENTION: MULTI-QUANTITY</div><div class="nt-line burmese-font">${burmeseQtyText}</div></div>`;
     }
-    const netflixMultiItem = cart.find(item => item.product === 'Netflix' && item.section === '1 Profile' && item.qty > 1);
+    const netflixMultiItem = cart.find(item =>
+    item.product === 'Netflix' &&
+    item.section.replace(/\s*\(.*\)/, '').trim() === '1 Profile' &&
+    item.qty > 1
+    );
     if (netflixMultiItem) {
       let burmeseText = `ဒါက${netflixMultiItem.qty}Profile စာဝယ်တာပါ။${netflixMultiItem.qty}လစာသဘောမျိုးမဟုတ်ပါဘူး။စာသေချာဖတ်ပေးပါ။`.replace(/(\d+)/g, '<span class="warning-num">$1</span>');
       quantityWarning += `<div class="payment-warning-block"><div class="nt-line" style="color:#ffca28;font-weight:700;text-transform:uppercase;">ATTENTION: MULTIPLE MONTHS</div><div class="nt-line burmese-font">${burmeseText}</div></div>`;
@@ -3798,7 +3986,7 @@ Can't use on iOS devices.` + generalDetailsBlock,
           return `<div class="nt-line${isBurmese ? ' burmese-font' : ''}" style="font-weight:400;opacity:.95;">${t.replace(/(\d+)\s*(‌ယောက်)/g, '$1 $2')}</div>`;
       }).join('')}</div>`;
     }).join('');
-    let netflixBlock = cart.some(i => i.product === 'Netflix') ? `<div style="margin-bottom:12px"><strong>Netflix Features</strong>${netflixUhdNote.split('\n').map(l => `<div class="nt-line" style="font-weight:400;opacity:.95;">${escapeHTML(l.trim())}</div>`).join('')}</div>` : '';
+    let netflixBlock = '';
     dom.checkout.noteText.innerHTML = quantityWarning + noteBlocks + netflixBlock + formatNotes(paymentInfoBlock.trim());
     const telegramCustom = cart.some(i => i.product === 'Telegram Premium' && (i.duration.includes('1 Year') || i.section.includes('Gift') || i.section.includes('Link')));
     dom.checkout.nextBtn.href = telegramCustom ? 'https://t.me/Fury_edtz' : 'https://t.me/leokron';

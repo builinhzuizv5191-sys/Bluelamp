@@ -2604,8 +2604,10 @@ cancelBtn?.addEventListener("click", () => {
     dom.cart.total.textContent = formatKyats(total);
     dom.cart.count.textContent = String(cart.reduce((s, i) => s + i.qty, 0));
     requestAnimationFrame(() => {
-      let cartBarHeight = dom.cart.bar.classList.contains('collapsed') ? 60 : dom.cart.bar.offsetHeight;
-      document.body.style.paddingBottom = (cartBarHeight) + "px";
+  // FIX: Avoid massive blank scroll space when cart is expanded.
+  // We only reserve the collapsed height.
+    const cartBarHeight = 60;
+    document.body.style.paddingBottom = cartBarHeight + "px";
     });
   }
 
@@ -2616,20 +2618,23 @@ cancelBtn?.addEventListener("click", () => {
       el.textContent = item ? item.qty : 0;
     });
   }
-
   function showView(viewName) {
-    Object.values(dom.views).forEach(v => v.classList.remove('active'));
-    if (dom.views[viewName]) {
-      dom.views[viewName].classList.add('active');
-    }
-    if (viewName === 'home') {
-      dom.search.container.style.display = 'flex';
-    } else {
-      dom.search.container.style.display = 'none';
-      dom.search.input.value = '';
-      filterProducts('');
-    }
+  Object.values(dom.views).forEach(v => v.classList.remove('active'));
+  if (dom.views[viewName]) {
+    dom.views[viewName].classList.add('active');
   }
+
+  // ✅ FIX: Only reserve search-bar space on HOME
+  document.body.classList.toggle('no-search-padding', viewName !== 'home');
+
+  if (viewName === 'home') {
+    dom.search.container.style.display = 'flex';
+  } else {
+    dom.search.container.style.display = 'none';
+    dom.search.input.value = '';
+    filterProducts('');
+  }
+}
 
   /* =========================
       SEARCH LOGIC 

@@ -2271,7 +2271,7 @@ const popupTextByProduct = {
     nextText: "ဘာတေကွာလဲ?",
     backText: "Back",
     steps: [
-    "တွေ့ရတဲ့တိုင်း ChatGpt မာရ္စေးချယ်စရာPlan 3 ခုရှိပါတယ်။<br>Personal Plus, Business Plus Invite and Business Plus Own",
+    "တွေ့ရတဲ့တိုင်း ChatGpt မာရ္စေးချယ်စရာ Plan 3 ခုရှိပါတယ်။<br>Personal Plus, Business Plus Invite and Business Plus Own",
     "ဘာတေကွာလဲဆိုရင်သိထားရမာပါ Plus ချင်းတူတူပါပဲ။ အရင်ဆုံး Personal Plus ကိုပြောပါမယ်။ သူကဒီကအကောင့်ပေးတာကို ChatGpt app or Website မာထည့်သုံးရတာပါ။ ဖုန်းထဲထည့်ထားစရာမလိူပါဘူး။ Device limit အနေနဲ့ 3 Devices လောက်ထိသုံးလို့ရပါတယ်။",
     "Business Plus invite ဆိုတာက Personal Plus လိုမျိုး ကျနော်ပေးတဲ့အကောင့်ကိုသုံးရတာမဟုတ်ပဲ ဝယ်သူရဲ့ Email ကို Gpt plus ပြောင်းပေးတာပါ။ Email ကနေ Invite ပေးတာမလို့ Password ပေးစရာမလိုပါဘူး။ ဒါမဲ့ Device ကတော့ 1~2 Devices လောက်ပဲသုံးလို့ရပါမယ်။",
     "Business Plus Own ဆိုတာကအလွယ်ပြောရင် 12K invite plan 4ခုရတာကိုပြောတာပါ။ ကျနော်ဒီကပေးတဲ့အကောင့်ကိုဝင်ပီးအဲ့အကောင့်ကနေ ဝယ်သူ ChatGpt Plus လုပ်ချင်တဲ့ email 4ခုကို Plus လုပ်လို့ရသွားမာပါ။",
@@ -2305,7 +2305,7 @@ const popupTextByProduct = {
     "Gemini Pro မာကရ္စေးချယ်စရာ Plan 2 ခုပဲရှိတာပါ။<br>OwnMail Invite & Private Head",
     "ဘာကွာလဲဆိုရင် Invite OwnMail ဆိုတာကဝယ်သူရဲ့ Email ကို Pro လုပ်ပေးတာပါ။ Region မတူတေတေဘာတေဖြစ်ပီးဝင်မရရင်ကျနော်ဝင်လုပ်ပေးဖို့လိုပါတယ်။ Password တေပေးရမာပါ။",
     "Privacy တေဘာတေရှိလို့ပေးဝင်လို့မရဘူးဆိုတဲ့သူတေကတော့ခုထဲကမဝယ်လို့ရပါပီ။ ကျနော်ကတော့လုပ်စရာရှိတာလုပ်ပီးပြန်ထွက်မာပါပဲ။ မယုံရင်တော့ Private Head ပဲယူပါ။",
-    "Private Head ဆိုတာက အဲ့အကောင့်ကနေ OwnMail invite plan လိုမျိုး Email 5ခုကိုပြန် Invite လို့ရပါတယ်။ ဒါပေမဲ့ Region တေပြောင်းတတ်မရမာပါ။ ဝင်မဲ့သူတေက Head account နဲ့ Region တူမရမာကိုပြောတာပါ။",
+    "Private Head ဆိုတာက ကျနော်ဒီကအကောင့်ပေးမာပါ။ အဲ့အကောင့်ကနေ OwnMail invite plan လိုမျိုး Email 5ခုကိုပြန် Invite လို့ရပါတယ်။ ဒါပေမဲ့ Region တေပြောင်းတတ်မရမာပါ။ ဝင်မဲ့သူတေက Head account နဲ့ Region တူမရမာကိုပြောတာပါ။",
     "ဘာဝယ်သင့်လဲဆိုရင်တော့ Gemini Pro features တေကတူတူပါပဲကွာသွားတာက Ai Credit ကို OwnMail Plan က Share သုံးရတာပါ။ Private ကတော့ကိုယ်တယောက်ထဲသုံးရတာပါ။ အဲ့ Credit ကဘာအတွက်လဲဆိုတာမသိရင်တော့ OwnMail Plan ကိုသာရွေးလိုက်ပါ။",
     "ပီးတော့ Private မာက 2TB ကိုကိုယ်‌တယောက်ထဲသုံးရမာဖြစ်ပီး၊ OwnMail Planမာတော့ Sharing သဘောပါ။ ဒါပေမဲ့ကိုယ်တိုင်တာတေကိုဘယ်သူမမြင်ရပါဘူး။ Storage ပြည့်ပီးစာမဝင်တော့တဲ့သူတေအတွက်အသုံးဝင်ပါတယ်။",
     "Android, iOS, PC, Laptop အကုန်ရပါတယ်။ Official App တေ Website တေမာပဲသုံးရမာပါ။"
@@ -3484,6 +3484,7 @@ Full warranty
 
 Educational(Invite)
 Is education edition (limited features)
+15 Days Warranty.
 
 Pro Private
 Full warranty

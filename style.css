@@ -45,8 +45,12 @@ body{
   background:var(--bg-deep);
   overflow-x:hidden;
   /* FIX: Adjust padding calculation to correctly position content below header and search bar */
-  padding-top: calc(var(--header-height) + var(--search-height)); 
+  padding-top: calc(var(--header-height) + var(--search-height) + 12px);
   padding-bottom: 64px;
+}
+/* When not on home view, remove search-space padding (product/checkout) */
+body.no-search-padding{
+  padding-top: 0;
 }
 
 /* starfield */
@@ -55,23 +59,32 @@ body{
 
 /* header */
 header{
-  position:fixed;
-  left:0;
-  right:0;
-  top:0;
-  z-index:20;
-  background: rgba(2, 6, 23, 0.85); /* New Header BG */
-  backdrop-filter:blur(8px);
-  -webkit-backdrop-filter:blur(8px);
-  border-bottom:1px solid var(--stroke);
-  padding:14px 20px;
-  font-family:"orbitron",sans-serif;
-  font-weight:800;
-  font-size:clamp(20px,3.2vw,30px);
-  letter-spacing:.6px;
-  line-height:1;
-  color:var(--text);
-  margin-bottom: 0; /* Ensures header itself doesn't push down */
+  position: fixed;
+  left: 0;
+  right: 0;
+  top: 0;
+  z-index: 20;
+
+  /* Force fixed header height to match your spacing math */
+  height: var(--header-height);
+  box-sizing: border-box;
+
+  background: rgba(2, 6, 23, 0.85);
+  backdrop-filter: blur(8px);
+  -webkit-backdrop-filter: blur(8px);
+  border-bottom: 1px solid var(--stroke);
+
+  /* Center the title perfectly */
+  display: flex;
+  align-items: center;
+
+  /* Use horizontal padding only (no vertical padding now) */
+  padding: 0 20px;
+
+  font-family: "orbitron", sans-serif;
+  font-weight: 800;
+  font-size: clamp(20px, 3.2vw, 30px);
+  line-height: 1;
 }
 
 /* --- Search Bar Styles --- */
@@ -324,22 +337,25 @@ main#home-view > .popular-section {
 }
 
 /* ===== views ===== */
-main {
-  position: relative;
-}
 .view {
-  position: absolute;
-  inset: 0;
-  opacity: 0;
-  pointer-events: none;
-  transition: opacity .25s ease;
+    display: none;
+    animation: fadeIn 0.4s ease-in-out;
 }
 
 .view.active {
-  opacity: 1;
-  pointer-events: auto;
+    display: block;
 }
-#product-page{padding:20px}
+
+#product-page{
+  padding: 20px;
+  padding-bottom: calc(20px + 90px + env(safe-area-inset-bottom));
+}
+/* FIX: Prevent fixed header from covering product + checkout pages */
+#product-page,
+#checkout-view {
+  padding-top: calc(var(--header-height) + 12px);
+  box-sizing: border-box;
+}
 
 /* product hero */
 .product-hero{

@@ -84,7 +84,7 @@ header{
   font-family: "orbitron", sans-serif;
   font-weight: 800;
   font-size: clamp(20px, 3.2vw, 30px);
-  line-height: 1;
+  line-height: 1.2;
 }
 
 /* --- Search Bar Styles --- */
@@ -94,7 +94,7 @@ header{
     left: 0;
     right: 0;
     z-index: 15;
-    padding: 6px 10px;
+    padding: 14px 10px 8px 10px;
     background: rgba(0, 0, 0, 0); /* New Search Container BG */
     backdrop-filter: blur(0px);
     -webkit-backdrop-filter: blur(0px);
@@ -134,7 +134,7 @@ header{
 .search-icon {
     position: absolute;
     left: 25px;
-    top: 50%;
+    top: 55%;
     /* FINAL FIX: Aligned icon using cleaner -50% transform */
     transform: translateY(-50%); 
     font-size: 1.2em; /* Bolder size */

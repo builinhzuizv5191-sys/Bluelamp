@@ -269,13 +269,18 @@
     <div id="product-page" class="view"></div>
 
     <div id="why-buy-overlay" class="explain-overlay">
-        <div class="explain-card">
-            <button class="back-btn" id="why-buy-back-btn">← Back</button>
-            <div class="explain-text">
-                <div class="md-h burmese-font" style="margin-top: 15px;">Coming soon</div> 
-            </div>
-        </div>
-    </div>
+
+    <!-- ✅ fixed: back button OUTSIDE the transformed card -->
+     <button class="back-btn" id="why-buy-back-btn">← Back</button>
+
+      <div class="explain-card">
+      <div class="explain-text">
+      <div class="md-h burmese-font" style="margin-top:15px;">Coming soon</div>
+      </div>
+      </div>
+
+     </div>
+    
     <div id="explain-overlay" class="explain-overlay">
         <div class="explain-card">
             <div class="explain-text" id="explain-text"></div>

@@ -545,7 +545,7 @@
     },
     "Windows License": {
       "Share": [],
-      "Private": [{
+      "Redeem Key": [{
         "duration": "Windows 10 Pro",
         "price": "15,000 Kyats"
       }, {
@@ -556,7 +556,7 @@
     "Microsoft 365": {
       "Individual": [{
         "duration": "1 Month",
-        "price": "Out of stock"
+        "price": "10,000 Kyats"
       }],
       "Invite with email": [{
         "duration": "1 Month",
@@ -2345,6 +2345,60 @@ const popupTextByProduct = {
     "ဆက်ရန်",
     "Private ဆိုတာက?",
     "OwnMail ဆိုတာက?",
+    "All Devices<br>ရလား?"
+  ]
+  },
+  "Flow AI": {
+    title: "Flow AI Info",
+    button: "Plan 2 ခုကိုရှင်းပြပေးပါ။",
+    nextText: "ဘာတေကွာလဲ?",
+    backText: "Back",
+    steps: [
+    "Flow Ai Plan နှစ်ခုကတော်တော်ကွာပါတယ်။ အဲ့တာတေမပြောခင် Powered By Gemini လို့ရေးထားတာက ဒါဝယ်ရင် Gemini Pro ဝယ်တာနဲ့တူတူပဲလို့ပြောတာပါ။ Gemini Pro အကြောင်းကတော့ Gemini ထဲမာရှင်းပြပေးထားပီးပီမလို့ ဒီမာထက်မပြောတော့ပါဘူး။",
+    "အရင်ဆုံး OwnMail Invite Plan ကိုပြောပါမယ်။ သူက Ai Credit တစ်လကို 1000 ရပါတယ်အဲ့ 1000 ကိုကျန်တဲ့ Family Plan ဝယ်ထားတဲ့သူ 5 ယောက်နဲ့တူတူသုံးရမာပါ။ ကိုယ်ကသုံးသုံးတခြားသူကအကုန်သုံးသုံး Credit ကလျှော့နေမာမလို့ သေချာစဉ်းစားပီးမယူပါ။",
+    "Private ဆိုတာကကျကျနော်ဒီကနေအကောင့်ပေးမာပါ။ အဲ့အကောင့်က Family Invite လိုမျိုး Email 5 ခုပြန် Share လို့ရတယ်။ ဒါမဲ့ Region ချိန်းတတ်မ။ Invite နဲ့မတူတာက Credit တေကကိုယ်တယောက်ထဲသုံးရတာမို့လို့ အဆင်ပြေပါတယ်။",
+    "ဘာဝယ်သင့်လဲဆိုရင်တော့ကိုယ်က Video တေများများထုတ်ချင်ရင် Private ယူပါ။ Invite မာက Credit တေက Share use ရတာမို့လို့။ Official Plan ပဲမို့လို့ Any device ဖြစ်ဖြစ်သုံးလို့ရပါတယ်။ Flow Ai Website မာတော့ Vpn ခံသုံးပေးရပါမယ်။"
+  ],
+    stepButtons: [
+    "ဆက်ရန်",
+    "Private ဆိုတာက?",
+    "ဘာဝယ်သင့်လဲ?"
+  ]
+  },
+  "NotebookLM": {
+  title: "NotebookLM Info",
+  button: "ဒါရှင်းပြပေးပါ။",
+  doneText: "ဟုတ်ပီဟုတ်ပီ",
+  steps: [
+    "NotebookLM ကကျနော်လဲမသုံးဖူးလို့မပြောတတ်ပါဘူး။ ဒါပေမဲ့ Pro Plan ပါ။ Powered By Gemini ဆိုတာက ဒါဝယ်ရင် Gemini ကိုဝယ်တာနဲ့တူတူပဲလို့ပြောတာပါ။"
+  ]
+},
+  "Windows License": {
+  title: "Windows License Info",
+  button: "ဒါရှင်းပြပေးပါ။",
+  doneText: "ဟုတ်ပီဟုတ်ပီ",
+  steps: [
+    "ဒါက Window Pro Key ပါ။ 10/11 ပဲရပါတယ်။ ပီးတော့ order confirm ပီးရင် အများဆုံး 3 ရက်လောက်စောင့်ရနိုင်ပါတယ်။"
+  ]
+},
+  "Microsoft 365": {
+    title: "Microsoft 365 Info",
+    button: "Planတေကအများရီးပဲနားမလည်ဘူး။",
+    nextText: "ဘာတေကွာလဲ?",
+    backText: "Back",
+    steps: [
+    "တွေ့ရတဲ့တိုင်း Microsoft မာရ္စေးချယ်စရာ Plan 3 ခုရှိပါတယ်။<br>Individual,Invite email,Family Head",
+    "ဘာကွာလဲဆိုရင်အရင်ဆုံး Individual Plan ကိုပြောပါမယ်။ သူကတယောက်ထဲ သုံးတဲ့သူတေအတွက်ပါ Device 5 ခုလောက်ဝင်လို့ရပါတယ်။ Features တေအနေနဲ့ (Word, Excel, PowerPoint, Outlook) စတဲ့ Microsoft မာပါတာတေအပြင် Copilot Ai ပါသုံးလို့ရပါတယ်။",
+    "Invite with email ဆိုတာက ခုဏလိုပဲ (Word, Excel, PowerPoint, Outlook) တေသုံးလို့ရတယ်။ ဝယ်သူရဲ့ Email ကို Invite ‌ပီးလုပ်ပေးတာပါ Password ပေးစရာမလိုပါဘူး။ 2 Devices လောက်သုံးလို့ရပါတယ်။ ဒီ Plan မာ 1Month ဆိုတာက 25 ရက်ကနေ 30 ရက်ပါတာရမာကိုပြောတာပါ။",
+    "Family Head ဆိုတာက Invite Plan လိုဟာမျိုး 4 ခုရတာကိုပြောတာပါ။ Invite Plan လိုပဲ (Word, Excel, PowerPoint, Outlook) သုံးလို့ရမယ်။ Device အနေနဲ့က Email တစ်ခုကို 2 Devices ဆိုတော့ Total 10 ခုထိရနေမာပါ။",
+    "ဘာဝယ်သင့်လဲဆိုရင် Family Plan တေမာက Copilot Ai မပါပါဘူး။ ကွာတာကအဲ့တာရယ် Device Limit ရယ်ပါပဲ။ ကိုယ်သုံးမဲ့အပေါ်ရယ် လူများမများပေါ်ရယ်ကိုလိုက်ပီးအဆင်ပြေတာရွေးယူပါ။ Stock ရှားလို့ရှိမရှိအရင်မေးပီးမဝယ်ပါ။",
+    "Android ရော iOS ရော PC, Laptop အကုန်ရပါတယ်။ Official App and Website တေမာပဲသုံးရမာပါ"
+  ],
+    stepButtons: [
+    "ဘာတေကွာလဲ?",
+    "Invite Email<br>ဆိုတာက?",
+    "Family Head<br>ဆိုတာက?",
+    "ဘာဝယ်သင့်လဲ?",
     "All Devices<br>ရလား?"
   ]
   },

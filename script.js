@@ -578,7 +578,7 @@
       }],
       "Whole Account(UHD 4K)": [{
         "duration": "5 Profiles (1 Month)",
-        "price": "5,5000 Kyats"
+        "price": "55,000 Kyats"
       }]
     },
     "Disney+": {
@@ -2404,9 +2404,54 @@ const popupTextByProduct = {
   },
   "Netflix": {
     title: "Netflix Info",
-    body: "hi"
+    button: "Planတေကအများရီးပဲနားမလည်ဘူး။",
+    nextText: "ဘာတေကွာလဲ?",
+    backText: "Back",
+    steps: [
+    "တွေ့ရတဲ့တိုင်း Netflix မာရ္စေးချယ်စရာ Plan 3 ခုရှိပါတယ်။<br>FHD Semiprivate,UHD Semiprivate,<br>UHD Whole Account",
+    "ဘာကွာလဲဆိုတာမပြောခင်အရင်ဆုံး Semiprivate ဆိုတာကိုရှင်းပြပါမယ်။ Semiprivate ဆိုတာကကိုယ်က Profile တခုလုံးကိုငှားလိုက်တာပါ။ 1 Profile မာက 2 devices သုံးလို့ရပါတယ်။",
+    "FHD ဆိုတာက 1080P ကိုပြောတာပါ။ FHD 1080P Plan မာက 2 devices ရပေမဲ့ Tv တော့သုံးလို့မရပါဘူး။ ကျန်တဲ့ Devices တေမာပဲသုံးလို့ရပါမယ်။",
+    "UHD ဆိုတာက 4K resolution ထိ Support တယ်လို့ပြောတာပါ။ Netflix ရဲ့အမြင့်ဆုံး Subscription ပါပဲ။ Semiprivate မို့လို့ 2 Devices သုံးလို့ရမယ်။ TV လဲ Support ပါတယ်။",
+    "Account တစ်ခုမာက 5 Profile ပါပါတယ်။ Whole Account ဆိုတာက 5 Profile လုံးကိုဝယ်လိုက်တာပါ။ Subscription Plan က UHD 4K Plan ပါ။ Family များတဲ့သူတေ Reseller တေပဲဝယ်သင့်ပါတယ်။",
+    "Plan အလိုက် Devices တေက Android, iOS, PC, Laptop, Tv အကုန်ရပါတယ်။ Stocks ရှားတာမို့လို့မဝယ်ခင်အရင်မေးပါ။ လအစတေမာတော့ Stock ရှိတတ်ပါတယ်။ Plan တိုင်းကို Full Warranty ပေးထားပါတယ်။"
+  ],
+    stepButtons: [
+    "ဘာတေကွာလဲ?",
+    "FHD ဆိုတာက?",
+    "UHDဆိုတာက?",
+    "Whole Account<br>ဆိုတာက?",
+    "All Devices<br>ရလား?"
+  ]
   },
-
+  "Disney+": {
+  title: "Disney+ Info",
+  button: "ဒါရှင်းပြပေးပါ။",
+  doneText: "ဟုတ်ပီဟုတ်ပီ",
+  steps: [
+    "မြန်မာမာသုံးလို့မရပါဘူး။ VPN နဲ့လဲမရပါဘူးစမ်းပီးပါပီ။ မရပဲဘာလို့ထည့်ထားလဲမေးရင်တော့တချိန်ချိန်ပြန်ရရင်ရောင်းဖို့ထည့်ထားတာပါ။"
+  ]
+},
+  "HBO Max": {
+    title: "HBO Max Info",
+    button: "Plan 3 ခုကိုရှင်းပြပေးပါ။",
+    nextText: "ဘာတေကွာလဲ?",
+    backText: "Back",
+    steps: [
+    "အရင်ဆုံး Plan တေအကြောင်းမပြောခင် HBO MAX ဆိုတာက Netflix လို Streaming Platform တခုပါ။ ဘာကြီးလဲမသိမာဆိုးလို့ပြောပြတာ။ ပီးတော့ HBO မာ Standard နဲ့ Ultimate Plan ဆိုပီး ရှိပါတယ်။",
+    "1P2U Plan ဆိုတာကကိုယ်ကတခြား User 1ယောက်နဲ့ 1 Profile မာတူတူမျှသုံးရမာကိုပြောတာပါ။ Tv ကလွဲရင်ကျန်တဲ့ Device အကုန်ရပါတယ်။ 1 Device ပဲဝင်သုံးလို့ရပါမယ်။ ဒါက Ultimate Plan ပါ။",
+    "Semiprivate ဆိုတာကတော့ All Device support ပါတယ်။ Total 2 devices ထိဝင်သုံးလို့ရမယ်။ Tv လဲရပါတယ်။ ဒါလဲ Ultimate Plan ပါပဲ။",
+    "Whole Account ဆိုတာက Netflix လိုပဲ ပါလာတဲ့ 5 Profile ကိုအပိုင်ရသွားမာပါ။ 1 Profile မာ 2 devices ဆိုတော့ Total 10 Devices ထိသုံးလို့ရပါတယ်။",
+    "1P 2U နဲ့ Semiprivate နှစ်ခုက Ultimate Plan ပါ။ Whole Account ကတော့ Standard Plan ပါ။ HBO က Stock အမြဲနီးပါးရှိပါတယ်။ Official App & Website တေမာပဲသုံးရမာပါ။",
+    "Android, iOS, PC, Laptop, Tv သူ့ Plan အလိုက်အကုန်ရပါတယ်။ Plan တိုင်းကို Full Warranty ပေးထားပါတယ်။"
+  ],
+    stepButtons: [
+    "ဆက်ရန်",
+    "Semiprivate<br>ဆိုတာက?",
+    "Whole Account<br>ဆိုတာက?",
+    "ဆက်ရန်",
+    "All Devices<br>ရလား?"
+  ]
+  },
   "TikTok Official": {
     title: "TikTok Boost",
     body: "hi"

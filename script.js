@@ -630,7 +630,7 @@
     "Apple Music": {
       "Individual Plan": [{
         "duration": "1 Month (Can renew)",
-        "price": "5,000 Kyats"
+        "price": "7,500 Kyats"
       }]
     },
     "Qobuz": {
@@ -3915,8 +3915,22 @@ Can't use on iOS devices.` + generalDetailsBlock,
 
 }
 // ================= END YOUTUBE PREMIUM NOTES =================
+        // ✅ Express VPN Share (Phone 1 Month) - Dynamic checkout note by quantity
+if (productName === "Express Vpn" && item.section === "Share" && /^phone/i.test(item.duration)) {
+  const qty = Number(item.qty || 1);
+  const alreadyJoined = 8 - qty; // Total 8 capacity rule (we won't allow 8)
 
-      // Express VPN Windows plan note (Share → WindowsPC/Laptop)
+  // Safety: if qty is out of expected range, still show a sensible message
+  if (qty < 1) {
+    return `<div class="burmese-font">အခုယူ Share Plan ကို 1 ခုယူလိုက်တာမို့လို့ 1 devicesလွတ်တဲ့ 7 ယောက်ဝင်ပီးသားအကောင့်ပေးမာပါ။ 1 device only.<br>15 Days Warranty.</div>`;
+  }
+  if (qty >= 8) { 
+    return `<div class="burmese-font">Share Plan ကို 8 ခု မရွေးပါနဲ့။ Private သာယူလိုက်ပါတော့။</div>`;
+  }
+
+  return `<div class="burmese-font">အခုယူ Share Plan ကို ${qty} ခုယူလိုက်တာမို့လို့ ${qty} devicesလွတ်တဲ့ ${alreadyJoined} ယောက်ဝင်ပီးသားအကောင့်ပေးမာပါ။ ${qty} device only.<br>15 Days Warranty.</div>`;
+}
+         // Express VPN Windows plan note (Share → WindowsPC/Laptop)
    if (productName === "Express Vpn" && /windowspc/i.test(item.duration)) {
     return "Windows deviceတေမာပဲသုံးလို့ရပါမယ်။15 Days warrenty.";
    }

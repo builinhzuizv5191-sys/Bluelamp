@@ -383,9 +383,6 @@
         "price": "10,000 Kyats"
       }],
       "Private Own Mail": [{
-        "duration": "7 Days",
-        "price": "4,000 Kyats"
-      }, {
         "duration": "1 Month (30~35 Days)",
         "price": "12,000 Kyats"
       }]
@@ -465,10 +462,7 @@
       "Pro Private": [{
         "duration": "1 Month",
         "price": "5,000 Kyats"
-      }, {
-        "duration": "3 Months",
-        "price": "15,000 Kyats"
-      }]
+      }],
     },
     "PhotoRoom": {
       "Share": [{
@@ -571,6 +565,14 @@
       "1 Profile(UHD 4K)": [{
         "duration": "(Semiprivate 2 devices 1Month)",
         "price": "15,000 Kyats"
+      },
+      {
+        "duration": "(Semiprivate 2 devices 2Months)",
+        "price": "27,000 Kyats"
+      },
+      {
+         "duration": "(Semiprivate 2 devices 3Months)",
+         "price": "39,000 Kyats"
       }],
       "1 Profile(FHD 1080P)": [{
         "duration": "(Semiprivate 2 devices 1Month)",
@@ -676,11 +678,19 @@
       "Personal Plus (Private)": [{
         "duration": "1 Month",
         "price": "15,000 Kyats"
+      },
+      {
+        "duration": "3 Months",
+        "price": "45,000 Kyats"
       }],
       "Business Plus - Invite Own Email": [{
         "duration": "1 Month",
         "price": "12,000 Kyats"
-      }],
+      },
+      {
+        "duration": "3 Months",
+        "price": "35,000 Kyats"
+      }],                                     
       "Business Plus Own": [{
         "duration": "1 Month",
         "price": "20,000 Kyats"
@@ -688,13 +698,14 @@
       "Business Plus Own(Full Warranty)": [{
         "duration": "1 Month",
         "price": "25,900 Kyats"
+      },
+      {
+        "duration": "3 Months",
+        "price": "75,000 Kyats"
       }]
     },
     "Gemini Veo 3": {
       "Private(Can Invite 5 Email)": [{
-        "duration": "1 Month (+2000GB storage)",
-        "price": "9,500 Kyats"
-      }, {
         "duration": "3 Months (+2000GB storage)",
         "price": "15,000 Kyats"
       }],
@@ -2148,7 +2159,7 @@ const popupTextByProduct = {
     backText: "Back",
     steps: [
     "PicsArt မာကရ္စေးချယ်စရာ Plan 2 ခုပဲရှိတာပါ။<br>Share & Private",
-    "ဘာကွာလဲဆိုရင် Pro ချင်းတူတူပါပဲ။ Shareဆိုတာကတော့သိတဲ့အတိုင်း 1Device ပဲဝင်လို့ရမယ်။ တခြားသူတေနဲ့တူတူသုံးရမယ်။ Edit History တေလဲရောပါတယ်။ သူ Edit တာလဲကိုယ်မြင်နေရမာဖြစ်သလို၊ကိုယ် Edit တာကိုလဲတခြားသူတေမြင်ရမာပါ။<br>Warrenty 15Days.",
+    "ဘာကွာလဲဆိုရင် Pro ချင်းတူတူပါပဲ။ Shareဆိုတာကတော့သိတဲ့အတိုင်း 1Device ပဲဝင်လို့ရမယ်။ တခြားသူတေနဲ့တူတူသုံးရမယ်။ Edit History တေလဲရောပါတယ်။ သူ Edit တာလဲကိုယ်မြင်နေရမာဖြစ်သလို၊ကိုယ် Edit တာကိုလဲတခြားသူတေမြင်ရမာပါ။<br>Warranty 15Days.",
     "Private ကတော့ Total 5 Devices ထိဝင်သုံးလို့ရမယ်။ Private History. ပီးတော့ Full warranty. ကျနော်ပေးတဲ့အကောင့်ကို PicsArt App မာဝင်သုံးရုံပါပဲ။",
     "Android ရော iOS ရောနှစ်ခုလုံးရပါတယ်။ Playstore & AppStore က official appတေမာပဲသုံးရမာပါ။"
   ],
@@ -2448,6 +2459,50 @@ const popupTextByProduct = {
     "ဆက်ရန်",
     "Semiprivate<br>ဆိုတာက?",
     "Whole Account<br>ဆိုတာက?",
+    "ဆက်ရန်",
+    "All Devices<br>ရလား?"
+  ]
+  },
+  "Prime Video": {
+    title: "Prime Video Info",
+    button: "ရှင်းပြပေးပါ။",
+    nextText: "ဘာတေကွာလဲ?",
+    backText: "Back",
+    steps: [
+    "အရင်ဆုံး Plan တေအကြောင်းမပြောခင် Prime Video ဆိုတာက Netflix တို့ HBO MAX တို့လို့ Streaming Platform တခုပါပဲ။ ဟိုနှစ်ခုနဲ့မတူတာကသူက တချို့တေအတွက် VPN ခံသုံးပေးရပါတယ်။ နဲနဲတော့အလုပ်ရှုပ်တာပေါ့။",
+    "Share Plan က သူများတေနဲ့တူတူကြည့်ရတာမျိုးပါ။ Profile သက်သက်စီပါ။ But demand နဲမို့လို့ Share ကရမရမသေချာပါဘူး။ Share Plan ဆိုပေမဲ့ All Device support ပါတယ်။ Tv ကလွဲရင်။ 2 devices ထိဝင်သုံးလို့ရပါတယ်။",
+    "Private ကတော့ Profile အကုန်အပိုင်ရတာဖြစ်ပီး All Device Support. Including Tv. device အနေနဲ့လဲ 10 ခုထိဝင်သုံးလို့ရပါတယ်။",
+    "Official App & Website တေမာပဲသုံးရမာပါ။ Android, iOS, PC, Laptop, Tv သူ့ Plan အလိုက်အကုန်ရပါတယ်။ Plan တိုင်းကို Full Warranty ပေးထားပါတယ်။"
+  ],
+    stepButtons: [
+    "Share ဆိုတာက?",
+    "Private ကရော?",
+    "ဆက်ရန်"
+  ]
+  },
+  "Crunchyroll": {
+  title: "Crunchyroll Info",
+  button: "ဒါရှင်းပြပေးပါ။",
+  doneText: "ဟုတ်ပီဟုတ်ပီ",
+  steps: [
+    "Crunchyroll က Anime တေကြည့်တဲ့ App ပါ။ ဒါကသူ့ရဲ့ Premium Plan ကို‌ Share ရောင်းပေးတာပါ။ Share ဆိုတဲ့အတိုင်း 9Months လို့ပြထားပေမဲ့ပြည့်မာမဟုတ်ပါဘူး။ But 1Month 10K ဆိုရင်တောင်ကြည့်တတ်ရင်တန်ပါတယ်။ 1 Device Only. All devices support except Tv."
+  ]
+},
+  "Spotify": {
+    title: "Spotify Info",
+    button: "Plan 2 ခုကိုရှင်းပြပေးပါ။",
+    nextText: "ဘာတေကွာလဲ?",
+    backText: "Back",
+    steps: [
+    "Individual Plan ဆိုတာကကိုယ်တယောက်ထဲသုံးရတာ။ 2~3 Devices လောက်ထိဝင်သုံးလို့ရတယ်။ ဒါပေမဲ့ဒီကပေးတဲ့အကောင့်ကိုဝင်သုံးရမာ။ ကိုယ့်ရှိပီးသားအကောင့်ကို Premium ဝယ်ပေးတာမဟုတ်ပါဘူး။ သေချာပြောတယ်နော်။",
+    "ဒါ‌ပေမဲ့ Old account ရှိရင် Song တေအကုန်ပြောင်းပေးပါတယ်အသစ်ထဲကို။ အဲ့တာကိုမ ကိုယ့်အကောင့်နဲ့ကိုယ် Premium ဘာလို့ဝယ်မရလဲထက်သိချင်ရင်တော့ မရတာမဟုတ်ဘူးရပါတယ်။ တစ်လကို 48K ပေးပီးကိုယ်တိုင် Visa Card နဲ့ဝယ်သုံးရင်ရပါတယ်။",
+    "Family Plan ဆိုတာကအကောင့်ထဲမာတော့ကိုယ်ပဲရှိတာ။ ဒါပေမဲ့ Family ထဲကတခြားလူတေရဲ့ Playlist တေ Fav Song ကိုမြင်နေရမာပါ။ Family Plan သုံးမယ်ဆိုရင်ကိုယ်က Playlist တခုသေချာလုပ်ပီးသုံးမအဆင်ပြေမာပါ။",
+    "Family Plan ကကုန်သွားလဲတကောင့်ထဲကိုပဲသက်တန်းတိုးလို့ရပါတယ်။ Individual ကတော့မရပါဘူးသက်တန်းတိုးလို့။ Family Plan ကိုလဲ Full Warranty ပေးထားပါတယ်။ Individual Plan လိုပဲ 2~3 Devices လောက်သုံးလို့ရပါတယ်။",
+    "Android ရော iOS ရော PC, Laptop အကုန်ရပါတယ်။ Official App and Website တေမာပဲသုံးရမာပါ"
+  ],
+    stepButtons: [
+    "ဆက်ရန်",
+    "Family Plan<div>ကရော?",
     "ဆက်ရန်",
     "All Devices<br>ရလား?"
   ]
@@ -3168,47 +3223,46 @@ if (productName === "Domain") {
         setTimeout(() => addBtn.textContent = "Add to Cart", 1000);
       });
     }
-    // --- NETFLIX: CUSTOM MONTHS (UHD + FHD) ---
+    // --- NETFLIX: CUSTOM MONTHS (UHD ONLY) ---
 if (productName === "Netflix") {
 
-  // helper to find monthly price from productData by matching section text
-  function getNetflixMonthlyPrice(sectionName, fallback) {
-    const plans = productData["Netflix"]?.[sectionName];
-    const first = Array.isArray(plans) ? plans[0] : null;
-    const p = parseKyats(first?.price);
-    return p || fallback;
+  // ✅ EXACT section name from productData
+  const UHD_SECTION = "1 Profile(UHD 4K)";
+  const FHD_SECTION = "1 Profile(FHD 1080P)";
+
+  function getNetflixUhdCustomPrice(months) {
+    if (months === 1) return 15000;
+    if (months === 2) return 27000;
+    if (months === 3) return 39000;
+    if (months >= 4) return months * 13000;
+    return 0;
   }
-
-  // ✅ set your section names EXACTLY like in productData
-  const UHD_SECTION = "1 Profile (UHD 4K)";
-  const FHD_SECTION = "1 Profile (FHD 1080P)";
-
-  // ✅ monthly prices (fallback if parse fails)
-  const uhdMonthly = getNetflixMonthlyPrice(UHD_SECTION, 15000);
-  const fhdMonthly = getNetflixMonthlyPrice(FHD_SECTION, 10000); // change fallback if needed
-
-  function mountNetflixMonthsBox({ title, inputId, priceId, btnId, monthlyPrice, sectionName }) {
+  function getNetflixFhdCustomPrice(months) {
+  if (months >= 1) return months * 10000;
+  return 0;
+}
+  function mountNetflixUhdMonthsBox() {
     const html = `
       <div class="plan-box">
-        <div class="plan-title">${escapeHTML(title)}</div>
+        <div class="plan-title">More Months (1 Profile UHD 4K)</div>
         <div style="padding:10px; display:flex; flex-direction:column; gap:10px;">
           <label style="font-size:14px; color:#ccc;">Enter Months (1 - 12)</label>
 
           <div style="display:flex; gap:10px;">
             <input
               type="number"
-              id="${inputId}"
+              id="netflix-uhd-months-input"
               min="1"
               max="12"
               placeholder="1-12"
               style="flex:1; padding:12px; border-radius:8px; border:1px solid rgba(255,255,255,0.2); background:rgba(255,255,255,0.05); color:white; font-size:16px;"
             />
-            <div id="${priceId}" style="align-self:center; font-weight:bold; color:#00e676; min-width:120px; text-align:right;">
+            <div id="netflix-uhd-calc-price" style="align-self:center; font-weight:bold; color:#00e676; min-width:120px; text-align:right;">
               0 Kyats
             </div>
           </div>
 
-          <button id="${btnId}" class="btn btn-primary" style="width:100%;">
+          <button id="btn-add-netflix-uhd-months" class="btn btn-primary" style="width:100%;">
             Add to Cart
           </button>
         </div>
@@ -3219,9 +3273,9 @@ if (productName === "Netflix") {
     if (!popularSection) return;
     popularSection.insertAdjacentHTML("beforebegin", html);
 
-    const input = document.getElementById(inputId);
-    const priceDisplay = document.getElementById(priceId);
-    const addBtn = document.getElementById(btnId);
+    const input = document.getElementById("netflix-uhd-months-input");
+    const priceDisplay = document.getElementById("netflix-uhd-calc-price");
+    const addBtn = document.getElementById("btn-add-netflix-uhd-months");
 
     input.addEventListener("input", () => {
       const months = parseInt(input.value, 10);
@@ -3233,7 +3287,7 @@ if (productName === "Netflix") {
       } else {
         addBtn.style.removeProperty("background-color");
         addBtn.textContent = "Add to Cart";
-        priceDisplay.textContent = formatKyats(monthlyPrice * months);
+        priceDisplay.textContent = formatKyats(getNetflixUhdCustomPrice(months));
       }
     });
 
@@ -3241,11 +3295,11 @@ if (productName === "Netflix") {
       const months = parseInt(input.value, 10);
       if (!months || months < 1 || months > 12) return;
 
-      const totalPrice = monthlyPrice * months;
+      const totalPrice = getNetflixUhdCustomPrice(months);
 
       const item = {
         product: "Netflix",
-        section: sectionName, // ✅ IMPORTANT: UHD or FHD plan name
+        section: UHD_SECTION,
         duration: `${months} Month${months > 1 ? "s" : ""}`,
         unitPrice: totalPrice,
         priceText: formatKyats(totalPrice)
@@ -3253,7 +3307,6 @@ if (productName === "Netflix") {
 
       addToCart(item);
 
-      // reset
       input.value = "";
       priceDisplay.textContent = "0 Kyats";
       addBtn.style.removeProperty("background-color");
@@ -3262,27 +3315,84 @@ if (productName === "Netflix") {
       setTimeout(() => (addBtn.textContent = "Add to Cart"), 1000);
     });
   }
+    function mountNetflixFhdMonthsBox() {
+  const html = `
+    <div class="plan-box">
+      <div class="plan-title">More Months (1 Profile FHD 1080P)</div>
+      <div style="padding:10px; display:flex; flex-direction:column; gap:10px;">
+        <label style="font-size:14px; color:#ccc;">Enter Months (1 - 12)</label>
 
-  // ✅ Box 1: UHD
-  mountNetflixMonthsBox({
-    title: "More Months (1 Profile UHD 4K)",
-    inputId: "netflix-uhd-months-input",
-    priceId: "netflix-uhd-calc-price",
-    btnId: "btn-add-netflix-uhd-months",
-    monthlyPrice: uhdMonthly,
-    sectionName: UHD_SECTION
+        <div style="display:flex; gap:10px;">
+          <input
+            type="number"
+            id="netflix-fhd-months-input"
+            min="1"
+            max="12"
+            placeholder="1-12"
+            style="flex:1; padding:12px; border-radius:8px; border:1px solid rgba(255,255,255,0.2); background:rgba(255,255,255,0.05); color:white; font-size:16px;"
+          />
+          <div id="netflix-fhd-calc-price" style="align-self:center; font-weight:bold; color:#00e676; min-width:120px; text-align:right;">
+            0 Kyats
+          </div>
+        </div>
+
+        <button id="btn-add-netflix-fhd-months" class="btn btn-primary" style="width:100%;">
+          Add to Cart
+        </button>
+      </div>
+    </div>
+  `;
+
+  const popularSection = dom.views.product.querySelector(".popular-section");
+  if (!popularSection) return;
+  popularSection.insertAdjacentHTML("beforebegin", html);
+
+  const input = document.getElementById("netflix-fhd-months-input");
+  const priceDisplay = document.getElementById("netflix-fhd-calc-price");
+  const addBtn = document.getElementById("btn-add-netflix-fhd-months");
+
+  input.addEventListener("input", () => {
+    const months = parseInt(input.value, 10);
+
+    if (!months || months < 1 || months > 12) {
+      addBtn.style.backgroundColor = "#ff4444";
+      addBtn.textContent = "⚠️ Limit: 1 - 12";
+      priceDisplay.textContent = "0 Kyats";
+    } else {
+      addBtn.style.removeProperty("background-color");
+      addBtn.textContent = "Add to Cart";
+      priceDisplay.textContent = formatKyats(getNetflixFhdCustomPrice(months));
+    }
   });
 
-  // ✅ Box 2: FHD
-  mountNetflixMonthsBox({
-    title: "More Months (1 Profile FHD 1080P)",
-    inputId: "netflix-fhd-months-input",
-    priceId: "netflix-fhd-calc-price",
-    btnId: "btn-add-netflix-fhd-months",
-    monthlyPrice: fhdMonthly,
-    sectionName: FHD_SECTION
+  addBtn.addEventListener("click", () => {
+    const months = parseInt(input.value, 10);
+    if (!months || months < 1 || months > 12) return;
+
+    const totalPrice = getNetflixFhdCustomPrice(months);
+
+    const item = {
+      product: "Netflix",
+      section: FHD_SECTION,
+      duration: `${months} Month${months > 1 ? "s" : ""}`,
+      unitPrice: totalPrice,
+      priceText: formatKyats(totalPrice)
+    };
+
+    addToCart(item);
+
+    input.value = "";
+    priceDisplay.textContent = "0 Kyats";
+    addBtn.style.removeProperty("background-color");
+
+    addBtn.textContent = "Added!";
+    setTimeout(() => (addBtn.textContent = "Add to Cart"), 1000);
   });
 }
+  mountNetflixUhdMonthsBox();
+  mountNetflixFhdMonthsBox();
+}
+   
     // --- TIKTOK OFFICIAL: CUSTOM COINS (like Google Play custom amount) ---
 if (productName === "TikTok Official") {
   // Use your existing price as base: 100 Coin = 5,300 Kyats
@@ -3521,7 +3631,7 @@ if (productName === "Telegram Star") {
 
 ပီးတော့စဝယ်တဲ့ရက်ကနေ premium ရက် 25ကနေ 31ရက်ကြားက stock ရှိတာရမာပါ။
 `;
-  const chatGptWarrantyNote = `$20≈$30နဲ့ဝယ်တဲ့ဟာတေမမဟုတ်ရင် Deactivate errorဖြစ်နိုင်လို့ warranty အနေနဲ့ဖြစ်ခဲ့ရင် 1ခုအသစ်ပြန်လဲပေးမာပါ တခါပဲလဲပေးမာမလို့အဆင်ပြေမယူပေးပါ`;
+  const chatGptWarrantyNote = `$20≈$30နဲ့ဝယ်တဲ့ဟာတေမမဟုတ်ရင် Deactivate errorဖြစ်နိုင်လို့ warranty အနေနဲ့ဖြစ်ခဲ့ရင် 1ခုအသစ်ပြန်လဲပေးမာပါ တခါပဲလဲပေးမာမလို့အဆင်ပြေမယူပေးပါ။`;
   const netflixUhdNote = `Subscription: Premium UHD
 •Ultra HD (4K) video quality
 •HDR support (on compatible titles/devices)
@@ -3627,7 +3737,7 @@ Family Head(Can Invite 5 email)
 ကျနော်ပေးမဲ့ Head အကောင့်အပါအဝင်တခြား email 5ခုလုံးက(Word, Excel, etc.) and 1TB of OneDrive storageစတဲ့ Microsoft Copilot Proမာပါတဲ့ features တေအကုန်သုံးလို့ရသွားမာပါ။` + generalDetailsBlock,
     "Netflix": `1 Profile
 Own 1 profile you can use 2 devices.Tv Support.
-Full Warrenty.
+Full Warranty.
 
 Whole Account
 Own 5 profiles you can use 10 devices` + generalDetailsBlock,
@@ -3644,14 +3754,10 @@ Private Whole Account (1 Month)
 5 Profile` + generalDetailsBlock,
     "Prime Video": `Share\nFull warranty • One device only\n\nPrivate\nFull warranty • Up to 3 devices` + generalDetailsBlock,
     "Spotify": `Individual Plan(Private)
-• Private Plan မို့လို့ 1 person 1 device ပဲသုံးသင့်ပါတယ်။ Visa Card payment နဲ့လုပ် ပေးမာပါ။ 2 Months အတွင်း full warranty ဖြစ်လို့တခုခုဖြစ်ခဲ့ရင် warranty အနေနဲ့အခုပြန်လဲ ပေးမာပါ တခါပဲလဲ ပေးမာပါ။ Setting ထဲသွားပီး account delete တာတို့တော့မပါပါဘူး။
+• Private Plan မို့လို့ 1 person 1 device ပဲသုံးသင့်ပါတယ်။ Official appမာသုံးရတာဆိုပေမဲ့တစ်လကို$11.99ပေးပီးဝယ်တာမဟုတ်လို့ Risk ကတော့ရှိပါတယ်။အဆင်ပြေတယ်ဆိုမယူပါ။ Old account က Playlist, Favorite Artist, Favorite Songs, Favorite albums,Liked Songsအကုန်အကာင့်အသစ်ကိုပြောင်းပေးပါတယ်။ 2 Months အတွင်း full warranty ဖြစ်လို့တခုခုဖြစ်ခဲ့ရင် warranty အနေနဲ့အခုပြန်လဲ ပေးမာပါ တခါပဲလဲ ပေးမာပါ။ Setting ထဲသွားပီး account delete တာတို့တော့မပါပါဘူး။
 
 Family Plan
-• Full Warranty.
-
-Official appမာသုံးရတာဆိုပေမဲ့တစ်လကို$11.99ပေးပီးဝယ်တာမဟုတ်လို့ Risk ကတော့ရှိပါတယ်။အဆင်ပြေတယ်ဆိုမယူပါ။
-
-Old account က Playlist, Favorite Artist, Favorite Songs, Favorite albums,Liked Songsအကုန်အကာင့်အသစ်ကိုပြောင်းပေးပါတယ်။` + generalDetailsBlock,
+• Official appမာသုံးရတာဆိုပေမဲ့တစ်လကို$11.99ပေးပီးဝယ်တာမဟုတ်လို့ Risk ကတော့ရှိပါတယ်။အဆင်ပြေတယ်ဆိုမယူပါ။ ဝယ်ထားတဲ့အကောင့်ကိုပဲကုန်ရင်သက်တန်းတိုးလို့ရပါတယ်။ 2Months Full warranty.` + generalDetailsBlock,
     "Apple Music": `Individual Plan
 Only for Android.
 This did not work on iOS.
@@ -3683,11 +3789,10 @@ Full Warranty for full duration. Deactivateဖြစ်လဲတစ်လပြ�
     "Gemini Veo 3": `Private(Can Invite 5 Email)
 Includes 2000GB Google storage• Unlimited devices
 ဒါမဲ့ဝယ်ရင်စစချင်းသိထားရမာတေရှိပါတယ်။ Admin ပြောပြပါလိမ့်မယ်။
-1 Month (Full Warranty) — 1 Month လုံး Full Warranty ပေးပါတယ်။
 3 Months (Full Warranty) — 3 Months လုံး Full Warranty ပေးပါတယ်။
 
 OwnMail Invite
-ဒါကကိုယ့်ရဲ့GmailကိုပဲProလုပ်ပေးတာမလို့။အလုပ်လဲမရှုပ်ပါဘူး။ Password လဲပေးစရာမလိုပါဘူး။ Device ကလဲဝင်ထားသလောက်သုံးလို့ရနေမာပါ။` + generalDetailsBlock,
+ဒါကကိုယ့်ရဲ့GmailကိုပဲProလုပ်ပေးတာမလို့။အလုပ်လဲမရှုပ်ပါဘူး။ Password လဲပေးစရာမလိုပါဘူး။ Device ကလဲဝင်ထားသလောက်သုံးလို့ရနေမာပါ။ Full Warranty.` + generalDetailsBlock,
     "Flow AI": `OwnMail Invite
 ဒီဟာကGoogle One Pro,Gemini Proဝယ်ရင်ပါတဲ့ဟာပါ။
 Invite Planမို့လို့Ai Credit တစ်လ 1000ကိုတော့ Share Useရမာပါ။
@@ -3706,7 +3811,9 @@ Gemini Veo 3 Pro 3 Monthsပါရမာပါ။` + generalDetailsBlock,
     "YouTube Premium": `Private (Individual Plan)
 Full warranty.
 No ads with all YouTube premium features.
-Including YouTube music.` + generalDetailsBlock,
+Including YouTube music.
+ဒီက ပေးတဲ့အကောင့်ကို ဝင်သုံးရမာပါ။
+မရှင်းတာရှိရင် Plan section မာရှင်းပြထားတာကိုသေချာပြန်ကြည့်ပေးပါ။` + generalDetailsBlock,
 
     "Tinder": `Code redeem use.\n1× warranty. Can only use one devices` + generalDetailsBlock,
     "Telegram Premium": `Login
@@ -3878,10 +3985,37 @@ Can't use on iOS devices.` + generalDetailsBlock,
 
   function getNoteForCartItem(item) {
     const productName = item.product.replace(/ \(.+\)$/, '');
-    // ✅ Spotify Family Plan: ONLY show Full Warranty (no extra text)
-    if (productName === "Spotify" && item.section === "Family Plan") {
-    return "Full Warranty.";
+    // ChatGPT Plus - 3 Months custom notes
+if (productName === "ChatGPT Plus" && item.duration === "3 Months") {
+  if (item.section === "Personal Plus (Private)") {
+    return `<div class="burmese-font">ChatGpt Plus Plan ကတစ်လကို Official Price $20 ရှိပါတယ်။ 3months ဆိုရင် 240K ပါ။ ဒါကအဲ့လိုဝယ်တာလဲမဟုတ်လို့ Deactivate ဖြစ်နိုင်ချေအနဲအများတော့ရှိမာပါ။ But full warranty ပေးထားပါတယ်။ ဖြစ်တာနဲ့ချက်ချင်းကြီးပြန်လုပ်ပေးလို့မရပါဘူး Max 1 Day လောက်စောင့်ရရင်လဲစောင့်ရနိုင်ပါတယ်။ စောင့်နိုင်မယူပေးပါ။</div>`;
+  }
+
+  if (item.section === "Business Plus - Invite Own Email") {
+    return `<div class="burmese-font">$20≈$30နဲ့ဝယ်တဲ့ဟာတေမမဟုတ်ရင် Deactivate errorဖြစ်တတ်ပါတယ်။ ဒါပေမဲ့ 3months အတွင်း Full warranty ပေးထားပါတယ်။ ဖြစ်တာနဲ့ချက်ချင်းကြီးပြန်လုပ်ပေးလို့မရပါဘူး Max 1 Day လောက်စောင့်ရရင်လဲစောင့်ရနိုင်ပါတယ်။ စောင့်နိုင်မယူပေးပါ။</div>`;
+  }
+
+  if (item.section === "Business Plus Own(Full Warranty)") {
+    return `<div class="burmese-font">Full Warranty For Full 3Months.</div>`;
+  }
+}
+    // ChatGPT Plus - Business Plus Own (Full Warranty) 1 Month note
+if (
+  productName === "ChatGPT Plus" &&
+  item.section === "Business Plus Own(Full Warranty)" &&
+  item.duration === "1 Month"
+) {
+  return `<div class="burmese-font">Full Warranty for full duration. Deactivateဖြစ်လဲတစ်လပြည့်တဲ့ထိလဲပေးမာပါ။</div>`;
+}
+    // ✅ Spotify checkout notes
+    if (productName === "Spotify" && item.section === "Individual Plan(Private)") {
+    return `<div class="burmese-font">• Private Plan မို့လို့ 1 person 1 device ပဲသုံးသင့်ပါတယ်။ Official appမာသုံးရတာဆိုပေမဲ့တစ်လကို$11.99ပေးပီးဝယ်တာမဟုတ်လို့ Risk ကတော့ရှိပါတယ်။အဆင်ပြေတယ်ဆိုမယူပါ။ Old account က Playlist, Favorite Artist, Favorite Songs, Favorite albums,Liked Songsအကုန်အကာင့်အသစ်ကိုပြောင်းပေးပါတယ်။ 2 Months အတွင်း full warranty ဖြစ်လို့တခုခုဖြစ်ခဲ့ရင် warranty အနေနဲ့အခုပြန်လဲ ပေးမာပါ တခါပဲလဲ ပေးမာပါ။ Setting ထဲသွားပီး account delete တာတို့တော့မပါပါဘူး။</div>`;
     }
+ 
+    if (productName === "Spotify" && item.section === "Family Plan") {
+    return `<div class="burmese-font">• Official appမာသုံးရတာဆိုပေမဲ့တစ်လကို$11.99ပေးပီးဝယ်တာမဟုတ်လို့ Risk ကတော့ရှိပါတယ်။အဆင်ပြေတယ်ဆိုမယူပါ။ ဝယ်ထားတဲ့အကောင့်ကိုပဲကုန်ရင်သက်တန်းတိုးလို့ရပါတယ်။ 2Months Full warranty.</div>`;
+    }
+
     if (productName === "Domain") {
     return "ဒါကကိုယ့်မာ Website ရှိပီး Domain မရှိရင်သုံးဖို့အတွက်ပါ။ နှစ်တိုင်းသက်တန်းတိုးသွားလို့ရပါတယ်။";
     }
@@ -3977,7 +4111,7 @@ if (productName === "Express Vpn" && item.section === "Share" && /^phone/i.test(
 }
          // Express VPN Windows plan note (Share → WindowsPC/Laptop)
    if (productName === "Express Vpn" && /windowspc/i.test(item.duration)) {
-    return "Windows deviceတေမာပဲသုံးလို့ရပါမယ်။15 Days warrenty.";
+    return "Windows deviceတေမာပဲသုံးလို့ရပါမယ်။15 Days warranty.";
    }
    if (/macbook/i.test(item.duration)) {
     return "MacBookမာပဲသုံးလို့ရပါမယ်။15 Days Warranty.";
@@ -4002,8 +4136,7 @@ if (productName === "Express Vpn" && item.section === "Share" && /^phone/i.test(
 
     if (productName === 'Gemini Veo 3') {
         const standardNote = `Includes 2000GB Google storage• Unlimited devices\nဒါမဲ့ဝယ်ရင်စစချင်းသိထားရမာတေရှိပါတယ်။ Admin ပြောပြပါလိမ့်မယ်။`;
-        if (item.section.includes('OwnMail')) return `ဒါကကိုယ့်ရဲ့GmailကိုပဲProလုပ်ပေးတာမလို့။အလုပ်လဲမရှုပ်ပါဘူး။ Password လဲပေးစရာမလိုပါဘူး။ Device ကလဲဝင်ထားသလောက်သုံးလို့ရနေမာပါ။`;
-        if (item.duration.includes('1 Month')) return `${standardNote}\n1 Month (Full Warranty) — 1 Month လုံး Full Warranty ပေးပါတယ်။`;
+        if (item.section.includes('OwnMail')) return `ဒါကကိုယ့်ရဲ့GmailကိုပဲProလုပ်ပေးတာမလို့။အလုပ်လဲမရှုပ်ပါဘူး။ Password လဲပေးစရာမလိုပါဘူး။ Device ကလဲဝင်ထားသလောက်သုံးလို့ရနေမာပါ။ Full Warranty.`;
         if (item.duration.includes('Full Warranty')) return `${standardNote}\n3 Months (Full Warranty) — 3 Months လုံး Full Warranty ပေးပါတယ်။`;
         return standardNote;
     }
@@ -4093,9 +4226,6 @@ if (productName === "Express Vpn" && item.section === "Share" && /^phone/i.test(
     cart.forEach(item => {
       const productKey = item.product + item.section;
       let noteContent = getNoteForCartItem(item);
-      if (item.product === 'YouTube Premium' && noteContent && !noteContent.includes("Renew")) {
-      noteContent += "\nRenew လို့ရပါတယ်။သက်တန်းတိုးရင်တော့ 1Month ကို 6000ပါ။";
-      }
       if (noteContent) uniqueProductNotes.set(productKey, { item, noteContent });
     });
     const noteBlocks = Array.from(uniqueProductNotes.values()).map(({ item, noteContent }) => {

@@ -384,7 +384,7 @@
       }],
       "Private Own Mail": [{
         "duration": "1 Month (30~35 Days)",
-        "price": "12,000 Kyats"
+        "price": "Out of stock"
       }]
     },
     "AlightMotion": {
@@ -432,12 +432,11 @@
     },
     "Meitu": {
       "Private": [{
-        "duration": "20 Days",
-        "price": "8,000 Kyats"
-      }],
-      "Share": [{
-        "duration": "20 Days",
-        "price": "4,500 Kyats"
+        "duration": "1 Week",
+        "price": "3,000 Kyats"
+      }, {
+        "duration": "1 Month",
+        "price": "14,500 Kyats"
       }]
     },
     "PicsArt": {
@@ -451,47 +450,36 @@
       }]
     },
     "Canva": {
-      "Pro Share": [{
+      "Share": [{
         "duration": "1 Month",
         "price": "1,500 Kyats"
       }],
-      "Educational(Invite)": [{
+      "Own Mail(Invite)": [{
         "duration": "Lifetime",
         "price": "5,000 Kyats"
       }],
-      "Pro Private": [{
+      "Private": [{
         "duration": "1 Month",
         "price": "5,000 Kyats"
       }],
     },
     "PhotoRoom": {
-      "Share": [{
-        "duration": "1 Year",
-        "price": "6,500 Kyats"
-      }],
-      "Private": []
+      "Private": [{
+        "duration": "1 Week",
+        "price": "3,000 Kyats"
+      }]
     },
     "VSCO": {
       "Share": [{
         "duration": "1 Year",
-        "price": "6,500 Kyats"
+        "price": "Out Of Stock"
       }],
       "Private": []
     },
     "Remini": {
-      "Share": [{
-        "duration": "1 Month (Web)",
-        "price": "3,000 Kyats"
-      }, {
-        "duration": "1 Year (APK Lite)",
-        "price": "14,000 Kyats"
-      }, {
-        "duration": "1 Year (APK Pro)",
-        "price": "19,000 Kyats"
-      }],
       "Private": [{
-        "duration": "1 Month (Web)",
-        "price": "6,500 Kyats"
+        "duration": "1 Week",
+        "price": "3,000 Kyats"
       }]
     },
     "Express Vpn": {
@@ -526,15 +514,12 @@
     },
     "Surfshark Vpn": {
       "Share": [{
-        "duration": "1 Month",
-        "price": "6,500 Kyats"
-      }, {
         "duration": "2 Months",
         "price": "8,000 Kyats"
       }],
       "Private": [{
         "duration": "2 Months",
-        "price": "24,000 Kyats"
+        "price": "19,990 Kyats"
       }]
     },
     "Windows License": {
@@ -686,10 +671,6 @@
       "Business Plus - Invite Own Email": [{
         "duration": "1 Month",
         "price": "12,000 Kyats"
-      },
-      {
-        "duration": "3 Months",
-        "price": "35,000 Kyats"
       }],                                     
       "Business Plus Own": [{
         "duration": "1 Month",
@@ -702,7 +683,11 @@
       {
         "duration": "3 Months",
         "price": "75,000 Kyats"
-      }]
+      }],
+      "Own Mail/Private": [{
+        "duration": "3 Months",
+        "price": "10,000 Kyats"
+      }] 
     },
     "Gemini Veo 3": {
       "Private(Can Invite 5 Email)": [{
@@ -825,7 +810,7 @@
       }]
     },
     "INSHOT": {
-      "Lifetime Premium": [{
+      "Share": [{
         "duration": "Lifetime",
         "price": "15,000 Kyats"
       }]
@@ -2282,13 +2267,14 @@ const popupTextByProduct = {
     nextText: "ဘာတေကွာလဲ?",
     backText: "Back",
     steps: [
-    "တွေ့ရတဲ့တိုင်း ChatGpt မာရ္စေးချယ်စရာ Plan 3 ခုရှိပါတယ်။<br>Personal Plus, Business Plus Invite and Business Plus Own",
-    "ဘာတေကွာလဲဆိုရင်သိထားရမာပါ Plus ချင်းတူတူပါပဲ။ အရင်ဆုံး Personal Plus ကိုပြောပါမယ်။ သူကဒီကအကောင့်ပေးတာကို ChatGpt app or Website မာထည့်သုံးရတာပါ။ ဖုန်းထဲထည့်ထားစရာမလိူပါဘူး။ Device limit အနေနဲ့ 3 Devices လောက်ထိသုံးလို့ရပါတယ်။",
+    "တွေ့ရတဲ့တိုင်း ChatGpt မာရ္စေးချယ်စရာ Plan 4 ခုရှိပါတယ်။<br>Personal Plus, Business Plus Invite, Business Plus Own and Go",
+    "ဘာတေကွာလဲဆိုရင်သိထားရမာက Go ကလွဲရင်ကျန်တာတေက Plus ချင်းတူတူပါပဲ။ အရင်ဆုံး Personal Plus ကိုပြောပါမယ်။ သူကဒီကအကောင့်ပေးတာကို ChatGpt app or Website မာထည့်သုံးရတာပါ။ ဖုန်းထဲထည့်ထားစရာမလိူပါဘူး။ Device limit အနေနဲ့ 3 Devices လောက်ထိသုံးလို့ရပါတယ်။",
     "Business Plus invite ဆိုတာက Personal Plus လိုမျိုး ကျနော်ပေးတဲ့အကောင့်ကိုသုံးရတာမဟုတ်ပဲ ဝယ်သူရဲ့ Email ကို Gpt plus ပြောင်းပေးတာပါ။ Email ကနေ Invite ပေးတာမလို့ Password ပေးစရာမလိုပါဘူး။ ဒါမဲ့ Device ကတော့ 1~2 Devices လောက်ပဲသုံးလို့ရပါမယ်။",
     "Business Plus Own ဆိုတာကအလွယ်ပြောရင် 12K invite plan 4ခုရတာကိုပြောတာပါ။ ကျနော်ဒီကပေးတဲ့အကောင့်ကိုဝင်ပီးအဲ့အကောင့်ကနေ ဝယ်သူ ChatGpt Plus လုပ်ချင်တဲ့ email 4ခုကို Plus လုပ်လို့ရသွားမာပါ။",
     "Device အနေနဲ့က ကျနော်ပေးတဲ့ Head account အပါအဝင်နောက် Email 4 ခုမာတခုကို 2 devices သုံးလို့ရတာဆိုတော့ Total 10 Devices ထိရနေမာပါ။",
     "ကျနော်ခုဏပြောသွားတာတေအကုန်လုံးက $20≈$30 နဲ့ဝယ်တဲ့ဟာတေမဟုတ်လို့ Deactivate error ဖြစ်နိုင်ပါတယ်။ Deactivate ဆိုတာကဘာလဲဆိုရင် သုံးနေရင်း Plus features မရတော့တာမျိုး ကိုပြောတာပါ။",
     "Full warranty လို့မရေးထားတဲ့ Personal Plus,Business Plus Invite and Business Plus Own တေက warranty အနေနဲ့တခုခုဖြစ်ခဲ့ရင် 1 ခုအသစ်ပြန်လဲပေးမာပါ။ တခါပဲလဲပေးမာမလို့အဆင်ပြေမယူပေးပါ။ Full Warranty လို့ရေးထားတဲ့ 25,900Ks Plan ကတော့ Warranty အပြည့်ပါပါတယ်။",
+    "Go Subscription ကဈေးလဲပိုသက်သာသလို Plus subscription လောက်လဲ Features တေများမာမဟုတ်ပါဘူး။ ဒါပေမဲ့ OwnMail ကိုမ Chat History မပျက်ပဲသူံးချင်တဲ့သူတေ စကားပြောပုံထုတ်အမေးအဖြေစတဲ့ပေါ့ပေါ့ပါးပါးပဲသုံးမယ်ဆိုတဲ့သူတေအတွက်အဆင်ပြေပါမာ။ အသေးစိတ်ကို Checkout Page ရောက်ရင် Extra Information မာထက်ကြည့်လို့ရပါတယ်။",
     "ဒါကသုံးတဲ့သူပေါ်မာမူတည်ပါတယ်။ ဥပမာကိုယ်က Device 2ခု 3ခုလောက်ရှိတယ် OwnMail မဟုတ်လဲရတယ်ဆိုရင် Personal Plus က Deactivate %လဲနဲတာမလို့အဲ့တာယူသင့်ပါတယ်။",
     "တကယ်လို့ကိုယ်က ကိုယ့် Email နဲ့ပဲသုံးချင်တယ် Device ကလဲ ဖုန်း or laptop တခုနှစ်ခုလောက်ပဲရှိတယ်ဆိုရင်တော့ Business Plus Invite ကရွေးချင်သင့်ပါတယ်။ ကျနော်ထည့်မရေးထားပေမဲ့ Business Plus invite မာ Normal Warranty 12K or Full Warranty 15K ဆိုပီးရွေးလို့ရပါတယ်။",
     "အဲ့လိုမမဟုတ်ပဲ ကိုယ်ကပြန်ရောင်းချင်တာဖြစ်ဖြစ်သူငယ်ချင်းတေ အလုပ်ကလူတေကိုပေးချင်တာပဲဖြစ်ဖြစ်ဆိုရင်တော့ Business Plus Own နှစ်ခုက Device limit လဲများသလို Private history တေနဲ့သုံးရတာမလို့ အဲ့တာအတန်ဆုံးပါပဲ။",
@@ -2301,6 +2287,7 @@ const popupTextByProduct = {
     "ဆက်ရန်",
     "Full Warranty<br>ကရော?",
     "ဆက်ရန်",
+    "Goကရော?",
     "ဘာဝယ်သင့်လဲ?",
     "ဆက်ရန်",
     "ဆက်ရန်",
@@ -2985,9 +2972,58 @@ cancelBtn?.addEventListener("click", () => {
          if (sectionName === 'Private (Own Mail)') {
             title += ' <span style="background:#00ff9c; color:#002b1f; padding:2px 6px; border-radius:4px; font-size:11px; margin-left:8px; font-weight:900; box-shadow:0 0 10px #00ff9c;">Recommended</span>';
           }
-        } else if (productName === 'NordVpn' || productName === 'Surfshark Vpn') {
-         if (sectionName === 'Share' || sectionName === 'Private' || sectionName === 'Share' || sectionName === 'Private') {
+         if (sectionName === 'Share' || sectionName === 'Private') {
+            title += ' <span style="background:#00ff9c; color:#002b1f; padding:2px 6px; border-radius:4px; font-size:11px; margin-left:8px; font-weight:900; box-shadow:0 0 10px #00ff9c;">Pro Subscription</span>';
+          }
+        } else if (productName === 'Canva') {
+         if (sectionName === 'Own Mail(Invite)') {
+            title += ' <span style="background:#38bdf8; color:#020617; padding:2px 6px; border-radius:4px; font-size:11px; margin-left:8px; font-weight:900; box-shadow:0 0 6px #38bdf8;">Educational</span>';
+          }
+         if (sectionName === 'Share' || sectionName === 'Private') {
+            title += ' <span style="background:#38bdf8; color:#020617; padding:2px 6px; border-radius:4px; font-size:11px; margin-left:8px; font-weight:900; box-shadow:0 0 6px #38bdf8;">Pro Subscription</span>';
+          }
+        } else if (productName === 'CapCut') {
+         if (sectionName === 'Share' || sectionName === 'Private') {
+            title += ' <span style="background:#cbd5e1; color:#0f172a; padding:2px 6px; border-radius:4px; font-size:11px; margin-left:8px; font-weight:900; box-shadow:0 0 6px #cbd5e1;">Pro Subscription</span>';
+          }
+        } else if (productName === 'Wink') {
+         if (sectionName === 'Share' || sectionName === 'Private' || sectionName === 'Private (Own Mail)') {
+            title += ' <span style="background:#d4d4d8; color:#18181b; padding:2px 6px; border-radius:4px; font-size:11px; margin-left:8px; font-weight:900; box-shadow:0 0 6px #d4d4d8;">VIP Subscription</span>';
+          }
+        } else if (productName === 'Meitu') {
+         if (sectionName === 'Private') {
+            title += ' <span style="background:#ff4d8d; color:#ffffff; padding:2px 6px; border-radius:4px; font-size:11px; margin-left:8px; font-weight:900; box-shadow:0 0 6px #ff4d8d;">VIP Subscription</span>';
+          }
+         } else if (productName === 'PhotoRoom') {
+         if (sectionName === 'Private') {
+            title += ' <span style="background:#2e1065; color:#ffffff; padding:2px 6px; border-radius:4px; font-size:11px; margin-left:8px; font-weight:900; box-shadow:0 0 6px #c084fc;">MAX Subscription</span>';
+          }
+         } else if (productName === 'Remini') {
+         if (sectionName === 'Private') {
+            title += ' <span style="background:#ff0000; color:#ffffff; padding:2px 6px; border-radius:4px; font-size:11px; margin-left:8px; font-weight:900; box-shadow:0 0 6px #ff0000;">Pro Subscription</span>';
+          }
+         } else if (productName === 'INSHOT') {
+         if (sectionName === 'Share') {
+            title += ' <span style="background:#ff3131; color:#ffffff; padding:2px 6px; border-radius:4px; font-size:11px; margin-left:8px; font-weight:900; box-shadow:0 0 6px #ff3131;">Pro Subscription</span>';
+          }
+         } else if (productName === 'PicsArt') {
+         if (sectionName === 'Share' || sectionName === 'Private') {
+            title += ' <span style="background:#a5b4fc; color:#1e1b4b; padding:2px 6px; border-radius:4px; font-size:11px; margin-left:8px; font-weight:900; box-shadow:0 0 6px #a5b4fc;">Pro Subscription</span>';
+          }
+        } else if (productName === 'NordVpn') {
+         if (sectionName === 'Share' || sectionName === 'Private') {
             title += ' <span style="background:#1e90ff; color:#ffffff; padding:2px 6px; border-radius:4px; font-size:11px; margin-left:8px; font-weight:900; box-shadow:0 0 6px #1e90ff;">Myanmarမာသုံးမရပါ</span>';
+          }
+         } else if (productName === 'Surfshark Vpn') {
+         if (sectionName === 'Share' || sectionName === 'Private') {
+            title += ' <span style="background:#5eead4; color:#042f2e; padding:2px 6px; border-radius:4px; font-size:11px; margin-left:8px; font-weight:900; box-shadow:0 0 6px #5eead4;">Myanmarမာသုံးမရပါ</span>';
+          }
+        } else if (productName === 'ChatGPT Plus') {
+         if (sectionName === 'Personal Plus (Private)' || sectionName === 'Business Plus - Invite Own Email' || sectionName === 'Business Plus Own' || sectionName === 'Business Plus Own(Full Warranty)') {
+            title += ' <span style="background:#000000; color:#00ff9c; padding:2px 6px; border-radius:4px; font-size:11px; margin-left:8px; font-weight:900; box-shadow:0 0 6px #00ff9c;">Plus</span>';
+          }
+        if (sectionName === 'Own Mail/Private') {
+            title += ' <span style="background:#000000; color:#00ff9c; padding:2px 6px; border-radius:4px; font-size:11px; margin-left:8px; font-weight:900; box-shadow:0 0 6px #00ff9c;">Go Subscription</span>';
           }
 
         } else if (productName === 'HBO Max') {
@@ -3696,10 +3732,6 @@ Up to 5 devices` + generalDetailsBlock,
     "Canva": `Pro Share
 Full warranty
 
-Educational(Invite)
-Is education edition (limited features)
-15 Days Warranty.
-
 Pro Private
 Full warranty
 Up to 100 accounts via invite email
@@ -4068,17 +4100,32 @@ if (
     2 to 3 devices. Full warranty for the entire plan duration.
     </div>`;
    }
-
-     // Own Mail 1 Week
-   if (item.section === "Private Own Mail" && item.duration.includes("7 Days")) {
-    return `<div class="burmese-font">OwnMail နဲ့လုပ်ဖို့ဆို CapCut တခါမမဖွင့်ဖူးတဲ့ Email လိုပါမယ်။ အဲ့တာနဲ့မရမာပါ။
-    CapCut က အကောင့်ပြောင်းလဲ Project တေမပျက်တာမလို့ Private ကပိုရွေးချယ်သင့်ပါတယ်။   
-    2 to 3 devices. Full warranty for the entire plan duration.
-    </div>`;
-   }
-      
    }
    // ================= END CAPCUT NOTES ================= 
+   
+   if (productName === "Wink")
+   if (item.section === "Private" && item.duration.includes("1 Week")) {
+    return `<div class="burmese-font">
+    Full warranty for full duration.
+    3 devices max.
+    1 Week Plan ဆိုတာက 5 To 7Days ရမာပါ။ အမြဲ 7Days မပြည့်နိုင်ပါဘူး။ ပီးတော့ Android Only ပဲသုံးလို့ရပါတယ်။ Month Plan တေမာပဲ iOS ရတာပါ။ စာသေချာဖတ်ပီးမယူကြပါဗျ။
+</div>`;
+  }
+    if (productName === "ChatGPT Plus") {
+    if (item.section === "Own Mail/Private") {
+    return `Private ယူခဲ့ရင်ဒီကနေ Email & Password ပေးမာပါ။ အဲ့ဟာကို ChatGpt App or Web မာထည့်သုံးရုံပါပဲ။ OwnMail ဝယ်ရင်တော့အကောင့်ထဲဝင်ဝယ်ပေးရမာမလို့
+    Account information
+    Email & Password ပေးရပါမယ်။ ဝင်ပီးရင်ပြန်ထွက်မာပါ။ Full 3months Warranty.
+    Extra Information 
+    https://t.me/BLUELAMP1/329`;
+    }
+    }
+    if (productName === "Canva") {
+    if (item.section === "Own Mail(Invite)") {
+    return `Education edition (limited features). 5 Months Warranty.`;
+    }
+    }
+    
    // ================= YOUTUBE PREMIUM CHECKOUT NOTES =================
    if (productName === "YouTube Premium") {
 

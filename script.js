@@ -135,7 +135,7 @@
     "Gemini Veo 3": "https://ik.imagekit.io/dkdlgynlu/New-Project-52-906-D5-F0.png",
     "Flow AI": "https://ik.imagekit.io/dkdlgynlu/Wattpad%20_A4B3FC6_.png?updatedAt=1768837724112",
     "NotebookLM": "https://ik.imagekit.io/dkdlgynlu/Wattpad%20_363313A_.png?updatedAt=1768837724010",
-    "Grammarly AI": "https://ik.imagekit.io/dkdlgynlu/New-Project-52-087-AC47.png",
+    "Claude Ai": "https://ik.imagekit.io/dkdlgynlu/New-Project-52-087-AC47.png",
     "Zoom": "https://ik.imagekit.io/dkdlgynlu/New-Project-52-5270010.png",
     "YouTube Premium": "https://ik.imagekit.io/dkdlgynlu/New-Project-52-2-DCD6-D5.png",
     "Tinder": "https://ik.imagekit.io/dkdlgynlu/New-Project-52-DCDE0-B9.png",
@@ -533,37 +533,37 @@
       }]
     },
     "Microsoft 365": {
-      "Individual": [{
+      "Private": [{
         "duration": "1 Month",
         "price": "10,000 Kyats"
       }],
-      "Invite with email": [{
+      "Own Mail Invite": [{
         "duration": "1 Month",
         "price": "5,000 Kyats"
       }],
-      "Family Head(Can Invite 5 email)": [{
+      "Private Head": [{
         "duration": "1 Month",
         "price": "12,000 Kyats"
       }]
     },
     "Netflix": {
-      "1 Profile(UHD 4K)": [{
-        "duration": "(Semiprivate 2 devices 1Month)",
+      "SemiPrivate1": [{
+        "duration": "(1 Profile 1 Month)",
         "price": "15,000 Kyats"
       },
       {
-        "duration": "(Semiprivate 2 devices 2Months)",
+        "duration": "(1 Profile 2 Months)",
         "price": "27,000 Kyats"
       },
       {
-         "duration": "(Semiprivate 2 devices 3Months)",
+         "duration": "(1 Profile 3 Months)",
          "price": "39,000 Kyats"
       }],
-      "1 Profile(FHD 1080P)": [{
-        "duration": "(Semiprivate 2 devices 1Month)",
+      "SemiPrivate2": [{
+        "duration": "(1 Profile 1 Month)",
         "price": "10,000 Kyats"
       }],
-      "Whole Account(UHD 4K)": [{
+      "Whole Account": [{
         "duration": "5 Profiles (1 Month)",
         "price": "55,000 Kyats"
       }]
@@ -645,11 +645,11 @@
     },
     "Google One": {
       "OwnMail invite": [{
-        "duration": "3 Months (2000GB + Veo3 Gemini AI)",
+        "duration": "3 Months (5,000GB + Gemini Pro)",
         "price": "10,000 Kyats"
       }],
       "Private": [{
-        "duration": "3 Months (2000GB + Veo3 Gemini AI)",
+        "duration": "3 Months (5,000GB + Gemini Pro)",
         "price": "15,000 Kyats"
       }]
     },
@@ -690,8 +690,8 @@
       }] 
     },
     "Gemini Veo 3": {
-      "Private(Can Invite 5 Email)": [{
-        "duration": "3 Months (+2000GB storage)",
+      "Head(Can Invite 5 Email)": [{
+        "duration": "3 Months (+5000GB storage)",
         "price": "15,000 Kyats"
       }],
       "OwnMail Invite": [{
@@ -707,8 +707,8 @@
     "price": "10,000 Kyats"
   }],
       "Private": [{
-        "duration": "3 Months",
-       "price": "15,000 Kyats"
+        "duration": "4 Months",
+       "price": "20,000 Kyats"
       }]
 },"NotebookLM": {
   "OwnMail Invite": [{
@@ -717,12 +717,12 @@
   }]
 },
 
-    "Grammarly AI": {
-      "Share": [{
+    "Claude Ai": {
+      "Private": [{
         "duration": "1 Month",
-        "price": "4,500 Kyats"
+        "price": "Out Of Stock"
       }],
-      "Private": []
+      "Share": []
     },
     "Zoom": {
       "Private": [{
@@ -786,15 +786,15 @@
     "Perplexity Ai": {
       "Share": [{
         "duration": "1 Month",
-        "price": "8,000 Kyats"
+        "price": "Out Of Stock"
       }],
       "Private": [{
         "duration": "1 Month",
-        "price": "15,000 Kyats"
+        "price": "Out Of Stock"
       }],
       "OwnMail Private": [{
         "duration": "1 Month",
-        "price": "17,000 Kyats"
+        "price": "Out Of Stock"
       }]
     },
     "GAGAOOLALA": {
@@ -1829,7 +1829,7 @@
     "TeraBox": ["android", "ios", "pc"],
     "ChatGPT Plus": ["android", "ios", "pc"],
     "Gemini Veo 3": ["android", "ios", "pc"],
-    "Grammarly AI": ["pc", "android", "ios"],
+    "Claude Ai": ["pc", "android", "ios"],
     "Flow AI": ["android", "ios", "pc"],
     "NotebookLM": ["android", "ios", "pc"],
     "Zoom": ["pc", "android", "ios"],
@@ -2317,8 +2317,8 @@ const popupTextByProduct = {
     "All Devices<br>ရလား?"
   ]
   },
-  "Grammarly AI": {
-  title: "Grammarly AI Info",
+  "Claude Ai": {
+  title: "Claude Ai Info",
   button: "ဒါရှင်းပြပေးပါ။",
   doneText: "ဟုတ်ပီဟုတ်ပီ",
   steps: [
@@ -2376,7 +2376,7 @@ const popupTextByProduct = {
   button: "ဒါရှင်းပြပေးပါ။",
   doneText: "ဟုတ်ပီဟုတ်ပီ",
   steps: [
-    "ဒါက Window Pro Key ပါ။ 10/11 ပဲရပါတယ်။ ပီးတော့ order confirm ပီးရင် အများဆုံး 3 ရက်လောက်စောင့်ရနိုင်ပါတယ်။"
+    "ဒါက Window Pro Key ပါ။ 10/11 ပဲရပါတယ်။"
   ]
 },
   "Microsoft 365": {
@@ -2385,12 +2385,12 @@ const popupTextByProduct = {
     nextText: "ဘာတေကွာလဲ?",
     backText: "Back",
     steps: [
-    "တွေ့ရတဲ့တိုင်း Microsoft မာရ္စေးချယ်စရာ Plan 3 ခုရှိပါတယ်။<br>Individual,Invite email,Family Head",
-    "ဘာကွာလဲဆိုရင်အရင်ဆုံး Individual Plan ကိုပြောပါမယ်။ သူကတယောက်ထဲ သုံးတဲ့သူတေအတွက်ပါ Device 5 ခုလောက်ဝင်လို့ရပါတယ်။ Features တေအနေနဲ့ (Word, Excel, PowerPoint, Outlook) စတဲ့ Microsoft မာပါတာတေအပြင် Copilot Ai ပါသုံးလို့ရပါတယ်။",
-    "Invite with email ဆိုတာက ခုဏလိုပဲ (Word, Excel, PowerPoint, Outlook) တေသုံးလို့ရတယ်။ ဝယ်သူရဲ့ Email ကို Invite ‌ပီးလုပ်ပေးတာပါ Password ပေးစရာမလိုပါဘူး။ 2 Devices လောက်သုံးလို့ရပါတယ်။ ဒီ Plan မာ 1Month ဆိုတာက 25 ရက်ကနေ 30 ရက်ပါတာရမာကိုပြောတာပါ။",
-    "Family Head ဆိုတာက Invite Plan လိုဟာမျိုး 4 ခုရတာကိုပြောတာပါ။ Invite Plan လိုပဲ (Word, Excel, PowerPoint, Outlook) သုံးလို့ရမယ်။ Device အနေနဲ့က Email တစ်ခုကို 2 Devices ဆိုတော့ Total 10 ခုထိရနေမာပါ။",
+    "တွေ့ရတဲ့တိုင်း Microsoft မာရ္စေးချယ်စရာ Plan 3 ခုရှိပါတယ်။<br>Personal,Invite OwnMail & Family Head",
+    "ဘာကွာလဲဆိုရင်သိထားရမာကအကုန်လုံးက Private တေပါပဲ။ အရင်ဆုံး Personal Plan ကိုပြောပါမယ်။ သူကတယောက်ထဲ သုံးတဲ့သူတေအတွက်ပါ Device 5 ခုလောက်ဝင်လို့ရပါတယ်။ Features တေအနေနဲ့ (Word, Excel, PowerPoint, Outlook) စတဲ့ Microsoft မာပါတာတေအပြင် Copilot Ai ပါသုံးလို့ရပါတယ်။",
+    "Own Mail Invite ဆိုတာက ခုဏလိုပဲ (Word, Excel, PowerPoint, Outlook) တေသုံးလို့ရတယ်။ ဝယ်သူရဲ့ Email ကို Invite ‌ပီးလုပ်ပေးတာပါ Password ပေးစရာမလိုပါဘူး။ 2 Devices လောက်သုံးလို့ရပါတယ်။ ဒီ Plan မာ 1Month ဆိုတာက 20 ရက်ကနေ 30 ရက်ပါတာရမာကိုပြောတာပါ။",
+    "Family Head ဆိုတာက Invite Plan လိုဟာမျိုး 5 ခုရတာကိုပြောတာပါ။ Invite Plan လိုပဲ (Word, Excel, PowerPoint, Outlook) သုံးလို့ရမယ်။ Device အနေနဲ့က Email တစ်ခုကို 2 Devices ဆိုတော့ Total 10 ခုထိရနေမာပါ။",
     "ဘာဝယ်သင့်လဲဆိုရင် Family Plan တေမာက Copilot Ai မပါပါဘူး။ ကွာတာကအဲ့တာရယ် Device Limit ရယ်ပါပဲ။ ကိုယ်သုံးမဲ့အပေါ်ရယ် လူများမများပေါ်ရယ်ကိုလိုက်ပီးအဆင်ပြေတာရွေးယူပါ။ Stock ရှားလို့ရှိမရှိအရင်မေးပီးမဝယ်ပါ။",
-    "Android ရော iOS ရော PC, Laptop အကုန်ရပါတယ်။ Official App and Website တေမာပဲသုံးရမာပါ"
+    "Android ရော iOS ရော PC, Laptop အကုန်ရပါတယ်။ Official App and Website တေမာပဲသုံးရမာပါ။"
   ],
     stepButtons: [
     "ဘာတေကွာလဲ?",
@@ -2406,17 +2406,17 @@ const popupTextByProduct = {
     nextText: "ဘာတေကွာလဲ?",
     backText: "Back",
     steps: [
-    "တွေ့ရတဲ့တိုင်း Netflix မာရ္စေးချယ်စရာ Plan 3 ခုရှိပါတယ်။<br>FHD Semiprivate,UHD Semiprivate,<br>UHD Whole Account",
+    "တွေ့ရတဲ့တိုင်း Netflix မာရ္စေးချယ်စရာ Plan 3 ခုရှိပါတယ်။<br>Premium UHD,Standard FHD,<br>Whole Account UHD",
     "ဘာကွာလဲဆိုတာမပြောခင်အရင်ဆုံး Semiprivate ဆိုတာကိုရှင်းပြပါမယ်။ Semiprivate ဆိုတာကကိုယ်က Profile တခုလုံးကိုငှားလိုက်တာပါ။ 1 Profile မာက 2 devices သုံးလို့ရပါတယ်။",
-    "FHD ဆိုတာက 1080P ကိုပြောတာပါ။ FHD 1080P Plan မာက 2 devices ရပေမဲ့ Tv တော့သုံးလို့မရပါဘူး။ ကျန်တဲ့ Devices တေမာပဲသုံးလို့ရပါမယ်။",
-    "UHD ဆိုတာက 4K resolution ထိ Support တယ်လို့ပြောတာပါ။ Netflix ရဲ့အမြင့်ဆုံး Subscription ပါပဲ။ Semiprivate မို့လို့ 2 Devices သုံးလို့ရမယ်။ TV လဲ Support ပါတယ်။",
-    "Account တစ်ခုမာက 5 Profile ပါပါတယ်။ Whole Account ဆိုတာက 5 Profile လုံးကိုဝယ်လိုက်တာပါ။ Subscription Plan က UHD 4K Plan ပါ။ Family များတဲ့သူတေ Reseller တေပဲဝယ်သင့်ပါတယ်။",
+    "Standard FHD ဆိုတာက 1080P ကိုပြောတာပါ။ FHD 1080P Plan မာက 2 devices ရပေမဲ့ Tv တော့သုံးလို့မရပါဘူး။ ကျန်တဲ့ Devices တေမာပဲသုံးလို့ရပါမယ်။",
+    "Premium UHD ဆိုတာက Ultra High Resolution 4K ထိ Support တယ်လို့ပြောတာပါ။ Netflix ရဲ့အမြင့်ဆုံး Subscription ပါပဲ။ Semiprivate မို့လို့ 2 Devices သုံးလို့ရမယ်။ TV လဲ Support ပါတယ်။",
+    "Account တစ်ခုမာက 5 Profile ပါပါတယ်။ Whole Account ဆိုတာက 5 Profile လုံးကိုဝယ်လိုက်တာပါ။ Subscription Plan က Premium UHD Plan ပါ။ Family များတဲ့သူတေ Reseller တေပဲဝယ်သင့်ပါတယ်။",
     "Plan အလိုက် Devices တေက Android, iOS, PC, Laptop, Tv အကုန်ရပါတယ်။ Stocks ရှားတာမို့လို့မဝယ်ခင်အရင်မေးပါ။ လအစတေမာတော့ Stock ရှိတတ်ပါတယ်။ Plan တိုင်းကို Full Warranty ပေးထားပါတယ်။"
   ],
     stepButtons: [
     "ဘာတေကွာလဲ?",
-    "FHD ဆိုတာက?",
-    "UHDဆိုတာက?",
+    "Standard FHD<br>ဆိုတာက?",
+    "Premium UHD<br>ဆိုတာက?",
     "Whole Account<br>ဆိုတာက?",
     "All Devices<br>ရလား?"
   ]
@@ -3025,6 +3025,32 @@ cancelBtn?.addEventListener("click", () => {
         if (sectionName === 'Own Mail/Private') {
             title += ' <span style="background:#000000; color:#00ff9c; padding:2px 6px; border-radius:4px; font-size:11px; margin-left:8px; font-weight:900; box-shadow:0 0 6px #00ff9c;">Go Subscription</span>';
           }
+          } else if (productName === 'Gemini Veo 3') {
+         if (sectionName === 'Head(Can Invite 5 Email)' || sectionName === 'OwnMail Invite') {
+            title += ' <span style="background:#67e8f9; color:#083344; padding:2px 6px; border-radius:4px; font-size:11px; margin-left:8px; font-weight:900; box-shadow:0 0 6px #67e8f9;">Pro Subscription</span>';
+          }
+          } else if (productName === 'Claude Ai') {
+         if (sectionName === 'Private') {
+            title += ' <span style="background:#f97316; color:#ffffff; padding:2px 6px; border-radius:4px; font-size:11px; margin-left:8px; font-weight:900; box-shadow:0 0 6px #f97316;">Pro Subscription</span>';
+          }
+          } else if (productName === 'Perplexity Ai') {
+         if (sectionName === 'Share' || sectionName === 'Private' || sectionName === 'OwnMail Private') {
+            title += ' <span style="background:#000000; color:#ffffff; padding:2px 6px; border-radius:4px; font-size:11px; margin-left:8px; font-weight:900; box-shadow:0 0 6px #666666;">Pro Subscription</span>';
+          }
+          } else if (productName === 'Microsoft 365') {
+         if (sectionName === 'Private') {
+            title += ' <span style="background:#f1f5f9; color:#0f172a; padding:2px 6px; border-radius:4px; font-size:11px; margin-left:8px; font-weight:900; box-shadow:0 0 6px #e2e8f0;">Personal Subscription</span>';
+          }
+         if (sectionName === 'Own Mail Invite' || sectionName === 'Private Head') {
+            title += ' <span style="background:#cffafe; color:#164e63; padding:2px 6px; border-radius:4px; font-size:11px; margin-left:8px; font-weight:900; box-shadow:0 0 6px #a5f3fc;">Family Subscription</span>';
+          }
+          } else if (productName === 'Netflix') {
+         if (sectionName === 'SemiPrivate2') {
+            title += ' <span style="background:#000000; color:#ff3131; padding:2px 6px; border-radius:4px; font-size:11px; margin-left:8px; font-weight:900; box-shadow:0 0 6px #ff3131;">Standard Subscription</span>';
+          }
+         if (sectionName === 'SemiPrivate1' || sectionName === 'Whole Account') {
+            title += ' <span style="background:#000000; color:#ff3131; padding:2px 6px; border-radius:4px; font-size:11px; margin-left:8px; font-weight:900; box-shadow:0 0 6px #ff3131;">Premium Subscription</span>';
+          }
 
         } else if (productName === 'HBO Max') {
           if (sectionName.includes('(ULTIMATE)')) {
@@ -3033,10 +3059,12 @@ cancelBtn?.addEventListener("click", () => {
             title = 'Private Whole Account (1 Month)';
           }
         } else if (productName === 'Netflix') {
-          if (sectionName.includes('1 Profile(UHD 4K)')) {
-            title = '1 Profile(UHD 4K)';
+          if (sectionName.includes('SemiPrivate1')) {
+            title = 'SemiPrivate';
+          } else if (sectionName.includes('SemiPrivate2')) {
+            title = 'SemiPrivate';
           } else if (sectionName.includes('Whole Account')) {
-            title = 'Whole Account(UHD 4K)';
+            title = 'Whole Account';
           }
         } else if (productName === 'Spotify') {
           title += ' <span style="background:#39ff14; color:#000; padding:2px 6px; border-radius:4px; font-size:11px; margin-left:8px; font-weight:900; box-shadow:0 0 5px #39ff14;">VPNမလို</span>';
@@ -3263,8 +3291,8 @@ if (productName === "Domain") {
 if (productName === "Netflix") {
 
   // ✅ EXACT section name from productData
-  const UHD_SECTION = "1 Profile(UHD 4K)";
-  const FHD_SECTION = "1 Profile(FHD 1080P)";
+  const UHD_SECTION = "SemiPrivate1";
+  const FHD_SECTION = "SemiPrivate2";
 
   function getNetflixUhdCustomPrice(months) {
     if (months === 1) return 15000;
@@ -3759,15 +3787,19 @@ Private
 Support all device.
 Full warranty` + generalDetailsBlock,
     "Windows License": `100% original license\nSupports 32/64-bit\nOriginal retail key` + generalDetailsBlock,
-    "Microsoft 365": `Individual
-Up to 5 devices
+    "Microsoft 365": `Private
+Microsoft 365 ရဲ့ Personal Subscription ပါ။ OwnMail လို့ရေးမထားတာမလို့ဒီကအကောင့်ပေးတာပါ။ စာသေချာဖတ်ပီးမယူပေးကြပါဗျ။ Max 5 Devices လောက်ထိသုံးလို့ရပါတယ်။
 
-Invite with email
-Only 1 device per invite
+Own Mail Invite
+ဝယ်သူရဲ့ Email ကို Invite ပေးတာပါ။ Family Subscription ပါ။ Share သဘောပုံစံပဲဖြစ်လို့ 1 Month ဆိုရင် 20 Days to 30Days အထိ Random ရမာပါ။ ဥပမာ ကိုယ်က 1 ရက်နေ့ကဝယ်တာဆိုရင် 20 ရက်နေ့ကနေ 30 ရက်နေ့ထိကြားကပဲရမယ်ပြောတာပါ။
 
-Family Head(Can Invite 5 email)
-ကျနော်ပေးမဲ့ Head အကောင့်အပါအဝင်တခြား email 5ခုလုံးက(Word, Excel, etc.) and 1TB of OneDrive storageစတဲ့ Microsoft Copilot Proမာပါတဲ့ features တေအကုန်သုံးလို့ရသွားမာပါ။` + generalDetailsBlock,
-    "Netflix": `1 Profile
+Private Head
+Microsoft 365 ရဲ့ Family Subscription ပါ။ ကျနော်ပေးမဲ့ Head အကောင့်အပါအဝင်တခြား email 5ခုလုံးက(Word, Excel, etc.) and 1TB of OneDrive storageစတဲ့ Microsoft Family မာပါတဲ့ features တေအကုန်သုံးလို့ရသွားမာပါ။` + generalDetailsBlock,
+    "Netflix": `SemiPrivate1
+Own 1 profile you can use 2 devices.Tv Support.
+Full Warranty.
+
+SemiPrivate2
 Own 1 profile you can use 2 devices.Tv Support.
 Full Warranty.
 
@@ -3818,8 +3850,8 @@ ${chatGptWarrantyNote}
 
 Business Plus Own(Full Warranty)
 Full Warranty for full duration. Deactivateဖြစ်လဲတစ်လပြည့်တဲ့ထိလဲပေးမာပါ။` + generalDetailsBlock,
-    "Gemini Veo 3": `Private(Can Invite 5 Email)
-Includes 2000GB Google storage• Unlimited devices
+    "Gemini Veo 3": `Head(Can Invite 5 Email)
+Includes 5,000GB Google storage• Unlimited devices
 ဒါမဲ့ဝယ်ရင်စစချင်းသိထားရမာတေရှိပါတယ်။ Admin ပြောပြပါလိမ့်မယ်။
 3 Months (Full Warranty) — 3 Months လုံး Full Warranty ပေးပါတယ်။
 
@@ -3830,7 +3862,7 @@ OwnMail Invite
 Invite Planမို့လို့Ai Credit တစ်လ 1000ကိုတော့ Share Useရမာပါ။
 ဆိုလိုတာကတခြားFamily Membersတေသုံးရင်လဲCreditsတေကလျှော့နိုင်ပါတယ်။
 ဒီဟာဝယ်ရင်
-Google One Storage2TB 3 Months(Share)
+Google One Storage 5TB 3 Months(Share)
 Gemini Veo 3 Pro 3 Monthsပါရမာပါ။` + generalDetailsBlock,
 
 "NotebookLM": `OwnMail Invite
@@ -3838,7 +3870,7 @@ Gemini Veo 3 Pro 3 Monthsပါရမာပါ။` + generalDetailsBlock,
 ဒီဟာဝယ်ရင်
 Google One Storage2TB 3 Months(Share)
 Gemini Veo 3 Pro 3 Monthsပါရမာပါ။` + generalDetailsBlock,
-    "Grammarly AI": `Share\nFull warranty • One device only` + generalDetailsBlock,
+    "Claude Ai": `Share\nFull warranty • One device only` + generalDetailsBlock,
     "Zoom": `Full warranty.\nAll pro features unlock.\nCan use 2-5 devices.` + generalDetailsBlock,
     "YouTube Premium": `Private (Individual Plan)
 Full warranty.
@@ -4125,6 +4157,11 @@ if (
     return `Education edition (limited features). 5 Months Warranty.`;
     }
     }
+     if (productName === "Microsoft 365") {
+    if (item.section === "Private") {
+    return `Microsoft 365 ရဲ့ Personal Subscription ပါ။ OwnMail လို့ရေးမထားတာမလို့ဒီကအကောင့်ပေးတာပါ။ စာသေချာဖတ်ပီးမယူပေးကြပါဗျ။ Max 5 Devices လောက်ထိသုံးလို့ရပါတယ်။`;
+    }
+    }
     
    // ================= YOUTUBE PREMIUM CHECKOUT NOTES =================
    if (productName === "YouTube Premium") {
@@ -4169,7 +4206,7 @@ if (productName === "Express Vpn" && item.section === "Share" && /^phone/i.test(
 
       // --- Flow AI / NotebookLM Checkout Notes ---
    if ((productName === 'Flow AI' || productName === 'NotebookLM') && item.section === 'Private') {
-    return `Includes 2000GB Google storage• Unlimited devices
+    return `Includes 5,000GB Google storage• Unlimited devices
     ဒါမဲ့ဝယ်ရင်စစချင်းသိထားရမာတေရှိပါတယ်။ Admin ပြောပြပါလိမ့်မယ်။`;
    }
       const isAdobeProduct = adobeGroup.includes(productName);
@@ -4182,7 +4219,7 @@ if (productName === "Express Vpn" && item.section === "Share" && /^phone/i.test(
     isAdobeProduct ? "App&Web Private" : item.section;
 
     if (productName === 'Gemini Veo 3') {
-        const standardNote = `Includes 2000GB Google storage• Unlimited devices\nဒါမဲ့ဝယ်ရင်စစချင်းသိထားရမာတေရှိပါတယ်။ Admin ပြောပြပါလိမ့်မယ်။`;
+        const standardNote = `Includes 5,000GB Google storage• Unlimited devices\nဒါမဲ့ဝယ်ရင်စစချင်းသိထားရမာတေရှိပါတယ်။ Admin ပြောပြပါလိမ့်မယ်။`;
         if (item.section.includes('OwnMail')) return `ဒါကကိုယ့်ရဲ့GmailကိုပဲProလုပ်ပေးတာမလို့။အလုပ်လဲမရှုပ်ပါဘူး။ Password လဲပေးစရာမလိုပါဘူး။ Device ကလဲဝင်ထားသလောက်သုံးလို့ရနေမာပါ။ Full Warranty.`;
         if (item.duration.includes('Full Warranty')) return `${standardNote}\n3 Months (Full Warranty) — 3 Months လုံး Full Warranty ပေးပါတယ်။`;
         return standardNote;
@@ -4192,7 +4229,7 @@ if (productName === "Express Vpn" && item.section === "Share" && /^phone/i.test(
         if (productName === "INSHOT") return `Mod appမဟုတ်ပါဘူး။Android onlyပဲသူံးလို့ရပါတယ်။ Playstore ကappမာပဲသုံးလို့ရပါမယ်။\nWarranty 3လပေးပါတယ်။\nShare plan မို့လို့ 1 device ပဲသုံးလို့ရပါမယ်။`;
     if (!fullText) return null;
     const rawDetails = fullText.trim();
-    const sectionHeaders = /^(Share|Private|SemiPrivate|FullPrivate|Tinder Plus Share|Login|Gift Plan & Link Plan|Gift Plan|Link Plan|Views \(NoDrop\)|Likes \(NoDrop\)|Comment - Emoji Type|Comment - Custom Type|Package Plan|Livestream Views|Livestream Likes|Livestream Share|Post Views|Positive Reactions|Negative Reactions|Custom Reactions|Premium Reactions|Members \(30Days Refill\)|Livestream Views|Comment - Impression Type|Comment - Custom Type|Video Views|Video Likes|Post Likes|Profile Followers|Page Followers|Live Stream Views|Video Views & Reels|Likes|Followers|Personal Plus \(Share\)|Personal Plus \(Private\)|Business Plus - Invite Own Email|Business - Own|Private Own Mail|Private \(Own Mail\)|Base Service|1 Profile\(Semiprivate\)|5 Profiles\(Whole Account\)|Nitro Basic \(Key\)|Individual|Invite with email|Sharing Pro|Plan Basic|Plan Premium|HBO MAX \(ULTIMATE\) 1 Month|Private Whole Account \(1 Month\)|1 Profile|Whole Account|OwnMail Private|OwnMail Invite|Individual Plan|Business Own\(Full Warranty\)|Business Plus Own\(Full Warranty\)|Business Plus Own|Normal Plan|Family Head\(Can Invite 5 email\)|Invite Private|Web Private|App&Web Private|Pro Share|Pro Private|Lifetime Premium|Educational\(Invite\)|Individual Plan\(Private\)|Stars|Japan Region \(¥\)|US Region \(\$\)|UK Region \(£\)|Custom Amount|Turkey Region \(TL\)|Indonesia Region \(IDR\)|Brazil Region \(BRL\)|Korea Region \(₩\)|India Region \(₹\)|Australia Region \(A\$\)|Germany Region \(€\)|France Region \(€\)|Italy Region \(€\)|Switzerland Region \(CHF\)|Canada Region \(C\$\)|UAE Region \(AED\)|Poland Region \(PLN\)|Nitro \(Key\))/i;
+    const sectionHeaders = /^(Share|Private|SemiPrivate|FullPrivate|Tinder Plus Share|Login|Gift Plan & Link Plan|Gift Plan|Link Plan|Views \(NoDrop\)|Likes \(NoDrop\)|Comment - Emoji Type|Comment - Custom Type|Package Plan|Livestream Views|Livestream Likes|Livestream Share|Post Views|Positive Reactions|Negative Reactions|Custom Reactions|Premium Reactions|Members \(30Days Refill\)|Livestream Views|Comment - Impression Type|Comment - Custom Type|Video Views|Video Likes|Post Likes|Profile Followers|Page Followers|Live Stream Views|Video Views & Reels|Likes|Followers|Personal Plus \(Share\)|Personal Plus \(Private\)|Business Plus - Invite Own Email|Business - Own|Private Own Mail|Private \(Own Mail\)|Base Service|1 Profile\(Semiprivate\)|5 Profiles\(Whole Account\)|Nitro Basic \(Key\)|Individual|Own Mail Invite|Sharing Pro|Plan Basic|Plan Premium|HBO MAX \(ULTIMATE\) 1 Month|Private Whole Account \(1 Month\)|1 Profile|Whole Account|OwnMail Private|OwnMail Invite|Individual Plan|Business Own\(Full Warranty\)|Business Plus Own\(Full Warranty\)|Business Plus Own|Normal Plan|Family Head\(Can Invite 5 email\)|Invite Private|Web Private|App&Web Private|Pro Share|Pro Private|Lifetime Premium|Educational\(Invite\)|Individual Plan\(Private\)|Stars|Japan Region \(¥\)|US Region \(\$\)|UK Region \(£\)|Custom Amount|Turkey Region \(TL\)|Indonesia Region \(IDR\)|Brazil Region \(BRL\)|Korea Region \(₩\)|India Region \(₹\)|Australia Region \(A\$\)|Germany Region \(€\)|France Region \(€\)|Italy Region \(€\)|Switzerland Region \(CHF\)|Canada Region \(C\$\)|UAE Region \(AED\)|Poland Region \(PLN\)|Nitro \(Key\))/i;
     const lines = rawDetails.split('\n').map(l => l.trim()).filter(l => l.length > 0);
     let targetSection = String(forceNoteSectionName).replace(/\s*\(.*\)/, '');
     if (productName === 'HBO Max') targetSection = item.section;
@@ -4262,11 +4299,13 @@ if (productName === "Express Vpn" && item.section === "Share" && /^phone/i.test(
     }
     const netflixMultiItem = cart.find(item =>
     item.product === 'Netflix' &&
-    item.section.replace(/\s*\(.*\)/, '').trim() === '1 Profile' &&
+    ['SemiPrivate1', 'SemiPrivate2'].includes(
+    item.section.replace(/\s*\(.*\)/, '').trim()
+  ) &&
     item.qty > 1
     );
     if (netflixMultiItem) {
-      let burmeseText = `ဒါက${netflixMultiItem.qty}Profile စာဝယ်တာပါ။${netflixMultiItem.qty}လစာသဘောမျိုးမဟုတ်ပါဘူး။စာသေချာဖတ်ပေးပါ။`.replace(/(\d+)/g, '<span class="warning-num">$1</span>');
+      let burmeseText = `ဒါက ${netflixMultiItem.qty} Profiles ဝယ်လိုက်တဲ့သဘောပါ။ လများများယူတာမဟုတ်ပါဘူး။ ယူချင်ရင်အောက်မာ More Months Option တေရှိပါတယ်ဗျ။`.replace(/(\d+)/g, '<span class="warning-num">$1</span>');
       quantityWarning += `<div class="payment-warning-block"><div class="nt-line" style="color:#ffca28;font-weight:700;text-transform:uppercase;">ATTENTION: MULTIPLE MONTHS</div><div class="nt-line burmese-font">${burmeseText}</div></div>`;
     }
     const uniqueProductNotes = new Map();

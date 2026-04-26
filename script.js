@@ -645,11 +645,11 @@
     },
     "Google One": {
       "OwnMail invite": [{
-        "duration": "3 Months (5,000GB + Gemini Pro)",
+        "duration": "3 Months (5 TB + Gemini Pro)",
         "price": "10,000 Kyats"
       }],
       "Private": [{
-        "duration": "3 Months (5,000GB + Gemini Pro)",
+        "duration": "3 Months (5 TB + Gemini Pro)",
         "price": "15,000 Kyats"
       }]
     },
@@ -691,7 +691,7 @@
     },
     "Gemini Veo 3": {
       "Head(Can Invite 5 Email)": [{
-        "duration": "3 Months (+5000GB storage)",
+        "duration": "3 Months (+5 TB Storage)",
         "price": "15,000 Kyats"
       }],
       "OwnMail Invite": [{
@@ -2305,7 +2305,7 @@ const popupTextByProduct = {
     "Privacy တေဘာတေရှိလို့ပေးဝင်လို့မရဘူးဆိုတဲ့သူတေကတော့ခုထဲကမဝယ်လို့ရပါပီ။ ကျနော်ကတော့လုပ်စရာရှိတာလုပ်ပီးပြန်ထွက်မာပါပဲ။ မယုံရင်တော့ Private Head ပဲယူပါ။",
     "Private Head ဆိုတာက ကျနော်ဒီကအကောင့်ပေးမာပါ။ အဲ့အကောင့်ကနေ OwnMail invite plan လိုမျိုး Email 5ခုကိုပြန် Invite လို့ရပါတယ်။ ဒါပေမဲ့ Region တေပြောင်းတတ်မရမာပါ။ ဝင်မဲ့သူတေက Head account နဲ့ Region တူမရမာကိုပြောတာပါ။",
     "ဘာဝယ်သင့်လဲဆိုရင်တော့ Gemini Pro features တေကတူတူပါပဲကွာသွားတာက Ai Credit ကို OwnMail Plan က Share သုံးရတာပါ။ Private ကတော့ကိုယ်တယောက်ထဲသုံးရတာပါ။ အဲ့ Credit ကဘာအတွက်လဲဆိုတာမသိရင်တော့ OwnMail Plan ကိုသာရွေးလိုက်ပါ။",
-    "ပီးတော့ Private မာက 2TB ကိုကိုယ်‌တယောက်ထဲသုံးရမာဖြစ်ပီး၊ OwnMail Planမာတော့ Sharing သဘောပါ။ ဒါပေမဲ့ကိုယ်တိုင်တာတေကိုဘယ်သူမမြင်ရပါဘူး။ Storage ပြည့်ပီးစာမဝင်တော့တဲ့သူတေအတွက်အသုံးဝင်ပါတယ်။",
+    "ပီးတော့ Private မာက 5 TB ကိုကိုယ်‌တယောက်ထဲသုံးရမာဖြစ်ပီး၊ OwnMail Planမာတော့ Sharing သဘောပါ။ ဒါပေမဲ့ကိုယ်တိုင်တာတေကိုဘယ်သူမမြင်ရပါဘူး။ Storage ပြည့်ပီးစာမဝင်တော့တဲ့သူတေအတွက်အသုံးဝင်ပါတယ်။",
     "Android, iOS, PC, Laptop အကုန်ရပါတယ်။ Official App တေ Website တေမာပဲသုံးရမာပါ။"
   ],
     stepButtons: [
@@ -3862,13 +3862,13 @@ OwnMail Invite
 Invite Planမို့လို့Ai Credit တစ်လ 1000ကိုတော့ Share Useရမာပါ။
 ဆိုလိုတာကတခြားFamily Membersတေသုံးရင်လဲCreditsတေကလျှော့နိုင်ပါတယ်။
 ဒီဟာဝယ်ရင်
-Google One Storage 5TB 3 Months(Share)
+Google One Storage 5 TB 3 Months(Share)
 Gemini Veo 3 Pro 3 Monthsပါရမာပါ။` + generalDetailsBlock,
 
 "NotebookLM": `OwnMail Invite
 ဒီဟာကGoogle One Pro,Gemini Proဝယ်ရင်ပါတဲ့ဟာပါ။
 ဒီဟာဝယ်ရင်
-Google One Storage2TB 3 Months(Share)
+Google One Storage 5 TB 3 Months(Share)
 Gemini Veo 3 Pro 3 Monthsပါရမာပါ။` + generalDetailsBlock,
     "Claude Ai": `Share\nFull warranty • One device only` + generalDetailsBlock,
     "Zoom": `Full warranty.\nAll pro features unlock.\nCan use 2-5 devices.` + generalDetailsBlock,

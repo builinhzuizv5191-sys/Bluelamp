@@ -670,7 +670,7 @@
       }],
       "Business Plus - Invite Own Email": [{
         "duration": "1 Month",
-        "price": "12,000 Kyats"
+        "price": "Out Of Stock"
       }],                                     
       "Business Plus Own": [{
         "duration": "1 Month",

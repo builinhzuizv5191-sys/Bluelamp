@@ -833,7 +833,7 @@
     },
     "SCRIBD": {
       "Private": [{
-        "duration": "2 Months",
+        "duration": "1 Months",
         "price": "6,000 Kyats"
       }]
     },
@@ -1261,10 +1261,10 @@
     "Telegram Star": {
       "Stars": [{
         "duration": "50 Stars",
-        "price": "3,800 Kyats"
+        "price": "4,000 Kyats"
       }, {
         "duration": "100 Stars",
-        "price": "7,600 Kyats"
+        "price": "8,000 Kyats"
       }]
     },
     "Google Play Gift Card": {
@@ -3826,7 +3826,7 @@ Family Plan
 Only for Android.
 This did not work on iOS.
 Full warranty.
-Renewလို့ရပါတယ်။သက်တန်းတိုးရင်တော့တစ်လကို6,000Ksပါ။` + generalDetailsBlock,
+Renewလို့ရပါတယ်။သက်တန်းတိုးရင်တော့တစ်လကို8,500Ksပါ။` + generalDetailsBlock,
     "Qobuz": `Individual Plan
 Recommend for iOS device
 Full warranty.` + generalDetailsBlock,

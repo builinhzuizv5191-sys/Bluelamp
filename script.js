@@ -144,7 +144,6 @@
     "Perplexity Ai": "https://ik.imagekit.io/dkdlgynlu/New-Project-52-F59-EE5-A.png",
     "Flow AI": "https://ik.imagekit.io/dkdlgynlu/Wattpad%20_A4B3FC6_.png?updatedAt=1768837724112",
     "NotebookLM": "https://ik.imagekit.io/dkdlgynlu/Wattpad%20_363313A_.png?updatedAt=1768837724010",
-    "GAGAOOLALA": "https://ik.imagekit.io/dkdlgynlu/New-Project-52-B18851-D.png",
     "BSTATION": "https://ik.imagekit.io/dkdlgynlu/New-Project-52-631-CC84.png",
     "INSHOT": "https://ik.imagekit.io/dkdlgynlu/Picsart-25-10-16-13-54-58-884.png",
     "Duolingo Super": "https://ik.imagekit.io/dkdlgynlu/New-Project-52-E560-B70.png",
@@ -152,7 +151,7 @@
     "WPS Office": "https://ik.imagekit.io/dkdlgynlu/New-Project-52-49DAE75.png",
     "TradingView": "https://ik.imagekit.io/dkdlgynlu/Picsart-25-11-10-18-02-36-751.png",
     "TeraBox": "https://ik.imagekit.io/dkdlgynlu/Picsart-25-11-10-18-01-52-861.png",
-    "PlaySafeCard": "https://ik.imagekit.io/dkdlgynlu/New-Project-52-478-B983.png",
+    "PaySafeCard": "https://ik.imagekit.io/dkdlgynlu/New-Project-52-478-B983.png",
     "TikTok Official": "https://ik.imagekit.io/dkdlgynlu/New-Project-52-B93-FC6-C.png",
     "TikTok Non Official": "https://ik.imagekit.io/dkdlgynlu/New-Project-52-B93-FC6-C.png",
     "Telegram Boosting": "https://ik.imagekit.io/dkdlgynlu/New-Project-52-ED17968.png",
@@ -582,15 +581,15 @@
       }]
     },
     "HBO Max": {
-      "HBO MAX (ULTIMATE) 1 Month": [{
+      "1 Month": [{
         "duration": "1P 2U",
         "price": "8,000 Kyats"
       }, {
         "duration": "Semiprivate",
         "price": "12,000 Kyats"
       }],
-      "Private Whole Account (1 Month)": [{
-        "duration": "5 Profile",
+      "Whole Account": [{
+        "duration": "1 Month",
         "price": "40,000 Kyats"
       }]
     },
@@ -605,23 +604,29 @@
       }]
     },
     "Spotify": {
-      "Individual Plan(Private)": [{
+      "Private": [{
         "duration": "2 Months",
         "price": "18,000 Kyats"
+      }, {
+        "duration": "3 Months",
+        "price": "25,000 Kyats"
       }],
-      "Family Plan": [{
+      "Family Private": [{
         "duration": "2 Months",
         "price": "15,000 Kyats"
+      }, {
+        "duration": "3 Months",
+        "price": "20,000 Kyats"
       }]
     },
     "Apple Music": {
-      "Individual Plan": [{
+      "Private": [{
         "duration": "1 Month (Can renew)",
         "price": "7,500 Kyats"
       }]
     },
     "Qobuz": {
-      "Individual Plan": [{
+      "Private": [{
         "duration": "1 Month",
         "price": "9,000 Kyats"
       }]
@@ -629,8 +634,8 @@
     "Google Drive": {
       "Share": [],
       "Private": [{
-        "duration": "Lifetime (1000GB)",
-        "price": "30,000 Kyats"
+        "duration": "Lifetime",
+        "price": "Out Of Stock"
       }]
     },
     "iCloud": {
@@ -645,18 +650,18 @@
     },
     "Google One": {
       "OwnMail invite": [{
-        "duration": "3 Months (5 TB + Gemini Pro)",
+        "duration": "3 Months (+ Gemini Pro)",
         "price": "10,000 Kyats"
       }],
       "Private": [{
-        "duration": "3 Months (5 TB + Gemini Pro)",
+        "duration": "3 Months (+ Gemini Pro)",
         "price": "15,000 Kyats"
       }]
     },
     "TeraBox": {
       "Sharing": [{
         "duration": "1 Year (2TB)",
-        "price": "15,000 Kyats"
+        "price": "Out Of Stock"
       }]
     },
     "ChatGPT Plus": {
@@ -731,6 +736,9 @@
       }, {
         "duration": "1 Month",
         "price": "8,599 Kyats"
+      }, {
+        "duration": "38~42 Days",
+        "price": "10,000 Kyats"
       }]
     },
     "YouTube Premium": {
@@ -778,9 +786,16 @@
       }]
     },
     "Discord": {
-      "Nitro (Key)": [{
+      "Private": [{
         "duration": "3 Months",
         "price": "29,500 Kyats"
+      }],
+      "Sever Boost": [{
+        "duration": "1 Month 14 Boost",
+        "price": "36,000 Kyats"
+      }, {
+        "duration": "3 Months 14 Boost",
+        "price": "78,000 Kyats"
       }]
     },
     "Perplexity Ai": {
@@ -797,12 +812,6 @@
         "price": "Out Of Stock"
       }]
     },
-    "GAGAOOLALA": {
-      "Private": [{
-        "duration": "1 Month",
-        "price": "5,000 Kyats"
-      }]
-    },
     "BSTATION": {
       "Private": [{
         "duration": "1 Month",
@@ -816,19 +825,12 @@
       }]
     },
     "Duolingo Super": {
-      "Family Head(Can Invite 5 email)": [{
+      "Family Head": [{
         "duration": "14 Days",
-        "price": "5,000 Kyats"
+        "price": "Not For Sale"
       }, {
         "duration": "1 Month",
-        "price": "10,000 Kyats"
-      }],
-      "Invite Private": [{
-        "duration": "14 Days",
-        "price": "2,500 Kyats"
-      }, {
-        "duration": "1 Month",
-        "price": "5,000 Kyats"
+        "price": "Not For Sale"
       }]
     },
     "SCRIBD": {
@@ -838,12 +840,12 @@
       }]
     },
     "WPS Office": {
-      "Sharing Pro": [{
+      "Share": [{
         "duration": "1 Month",
-        "price": "8,000 Kyats"
+        "price": "Out Of Stock"
       }, {
         "duration": "1 Year",
-        "price": "34,500 Kyats"
+        "price": "Out Of Stock"
       }]
     },
     "TradingView": {
@@ -852,9 +854,9 @@
         "price": "25,000 Kyats"
       }]
     },
-    "PlaySafeCard": {
-      "Voucher": [{
-        "duration": "1 Card",
+    "PaySafeCard": {
+      "Account": [{
+        "duration": "1 Account",
         "price": "3,000 Kyats"
       }]
     },
@@ -871,60 +873,60 @@
     "TikTok Non Official": {
       "Views (NoDrop)": [{
         "duration": "10,000 Views",
-        "price": "1,000 Kyats"
+        "price": "Out Of Stock"
       }, {
         "duration": "100,000 Views",
-        "price": "1,590 Kyats"
+        "price": "Out Of Stock"
       }, {
         "duration": "1,000,000 Views",
-        "price": "15,000 Kyats"
+        "price": "Out Of Stock"
       }],
       "Likes (NoDrop)": [{
         "duration": "1,000 Likes",
-        "price": "1,000 Kyats"
+        "price": "Out Of Stock"
       }, {
         "duration": "10,000 Likes",
-        "price": "9,500 Kyats"
+        "price": "Out Of Stock"
       }, {
         "duration": "100,000 Likes",
-        "price": "80,000 Kyats"
+        "price": "Out Of Stock"
       }],
       "Package Plan": [{
         "duration": "100k Views + 10k Likes",
-        "price": "10,000 Kyats"
+        "price": "Out Of Stock"
       }, {
         "duration": "1M Views + 100k Likes",
-        "price": "85,000 Kyats"
+        "price": "Out Of Stock"
       }],
       "Livestream Views": [{
         "duration": "1,000 Views (15 min)",
-        "price": "8,000 Kyats"
+        "price": "Out Of Stock"
       }, {
         "duration": "1,000 Views (30 min)",
-        "price": "15,000 Kyats"
+        "price": "Out Of Stock"
       }, {
         "duration": "1,000 Views (60 min)",
-        "price": "30,000 Kyats"
+        "price": "Out Of Stock"
       }, {
         "duration": "10,000 Views (15 min)",
-        "price": "80,000 Kyats"
+        "price": "Out Of Stock"
       }],
       "Livestream Likes": [{
         "duration": "1,000 Likes",
-        "price": "500 Kyats"
+        "price": "Out Of Stock"
       }, {
         "duration": "10,000 Likes",
-        "price": "1,000 Kyats"
+        "price": "Out Of Stock"
       }, {
         "duration": "100,000 Likes",
-        "price": "10,000 Kyats"
+        "price": "Out Of Stock"
       }],
       "Livestream Share": [{
         "duration": "1,000 Shares",
-        "price": "500 Kyats"
+        "price": "Out Of Stock"
       }, {
         "duration": "10,000 Shares",
-        "price": "5,000 Kyats"
+        "price": "Out Of Stock"
       }]
     },
     "Telegram Boosting": {
@@ -1183,21 +1185,6 @@
         "price": "20,000 Kyats"
       }]
     },
-    "Wattpad": {
-      "Sharing": [{
-        "duration": "1 Month",
-        "price": "3,000 Kyats"
-      }, {
-        "duration": "3 Months",
-        "price": "7,000 Kyats"
-      }, {
-        "duration": "6 Months",
-        "price": "12,000 Kyats"
-      }, {
-        "duration": "1 Year",
-        "price": "22,000 Kyats"
-      }]
-    },
     "Photoshop": {
       "Web Private": [{
         "duration": "12 Months",
@@ -1254,7 +1241,7 @@
     },
     "Crunchyroll": {
       "Share": [{
-        "duration": "9 Months",
+        "duration": "4 Months",
         "price": "20,000 Kyats"
       }]
     },
@@ -1838,14 +1825,13 @@
     "Telegram Premium": ["android", "ios", "pc"],
     "Discord": ["android", "ios", "pc"],
     "Perplexity Ai": ["android", "ios", "pc"],
-    "GAGAOOLALA": ["android", "ios", "pc", "tv"],
     "BSTATION": ["android", "ios", "pc", "tv"],
     "INSHOT": ["android"],
     "Duolingo Super": ["android", "ios", "pc"],
     "SCRIBD": ["android", "ios", "pc"],
     "WPS Office": ["android", "ios", "pc"],
     "TradingView": ["android", "ios", "pc"],
-    "PlaySafeCard": [],
+    "PaySafeCard": [],
     "TikTok Official": ["android", "ios", "pc"],
     "TikTok Non Official": ["android", "ios", "pc"],
     "Telegram Boosting": ["android", "ios", "pc"],
@@ -1854,7 +1840,6 @@
     "Instagram Boosting": ["android", "ios", "pc"],
     "Custom Website Service": ["pc"],
     "LightRoom": ["android", "ios", "pc"],
-    "Wattpad": ["android", "ios", "pc"],
     "Photoshop": ["pc"],
     "Adobe Creative Cloud": ["pc", "android", "ios"],
     "Adobe Premiere Pro": ["pc"],
@@ -2472,7 +2457,7 @@ const popupTextByProduct = {
   button: "ဒါရှင်းပြပေးပါ။",
   doneText: "ဟုတ်ပီဟုတ်ပီ",
   steps: [
-    "Crunchyroll က Anime တေကြည့်တဲ့ App ပါ။ ဒါကသူ့ရဲ့ Premium Plan ကို‌ Share ရောင်းပေးတာပါ။ Share ဆိုတဲ့အတိုင်း 9Months လို့ပြထားပေမဲ့ပြည့်မာမဟုတ်ပါဘူး။ But 1Month 10K ဆိုရင်တောင်ကြည့်တတ်ရင်တန်ပါတယ်။ 1 Device Only. All devices support except Tv."
+    "Crunchyroll က Anime တေကြည့်တဲ့ App ပါ။ ဒါကသူ့ရဲ့ Mega Fan Subscription ကို‌ Share ရောင်းပေးတာပါ။ 1 Device Only. All devices support except Tv."
   ]
 },
   "Spotify": {
@@ -3037,6 +3022,10 @@ cancelBtn?.addEventListener("click", () => {
          if (sectionName === 'Share' || sectionName === 'Private' || sectionName === 'OwnMail Private') {
             title += ' <span style="background:#000000; color:#ffffff; padding:2px 6px; border-radius:4px; font-size:11px; margin-left:8px; font-weight:900; box-shadow:0 0 6px #666666;">Pro Subscription</span>';
           }
+          } else if (productName === 'Telegram Premium') {
+         if (sectionName === 'Login' || sectionName === 'Gift Plan' || sectionName === 'Link Plan') {
+            title += ' <span style="background:#bae6fd; color:#082f49; padding:2px 6px; border-radius:4px; font-size:11px; margin-left:8px; font-weight:900; box-shadow:0 0 6px #bae6fd;">Premium Subscription</span>';
+          }
           } else if (productName === 'Microsoft 365') {
          if (sectionName === 'Private') {
             title += ' <span style="background:#f1f5f9; color:#0f172a; padding:2px 6px; border-radius:4px; font-size:11px; margin-left:8px; font-weight:900; box-shadow:0 0 6px #e2e8f0;">Personal Subscription</span>';
@@ -3051,13 +3040,87 @@ cancelBtn?.addEventListener("click", () => {
          if (sectionName === 'SemiPrivate1' || sectionName === 'Whole Account') {
             title += ' <span style="background:#000000; color:#ff3131; padding:2px 6px; border-radius:4px; font-size:11px; margin-left:8px; font-weight:900; box-shadow:0 0 6px #ff3131;">Premium Subscription</span>';
           }
-
-        } else if (productName === 'HBO Max') {
-          if (sectionName.includes('(ULTIMATE)')) {
-            title = 'HBO MAX (ULTIMATE) 1 Month';
-          } else if (sectionName.includes('Private Whole Account')) {
-            title = 'Private Whole Account (1 Month)';
+          } else if (productName === 'HBO Max') {
+         if (sectionName === '1 Month') {
+            title += ' <span style="background:#cbd5e1; color:#0f172a; padding:2px 6px; border-radius:4px; font-size:11px; margin-left:8px; font-weight:900; box-shadow:0 0 6px #cbd5e1;">Ultimate</span>';
           }
+         if (sectionName === 'Whole Account') {
+            title += ' <span style="background:#cbd5e1; color:#0f172a; padding:2px 6px; border-radius:4px; font-size:11px; margin-left:8px; font-weight:900; box-shadow:0 0 6px #cbd5e1;">Standard</span>';
+          }
+          } else if (productName === 'Prime Video') {
+         if (sectionName === 'Share' || sectionName === 'Private') {
+            title += ' <span style="background:#2563eb; color:#ffffff; padding:2px 6px; border-radius:4px; font-size:11px; margin-left:8px; font-weight:900; box-shadow:0 0 6px #60a5fa;">Prime</span>';
+          }
+          } else if (productName === 'TikTok Official') {
+         if (sectionName === 'Login method' || sectionName === 'NoLoginBoost') {
+            title += ' <span style="background:#000000; color:#ffffff; padding:2px 6px; border-radius:4px; font-size:11px; margin-left:8px; font-weight:900; box-shadow:0 0 6px #9d4edd;">Boosting</span>';
+          }
+          } else if (productName === 'Crunchyroll') {
+         if (sectionName === 'Share') {
+            title += ' <span style="background:#ff7a18; color:#ffffff; padding:2px 6px; border-radius:4px; font-size:11px; margin-left:8px; font-weight:900; box-shadow:0 0 6px #ff7a18;">Mega Fan</span>';
+          }
+          } else if (productName === 'Apple Music') {
+         if (sectionName === 'Private') {
+            title += ' <span style="background:#ef4444; color:#ffffff; padding:2px 6px; border-radius:4px; font-size:11px; margin-left:8px; font-weight:900; box-shadow:0 0 6px #ef4444;">Individual Subscription</span>';
+          }
+          } else if (productName === 'YouTube Premium') {
+         if (sectionName === 'Private') {
+            title += ' <span style="background:#ff0000; color:#ffffff; padding:2px 6px; border-radius:4px; font-size:11px; margin-left:8px; font-weight:900; box-shadow:0 0 6px #ff0000;">Individual Subscription</span>';
+          }
+          } else if (productName === 'Qobuz') {
+         if (sectionName === 'Private') {
+            title += ' <span style="background:#000000; color:#ffffff; padding:2px 6px; border-radius:4px; font-size:11px; margin-left:8px; font-weight:900; box-shadow:0 0 6px #666666;">Individual Subscription</span>';
+          }
+          } else if (productName === 'Zoom') {
+         if (sectionName === 'Private') {
+            title += ' <span style="background:#2563eb; color:#ffffff; padding:2px 6px; border-radius:4px; font-size:11px; margin-left:8px; font-weight:900; box-shadow:0 0 6px #2563eb;">Pro Subscription</span>';
+          }
+          } else if (productName === 'BSTATION') {
+         if (sectionName === 'Private') {
+            title += ' <span style="background:#0284c7; color:#ffffff; padding:2px 6px; border-radius:4px; font-size:11px; margin-left:8px; font-weight:900; box-shadow:0 0 6px #0284c7;">Premium Subscription</span>';
+          }
+          } else if (productName === 'TradingView') {
+         if (sectionName === 'Private') {
+            title += ' <span style="background:#000000; color:#ffffff; padding:2px 6px; border-radius:4px; font-size:11px; margin-left:8px; font-weight:900; box-shadow:0 0 6px #666666;">Plus Subscription</span>';
+          }
+          } else if (productName === 'SCRIBD') {
+         if (sectionName === 'Private') {
+            title += ' <span style="background:#0f766e; color:#ffffff; padding:2px 6px; border-radius:4px; font-size:11px; margin-left:8px; font-weight:900; box-shadow:0 0 6px #2dd4bf;">Premium Subscription</span>';
+          }
+          } else if (productName === 'WPS Office') {
+         if (sectionName === 'Share') {
+            title += ' <span style="background:#dc2626; color:#ffffff; padding:2px 6px; border-radius:4px; font-size:11px; margin-left:8px; font-weight:900; box-shadow:0 0 6px #dc2626;">Pro Subscription</span>';
+          }
+          } else if (productName === 'Google Drive') {
+         if (sectionName === 'Private') {
+            title += ' <span style="background:#cbd5e1; color:#0f172a; padding:2px 6px; border-radius:4px; font-size:11px; margin-left:8px; font-weight:900; box-shadow:0 0 6px #cbd5e1;">1,000 GB</span>';
+          }
+          } else if (productName === 'Duolingo Super') {
+         if (sectionName === 'Family Head') {
+            title += ' <span style="background:#2e1065; color:#ffffff; padding:2px 6px; border-radius:4px; font-size:11px; margin-left:8px; font-weight:900; box-shadow:0 0 6px #c084fc;">Super Subscription</span>';
+          }
+          } else if (productName === 'Spotify') {
+         if (sectionName === 'Private') {
+            title += ' <span style="background:#000000; color:#00ff9c; padding:2px 6px; border-radius:4px; font-size:11px; margin-left:8px; font-weight:900; box-shadow:0 0 6px #00ff9c;">Individual Subscription</span>';
+          }
+         if (sectionName === 'Family Private') {
+            title += ' <span style="background:#000000; color:#00ff9c; padding:2px 6px; border-radius:4px; font-size:11px; margin-left:8px; font-weight:900; box-shadow:0 0 6px #00ff9c;">Family Subscription</span>';
+          }
+          } else if (productName === 'Google One') {
+         if (sectionName === 'Private') {
+            title += ' <span style="background:#cbd5e1; color:#0f172a; padding:2px 6px; border-radius:4px; font-size:11px; margin-left:8px; font-weight:900; box-shadow:0 0 6px #cbd5e1;">5,000 GB</span>';
+          }
+         if (sectionName === 'OwnMail invite') {
+            title += ' <span style="background:#cbd5e1; color:#0f172a; padding:2px 6px; border-radius:4px; font-size:11px; margin-left:8px; font-weight:900; box-shadow:0 0 6px #cbd5e1;">5,000 GB</span>';
+          }
+          } else if (productName === 'Discord') {
+         if (sectionName === 'Private') {
+            title += ' <span style="background:#a855f7; color:#ffffff; padding:2px 6px; border-radius:4px; font-size:11px; margin-left:8px; font-weight:900; box-shadow:0 0 6px #a855f7;">Nitro Subscription</span>';
+          }
+         if (sectionName === 'Sever Boost') {
+            title += ' <span style="background:#a855f7; color:#ffffff; padding:2px 6px; border-radius:4px; font-size:11px; margin-left:8px; font-weight:900; box-shadow:0 0 6px #a855f7;">Nitro</span>';
+          }
+        
         } else if (productName === 'Netflix') {
           if (sectionName.includes('SemiPrivate1')) {
             title = 'SemiPrivate';
@@ -3066,8 +3129,6 @@ cancelBtn?.addEventListener("click", () => {
           } else if (sectionName.includes('Whole Account')) {
             title = 'Whole Account';
           }
-        } else if (productName === 'Spotify') {
-          title += ' <span style="background:#39ff14; color:#000; padding:2px 6px; border-radius:4px; font-size:11px; margin-left:8px; font-weight:900; box-shadow:0 0 5px #39ff14;">VPNမလို</span>';
         } else if (productName === 'Gemini Veo 3') {
           if (sectionName.includes('OwnMail')) {
             title = 'OwnMail Invite';
@@ -3817,17 +3878,17 @@ Semiprivate: 1 Profile / Semi-Private
 Private Whole Account (1 Month)
 5 Profile` + generalDetailsBlock,
     "Prime Video": `Share\nFull warranty • One device only\n\nPrivate\nFull warranty • Up to 3 devices` + generalDetailsBlock,
-    "Spotify": `Individual Plan(Private)
+    "Spotify": `Private
 • Private Plan မို့လို့ 1 person 1 device ပဲသုံးသင့်ပါတယ်။ Official appမာသုံးရတာဆိုပေမဲ့တစ်လကို$11.99ပေးပီးဝယ်တာမဟုတ်လို့ Risk ကတော့ရှိပါတယ်။အဆင်ပြေတယ်ဆိုမယူပါ။ Old account က Playlist, Favorite Artist, Favorite Songs, Favorite albums,Liked Songsအကုန်အကာင့်အသစ်ကိုပြောင်းပေးပါတယ်။ 2 Months အတွင်း full warranty ဖြစ်လို့တခုခုဖြစ်ခဲ့ရင် warranty အနေနဲ့အခုပြန်လဲ ပေးမာပါ တခါပဲလဲ ပေးမာပါ။ Setting ထဲသွားပီး account delete တာတို့တော့မပါပါဘူး။
 
-Family Plan
-• Official appမာသုံးရတာဆိုပေမဲ့တစ်လကို$11.99ပေးပီးဝယ်တာမဟုတ်လို့ Risk ကတော့ရှိပါတယ်။အဆင်ပြေတယ်ဆိုမယူပါ။ ဝယ်ထားတဲ့အကောင့်ကိုပဲကုန်ရင်သက်တန်းတိုးလို့ရပါတယ်။ 2Months Full warranty.` + generalDetailsBlock,
+Family Private
+• Official appမာသုံးရတာဆိုပေမဲ့တစ်လကို$11.99ပေးပီးဝယ်တာမဟုတ်လို့ Risk ကတော့ရှိပါတယ်။အဆင်ပြေတယ်ဆိုမယူပါ။ ဝယ်ထားတဲ့အကောင့်ကိုပဲကုန်ရင်သက်တန်းတိုးလို့ရပါတယ်။ Full warranty.` + generalDetailsBlock,
     "Apple Music": `Individual Plan
 Only for Android.
 This did not work on iOS.
 Full warranty.
 Renewလို့ရပါတယ်။သက်တန်းတိုးရင်တော့တစ်လကို8,500Ksပါ။` + generalDetailsBlock,
-    "Qobuz": `Individual Plan
+    "Qobuz": `Private
 Recommend for iOS device
 Full warranty.` + generalDetailsBlock,
     "Google One": `Private (own mail)\nIncludes GeminiVeo3 AI + premium features\nFull warranty` + generalDetailsBlock,
@@ -3907,7 +3968,6 @@ OwnMail Private
 Can use up to 5 devices.
 Full warranty.
 ကုန်ရင်သက်တန်းတိုးလို့ရပါတယ်။` + generalDetailsBlock,
-    "GAGAOOLALA": `Private\nFull warranty.` + generalDetailsBlock,
     "BSTATION": `Private\nFull warranty.` + generalDetailsBlock,
     "INSHOT": `Lifetime Premium
 Mod appမဟုတ်ပါဘူး။Android onlyပဲသူံးလို့ရပါတယ်။ Playstore ကappမာပဲသုံးလို့ရပါမယ်။
@@ -3915,15 +3975,15 @@ Warranty 3လပေးပါတယ်။
 Share plan မို့လို့ 1 device ပဲသုံးလို့ရပါမယ်။` + generalDetailsBlock,
     "Duolingo Super": `Family Head(Can Invite 5 email)\nFull warranty for plan duration.\n\nInvite Private\nFull warranty for plan duration.` + generalDetailsBlock,
     "SCRIBD": `Private\nFull warranty for plan duration.` + generalDetailsBlock,
-    "WPS Office": `Sharing Pro
+    "WPS Office": `Share
 Full warranty for full duration.
 One device only.
 Includes all premium features in WPS. (Word, Spreadsheets, Presentation, PDF tools)` + generalDetailsBlock,
     "TradingView": `Private
 Full warranty for full duration.
 Supports all devices.` + generalDetailsBlock,
-    "PlaySafeCard": `Voucher Code
-Expires in 7 Days.
+    "PaySafeCard": `Account
+Expires in 3 Days.
 Please contact admin for usage details.` + generalDetailsBlock,
     "Domain": `My.ID/my.id
     1 Year — 30,000 Kyats
@@ -3983,7 +4043,6 @@ Adobe Fonts — Fonts
 Creative Cloud Libraries — Asset Management
 Adobe Portfolio — Portfolio Websites
 Behance — Creative Community` + generalDetailsBlock,
-    "Wattpad": `Sharing\nOne device only\nFull warranty.` + generalDetailsBlock,
     "Photoshop": `Web Private
 warranty back free only.
 
@@ -4072,12 +4131,12 @@ if (
   return `<div class="burmese-font">Full Warranty for full duration. Deactivateဖြစ်လဲတစ်လပြည့်တဲ့ထိလဲပေးမာပါ။</div>`;
 }
     // ✅ Spotify checkout notes
-    if (productName === "Spotify" && item.section === "Individual Plan(Private)") {
+    if (productName === "Spotify" && item.section === "Private") {
     return `<div class="burmese-font">• Private Plan မို့လို့ 1 person 1 device ပဲသုံးသင့်ပါတယ်။ Official appမာသုံးရတာဆိုပေမဲ့တစ်လကို$11.99ပေးပီးဝယ်တာမဟုတ်လို့ Risk ကတော့ရှိပါတယ်။အဆင်ပြေတယ်ဆိုမယူပါ။ Old account က Playlist, Favorite Artist, Favorite Songs, Favorite albums,Liked Songsအကုန်အကာင့်အသစ်ကိုပြောင်းပေးပါတယ်။ 2 Months အတွင်း full warranty ဖြစ်လို့တခုခုဖြစ်ခဲ့ရင် warranty အနေနဲ့အခုပြန်လဲ ပေးမာပါ တခါပဲလဲ ပေးမာပါ။ Setting ထဲသွားပီး account delete တာတို့တော့မပါပါဘူး။</div>`;
     }
  
-    if (productName === "Spotify" && item.section === "Family Plan") {
-    return `<div class="burmese-font">• Official appမာသုံးရတာဆိုပေမဲ့တစ်လကို$11.99ပေးပီးဝယ်တာမဟုတ်လို့ Risk ကတော့ရှိပါတယ်။အဆင်ပြေတယ်ဆိုမယူပါ။ ဝယ်ထားတဲ့အကောင့်ကိုပဲကုန်ရင်သက်တန်းတိုးလို့ရပါတယ်။ 2Months Full warranty.</div>`;
+    if (productName === "Spotify" && item.section === "Family Private") {
+    return `<div class="burmese-font">• Official appမာသုံးရတာဆိုပေမဲ့တစ်လကို$11.99ပေးပီးဝယ်တာမဟုတ်လို့ Risk ကတော့ရှိပါတယ်။အဆင်ပြေတယ်ဆိုမယူပါ။ ဝယ်ထားတဲ့အကောင့်ကိုပဲကုန်ရင်သက်တန်းတိုးလို့ရပါတယ်။ Full warranty.</div>`;
     }
 
     if (productName === "Domain") {
@@ -4142,7 +4201,8 @@ if (
     3 devices max.
     1 Week Plan ဆိုတာက 5 To 7Days ရမာပါ။ အမြဲ 7Days မပြည့်နိုင်ပါဘူး။ ပီးတော့ Android Only ပဲသုံးလို့ရပါတယ်။ Month Plan တေမာပဲ iOS ရတာပါ။ စာသေချာဖတ်ပီးမယူကြပါဗျ။
 </div>`;
-  }
+   }
+
     if (productName === "ChatGPT Plus") {
     if (item.section === "Own Mail/Private") {
     return `Private ယူခဲ့ရင်ဒီကနေ Email & Password ပေးမာပါ။ အဲ့ဟာကို ChatGpt App or Web မာထည့်သုံးရုံပါပဲ။ OwnMail ဝယ်ရင်တော့အကောင့်ထဲဝင်ဝယ်ပေးရမာမလို့
@@ -4267,7 +4327,7 @@ if (productName === "Express Vpn" && item.section === "Share" && /^phone/i.test(
       } else if (productName === 'Netflix') {
         if (item.section === "Whole Account") filteredNotes = filteredNotes.filter(line => !line.includes("warrantyအပြည့်ပေး"));
         // ✅ Spotify Family Plan checkout note
-        if (productName === "Spotify" && item.section === "Family Plan") {
+        if (productName === "Spotify" && item.section === "Family Private") {
         return "Full Warranty.";
         }
       } else {

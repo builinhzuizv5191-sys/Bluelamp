@@ -2028,6 +2028,10 @@ async function checkMyIdAvailability(name) {
   /* =========================
    PRODUCT HELPER POPUP SYSTEM (ALL PRODUCTS)
    ========================= */
+// Products listed here will NOT show the floating helper buttons
+const helperDisabledProducts = [
+  "Telegram Star"
+];  
 
 let _helperTimer = null;
 
@@ -2479,6 +2483,76 @@ const popupTextByProduct = {
     "All Devices<br>ရလား?"
   ]
   },
+  "Telegram Premium": {
+    title: "Telegram Premium Info",
+    button: "Planတေအများရီးပဲနားမလည်ဘူး။",
+    nextText: "Login Plan<br>ဆိုတာက?",
+    backText: "Back",
+    steps: [
+    "တွေ့ရတဲ့အတိုင်း Telegram မာရွေးချယ်စရာ Plan 3 ခုရှိပါတယ်။ Login,Gift,Link ဆိုပီး။ 3 ခုလုံးက Premium subscription ချင်းတူတူပါပဲ။ ကွာသွားတာကဝယ်ရတဲ့နည်းတေပါ။",
+    "Login Plan ဆိုတာကဝယ်သူရဲ့ Telegram အကောင့်ထဲကိုကျနော်ကဝင်ပီး Premium ဝယ်ပေးတာပါ။ အကောင့်ထဲဝင်ပီးဝယ်ရမာဖြစ်လို့ ကျနော်ကဘာမရှောက်ကြည့်မာမဟုတ်ဘူးဝယ်ပီးပြန်ထွက်မာဆိုပေမဲ့ Spicy တေ Privacy တေရှိတယ် စိတ်မချဘူးဆိုရင်တော့ဒီ Plan မဝယ်သင့်ပါဘူး။",
+    "Gift Plan ဆိုတာကကျ ဒီထဲမာအလုပ်မရှုပ်ဆုံး Plan ပါ။ ဝယ်သူရဲ့ Telegram username ပေးရင်ကျနော်က Gift လိုက်မာမလို့ ကျနော်လဲအကောင့်ထဲဝင်စရာမလိုဘူး။ ဝယ်တဲ့သူကိုယ်တိုင်လဲဘာမလုပ်စရာမလိုတော့ဘူး။ ပီးတော့ ဒီ Plan ကလက်ဆောင်တေဘာတေ ပေးဖို့ Surprise လုပ်ချင်တဲ့သူတေအတွက်ရွေးသင့်ပါတယ်။",
+    "Link Plan ဆိုတာက ဝယ်ပီးရင်ကျနော်က Link တခုပေးမယ် အဲ့ Link ထဲကိုဝင်ပီးကိုယ်တိုင် Premium ယူရတာပါ။ Link ကလဲ Telegram link ပါပဲဘာ Hack link မမဟုတ်ပါဘူး။ တခါတလေတော့ Stock မရှိရင်စောင့်ရတတ်ပါတယ်။",
+    "ဘယ်ဟာဝယ်သင့်လဲဆိုရင် ကိုယ်ကခုမစမ်းသုံးမာဆို Login 1 Month ယူပါ။ စောင့်လဲစောင့်နိုင်တယ် ဈေးလဲသက်သာချင်တယ်ဆိုရင်တော့ Link Plan ယူပါ။ ဘာမမလုပ်ချင်ဘူးမြန်မြန် Premium ရချင်တယ်။ ဒါမမဟုတ် တယောက်ယောက်ကို Gift ချင်တာဆိုရင်တော့ Gift Plan ယူပါ။ Premium ကတူတူပါပဲ။"
+  ],
+    stepButtons: [
+    "Login Plan<br>ဆိုတာက?",
+    "Gift Plan<br>ဆိုတာက?",
+    "Link Plan<br>ဆိုတာက?",
+    "ဘာဝယ်သင့်လဲ?"
+  ]
+  },
+  "Apple Music": {
+  title: "Apple Music Info",
+  button: "ဒါရှင်းပြပေးပါ။",
+  doneText: "ဟုတ်ပီဟုတ်ပီ",
+  steps: [
+    "iOS Device တေမာသုံးလို့မရပါဘူး။ Android Devices‌ တေမာပဲရပါမယ်။ Playstore က Apple Music App မာပဲသုံးလို့ရပါတယ်။ တကောင့်ထဲကိုလတိုင်းသက်တန်းတိုးသွားလို့ရပါတယ်။"
+  ]
+},
+  "YouTube Premium": {
+  title: "YouTube Premium Info",
+  button: "ဒါရှင်းပြပေးပါ။",
+  doneText: "ဟုတ်ပီဟုတ်ပီ",
+  steps: [
+    "ဒီကအကောင့်ပေးတာပါ။ ပေးတဲ့ Mail and password ကို YouTube official App or Web မာထည့်သုံးရမာပါ။ ရှိပီးသားအကောင့်ကိုလုပ်ပေးတာမဟုတ်ပါဘူးနော်။ အကောင့်ရှိပီးသားကိုပဲ Premium ဝယ်ချင်တာဆိုရင်တော့ YouTube Official Individual Plan ကို $15.99 နဲ့ဝယ်လို့ရပါတယ်။"
+  ]
+},
+  "Qobuz": {
+  title: "Qobuz Info",
+  button: "ဒါရှင်းပြပေးပါ။",
+  doneText: "ဟုတ်ပီဟုတ်ပီ",
+  steps: [
+    "Qobuz ဆိုတာက Spotify တို့ Apple Music တို့လိုပါပဲ။ Android ရော iOS ရောသုံးလို့ရမယ်။ ပြောင်းသုံးကြည့်ချင်တယ်ဆိုတဲ့သူတေအတွက်အဆင်ပြေပါတယ်။ VPN မလို Error Risk မရှိ။ Support Andorid,iOS,Mac/Windows."
+  ]
+},
+  "BSTATION": {
+  title: "BSTATION Info",
+  button: "ဒါရှင်းပြပေးပါ။",
+  doneText: "ဟုတ်ပီဟုတ်ပီ",
+  steps: [
+    "Bstation ရဲ့ Premium Subscription ပါ။ Private အကောင့်ပါဒီကပေးတဲ့ Email and Password ကို Bstation ရဲ့ Official App & Web မာထည့်သူံးရုံပါပဲ။ Support Android,iOS,Mac, Windows."
+  ]
+},
+  "Zoom": {
+    title: "Zoom Info",
+    button: "ဒါရှင်းပြပေးပါ။",
+    nextText: "38~42Days ဆိုတာက?",
+    backText: "Back",
+    steps: [
+    "ဒါက Zoom ရဲ့ Pro subscription ပါ။ အဲ့တော့ 100P meeting တေစတဲ့ Pro subscription မာပါတဲ့ Features တေအကုန်ပါပါတယ်။ ပီးတော့ Private အကောင့်ပါ။ ဒီကပေးတဲ့အကောင့်ကို Zoom Official App or Web မာထည့်သုံးရုံပါပဲ။",
+    "38~42 Days ဆိုတာက 4,000 တန် 2 Weeks Plan ကို 3 ခါလဲပေးတာပါ။ ဒီ Plan ကိုဝယ်လိုက်ပီဆို ကျနော်က 2 Weeks အကောင့်တခုပေးမယ်။ အဲ့တာကုန်ရင် နောက်ထက် 2 Weeks အကောင့်။ အဲ့လို 14×3 လုပ်ပေးတာပါ။ Android,iOS,Mac,Windows အကုန်လုံးသုံးလို့ရပါတယ်။"
+  ]
+  },
+  "Tinder": {
+  title: "Tinder Info",
+  button: "ဝယ်လို့မရဘူးလား",
+  doneText: "ဟုတ်ပီဟုတ်ပီ",
+  steps: [
+    "ဟုတ်ပါတယ်ဝယ်လို့မရသေးပါဘူး။ နောင်ပိုင်းတော့ရောက်းပေးပါမယ်။ ခုတော့မရသေးပါဘူး။"
+  ]
+},
+
   "TikTok Official": {
     title: "TikTok Boost",
     body: "hi"
@@ -3168,7 +3242,12 @@ cancelBtn?.addEventListener("click", () => {
       </section>`;
 
     dom.views.product.innerHTML = pageHTML;
-    initProductHelper(productName);
+
+    if (helperDisabledProducts.includes(productName)) {
+      removeProductHelper();
+    } else {
+      initProductHelper(productName);
+    }
 
     // =========================
     // =========================
@@ -3636,7 +3715,7 @@ if (productName === "Telegram Star") {
 
   const tgStarsHTML = `
     <div class="plan-box">
-      <div class="plan-title">Custom Stars (Telegram)</div>
+      <div class="plan-title">Custom Stars Amount</div>
       <div style="padding:10px; display:flex; flex-direction:column; gap:10px;">
         <label style="font-size:14px; color:#ccc;">Enter Stars (${MIN_STARS} - ${MAX_STARS})</label>
 

@@ -819,6 +819,54 @@ main#home-view > .popular-section {
         object-fit: contain;
     }
 }
+/* ===========================
+   Gift Card Region Grid Fix
+   Mobile: 3 columns
+   Desktop: more columns, smaller cards
+   =========================== */
+
+.region-grid{
+  display: grid;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  gap: 10px;
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 14px 28px;
+}
+
+.region-grid .card{
+  max-width: 150px;
+  width: 100%;
+  margin: 0 auto;
+}
+
+.region-grid .card img{
+  width: 100%;
+  aspect-ratio: 1 / 1;
+  object-fit: contain;
+  padding: 10px;
+}
+
+/* Tablet */
+@media (min-width: 600px){
+  .region-grid{
+    grid-template-columns: repeat(4, minmax(110px, 1fr));
+  }
+}
+
+/* Small desktop */
+@media (min-width: 900px){
+  .region-grid{
+    grid-template-columns: repeat(6, minmax(110px, 1fr));
+  }
+}
+
+/* Wide desktop */
+@media (min-width: 1200px){
+  .region-grid{
+    grid-template-columns: repeat(8, minmax(110px, 1fr));
+  }
+}
 /* =========================
    PRODUCT HELPER POPUP (GLOBAL)
    ========================= */

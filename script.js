@@ -432,7 +432,7 @@
     "Meitu": {
       "Private": [{
         "duration": "1 Week",
-        "price": "3,000 Kyats"
+        "price": "Out Of Stocks"
       }, {
         "duration": "1 Month",
         "price": "14,500 Kyats"
@@ -851,7 +851,7 @@
     "TradingView": {
       "Private": [{
         "duration": "1 Month",
-        "price": "25,000 Kyats"
+        "price": "20,000 Kyats"
       }]
     },
     "PaySafeCard": {
@@ -1932,6 +1932,7 @@ const adobeGroup = [
       ========================= */
   let cart = [];
   let lastScroll = 0;
+  let lastRegionalScroll = 0;
   let lastViewBeforeCheckout = 'home';
   let productCards = [];
 
@@ -2030,7 +2031,29 @@ async function checkMyIdAvailability(name) {
    ========================= */
 // Products listed here will NOT show the floating helper buttons
 const helperDisabledProducts = [
-  "Telegram Star"
+  "Telegram Star",
+  "TeraBox",
+  "iCloud",
+  "WPS Office",
+  "Photoshop",
+  "LightRoom",
+  "Premiere Pro",
+  "Illustrator",
+  "After Effects",
+  "Acrobat Pro",
+  "InDesign",
+  "Audition",
+  "Animate",
+  "Dreamweaver",
+  "Adobe Bridge",
+  "Adobe Express",
+  "Adobe Capture",
+  "Adobe Aero",
+  "Adobe Fonts",
+  "Fresco",
+  "Media Encoder",
+  "Character Animator",
+  "Firefly (AI)"
 ];  
 
 let _helperTimer = null;
@@ -2483,6 +2506,23 @@ const popupTextByProduct = {
     "All Devices<br>ရလား?"
   ]
   },
+  "Google One": {
+    title: "Google One Info",
+    button: "Plan 2 ခုကိုရှင်းပြပေးပါ။",
+    nextText: "ဆက်ရန်",
+    backText: "Back",
+    steps: [
+    "Google One မာရွေးချယ်စရာနှစ်ခုပဲရှိပါတယ်။ OwnMail invite & Private. ဘာကွာလဲဆိုရင် 5TB ချင်းကတူတူပါပဲ။ OwnMail invite ဆိုတာကဝယ်သူရဲ့ Google Account ထဲကို 5TB ထည့်ပေးတာပါ Family အနေနဲ့။",
+    "5TB ကိုတခြား Family Members 5‌ ယောက်နဲ့ Share သုံးရတာဆိုပေမဲ့ကိုယ်သုံးထားတဲ့ Storage တေကိုဘယ်သူမဝင်ကြည့်လို့မရပါဘူး။ Full Private ပါပဲ။ Share လို့ခေါ်ရတာကလဲ 5TB ကိုကိုယ်တယောက်ထဲသုံးနေရတာမဟုတ်ပဲတခြား 4 ယောက်နဲ့တူတူသုံးရတာမလို့ပါ။ ဒါမဲ့ခုဏပြောသလိုပဲ Storage တေကတော့လုံးဝ Private ပါ။",
+    "Private ဆိုတာက Invite Plan မာလိုမျိုးတခြားသူတေမပါတော့ပဲကိုယ်တယောက်သုံးရတာပါ။ Invite တုန်းကလိုပဲ Storage တေက Private ဖြစ်နေအုန်းမယ်။ Invite ရော Private ရော Plan နှစ်ခုလူံးကဝယ်ရင် Gemini Pro subscription ပါတခါထဲရမာပါ။",
+    "ဘာဝယ်သင့်လဲဆိုရင်ကျနော့်အနေနဲ့ကတော့ Invite Plan ကပိုကောင်းတယ်ထင်ပါတယ်။ Mm region google အကောင့်ဆိုရင်ကျနော့်ကို Mail ပေးလိုက်တာနဲ့ရပါပီ။ mm region မဟုတ်ရင်လဲကျနော်အကောင့်ထဲဝင်ပီးပြောင်းပေးတာဖြစ်ဖြစ် Mail change တာဖြစ်ဖြစ်ကြိုက်တာလုပ်လို့ရပါတယ်။ ကုန်သွားရက်လဲလတိုင်းသက်တန်းဆက်တိုးသွားလို့ရပါတယ်။"
+  ],
+    stepButtons: [
+    "ဆက်ရန်",
+    "Private<div>ကရော?",
+    "ဘာဝယ်သင့်လဲ?"
+  ]
+  },
   "Telegram Premium": {
     title: "Telegram Premium Info",
     button: "Planတေအများရီးပဲနားမလည်ဘူး။",
@@ -2544,6 +2584,115 @@ const popupTextByProduct = {
     "38~42 Days ဆိုတာက 4,000 တန် 2 Weeks Plan ကို 3 ခါလဲပေးတာပါ။ ဒီ Plan ကိုဝယ်လိုက်ပီဆို ကျနော်က 2 Weeks အကောင့်တခုပေးမယ်။ အဲ့တာကုန်ရင် နောက်ထက် 2 Weeks အကောင့်။ အဲ့လို 14×3 လုပ်ပေးတာပါ။ Android,iOS,Mac,Windows အကုန်လုံးသုံးလို့ရပါတယ်။"
   ]
   },
+  "Discord": {
+    title: "Discord Info",
+    button: "ဒါရှင်းပြပေးပါ။",
+    nextText: "ဝယ်ရင်ရော?",
+    backText: "Back",
+    steps: [
+    "ဒါက Discord ရဲ့  Nitro Subscription ပါ။ Nitro Basic မဟုတ်ပါဘူး။ ဒါဝယ်ဖို့ဆိုရင် သင့်ရဲ့ Discord account က အနဲဆုံး 1Month သက်တန်းရှိဖို့လိုပါမယ်။ ပီးတော့ Discord Subscription တခါမမဝယ်ဖူးတဲ့အကောင့်ဖြစ်မရမာပါ။",
+    "ဝယ်ရင် ကျနော်ကအကောင့်ထဲ Login ဝင်ပီးလုပ်ပေးမာပါ။ လုပ်စရာရှိတာလုပ်ပီးရင်ပြန်ထွက်မာဆိုပေမဲ့ Privacy တေဘာတေရှိလို့အဆင်မပြေဘူးဆိုရင်တော့မဝယ်သင့်ပါဘူး။"
+  ]
+  },
+  "TradingView": {
+    title: "TradingView Info",
+    button: "ဒါရှင်းပြပေးပါ။",
+    nextText: "All Devices<br>ရလား?",
+    backText: "Back",
+    steps: [
+    "ဒါက Trading View ရဲ့ Plus Subscription ပါ။ Private အကောင့်မို့လို့ဝယ်ရင်ဒီက Email & Password ပေးမာပါ။ အဲ့ Email & Password ကို Trading View app or Web မာထည့်သုံးရုံပါပဲ။",
+    "Android, iOS, Mac, and Windows အကုန်လုံးမာသုံးလို့ရပါတယ်။ Trading View ရဲ့ Official App & Web တေမာပဲသူံးရမာပါ။ Full warranty."
+  ]
+  },
+  "Duolingo Super": {
+    title: "Duolingo Super Info",
+    button: "ဝယ်လို့မရဘူးလား",
+    nextText: "ဆက်ရန်",
+    backText: "Back",
+    steps: [
+    "Duolingo ကအကောင့်တခုကတစ်ခါပဲ famplan join လို့ရပါတယ်။ ဝယ်ထားတာကုန်လို့နောက်လတေသက်တန်းတိုးချင်ရင်တိုးလို့မရပါဘူး။ နောက်တကောင့်အသစ်ဖြစ်သွားမာမလို့သင်ထားတဲ့ Progress တေကအကုန်အစပြန်ရောက်သွားမာပါ။ စမ်းသုံးတဲ့သူတေအတွက်က တစ်လကုန်သွားလဲဘာမမဖြစ်ပေမဲ့တကယ်သင်တဲ့သူတေအတွက်ဆိုအဆင်မပြေပါဘူး။",
+    "အဲ့တာတေကြောင့်မရောင်းပေးတာပါ။ မရောင်းပဲဘာလို့တင်ထားလဲဆိုရင်။ ဒီမာမဝယ်ပဲတခြားစီမာဝယ်ရင်လဲ သေချာမေးပီးဝယ်တတ်အောင်တင်ထားတာပါ။ Seller တေကိုနောက်ပိုင်းသက်တန်းဆက်တိုးလို့ရလား သေချာမေးပီးမဝယ်ကြပါ။"
+  ]
+  },
+  "Google Drive": {
+  title: "Google Drive Info",
+  button: "ဒါရှင်းပြပေးပါ။",
+  doneText: "ဟုတ်ပီဟုတ်ပီ",
+  steps: [
+    "ဒါကကိုယ့်ရဲ့ Google အကောင့်ကိုဝယ်ပေးတာမဟုတ်ပါဘူး။ ဒီကအကောင့်ပေးတာပါ။ Warranty 1Month ပေးထားပါတယ်။ ကိုယ့် Google Account ကို Storage ဝယ်ချင်တာဆိုရင် Google One မာဝယ်ပါ။"
+  ]
+},
+  "SCRIBD": {
+  title: "SCRIBD Info",
+  button: "ဒါရှင်းပြပေးပါ။",
+  doneText: "ဟုတ်ပီဟုတ်ပီ",
+  steps: [
+    "ဒါက Scribd ရဲ့ Premium Subscription ပါ။ Private မို့လို့ဒီက ပေးတဲ့ Email & Password ကို Scribd App or Website မာထည့်သုံးရုံပါပဲ။ Android, iOS, Mac and Windows အကုန်သုံးလို့ရပါတယ်။ Full Warranty."
+  ]
+},
+  "TikTok Non Official": {
+  title: "TikTok Non Official Info",
+  button: "ဒါရှင်းပြပေးပါ။",
+  doneText: "ဟုတ်ပီဟုတ်ပီ",
+  steps: [
+    "Non Official ဆိုတာက Bot တေကိုပြောတာပါ။ လောလောဆယ်ကတော့ဝယ်လို့မရသေးပါဘူး။"
+  ]
+},
+  "Telegram Boosting": {
+  title: "Telegram Boosting Info",
+  button: "ဒါရှင်းပြပေးပါ။",
+  doneText: "ဟုတ်ပီဟုတ်ပီ",
+  steps: [
+    "ဒါက ကိုယ့် Telegram Channel ပဲဖြစ်ဖြစ် Post တခုခုပဲဖြစ်ဖြစ်ရဲ့ Link ကိုပေးတာနဲ့ Boost ပေးတာပါ။ လူအစစ်တေမဟုတ်ပါဘူး။ Bot Boosting ပါ။"
+  ]
+},
+  "YouTube Boosting": {
+  title: "YouTube Boosting Info",
+  button: "ဒါရှင်းပြပေးပါ။",
+  doneText: "ဟုတ်ပီဟုတ်ပီ",
+  steps: [
+    "ဒါက YouTube Video တေရဲ့ View မဟုတ်ပါဘူး။ Live Stream View ပါ။ ပီးတော့ Bot Boosting ပါလူအစစ်တေမဟုတ်ပါဘူး။"
+  ]
+},
+  "Facebook Boosting": {
+  title: "Facebook Boosting Info",
+  button: "ဒါရှင်းပြပေးပါ။",
+  doneText: "ဟုတ်ပီဟုတ်ပီ",
+  steps: [
+    "ပြထားတာတေအကုန်လုံးက Bot Boosting တေပါ။ လူအစစ်တေနဲ့ Official Boost တာမဟုတ်ပါဘူး။ Boost မယ်ဆိုကိုယ့် Facebook Page or Profile or Post တေရဲ့ Link ပေးရင်ရပါပီ။"
+  ]
+},
+  "Instagram Boosting": {
+  title: "Instagram Boosting Info",
+  button: "ဒါရှင်းပြပေးပါ။",
+  doneText: "ဟုတ်ပီဟုတ်ပီ",
+  steps: [
+    "ပြထားတာတေအကုန်လုံးက Bot Boosting တေပါ။ လူအစစ်တေနဲ့ Official Boost တာမဟုတ်ပါဘူး။ Boost မယ်ဆိုကိုယ့် Instagram Profile or Post တေရဲ့ Link ပေးရင်ရပါပီ။"
+  ]
+},
+  "PaySafeCard": {
+  title: "PaySafeCard Info",
+  button: "ဒါရှင်းပြပေးပါ။",
+  doneText: "ဟုတ်ပီဟုတ်ပီ",
+  steps: [
+    "ဒီကအကောင့်ပေးတာပါ။ အဲ့အကောင့်ကို Playstore ရဲ့ Add account ဆိုတဲ့ထဲမာထည့်သုံးရမာပါ။ အကောင့်ထဲမာ Paysafecard တခုပါပါတယ်။ အကောင့်က 3ရက်နေရင် Expired ဖြစ်ပါတယ်။ အဲ့ 3ရက်အတွင်းသုံးရမာပါ။ Playstore နဲ့တွဲသုံးရတာမလို့ Android Only ပဲရပါမယ်။ iOS လုံးဝမရပါ။"
+  ]
+},
+  "TikTok Official": {
+    title: "TikTok Official Info",
+    button: "Plan 2 ခုကိုရှင်းပြပေးပါ။",
+    nextText: "ဆက်ရန်",
+    backText: "Back",
+    steps: [
+    "TikTok Video တေမာ Share ကိုနှိပ်လိုက်ရင် Promote ဆိုတာရှိပါတယ်။ TikTok official boosting ဆိုတာကအဲ့ဟာပါ။ ဝင်ရင် Coin တေနဲ့ပြမာမဟုတ်ပါဘူး။ ကိုယ်က Japan Region ပြောင်းထားရင် ¥ နဲ့ပြပီး Normal Account ဆိုရင်တော့ $ နဲ့ပြပါတယ်။",
+    "Coin 100 က $1 နဲ့ညီပါတယ်။ Login Method ဆိုရင်ကျနော်ကအကောင့်ထဲဝင်ပီး Coin ထည့်ပေးမာပါ။ အဲ့ Coin တေနဲ့ကိုယ်တိုင် Boost လုပ်လို့ရပါတယ်။ တကယ်လို့အကောင့်ထဲပေးဝင်လို့မဖြစ်ဘူးဆိုရင်လဲ NoLoginBoost ကိုရွေးလို့ရပါတယ်။",
+    "No Login Boost ဆိုတာကကျနော့်ကို Video Link ပဲပေးရမာပါ။ ကိုယ်လိုချင်တဲ့ Amount ကိုကိုယ်လိုချင်တဲ့ Boosting Setting အတိုင်း Login ဝင်စရာမလိုပဲ Boost ပေးတာကိုပြောတာပါ။ TikTok ကိုယ်တိုင်က Boost ပေးတာပဲမလို့ Progress တေကိုကိုယ်တိုင်စောင့်ကြည့်နေလို့ရပါတယ်။ Official Boost တာမို့လို့လူအစစ်တေကပဲကြည့်ကြမာပါ။"
+  ],
+    stepButtons: [
+    "ဆက်ရန်",
+    "NoLoginBoost<br>ဆိုတာက?"
+  ]
+  },
   "Tinder": {
   title: "Tinder Info",
   button: "ဝယ်လို့မရဘူးလား",
@@ -2551,18 +2700,24 @@ const popupTextByProduct = {
   steps: [
     "ဟုတ်ပါတယ်ဝယ်လို့မရသေးပါဘူး။ နောင်ပိုင်းတော့ရောက်းပေးပါမယ်။ ခုတော့မရသေးပါဘူး။"
   ]
-},
-
-  "TikTok Official": {
-    title: "TikTok Boost",
-    body: "hi"
-  }
+}
 };
   
 function initProductHelper(productName) {
   removeProductHelper();
 
-  const conf = popupTextByProduct[productName] || null;
+  let conf = popupTextByProduct[productName] || null;
+  /* Shared helper for all Google Play region products */
+  if (!conf && productName.startsWith("Google Play ") && productName !== "Google Play Gift Card") {
+    conf = {
+      title: "Google Play Gift Card Info",
+      button: "ဒါကဘာလဲရှင်းပြပါ",
+      doneText: "နားလည်ပါပီ။",
+      steps: [
+        "ဒီ Google Play Gift Card က Region အလိုက်ဝယ်ရတာပါ။ ကိုယ့် Google Play account region နဲ့ကိုက်တဲ့ card ကိုရွေးဝယ်ပေးပါ။ Region မကိုက်ရင် redeem လုပ်လို့မရနိုင်ပါ။"
+      ]
+    };
+  }
 
   // ✅ steps support (if not provided, fallback to single body)
   const steps = Array.isArray(conf?.steps) && conf.steps.length
@@ -2642,7 +2797,7 @@ function initProductHelper(productName) {
   if (stepIndex === steps.length - 1) {
     nextBtn.textContent = doneLabel;
   } else {
-    nextBtn.innerHTML = stepBtnTexts[stepIndex] || escapeHTML(nextLabel);
+    nextBtn.innerHTML = stepBtnTexts[stepIndex] || nextLabel;
   }
   }
 
@@ -2918,7 +3073,9 @@ cancelBtn?.addEventListener("click", () => {
       PRODUCT PAGE LOGIC
       ========================= */
   function openProduct(productName) {
+  if (dom.views.home.classList.contains('active')) {
     lastScroll = window.scrollY;
+  }
     // ✅ Update URL so you can copy/share this product page
     history.replaceState(null, "", "#" + toSlug(productName));
 
@@ -3810,7 +3967,7 @@ if (productName === "Telegram Star") {
         <div class="hero-subtitle" style="opacity:0.8; margin-bottom:10px;">Select Region</div>
       </div>
         
-      <div class="grid region-grid" style="grid-template-columns: repeat(3, 1fr); gap: 10px;">
+      <div class="grid region-grid">
         ${regions.map(region => `
             <div class="card tap" data-product-name="${escapeHTML(region.name)}">
                 <img src="${region.img}" alt="${escapeHTML(region.name)}">
@@ -4596,15 +4753,30 @@ function getReceiptExtraLine(product, plan, duration, qty, unitPrice) {
     if (productCard && (productCard.classList.contains('card') || productCard.classList.contains('pop-card'))) {
       productCard.classList.add('tap-anim');
       setTimeout(() => productCard.classList.remove('tap-anim'), 120);
+
+      const currentTitle = document.querySelector('.hero-title')?.innerText || '';
+
+      if (
+        dom.views.product.classList.contains('active') &&
+        (currentTitle.includes('Google Play Gift Card') || currentTitle.includes('Steam Gift Card'))
+      ) {
+        lastRegionalScroll = window.scrollY;
+      }
+
       openProduct(productCard.dataset.productName);
       return;
     }
     if (target.id === 'product-back-btn') {
       const title = document.querySelector('.hero-title').innerText;
       if ((title.includes('Google Play') || title.includes('Steam')) && !title.includes('Gift Card')) {
-          const cat = title.includes('Google Play') ? "Google Play Gift Card" : "Steam Gift Card";
-          renderRegionalSelector(cat, regionalProducts[cat]);
-          return;
+         const cat = title.includes('Google Play') ? "Google Play Gift Card" : "Steam Gift Card";
+         renderRegionalSelector(cat, regionalProducts[cat]);
+
+         requestAnimationFrame(() => {
+           window.scrollTo(0, lastRegionalScroll);
+         });
+
+         return;
       }
       showView('home'); window.scrollTo(0, lastScroll); return;
     }

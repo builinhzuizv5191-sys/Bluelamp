@@ -671,7 +671,11 @@
       },
       {
         "duration": "3 Months",
-        "price": "45,000 Kyats"
+        "price": "Out Of Stock"
+      }],
+      "Own Mail/Private": [{
+        "duration": "3 Months",
+        "price": "10,000 Kyats"
       }],
       "Business Plus - Invite Own Email": [{
         "duration": "1 Month",
@@ -679,20 +683,16 @@
       }],                                     
       "Business Plus Own": [{
         "duration": "1 Month",
-        "price": "20,000 Kyats"
+        "price": "Out Of Stock"
       }],
       "Business Plus Own(Full Warranty)": [{
         "duration": "1 Month",
-        "price": "25,900 Kyats"
+        "price": "Out Of Stock"
       },
       {
         "duration": "3 Months",
-        "price": "75,000 Kyats"
-      }],
-      "Own Mail/Private": [{
-        "duration": "3 Months",
-        "price": "10,000 Kyats"
-      }] 
+        "price": "Out Of Stock"
+      }]
     },
     "Gemini Veo 3": {
       "Head(Can Invite 5 Email)": [{

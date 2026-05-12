@@ -375,7 +375,7 @@
         "price": "6,000 Kyats"
       }],
       "Private": [{
-        "duration": "7 Days",
+        "duration": "1 Week",
         "price": "3,000 Kyats"
       }, {
         "duration": "1 Month (30~35 Days)",
@@ -4438,6 +4438,14 @@ if (
     1 Week Plan ဆိုတာက 5 To 7Days ရမာပါ။ အမြဲ 7Days မပြည့်နိုင်ပါဘူး။ ပီးတော့ Android Only ပဲသုံးလို့ရပါတယ်။ Month Plan တေမာပဲ iOS ရတာပါ။ စာသေချာဖတ်ပီးမယူကြပါဗျ။
 </div>`;
    }
+    if (productName === "CapCut")
+   if (item.section === "Private" && item.duration.includes("1 Week")) {
+    return `<div class="burmese-font">
+    Full warranty for full duration.
+    3 devices max.
+    1 Week Plan ဆိုတာက 5 To 7Days ရမာပါ။ အမြဲ 7Days မပြည့်နိုင်ပါဘူး။ 1 Month ထိပိုက်ဆံမသုံးချင်ပဲခု Project Export လုပ်ဖို့လိုတဲ့သူတေ Budget Plan အနေနဲ့ယူဖို့ထားပေးထားတာပါ။
+</div>`;
+   }
 
     if (productName === "ChatGPT Plus") {
     if (item.section === "Own Mail/Private") {
@@ -4458,6 +4466,7 @@ if (
     return `Microsoft 365 ရဲ့ Personal Subscription ပါ။ OwnMail လို့ရေးမထားတာမလို့ဒီကအကောင့်ပေးတာပါ။ စာသေချာဖတ်ပီးမယူပေးကြပါဗျ။ Max 5 Devices လောက်ထိသုံးလို့ရပါတယ်။`;
     }
     }
+    
     
    // ================= YOUTUBE PREMIUM CHECKOUT NOTES =================
    if (productName === "YouTube Premium") {

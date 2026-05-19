@@ -131,8 +131,9 @@
     "Google Drive": "https://ik.imagekit.io/dkdlgynlu/New-Project-52-1-A43-DD6.png",
     "Google One": "https://ik.imagekit.io/dkdlgynlu/New-Project-52-009-BD4-E.png",
     "iCloud": "https://ik.imagekit.io/dkdlgynlu/New-Project-52-30-EDAEA.png",
-    "ChatGPT Plus": "https://ik.imagekit.io/dkdlgynlu/New-Project-52-6-CB3-A91-1.png",
-    "Gemini Veo 3": "https://ik.imagekit.io/dkdlgynlu/New-Project-52-906-D5-F0.png",
+    "ChatGPT": "https://ik.imagekit.io/dkdlgynlu/New-Project-52-6-CB3-A91-1.png",
+    "Grok": "https://ik.imagekit.io/dkdlgynlu/ICON%20_1B59F27_.png",
+    "Gemini Pro": "https://ik.imagekit.io/dkdlgynlu/New-Project-52-906-D5-F0.png",
     "Flow AI": "https://ik.imagekit.io/dkdlgynlu/Wattpad%20_A4B3FC6_.png?updatedAt=1768837724112",
     "NotebookLM": "https://ik.imagekit.io/dkdlgynlu/Wattpad%20_363313A_.png?updatedAt=1768837724010",
     "Claude Ai": "https://ik.imagekit.io/dkdlgynlu/New-Project-52-087-AC47.png",
@@ -436,16 +437,19 @@
       }, {
         "duration": "1 Month",
         "price": "14,500 Kyats"
+      }, {
+        "duration": "1 Year",
+        "price": "99,000 Kyats"
       }]
     },
     "PicsArt": {
       "Share": [{
         "duration": "1 Month",
-        "price": "3,000 Kyats"
+        "price": "Out Of Stock"
       }],
       "Private": [{
         "duration": "1 Month",
-        "price": "5,000 Kyats"
+        "price": "Out Of Stock"
       }]
     },
     "Canva": {
@@ -458,6 +462,9 @@
         "price": "5,000 Kyats"
       }],
       "Private": [{
+        "duration": "2 Weeks",
+        "price": "3,000 Kyats"
+      }, {
         "duration": "1 Month",
         "price": "5,000 Kyats"
       }],
@@ -655,7 +662,7 @@
       }],
       "Private": [{
         "duration": "3 Months (+ Gemini Pro)",
-        "price": "15,000 Kyats"
+        "price": "Out Of Stock"
       }]
     },
     "TeraBox": {
@@ -664,18 +671,26 @@
         "price": "Out Of Stock"
       }]
     },
-    "ChatGPT Plus": {
+    "ChatGPT": {
       "Personal Plus (Private)": [{
         "duration": "1 Month",
-        "price": "15,000 Kyats"
+        "price": "Out Of Stock"
+      },
+      {
+        "duration": "2 Months",
+        "price": "40,000 Kyats"
       },
       {
         "duration": "3 Months",
         "price": "Out Of Stock"
       }],
+      "Personal Plus(Full Warrenty)": [{
+        "duration": "1 Month",
+        "price": "20,000 Kyats"
+      }],
       "Own Mail/Private": [{
         "duration": "3 Months",
-        "price": "10,000 Kyats"
+        "price": "Out Of Stock"
       }],
       "Business Plus - Invite Own Email": [{
         "duration": "1 Month",
@@ -694,26 +709,37 @@
         "price": "Out Of Stock"
       }]
     },
-    "Gemini Veo 3": {
-      "Head(Can Invite 5 Email)": [{
-        "duration": "3 Months (+5 TB Storage)",
-        "price": "15,000 Kyats"
-      }],
+    "Gemini Pro": {
       "OwnMail Invite": [{
-        "duration": "1Month",
+        "duration": "1 Month",
         "price": "5,000 Kyats"
       }, {
         "duration": "3 Months",
         "price": "10,000 Kyats"
+      }],
+      "Head(Can Invite 5 Email)": [{
+        "duration": "3 Months (+5 TB Storage)",
+        "price": "Out Of Stock"
       }]
-    },"Flow AI": {
+    },
+    "Grok": {
+      "Share Plan": [{
+        "duration": " 1 Month",
+        "price": "12,000 Kyats"
+      }],
+      "Private Plan": [{
+        "duration": "1 Month",
+        "price": "20,000 Kyats"
+      }]
+    },
+  "Flow AI": {
   "OwnMail Invite": [{
     "duration": "3 Months",
     "price": "10,000 Kyats"
   }],
       "Private": [{
         "duration": "4 Months",
-       "price": "20,000 Kyats"
+       "price": "Out Of Stock"
       }]
 },"NotebookLM": {
   "OwnMail Invite": [{
@@ -1814,8 +1840,9 @@
     "iCloud": ["ios", "pc"],
     "Google One": ["android", "ios", "pc"],
     "TeraBox": ["android", "ios", "pc"],
-    "ChatGPT Plus": ["android", "ios", "pc"],
-    "Gemini Veo 3": ["android", "ios", "pc"],
+    "ChatGPT": ["android", "ios", "pc"],
+    "Grok": ["android", "ios", "pc"],
+    "Gemini Pro": ["android", "ios", "pc"],
     "Claude Ai": ["pc", "android", "ios"],
     "Flow AI": ["android", "ios", "pc"],
     "NotebookLM": ["android", "ios", "pc"],
@@ -2273,8 +2300,8 @@ const popupTextByProduct = {
     "ဆက်ရန်"
   ]
   },
-  "ChatGPT Plus": {
-    title: "ChatGPT Plus Info",
+  "ChatGPT": {
+    title: "ChatGPT Info",
     button: "Planတေကအများရီးပဲနားမလည်ဘူး။",
     nextText: "ဘာတေကွာလဲ?",
     backText: "Back",
@@ -2306,8 +2333,8 @@ const popupTextByProduct = {
     "ဆက်ရန်"
   ]
   },
-  "Gemini Veo 3": {
-    title: "Gemini Veo 3 Info",
+  "Gemini Pro": {
+    title: "Gemini Pro Info",
     button: "Plan 2 ခုကိုရှင်းပြပေးပါ။",
     nextText: "ဘာတေကွာလဲ?",
     backText: "Back",
@@ -2574,6 +2601,16 @@ const popupTextByProduct = {
     "Bstation ရဲ့ Premium Subscription ပါ။ Private အကောင့်ပါဒီကပေးတဲ့ Email and Password ကို Bstation ရဲ့ Official App & Web မာထည့်သူံးရုံပါပဲ။ Support Android,iOS,Mac, Windows."
   ]
 },
+  "Grok": {
+    title: "Grok Info",
+    button: "ဒါရှင်းပြပေးပါ။",
+    nextText: "Private<div>ကရော?",
+    backText: "Back",
+    steps: [
+    "ဒါက Grok ရဲ့ Super Subscription ပါ။ Share Plan ဆိုတာက Phone တခုပဲဝင်သုံးလို့ရမာကိုပြောတာပါ။ 1 Device ထဲပဲသုံးလို့ရပါမယ်။ တခြား Share Plan ဝယ်ထားတဲ့သူတေနဲ့တူတူသုံးရမာပါ။ Warranty ကိုတော့ 20 Days ပေးထားပါတယ်။",
+    "Private Plan က 3 Devices ဝင်လို့ရပါတယ်။ Android, iOS, Window, Mac အကုန်ရပါတယ်။ Share ရော Private ရောကဒီကအကောင့်ပေးမာပါ။ ပေးတဲ့အကောင့်ကို Grok App or Website မာဝင်သုံးရုံပါပဲ။ Vpn လိုပါတယ်။ Private Plan ကတော့ Full Warranty ပါ။"
+  ]
+  },
   "Zoom": {
     title: "Zoom Info",
     button: "ဒါရှင်းပြပေးပါ။",
@@ -3019,7 +3056,7 @@ cancelBtn?.addEventListener("click", () => {
   /* =========================
       POPULAR SECTION LOGIC
       ========================= */
-  const popularList = ["Express Vpn", "ChatGPT Plus", "CapCut", "Netflix", "Wink"];
+  const popularList = ["Express Vpn", "ChatGPT", "CapCut", "Netflix", "Wink"];
 
   function renderPopular(containerId, excludeName) {
     const cont = document.getElementById(containerId);
@@ -3234,14 +3271,18 @@ cancelBtn?.addEventListener("click", () => {
          if (sectionName === 'Share' || sectionName === 'Private') {
             title += ' <span style="background:#5eead4; color:#042f2e; padding:2px 6px; border-radius:4px; font-size:11px; margin-left:8px; font-weight:900; box-shadow:0 0 6px #5eead4;">Myanmarမာသုံးမရပါ</span>';
           }
-        } else if (productName === 'ChatGPT Plus') {
-         if (sectionName === 'Personal Plus (Private)' || sectionName === 'Business Plus - Invite Own Email' || sectionName === 'Business Plus Own' || sectionName === 'Business Plus Own(Full Warranty)') {
+          } else if (productName === 'Grok') {
+         if (sectionName === 'Share Plan' || sectionName === 'Private Plan') {
+            title += ' <span style="background:#000000; color:#ffffff; padding:2px 6px; border-radius:4px; font-size:11px; margin-left:8px; font-weight:900; box-shadow:0 0 6px #666666;">Super Subscription</span>';
+          }
+        } else if (productName === 'ChatGPT') {
+         if (sectionName === 'Personal Plus (Private)' || sectionName === 'Business Plus - Invite Own Email' || sectionName === 'Personal Plus(Full Warrenty)' || sectionName === 'Business Plus Own' || sectionName === 'Business Plus Own(Full Warranty)') {
             title += ' <span style="background:#000000; color:#00ff9c; padding:2px 6px; border-radius:4px; font-size:11px; margin-left:8px; font-weight:900; box-shadow:0 0 6px #00ff9c;">Plus</span>';
           }
         if (sectionName === 'Own Mail/Private') {
             title += ' <span style="background:#000000; color:#00ff9c; padding:2px 6px; border-radius:4px; font-size:11px; margin-left:8px; font-weight:900; box-shadow:0 0 6px #00ff9c;">Go Subscription</span>';
           }
-          } else if (productName === 'Gemini Veo 3') {
+          } else if (productName === 'Gemini Pro') {
          if (sectionName === 'Head(Can Invite 5 Email)' || sectionName === 'OwnMail Invite') {
             title += ' <span style="background:#67e8f9; color:#083344; padding:2px 6px; border-radius:4px; font-size:11px; margin-left:8px; font-weight:900; box-shadow:0 0 6px #67e8f9;">Pro Subscription</span>';
           }
@@ -3360,7 +3401,7 @@ cancelBtn?.addEventListener("click", () => {
           } else if (sectionName.includes('Whole Account')) {
             title = 'Whole Account';
           }
-        } else if (productName === 'Gemini Veo 3') {
+        } else if (productName === 'Gemini Pro') {
           if (sectionName.includes('OwnMail')) {
             title = 'OwnMail Invite';
             style = 'style="color: #ffeb3b;"';
@@ -4016,15 +4057,16 @@ Private Own Mail
 2 to 3 devices. Full warranty for the entire plan duration.` + generalDetailsBlock,
     "AlightMotion": `Share
 Full warranty for 6Months
-Covers premium subscription errors
-We'll renew a new one if any error occurs
+Covers premium subscription errors.
+Share Plan ရော Private Plan တေရောကဝင်ရတာရှုပ်ပါတယ်။ တချို့ဖုန်းတေဆိုဝင်မရတာတေဘာတေထိဖြစ်တတ်ပါတယ်။ အဲ့တာကအကောင့်ကဖြစ်တာမဟုတ်ပဲ Device တေကလက်မခံတာမလို့ပြန်မလဲပေးပါဘူး။ အဲ့တာကြောင့် No Error ဖြစ်တဲ့ OwnMail ဝယ်တာကပိုကောင်းပါတယ်။
+
 
 Private
 Full warranty for full duration
 8 devices max
 Private က Tempmailနဲ့လုပ်ထားတာပါ။
 Full Warranty က 1Yearအတွင်းတခုခုဖြစ်ရင်တခါပြန်လဲပေးပါတယ်။
-Riskကင်းတဲ့ OwnMail ယူလဲရပါတယ်။
+Share Plan ရော Private Plan တေရောကဝင်ရတာရှုပ်ပါတယ်။ တချို့ဖုန်းတေဆိုဝင်မရတာတေဘာတေထိဖြစ်တတ်ပါတယ်။ အဲ့တာကအကောင့်ကဖြစ်တာမဟုတ်ပဲ Device တေကလက်မခံတာမလို့ပြန်မလဲပေးပါဘူး။ အဲ့တာကြောင့် No Error ဖြစ်တဲ့ OwnMail ဝယ်တာကပိုကောင်းပါတယ်။
 
 Private (Own Mail)
 Full warranty for full duration
@@ -4036,11 +4078,21 @@ Google အကောင့်ကိုဝင်ပီးလုပ်ပေးမ�
 ပီးရင်ပြန်ထွက်မာပါ။` + generalDetailsBlock,
     "Wink": `Share
 One device only
-Full warranty for full duration
+Full warranty for full duration.
 
 Private
-Full warranty for full duration
-3 devices max
+Full warranty for full duration.
+3 devices max.
+
+Private (Own Mail)
+Full warranty for full duration` + generalDetailsBlock,
+"Grok": `Share Plan
+One device only
+20 Days warranty.
+
+Private Plan
+Full warranty for full duration.
+3 devices max.
 
 Private (Own Mail)
 Full warranty for full duration` + generalDetailsBlock,
@@ -4132,7 +4184,7 @@ Full warranty.` + generalDetailsBlock,
     "TeraBox": `Sharing (2TB)
 Shared account. One device only.
 Full warranty for plan duration.` + generalDetailsBlock,
-    "ChatGPT Plus": `Personal Plus (Private)
+    "ChatGPT": `Personal Plus (Private)
 Up to 5 devices (not recommended)
 ${chatGptWarrantyNote}
 
@@ -4147,7 +4199,7 @@ ${chatGptWarrantyNote}
 
 Business Plus Own(Full Warranty)
 Full Warranty for full duration. Deactivateဖြစ်လဲတစ်လပြည့်တဲ့ထိလဲပေးမာပါ။` + generalDetailsBlock,
-    "Gemini Veo 3": `Head(Can Invite 5 Email)
+    "Gemini Pro": `Head(Can Invite 5 Email)
 Includes 5,000GB Google storage• Unlimited devices
 ဒါမဲ့ဝယ်ရင်စစချင်းသိထားရမာတေရှိပါတယ်။ Admin ပြောပြပါလိမ့်မယ်။
 3 Months (Full Warranty) — 3 Months လုံး Full Warranty ပေးပါတယ်။
@@ -4160,13 +4212,13 @@ Invite Planမို့လို့Ai Credit တစ်လ 1000ကိုတော
 ဆိုလိုတာကတခြားFamily Membersတေသုံးရင်လဲCreditsတေကလျှော့နိုင်ပါတယ်။
 ဒီဟာဝယ်ရင်
 Google One Storage 5 TB 3 Months(Share)
-Gemini Veo 3 Pro 3 Monthsပါရမာပါ။` + generalDetailsBlock,
+Gemini Pro 3 Monthsပါရမာပါ။` + generalDetailsBlock,
 
 "NotebookLM": `OwnMail Invite
 ဒီဟာကGoogle One Pro,Gemini Proဝယ်ရင်ပါတဲ့ဟာပါ။
 ဒီဟာဝယ်ရင်
 Google One Storage 5 TB 3 Months(Share)
-Gemini Veo 3 Pro 3 Monthsပါရမာပါ။` + generalDetailsBlock,
+Gemini Pro 3 Monthsပါရမာပါ။` + generalDetailsBlock,
     "Claude Ai": `Share\nFull warranty • One device only` + generalDetailsBlock,
     "Zoom": `Full warranty.\nAll pro features unlock.\nCan use 2-5 devices.` + generalDetailsBlock,
     "YouTube Premium": `Private (Individual Plan)
@@ -4345,7 +4397,7 @@ Can't use on iOS devices.` + generalDetailsBlock,
   function getNoteForCartItem(item) {
     const productName = item.product.replace(/ \(.+\)$/, '');
     // ChatGPT Plus - 3 Months custom notes
-if (productName === "ChatGPT Plus" && item.duration === "3 Months") {
+if (productName === "ChatGPT" && item.duration === "3 Months") {
   if (item.section === "Personal Plus (Private)") {
     return `<div class="burmese-font">ChatGpt Plus Plan ကတစ်လကို Official Price $20 ရှိပါတယ်။ 3months ဆိုရင် 240K ပါ။ ဒါကအဲ့လိုဝယ်တာလဲမဟုတ်လို့ Deactivate ဖြစ်နိုင်ချေအနဲအများတော့ရှိမာပါ။ But full warranty ပေးထားပါတယ်။ ဖြစ်တာနဲ့ချက်ချင်းကြီးပြန်လုပ်ပေးလို့မရပါဘူး Max 1 Day လောက်စောင့်ရရင်လဲစောင့်ရနိုင်ပါတယ်။ စောင့်နိုင်မယူပေးပါ။</div>`;
   }
@@ -4360,7 +4412,7 @@ if (productName === "ChatGPT Plus" && item.duration === "3 Months") {
 }
     // ChatGPT Plus - Business Plus Own (Full Warranty) 1 Month note
 if (
-  productName === "ChatGPT Plus" &&
+  productName === "ChatGPT" &&
   item.section === "Business Plus Own(Full Warranty)" &&
   item.duration === "1 Month"
 ) {
@@ -4387,15 +4439,15 @@ if (
     if (productName === "AlightMotion") {
     if (item.section === "Share") {
     return `Full warranty for 6Months
-    Covers premium subscription errors
-    We'll renew a new one if any error occurs`;
+    Covers premium subscription errors.
+    Share Plan ရော Private Plan တေရောကဝင်ရတာရှုပ်ပါတယ်။ တချို့ဖုန်းတေဆိုဝင်မရတာတေဘာတေထိဖြစ်တတ်ပါတယ်။ အဲ့တာကအကောင့်ကဖြစ်တာမဟုတ်ပဲ Device တေကလက်မခံတာမလို့ပြန်မလဲပေးပါဘူး။ အဲ့တာကြောင့် No Error ဖြစ်တဲ့ OwnMail ဝယ်တာကပိုကောင်းပါတယ်။`;
     }
     if (item.section === "Private") {
     return `Full warranty for full duration
     8 devices max
     Private က Tempmailနဲ့လုပ်ထားတာပါ။
     Full Warranty က 1Yearအတွင်းတခုခုဖြစ်ရင်တခါပြန်လဲပေးပါတယ်။
-    Riskကင်းတဲ့ OwnMail ယူလဲရပါတယ်။`;
+    Share Plan ရော Private Plan တေရောကဝင်ရတာရှုပ်ပါတယ်။ တချို့ဖုန်းတေဆိုဝင်မရတာတေဘာတေထိဖြစ်တတ်ပါတယ်။ အဲ့တာကအကောင့်ကဖြစ်တာမဟုတ်ပဲ Device တေကလက်မခံတာမလို့ပြန်မလဲပေးပါဘူး။ အဲ့တာကြောင့် No Error ဖြစ်တဲ့ OwnMail ဝယ်တာကပိုကောင်းပါတယ်။`;
     }
     if (item.section === "Private (Own Mail)" || item.section === "Private (Own Mail)") {
     return `Full warranty for full duration
@@ -4447,13 +4499,33 @@ if (
 </div>`;
    }
 
-    if (productName === "ChatGPT Plus") {
+    if (productName === "Canva")
+   if (item.section === "Private" && item.duration.includes("2 Weeks")) {
+    return `<div class="burmese-font">
+    Full warranty
+    Up to 100 accounts via invite email
+    Canva Account တေက device limit ကန့်သတ်ချက်မရှိလို့ကြိုက်သလောက်သုံးလို့ရပါတယ် email တခုကို။
+    2 Week Plan ဆိုတာက 10 To 14 Days ရမာပါ။ အမြဲ 14 Days မပြည့်နိုင်ပါဘူး။ 1 Month ထိပိုက်ဆံမသုံးချင်ပဲခု Project Export လုပ်ဖို့လိုတဲ့သူတေ Budget Plan အနေနဲ့ယူဖို့ထားပေးထားတာပါ။
+</div>`;
+   }
+    if (productName === "ChatGPT")
+   if (item.section === "Personal Plus (Private)" && item.duration.includes("2 Months")) {
+    return `<div class="burmese-font">
+    2 Months လုံး Full Warranty ပေးပါတယ်။ Private account ပါ။ ဒီကပေးတဲ့ Email and Password ကို ChatGpt မာထည့်သုံးရုံပါပဲ။ OwnMail မဟုတ်ပါဘူး။
+</div>`;
+   }
+    if (productName === "ChatGPT") {
     if (item.section === "Own Mail/Private") {
     return `Private ယူခဲ့ရင်ဒီကနေ Email & Password ပေးမာပါ။ အဲ့ဟာကို ChatGpt App or Web မာထည့်သုံးရုံပါပဲ။ OwnMail ဝယ်ရင်တော့အကောင့်ထဲဝင်ဝယ်ပေးရမာမလို့
     Account information
     Email & Password ပေးရပါမယ်။ ဝင်ပီးရင်ပြန်ထွက်မာပါ။ Full 3months Warranty.
     Extra Information 
     https://t.me/BLUELAMP1/329`;
+    }
+    }
+    if (productName === "ChatGPT") {
+    if (item.section === "Personal Plus(Full Warrenty)") {
+    return `Full Warranty Plan မို့လို့ 1 Months လုံး Full Warranty ပေးပါတယ်။ Private account ပါ။ ဒီကပေးတဲ့ Email and Password ကို ChatGpt မာထည့်သုံးရုံပါပဲ။ OwnMail မဟုတ်ပါဘူး။`;
     }
     }
     if (productName === "Canva") {
@@ -4523,7 +4595,7 @@ if (productName === "Express Vpn" && item.section === "Share" && /^phone/i.test(
   const forceNoteSectionName =
     isAdobeProduct ? "App&Web Private" : item.section;
 
-    if (productName === 'Gemini Veo 3') {
+    if (productName === 'Gemini Pro') {
         const standardNote = `Includes 5,000GB Google storage• Unlimited devices\nဒါမဲ့ဝယ်ရင်စစချင်းသိထားရမာတေရှိပါတယ်။ Admin ပြောပြပါလိမ့်မယ်။`;
         if (item.section.includes('OwnMail')) return `ဒါကကိုယ့်ရဲ့GmailကိုပဲProလုပ်ပေးတာမလို့။အလုပ်လဲမရှုပ်ပါဘူး။ Password လဲပေးစရာမလိုပါဘူး။ Device ကလဲဝင်ထားသလောက်သုံးလို့ရနေမာပါ။ Full Warranty.`;
         if (item.duration.includes('Full Warranty')) return `${standardNote}\n3 Months (Full Warranty) — 3 Months လုံး Full Warranty ပေးပါတယ်။`;

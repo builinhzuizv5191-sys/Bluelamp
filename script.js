@@ -380,7 +380,7 @@
         "price": "4,000 Kyats"
       }, {
         "duration": "1 Month",
-        "price": "15,500 Kyats"
+        "price": "15,900 Kyats"
       }],
       "Private Own Mail": [{
         "duration": "1 Month (30~35 Days)",

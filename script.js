@@ -373,14 +373,14 @@
     "CapCut": {
       "Share": [{
         "duration": "1 Month",
-        "price": "7,000 Kyats"
+        "price": "7,500 Kyats"
       }],
       "Private": [{
         "duration": "1 Week",
-        "price": "4,000 Kyats"
+        "price": "4,500 Kyats"
       }, {
         "duration": "1 Month",
-        "price": "15,900 Kyats"
+        "price": "17,900 Kyats"
       }],
       "Private Own Mail": [{
         "duration": "1 Month (30~35 Days)",
@@ -725,11 +725,14 @@
     "Grok": {
       "Share Plan": [{
         "duration": " 1 Month",
-        "price": "12,000 Kyats"
+        "price": "Out Of Stock"
       }],
       "Private Plan": [{
+        "duration": "3 Days",
+        "price": "4,000 Kyats"
+        }, {
         "duration": "1 Month",
-        "price": "20,000 Kyats"
+        "price": "Out Of Stock"
       }]
     },
   "Flow AI": {
@@ -772,8 +775,8 @@
         "duration": "1 Month",
         "price": "6,000 Kyats"
       }, {
-        "duration": "3 Months",
-        "price": "16,500 Kyats"
+        "duration": "3 Months+",
+        "price": "18,000 Kyats"
       }] 
     },
     "Tinder": {
@@ -877,7 +880,7 @@
     "TradingView": {
       "Private": [{
         "duration": "1 Month",
-        "price": "20,000 Kyats"
+        "price": "25,000 Kyats"
       }]
     },
     "PaySafeCard": {

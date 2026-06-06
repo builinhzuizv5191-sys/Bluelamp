@@ -373,14 +373,14 @@
     "CapCut": {
       "Share": [{
         "duration": "1 Month",
-        "price": "7,500 Kyats"
+        "price": "7,000 Kyats"
       }],
       "Private": [{
         "duration": "1 Week",
         "price": "4,500 Kyats"
       }, {
         "duration": "1 Month",
-        "price": "17,900 Kyats"
+        "price": "16,500 Kyats"
       }],
       "Private Own Mail": [{
         "duration": "1 Month (30~35 Days)",
@@ -467,6 +467,10 @@
       }, {
         "duration": "1 Month",
         "price": "5,000 Kyats"
+      }],
+      "Private.": [{
+        "duration": "2 Weeks",
+        "price": "3,500 Kyats"
       }],
     },
     "PhotoRoom": {
@@ -730,6 +734,9 @@
       "Private Plan": [{
         "duration": "3 Days",
         "price": "4,000 Kyats"
+        }, {
+        "duration": "7 Days",
+        "price": "7,000 Kyats"
         }, {
         "duration": "1 Month",
         "price": "Out Of Stock"
@@ -3235,6 +3242,9 @@ cancelBtn?.addEventListener("click", () => {
          if (sectionName === 'Own Mail(Invite)') {
             title += ' <span style="background:#38bdf8; color:#020617; padding:2px 6px; border-radius:4px; font-size:11px; margin-left:8px; font-weight:900; box-shadow:0 0 6px #38bdf8;">Educational</span>';
           }
+         if (sectionName === 'Private.') {
+            title += ' <span style="background:#38bdf8; color:#020617; padding:2px 6px; border-radius:4px; font-size:11px; margin-left:8px; font-weight:900; box-shadow:0 0 6px #38bdf8;">Business Subscription</span>';
+          }
          if (sectionName === 'Share' || sectionName === 'Private') {
             title += ' <span style="background:#38bdf8; color:#020617; padding:2px 6px; border-radius:4px; font-size:11px; margin-left:8px; font-weight:900; box-shadow:0 0 6px #38bdf8;">Pro Subscription</span>';
           }
@@ -4508,7 +4518,14 @@ if (
     Full warranty
     Up to 100 accounts via invite email
     Canva Account တေက device limit ကန့်သတ်ချက်မရှိလို့ကြိုက်သလောက်သုံးလို့ရပါတယ် email တခုကို။
-    2 Week Plan ဆိုတာက 10 To 14 Days ရမာပါ။ အမြဲ 14 Days မပြည့်နိုင်ပါဘူး။ 1 Month ထိပိုက်ဆံမသုံးချင်ပဲခု Project Export လုပ်ဖို့လိုတဲ့သူတေ Budget Plan အနေနဲ့ယူဖို့ထားပေးထားတာပါ။
+</div>`;
+   }
+    if (productName === "Canva")
+   if (item.section === "Private." && item.duration.includes("2 Weeks")) {
+    return `<div class="burmese-font">
+    Full warranty
+    Up to 100 accounts via invite email
+    Canva Account တေက device limit ကန့်သတ်ချက်မရှိလို့ကြိုက်သလောက်သုံးလို့ရပါတယ် email တခုကို။
 </div>`;
    }
     if (productName === "ChatGPT")

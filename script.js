@@ -851,7 +851,7 @@
     "BSTATION": {
       "Private": [{
         "duration": "1 Month",
-        "price": "15,000 Kyats"
+        "price": "13,000 Kyats"
       }],
       "Share": [{
         "duration": "1 Month",

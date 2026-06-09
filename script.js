@@ -852,7 +852,17 @@
       "Private": [{
         "duration": "1 Month",
         "price": "15,000 Kyats"
-      }]
+      }],
+      "Share": [{
+        "duration": "1 Month",
+        "price": "5,000 Kyats"
+      }, {
+        "duration": "3 Months",
+        "price": "14,500 Kyats"
+      }, {
+        "duration": "12 Months",
+        "price": "30,000 Kyats"
+      }],
     },
     "INSHOT": {
       "Share": [{

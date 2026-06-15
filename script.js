@@ -373,14 +373,14 @@
     "CapCut": {
       "Share": [{
         "duration": "1 Month",
-        "price": "7,000 Kyats"
+        "price": "6,500 Kyats"
       }],
       "Private": [{
         "duration": "1 Week",
         "price": "4,500 Kyats"
       }, {
         "duration": "1 Month",
-        "price": "16,500 Kyats"
+        "price": "15,000 Kyats"
       }],
       "Private Own Mail": [{
         "duration": "1 Month (30~35 Days)",
@@ -840,8 +840,8 @@
         "price": "Out Of Stock"
       }],
       "Private": [{
-        "duration": "1 Month",
-        "price": "Out Of Stock"
+        "duration": "1 Week",
+        "price": "15,000 Kyats"
       }],
       "OwnMail Private": [{
         "duration": "1 Month",

@@ -466,14 +466,14 @@
       }],
       "Private": [{
         "duration": "2 Weeks",
-        "price": "3,000 Kyats"
+        "price": "3,500 Kyats"
       }, {
         "duration": "1 Month",
-        "price": "5,000 Kyats"
+        "price": "6,000 Kyats"
       }],
-      "Private.": [{
+      "Private 2": [{
         "duration": "2 Weeks",
-        "price": "3,500 Kyats"
+        "price": "3,000 Kyats"
       }],
     },
     "PhotoRoom": {
@@ -646,6 +646,19 @@
       }]
     },
     "Google Drive": {
+      "OwnMail invite": [{
+        "duration": "3 Months (+ Gemini Pro)",
+        "price": "10,000 Kyats"
+      },{
+        "duration": "6 Months (+ Gemini Pro)",
+        "price": "20,000 Kyats"
+      },{
+      "duration": "9 Months (+ Gemini Pro)",
+        "price": "30,000 Kyats"
+      },{
+      "duration": "12 Months (+ Gemini Pro)",
+        "price": "39,500 Kyats"
+      }],
       "Share": [],
       "Private": [{
         "duration": "Lifetime",
@@ -666,6 +679,15 @@
       "OwnMail invite": [{
         "duration": "3 Months (+ Gemini Pro)",
         "price": "10,000 Kyats"
+      },{
+        "duration": "6 Months (+ Gemini Pro)",
+        "price": "20,000 Kyats"
+      },{
+      "duration": "9 Months (+ Gemini Pro)",
+        "price": "30,000 Kyats"
+      },{
+      "duration": "12 Months (+ Gemini Pro)",
+        "price": "39,500 Kyats"
       }],
       "Private": [{
         "duration": "3 Months (+ Gemini Pro)",
@@ -679,13 +701,17 @@
       }]
     },
     "ChatGPT": {
+      "Private": [{
+        "duration": "2 Months",
+        "price": "20,000 Kyats"
+      }],
       "Personal Plus (Private)": [{
         "duration": "1 Month",
         "price": "Out Of Stock"
       },
       {
         "duration": "2 Months",
-        "price": "40,000 Kyats"
+        "price": "Out Of Stock"
       },
       {
         "duration": "3 Months",
@@ -693,10 +719,6 @@
       }],
       "Personal Plus(Full Warrenty)": [{
         "duration": "1 Month",
-        "price": "20,000 Kyats"
-      }],
-      "Own Mail/Private": [{
-        "duration": "3 Months",
         "price": "Out Of Stock"
       }],
       "Business Plus - Invite Own Email": [{
@@ -718,11 +740,17 @@
     },
     "Gemini Pro": {
       "OwnMail Invite": [{
-        "duration": "1 Month",
-        "price": "5,000 Kyats"
-      }, {
         "duration": "3 Months",
         "price": "10,000 Kyats"
+      }, {
+        "duration": "6 Months",
+        "price": "20,000 Kyats"
+      }, {
+        "duration": "9 Months",
+        "price": "30,000 Kyats"
+      }, {
+        "duration": "12 Months",
+        "price": "39,500 Kyats"
       }],
       "Head(Can Invite 5 Email)": [{
         "duration": "3 Months (+5 TB Storage)",
@@ -749,6 +777,15 @@
   "OwnMail Invite": [{
     "duration": "3 Months",
     "price": "10,000 Kyats"
+    }, {
+    "duration": "6 Months",
+    "price": "20,000 Kyats"
+    }, {
+    "duration": "9 Months",
+    "price": "30,000 Kyats"
+    }, {
+    "duration": "12 Months",
+    "price": "39,500 Kyats"
   }],
       "Private": [{
         "duration": "4 Months",
@@ -758,6 +795,15 @@
   "OwnMail Invite": [{
     "duration": "3 Months",
     "price": "10,000 Kyats"
+  }, {
+    "duration": "6 Months",
+    "price": "20,000 Kyats"
+    }, {
+    "duration": "9 Months",
+    "price": "30,000 Kyats"
+    }, {
+    "duration": "12 Months",
+    "price": "39,500 Kyats"
   }]
 },
 
@@ -3255,11 +3301,11 @@ cancelBtn?.addEventListener("click", () => {
          if (sectionName === 'Own Mail(Invite)') {
             title += ' <span style="background:#38bdf8; color:#020617; padding:2px 6px; border-radius:4px; font-size:11px; margin-left:8px; font-weight:900; box-shadow:0 0 6px #38bdf8;">Educational</span>';
           }
-         if (sectionName === 'Private.') {
-            title += ' <span style="background:#38bdf8; color:#020617; padding:2px 6px; border-radius:4px; font-size:11px; margin-left:8px; font-weight:900; box-shadow:0 0 6px #38bdf8;">Business Subscription</span>';
+         if (sectionName === 'Private 2') {
+            title += ' <span style="background:#38bdf8; color:#020617; padding:2px 6px; border-radius:4px; font-size:11px; margin-left:8px; font-weight:900; box-shadow:0 0 6px #38bdf8;">Pro Subscription</span>';
           }
          if (sectionName === 'Share' || sectionName === 'Private') {
-            title += ' <span style="background:#38bdf8; color:#020617; padding:2px 6px; border-radius:4px; font-size:11px; margin-left:8px; font-weight:900; box-shadow:0 0 6px #38bdf8;">Pro Subscription</span>';
+            title += ' <span style="background:#38bdf8; color:#020617; padding:2px 6px; border-radius:4px; font-size:11px; margin-left:8px; font-weight:900; box-shadow:0 0 6px #38bdf8;">Business Subscription</span>';
           }
         } else if (productName === 'CapCut') {
          if (sectionName === 'Share' || sectionName === 'Private') {
@@ -3305,7 +3351,7 @@ cancelBtn?.addEventListener("click", () => {
          if (sectionName === 'Personal Plus (Private)' || sectionName === 'Business Plus - Invite Own Email' || sectionName === 'Personal Plus(Full Warrenty)' || sectionName === 'Business Plus Own' || sectionName === 'Business Plus Own(Full Warranty)') {
             title += ' <span style="background:#000000; color:#00ff9c; padding:2px 6px; border-radius:4px; font-size:11px; margin-left:8px; font-weight:900; box-shadow:0 0 6px #00ff9c;">Plus</span>';
           }
-        if (sectionName === 'Own Mail/Private') {
+        if (sectionName === 'Private') {
             title += ' <span style="background:#000000; color:#00ff9c; padding:2px 6px; border-radius:4px; font-size:11px; margin-left:8px; font-weight:900; box-shadow:0 0 6px #00ff9c;">Go Subscription</span>';
           }
           } else if (productName === 'Gemini Pro') {
@@ -3388,6 +3434,10 @@ cancelBtn?.addEventListener("click", () => {
           } else if (productName === 'WPS Office') {
          if (sectionName === 'Share') {
             title += ' <span style="background:#dc2626; color:#ffffff; padding:2px 6px; border-radius:4px; font-size:11px; margin-left:8px; font-weight:900; box-shadow:0 0 6px #dc2626;">Pro Subscription</span>';
+          }
+          } else if (productName === 'Google Drive') {
+         if (sectionName === 'OwnMail invite') {
+            title += ' <span style="background:#cbd5e1; color:#0f172a; padding:2px 6px; border-radius:4px; font-size:11px; margin-left:8px; font-weight:900; box-shadow:0 0 6px #cbd5e1;">5,000 GB</span>';
           }
           } else if (productName === 'Google Drive') {
          if (sectionName === 'Private') {
@@ -4206,7 +4256,7 @@ Renewလို့ရပါတယ်။သက်တန်းတိုးရင်
 Recommend for iOS device
 Full warranty.` + generalDetailsBlock,
     "Google One": `Private (own mail)\nIncludes GeminiVeo3 AI + premium features\nFull warranty` + generalDetailsBlock,
-    "Google Drive": `Private (own mail)\n30-days warranty` + generalDetailsBlock,
+    "Google Drive": `Private (own mail)\nFull warranty` + generalDetailsBlock,
     "TeraBox": `Sharing (2TB)
 Shared account. One device only.
 Full warranty for plan duration.` + generalDetailsBlock,
@@ -4534,7 +4584,7 @@ if (
 </div>`;
    }
     if (productName === "Canva")
-   if (item.section === "Private." && item.duration.includes("2 Weeks")) {
+   if (item.section === "Private 2" && item.duration.includes("2 Weeks")) {
     return `<div class="burmese-font">
     Full warranty
     Up to 100 accounts via invite email
@@ -4548,10 +4598,8 @@ if (
 </div>`;
    }
     if (productName === "ChatGPT") {
-    if (item.section === "Own Mail/Private") {
-    return `Private ယူခဲ့ရင်ဒီကနေ Email & Password ပေးမာပါ။ အဲ့ဟာကို ChatGpt App or Web မာထည့်သုံးရုံပါပဲ။ OwnMail ဝယ်ရင်တော့အကောင့်ထဲဝင်ဝယ်ပေးရမာမလို့
-    Account information
-    Email & Password ပေးရပါမယ်။ ဝင်ပီးရင်ပြန်ထွက်မာပါ။ Full 3months Warranty.
+    if (item.section === "Private") {
+    return `Private ယူခဲ့ရင်ဒီကနေ Email & Password ပေးမာပါ။ အဲ့ဟာကို ChatGpt App or Web မာထည့်သုံးရုံပါပဲ။ Full 2 months Warranty.
     Extra Information 
     https://t.me/BLUELAMP1/329`;
     }

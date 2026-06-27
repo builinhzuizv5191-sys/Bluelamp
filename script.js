@@ -452,7 +452,7 @@
         "price": "3,000 Kyats"
       }, {
         "duration": "1 Month",
-        "price": "Out Of Stock"
+        "price": "7,500 Kyats"
       }]
     },
     "Canva": {
@@ -702,8 +702,8 @@
     },
     "ChatGPT": {
       "Private": [{
-        "duration": "2 Months",
-        "price": "20,000 Kyats"
+        "duration": "3 Months",
+        "price": "30,000 Kyats"
       }],
       "Personal Plus (Private)": [{
         "duration": "1 Month",
@@ -808,11 +808,27 @@
 },
 
     "Claude Ai": {
-      "Private": [{
-        "duration": "1 Month",
-        "price": "Out Of Stock"
+      "50 Million token": [{
+        "duration": "3 Days",
+        "price": "15,000 Kyats"
+      }, {
+        "duration": "5 Days",
+        "price": "20,000 Kyats"
       }],
-      "Share": []
+      "70 Million token": [{
+        "duration": "3 Days",
+        "price": "27,000 Kyats"
+      }, {
+        "duration": "5 Days",
+        "price": "32,000 Kyats"
+      }],
+      "100 Million token": [{
+        "duration": "3 Days",
+        "price": "29,000 Kyats"
+      }, {
+        "duration": "5 Days",
+        "price": "40,000 Kyats"
+      }]
     },
     "Zoom": {
       "Private": [{
@@ -2426,7 +2442,7 @@ const popupTextByProduct = {
   button: "ဒါရှင်းပြပေးပါ။",
   doneText: "ဟုတ်ပီဟုတ်ပီ",
   steps: [
-    "ဒါကလောလောဆယ်ကျနော်မရောင်းသေးပါဘူးဗျ။ လုပ်လို့မရတာလဲပါပါတယ်။ အဲ့တာကြောင့်တခြားတခုခုရှာယူကြည့်ပါ။"
+    "Desktop Device တေမာပဲ VS Code နဲ့သုံးလိုရပါမယ်။ Laptop or PC တခုထဲကသုံးရတာမျိုးမဟုတ်ဘူး Multiple Laptop and PC API setup ပီးသုံးလိုရပါတယ်။ ဟိုလို Claude Website မာသုံးရတဲ့အကောင့်မဟုတ်ပါဘူး။ ကိုယ့် VS Code account ထဲမာ API ထည့်ပီးသုံးရတာမျိုးပါ။"
   ]
 },
   "Perplexity Ai": {
@@ -3355,8 +3371,8 @@ cancelBtn?.addEventListener("click", () => {
             title += ' <span style="background:#67e8f9; color:#083344; padding:2px 6px; border-radius:4px; font-size:11px; margin-left:8px; font-weight:900; box-shadow:0 0 6px #67e8f9;">Pro Subscription</span>';
           }
           } else if (productName === 'Claude Ai') {
-         if (sectionName === 'Private') {
-            title += ' <span style="background:#f97316; color:#ffffff; padding:2px 6px; border-radius:4px; font-size:11px; margin-left:8px; font-weight:900; box-shadow:0 0 6px #f97316;">Pro Subscription</span>';
+         if (sectionName === '50 Million token' || sectionName === '70 Million token' || sectionName === '100 Million token') {
+            title += ' <span style="background:#f97316; color:#ffffff; padding:2px 6px; border-radius:4px; font-size:11px; margin-left:8px; font-weight:900; box-shadow:0 0 6px #f97316;">Private API Key</span>';
           }
           } else if (productName === 'Perplexity Ai') {
          if (sectionName === 'Share' || sectionName === 'Private' || sectionName === 'OwnMail Private') {
@@ -4291,7 +4307,7 @@ Gemini Pro 3 Monthsပါရမာပါ။` + generalDetailsBlock,
 ဒီဟာဝယ်ရင်
 Google One Storage 5 TB 3 Months(Share)
 Gemini Pro 3 Monthsပါရမာပါ။` + generalDetailsBlock,
-    "Claude Ai": `Share\nFull warranty • One device only` + generalDetailsBlock,
+    "Claude Ai": `Private API Key\nFull warranty` + generalDetailsBlock,
     "Zoom": `Full warranty.\nAll pro features unlock.\nCan use 2-5 devices.` + generalDetailsBlock,
     "YouTube Premium": `Private (Individual Plan)
 Full warranty.

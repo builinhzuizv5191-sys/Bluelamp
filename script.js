@@ -455,27 +455,27 @@
         "price": "7,500 Kyats"
       }]
     },
-    "Canva": {
-      "Share": [{
-        "duration": "1 Month",
+"Canva": {
+     "Share": [{
+       "duration": "1 Month",
         "price": "1,500 Kyats"
       }],
-      "Own Mail(Invite)": [{
-        "duration": "Lifetime",
-        "price": "5,000 Kyats"
-      }],
-      "Private": [{
+    "Own Mail": [{
+       "duration": "Lifetime",
+       "price": "5,000 Kyats"
+     }],
+     "Private Business": [{
         "duration": "2 Weeks",
         "price": "3,500 Kyats"
       }, {
         "duration": "1 Month",
         "price": "6,000 Kyats"
       }],
-      "Private 2": [{
+      "Private Pro": [{
         "duration": "2 Weeks",
         "price": "3,000 Kyats"
-      }],
-    },
+      }]
+   },
     "PhotoRoom": {
       "Private": [{
         "duration": "1 Week",
@@ -559,28 +559,26 @@
         "price": "12,000 Kyats"
       }]
     },
-    "Netflix": {
-      "SemiPrivate1": [{
-        "duration": "(1 Profile 1 Month)",
-        "price": "15,000 Kyats"
-      },
-      {
-        "duration": "(1 Profile 2 Months)",
-        "price": "27,000 Kyats"
-      },
-      {
-         "duration": "(1 Profile 3 Months)",
-         "price": "39,000 Kyats"
-      }],
-      "SemiPrivate2": [{
-        "duration": "(1 Profile 1 Month)",
-        "price": "10,000 Kyats"
-      }],
-      "Whole Account": [{
-        "duration": "5 Profiles (1 Month)",
-        "price": "55,000 Kyats"
-      }]
-    },
+   "Netflix": {
+     "SemiPrivate Premium": [{
+       "duration": "(1 Profile 1 Month)",
+       "price": "15,000 Kyats"
+     }, {
+       "duration": "(1 Profile 2 Months)",
+       "price": "27,000 Kyats"
+     }, {
+       "duration": "(1 Profile 3 Months)",
+       "price": "39,000 Kyats"
+     }],
+    "SemiPrivate Standard": [{
+       "duration": "(1 Profile 1 Month)",
+       "price": "10,000 Kyats"
+     }],
+     "Whole Account": [{
+       "duration": "5 Profiles (1 Month)",
+       "price": "55,000 Kyats"
+     }]
+   },
     "Disney+": {
       "Plan Basic": [{
         "duration": "Sharing 6U (Limited Screen)",
@@ -711,15 +709,15 @@
       },
       {
         "duration": "2 Months",
-        "price": "Out Of Stock"
+        "price": "45,000 Kyats"
       },
       {
         "duration": "3 Months",
         "price": "Out Of Stock"
       }],
       "Personal Plus(Full Warrenty)": [{
-        "duration": "1 Month",
-        "price": "Out Of Stock"
+        "duration": "2 Months",
+        "price": "45,000 Kyats"
       }],
       "Business Plus - Invite Own Email": [{
         "duration": "1 Month",
@@ -960,9 +958,13 @@
       }]
     },
     "TradingView": {
-      "Private": [{
+      "Private Plus": [{
+         "duration": "1 Month",
+         "price": "25,000 Kyats"
+      }],
+        "Private Premium": [{
         "duration": "1 Month",
-        "price": "25,000 Kyats"
+        "price": "30,000 Kyats"
       }]
     },
     "PaySafeCard": {
@@ -3309,16 +3311,6 @@ cancelBtn?.addEventListener("click", () => {
          if (sectionName === 'Share' || sectionName === 'Private') {
             title += ' <span style="background:#00ff9c; color:#002b1f; padding:2px 6px; border-radius:4px; font-size:11px; margin-left:8px; font-weight:900; box-shadow:0 0 10px #00ff9c;">Pro Subscription</span>';
           }
-        } else if (productName === 'Canva') {
-         if (sectionName === 'Own Mail(Invite)') {
-            title += ' <span style="background:#38bdf8; color:#020617; padding:2px 6px; border-radius:4px; font-size:11px; margin-left:8px; font-weight:900; box-shadow:0 0 6px #38bdf8;">Educational</span>';
-          }
-         if (sectionName === 'Private 2') {
-            title += ' <span style="background:#38bdf8; color:#020617; padding:2px 6px; border-radius:4px; font-size:11px; margin-left:8px; font-weight:900; box-shadow:0 0 6px #38bdf8;">Pro Subscription</span>';
-          }
-         if (sectionName === 'Share' || sectionName === 'Private') {
-            title += ' <span style="background:#38bdf8; color:#020617; padding:2px 6px; border-radius:4px; font-size:11px; margin-left:8px; font-weight:900; box-shadow:0 0 6px #38bdf8;">Business Subscription</span>';
-          }
         } else if (productName === 'CapCut') {
          if (sectionName === 'Share' || sectionName === 'Private') {
             title += ' <span style="background:#cbd5e1; color:#0f172a; padding:2px 6px; border-radius:4px; font-size:11px; margin-left:8px; font-weight:900; box-shadow:0 0 6px #cbd5e1;">Pro Subscription</span>';
@@ -3390,11 +3382,22 @@ cancelBtn?.addEventListener("click", () => {
             title += ' <span style="background:#cffafe; color:#164e63; padding:2px 6px; border-radius:4px; font-size:11px; margin-left:8px; font-weight:900; box-shadow:0 0 6px #a5f3fc;">Family Subscription</span>';
           }
           } else if (productName === 'Netflix') {
-         if (sectionName === 'SemiPrivate2') {
-            title += ' <span style="background:#000000; color:#ff3131; padding:2px 6px; border-radius:4px; font-size:11px; margin-left:8px; font-weight:900; box-shadow:0 0 6px #ff3131;">Standard Subscription</span>';
+         if (sectionName === 'SemiPrivate Premium') {
+            title = 'SemiPrivate <span style="background:#000000; color:#ff3131; padding:2px 6px; border-radius:4px; font-size:11px; margin-left:8px; font-weight:900; box-shadow:0 0 6px #ff3131;">Premium Subscription</span>';
+          } else if (sectionName === 'SemiPrivate Standard') {
+            title = 'SemiPrivate <span style="background:#000000; color:#ff3131; padding:2px 6px; border-radius:4px; font-size:11px; margin-left:8px; font-weight:900; box-shadow:0 0 6px #ff3131;">Standard Subscription</span>';
+          } else if (sectionName === 'Whole Account') {
+            title = 'Whole Account <span style="background:#000000; color:#ff3131; padding:2px 6px; border-radius:4px; font-size:11px; margin-left:8px; font-weight:900; box-shadow:0 0 6px #ff3131;">Premium Subscription</span>';
           }
-         if (sectionName === 'SemiPrivate1' || sectionName === 'Whole Account') {
-            title += ' <span style="background:#000000; color:#ff3131; padding:2px 6px; border-radius:4px; font-size:11px; margin-left:8px; font-weight:900; box-shadow:0 0 6px #ff3131;">Premium Subscription</span>';
+          } else if (productName === 'Canva') {
+         if (sectionName === 'Private Pro') {
+            title = 'Private <span style="background:#38bdf8; color:#020617; padding:2px 6px; border-radius:4px; font-size:11px; margin-left:8px; font-weight:900; box-shadow:0 0 6px #38bdf8;">Pro Subscription</span>';
+          } else if (sectionName === 'Private Business') {
+            title = 'Private <span style="background:#38bdf8; color:#020617; padding:2px 6px; border-radius:4px; font-size:11px; margin-left:8px; font-weight:900; box-shadow:0 0 6px #38bdf8;">Business Subscription</span>';
+          } else if (sectionName === 'Own Mail') {
+            title = 'Own Mail(Invite) <span style="background:#38bdf8; color:#020617; padding:2px 6px; border-radius:4px; font-size:11px; margin-left:8px; font-weight:900; box-shadow:0 0 6px #38bdf8;">Educational</span>';
+          } else if (sectionName === 'Share') {
+            title = 'Share <span style="background:#38bdf8; color:#020617; padding:2px 6px; border-radius:4px; font-size:11px; margin-left:8px; font-weight:900; box-shadow:0 0 6px #38bdf8;">Business Subscription</span>';
           }
           } else if (productName === 'HBO Max') {
          if (sectionName === '1 Month') {
@@ -3435,13 +3438,15 @@ cancelBtn?.addEventListener("click", () => {
          if (sectionName === 'Private') {
             title += ' <span style="background:#0284c7; color:#ffffff; padding:2px 6px; border-radius:4px; font-size:11px; margin-left:8px; font-weight:900; box-shadow:0 0 6px #0284c7;">Premium Subscription</span>';
           }
-          } else if (productName === 'TradingView') {
-         if (sectionName === 'Private') {
-            title += ' <span style="background:#000000; color:#ffffff; padding:2px 6px; border-radius:4px; font-size:11px; margin-left:8px; font-weight:900; box-shadow:0 0 6px #666666;">Plus Subscription</span>';
-          }
           } else if (productName === 'SCRIBD') {
          if (sectionName === 'Private') {
             title += ' <span style="background:#0f766e; color:#ffffff; padding:2px 6px; border-radius:4px; font-size:11px; margin-left:8px; font-weight:900; box-shadow:0 0 6px #2dd4bf;">Premium Subscription</span>';
+          }
+          } else if (productName === 'TradingView') {
+         if (sectionName === 'Private Plus') {
+            title = 'Private <span style="background:#000000; color:#ffffff; padding:2px 6px; border-radius:4px; font-size:11px; margin-left:8px; font-weight:900; box-shadow:0 0 6px #666666;">Plus Subscription</span>';
+          } else if (sectionName === 'Private Premium') {
+            title = 'Private <span style="background:#000000; color:#ffffff; padding:2px 6px; border-radius:4px; font-size:11px; margin-left:8px; font-weight:900; box-shadow:0 0 6px #666666;">Premium Subscription</span>';
           }
           } else if (productName === 'WPS Office') {
          if (sectionName === 'Share') {
@@ -3479,15 +3484,6 @@ cancelBtn?.addEventListener("click", () => {
           }
          if (sectionName === 'Sever Boost') {
             title += ' <span style="background:#a855f7; color:#ffffff; padding:2px 6px; border-radius:4px; font-size:11px; margin-left:8px; font-weight:900; box-shadow:0 0 6px #a855f7;">Nitro</span>';
-          }
-        
-        } else if (productName === 'Netflix') {
-          if (sectionName.includes('SemiPrivate1')) {
-            title = 'SemiPrivate';
-          } else if (sectionName.includes('SemiPrivate2')) {
-            title = 'SemiPrivate';
-          } else if (sectionName.includes('Whole Account')) {
-            title = 'Whole Account';
           }
         } else if (productName === 'Gemini Pro') {
           if (sectionName.includes('OwnMail')) {
@@ -3717,8 +3713,8 @@ if (productName === "Domain") {
 if (productName === "Netflix") {
 
   // ✅ EXACT section name from productData
-  const UHD_SECTION = "SemiPrivate1";
-  const FHD_SECTION = "SemiPrivate2";
+  const UHD_SECTION = "SemiPrivate Premium";
+  const FHD_SECTION = "SemiPrivate Standard";
 
   function getNetflixUhdCustomPrice(months) {
     if (months === 1) return 15000;
@@ -4194,13 +4190,19 @@ Sharingမို့လို့ Edit history တေတခြား Shareဝယ�
 Private
 Full warranty for full duration
 Up to 5 devices` + generalDetailsBlock,
-    "Canva": `Pro Share
-Full warranty
+    "Canva": `Share Business
+15 Days warranty
 
-Pro Private
+Own Mail
+Education edition (limited features). 5 Months Warranty.
+
+Private Business
 Full warranty
 Up to 100 accounts via invite email
-Canva Account တေက device limit ကန့်သတ်ချက်မရှိလို့ကြိုက်သလောက်သုံးလို့ရပါတယ် email တခုကို။` + generalDetailsBlock,
+Canva Account တေက device limit ကန့်သတ်ချက်မရှိလို့ကြိုက်သလောက်သုံးလို့ရပါတယ် email တခုကို။
+
+Private Pro
+Full warranty` + generalDetailsBlock,
     "VSCO": `Share\nFull warranty for full duration\nOne device only` + generalDetailsBlock,
     "PhotoRoom": `Share\n6-months warranty\nNo warranty ≠ will fail\nOne device only` + generalDetailsBlock,
     "Remini": `Share
@@ -4232,11 +4234,11 @@ Own Mail Invite
 
 Private Head
 Microsoft 365 ရဲ့ Family Subscription ပါ။ ကျနော်ပေးမဲ့ Head အကောင့်အပါအဝင်တခြား email 5ခုလုံးက(Word, Excel, etc.) and 1TB of OneDrive storageစတဲ့ Microsoft Family မာပါတဲ့ features တေအကုန်သုံးလို့ရသွားမာပါ။` + generalDetailsBlock,
-    "Netflix": `SemiPrivate1
+    "Netflix": `SemiPrivate Premium
 Own 1 profile you can use 2 devices.Tv Support.
 Full Warranty.
 
-SemiPrivate2
+SemiPrivate Standard
 Own 1 profile you can use 2 devices.Tv Support.
 Full Warranty.
 
@@ -4588,7 +4590,7 @@ if (
    }
 
     if (productName === "Canva")
-   if (item.section === "Private" && item.duration.includes("2 Weeks")) {
+   if (item.section === "Private business" && item.duration.includes("2 Weeks")) {
     return `<div class="burmese-font">
     Full warranty
     Up to 100 accounts via invite email
@@ -4596,11 +4598,9 @@ if (
 </div>`;
    }
     if (productName === "Canva")
-   if (item.section === "Private 2" && item.duration.includes("2 Weeks")) {
+   if (item.section === "Private Pro" && item.duration.includes("2 Weeks")) {
     return `<div class="burmese-font">
     Full warranty
-    Up to 100 accounts via invite email
-    Canva Account တေက device limit ကန့်သတ်ချက်မရှိလို့ကြိုက်သလောက်သုံးလို့ရပါတယ် email တခုကို။
 </div>`;
    }
     if (productName === "ChatGPT")
@@ -4622,7 +4622,7 @@ if (
     }
     }
     if (productName === "Canva") {
-    if (item.section === "Own Mail(Invite)") {
+    if (item.section === "Own Mail") {
     return `Education edition (limited features). 5 Months Warranty.`;
     }
     }
@@ -4699,7 +4699,7 @@ if (productName === "Express Vpn" && item.section === "Share" && /^phone/i.test(
         if (productName === "INSHOT") return `Mod appမဟုတ်ပါဘူး။Android onlyပဲသူံးလို့ရပါတယ်။ Playstore ကappမာပဲသုံးလို့ရပါမယ်။\nWarranty 3လပေးပါတယ်။\nShare plan မို့လို့ 1 device ပဲသုံးလို့ရပါမယ်။`;
     if (!fullText) return null;
     const rawDetails = fullText.trim();
-    const sectionHeaders = /^(Share|Private|SemiPrivate|FullPrivate|Tinder Plus Share|Login|Gift Plan & Link Plan|Gift Plan|Link Plan|Views \(NoDrop\)|Likes \(NoDrop\)|Comment - Emoji Type|Comment - Custom Type|Package Plan|Livestream Views|Livestream Likes|Livestream Share|Post Views|Positive Reactions|Negative Reactions|Custom Reactions|Premium Reactions|Members \(30Days Refill\)|Livestream Views|Comment - Impression Type|Comment - Custom Type|Video Views|Video Likes|Post Likes|Profile Followers|Page Followers|Live Stream Views|Video Views & Reels|Likes|Followers|Personal Plus \(Share\)|Personal Plus \(Private\)|Business Plus - Invite Own Email|Business - Own|Private Own Mail|Private \(Own Mail\)|Base Service|1 Profile\(Semiprivate\)|5 Profiles\(Whole Account\)|Nitro Basic \(Key\)|Individual|Own Mail Invite|Sharing Pro|Plan Basic|Plan Premium|HBO MAX \(ULTIMATE\) 1 Month|Private Whole Account \(1 Month\)|1 Profile|Whole Account|OwnMail Private|OwnMail Invite|Individual Plan|Business Own\(Full Warranty\)|Business Plus Own\(Full Warranty\)|Business Plus Own|Normal Plan|Family Head\(Can Invite 5 email\)|Invite Private|Web Private|App&Web Private|Pro Share|Pro Private|Lifetime Premium|Educational\(Invite\)|Individual Plan\(Private\)|Stars|Japan Region \(¥\)|US Region \(\$\)|UK Region \(£\)|Custom Amount|Turkey Region \(TL\)|Indonesia Region \(IDR\)|Brazil Region \(BRL\)|Korea Region \(₩\)|India Region \(₹\)|Australia Region \(A\$\)|Germany Region \(€\)|France Region \(€\)|Italy Region \(€\)|Switzerland Region \(CHF\)|Canada Region \(C\$\)|UAE Region \(AED\)|Poland Region \(PLN\)|Nitro \(Key\))/i;
+    const sectionHeaders = /^(Share|Own Mail|Private Business|Private Pro|Private|SemiPrivate Premium|SemiPrivate Standard|SemiPrivate|FullPrivate|Tinder Plus Share|Login|Gift Plan & Link Plan|Gift Plan|Link Plan|Views \(NoDrop\)|Likes \(NoDrop\)|Comment - Emoji Type|Comment - Custom Type|Package Plan|Livestream Views|Livestream Likes|Livestream Share|Post Views|Positive Reactions|Negative Reactions|Custom Reactions|Premium Reactions|Members \(30Days Refill\)|Livestream Views|Comment - Impression Type|Comment - Custom Type|Video Views|Video Likes|Post Likes|Profile Followers|Page Followers|Live Stream Views|Video Views & Reels|Likes|Followers|Personal Plus \(Share\)|Personal Plus \(Private\)|Business Plus - Invite Own Email|Business - Own|Private Own Mail|Private \(Own Mail\)|Base Service|1 Profile\(Semiprivate\)|5 Profiles\(Whole Account\)|Nitro Basic \(Key\)|Individual|Own Mail Invite|Sharing Pro|Plan Basic|Plan Premium|HBO MAX \(ULTIMATE\) 1 Month|Private Whole Account \(1 Month\)|1 Profile|Whole Account|OwnMail Private|OwnMail Invite|Individual Plan|Business Own\(Full Warranty\)|Business Plus Own\(Full Warranty\)|Business Plus Own|Normal Plan|Family Head\(Can Invite 5 email\)|Invite Private|Web Private|App&Web Private|Pro Share|Pro Private|Lifetime Premium|Educational\(Invite\)|Individual Plan\(Private\)|Stars|Japan Region \(¥\)|US Region \(\$\)|UK Region \(£\)|Custom Amount|Turkey Region \(TL\)|Indonesia Region \(IDR\)|Brazil Region \(BRL\)|Korea Region \(₩\)|India Region \(₹\)|Australia Region \(A\$\)|Germany Region \(€\)|France Region \(€\)|Italy Region \(€\)|Switzerland Region \(CHF\)|Canada Region \(C\$\)|UAE Region \(AED\)|Poland Region \(PLN\)|Nitro \(Key\))/i;
     const lines = rawDetails.split('\n').map(l => l.trim()).filter(l => l.length > 0);
     let targetSection = String(forceNoteSectionName).replace(/\s*\(.*\)/, '');
     if (productName === 'HBO Max') targetSection = item.section;
@@ -4769,7 +4769,7 @@ if (productName === "Express Vpn" && item.section === "Share" && /^phone/i.test(
     }
     const netflixMultiItem = cart.find(item =>
     item.product === 'Netflix' &&
-    ['SemiPrivate1', 'SemiPrivate2'].includes(
+    ['SemiPrivate Premium', 'SemiPrivate Standard'].includes(
     item.section.replace(/\s*\(.*\)/, '').trim()
   ) &&
     item.qty > 1

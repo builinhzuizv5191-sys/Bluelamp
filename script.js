@@ -383,8 +383,8 @@
         "price": "15,000 Kyats"
       }],
       "Private Own Mail": [{
-        "duration": "1 Month (30~35 Days)",
-        "price": "Out of stock"
+        "duration": "1 Month",
+        "price": "18,000 Kyats"
       }]
     },
     "AlightMotion": {
@@ -4554,19 +4554,13 @@ if (
     if (productName === "CapCut") {
       // Private 1 Month
    if (item.section === "Private" && item.duration.includes("1 Month")) {
-    return `<div class="burmese-font">30~35 ဆိုတာက ကျနော်က တစ်လလို့ရေးထားပေမဲ့။
-    30ရက်တစ်လအတိလဲပါနိုင်တယ်၊အများဆုံး 35 ရက်ထိပါနိုင်တာကိုပြောချင်တာပါ။  
-    2 to 3 devices. Full warranty for the entire plan duration.
+    return `<div class="burmese-font"> 2 to 3 devices. Full warranty for the entire plan duration.
     </div>`;
    }
      
      // Own Mail 1 Month
    if (item.section === "Private Own Mail" && item.duration.includes("1 Month")) {
-    return `<div class="burmese-font">OwnMail နဲ့လုပ်ဖို့ဆို CapCut တခါမမဖွင့်ဖူးတဲ့ Email လိုပါမယ်။ အဲ့တာနဲ့မရမာပါ။
-    CapCut က အကောင့်ပြောင်းလဲ Project တေမပျက်တာမလို့ Private ကပိုရွေးချယ်သင့်ပါတယ်။  
-    30~35 ဆိုတာက ကျနော်က တစ်လလို့ရေးထားပေမဲ့။
-    30ရက်တစ်လအတိလဲပါနိုင်တယ်၊အများဆုံး 35 ရက်ထိပါနိုင်တာကိုပြောချင်တာပါ။  
-    2 to 3 devices. Full warranty for the entire plan duration.
+    return `<div class="burmese-font"> 2 to 3 devices. Full warranty for the entire plan duration.
     </div>`;
    }
    }

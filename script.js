@@ -498,20 +498,23 @@
     "Express Vpn": {
       "Private": [{
         "duration": "1 Month",
-        "price": "7,900 Kyats"
+        "price": "Out of stock"
+      }, {
+        "duration": "3 Days",
+        "price": "1,000 Kyats"
       }],
       "Share": [{
         "duration": "Phone (1 Month)",
-        "price": "1,000 Kyats"
+        "price": "Out of stock"
       }, {
         "duration": "WindowsPC / Laptop(1 Month)",
-        "price": "2,000 Kyats"
+        "price": "Out of stock"
       }, {
         "duration": "MacBook(1 Month)",
-        "price": "2,000 Kyats"
+        "price": "Out of stock"
       }, {
         "duration": "Linux(1 Month)",
-        "price": "2,000 Kyats"
+        "price": "Out of stock"
       }]
      
     },
@@ -1346,6 +1349,16 @@
       "Private": [{
         "duration": "1 Month",
         "price": "8,000 Kyats"
+      }],
+      "Share": [{
+        "duration": "Phone (1 Month)",
+        "price": "1,000 Kyats"
+      }, {
+        "duration": "WindowsPC / Laptop(1 Month)",
+        "price": "2,000 Kyats"
+      }, {
+        "duration": "Linux(1 Month)",
+        "price": "2,000 Kyats"
       }]
     },
     "Crunchyroll": {

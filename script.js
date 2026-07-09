@@ -203,6 +203,22 @@
     "Google Play Japan": "https://ik.imagekit.io/dkdlgynlu/New%20Project%207%20_42752FB_.png",
     "Google Play US": "https://ik.imagekit.io/dkdlgynlu/New%20Project%207%20_3BDD96E_.png",
     "Google Play UK": "https://ik.imagekit.io/dkdlgynlu/New%20Project%207%20_BD37C1B_.png",
+    
+"Apple Gift Card": "https://ik.imagekit.io/dkdlgynlu/quality_restoration_20260704143415179.png",
+"Apple United States": "https://ik.imagekit.io/dkdlgynlu/quality_restoration_20260704143415179.png",
+"Apple Japan": "https://ik.imagekit.io/dkdlgynlu/quality_restoration_20260704143415179.png",
+"Apple DenMark": "https://ik.imagekit.io/dkdlgynlu/New%20Project%203%20_3B4A554_.png",
+"Apple Norway": "https://ik.imagekit.io/dkdlgynlu/New%20Project%203%20_31456AD_.png",
+"Apple Sweden": "https://ik.imagekit.io/dkdlgynlu/New%20Project%203%20_611B85F_.png",
+"Apple Poland": "https://ik.imagekit.io/dkdlgynlu/New%20Project%203%20_6F74269_.png",
+"Apple UAE": "https://ik.imagekit.io/dkdlgynlu/quality_restoration_20260704143415179.png",
+"Apple Brazil": "https://ik.imagekit.io/dkdlgynlu/quality_restoration_20260704143415179.png",
+"Apple China": "https://ik.imagekit.io/dkdlgynlu/New%20Project%203%20_49F45E3_.png",
+"Apple Australia": "https://ik.imagekit.io/dkdlgynlu/New%20Project%203%20_4BBF4AA_.png",
+"Apple Switzerland": "https://ik.imagekit.io/dkdlgynlu/quality_restoration_20260704143415179.png",
+"Apple UK": "https://ik.imagekit.io/dkdlgynlu/quality_restoration_20260704143415179.png",
+"Apple Canada": "https://ik.imagekit.io/dkdlgynlu/quality_restoration_20260704143415179.png",
+"Apple India": "https://ik.imagekit.io/dkdlgynlu/quality_restoration_20260704143415179.png",
     // STEAM IMAGES
     "Steam Gift Card": "https://ik.imagekit.io/dkdlgynlu/Wattpad%20_48A1713_.png?updatedAt=1767864363832",
     "Steam Argentina": "https://ik.imagekit.io/dkdlgynlu/New%20Project%207%20_67858F0_.png?updatedAt=1767864363692",
@@ -247,6 +263,9 @@
       name: "Google Play Switzerland",
       img: imageFor["Google Play Switzerland"]
     }, {
+      name: "Google Play UK",
+      img: imageFor["Google Play UK"]
+    }, {
       name: "Google Play Canada",
       img: imageFor["Google Play Canada"]
     }, {
@@ -258,9 +277,6 @@
     }, {
       name: "Google Play US",
       img: imageFor["Google Play US"]
-    }, {
-      name: "Google Play UK",
-      img: imageFor["Google Play UK"]
     }, {
       name: "Google Play Japan",
       img: imageFor["Google Play Japan"]
@@ -315,6 +331,50 @@
         name: "Steam Taiwan",
         img: imageFor["Steam Taiwan"]
       }
+      ],
+    "Apple Gift Card": [{
+        name: "Apple United States",
+        img: imageFor["Google Play US"]
+      }, {
+        name: "Apple Japan",
+        img: imageFor["Google Play Japan"]
+      }, {
+        name: "Apple DenMark",
+        img: imageFor["Apple DenMark"]
+      }, {
+        name: "Apple Norway",
+        img: imageFor["Apple Norway"]
+      }, {
+        name: "Apple Sweden",
+        img: imageFor["Apple Sweden"]
+      }, {
+        name: "Apple Poland",
+        img: imageFor["Apple Poland"]
+     }, {
+        name: "Apple UAE",
+        img: imageFor["Google Play UAE"]
+      }, {
+        name: "Apple Brazil",
+        img: imageFor["Google Play Brazil"]
+      }, {
+        name: "Apple China",
+        img: imageFor["Apple China"]
+      }, {
+        name: "Apple Australia",
+        img: imageFor["Apple Australia"]
+      }, {
+      name: "Apple Switzerland",
+      img: imageFor["Google Play Switzerland"]
+    }, {
+      name: "Apple UK",
+      img: imageFor["Google Play UK"]
+    }, {
+      name: "Apple Canada",
+      img: imageFor["Google Play Canada"]
+    }, {
+        name: "Apple India",
+        img: imageFor["Google Play India"]
+     }
     ]
   };
 
@@ -366,7 +426,37 @@
       max: 1000,
       rate: 1380,
       curr: "AED"
-    }
+    },
+"Apple UAE": {
+  min: 50,
+  max: 500,
+  rate: 1432,
+  curr: "AED"
+},
+"Apple Canada": {
+  min: 5,
+  max: 500,
+  rate: 3700,
+  curr: "CAD"
+},
+"Apple UK": {
+  min: 2,
+  max: 200,
+  rate: 7000,
+  curr: "GBP"
+},
+"Apple Switzerland": {
+  min: 2,
+  max: 250,
+  rate: 6500,
+  curr: "CHF"
+},
+"Apple Australia": {
+  min: 2,
+  max: 2000,
+  rate: 3550,
+  curr: "AUD"
+}
   };
 
   const productData = {
@@ -497,8 +587,8 @@
     },
     "Express Vpn": {
       "Private": [{
-        "duration": "1 Month",
-        "price": "Out of stock"
+        "duration": "7 Days",
+        "price": "2,000 Kyats"
       }, {
         "duration": "3 Days",
         "price": "1,000 Kyats"
@@ -846,9 +936,13 @@
     "YouTube Premium": {
       "Private": [{
         "duration": "1 Month",
-        "price": "6,000 Kyats"
+        "price": "Out Of Stock"
       }, {
-        "duration": "3 Months+",
+        "duration": "3 Months",
+        "price": "20,000 Kyats"
+      }],
+      "OwnMail": [{
+        "duration": "3 Months",
         "price": "18,000 Kyats"
       }] 
     },
@@ -1356,15 +1450,21 @@
       }, {
         "duration": "WindowsPC / Laptop(1 Month)",
         "price": "2,000 Kyats"
-      }, {
-        "duration": "Linux(1 Month)",
-        "price": "2,000 Kyats"
       }]
     },
     "Crunchyroll": {
       "Share": [{
+        "duration": "2 Months",
+        "price": "10,000 Kyats"
+      }, {
         "duration": "4 Months",
         "price": "20,000 Kyats"
+      }, {
+        "duration": "6 Months",
+        "price": "28,000 Kyats"
+      }, {
+        "duration": "12 Months",
+        "price": "55,000 Kyats"
       }]
     },
     "Telegram Star": {
@@ -1377,6 +1477,9 @@
       }]
     },
     "Google Play Gift Card": {
+      "Select Region": []
+    },
+    "Apple Gift Card": {
       "Select Region": []
     },
     // STEAM REGIONS
@@ -1650,6 +1753,364 @@
         "price": "161,000 Kyats"
       }]
     },
+"Apple United States": {
+  "United States (USD)": [{
+    "duration": "$2",
+    "price": "9,700 Kyats"
+  }, {
+    "duration": "$5",
+    "price": "24,300 Kyats"
+  }, {
+    "duration": "$10",
+    "price": "48,500 Kyats"
+  }, {
+    "duration": "$20",
+    "price": "97,000 Kyats"
+  }, {
+    "duration": "$25",
+    "price": "121,300 Kyats"
+  }, {
+    "duration": "$40",
+    "price": "194,000 Kyats"
+  }, {
+    "duration": "$50",
+    "price": "242,500 Kyats"
+  }, {
+    "duration": "$60",
+    "price": "291,000 Kyats"
+  }, {
+    "duration": "$100",
+    "price": "485,000 Kyats"
+  }, {
+    "duration": "$150",
+    "price": "727,600 Kyats"
+  }, {
+    "duration": "$200",
+    "price": "970,000 Kyats"
+  }, {
+    "duration": "$250",
+    "price": "1,210,000 Kyats"
+  }, {
+    "duration": "$300",
+    "price": "1,450,000 Kyats"
+  }, {
+    "duration": "$400",
+    "price": "1,920,000 Kyats"
+  }, {
+    "duration": "$500",
+    "price": "2,400,000 Kyats"
+  }]
+},
+"Apple Japan": {
+  "Japan Region (JPY)": [
+    {
+      "duration": "500 JPY",
+      "price": "16,700 Kyats"
+    },
+    {
+      "duration": "1,000 JPY",
+      "price": "33,400 Kyats"
+    },
+    {
+      "duration": "2,000 JPY",
+      "price": "66,900 Kyats"
+    },
+    {
+      "duration": "3,000 JPY",
+      "price": "100,300 Kyats"
+    },
+    {
+      "duration": "4,000 JPY",
+      "price": "131,200 Kyats"
+    },
+    {
+      "duration": "5,000 JPY",
+      "price": "167,200 Kyats"
+    },
+    {
+      "duration": "10,000 JPY",
+      "price": "334,300 Kyats"
+    },
+    {
+      "duration": "30,000 JPY",
+      "price": "983,700 Kyats"
+    },
+    {
+      "duration": "50,000 JPY",
+      "price": "1,639,000 Kyats"
+    },
+    {
+      "duration": "70,000 JPY",
+      "price": "2,295,200 Kyats"
+    }
+  ]
+},
+"Apple DenMark": {
+  "DenMark Region (DKK)": [{
+    "duration": "20 DKK",
+    "price": "16,100 Kyats"
+  }, {
+    "duration": "25 DKK",
+    "price": "20,200 Kyats"
+  }, {
+    "duration": "30 DKK",
+    "price": "24,100 Kyats"
+  }, {
+    "duration": "40 DKK",
+    "price": "32,200 Kyats"
+  }, {
+    "duration": "50 DKK",
+    "price": "40,300 Kyats"
+  }, {
+    "duration": "100 DKK",
+    "price": "80,500 Kyats"
+  }, {
+    "duration": "150 DKK",
+    "price": "120,800 Kyats"
+  }, {
+    "duration": "200 DKK",
+    "price": "161,000 Kyats"
+  }, {
+    "duration": "250 DKK",
+    "price": "201,200 Kyats"
+  }, {
+    "duration": "300 DKK",
+    "price": "241,500 Kyats"
+  }, {
+    "duration": "400 DKK",
+    "price": "322,000 Kyats"
+  }, {
+    "duration": "500 DKK",
+    "price": "402,400 Kyats"
+  }, {
+    "duration": "1000 DKK",
+    "price": "804,900 Kyats"
+  }]
+},
+"Apple Norway": {
+  "Norway Region (NOK)": [{
+    "duration": "20 NOK",
+    "price": "10,800 Kyats"
+  }, {
+    "duration": "30 NOK",
+    "price": "16,200 Kyats"
+  }, {
+    "duration": "40 NOK",
+    "price": "21,600 Kyats"
+  }, {
+    "duration": "50 NOK",
+    "price": "27,100 Kyats"
+  }, {
+    "duration": "100 NOK",
+    "price": "54,100 Kyats"
+  }, {
+    "duration": "150 NOK",
+    "price": "81,100 Kyats"
+  }, {
+    "duration": "200 NOK",
+    "price": "108,200 Kyats"
+  }, {
+    "duration": "250 NOK",
+    "price": "135,200 Kyats"
+  }, {
+    "duration": "300 NOK",
+    "price": "161,900 Kyats"
+  }, {
+    "duration": "500 NOK",
+    "price": "270,400 Kyats"
+  }, {
+    "duration": "1000 NOK",
+    "price": "540,800 Kyats"
+  }]
+},
+"Apple Sweden": {
+  "Sweden Region (SEK)": [{
+    "duration": "20 SEK",
+    "price": "10,900 Kyats"
+  }, {
+    "duration": "25 SEK",
+    "price": "13,600 Kyats"
+  }, {
+    "duration": "30 SEK",
+    "price": "16,300 Kyats"
+  }, {
+    "duration": "40 SEK",
+    "price": "21,700 Kyats"
+  }, {
+    "duration": "50 SEK",
+    "price": "27,200 Kyats"
+  }, {
+    "duration": "100 SEK",
+    "price": "54,400 Kyats"
+  }, {
+    "duration": "150 SEK",
+    "price": "81,600 Kyats"
+  }, {
+    "duration": "200 SEK",
+    "price": "108,800 Kyats"
+  }, {
+    "duration": "250 SEK",
+    "price": "136,000 Kyats"
+  }, {
+    "duration": "300 SEK",
+    "price": "162,900 Kyats"
+  }, {
+    "duration": "400 SEK",
+    "price": "217,200 Kyats"
+  }, {
+    "duration": "500 SEK",
+    "price": "272,000 Kyats"
+  }, {
+    "duration": "750 SEK",
+    "price": "406,900 Kyats"
+  }, {
+    "duration": "1000 SEK",
+    "price": "544,000 Kyats"
+  }]
+},
+
+"Apple Poland": {
+  "Poland Region (PLN)": [{
+    "duration": "20 PLN",
+    "price": "29,400 Kyats"
+  }, {
+    "duration": "25 PLN",
+    "price": "36,900 Kyats"
+  }, {
+    "duration": "50 PLN",
+    "price": "73,900 Kyats"
+  }, {
+    "duration": "100 PLN",
+    "price": "147,400 Kyats"
+  }, {
+    "duration": "150 PLN",
+    "price": "221,500 Kyats"
+  }, {
+    "duration": "200 PLN",
+    "price": "295,300 Kyats"
+  }]
+},
+
+"Apple China": {
+  "China Region (CNY)": [{
+    "duration": "20 CNY",
+    "price": "15,700 Kyats"
+  }, {
+    "duration": "30 CNY",
+    "price": "23,500 Kyats"
+  }, {
+    "duration": "50 CNY",
+    "price": "39,200 Kyats"
+  }, {
+    "duration": "68 CNY",
+    "price": "53,300 Kyats"
+  }, {
+    "duration": "100 CNY",
+    "price": "78,500 Kyats"
+  }, {
+    "duration": "200 CNY",
+    "price": "156,900 Kyats"
+  }, {
+    "duration": "300 CNY",
+    "price": "226,300 Kyats"
+  }, {
+    "duration": "500 CNY",
+    "price": "392,200 Kyats"
+  }, {
+    "duration": "1000 CNY",
+    "price": "782,700 Kyats"
+  }]
+},
+
+"Apple Brazil": {
+  "Brazil Region (BRL)": [{
+    "duration": "20 BRL",
+    "price": "21,000 Kyats"
+  }, {
+    "duration": "30 BRL",
+    "price": "31,500 Kyats"
+  }, {
+    "duration": "40 BRL",
+    "price": "42,000 Kyats"
+  }, {
+    "duration": "50 BRL",
+    "price": "52,400 Kyats"
+  }, {
+    "duration": "75 BRL",
+    "price": "78,600 Kyats"
+  }, {
+    "duration": "100 BRL",
+    "price": "104,800 Kyats"
+  }, {
+    "duration": "150 BRL",
+    "price": "155,800 Kyats"
+  }, {
+    "duration": "200 BRL",
+    "price": "207,700 Kyats"
+  }]
+},
+
+"Apple India": {
+  "India Region (INR)": [{
+    "duration": "100 INR",
+    "price": "6,400 Kyats"
+  }, {
+    "duration": "200 INR",
+    "price": "12,800 Kyats"
+  }, {
+    "duration": "250 INR",
+    "price": "15,900 Kyats"
+  }, {
+    "duration": "500 INR",
+    "price": "31,700 Kyats"
+  }, {
+    "duration": "1000 INR",
+    "price": "63,400 Kyats"
+  }, {
+    "duration": "1500 INR",
+    "price": "95,700 Kyats"
+  }, {
+    "duration": "2000 INR",
+    "price": "126,800 Kyats"
+  }, {
+    "duration": "2500 INR",
+    "price": "158,400 Kyats"
+  }, {
+    "duration": "3000 INR",
+    "price": "191,500 Kyats"
+  }, {
+    "duration": "4000 INR",
+    "price": "255,300 Kyats"
+  }, {
+    "duration": "5000 INR",
+    "price": "316,900 Kyats"
+  }, {
+    "duration": "7500 INR",
+    "price": "419,000 Kyats"
+  }, {
+    "duration": "10000 INR",
+    "price": "633,700 Kyats"
+  }]
+},
+"Apple UAE": {
+  "Custom Amount": []
+},
+
+"Apple Canada": {
+  "Custom Amount": []
+},
+
+"Apple UK": {
+  "Custom Amount": []
+},
+
+"Apple Switzerland": {
+  "Custom Amount": []
+},
+
+"Apple Australia": {
+  "Custom Amount": []
+},
     // GOOGLE PLAY
     "Google Play Japan": {
       "Japan Region (¥)": [{
@@ -2180,6 +2641,45 @@ const helperDisabledProducts = [
 ];  
 
 let _helperTimer = null;
+
+const REGIONAL_PARENT_PRODUCTS = [
+  "Google Play Gift Card",
+  "Steam Gift Card",
+  "Apple Gift Card"
+];
+
+const HELPER_ONCE_REGIONAL_PARENTS = [
+  "Steam Gift Card",
+  "Apple Gift Card"
+];
+
+let activeRegionalHelperParent = null;
+const regionalHelperSeen = new Set();
+
+function getRegionalParent(productName) {
+  for (const parentName of REGIONAL_PARENT_PRODUCTS) {
+    if (productName === parentName) return parentName;
+
+    const regions = regionalProducts[parentName] || [];
+    if (regions.some(region => region.name === productName)) {
+      return parentName;
+    }
+  }
+
+  return null;
+}
+
+function isHelperOnceRegionalParent(parentName) {
+  return HELPER_ONCE_REGIONAL_PARENTS.includes(parentName);
+}
+
+function resetActiveRegionalHelper() {
+  if (activeRegionalHelperParent) {
+    regionalHelperSeen.delete(activeRegionalHelperParent);
+  }
+
+  activeRegionalHelperParent = null;
+}
 
 function removeProductHelper() {
   if (_helperTimer) {
@@ -2835,11 +3335,35 @@ const popupTextByProduct = {
   ]
 }
 };
-  
+
 function initProductHelper(productName) {
   removeProductHelper();
 
   let conf = popupTextByProduct[productName] || null;
+  const regionalParent = getRegionalParent(productName);
+
+  if (
+    regionalParent &&
+    productName !== regionalParent &&
+    isHelperOnceRegionalParent(regionalParent)
+  ) {
+    if (regionalHelperSeen.has(regionalParent)) {
+      removeProductHelper();
+      return;
+    }
+
+    regionalHelperSeen.add(regionalParent);
+
+    conf = popupTextByProduct[regionalParent] || {
+      title: `${regionalParent} Info`,
+      button: "ဒါကဘာလဲရှင်းပြပါ",
+      doneText: "နားလည်ပါပီ။",
+      steps: [
+        `ဒီ ${regionalParent} က Region အလိုက်ဝယ်ရတာပါ။ ကိုယ့် account region နဲ့ကိုက်တဲ့ card ကိုရွေးဝယ်ပေးပါ။ Region မကိုက်ရင် redeem လုပ်လို့မရနိုင်ပါ။`
+      ]
+    };
+  }
+
   /* Shared helper for all Google Play region products */
   if (!conf && productName.startsWith("Google Play ") && productName !== "Google Play Gift Card") {
     conf = {
@@ -3209,11 +3733,20 @@ cancelBtn?.addEventListener("click", () => {
   if (dom.views.home.classList.contains('active')) {
     lastScroll = window.scrollY;
   }
-    // ✅ Update URL so you can copy/share this product page
-    history.replaceState(null, "", "#" + toSlug(productName));
 
-    // --- Handle Regional Products ---
-    if (regionalProducts[productName]) {
+// ✅ Update URL so you can copy/share this product page
+history.replaceState(null, "", "#" + toSlug(productName));
+
+const regionalParent = getRegionalParent(productName);
+
+if (regionalParent) {
+  activeRegionalHelperParent = regionalParent;
+} else {
+  resetActiveRegionalHelper();
+}
+
+// --- Handle Regional Products ---
+if (regionalProducts[productName]) {
       renderRegionalSelector(productName, regionalProducts[productName]);
       return;
     }
@@ -3436,7 +3969,7 @@ cancelBtn?.addEventListener("click", () => {
             title += ' <span style="background:#ef4444; color:#ffffff; padding:2px 6px; border-radius:4px; font-size:11px; margin-left:8px; font-weight:900; box-shadow:0 0 6px #ef4444;">Individual Subscription</span>';
           }
           } else if (productName === 'YouTube Premium') {
-         if (sectionName === 'Private') {
+         if (sectionName === 'Private' || sectionName === 'OwnMail') {
             title += ' <span style="background:#ff0000; color:#ffffff; padding:2px 6px; border-radius:4px; font-size:11px; margin-left:8px; font-weight:900; box-shadow:0 0 6px #ff0000;">Individual Subscription</span>';
           }
           } else if (productName === 'Qobuz') {
@@ -3508,14 +4041,19 @@ cancelBtn?.addEventListener("click", () => {
       }).join("");
     }
 
-    let heroImageSrc = imageFor[productName];
-    if (productName.startsWith("Google Play")) {
-      heroImageSrc = imageFor["Google Play Gift Card"];
-    }
-    if (productName.startsWith("Steam")) {
-      heroImageSrc = imageFor["Steam Gift Card"];
-    }
+let heroImageSrc = imageFor[productName];
 
+if (productName.startsWith("Google Play ") && productName !== "Google Play Gift Card") {
+  heroImageSrc = imageFor["Google Play Gift Card"];
+}
+
+if (productName.startsWith("Steam ") && productName !== "Steam Gift Card") {
+  heroImageSrc = imageFor["Steam Gift Card"];
+}
+
+if (productName.startsWith("Apple ") && productName !== "Apple Gift Card") {
+  heroImageSrc = imageFor["Apple Gift Card"];
+}
     const pageHTML = `
       <button class="back-btn" id="product-back-btn">← Back</button>
       <div class="product-hero">
@@ -4935,32 +5473,39 @@ function getReceiptExtraLine(product, plan, duration, qty, unitPrice) {
       productCard.classList.add('tap-anim');
       setTimeout(() => productCard.classList.remove('tap-anim'), 120);
 
-      const currentTitle = document.querySelector('.hero-title')?.innerText || '';
+const currentTitle = document.querySelector('.hero-title')?.innerText || '';
+const currentRegionalParent = getRegionalParent(currentTitle);
 
-      if (
-        dom.views.product.classList.contains('active') &&
-        (currentTitle.includes('Google Play Gift Card') || currentTitle.includes('Steam Gift Card'))
-      ) {
-        lastRegionalScroll = window.scrollY;
-      }
+if (
+  dom.views.product.classList.contains('active') &&
+  currentRegionalParent &&
+  currentTitle === currentRegionalParent
+) {
+  lastRegionalScroll = window.scrollY;
+}
 
-      openProduct(productCard.dataset.productName);
-      return;
+openProduct(productCard.dataset.productName);
+return;
     }
-    if (target.id === 'product-back-btn') {
-      const title = document.querySelector('.hero-title').innerText;
-      if ((title.includes('Google Play') || title.includes('Steam')) && !title.includes('Gift Card')) {
-         const cat = title.includes('Google Play') ? "Google Play Gift Card" : "Steam Gift Card";
-         renderRegionalSelector(cat, regionalProducts[cat]);
+if (target.id === 'product-back-btn') {
+  const title = document.querySelector('.hero-title')?.innerText || '';
+  const parentName = getRegionalParent(title);
 
-         requestAnimationFrame(() => {
-           window.scrollTo(0, lastRegionalScroll);
-         });
+  if (parentName && title !== parentName) {
+    renderRegionalSelector(parentName, regionalProducts[parentName]);
 
-         return;
-      }
-      showView('home'); window.scrollTo(0, lastScroll); return;
-    }
+    requestAnimationFrame(() => {
+      window.scrollTo(0, lastRegionalScroll);
+    });
+
+    return;
+  }
+
+  resetActiveRegionalHelper();
+  showView('home');
+  window.scrollTo(0, lastScroll);
+  return;
+}
     const moreDetailsBtn = target.closest('.hero-more');
     if (moreDetailsBtn) {
       moreDetailsBtn.classList.add('tap-anim'); setTimeout(() => moreDetailsBtn.classList.remove('tap-anim'), 120);

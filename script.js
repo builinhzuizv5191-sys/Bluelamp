@@ -126,7 +126,7 @@
     "HBO Max": "https://ik.imagekit.io/dkdlgynlu/New-Project-52-E7812-FA.png",
     "Prime Video": "https://ik.imagekit.io/dkdlgynlu/New-Project-52-8750-DEF.png",
     "Spotify": "https://ik.imagekit.io/dkdlgynlu/New-Project-52-D73314-D.png",
-    "Apple Music": "https://ik.imagekit.io/dkdlgynlu/New-Project-52-53-CD4-A0.png",
+    "Apple Music": "https://ik.imagekit.io/dkdlgynlu/New-Project-52-53-CD4-A0.png?updatedAt=1764609026124",
     "Qobuz": "https://ik.imagekit.io/dkdlgynlu/New-Project-52-953E931.png",
     "Google Drive": "https://ik.imagekit.io/dkdlgynlu/New-Project-52-1-A43-DD6.png",
     "Google One": "https://ik.imagekit.io/dkdlgynlu/New-Project-52-009-BD4-E.png",
@@ -136,15 +136,21 @@
     "Gemini Pro": "https://ik.imagekit.io/dkdlgynlu/New-Project-52-906-D5-F0.png",
     "Flow AI": "https://ik.imagekit.io/dkdlgynlu/Wattpad%20_A4B3FC6_.png?updatedAt=1768837724112",
     "NotebookLM": "https://ik.imagekit.io/dkdlgynlu/Wattpad%20_363313A_.png?updatedAt=1768837724010",
-    "Claude Ai": "https://ik.imagekit.io/dkdlgynlu/New-Project-52-087-AC47.png",
     "Zoom": "https://ik.imagekit.io/dkdlgynlu/New-Project-52-5270010.png",
     "YouTube Premium": "https://ik.imagekit.io/dkdlgynlu/New-Project-52-2-DCD6-D5.png",
+    "YouTube Music": "https://ik.imagekit.io/dkdlgynlu/ICON%20_646108C_.png?updatedAt=1784222599196",
+    "Tidal Music": "https://ik.imagekit.io/dkdlgynlu/ICON%20_FF5CFDB_.png?updatedAt=1779179229139",
     "Tinder": "https://ik.imagekit.io/dkdlgynlu/New-Project-52-DCDE0-B9.png",
     "Telegram Premium": "https://ik.imagekit.io/dkdlgynlu/New-Project-52-A162-FC1.png",
     "Discord": "https://ik.imagekit.io/dkdlgynlu/New-Project-52-D060367.png",
     "Perplexity Ai": "https://ik.imagekit.io/dkdlgynlu/New-Project-52-F59-EE5-A.png",
     "Flow AI": "https://ik.imagekit.io/dkdlgynlu/Wattpad%20_A4B3FC6_.png?updatedAt=1768837724112",
     "NotebookLM": "https://ik.imagekit.io/dkdlgynlu/Wattpad%20_363313A_.png?updatedAt=1768837724010",
+    "Claude Opus": "https://ik.imagekit.io/dkdlgynlu/New-Project-52-087-AC47.png?updatedAt=1764609026634",
+    "Claude Sonnet": "https://ik.imagekit.io/dkdlgynlu/New-Project-52-087-AC47.png?updatedAt=1764609026634",
+    "ChatGPT API": "https://ik.imagekit.io/dkdlgynlu/New-Project-52-6-CB3-A91-1.png?updatedAt=1764609028617",
+    "Qwen": "https://ik.imagekit.io/dkdlgynlu/ICON%20_C2FF1C4_.png?updatedAt=1784197274777",
+    "DeepSeek": "https://ik.imagekit.io/dkdlgynlu/ICON%20_E12731D_.png?updatedAt=1784197015433",
     "BSTATION": "https://ik.imagekit.io/dkdlgynlu/New-Project-52-631-CC84.png",
     "INSHOT": "https://ik.imagekit.io/dkdlgynlu/Picsart-25-10-16-13-54-58-884.png",
     "Duolingo Super": "https://ik.imagekit.io/dkdlgynlu/New-Project-52-E560-B70.png",
@@ -898,7 +904,7 @@
   }]
 },
 
-    "Claude Ai": {
+    "Claude Opus": {
       "50 Million token": [{
         "duration": "3 Days",
         "price": "15,000 Kyats"
@@ -919,6 +925,57 @@
       }, {
         "duration": "5 Days",
         "price": "40,000 Kyats"
+      }]
+    },
+    "ChatGPT API": {
+      "50 Million token": [{
+        "duration": "3 Days",
+        "price": "15,000 Kyats"
+      }, {
+        "duration": "5 Days",
+        "price": "20,000 Kyats"
+      }],
+      "70 Million token": [{
+        "duration": "3 Days",
+        "price": "27,000 Kyats"
+      }, {
+        "duration": "5 Days",
+        "price": "32,000 Kyats"
+      }],
+      "100 Million token": [{
+        "duration": "3 Days",
+        "price": "29,000 Kyats"
+      }, {
+        "duration": "5 Days",
+        "price": "40,000 Kyats"
+      }]
+    },
+
+"Claude Sonnet": {
+      "1 Billion token": [{
+        "duration": "3 Days",
+        "price": "15,000 Kyats"
+      }, {
+        "duration": "1 Month",
+        "price": "45,000 Kyats"
+      }]
+    },
+"Qwen": {
+      "1 Billion token": [{
+        "duration": "3 Days",
+        "price": "15,000 Kyats"
+      }, {
+        "duration": "1 Month",
+        "price": "45,000 Kyats"
+      }]
+    },
+"DeepSeek": {
+      "1 Billion token": [{
+        "duration": "3 Days",
+        "price": "15,000 Kyats"
+      }, {
+        "duration": "1 Month",
+        "price": "45,000 Kyats"
       }]
     },
     "Zoom": {
@@ -944,6 +1001,25 @@
       "OwnMail": [{
         "duration": "3 Months",
         "price": "18,000 Kyats"
+      }] 
+    },
+     "YouTube Music": {
+      "Private": [{
+        "duration": "1 Month",
+        "price": "Out Of Stock"
+      }, {
+        "duration": "3 Months",
+        "price": "20,000 Kyats"
+      }],
+      "OwnMail": [{
+        "duration": "3 Months",
+        "price": "18,000 Kyats"
+      }] 
+    },
+     "Tidal Music": {
+      "Private": [{
+        "duration": "1 Month",
+        "price": "9,000 Kyats"
       }] 
     },
     "Tinder": {
@@ -2400,11 +2476,13 @@
     "ChatGPT": ["android", "ios", "pc"],
     "Grok": ["android", "ios", "pc"],
     "Gemini Pro": ["android", "ios", "pc"],
-    "Claude Ai": ["pc", "android", "ios"],
+    "Claude Opus": ["pc", "android", "ios"],
     "Flow AI": ["android", "ios", "pc"],
     "NotebookLM": ["android", "ios", "pc"],
     "Zoom": ["pc", "android", "ios"],
     "YouTube Premium": ["pc", "android", "ios", "tv"],
+    "YouTube Music": ["pc", "android", "ios", "tv"],
+    "Tidal Music": ["pc", "android", "ios"],
     "Tinder": ["android", "ios"],
     "Telegram Premium": ["android", "ios", "pc"],
     "Discord": ["android", "ios", "pc"],
@@ -2702,9 +2780,9 @@ const popupTextByProduct = {
     steps: [
     "တွေ့ရတဲ့တိုင်းCapCut မာရ္စေးချယ်စရာPlanသုံးခုရှိပါတယ်။ Share,Private,OwnMail",
     "ဘာကွာလဲဆိုရင်....သိထားရမာကProချင်းတူတူပါပဲ။ အရင်ဆုံးSharePlanကဘယ်လိုလဲဆိုရင်။ သူကဝယ်ရင်တခြားလူ 2ယောက် 2 Devicesဝင်ပီးသားအကောင့်ကိုရမာပါ။ Riskတေရှိတယ်၊ကိုယ်က1 deviceပဲဝင်လို့ရမယ်။ ကိုယ်ကဖြစ်ဖြစ်တခြားနှစ်ယောက်ကဖြစ်ဖြစ် device limit ကျော်ဝင်ခဲ့ရင်အကောင့်ကပျက်သွားမာပါတစ်လမပြည့်ခင်။",
-    "Shareအကောင့်မလို့ကျနော့်ဘက်က Warranty 15ရက်ပဲပေးပါတယ်။ တခုခုဖြစ်လာခဲ့ရင်ဘယ်သူကပိုဝင်လဲမသိနိုင်လို့ Warranty မပေးတာပါနားလည်ပေးပါ။",
+    "Shareအကောင့်မလို့ကျနော့်ဘက်က Warranty 25 ပေးပါတယ်။ 25ရက်က Pro Subscription ကိုပေးတာပါ။ ဥပမာ Pro ပြုတ်သွားတာတေဘာတေဆိုချက်ချင်းလဲပေးပါတယ်။ Device တေ Limit ပြတာကိုတော့ 1 ခါပဲလဲပေးပါတယ်။ အခြေနေအရပိုလဲပေးတာမျိုးရှိနိုင်‌ပေမဲ့ တခုခုဖြစ်လာခဲ့ရင်ဘယ်သူကပိုဝင်လဲမသိနိုင်လို့ Warranty မပေးတာပါနားလည်ပေးပါ။",
     "သူကအကောင့်ကိုအပိုင်ရတာပါ။ ဖုန်းထဲထည့်ထားရတဲ့Gmailမဟုတ်ပါဘူး။ CapCut appထဲမာထည့်သုံးရတဲ့TempEmailပါ။ ကျနော်တို့ဘက်ကအကောင့်ပေးမာပါ။ ပေးတဲ့အကောင့်ကို CapCut appရဲ့ Email sign inမာဝင်သုံးရုံပါပဲ။",
-    "သူကဝယ်သူရဲ့ email ကိုလုပ်ပေးတာပါ။ ဒါပေမဲ့ CapCut မဖွင့်ရသေးတဲ့ email မပဲရပါမယ်။ ပြောရရင် Private ကပိုပီးရွေးချယ်သင့်တာပါ။ ဘာလို့ဆို CapCut ကအကောင့်ပြောင်းလဲ Project တေမပျက်ပါဘူး။",
+    "သူကဝယ်သူရဲ့ email ကိုလုပ်ပေးတာပါ။ CapCut ဖွင့်ပီးသား Account ရောမဖွင့်ရသေးတာရောရပါတယ်။ OwnMail ရော Private ရောကကုန်ရင်သက်တန်းတိုးသွားလို့ရပါတယ်။",
     "Share Planကဖုန်းတလုံးပဲသုံးလို့ရပါတယ်။ Private and OwnMail က Android, iOS, PC, Laptop All Device ရပါတယ်။"
   ],
     stepButtons: [
@@ -2726,7 +2804,7 @@ const popupTextByProduct = {
     "6လအတွင်းတခုခုဖြစ်ခဲ့ရင်တခါပြန်လဲပေးပါတယ်။ Shareမို့လို့တခါပါပဲ။ Device changeလို့လဲမရပါ။ (ဆိုလိုတာကကိုယ်ကဖုန်းတခုနဲ့ဝင်ပီး‌၊နောက်ပိုင်းမဖုန်းလဲတာတေဘာတေမရဘူးပြောတာပါ။)",
     "သူက အကောင့်ကိုအပိုင်ရတာပါ။ ဖုန်းထဲထည့်ထားရတဲ့Gmailမဟုတ်ပါဘူး။ Alight Motion appထဲမာထည့်သုံးရတဲ့TempEmailပါ။ ကျနော်တို့ဘက်ကအကောင့်ပေးမာပါ။ ပေးတဲ့အကောင့်ကို Alight Motion appရဲ့ Email sign inမာဝင်သုံးရုံပါပဲ။ Full Warranty က 1Yearအတွင်းတခုခုဖြစ်ရင်တခါပြန်လဲပေးပါတယ်။ Riskကင်းတဲ့ OwnMail ယူလဲရပါတယ်။",
     "သူကဝယ်သူရဲ့ email ကိုလုပ်ပေးတာပါ။ Gmail/Email and password ပေးရပါတယ်။ အကောင့်ရဲ့ Password ပါ။ Alight Motionမာထားမဲ့ Password မဟုတ်ပါဘူး။ Google အကောင့်ကိုဝင်ပီးလုပ်ပေးမာပါ။ ပီးရင်ပြန်ထွက်မာပါ။ အကောင့်ရှိပီးသားဆိုလဲရပါတယ်။ သက်တန်းတိုးလို့လဲရပါတယ်။ ကိုယ့်Mailနဲ့ကိုယ်မလို့Errorလဲကင်းပါတယ်။ အဲ့တာကြောင့် OwnMail ကပိုပီးရွေးချယ်သင့်ပါတယ်။",
-    "Android ရော iOS ရောနှစ်ခုလုံးရပါတယ်။ Playstore & AppStore က official appတေမာပဲသုံးရမာပါ။"
+    "Android ရော iOS ရောနှစ်ခုလုံးရပါတယ်။ Playstore & AppStore က official appတေမာပဲသုံးရမာပါ။ နောက်ဆုံးအနေနဲ့ပြောချင်တာက Official Alight Motion PRO ရဲ့ဈေးက 1 Week ကိုဘယ်လောက်ရှိလဲဝင်ကြည့်ရင်သိရပါတယ်။ ခုကျနော်ရောင်းပေးတာတေကအဲ့ဈေးထက်အများရီးသက်သာပါတယ်။ ဒါကြောင့်ရက်လလျော့တာတာတေရှိရင်နားလည်ပေးကြပါ။"
   ],
     stepButtons: [
     "ဘာတေကွာလဲ?",
@@ -2952,14 +3030,56 @@ const popupTextByProduct = {
     "All Devices<br>ရလား?"
   ]
   },
-  "Claude Ai": {
-  title: "Claude Ai Info",
-  button: "ဒါရှင်းပြပေးပါ။",
-  doneText: "ဟုတ်ပီဟုတ်ပီ",
-  steps: [
-    "Desktop Device တေမာပဲ VS Code နဲ့သုံးလိုရပါမယ်။ Laptop or PC တခုထဲကသုံးရတာမျိုးမဟုတ်ဘူး Multiple Laptop and PC API setup ပီးသုံးလိုရပါတယ်။ ဟိုလို Claude Website မာသုံးရတဲ့အကောင့်မဟုတ်ပါဘူး။ ကိုယ့် VS Code account ထဲမာ API ထည့်ပီးသုံးရတာမျိုးပါ။"
+  "Claude Opus": {
+    title: "Claude Opus Info",
+    button: "ဒါရှင်းပြပေးပါ။",
+    nextText: "ဆက်ရန်",
+    backText: "Back",
+    steps: [
+    "Desktop Device တေမာပဲ VS Code နဲ့သုံးလိုရပါမယ်။ Laptop or PC တခုထဲကသုံးရတာမျိုးမဟုတ်ဘူး Multiple Laptop and PC API setup ပီးသုံးလိုရပါတယ်။ 3 Devices လောက်ရပေမဲ့ တချိန်ထဲတော့တူတူသူံးလို့မရပါဘူး။ ဟိုလို Claude Website မာသုံးရတဲ့အကောင့်လဲမဟုတ်ပါဘူး။ ကိုယ့် VS Code account ထဲမာ API ထည့်ပီးသုံးရတာမျိုးပါ။",
+    "ဒီ API ထဲမာ Claude ရဲ့ Opus, Sonnet, Haiku အပြင် GPT Sol, Terra, Luna ,DeepSeek V3, V4 ,Flash, V4 Pro ,Qwen Max, Plus, Turbo, Flash, Coder Plus ,GLM 5.2 တေလဲအကုန်ပါပါတယ်။ ဒီ API က Sonnet API Type ထက်ပိုပီး Token အစားသက်သာပါတယ်။ အဲ့တော့နှစ်ခုကိုယှဉ်ပီးဟိုဟာကအသာရီးမထင်ပါနဲ့။"
   ]
-},
+  },
+  "Claude Sonnet": {
+    title: "Claude Sonnet Info",
+    button: "ဒါရှင်းပြပေးပါ။",
+    nextText: "ဆက်ရန်",
+    backText: "Back",
+    steps: [
+    "Desktop Device တေမာပဲ VS Code နဲ့သုံးလိုရပါမယ်။ Laptop or PC တခုထဲကသုံးရတာမျိုးမဟုတ်ဘူး Multiple Laptop and PC API setup ပီးသုံးလိုရပါတယ်။ 3 Devices လောက်ရပေမဲ့ တချိန်ထဲတော့တူတူသူံးလို့မရပါဘူး။ ဟိုလို Claude Website မာသုံးရတဲ့အကောင့်လဲမဟုတ်ပါဘူး။ ကိုယ့် VS Code account ထဲမာ API ထည့်ပီးသုံးရတာမျိုးပါ။",
+    "ဒီ API ထဲမာ Claude ရဲ့ Sonnet, Haiku အပြင် DeepSeek V3, V4 ,Flash, V4 Pro ,Qwen Max, Plus, Turbo, Flash, Coder Plus ,GLM 5.2 တေလဲအကုန်ပါပါတယ်။ ဒီ API က 1 Billion ဆိုပေမဲ့ Opus API ထက် Token ပိုစားပါတယ်။ အဲ့တော့နဲနဲလေးအကုန်ပိုမြန်တယ်။"
+  ]
+  },
+  "ChatGPT API": {
+    title: "ChatGPT API Info",
+    button: "ဒါရှင်းပြပေးပါ။",
+    nextText: "ဆက်ရန်",
+    backText: "Back",
+    steps: [
+    "Desktop Device တေမာပဲ VS Code နဲ့သုံးလိုရပါမယ်။ Laptop or PC တခုထဲကသုံးရတာမျိုးမဟုတ်ဘူး Multiple Laptop and PC API setup ပီးသုံးလိုရပါတယ်။ 3 Devices လောက်ရပေမဲ့ တချိန်ထဲတော့တူတူသူံးလို့မရပါဘူး။ ဟိုလို ChatGPT Website မာသုံးရတဲ့အကောင့်လဲမဟုတ်ပါဘူး။ ကိုယ့် VS Code account ထဲမာ API ထည့်ပီးသုံးရတာမျိုးပါ။",
+    "ဒီ API ထဲမာ GPT ရဲ့ Sol, Terra, Luna အပြင် Claude Opus, Sonnet, Haiku ,DeepSeek V3, V4 ,Flash, V4 Pro ,Qwen Max, Plus, Turbo, Flash, Coder Plus ,GLM 5.2 တေလဲအကုန်ပါပါတယ်။ ဒီ API က Claude Opus API ပါပဲ။ အဲ့တာကြောင့်ဈေးတေ Plan တေတူနေတာပါ။"
+  ]
+  },
+  "Qwen": {
+    title: "Qwen Info",
+    button: "ဒါရှင်းပြပေးပါ။",
+    nextText: "ဆက်ရန်",
+    backText: "Back",
+    steps: [
+    "Desktop Device တေမာပဲ VS Code နဲ့သုံးလိုရပါမယ်။ Laptop or PC တခုထဲကသုံးရတာမျိုးမဟုတ်ဘူး Multiple Laptop and PC API setup ပီးသုံးလိုရပါတယ်။ 3 Devices လောက်ရပေမဲ့ တချိန်ထဲတော့တူတူသူံးလို့မရပါဘူး။ ဟိုလို Qwen Website မာသုံးရတဲ့အကောင့်လဲမဟုတ်ပါဘူး။ ကိုယ့် VS Code account ထဲမာ API ထည့်ပီးသုံးရတာမျိုးပါ။",
+    "ဒီ API ထဲမာ Qwen3 Coder အပြင် DeepSeek 3.2 ,Claude Sonnet, Haiku, Turbo, Flash, Coder Plus ,GLM 5.2 တေလဲအကုန်ပါပါတယ်။ ဒီ API က Claude Sonnet API ပါပဲ။ အဲ့တာကြောင့်ဈေးတေ Plan တေတူနေတာပါ။"
+  ]
+  },
+    "DeepSeek": {
+    title: "DeepSeek Info",
+    button: "ဒါရှင်းပြပေးပါ။",
+    nextText: "ဆက်ရန်",
+    backText: "Back",
+    steps: [
+    "Desktop Device တေမာပဲ VS Code နဲ့သုံးလိုရပါမယ်။ Laptop or PC တခုထဲကသုံးရတာမျိုးမဟုတ်ဘူး Multiple Laptop and PC API setup ပီးသုံးလိုရပါတယ်။ 3 Devices လောက်ရပေမဲ့ တချိန်ထဲတော့တူတူသူံးလို့မရပါဘူး။ ဟိုလို DeepSeek Website မာသုံးရတဲ့အကောင့်လဲမဟုတ်ပါဘူး။ ကိုယ့် VS Code account ထဲမာ API ထည့်ပီးသုံးရတာမျိုးပါ။",
+    "ဒီ API ထဲမာ DeepSeek 3.2 အပြင် Qwen3 Coder ,Claude Sonnet, Haiku, Turbo, Flash, Coder Plus ,GLM 5.2 တေလဲအကုန်ပါပါတယ်။ ဒီ API က Claude Sonnet API ပါပဲ။ အဲ့တာကြောင့်ဈေးတေ Plan တေတူနေတာပါ။"
+  ]
+  },
   "Perplexity Ai": {
     title: "Perplexity Ai Info",
     button: "Planတေကအများရီးပဲနားမလည်ဘူး။",
@@ -3174,11 +3294,29 @@ const popupTextByProduct = {
   ]
 },
   "YouTube Premium": {
-  title: "YouTube Premium Info",
+    title: "YouTube Premium Info",
+    button: "ဒါရှင်းပြပေးပါ။",
+    nextText: "OwnMailကရော?",
+    backText: "Back",
+    steps: [
+    "ဒီကအကောင့်ပေးတာပါ။ ပေးတဲ့ Mail and password ကို YouTube official App or Web မာထည့်သုံးရမာပါ။ ရှိပီးသားအကောင့်ကိုလုပ်ပေးတာမဟုတ်ပါဘူးနော်။ အကောင့်ရှိပီးသားကိုပဲ Premium ဝယ်ချင်တာဆိုရင်တော့ YouTube Official Individual Plan ကို $15.99 နဲ့ဝယ်လို့ရပါတယ်။",
+    "OwnMail ဆိုတာကလဲ Mail အသစ်ဖွင်ါပေးရမာပါ။ သုံးလက်စအဟောင်းတေမရပါဘူး။ အသစ်ဖွင့်ပေးရင်အဲ့အကောင့်ထဲမာ 3Months ဝယ်ပေးတာပါ။"
+  ]
+  },
+  "YouTube Music": {
+  title: "YouTube Music Info",
   button: "ဒါရှင်းပြပေးပါ။",
   doneText: "ဟုတ်ပီဟုတ်ပီ",
   steps: [
-    "ဒီကအကောင့်ပေးတာပါ။ ပေးတဲ့ Mail and password ကို YouTube official App or Web မာထည့်သုံးရမာပါ။ ရှိပီးသားအကောင့်ကိုလုပ်ပေးတာမဟုတ်ပါဘူးနော်။ အကောင့်ရှိပီးသားကိုပဲ Premium ဝယ်ချင်တာဆိုရင်တော့ YouTube Official Individual Plan ကို $15.99 နဲ့ဝယ်လို့ရပါတယ်။"
+    "YouTube Music ဆိုတာ YouTube Premium နဲ့တူတူပါပဲ။ YouTube Premium ဝယ်ရင် YouTube Music လဲရပါတယ်။ But VPN ခံသုံးမရမာပါ။"
+  ]
+},
+  "Tidal Music": {
+  title: "Tidal Music Info",
+  button: "ဒါရှင်းပြပေးပါ။",
+  doneText: "ဟုတ်ပီဟုတ်ပီ",
+  steps: [
+    "Tidal ဆိုတာက Spotify တို့ Apple Music တို့လိုပါပဲ။ Android ရော iOS ရောသုံးလို့ရမယ်။ ပြောင်းသုံးကြည့်ချင်တယ်ဆိုတဲ့သူတေအတွက်အဆင်ပြေပါတယ်။ VPN မလို Error Risk မရှိ။ Support Andorid,iOS,Mac/Windows."
   ]
 },
   "Qobuz": {
@@ -3858,7 +3996,7 @@ if (regionalProducts[productName]) {
             title += ' <span style="background:#00ff9c; color:#002b1f; padding:2px 6px; border-radius:4px; font-size:11px; margin-left:8px; font-weight:900; box-shadow:0 0 10px #00ff9c;">Pro Subscription</span>';
           }
         } else if (productName === 'CapCut') {
-         if (sectionName === 'Share' || sectionName === 'Private') {
+         if (sectionName === 'Share' || sectionName === 'Private' || sectionName === 'Private Own Mail') {
             title += ' <span style="background:#cbd5e1; color:#0f172a; padding:2px 6px; border-radius:4px; font-size:11px; margin-left:8px; font-weight:900; box-shadow:0 0 6px #cbd5e1;">Pro Subscription</span>';
           }
         } else if (productName === 'Wink') {
@@ -3908,9 +4046,25 @@ if (regionalProducts[productName]) {
          if (sectionName === 'Head(Can Invite 5 Email)' || sectionName === 'OwnMail Invite') {
             title += ' <span style="background:#67e8f9; color:#083344; padding:2px 6px; border-radius:4px; font-size:11px; margin-left:8px; font-weight:900; box-shadow:0 0 6px #67e8f9;">Pro Subscription</span>';
           }
-          } else if (productName === 'Claude Ai') {
+          } else if (productName === 'Claude Opus') {
          if (sectionName === '50 Million token' || sectionName === '70 Million token' || sectionName === '100 Million token') {
             title += ' <span style="background:#f97316; color:#ffffff; padding:2px 6px; border-radius:4px; font-size:11px; margin-left:8px; font-weight:900; box-shadow:0 0 6px #f97316;">Private API Key</span>';
+          }
+          } else if (productName === 'ChatGPT API') {
+         if (sectionName === '50 Million token' || sectionName === '70 Million token' || sectionName === '100 Million token') {
+            title += ' <span style="background:#000000; color:#00ff9c; padding:2px 6px; border-radius:4px; font-size:11px; margin-left:8px; font-weight:900; box-shadow:0 0 6px #00ff9c;">Private API Key</span>';
+          }
+          } else if (productName === 'Claude Sonnet') {
+         if (sectionName === '1 Billion token') {
+            title += ' <span style="background:#f97316; color:#ffffff; padding:2px 6px; border-radius:4px; font-size:11px; margin-left:8px; font-weight:900; box-shadow:0 0 6px #f97316;">Private API Key</span>';
+          }
+          } else if (productName === 'Qwen') {
+         if (sectionName === '1 Billion token') {
+            title += ' <span style="background:#2e1065; color:#ffffff; padding:2px 6px; border-radius:4px; font-size:11px; margin-left:8px; font-weight:900; box-shadow:0 0 6px #c084fc;">Private API Key</span>';
+          }
+          } else if (productName === 'DeepSeek') {
+         if (sectionName === '1 Billion token') {
+            title += ' <span style="background:#1e90ff; color:#ffffff; padding:2px 6px; border-radius:4px; font-size:11px; margin-left:8px; font-weight:900; box-shadow:0 0 6px #1e90ff;">Private API Key</span>';
           }
           } else if (productName === 'Perplexity Ai') {
          if (sectionName === 'Share' || sectionName === 'Private' || sectionName === 'OwnMail Private') {
@@ -3971,6 +4125,14 @@ if (regionalProducts[productName]) {
           } else if (productName === 'YouTube Premium') {
          if (sectionName === 'Private' || sectionName === 'OwnMail') {
             title += ' <span style="background:#ff0000; color:#ffffff; padding:2px 6px; border-radius:4px; font-size:11px; margin-left:8px; font-weight:900; box-shadow:0 0 6px #ff0000;">Individual Subscription</span>';
+          }
+          } else if (productName === 'YouTube Music') {
+         if (sectionName === 'Private' || sectionName === 'OwnMail') {
+            title += ' <span style="background:#ff0000; color:#ffffff; padding:2px 6px; border-radius:4px; font-size:11px; margin-left:8px; font-weight:900; box-shadow:0 0 6px #ff0000;">Individual Subscription</span>';
+          }
+          } else if (productName === 'Tidal Music') {
+         if (sectionName === 'Private') {
+            title += ' <span style="background:#020617; color:#ffffff; padding:2px 6px; border-radius:4px; font-size:11px; margin-left:8px; font-weight:900; box-shadow:0 0 6px #38bdf8;">Individual Subscription</span>';
           }
           } else if (productName === 'Qobuz') {
          if (sectionName === 'Private') {
@@ -4050,8 +4212,11 @@ if (productName.startsWith("Google Play ") && productName !== "Google Play Gift 
 if (productName.startsWith("Steam ") && productName !== "Steam Gift Card") {
   heroImageSrc = imageFor["Steam Gift Card"];
 }
-
-if (productName.startsWith("Apple ") && productName !== "Apple Gift Card") {
+if (
+  productName.startsWith("Apple ") &&
+  productName !== "Apple Gift Card" &&
+  productName !== "Apple Music"
+) {
   heroImageSrc = imageFor["Apple Gift Card"];
 }
     const pageHTML = `
@@ -4468,7 +4633,7 @@ if (productName === "TikTok Official") {
         </div>
 
         <div style="font-size:12px; opacity:.75; line-height:1.4;">
-          Rate: ~${kyatsPerCoin} Kyats / Coin (based on ${baseCoins} Coin = ${basePrice.toLocaleString("en-US")} Kyats)
+          Rate: ~${kyatsPerCoin} Kyats / Coin
         </div>
 
         <button id="btn-add-tiktok-coins" class="btn btn-primary" style="width:100%;">
@@ -4820,6 +4985,8 @@ Renewလို့ရပါတယ်။သက်တန်းတိုးရင်
     "Qobuz": `Private
 Recommend for iOS device
 Full warranty.` + generalDetailsBlock,
+    "Tidal Music": `Private
+Full warranty.` + generalDetailsBlock,
     "Google One": `Private (own mail)\nIncludes GeminiVeo3 AI + premium features\nFull warranty` + generalDetailsBlock,
     "Google Drive": `Private (own mail)\nFull warranty` + generalDetailsBlock,
     "TeraBox": `Sharing (2TB)
@@ -4860,12 +5027,17 @@ Gemini Pro 3 Monthsပါရမာပါ။` + generalDetailsBlock,
 ဒီဟာဝယ်ရင်
 Google One Storage 5 TB 3 Months(Share)
 Gemini Pro 3 Monthsပါရမာပါ။` + generalDetailsBlock,
-    "Claude Ai": `Private API Key\nFull warranty` + generalDetailsBlock,
+    "Claude Opus": `Private API Key\nFull warranty` + generalDetailsBlock,
     "Zoom": `Full warranty.\nAll pro features unlock.\nCan use 2-5 devices.` + generalDetailsBlock,
     "YouTube Premium": `Private (Individual Plan)
 Full warranty.
 No ads with all YouTube premium features.
 Including YouTube music.
+ဒီက ပေးတဲ့အကောင့်ကို ဝင်သုံးရမာပါ။
+မရှင်းတာရှိရင် Plan section မာရှင်းပြထားတာကိုသေချာပြန်ကြည့်ပေးပါ။` + generalDetailsBlock,
+    "YouTube Music": `Private (Individual Plan)
+Full warranty.
+No ads with all YouTube premium features.
 ဒီက ပေးတဲ့အကောင့်ကို ဝင်သုံးရမာပါ။
 မရှင်းတာရှိရင် Plan section မာရှင်းပြထားတာကိုသေချာပြန်ကြည့်ပေးပါ။` + generalDetailsBlock,
 

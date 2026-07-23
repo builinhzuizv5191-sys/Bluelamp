@@ -514,12 +514,16 @@
         "duration": "1 Year",
         "price": "50,000 Kyats"
       }],
-      "Private": [{
+      "Private VIP": [{
         "duration": "1 Week",
         "price": "3,000 Kyats"
       }, {
         "duration": "1 Month",
         "price": "18,000 Kyats"
+      }],
+      "Private VIP Plus": [{
+        "duration": "1 Week",
+        "price": "4,000 Kyats"
       }],
       "Private (Own Mail)": [{
         "duration": "1 Month",
@@ -566,6 +570,9 @@
       }, {
         "duration": "1 Month",
         "price": "6,000 Kyats"
+      }, {
+        "duration": "3 Months",
+        "price": "18,000 Kyats"
       }],
       "Private Pro": [{
         "duration": "2 Weeks",
@@ -594,7 +601,7 @@
     "Express Vpn": {
       "Private": [{
         "duration": "7 Days",
-        "price": "2,000 Kyats"
+        "price": "Out Of Stock"
       }, {
         "duration": "3 Days",
         "price": "1,000 Kyats"
@@ -3999,9 +4006,13 @@ if (regionalProducts[productName]) {
          if (sectionName === 'Share' || sectionName === 'Private' || sectionName === 'Private Own Mail') {
             title += ' <span style="background:#cbd5e1; color:#0f172a; padding:2px 6px; border-radius:4px; font-size:11px; margin-left:8px; font-weight:900; box-shadow:0 0 6px #cbd5e1;">Pro Subscription</span>';
           }
-        } else if (productName === 'Wink') {
-         if (sectionName === 'Share' || sectionName === 'Private' || sectionName === 'Private (Own Mail)') {
-            title += ' <span style="background:#d4d4d8; color:#18181b; padding:2px 6px; border-radius:4px; font-size:11px; margin-left:8px; font-weight:900; box-shadow:0 0 6px #d4d4d8;">VIP Subscription</span>';
+          } else if (productName === 'Wink') {
+         if (sectionName === 'Private VIP') {
+            title = 'Private <span style="background:#d4d4d8; color:#18181b; padding:2px 6px; border-radius:4px; font-size:11px; margin-left:8px; font-weight:900; box-shadow:0 0 6px #d4d4d8;">VIP Subscription</span>';
+          } else if (sectionName === 'Private VIP Plus') {
+            title = 'Private <span style="background:#000000; color:#ffffff; padding:2px 6px; border-radius:4px; font-size:11px; margin-left:8px; font-weight:900; box-shadow:0 0 6px #666666;">VIP+ Subscription</span>';
+          } else if (sectionName === 'Share') {
+            title = 'Share <span style="background:#d4d4d8; color:#18181b; padding:2px 6px; border-radius:4px; font-size:11px; margin-left:8px; font-weight:900; box-shadow:0 0 6px #d4d4d8;">VIP Subscription</span>';
           }
         } else if (productName === 'Meitu') {
          if (sectionName === 'Private') {
@@ -4880,7 +4891,11 @@ Google အကောင့်ကိုဝင်ပီးလုပ်ပေးမ�
 One device only
 Full warranty for full duration.
 
-Private
+Private VIP
+Full warranty for full duration.
+3 devices max.
+
+Private VIP Plus
 Full warranty for full duration.
 3 devices max.
 

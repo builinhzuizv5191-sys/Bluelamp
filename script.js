@@ -654,11 +654,14 @@
     "Microsoft 365": {
       "Private": [{
         "duration": "1 Month",
-        "price": "10,000 Kyats"
+        "price": "Out Of Stock"
       }],
       "Own Mail Invite": [{
         "duration": "1 Month",
         "price": "5,000 Kyats"
+      }, {
+        "duration": "12 Months",
+        "price": "50,000 Kyats"
       }],
       "Private Head": [{
         "duration": "1 Month",

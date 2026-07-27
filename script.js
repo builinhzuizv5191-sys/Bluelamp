@@ -1465,12 +1465,29 @@
         "price": "150,000 Kyats"
       }]
     },
-    "Domain": {
-      "My.ID/my.id": [{
-        "duration": "1 Year",
-        "price": "30,000 Kyats"
-      }]
-    },
+"Domain": {
+  "My.ID/my.id": [{
+    "duration": "1 Year",
+    "price": "30,000 Kyats"
+  }],
+
+  "Global Domain": [{
+    "duration": "1 Year (.com)",
+    "price": "15,000 Kyats"
+  }, {
+    "duration": "1 Year (.xyz)",
+    "price": "15,000 Kyats"
+  }, {
+    "duration": "1 Year (.net)",
+    "price": "18,000 Kyats"
+  }, {
+    "duration": "1 Year (.org)",
+    "price": "17,000 Kyats"
+  }, {
+    "duration": "1 Year (.link)",
+    "price": "17,000 Kyats"
+  }]
+},
     "LightRoom": {
       "Share": [{
         "duration": "1 Year",
@@ -2648,7 +2665,62 @@ async function checkMyIdAvailability(name) {
     return { status: "error", domain };
   }
 }
+// =========================
+// GLOBAL DOMAIN CHECK
+// =========================
+async function checkGlobalDomainAvailability(name, extension) {
+  const clean = String(name || "")
+    .trim()
+    .toLowerCase()
+    .replace(/[^a-z0-9-]/g, "")
+    .replace(/^-+|-+$/g, "");
 
+  const allowedExtensions = [
+    ".com",
+    ".xyz",
+    ".net",
+    ".org",
+    ".link"
+  ];
+
+  if (!clean || !allowedExtensions.includes(extension)) {
+    return {
+      status: "invalid"
+    };
+  }
+
+  const domain = clean + extension;
+
+  try {
+    const res = await fetch(
+      "https://rdap.org/domain/" + domain
+    );
+
+    if (res.status === 404) {
+      return {
+        status: "available",
+        domain
+      };
+    }
+
+    if (res.ok) {
+      return {
+        status: "taken",
+        domain
+      };
+    }
+
+    return {
+      status: "unknown",
+      domain
+    };
+  } catch (e) {
+    return {
+      status: "error",
+      domain
+    };
+  }
+}
   const formatKyats = n => (n || 0).toLocaleString("en-US") + " Kyats";
   // ===============================
   // TOTAL UNITS HELPER (100 Coin x5 → 500 Coins)
@@ -4261,37 +4333,97 @@ if (
       initProductHelper(productName);
     }
 
-    // =========================
-    // =========================
-// DOMAIN CHECK UI (under 1 Year 30k) + ADD TO CART WHEN AVAILABLE
+// =========================
+// DOMAIN CHECKERS
+// .my.id + Global Domains
 // =========================
 if (productName === "Domain") {
-  const DOMAIN_PRICE_TEXT = "30,000 Kyats";
-  const DOMAIN_PRICE = parseKyats(DOMAIN_PRICE_TEXT) || 30000;
+  // =========================
+  // DOMAIN PRICES
+  // =========================
+  const MY_ID_PRICE_TEXT = "30,000 Kyats";
+  const MY_ID_PRICE = 30000;
 
-  const checkerHTML = `
+  const GLOBAL_DOMAIN_PRICES = {
+    ".com": {
+      text: "15,000 Kyats",
+      value: 15000
+    },
+    ".xyz": {
+      text: "15,000 Kyats",
+      value: 15000
+    },
+    ".net": {
+      text: "18,000 Kyats",
+      value: 18000
+    },
+    ".org": {
+      text: "17,000 Kyats",
+      value: 17000
+    },
+    ".link": {
+      text: "17,000 Kyats",
+      value: 17000
+    }
+  };
+
+  // Store the original plan boxes before adding checker boxes.
+  const domainPlanBoxes =
+    dom.views.product.querySelectorAll(".plan-box");
+
+  const myIdPlanBox =
+    domainPlanBoxes.length > 0
+      ? domainPlanBoxes[0]
+      : null;
+
+  const globalPlanBox =
+    domainPlanBoxes.length > 1
+      ? domainPlanBoxes[domainPlanBoxes.length - 1]
+      : null;
+
+  // =========================
+  // .MY.ID CHECKER HTML
+  // =========================
+  const myIdCheckerHTML = `
     <div class="plan-box" id="domain-checker-box">
-      <div class="plan-title">Check Domain Availability</div>
+      <div class="plan-title">
+        Check .my.id Availability
+      </div>
 
       <div style="padding:10px; display:flex; flex-direction:column; gap:10px;">
-        <label style="font-size:14px; color:#ccc;">Enter Domain Name</label>
+        <label style="font-size:14px; color:#ccc;">
+          Enter Domain Name
+        </label>
 
         <div style="display:flex; gap:10px; align-items:center;">
           <input
             id="domain-check-input"
             placeholder="example: bluelamp"
-            style="flex:1;padding:12px;border-radius:8px;border:1px solid rgba(255,255,255,0.2);background:rgba(255,255,255,0.05);color:white;font-size:16px;"
+            style="flex:1; min-width:0; padding:12px; border-radius:8px; border:1px solid rgba(255,255,255,0.2); background:rgba(255,255,255,0.05); color:white; font-size:16px;"
           />
-          <div style="font-weight:800; opacity:.8;">.my.id</div>
+
+          <div style="font-weight:800; opacity:.8;">
+            .my.id
+          </div>
         </div>
 
-        <button id="domain-check-btn" class="btn btn-primary" style="width:100%;">
+        <div style="font-size:14px; font-weight:800; opacity:.85;">
+          1 Year — 30,000 Kyats
+        </div>
+
+        <button
+          id="domain-check-btn"
+          class="btn btn-primary"
+          style="width:100%;"
+        >
           Check
         </button>
 
-        <div id="domain-check-result" style="font-size:14px;"></div>
+        <div
+          id="domain-check-result"
+          style="font-size:14px;"
+        ></div>
 
-        <!-- Hidden by default, only appears when available -->
         <button
           id="domain-add-btn"
           class="btn btn-primary"
@@ -4303,89 +4435,361 @@ if (productName === "Domain") {
     </div>
   `;
 
-  // Put it right after the first plan-box (My.ID/my.id)
-  const planBoxes = dom.views.product.querySelectorAll(".plan-box");
-  if (planBoxes.length > 0) {
-    planBoxes[0].insertAdjacentHTML("afterend", checkerHTML);
-  } else {
-    const popularSection = dom.views.product.querySelector(".popular-section");
-    if (popularSection) popularSection.insertAdjacentHTML("beforebegin", checkerHTML);
+  // =========================
+  // GLOBAL CHECKER HTML
+  // =========================
+  const globalCheckerHTML = `
+    <div class="plan-box" id="global-domain-checker-box">
+      <div class="plan-title">
+        Check Global Domain Availability
+      </div>
+
+      <div style="padding:10px; display:flex; flex-direction:column; gap:10px;">
+        <label style="font-size:14px; color:#ccc;">
+          Enter Domain Name
+        </label>
+
+        <div style="display:flex; gap:10px; align-items:center;">
+          <input
+            id="global-domain-check-input"
+            placeholder="example: bluelamp"
+            style="flex:1; min-width:0; padding:12px; border-radius:8px; border:1px solid rgba(255,255,255,0.2); background:rgba(255,255,255,0.05); color:white; font-size:16px;"
+          />
+
+          <select
+            id="global-domain-extension"
+            style="padding:12px; border-radius:8px; border:1px solid rgba(255,255,255,0.2); background:#111; color:white; font-size:16px;"
+          >
+            <option value=".com">.com</option>
+            <option value=".xyz">.xyz</option>
+            <option value=".net">.net</option>
+            <option value=".org">.org</option>
+            <option value=".link">.link</option>
+          </select>
+        </div>
+
+        <div
+          id="global-domain-selected-price"
+          style="font-size:14px; font-weight:800; opacity:.85;"
+        >
+          1 Year — 15,000 Kyats
+        </div>
+
+        <button
+          id="global-domain-check-btn"
+          class="btn btn-primary"
+          style="width:100%;"
+        >
+          Check
+        </button>
+
+        <div
+          id="global-domain-check-result"
+          style="font-size:14px;"
+        ></div>
+
+        <button
+          id="global-domain-add-btn"
+          class="btn btn-primary"
+          style="width:100%; display:none;"
+        >
+          Add to Cart
+        </button>
+      </div>
+    </div>
+  `;
+
+  // =========================
+  // INSERT CHECKER BOXES
+  // =========================
+  if (myIdPlanBox) {
+    myIdPlanBox.insertAdjacentHTML(
+      "afterend",
+      myIdCheckerHTML
+    );
   }
 
-  const input = document.getElementById("domain-check-input");
-  const btn = document.getElementById("domain-check-btn");
-  const addBtn = document.getElementById("domain-add-btn");
-  const result = document.getElementById("domain-check-result");
+  if (globalPlanBox) {
+    globalPlanBox.insertAdjacentHTML(
+      "afterend",
+      globalCheckerHTML
+    );
+  }
 
-  let lastAvailableDomain = null; // store "name.my.id" when available
+  // =========================
+  // .MY.ID ELEMENTS
+  // =========================
+  const myIdInput =
+    document.getElementById("domain-check-input");
 
-  const renderResult = (type, text) => {
-    const map = {
+  const myIdCheckBtn =
+    document.getElementById("domain-check-btn");
+
+  const myIdAddBtn =
+    document.getElementById("domain-add-btn");
+
+  const myIdResult =
+    document.getElementById("domain-check-result");
+
+  let lastAvailableMyIdDomain = null;
+
+  const renderMyIdResult = (type, text) => {
+    const colours = {
       ok: "#00e676",
       bad: "#ff5252",
       warn: "#ffd54f",
       info: "#b0bec5"
     };
-    result.innerHTML = `<span style="color:${map[type] || map.info};font-weight:800;">${text}</span>`;
+
+    myIdResult.innerHTML = `
+      <span style="color:${colours[type] || colours.info}; font-weight:800;">
+        ${text}
+      </span>
+    `;
   };
 
-  const hideAdd = () => {
-    addBtn.style.display = "none";
-    lastAvailableDomain = null;
+  const resetMyIdCheck = () => {
+    myIdAddBtn.style.display = "none";
+    lastAvailableMyIdDomain = null;
   };
 
-  btn.addEventListener("click", async () => {
-    hideAdd();
-    btn.textContent = "Checking...";
-    btn.disabled = true;
-    result.textContent = "";
+  // =========================
+  // .MY.ID CHECK BUTTON
+  // =========================
+  myIdCheckBtn.addEventListener("click", async () => {
+    resetMyIdCheck();
 
-    const raw = input.value;
-    const r = await checkMyIdAvailability(raw);
+    myIdCheckBtn.textContent = "Checking...";
+    myIdCheckBtn.disabled = true;
+    myIdResult.textContent = "";
 
-    if (r.status === "invalid") {
-      renderResult("warn", "Type a name first");
-    } else if (r.status === "available") {
-      lastAvailableDomain = r.domain; // e.g. "hello.my.id"
-      renderResult("ok", `${r.domain} is Available ✓`);
-      addBtn.style.display = "block";
-    } else if (r.status === "taken") {
-      renderResult("bad", `${r.domain} is Taken ✕`);
+    const checkResult =
+      await checkMyIdAvailability(myIdInput.value);
+
+    if (checkResult.status === "invalid") {
+      renderMyIdResult(
+        "warn",
+        "Type a valid domain name first"
+      );
+    } else if (checkResult.status === "available") {
+      lastAvailableMyIdDomain = checkResult.domain;
+
+      renderMyIdResult(
+        "ok",
+        `${checkResult.domain} is Available ✓`
+      );
+
+      myIdAddBtn.style.display = "block";
+    } else if (checkResult.status === "taken") {
+      renderMyIdResult(
+        "bad",
+        `${checkResult.domain} is Taken ✕`
+      );
     } else {
-      renderResult("warn", "Can't check right now (blocked/offline)");
+      renderMyIdResult(
+        "warn",
+        "Can't check right now (blocked/offline)"
+      );
     }
 
-    btn.textContent = "Check";
-    btn.disabled = false;
+    myIdCheckBtn.textContent = "Check";
+    myIdCheckBtn.disabled = false;
   });
 
-  // Optional: press Enter to check
-  input.addEventListener("keydown", (ev) => {
-    if (ev.key === "Enter") btn.click();
+  myIdInput.addEventListener("keydown", event => {
+    if (event.key === "Enter") {
+      myIdCheckBtn.click();
+    }
   });
 
-  // If user changes input after availability, hide the add button again
-  input.addEventListener("input", () => {
-    hideAdd();
-    result.textContent = "";
+  myIdInput.addEventListener("input", () => {
+    resetMyIdCheck();
+    myIdResult.textContent = "";
   });
 
-  // Add to cart when available
-  addBtn.addEventListener("click", () => {
-    if (!lastAvailableDomain) return;
+  // =========================
+  // .MY.ID ADD TO CART
+  // =========================
+  myIdAddBtn.addEventListener("click", () => {
+    if (!lastAvailableMyIdDomain) {
+      return;
+    }
 
     const item = {
       product: "Domain",
       section: "My.ID/my.id",
-      duration: `${lastAvailableDomain} (1 Year)`,
-      unitPrice: DOMAIN_PRICE,
-      priceText: DOMAIN_PRICE_TEXT
+      duration: `${lastAvailableMyIdDomain} (1 Year)`,
+      unitPrice: MY_ID_PRICE,
+      priceText: MY_ID_PRICE_TEXT
     };
 
     addToCart(item);
 
-    addBtn.textContent = "Added!";
-    setTimeout(() => (addBtn.textContent = "Add to Cart"), 900);
+    myIdAddBtn.textContent = "Added!";
+
+    setTimeout(() => {
+      myIdAddBtn.textContent = "Add to Cart";
+    }, 900);
+  });
+
+  // =========================
+  // GLOBAL DOMAIN ELEMENTS
+  // =========================
+  const globalInput =
+    document.getElementById("global-domain-check-input");
+
+  const globalExtension =
+    document.getElementById("global-domain-extension");
+
+  const globalPriceDisplay =
+    document.getElementById("global-domain-selected-price");
+
+  const globalCheckBtn =
+    document.getElementById("global-domain-check-btn");
+
+  const globalAddBtn =
+    document.getElementById("global-domain-add-btn");
+
+  const globalResult =
+    document.getElementById("global-domain-check-result");
+
+  let lastAvailableGlobalDomain = null;
+  let lastAvailableGlobalExtension = null;
+
+  const renderGlobalResult = (type, text) => {
+    const colours = {
+      ok: "#00e676",
+      bad: "#ff5252",
+      warn: "#ffd54f",
+      info: "#b0bec5"
+    };
+
+    globalResult.innerHTML = `
+      <span style="color:${colours[type] || colours.info}; font-weight:800;">
+        ${text}
+      </span>
+    `;
+  };
+
+  const resetGlobalCheck = () => {
+    globalAddBtn.style.display = "none";
+    lastAvailableGlobalDomain = null;
+    lastAvailableGlobalExtension = null;
+  };
+
+  const updateGlobalPrice = () => {
+    const extension = globalExtension.value;
+    const selectedPrice =
+      GLOBAL_DOMAIN_PRICES[extension];
+
+    globalPriceDisplay.textContent =
+      `1 Year — ${selectedPrice.text}`;
+
+    resetGlobalCheck();
+    globalResult.textContent = "";
+  };
+
+  // =========================
+  // GLOBAL CHECK BUTTON
+  // =========================
+  globalCheckBtn.addEventListener("click", async () => {
+    resetGlobalCheck();
+
+    globalCheckBtn.textContent = "Checking...";
+    globalCheckBtn.disabled = true;
+    globalResult.textContent = "";
+
+    const selectedExtension =
+      globalExtension.value;
+
+    const checkResult =
+      await checkGlobalDomainAvailability(
+        globalInput.value,
+        selectedExtension
+      );
+
+    if (checkResult.status === "invalid") {
+      renderGlobalResult(
+        "warn",
+        "Type a valid domain name first"
+      );
+    } else if (checkResult.status === "available") {
+      lastAvailableGlobalDomain =
+        checkResult.domain;
+
+      lastAvailableGlobalExtension =
+        selectedExtension;
+
+      renderGlobalResult(
+        "ok",
+        `${checkResult.domain} is Available ✓`
+      );
+
+      globalAddBtn.style.display = "block";
+    } else if (checkResult.status === "taken") {
+      renderGlobalResult(
+        "bad",
+        `${checkResult.domain} is Taken ✕`
+      );
+    } else {
+      renderGlobalResult(
+        "warn",
+        "Can't check right now (blocked/offline)"
+      );
+    }
+
+    globalCheckBtn.textContent = "Check";
+    globalCheckBtn.disabled = false;
+  });
+
+  globalInput.addEventListener("keydown", event => {
+    if (event.key === "Enter") {
+      globalCheckBtn.click();
+    }
+  });
+
+  globalInput.addEventListener("input", () => {
+    resetGlobalCheck();
+    globalResult.textContent = "";
+  });
+
+  globalExtension.addEventListener(
+    "change",
+    updateGlobalPrice
+  );
+
+  // =========================
+  // GLOBAL ADD TO CART
+  // =========================
+  globalAddBtn.addEventListener("click", () => {
+    if (
+      !lastAvailableGlobalDomain ||
+      !lastAvailableGlobalExtension
+    ) {
+      return;
+    }
+
+    const selectedPrice =
+      GLOBAL_DOMAIN_PRICES[
+        lastAvailableGlobalExtension
+      ];
+
+    const item = {
+      product: "Domain",
+      section: "Global Domain",
+      duration:
+        `${lastAvailableGlobalDomain} (1 Year)`,
+      unitPrice: selectedPrice.value,
+      priceText: selectedPrice.text
+    };
+
+    addToCart(item);
+
+    globalAddBtn.textContent = "Added!";
+
+    setTimeout(() => {
+      globalAddBtn.textContent = "Add to Cart";
+    }, 900);
   });
 }
 
@@ -5258,9 +5662,24 @@ if (
     return `<div class="burmese-font">• Official appမာသုံးရတာဆိုပေမဲ့တစ်လကို$11.99ပေးပီးဝယ်တာမဟုတ်လို့ Risk ကတော့ရှိပါတယ်။အဆင်ပြေတယ်ဆိုမယူပါ။ ဝယ်ထားတဲ့အကောင့်ကိုပဲကုန်ရင်သက်တန်းတိုးလို့ရပါတယ်။ Full warranty.</div>`;
     }
 
-    if (productName === "Domain") {
-    return "ဒါကကိုယ့်မာ Website ရှိပီး Domain မရှိရင်သုံးဖို့အတွက်ပါ။ နှစ်တိုင်းသက်တန်းတိုးသွားလို့ရပါတယ်။";
-    }
+if (
+  productName === "Domain" &&
+  item.section === "My.ID/my.id"
+) {
+  return "ဒါကကိုယ့်မာ Website ရှိပီး Domain မရှိရင်သုံးဖို့အတွက်ပါ။ နှစ်တိုင်းသက်တန်းတိုးသွားလို့ရပါတယ်။";
+}
+
+if (
+  productName === "Domain" &&
+  item.section === "Global Domain"
+) {
+  return `<div class="burmese-font">
+ဒီ Domain က .com, .xyz, .net, .org, .link တို့အတွက်ဖြစ်ပါတယ်။
+Domain Name နဲ့ Extension ကိုသေချာစစ်ဆေးပြီးမှ ဆက်လုပ်ပေးပါ။
+ဝယ်ပြီးသွားတဲ့ Domain Name ကို ပြန်ပြောင်းပေးလို့မရပါဘူး။
+Domain type nonrenewable
+</div>`;
+}
 
     // --- TikTok Official: NoLoginBoost checkout note ---
     if (productName === "TikTok Official" && item.section === "NoLoginBoost") {

@@ -4449,24 +4449,112 @@ if (productName === "Domain") {
           Enter Domain Name
         </label>
 
-        <div style="display:flex; gap:10px; align-items:center;">
-          <input
-            id="global-domain-check-input"
-            placeholder="example: bluelamp"
-            style="flex:1; min-width:0; padding:12px; border-radius:8px; border:1px solid rgba(255,255,255,0.2); background:rgba(255,255,255,0.05); color:white; font-size:16px;"
-          />
+<div style="display:flex; gap:10px; align-items:center;">
+  <input
+    id="global-domain-check-input"
+    placeholder="example: bluelamp"
+    style="flex:1; min-width:0; padding:12px; border-radius:8px; border:1px solid rgba(255,255,255,0.2); background:rgba(255,255,255,0.05); color:white; font-size:16px;"
+  />
 
-          <select
-            id="global-domain-extension"
-            style="padding:12px; border-radius:8px; border:1px solid rgba(255,255,255,0.2); background:#111; color:white; font-size:16px;"
-          >
-            <option value=".com">.com</option>
-            <option value=".xyz">.xyz</option>
-            <option value=".net">.net</option>
-            <option value=".org">.org</option>
-            <option value=".link">.link</option>
-          </select>
-        </div>
+  <div
+    id="global-domain-extension-wrap"
+    style="position:relative; width:110px; flex-shrink:0;"
+  >
+    <button
+      type="button"
+      id="global-domain-extension-btn"
+      style="
+        width:100%;
+        padding:12px;
+        display:flex;
+        align-items:center;
+        justify-content:space-between;
+        gap:10px;
+        border-radius:8px;
+        border:1px solid rgba(255,255,255,0.2);
+        background:#111;
+        color:white;
+        font-size:16px;
+        cursor:pointer;
+      "
+    >
+      <span id="global-domain-extension-text">.com</span>
+      <span
+        id="global-domain-extension-arrow"
+        style="
+          display:inline-block;
+          font-size:12px;
+          opacity:.75;
+          transition:transform .2s ease;
+        "
+      >
+        ▼
+      </span>
+    </button>
+
+    <div
+      id="global-domain-extension-menu"
+      style="
+        position:absolute;
+        top:calc(100% + 7px);
+        right:0;
+        width:100%;
+        display:none;
+        overflow:hidden;
+        z-index:1000;
+        border-radius:10px;
+        border:1px solid rgba(255,255,255,0.18);
+        background:#090f1f;
+        box-shadow:0 12px 30px rgba(0,0,0,.55);
+      "
+    >
+      <button
+        type="button"
+        class="global-domain-option"
+        data-extension=".com"
+        style="width:100%; padding:12px; border:0; border-bottom:1px solid rgba(255,255,255,.08); background:rgba(0,191,255,.16); color:#37c9ff; text-align:left; font-size:15px; cursor:pointer;"
+      >
+        .com <span style="float:right;">✓</span>
+      </button>
+
+      <button
+        type="button"
+        class="global-domain-option"
+        data-extension=".xyz"
+        style="width:100%; padding:12px; border:0; border-bottom:1px solid rgba(255,255,255,.08); background:transparent; color:white; text-align:left; font-size:15px; cursor:pointer;"
+      >
+        .xyz
+      </button>
+
+      <button
+        type="button"
+        class="global-domain-option"
+        data-extension=".net"
+        style="width:100%; padding:12px; border:0; border-bottom:1px solid rgba(255,255,255,.08); background:transparent; color:white; text-align:left; font-size:15px; cursor:pointer;"
+      >
+        .net
+      </button>
+
+      <button
+        type="button"
+        class="global-domain-option"
+        data-extension=".org"
+        style="width:100%; padding:12px; border:0; border-bottom:1px solid rgba(255,255,255,.08); background:transparent; color:white; text-align:left; font-size:15px; cursor:pointer;"
+      >
+        .org
+      </button>
+
+      <button
+        type="button"
+        class="global-domain-option"
+        data-extension=".link"
+        style="width:100%; padding:12px; border:0; background:transparent; color:white; text-align:left; font-size:15px; cursor:pointer;"
+      >
+        .link
+      </button>
+    </div>
+  </div>
+</div>
 
         <div
           id="global-domain-selected-price"
@@ -4638,11 +4726,42 @@ if (productName === "Domain") {
   const globalInput =
     document.getElementById("global-domain-check-input");
 
-  const globalExtension =
-    document.getElementById("global-domain-extension");
+const globalExtensionWrap =
+  document.getElementById(
+    "global-domain-extension-wrap"
+  );
 
-  const globalPriceDisplay =
-    document.getElementById("global-domain-selected-price");
+const globalExtensionBtn =
+  document.getElementById(
+    "global-domain-extension-btn"
+  );
+
+const globalExtensionText =
+  document.getElementById(
+    "global-domain-extension-text"
+  );
+
+const globalExtensionArrow =
+  document.getElementById(
+    "global-domain-extension-arrow"
+  );
+
+const globalExtensionMenu =
+  document.getElementById(
+    "global-domain-extension-menu"
+  );
+
+const globalExtensionOptions =
+  document.querySelectorAll(
+    ".global-domain-option"
+  );
+
+const globalPriceDisplay =
+  document.getElementById(
+    "global-domain-selected-price"
+  );
+
+let selectedGlobalExtension = ".com";
 
   const globalCheckBtn =
     document.getElementById("global-domain-check-btn");
@@ -4677,18 +4796,91 @@ if (productName === "Domain") {
     lastAvailableGlobalExtension = null;
   };
 
-  const updateGlobalPrice = () => {
-    const extension = globalExtension.value;
-    const selectedPrice =
-      GLOBAL_DOMAIN_PRICES[extension];
+const updateGlobalPrice = () => {
+  const selectedPrice =
+    GLOBAL_DOMAIN_PRICES[
+      selectedGlobalExtension
+    ];
 
-    globalPriceDisplay.textContent =
-      `1 Year — ${selectedPrice.text}`;
+  globalPriceDisplay.textContent =
+    `1 Year — ${selectedPrice.text}`;
 
-    resetGlobalCheck();
-    globalResult.textContent = "";
-  };
+  resetGlobalCheck();
+  globalResult.textContent = "";
+};
 
+// =========================
+// CUSTOM EXTENSION DROPDOWN
+// =========================
+const closeGlobalExtensionMenu = () => {
+  globalExtensionMenu.style.display = "none";
+  globalExtensionArrow.style.transform =
+    "rotate(0deg)";
+};
+
+const openGlobalExtensionMenu = () => {
+  globalExtensionMenu.style.display = "block";
+  globalExtensionArrow.style.transform =
+    "rotate(180deg)";
+};
+
+globalExtensionBtn.addEventListener(
+  "click",
+  event => {
+    event.stopPropagation();
+
+    const isOpen =
+      globalExtensionMenu.style.display ===
+      "block";
+
+    if (isOpen) {
+      closeGlobalExtensionMenu();
+    } else {
+      openGlobalExtensionMenu();
+    }
+  }
+);
+
+globalExtensionOptions.forEach(option => {
+  option.addEventListener("click", event => {
+    event.stopPropagation();
+
+    selectedGlobalExtension =
+      option.dataset.extension;
+
+    globalExtensionText.textContent =
+      selectedGlobalExtension;
+
+    globalExtensionOptions.forEach(item => {
+      const isSelected =
+        item.dataset.extension ===
+        selectedGlobalExtension;
+
+      item.style.background = isSelected
+        ? "rgba(0,191,255,.16)"
+        : "transparent";
+
+      item.style.color = isSelected
+        ? "#37c9ff"
+        : "white";
+
+      item.innerHTML = isSelected
+        ? `${item.dataset.extension}<span style="float:right;">✓</span>`
+        : item.dataset.extension;
+    });
+
+    closeGlobalExtensionMenu();
+    updateGlobalPrice();
+  });
+});
+
+document.addEventListener("click", event => {
+  if (
+    !globalExtensionWrap.contains(event.target)
+  ) {
+    closeGlobalExtensionMenu();
+  }
+});
   // =========================
   // GLOBAL CHECK BUTTON
   // =========================
@@ -4699,14 +4891,14 @@ if (productName === "Domain") {
     globalCheckBtn.disabled = true;
     globalResult.textContent = "";
 
-    const selectedExtension =
-      globalExtension.value;
+const selectedExtension =
+  selectedGlobalExtension;
 
-    const checkResult =
-      await checkGlobalDomainAvailability(
-        globalInput.value,
-        selectedExtension
-      );
+const checkResult =
+  await checkGlobalDomainAvailability(
+    globalInput.value,
+    selectedExtension
+  );
 
     if (checkResult.status === "invalid") {
       renderGlobalResult(
@@ -4752,11 +4944,6 @@ if (productName === "Domain") {
     resetGlobalCheck();
     globalResult.textContent = "";
   });
-
-  globalExtension.addEventListener(
-    "change",
-    updateGlobalPrice
-  );
 
   // =========================
   // GLOBAL ADD TO CART

@@ -4439,6 +4439,26 @@ if (productName === "Domain") {
   // GLOBAL CHECKER HTML
   // =========================
   const globalCheckerHTML = `
+  <style>
+  #global-domain-extension-btn,
+  .global-domain-option {
+    -webkit-tap-highlight-color: transparent;
+    outline: none;
+    box-shadow: none;
+    -webkit-appearance: none;
+    appearance: none;
+  }
+
+  #global-domain-extension-btn:focus,
+  #global-domain-extension-btn:focus-visible,
+  #global-domain-extension-btn:active,
+  .global-domain-option:focus,
+  .global-domain-option:focus-visible,
+  .global-domain-option:active {
+    outline: none;
+    box-shadow: none;
+  }
+</style>
     <div class="plan-box" id="global-domain-checker-box">
       <div class="plan-title">
         Check Global Domain Availability
@@ -4476,6 +4496,9 @@ if (productName === "Domain") {
         color:white;
         font-size:16px;
         cursor:pointer;
+        -webkit-tap-highlight-color: transparent;
+        outline: none;
+        box-shadow: none;
       "
     >
       <span id="global-domain-extension-text">.com</span>
@@ -4816,6 +4839,8 @@ const closeGlobalExtensionMenu = () => {
   globalExtensionMenu.style.display = "none";
   globalExtensionArrow.style.transform =
     "rotate(0deg)";
+  
+  globalExtensionBtn.blur();
 };
 
 const openGlobalExtensionMenu = () => {
@@ -4871,6 +4896,7 @@ globalExtensionOptions.forEach(option => {
 
     closeGlobalExtensionMenu();
     updateGlobalPrice();
+    option.blur();
   });
 });
 

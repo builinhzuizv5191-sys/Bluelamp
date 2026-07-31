@@ -601,10 +601,10 @@
     "Express Vpn": {
       "Private": [{
         "duration": "7 Days",
-        "price": "Out Of Stock"
+        "price": "2,000 Kyats"
       }, {
         "duration": "3 Days",
-        "price": "1,000 Kyats"
+        "price": "Out Of Stock"
       }],
       "Share": [{
         "duration": "Phone (1 Month)",

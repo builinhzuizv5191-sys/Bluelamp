@@ -565,7 +565,7 @@
        "price": "5,000 Kyats"
      }],
      "Private Business": [{
-        "duration": "2 Weeks",
+        "duration": "1 Week",
         "price": "3,500 Kyats"
       }, {
         "duration": "1 Month",
@@ -575,7 +575,7 @@
         "price": "18,000 Kyats"
       }],
       "Private Pro": [{
-        "duration": "2 Weeks",
+        "duration": "1 Week",
         "price": "3,000 Kyats"
       }]
    },

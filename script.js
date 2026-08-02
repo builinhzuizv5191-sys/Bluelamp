@@ -600,24 +600,24 @@
     },
     "Express Vpn": {
       "Private": [{
-        "duration": "7 Days",
-        "price": "2,000 Kyats"
+        "duration": "15 Days",
+        "price": "4,500 Kyats"
       }, {
         "duration": "3 Days",
         "price": "Out Of Stock"
       }],
       "Share": [{
-        "duration": "Phone (1 Month)",
-        "price": "Out of stock"
+        "duration": "Phone (15 Days)",
+        "price": "1,000 Kyats"
       }, {
-        "duration": "WindowsPC / Laptop(1 Month)",
-        "price": "Out of stock"
+        "duration": "WindowsPC / Laptop(15 Days)",
+        "price": "1,500 Kyats"
       }, {
-        "duration": "MacBook(1 Month)",
-        "price": "Out of stock"
+        "duration": "MacBook(15 Days)",
+        "price": "1,500 Kyats"
       }, {
-        "duration": "Linux(1 Month)",
-        "price": "Out of stock"
+        "duration": "Linux(15 Days)",
+        "price": "1,500 Kyats"
       }]
      
     },

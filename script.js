@@ -734,10 +734,10 @@
       }],
       "Family Private": [{
         "duration": "2 Months",
-        "price": "25,000 Kyats"
+        "price": "17,000 Kyats"
       }, {
         "duration": "3 Months",
-        "price": "29,500 Kyats"
+        "price": "23,000 Kyats"
       }]
     },
     "Apple Music": {

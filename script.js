@@ -5567,7 +5567,7 @@ Private
 Support All device
 Full Warranty` + generalDetailsBlock,
     "NordVpn": `Share\n1-Year: 6-months warranty\nOne device only\n\nPrivate\nFull warranty for full duration\nUp to 6 devices` + generalDetailsBlock,
-    "Express Vpn": `Share\n15 Days Warranty.\nOne device only\n\nPrivate\nFull warranty for full duration\nUp to 9 devices: 8 Phones & 1 PC or Laptop\nCustom Password` + generalDetailsBlock,
+    "Express Vpn": `Share\n7 Days Warranty.\nOne device only\n\nPrivate\nFull warranty for full duration\nUp to 9 devices: 8 Phones & 1 PC or Laptop\nCustom Password` + generalDetailsBlock,
     "Surfshark Vpn": `Share
 Full warranty for full duration
 One device only
@@ -6022,7 +6022,7 @@ if (productName === "Express Vpn" && item.section === "Share" && /^phone/i.test(
 
   // Safety: if qty is out of expected range, still show a sensible message
   if (qty < 1) {
-    return `<div class="burmese-font">အခုယူ Share Plan ကို 1 ခုယူလိုက်တာမို့လို့ 1 devicesလွတ်တဲ့ 7 ယောက်ဝင်ပီးသားအကောင့်ပေးမာပါ။ 1 device only.<br>15 Days Warranty.</div>`;
+    return `<div class="burmese-font">အခုယူ Share Plan ကို 1 ခုယူလိုက်တာမို့လို့ 1 devicesလွတ်တဲ့ 7 ယောက်ဝင်ပီးသားအကောင့်ပေးမာပါ။ 1 device only.<br>7 Days Warranty.</div>`;
   }
   if (qty >= 8) { 
     return `<div class="burmese-font">Share Plan ကို 8 ခု မရွေးပါနဲ့။ Private သာယူလိုက်ပါတော့။</div>`;
@@ -6032,13 +6032,13 @@ if (productName === "Express Vpn" && item.section === "Share" && /^phone/i.test(
 }
          // Express VPN Windows plan note (Share → WindowsPC/Laptop)
    if (productName === "Express Vpn" && /windowspc/i.test(item.duration)) {
-    return "Windows deviceတေမာပဲသုံးလို့ရပါမယ်။15 Days warranty.";
+    return "Windows deviceတေမာပဲသုံးလို့ရပါမယ်။7 Days warranty.";
    }
    if (/macbook/i.test(item.duration)) {
-    return "MacBookမာပဲသုံးလို့ရပါမယ်။15 Days Warranty.";
+    return "MacBookမာပဲသုံးလို့ရပါမယ်။7 Days Warranty.";
    }
    if (/linux/i.test(item.duration)) {
-    return "Linux deviceတေမာပဲသုံးလို့ရပါမယ်။15 Days Warranty.";
+    return "Linux deviceတေမာပဲသုံးလို့ရပါမယ်။7 Days Warranty.";
    }
 
       // --- Flow AI / NotebookLM Checkout Notes ---

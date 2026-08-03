@@ -709,7 +709,11 @@
         "duration": "Semiprivate",
         "price": "12,000 Kyats"
       }],
-      "Whole Account": [{
+      "Whole Account Standard": [{
+        "duration": "1 Month",
+        "price": "27,000 Kyats"
+      }],
+      "Whole Account Premium": [{
         "duration": "1 Month",
         "price": "40,000 Kyats"
       }]
@@ -3272,17 +3276,19 @@ const popupTextByProduct = {
     nextText: "ဘာတေကွာလဲ?",
     backText: "Back",
     steps: [
-    "အရင်ဆုံး Plan တေအကြောင်းမပြောခင် HBO MAX ဆိုတာက Netflix လို Streaming Platform တခုပါ။ ဘာကြီးလဲမသိမာဆိုးလို့ပြောပြတာ။ ပီးတော့ HBO မာ Standard နဲ့ Ultimate Plan ဆိုပီး ရှိပါတယ်။",
-    "1P2U Plan ဆိုတာကကိုယ်ကတခြား User 1ယောက်နဲ့ 1 Profile မာတူတူမျှသုံးရမာကိုပြောတာပါ။ Tv ကလွဲရင်ကျန်တဲ့ Device အကုန်ရပါတယ်။ 1 Device ပဲဝင်သုံးလို့ရပါမယ်။ ဒါက Ultimate Plan ပါ။",
-    "Semiprivate ဆိုတာကတော့ All Device support ပါတယ်။ Total 2 devices ထိဝင်သုံးလို့ရမယ်။ Tv လဲရပါတယ်။ ဒါလဲ Ultimate Plan ပါပဲ။",
+    "အရင်ဆုံး Plan တေအကြောင်းမပြောခင် HBO MAX ဆိုတာက Netflix လို Streaming Platform တခုပါ။ ဘာကြီးလဲမသိမာဆိုးလို့ပြောပြတာ။ ပီးတော့ HBO မာ Standard နဲ့ Premium Plan ဆိုပီး ရှိပါတယ်။",
+    "1P2U Plan ဆိုတာကကိုယ်ကတခြား User 1ယောက်နဲ့ 1 Profile မာတူတူမျှသုံးရမာကိုပြောတာပါ။ Tv ကလွဲရင်ကျန်တဲ့ Device အကုန်ရပါတယ်။ 1 Device ပဲဝင်သုံးလို့ရပါမယ်။ ဒါက Premium Plan ပါ။",
+    "Semiprivate ဆိုတာကတော့ All Device support ပါတယ်။ Total 2 devices ထိဝင်သုံးလို့ရမယ်။ Tv လဲရပါတယ်။ ဒါလဲ Premium Plan ပါပဲ။",
     "Whole Account ဆိုတာက Netflix လိုပဲ ပါလာတဲ့ 5 Profile ကိုအပိုင်ရသွားမာပါ။ 1 Profile မာ 2 devices ဆိုတော့ Total 10 Devices ထိသုံးလို့ရပါတယ်။",
-    "1P 2U နဲ့ Semiprivate နှစ်ခုက Ultimate Plan ပါ။ Whole Account ကတော့ Standard Plan ပါ။ HBO က Stock အမြဲနီးပါးရှိပါတယ်။ Official App & Website တေမာပဲသုံးရမာပါ။",
+    "1P 2U နဲ့ Semiprivate နှစ်ခုက Premium Plan ပါ။ Whole Account ကတော့ Standard Plan နဲ့ Premium Plan ဆိုပီးကွဲပါတယ်။ အဲ့နှစ်ခုကဘာတေကွာသွားမလဲဆိုရင် Video Quality 1080P နဲ့ 4K UHD ဆိုပီးကွာပါတယ်။",
+    "ပီးတော့ Standard က 2 Devices simultaneous ကြည့်လို့ရမာဖြစ်ပီး Premium ကတော့ 4 Devices ထိ simultaneous တချိန်ထဲမာကြည့်လို့ရမာပါ။ HBO က Stock အမြဲနီးပါးရှိပါတယ်။ Official App & Website တေမာပဲသုံးရမာပါ။",
     "Android, iOS, PC, Laptop, Tv သူ့ Plan အလိုက်အကုန်ရပါတယ်။ Plan တိုင်းကို Full Warranty ပေးထားပါတယ်။"
   ],
     stepButtons: [
     "ဆက်ရန်",
     "Semiprivate<br>ဆိုတာက?",
     "Whole Account<br>ဆိုတာက?",
+    "ဆက်ရန်",
     "ဆက်ရန်",
     "All Devices<br>ရလား?"
   ]
@@ -4186,11 +4192,12 @@ if (regionalProducts[productName]) {
             title = 'Share <span style="background:#38bdf8; color:#020617; padding:2px 6px; border-radius:4px; font-size:11px; margin-left:8px; font-weight:900; box-shadow:0 0 6px #38bdf8;">Business Subscription</span>';
           }
           } else if (productName === 'HBO Max') {
-         if (sectionName === '1 Month') {
-            title += ' <span style="background:#cbd5e1; color:#0f172a; padding:2px 6px; border-radius:4px; font-size:11px; margin-left:8px; font-weight:900; box-shadow:0 0 6px #cbd5e1;">Ultimate</span>';
-          }
-         if (sectionName === 'Whole Account') {
-            title += ' <span style="background:#cbd5e1; color:#0f172a; padding:2px 6px; border-radius:4px; font-size:11px; margin-left:8px; font-weight:900; box-shadow:0 0 6px #cbd5e1;">Standard</span>';
+          if (sectionName === '1 Month') {
+            title += ' <span style="background:#cbd5e1; color:#0f172a; padding:2px 6px; border-radius:4px; font-size:11px; margin-left:8px; font-weight:900; box-shadow:0 0 6px #cbd5e1;">Premium</span>';
+          } else if (sectionName === 'Whole Account Premium') {
+            title = 'Whole Account <span style="background:#cbd5e1; color:#0f172a; padding:2px 6px; border-radius:4px; font-size:11px; margin-left:8px; font-weight:900; box-shadow:0 0 6px #cbd5e1;">Premium Subscription</span>';
+          } else if (sectionName === 'Whole Account Standard') {
+            title = 'Whole Account <span style="background:#cbd5e1; color:#0f172a; padding:2px 6px; border-radius:4px; font-size:11px; margin-left:8px; font-weight:900; box-shadow:0 0 6px #cbd5e1;">Standard Subscription</span>';
           }
           } else if (productName === 'Prime Video') {
          if (sectionName === 'Share' || sectionName === 'Private') {
@@ -5600,11 +5607,14 @@ Sharing up to 6 users.
 
 Plan Premium (No Limit)
 Sharing up to 3 users with full control, no screen limits.` + generalDetailsBlock,
-    "HBO Max": `HBO MAX (ULTIMATE) 1 Month
+    "HBO Max": `HBO MAX (Premium) 1 Month
 1P 2U: 1 Profile / 2 Users
 Semiprivate: 1 Profile / Semi-Private
 
-Private Whole Account (1 Month)
+Private Whole Account Standard(1 Month)
+5 Profile
+
+Private Whole Account Premium(1 Month)
 5 Profile` + generalDetailsBlock,
     "Prime Video": `Share\nFull warranty • One device only\n\nPrivate\nFull warranty • Up to 3 devices` + generalDetailsBlock,
     "Spotify": `Private
@@ -6066,7 +6076,7 @@ if (productName === "Express Vpn" && item.section === "Share" && /^phone/i.test(
         if (productName === "INSHOT") return `Mod appမဟုတ်ပါဘူး။Android onlyပဲသူံးလို့ရပါတယ်။ Playstore ကappမာပဲသုံးလို့ရပါမယ်။\nWarranty 3လပေးပါတယ်။\nShare plan မို့လို့ 1 device ပဲသုံးလို့ရပါမယ်။`;
     if (!fullText) return null;
     const rawDetails = fullText.trim();
-    const sectionHeaders = /^(Share|Own Mail|Private Business|Private Pro|Private|SemiPrivate Premium|SemiPrivate Standard|SemiPrivate|FullPrivate|Tinder Plus Share|Login|Gift Plan & Link Plan|Gift Plan|Link Plan|Views \(NoDrop\)|Likes \(NoDrop\)|Comment - Emoji Type|Comment - Custom Type|Package Plan|Livestream Views|Livestream Likes|Livestream Share|Post Views|Positive Reactions|Negative Reactions|Custom Reactions|Premium Reactions|Members \(30Days Refill\)|Livestream Views|Comment - Impression Type|Comment - Custom Type|Video Views|Video Likes|Post Likes|Profile Followers|Page Followers|Live Stream Views|Video Views & Reels|Likes|Followers|Personal Plus \(Share\)|Personal Plus \(Private\)|Business Plus - Invite Own Email|Business - Own|Private Own Mail|Private \(Own Mail\)|Base Service|1 Profile\(Semiprivate\)|5 Profiles\(Whole Account\)|Nitro Basic \(Key\)|Individual|Own Mail Invite|Sharing Pro|Plan Basic|Plan Premium|HBO MAX \(ULTIMATE\) 1 Month|Private Whole Account \(1 Month\)|1 Profile|Whole Account|OwnMail Private|OwnMail Invite|Individual Plan|Business Own\(Full Warranty\)|Business Plus Own\(Full Warranty\)|Business Plus Own|Normal Plan|Family Head\(Can Invite 5 email\)|Invite Private|Web Private|App&Web Private|Pro Share|Pro Private|Lifetime Premium|Educational\(Invite\)|Individual Plan\(Private\)|Stars|Japan Region \(¥\)|US Region \(\$\)|UK Region \(£\)|Custom Amount|Turkey Region \(TL\)|Indonesia Region \(IDR\)|Brazil Region \(BRL\)|Korea Region \(₩\)|India Region \(₹\)|Australia Region \(A\$\)|Germany Region \(€\)|France Region \(€\)|Italy Region \(€\)|Switzerland Region \(CHF\)|Canada Region \(C\$\)|UAE Region \(AED\)|Poland Region \(PLN\)|Nitro \(Key\))/i;
+    const sectionHeaders = /^(Share|Own Mail|Private Business|Private Pro|Private|SemiPrivate Premium|Whole Account Standard|Whole Account Premium|SemiPrivate Standard|SemiPrivate|FullPrivate|Tinder Plus Share|Login|Gift Plan & Link Plan|Gift Plan|Link Plan|Views \(NoDrop\)|Likes \(NoDrop\)|Comment - Emoji Type|Comment - Custom Type|Package Plan|Livestream Views|Livestream Likes|Livestream Share|Post Views|Positive Reactions|Negative Reactions|Custom Reactions|Premium Reactions|Members \(30Days Refill\)|Livestream Views|Comment - Impression Type|Comment - Custom Type|Video Views|Video Likes|Post Likes|Profile Followers|Page Followers|Live Stream Views|Video Views & Reels|Likes|Followers|Personal Plus \(Share\)|Personal Plus \(Private\)|Business Plus - Invite Own Email|Business - Own|Private Own Mail|Private \(Own Mail\)|Base Service|1 Profile\(Semiprivate\)|5 Profiles\(Whole Account\)|Nitro Basic \(Key\)|Individual|Own Mail Invite|Sharing Pro|Plan Basic|Plan Premium|HBO MAX \(Premium\) 1 Month|Private Whole Account \(1 Month\)|1 Profile|Whole Account|OwnMail Private|OwnMail Invite|Individual Plan|Business Own\(Full Warranty\)|Business Plus Own\(Full Warranty\)|Business Plus Own|Normal Plan|Family Head\(Can Invite 5 email\)|Invite Private|Web Private|App&Web Private|Pro Share|Pro Private|Lifetime Premium|Educational\(Invite\)|Individual Plan\(Private\)|Stars|Japan Region \(¥\)|US Region \(\$\)|UK Region \(£\)|Custom Amount|Turkey Region \(TL\)|Indonesia Region \(IDR\)|Brazil Region \(BRL\)|Korea Region \(₩\)|India Region \(₹\)|Australia Region \(A\$\)|Germany Region \(€\)|France Region \(€\)|Italy Region \(€\)|Switzerland Region \(CHF\)|Canada Region \(C\$\)|UAE Region \(AED\)|Poland Region \(PLN\)|Nitro \(Key\))/i;
     const lines = rawDetails.split('\n').map(l => l.trim()).filter(l => l.length > 0);
     let targetSection = String(forceNoteSectionName).replace(/\s*\(.*\)/, '');
     if (productName === 'HBO Max') targetSection = item.section;

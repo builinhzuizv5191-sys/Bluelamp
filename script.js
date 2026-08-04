@@ -726,6 +726,9 @@
       "Private": [{
         "duration": "1 Month",
         "price": "9,500 Kyats"
+      }, {
+        "duration": "6 Months",
+        "price": "50,000 Kyats"
       }]
     },
     "Spotify": {
@@ -5737,7 +5740,7 @@ Please contact admin for usage details.` + generalDetailsBlock,
 
     "TikTok Official": `Login method
      Coinက TikTok official boostတဲ့နေရာမာ Coin တေကိုသုံးရတာပါ။ Login ဝင်ပီးဝယ်ရတာပါ။ buttt email password ဘာမပေးစရာမလိုပါဘူး။
-
+     
      NoLoginBoost
      ဒါကအကောင့်ဝင်မရတာတေ။မဝင်စေချင်တာတေအတွက်Video Linkပေးရုံနဲ့ Boost ပေးတာပါ။`
      + generalDetailsBlock,
@@ -5908,7 +5911,9 @@ Domain type nonrenewable
     if (productName === "TikTok Official" && item.section === "NoLoginBoost") {
     return `<div class="burmese-font">ဒါကအကောင့်ဝင်မရတာတေ။မဝင်စေချင်တာတေအတွက်Video Linkပေးရုံနဲ့ Boost ပေးတာပါ။</div>`;
     }
-
+    if (productName === "TikTok Official" && item.section === "Login method") {
+    return `<div class="burmese-font">Coinက TikTok official boostတဲ့နေရာမာ Coin တေကိုသုံးရတာပါ။ Login ဝင်ပီးဝယ်ရတာပါ။ buttt email password ဘာမပေးစရာမလိုပါဘူး။</div>`;
+    }
     if (productName === "AlightMotion") {
     if (item.section === "Share") {
     return `Full warranty for 6Months

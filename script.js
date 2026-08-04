@@ -6140,9 +6140,7 @@ if (productName === "Express Vpn" && item.section === "Share" && /^phone/i.test(
     lastViewBeforeCheckout = dom.views.product.classList.contains('active') ? 'product' : 'home';
     try { localStorage.setItem('blp_cart', JSON.stringify(cart)); } catch {}
     const copyBtn = dom.checkout.copyReceiptBtn;
-    copyBtn.textContent = 'Copy';
-    copyBtn.classList.remove('copied');
-    copyBtn.disabled = false;
+    copyBtn.style.display = 'none';
     let quantityWarning = '';
     const multiQuantityItem = cart.find(item => item.qty > 1 && item.product === 'Express Vpn' && item.section === 'Share');
     if (multiQuantityItem) {
@@ -6268,6 +6266,15 @@ function getReceiptExtraLine(product, plan, duration, qty, unitPrice) {
   }).join('\n\n')
   + `\n-------------------\nTotal: ${formatKyats(total)}`;
   dom.checkout.receiptText.value = clipboardText;
+  // Add the receipt directly into the Telegram message box
+const telegramBaseUrl =
+  dom.checkout.nextBtn.href.split("?")[0];
+
+dom.checkout.nextBtn.href =
+  `${telegramBaseUrl}?text=${encodeURIComponent(clipboardText)}`;
+
+// Show Next immediately
+dom.checkout.nextBtn.style.display = "inline-block";
 
   }
 
@@ -6370,15 +6377,6 @@ if (target.id === 'product-back-btn') {
     if (target.id === 'clear-cart-btn') { clearCart(); return; }
     if (target.id === 'checkout-back-btn') { if (cart.length) dom.cart.bar.style.display = 'block'; showView(lastViewBeforeCheckout); return; }
     if (target.id === 'note-ok-btn' || target.closest('#note-ok-btn')) { dom.checkout.noteStep.style.display = 'none'; dom.checkout.receiptStep.style.display = 'block'; buildReceipt(); return; }
-    if (target.id === 'copy-receipt-btn' || target.closest('#copy-receipt-btn')) {
-      const ta = dom.checkout.receiptText; const btn = dom.checkout.copyReceiptBtn;
-      try {
-        if (navigator.clipboard) await navigator.clipboard.writeText(ta.value);
-        else { ta.select(); document.execCommand('copy'); }
-        btn.textContent = 'Copied!'; btn.classList.add('copied'); btn.disabled = true;
-        dom.checkout.nextBtn.style.display = 'inline-block';
-      } catch (err) { console.error(err); }
-    }
   });
      // ✅ Auto open product when user comes from shared link (example: #capcut)
      window.addEventListener("load", () => {

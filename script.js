@@ -5487,7 +5487,8 @@ if (productName === "Telegram Star") {
     "CapCut": `Share
 One device only
 ဖုန်းတလုံးပဲသုံးလို့ရပါတယ် Android & iOS
-• Shareအကောင့်မလို့ကျနော့်ဘက်က Warranty 25 ပေးပါတယ်။ 25ရက်က Pro Subscription ကိုပေးတာပါ။ ဥပမာ Pro ပြုတ်သွားတာတေဘာတေဆိုချက်ချင်းလဲပေးပါတယ်။ Device တေ Limit ပြတာကိုတော့ 1 ခါပဲလဲပေးပါတယ်။ အခြေနေအရပိုလဲပေးတာမျိုးရှိနိုင်‌ပေမဲ့ တခုခုဖြစ်လာခဲ့ရင်ဘယ်သူကပိုဝင်လဲမသိနိုင်လို့ Warranty မပေးတာပါနားလည်ပေးပါ။
+• Pro Subscription warranty 25 Days.
+Account Limit 1x Replacement.
 (we fully renew if Pro stops)
 
 Private

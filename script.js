@@ -6273,8 +6273,11 @@ const telegramBaseUrl =
 dom.checkout.nextBtn.href =
   `${telegramBaseUrl}?text=${encodeURIComponent(clipboardText)}`;
 
+// Keep the button text as Next
+dom.checkout.nextBtn.textContent = "Next";
+
 // Show Next immediately
-dom.checkout.nextBtn.style.display = "inline-block";
+dom.checkout.nextBtn.style.display = "inline-flex";
 
   }
 

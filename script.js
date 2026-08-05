@@ -473,7 +473,7 @@
       }],
       "Private": [{
         "duration": "1 Week",
-        "price": "4,500 Kyats"
+        "price": "4,000 Kyats"
       }, {
         "duration": "1 Month",
         "price": "15,000 Kyats"

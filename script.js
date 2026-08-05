@@ -5986,7 +5986,7 @@ Domain type nonrenewable
     if (productName === "PicsArt")
    if (item.section === "Private" && item.duration.includes("1 Week")) {
     return `<div class="burmese-font">
-    ဒီကပေးတဲ့ Email and Password ကို ChatGpt မာထည့်သုံးရုံပါပဲ။
+    ဒီကပေးတဲ့ Email and Password ကို PicsArt မာထည့်သုံးရုံပါပဲ။
     5 Days warranty.
 </div>`;
    }

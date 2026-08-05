@@ -552,7 +552,7 @@
         "price": "3,000 Kyats"
       }, {
         "duration": "1 Month",
-        "price": "7,500 Kyats"
+        "price": "Out Of Stock"
       }]
     },
 "Canva": {
@@ -622,13 +622,9 @@
      
     },
     "NordVpn": {
-      "Share": [{
-        "duration": "1 Year",
-        "price": "20,000 Kyats"
-      }],
       "Private": [{
-        "duration": "3 Months",
-        "price": "18,000 Kyats"
+        "duration": "3 Days",
+        "price": "2,000 Kyats"
       }]
     },
     "Surfshark Vpn": {
@@ -817,7 +813,7 @@
     "ChatGPT": {
       "Private": [{
         "duration": "3 Months",
-        "price": "30,000 Kyats"
+        "price": "Out Of Stock"
       }],
       "Personal Plus (Private)": [{
         "duration": "1 Month",
@@ -825,7 +821,7 @@
       },
       {
         "duration": "2 Months",
-        "price": "45,000 Kyats"
+        "price": "Out Of Stock"
       },
       {
         "duration": "3 Months",
@@ -833,7 +829,7 @@
       }],
       "Personal Plus(Full Warrenty)": [{
         "duration": "2 Months",
-        "price": "45,000 Kyats"
+        "price": "Out Of Stock"
       }],
       "Business Plus - Invite Own Email": [{
         "duration": "1 Month",
@@ -878,10 +874,10 @@
       }],
       "Private Plan": [{
         "duration": "3 Days",
-        "price": "4,000 Kyats"
+        "price": "Out Of Stock"
         }, {
         "duration": "7 Days",
-        "price": "7,000 Kyats"
+        "price": "Out Of Stock"
         }, {
         "duration": "1 Month",
         "price": "Out Of Stock"
@@ -1098,12 +1094,12 @@
     },
     "Perplexity Ai": {
       "Share": [{
-        "duration": "1 Month",
-        "price": "Out Of Stock"
+        "duration": "1 Week",
+        "price": "6,000 Kyats"
       }],
       "Private": [{
         "duration": "1 Week",
-        "price": "15,000 Kyats"
+        "price": "Out Of Stock"
       }],
       "OwnMail Private": [{
         "duration": "1 Month",
@@ -1133,7 +1129,11 @@
       }]
     },
     "Duolingo Super": {
-      "Family Head": [{
+      "Individual Private": [{
+        "duration": "1 Month",
+        "price": "5,000 Kyats"
+      }],
+        "Family Head": [{
         "duration": "14 Days",
         "price": "Not For Sale"
       }, {
@@ -4129,7 +4129,7 @@ if (regionalProducts[productName]) {
           }
         } else if (productName === 'NordVpn') {
          if (sectionName === 'Share' || sectionName === 'Private') {
-            title += ' <span style="background:#1e90ff; color:#ffffff; padding:2px 6px; border-radius:4px; font-size:11px; margin-left:8px; font-weight:900; box-shadow:0 0 6px #1e90ff;">Myanmarမာသုံးမရပါ</span>';
+            title += ' <span style="background:#1e90ff; color:#ffffff; padding:2px 6px; border-radius:4px; font-size:11px; margin-left:8px; font-weight:900; box-shadow:0 0 6px #1e90ff;">Pro Subscription</span>';
           }
          } else if (productName === 'Surfshark Vpn') {
          if (sectionName === 'Share' || sectionName === 'Private') {
@@ -4274,7 +4274,7 @@ if (regionalProducts[productName]) {
             title += ' <span style="background:#cbd5e1; color:#0f172a; padding:2px 6px; border-radius:4px; font-size:11px; margin-left:8px; font-weight:900; box-shadow:0 0 6px #cbd5e1;">1,000 GB</span>';
           }
           } else if (productName === 'Duolingo Super') {
-         if (sectionName === 'Family Head') {
+         if (sectionName === 'Family Head' || sectionName === 'Individual Private') {
             title += ' <span style="background:#2e1065; color:#ffffff; padding:2px 6px; border-radius:4px; font-size:11px; margin-left:8px; font-weight:900; box-shadow:0 0 6px #c084fc;">Super Subscription</span>';
           }
           } else if (productName === 'Spotify') {
@@ -5502,9 +5502,11 @@ Account Limit 1x Replacement.
 
 Private
 2 to 3 devices. Full warranty for the entire plan duration.
+Can renew after expired.
 
 Private Own Mail
-2 to 3 devices. Full warranty for the entire plan duration.` + generalDetailsBlock,
+2 to 3 devices. Full warranty for the entire plan duration.
+Can renew after expired.` + generalDetailsBlock,
     "AlightMotion": `Share
 Full warranty for 6Months
 Covers premium subscription errors.
@@ -5952,12 +5954,14 @@ Domain type nonrenewable
       // Private 1 Month
    if (item.section === "Private" && item.duration.includes("1 Month")) {
     return `<div class="burmese-font"> 2 to 3 devices. Full warranty for the entire plan duration.
+    Can renew after expired.
     </div>`;
    }
      
      // Own Mail 1 Month
    if (item.section === "Private Own Mail" && item.duration.includes("1 Month")) {
     return `<div class="burmese-font"> 2 to 3 devices. Full warranty for the entire plan duration.
+    Can renew after expired.
     </div>`;
    }
    }
@@ -5977,6 +5981,13 @@ Domain type nonrenewable
     Full warranty for full duration.
     3 devices max.
     1 Week Plan ဆိုတာက 5 To 7Days ရမာပါ။ အမြဲ 7Days မပြည့်နိုင်ပါဘူး။ 1 Month ထိပိုက်ဆံမသုံးချင်ပဲခု Project Export လုပ်ဖို့လိုတဲ့သူတေ Budget Plan အနေနဲ့ယူဖို့ထားပေးထားတာပါ။
+</div>`;
+   }
+    if (productName === "PicsArt")
+   if (item.section === "Private" && item.duration.includes("1 Week")) {
+    return `<div class="burmese-font">
+    ဒီကပေးတဲ့ Email and Password ကို ChatGpt မာထည့်သုံးရုံပါပဲ။
+    5 Days warranty.
 </div>`;
    }
 

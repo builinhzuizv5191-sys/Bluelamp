@@ -971,28 +971,37 @@
 "Claude Sonnet": {
       "1 Billion token": [{
         "duration": "3 Days",
+        "price": "10,000 Kyats"
+      }, {
+        "duration": "10 Days",
         "price": "15,000 Kyats"
       }, {
         "duration": "1 Month",
-        "price": "45,000 Kyats"
+        "price": "30,000 Kyats"
       }]
     },
 "Qwen": {
       "1 Billion token": [{
         "duration": "3 Days",
+        "price": "10,000 Kyats"
+      }, {
+        "duration": "10 Days",
         "price": "15,000 Kyats"
       }, {
         "duration": "1 Month",
-        "price": "45,000 Kyats"
+        "price": "30,000 Kyats"
       }]
     },
 "DeepSeek": {
       "1 Billion token": [{
         "duration": "3 Days",
+        "price": "10,000 Kyats"
+      }, {
+        "duration": "10 Days",
         "price": "15,000 Kyats"
       }, {
         "duration": "1 Month",
-        "price": "45,000 Kyats"
+        "price": "30,000 Kyats"
       }]
     },
     "Zoom": {

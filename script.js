@@ -624,17 +624,26 @@
     "NordVpn": {
       "Private": [{
         "duration": "3 Days",
-        "price": "2,000 Kyats"
+        "price": "3,000 Kyats"
       }]
     },
     "Surfshark Vpn": {
       "Share": [{
-        "duration": "2 Months",
-        "price": "8,000 Kyats"
+        "duration": "Phone 2 Months",
+        "price": "5,000 Kyats"
+      }, {
+        "duration": "Windows 2 Months",
+        "price": "6,000 Kyats"
+      }, {
+        "duration": "Linux 2 Months",
+        "price": "6,000 Kyats"
+      }, {
+        "duration": "MacOs 2 Months",
+        "price": "6,000 Kyats"
       }],
       "Private": [{
         "duration": "2 Months",
-        "price": "19,990 Kyats"
+        "price": "Soon"
       }]
     },
     "Windows License": {
@@ -3019,19 +3028,21 @@ const popupTextByProduct = {
   ]
 },
   "NordVpn": {
-  title: "NordVpn Info",
-  button: "ဒါကဘာလဲရှင်းပြပါ",
-  doneText: "Aww okok",
+  title: "ဘာမ မရှင်းပြဘူး ",
+  button: "Planအကြောင်းရှင်းပြရန်နှိပ်ပါ",
+  doneText: ":)",
   steps: [
-    "မြန်မာမာသုံးမရဘူး။ အဲ့တော့မဝယ်ပါနဲ့။"
+    "ခုထိအယုံလွယ်နေတုန်းပဲနော်။ ထားခဲ့ခံရတာလဲမဆန်းပါဘူး။"
   ]
 },
   "Surfshark Vpn": {
-  title: "Surfshark Vpn Info",
-  button: "ဒါကဘာလဲရှင်းပြပါ",
-  doneText: "Aww okok",
-  steps: [
-    "မြန်မာမာသုံးမရဘူး။ အဲ့တော့မဝယ်ပါနဲ့။"
+    title: "Surfshark Vpn Info",
+    button: "ဒါရှင်းပြပေးပါ။",
+    nextText: "Share ဆိုတာက?",
+    backText: "Back",
+    steps: [
+    "SurfShark Vpn မာရွေးချယ်စရာ Plan 2 ခုပဲရှိပါတယ်။ Share Plan & Private Plan.",
+    "Share Plan ဆိုတာကတခြား Share Plan ဝယ်ထားတဲ့ User တေနဲ့တူတူသုံးရမာပါ။ Private လဲမလိုဘူး Phone တခုပဲသုံးဖို့ဆိုတဲ့သူတေအတွက်အဆင်ပြေပါတယ်။ Mobile & Desktop ဆိုပီးဈေးတေကွာပါတယ်။ Warranty အနေနဲ့ 50 Days ပေးထားပါတယ်။ Private Plan ကိုတော့နောက်မရောင်းပေးပါမယ်ခုမရသေးပါဘူး။"
   ]
 },
   "Express Vpn": {
@@ -4133,7 +4144,7 @@ if (regionalProducts[productName]) {
           }
          } else if (productName === 'Surfshark Vpn') {
          if (sectionName === 'Share' || sectionName === 'Private') {
-            title += ' <span style="background:#5eead4; color:#042f2e; padding:2px 6px; border-radius:4px; font-size:11px; margin-left:8px; font-weight:900; box-shadow:0 0 6px #5eead4;">Myanmarမာသုံးမရပါ</span>';
+            title += ' <span style="background:#5eead4; color:#042f2e; padding:2px 6px; border-radius:4px; font-size:11px; margin-left:8px; font-weight:900; box-shadow:0 0 6px #5eead4;">Starter Subscription</span>';
           }
           } else if (productName === 'Grok') {
          if (sectionName === 'Share Plan' || sectionName === 'Private Plan') {
@@ -5590,7 +5601,7 @@ Full Warranty` + generalDetailsBlock,
     "NordVpn": `Share\n1-Year: 6-months warranty\nOne device only\n\nPrivate\nFull warranty for full duration\nUp to 6 devices` + generalDetailsBlock,
     "Express Vpn": `Share\n7 Days Warranty.\nOne device only\n\nPrivate\nFull warranty for full duration\nUp to 9 devices: 8 Phones & 1 PC or Laptop\nCustom Password` + generalDetailsBlock,
     "Surfshark Vpn": `Share
-Full warranty for full duration
+50 Days Warranty.
 One device only
 
 Private

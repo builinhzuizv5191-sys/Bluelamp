@@ -548,6 +548,9 @@
         "price": "Out Of Stock"
       }],
       "Private": [{
+        "duration": "3 Days",
+        "price": "1,500 Kyats"
+      }, {
         "duration": "1 Week",
         "price": "3,000 Kyats"
       }, {

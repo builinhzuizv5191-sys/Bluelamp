@@ -6412,9 +6412,43 @@ if (target.id === 'product-back-btn') {
       return;
     }
     if (target.id === 'clear-cart-btn') { clearCart(); return; }
-    if (target.id === 'checkout-back-btn') { if (cart.length) dom.cart.bar.style.display = 'block'; showView(lastViewBeforeCheckout); return; }
-    if (target.id === 'note-ok-btn' || target.closest('#note-ok-btn')) { dom.checkout.noteStep.style.display = 'none'; dom.checkout.receiptStep.style.display = 'block'; buildReceipt(); return; }
-  });
+
+if (target.id === 'checkout-back-btn') {
+  if (cart.length) dom.cart.bar.style.display = 'block';
+  showView(lastViewBeforeCheckout);
+  return;
+}
+
+if (target.id === 'note-ok-btn' || target.closest('#note-ok-btn')) {
+  dom.checkout.noteStep.style.display = 'none';
+  dom.checkout.receiptStep.style.display = 'block';
+  buildReceipt();
+  return;
+}
+
+if (target.id === 'next-btn' || target.closest('#next-btn')) {
+  const nextBtn = target.closest('#next-btn') || target;
+  const telegramUrl = nextBtn.href;
+  const receiptText = dom.checkout.receiptText.value;
+
+  e.preventDefault();
+
+  try {
+    if (navigator.clipboard) {
+      await navigator.clipboard.writeText(receiptText);
+    } else {
+      dom.checkout.receiptText.select();
+      document.execCommand('copy');
+    }
+  } catch (err) {
+    console.error('Receipt copy failed:', err);
+  }
+
+  window.location.href = telegramUrl;
+  return;
+}
+
+});
      // ✅ Auto open product when user comes from shared link (example: #capcut)
      window.addEventListener("load", () => {
      const slug = location.hash.replace("#", "");

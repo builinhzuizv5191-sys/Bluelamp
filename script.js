@@ -6433,21 +6433,27 @@ if (target.id === 'next-btn' || target.closest('#next-btn')) {
 
   e.preventDefault();
 
-  try {
-    if (navigator.clipboard) {
-      await navigator.clipboard.writeText(receiptText);
-    } else {
+  // Start copying without waiting
+  if (navigator.clipboard) {
+    navigator.clipboard
+      .writeText(receiptText)
+      .catch(err => {
+        console.error('Receipt copy failed:', err);
+      });
+  } else {
+    try {
       dom.checkout.receiptText.select();
       document.execCommand('copy');
+    } catch (err) {
+      console.error('Receipt copy failed:', err);
     }
-  } catch (err) {
-    console.error('Receipt copy failed:', err);
   }
 
+  // Open Telegram immediately
   window.location.href = telegramUrl;
   return;
 }
-
+    
 });
      // ✅ Auto open product when user comes from shared link (example: #capcut)
      window.addEventListener("load", () => {

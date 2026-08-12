@@ -686,14 +686,6 @@
      }, {
        "duration": "(1 Profile 3 Months)",
        "price": "39,000 Kyats"
-     }],
-    "SemiPrivate Standard": [{
-       "duration": "(1 Profile 1 Month)",
-       "price": "10,000 Kyats"
-     }],
-     "Whole Account": [{
-       "duration": "5 Profiles (1 Month)",
-       "price": "55,000 Kyats"
      }]
    },
     "Disney+": {
@@ -3269,6 +3261,21 @@ const popupTextByProduct = {
   },
   "Netflix": {
     title: "Netflix Info",
+    button: "Plan အကြောင်းရှင်းပြပေးပါ။",
+    nextText: "ဘာတေကွာလဲ?",
+    backText: "Back",
+    steps: [
+    "ဒါက Netflix ရဲ့ Official Premium Subscription ပါ။ Premium Subscription ကဘာတေကောင်းလဲဆိုရင် Netflix Subscription ထဲမာသူ့ထက်မြင့်တဲ့ဟာမရှိတော့ပါဘူး။ Semiprivate ဖြစ်လို့ သူများတေနဲ့ Movie တေရောပီး Share ကြည့်စရာလဲမလိုပါဘူး။",
+    "Semiprivate ဆိုတာကကိုယ်က Profile တခုလုံးကိုငှားလိုက်တာပါ။ 1 Profile မာက 2 devices သုံးလို့ရပါတယ်။ ကိုယ်တယောက်ထဲက Profile တခုလုံးသုံးရတာမလို့ Semiprivate လို့ခေါ်တာပါ။ TV လဲ Support ပါတယ်။",
+    "Devices တေက Android, iOS, PC, Laptop, Tv အကုန်ရပါတယ်။ Stocks ရှားတာမို့လို့မဝယ်ခင်အရင်မေးပါ။ လအစတေမာတော့ Stock ရှိတတ်ပါတယ်။ Plan တိုင်းကို Full Warranty ပေးထားပါတယ်။"
+  ],
+    stepButtons: [
+    "Semiprivate<br>ဆိုတာက?",
+    "All Devices<br>ရလား?"
+  ]
+  },
+  "gojo": {
+    title: "Netflix Info",
     button: "Planတေကအများရီးပဲနားမလည်ဘူး။",
     nextText: "ဘာတေကွာလဲ?",
     backText: "Back",
@@ -4202,10 +4209,6 @@ if (regionalProducts[productName]) {
           } else if (productName === 'Netflix') {
          if (sectionName === 'SemiPrivate Premium') {
             title = 'SemiPrivate <span style="background:#000000; color:#ff3131; padding:2px 6px; border-radius:4px; font-size:11px; margin-left:8px; font-weight:900; box-shadow:0 0 6px #ff3131;">Premium Subscription</span>';
-          } else if (sectionName === 'SemiPrivate Standard') {
-            title = 'SemiPrivate <span style="background:#000000; color:#ff3131; padding:2px 6px; border-radius:4px; font-size:11px; margin-left:8px; font-weight:900; box-shadow:0 0 6px #ff3131;">Standard Subscription</span>';
-          } else if (sectionName === 'Whole Account') {
-            title = 'Whole Account <span style="background:#000000; color:#ff3131; padding:2px 6px; border-radius:4px; font-size:11px; margin-left:8px; font-weight:900; box-shadow:0 0 6px #ff3131;">Premium Subscription</span>';
           }
           } else if (productName === 'Canva') {
          if (sectionName === 'Private Pro') {
@@ -5103,10 +5106,6 @@ if (productName === "Netflix") {
     if (months >= 4) return months * 13000;
     return 0;
   }
-  function getNetflixFhdCustomPrice(months) {
-  if (months >= 1) return months * 10000;
-  return 0;
-}
   function mountNetflixUhdMonthsBox() {
     const html = `
       <div class="plan-box">
@@ -5181,82 +5180,7 @@ if (productName === "Netflix") {
       setTimeout(() => (addBtn.textContent = "Add to Cart"), 1000);
     });
   }
-    function mountNetflixFhdMonthsBox() {
-  const html = `
-    <div class="plan-box">
-      <div class="plan-title">More Months (1 Profile FHD 1080P)</div>
-      <div style="padding:10px; display:flex; flex-direction:column; gap:10px;">
-        <label style="font-size:14px; color:#ccc;">Enter Months (1 - 12)</label>
-
-        <div style="display:flex; gap:10px;">
-          <input
-            type="number"
-            id="netflix-fhd-months-input"
-            min="1"
-            max="12"
-            placeholder="1-12"
-            style="flex:1; padding:12px; border-radius:8px; border:1px solid rgba(255,255,255,0.2); background:rgba(255,255,255,0.05); color:white; font-size:16px;"
-          />
-          <div id="netflix-fhd-calc-price" style="align-self:center; font-weight:bold; color:#00e676; min-width:120px; text-align:right;">
-            0 Kyats
-          </div>
-        </div>
-
-        <button id="btn-add-netflix-fhd-months" class="btn btn-primary" style="width:100%;">
-          Add to Cart
-        </button>
-      </div>
-    </div>
-  `;
-
-  const popularSection = dom.views.product.querySelector(".popular-section");
-  if (!popularSection) return;
-  popularSection.insertAdjacentHTML("beforebegin", html);
-
-  const input = document.getElementById("netflix-fhd-months-input");
-  const priceDisplay = document.getElementById("netflix-fhd-calc-price");
-  const addBtn = document.getElementById("btn-add-netflix-fhd-months");
-
-  input.addEventListener("input", () => {
-    const months = parseInt(input.value, 10);
-
-    if (!months || months < 1 || months > 12) {
-      addBtn.style.backgroundColor = "#ff4444";
-      addBtn.textContent = "⚠️ Limit: 1 - 12";
-      priceDisplay.textContent = "0 Kyats";
-    } else {
-      addBtn.style.removeProperty("background-color");
-      addBtn.textContent = "Add to Cart";
-      priceDisplay.textContent = formatKyats(getNetflixFhdCustomPrice(months));
-    }
-  });
-
-  addBtn.addEventListener("click", () => {
-    const months = parseInt(input.value, 10);
-    if (!months || months < 1 || months > 12) return;
-
-    const totalPrice = getNetflixFhdCustomPrice(months);
-
-    const item = {
-      product: "Netflix",
-      section: FHD_SECTION,
-      duration: `${months} Month${months > 1 ? "s" : ""}`,
-      unitPrice: totalPrice,
-      priceText: formatKyats(totalPrice)
-    };
-
-    addToCart(item);
-
-    input.value = "";
-    priceDisplay.textContent = "0 Kyats";
-    addBtn.style.removeProperty("background-color");
-
-    addBtn.textContent = "Added!";
-    setTimeout(() => (addBtn.textContent = "Add to Cart"), 1000);
-  });
-}
   mountNetflixUhdMonthsBox();
-  mountNetflixFhdMonthsBox();
 }
    
     // --- TIKTOK OFFICIAL: CUSTOM COINS (like Google Play custom amount) ---

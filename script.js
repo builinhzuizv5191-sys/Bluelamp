@@ -1179,11 +1179,11 @@
     "TikTok Official": {
       "Login method": [{
         "duration": "100 Coin",
-        "price": "5,300 Kyats"
+        "price": "5,500 Kyats"
       }],
     "NoLoginBoost": [{
       "duration": "100 Coin",
-      "price": "5,300 Kyats"
+      "price": "5,500 Kyats"
       }]
     },
     "TikTok Non Official": {
@@ -5185,15 +5185,15 @@ if (productName === "Netflix") {
    
     // --- TIKTOK OFFICIAL: CUSTOM COINS (like Google Play custom amount) ---
 if (productName === "TikTok Official") {
-  // Use your existing price as base: 100 Coin = 5,300 Kyats
+  // Use your existing price as base: 100 Coin = 5,500 Kyats
   const basePriceText = productData["TikTok Official"]?.["Login method"]?.[0]?.price;
   const baseCoinsText = productData["TikTok Official"]?.["Login method"]?.[0]?.duration;
 
-  const basePrice = parseKyats(basePriceText) || 5300; // fallback
+  const basePrice = parseKyats(basePriceText) || 5500; // fallback
   const baseCoinsMatch = String(baseCoinsText || "").match(/(\d+)/);
   const baseCoins = baseCoinsMatch ? parseInt(baseCoinsMatch[1], 10) : 100; // fallback
 
-  // Kyats per coin (example: 5300/100 = 53)
+  // Kyats per coin (example: 5500/100 = 55)
   const kyatsPerCoin = Math.max(1, Math.round(basePrice / baseCoins));
 
   // You can change these limits if you want

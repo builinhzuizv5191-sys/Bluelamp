@@ -603,26 +603,9 @@
     },
     "Express Vpn": {
       "Private": [{
-        "duration": "15 Days",
-        "price": "4,500 Kyats"
-      }, {
-        "duration": "3 Days",
-        "price": "Out Of Stock"
-      }],
-      "Share": [{
-        "duration": "Phone (15 Days)",
-        "price": "1,000 Kyats"
-      }, {
-        "duration": "WindowsPC / Laptop(15 Days)",
-        "price": "1,500 Kyats"
-      }, {
-        "duration": "MacBook(15 Days)",
-        "price": "1,500 Kyats"
-      }, {
-        "duration": "Linux(15 Days)",
-        "price": "1,500 Kyats"
+        "duration": "5 Days",
+        "price": "2,500 Kyats"
       }]
-     
     },
     "NordVpn": {
       "Private": [{
@@ -3041,6 +3024,14 @@ const popupTextByProduct = {
   ]
 },
   "Express Vpn": {
+  title: "Express Vpn Info",
+  button: "အရင်လို1လတေမရတော့ဘူးလား?",
+  doneText: "ဟုတ်ပီဟုတ်ပီ",
+  steps: [
+    "Express Vpn တေက 1Month Official Trial တေလုပ်လို့မရတော့ပါဘူး။ အရင်လို Share Plan ပဲဖြစ်ဖြစ် လများများနဲ့သုံးချင်ရင် SurfShark Vpn ကျန်ပါမယ်။ အဲ့တာအပြင် HMA လဲရှိပါအုန်းမယ်။ VPN 2 ခုအကြောင်းကသူတို့ ထဲဝင်ကြည့်ရင်ပိုရှင်းပြထားပေးပါတယ်။"
+  ]
+},
+  "gojo": {
     title: "Express Vpn Info",
     button: "Shareနဲ့Privateဘာကွာလဲ?",
     nextText: "ဘာတေကွာလဲ?",
@@ -3071,10 +3062,14 @@ const popupTextByProduct = {
     nextText: "ဘာတေကွာလဲ?",
     backText: "Back",
     steps: [
-    "HMA က Express လိုမဟုတ်ဘူး။ iOS တေမာသုံးလိူ့မရဘူး။ ဒါပေမဲ့ ရွေးချယ်စရာ Region တေ Express ထက်ပိုများများချိတ်လို့ရတယ်။ သုံးလို့လဲရတယ်။",
-    "သူ့မာ Budget Plan မရှိပါဘူး။ Private ပဲရပါမယ်။ Android & Windows Devicesတေမာပဲသုံးလိူ့ရမယ်။ 5 to 8 Devicesထိရမယ်။ Full warranty။"
+    "HMA က Express တို့ SurfShark တို့လိုမဟုတ်ဘူး။ iOS တေမာသုံးလိူ့မရဘူး။ Android devices တေနဲ့ Windows Devices တေမာပဲသုံးလို့ရပါတယ်။ Private Plan နဲ့ Share Plan နှစ်ခုကသုံးရတာလဲကွာပါတယ်။",
+    "Share Plan ဝယ်ရင် HMA က တချိန်ထဲသုံးနေတဲ့သူတေများရင်ချိတ်မရတာတေဖြစ်တတ်ပါတယ်။ အဲ့တော့ အဲ့လိုဖြစ်တာတေမကြိုက်ရင်တော့ Share မဝယ်သင့်ပါဘူး။ Private Plan ကတော့ကိုယ်တယောက်ထဲသုံးရတာမလို့ သုံးတဲ့သူအရေအတွက်ကိုလဲကိုယ်ထိန်းထားလို့ရလို့ Limit ပြတာမျိုးတေမရှိအောင်သုံးလို့ရပါတယ်။",
+    "ကိုယ်က VPN အရမ်းမသုံးဖြစ်ဘူး ၁ လ 1000 လောက်နဲ့သုံးချင်တာဆိုရင်တော့ HMA Share ကအဆင်ပြေမာပါ။ VPN လဲအရမ်းသုံးဖြစ်တယ် iOS လဲဖြစ်နေတယ်ဆိုရင်တော့ SurfShark Vpn ကပိုရွေးချယ်သင့်ပါတယ်။ SurfShark က Android ရော iOS မာရောသုံးလို့ကောင်းပါတယ်။",
+    "HMA Private ကတော့ Windows device တေအဓိကသုံးတဲ့သူတေအတွက်အဆင်ပြေပါလိမ့်မယ်။ HMA Share Plan ကို Warranty 20 Days နဲ့ Private Plan ကို Full warranty ပေးထားပါတယ်။"
   ],
     stepButtons: [
+    "ဘယ်လိုကွာတာလဲ?",
+    "ဘာဝယ်သင့်လဲ?",
     "ဆက်ရန်"
   ]
   },

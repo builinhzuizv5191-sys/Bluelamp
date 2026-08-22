@@ -147,6 +147,7 @@
     "Flow AI": "https://ik.imagekit.io/dkdlgynlu/Wattpad%20_A4B3FC6_.png?updatedAt=1768837724112",
     "NotebookLM": "https://ik.imagekit.io/dkdlgynlu/Wattpad%20_363313A_.png?updatedAt=1768837724010",
     "Claude Opus": "https://ik.imagekit.io/dkdlgynlu/New-Project-52-087-AC47.png?updatedAt=1764609026634",
+    "Claude Fable": "https://ik.imagekit.io/dkdlgynlu/New-Project-52-087-AC47.png?updatedAt=1764609026634",
     "Claude Sonnet": "https://ik.imagekit.io/dkdlgynlu/New-Project-52-087-AC47.png?updatedAt=1764609026634",
     "ChatGPT API": "https://ik.imagekit.io/dkdlgynlu/New-Project-52-6-CB3-A91-1.png?updatedAt=1764609028617",
     "Qwen": "https://ik.imagekit.io/dkdlgynlu/ICON%20_C2FF1C4_.png?updatedAt=1784197274777",
@@ -905,49 +906,39 @@
 },
 
     "Claude Opus": {
-      "50 Million token": [{
-        "duration": "3 Days",
+      "Global API 30Days": [{
+        "duration": "10K Credits",
+        "price": "5,000 Kyats"
+      }, {
+        "duration": "20K Credits",
+        "price": "10,000 Kyats"
+      }, {
+        "duration": "30K Credits",
         "price": "15,000 Kyats"
+      }]
+    },
+    "Claude Fable": {
+      "Global API 30Days": [{
+        "duration": "10K Credits",
+        "price": "5,000 Kyats"
       }, {
-        "duration": "5 Days",
-        "price": "20,000 Kyats"
-      }],
-      "70 Million token": [{
-        "duration": "3 Days",
-        "price": "27,000 Kyats"
+        "duration": "20K Credits",
+        "price": "10,000 Kyats"
       }, {
-        "duration": "5 Days",
-        "price": "32,000 Kyats"
-      }],
-      "100 Million token": [{
-        "duration": "3 Days",
-        "price": "29,000 Kyats"
-      }, {
-        "duration": "5 Days",
-        "price": "40,000 Kyats"
+        "duration": "30K Credits",
+        "price": "15,000 Kyats"
       }]
     },
     "ChatGPT API": {
-      "50 Million token": [{
-        "duration": "3 Days",
+      "Global API 30Days": [{
+        "duration": "10K Credits",
+        "price": "5,000 Kyats"
+      }, {
+        "duration": "20K Credits",
+        "price": "10,000 Kyats"
+      }, {
+        "duration": "30K Credits",
         "price": "15,000 Kyats"
-      }, {
-        "duration": "5 Days",
-        "price": "20,000 Kyats"
-      }],
-      "70 Million token": [{
-        "duration": "3 Days",
-        "price": "27,000 Kyats"
-      }, {
-        "duration": "5 Days",
-        "price": "32,000 Kyats"
-      }],
-      "100 Million token": [{
-        "duration": "3 Days",
-        "price": "29,000 Kyats"
-      }, {
-        "duration": "5 Days",
-        "price": "40,000 Kyats"
       }]
     },
 
@@ -2506,7 +2497,12 @@
     "ChatGPT": ["android", "ios", "pc"],
     "Grok": ["android", "ios", "pc"],
     "Gemini Pro": ["android", "ios", "pc"],
-    "Claude Opus": ["pc", "android", "ios"],
+    "Claude Opus": ["pc"],
+    "Claude Fable": ["pc"],
+    "Claude Sonnet": ["pc"],
+    "DeepSeek": ["pc"],
+    "Qwen": ["pc"],
+    "ChatGPT API": ["pc"],
     "Flow AI": ["android", "ios", "pc"],
     "NotebookLM": ["android", "ios", "pc"],
     "Zoom": ["pc", "android", "ios"],
@@ -3136,7 +3132,31 @@ const popupTextByProduct = {
     backText: "Back",
     steps: [
     "Desktop Device တေမာပဲ VS Code နဲ့သုံးလိုရပါမယ်။ Laptop or PC တခုထဲကသုံးရတာမျိုးမဟုတ်ဘူး Multiple Laptop and PC API setup ပီးသုံးလိုရပါတယ်။ 3 Devices လောက်ရပေမဲ့ တချိန်ထဲတော့တူတူသူံးလို့မရပါဘူး။ ဟိုလို Claude Website မာသုံးရတဲ့အကောင့်လဲမဟုတ်ပါဘူး။ ကိုယ့် VS Code account ထဲမာ API ထည့်ပီးသုံးရတာမျိုးပါ။",
-    "ဒီ API ထဲမာ Claude ရဲ့ Opus, Sonnet, Haiku အပြင် GPT Sol, Terra, Luna ,DeepSeek V3, V4 ,Flash, V4 Pro ,Qwen Max, Plus, Turbo, Flash, Coder Plus ,GLM 5.2 တေလဲအကုန်ပါပါတယ်။ ဒီ API က Sonnet API Type ထက်ပိုပီး Token အစားသက်သာပါတယ်။ အဲ့တော့နှစ်ခုကိုယှဉ်ပီးဟိုဟာကအသာရီးမထင်ပါနဲ့။"
+    "ဒီ API ထဲမာ Claude ရဲ့ Opus (5, 4-8, 4-7, 4-6, 5-thinking), Sonnet (5, 4-6, 5-thinking), Haiku (4-5), Fable-5 အပြင် GPT ရဲ့ 5.4, 5.5, 5.5-xhigh, 5.6-luna, 5.6-sol, 5.6-terra, DeepSeek ရဲ့ V4 Pro, V4 Flash, Qwen ရဲ့ Max, Plus, Flash, Coder Plus, Kimi ရဲ့ K3, K2.7-Code နဲ့ GLM ရဲ့ 5.1, 5.2, 5.3, 5-Turbo တေလဲအကုန်ပါပါတယ်။",
+    "ဒီ API က Claude Opus လို့ရေးထားပေမဲ့ Global API ချင်းတူတူပဲမလို့ တခြား model တေနဲ့ ဈေးတေ Plan တေတူနေတာပါ။ Global Plan တေက Claude Sonnet API တေလိုမဟုတ်ပါဘူး။ ကိုယ်ဝယ်ထားတဲ့ Credit ကို Time Limit 30 Days အတွင်းသုံးရတာပါ။ For example ခု ကိုယ်က Credits 10,000 ဝယ်လိုက်ပီထားပါဆို အဲ့တာကကိုယ်မသုံးမချင်း မကုန်ပါဘူး 30 ရက်မြောက်နေ့ထိမသုံးပဲထားရင်တော့သူ့ဘသူကုန်သွားမာမျိုးကိုပြောတာပါ။",
+    "ဆိုတော့ 1Month ပြည့်ရင်ကုန်ရင်လဲကုန်မယ် Credit ကုန်ရင်လဲကုန်ပါမယ်။ Credit နဲ့မလို့ဘယ်လောက်ကုန်မလဲမသိတာတေတွက်ဖို့လဲ Channel မာ model Cost တေတင်ပေးထားပါတယ်။ မတွေ့ရင် Admin ကိုမေးပီးပြခိုင်းပါ။"
+  ],
+    stepButtons: [
+    "ဆက်ရန်",
+    "ဆက်ရန်",
+    "Credit Cost ကရော?"
+  ]
+  },
+  "Claude Fable": {
+    title: "Claude Fable Info",
+    button: "ဒါရှင်းပြပေးပါ။",
+    nextText: "ဆက်ရန်",
+    backText: "Back",
+    steps: [
+    "Desktop Device တေမာပဲ VS Code နဲ့သုံးလိုရပါမယ်။ Laptop or PC တခုထဲကသုံးရတာမျိုးမဟုတ်ဘူး Multiple Laptop and PC API setup ပီးသုံးလိုရပါတယ်။ 3 Devices လောက်ရပေမဲ့ တချိန်ထဲတော့တူတူသူံးလို့မရပါဘူး။ ဟိုလို Claude Website မာသုံးရတဲ့အကောင့်လဲမဟုတ်ပါဘူး။ ကိုယ့် VS Code account ထဲမာ API ထည့်ပီးသုံးရတာမျိုးပါ။",
+    "ဒီ API ထဲမာ Claude ရဲ့ Fable-5, Opus (5, 4-8, 4-7, 4-6, 5-thinking), Sonnet (5, 4-6, 5-thinking), Haiku (4-5) အပြင် GPT ရဲ့ 5.4, 5.5, 5.5-xhigh, 5.6-luna, 5.6-sol, 5.6-terra, DeepSeek ရဲ့ V4 Pro, V4 Flash, Qwen ရဲ့ Max, Plus, Flash, Coder Plus, Kimi ရဲ့ K3, K2.7-Code နဲ့ GLM ရဲ့ 5.1, 5.2, 5.3, 5-Turbo တေလဲအကုန်ပါပါတယ်။",
+    "ဒီ API က Claude fable လို့ရေးထားပေမဲ့ Global API ချင်းတူတူပဲမလို့ တခြား model တေနဲ့ ဈေးတေ Plan တေတူနေတာပါ။ Global Plan တေက Claude Sonnet API တေလိုမဟုတ်ပါဘူး။ ကိုယ်ဝယ်ထားတဲ့ Credit ကို Time Limit 30 Days အတွင်းသုံးရတာပါ။ For example ခု ကိုယ်က Credits 10,000 ဝယ်လိုက်ပီထားပါဆို အဲ့တာကကိုယ်မသုံးမချင်း မကုန်ပါဘူး 30 ရက်မြောက်နေ့ထိမသုံးပဲထားရင်တော့သူ့ဘသူကုန်သွားမာမျိုးကိုပြောတာပါ။",
+    "ဆိုတော့ 1Month ပြည့်ရင်ကုန်ရင်လဲကုန်မယ် Credit ကုန်ရင်လဲကုန်ပါမယ်။ Credit နဲ့မလို့ဘယ်လောက်ကုန်မလဲမသိတာတေတွက်ဖို့လဲ Channel မာ model Cost တေတင်ပေးထားပါတယ်။ မတွေ့ရင် Admin ကိုမေးပီးပြခိုင်းပါ။"
+  ],
+    stepButtons: [
+    "ဆက်ရန်",
+    "ဆက်ရန်",
+    "Credit Cost ကရော?"
   ]
   },
   "Claude Sonnet": {
@@ -3155,8 +3175,15 @@ const popupTextByProduct = {
     nextText: "ဆက်ရန်",
     backText: "Back",
     steps: [
-    "Desktop Device တေမာပဲ VS Code နဲ့သုံးလိုရပါမယ်။ Laptop or PC တခုထဲကသုံးရတာမျိုးမဟုတ်ဘူး Multiple Laptop and PC API setup ပီးသုံးလိုရပါတယ်။ 3 Devices လောက်ရပေမဲ့ တချိန်ထဲတော့တူတူသူံးလို့မရပါဘူး။ ဟိုလို ChatGPT Website မာသုံးရတဲ့အကောင့်လဲမဟုတ်ပါဘူး။ ကိုယ့် VS Code account ထဲမာ API ထည့်ပီးသုံးရတာမျိုးပါ။",
-    "ဒီ API ထဲမာ GPT ရဲ့ Sol, Terra, Luna အပြင် Claude Opus, Sonnet, Haiku ,DeepSeek V3, V4 ,Flash, V4 Pro ,Qwen Max, Plus, Turbo, Flash, Coder Plus ,GLM 5.2 တေလဲအကုန်ပါပါတယ်။ ဒီ API က Claude Opus API ပါပဲ။ အဲ့တာကြောင့်ဈေးတေ Plan တေတူနေတာပါ။"
+    "Desktop Device တေမာပဲ VS Code နဲ့သုံးလိုရပါမယ်။ Laptop or PC တခုထဲကသုံးရတာမျိုးမဟုတ်ဘူး Multiple Laptop and PC API setup ပီးသုံးလိုရပါတယ်။ 3 Devices လောက်ရပေမဲ့ တချိန်ထဲတော့တူတူသူံးလို့မရပါဘူး။ ဟိုလို Claude Website မာသုံးရတဲ့အကောင့်လဲမဟုတ်ပါဘူး။ ကိုယ့် VS Code account ထဲမာ API ထည့်ပီးသုံးရတာမျိုးပါ။",
+    "ဒီ API ထဲမာ GPT ရဲ့ 5.4, 5.5, 5.5-xhigh, 5.6-luna, 5.6-sol, 5.6-terra အပြင် Claude ရဲ့ Opus (5, 4-8, 4-7, 4-6, 5-thinking), Sonnet (5, 4-6, 5-thinking), Haiku (4-5), Fable-5, DeepSeek ရဲ့ V4 Pro, V4 Flash, Qwen ရဲ့ Max, Plus, Flash, Coder Plus, Kimi ရဲ့ K3, K2.7-Code နဲ့ GLM ရဲ့ 5.1, 5.2, 5.3, 5-Turbo တေလဲအကုန်ပါပါတယ်။",
+    "ဒီ API က ChatGPT API လို့ရေးထားပေမဲ့ Global API ချင်းတူတူပဲမလို့ တခြား model တေနဲ့ ဈေးတေ Plan တေတူနေတာပါ။model တေနဲ့ ဈေးတေ Plan တေတူနေတာပါ။ Global Plan တေက Claude Sonnet API တေလိုမဟုတ်ပါဘူး။ ကိုယ်ဝယ်ထားတဲ့ Credit ကို Time Limit 30 Days အတွင်းသုံးရတာပါ။ For example ခု ကိုယ်က Credits 10,000 ဝယ်လိုက်ပီထားပါဆို အဲ့တာကကိုယ်မသုံးမချင်း မကုန်ပါဘူး 30 ရက်မြောက်နေ့ထိမသုံးပဲထားရင်တော့သူ့ဘသူကုန်သွားမာမျိုးကိုပြောတာပါ။",
+    "ဆိုတော့ 1Month ပြည့်ရင်ကုန်ရင်လဲကုန်မယ် Credit ကုန်ရင်လဲကုန်ပါမယ်။ Credit နဲ့မလို့ဘယ်လောက်ကုန်မလဲမသိတာတေတွက်ဖို့လဲ Channel မာ model Cost တေတင်ပေးထားပါတယ်။ မတွေ့ရင် Admin ကိုမေးပီးပြခိုင်းပါ။"
+  ],
+    stepButtons: [
+    "ဆက်ရန်",
+    "ဆက်ရန်",
+    "Credit Cost ကရော?"
   ]
   },
   "Qwen": {
@@ -4167,11 +4194,15 @@ if (regionalProducts[productName]) {
             title += ' <span style="background:#67e8f9; color:#083344; padding:2px 6px; border-radius:4px; font-size:11px; margin-left:8px; font-weight:900; box-shadow:0 0 6px #67e8f9;">Pro Subscription</span>';
           }
           } else if (productName === 'Claude Opus') {
-         if (sectionName === '50 Million token' || sectionName === '70 Million token' || sectionName === '100 Million token') {
+         if (sectionName === 'Global API 30Days') {
+            title += ' <span style="background:#f97316; color:#ffffff; padding:2px 6px; border-radius:4px; font-size:11px; margin-left:8px; font-weight:900; box-shadow:0 0 6px #f97316;">Private API Key</span>';
+          }
+          } else if (productName === 'Claude Fable') {
+         if (sectionName === 'Global API 30Days') {
             title += ' <span style="background:#f97316; color:#ffffff; padding:2px 6px; border-radius:4px; font-size:11px; margin-left:8px; font-weight:900; box-shadow:0 0 6px #f97316;">Private API Key</span>';
           }
           } else if (productName === 'ChatGPT API') {
-         if (sectionName === '50 Million token' || sectionName === '70 Million token' || sectionName === '100 Million token') {
+         if (sectionName === 'Global API 30Days') {
             title += ' <span style="background:#000000; color:#00ff9c; padding:2px 6px; border-radius:4px; font-size:11px; margin-left:8px; font-weight:900; box-shadow:0 0 6px #00ff9c;">Private API Key</span>';
           }
           } else if (productName === 'Claude Sonnet') {

@@ -640,7 +640,7 @@
         "price": "15,000 Kyats"
       }, {
         "duration": "Windows 11 Pro",
-        "price": "15,000 Kyats"
+        "price": "17,000 Kyats"
       }]
     },
     "Microsoft 365": {

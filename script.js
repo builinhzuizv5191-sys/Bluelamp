@@ -756,6 +756,15 @@
       },{
       "duration": "12 Months (+ Gemini Pro)",
         "price": "39,500 Kyats"
+      },{
+      "duration": "15 Months (+ Gemini Pro)",
+        "price": "49,000 Kyats"
+      },{
+      "duration": "18 Months (+ Gemini Pro)",
+        "price": "58,500 Kyats"
+      },{
+      "duration": "2 Years (+ Gemini Pro)",
+        "price": "75,000 Kyats"
       }],
       "Share": [],
       "Private": [{
@@ -786,6 +795,15 @@
       },{
       "duration": "12 Months (+ Gemini Pro)",
         "price": "39,500 Kyats"
+            },{
+      "duration": "15 Months (+ Gemini Pro)",
+        "price": "49,000 Kyats"
+      },{
+      "duration": "18 Months (+ Gemini Pro)",
+        "price": "58,500 Kyats"
+      },{
+      "duration": "2 Years (+ Gemini Pro)",
+        "price": "75,000 Kyats"
       }],
       "Private": [{
         "duration": "3 Months (+ Gemini Pro)",
@@ -849,6 +867,15 @@
       }, {
         "duration": "12 Months",
         "price": "39,500 Kyats"
+      }, {
+        "duration": "15 Months",
+        "price": "49,000 Kyats"
+      }, {
+        "duration": "18 Months",
+        "price": "58,500 Kyats"
+      }, {
+        "duration": "2 Years",
+        "price": "75,000 Kyats"
       }],
       "Head(Can Invite 5 Email)": [{
         "duration": "3 Months (+5 TB Storage)",
@@ -884,6 +911,15 @@
     }, {
     "duration": "12 Months",
     "price": "39,500 Kyats"
+  }, {
+        "duration": "15 Months",
+        "price": "49,000 Kyats"
+      }, {
+        "duration": "18 Months",
+        "price": "58,500 Kyats"
+      }, {
+        "duration": "2 Years",
+        "price": "75,000 Kyats"
   }],
       "Private": [{
         "duration": "4 Months",
@@ -902,6 +938,15 @@
     }, {
     "duration": "12 Months",
     "price": "39,500 Kyats"
+    }, {
+        "duration": "15 Months",
+        "price": "49,000 Kyats"
+      }, {
+        "duration": "18 Months",
+        "price": "58,500 Kyats"
+      }, {
+        "duration": "2 Years",
+        "price": "75,000 Kyats"
   }]
 },
 

@@ -4011,7 +4011,7 @@ cancelBtn?.addEventListener("click", () => {
   /* =========================
       POPULAR SECTION LOGIC
       ========================= */
-  const popularList = ["Express Vpn", "ChatGPT", "CapCut", "Netflix", "Wink"];
+  const popularList = ["Surfshark Vpn", "ChatGPT","Gemini Pro" , "CapCut", "Netflix", "Spotify"];
 
   function renderPopular(containerId, excludeName) {
     const cont = document.getElementById(containerId);

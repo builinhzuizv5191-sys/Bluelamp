@@ -4427,10 +4427,30 @@ if (
         <div class="hero-img-wrap"><img src="${heroImageSrc || imageFor['Google Play Gift Card']}" alt="${escapeHTML(productName)} logo" /></div>
         <div class="hero-title">${escapeHTML(productName)}</div>
         ${deviceIconsHtml} 
-        <div class="button-container">
-            <button class="btn btn-outline hero-more" data-product-name="${escapeHTML(productName)}">More Details</button>
-            <button class="btn btn-outline" id="why-buy-btn">ဘာကြောင့်ဝယ်သင့်တာလဲ</button>
-        </div>
+<div class="button-container">
+    <button class="btn btn-outline hero-more" data-product-name="${escapeHTML(productName)}">More Details</button>
+
+    ${[
+      "Express Vpn",
+      "NordVpn",
+      "Surfshark Vpn",
+      "HMA VPN"
+    ].includes(productName) ? `
+<button
+  class="btn btn-outline"
+  id="vpn-guide-btn"
+  type="button"
+>
+  <span class="vpn-guide-label">
+    ဘာရွေးရမလဲမသိရင်နှိပ်ပီးဖတ်ကြည့်ပါ။
+  </span>
+</button>
+    ` : `
+      <button class="btn btn-outline" id="why-buy-btn">
+        ဘာကြောင့်ဝယ်သင့်တာလဲ
+      </button>
+    `}
+</div>
       </div>
       ${sectionsHTML}
       <section class="popular-section">
@@ -6685,6 +6705,23 @@ if (target.id === 'product-back-btn') {
       dom.explain.text.innerHTML = formatDetails(moreDetailsByProduct[moreDetailsBtn.dataset.productName] || "Coming soon.");
       dom.explain.overlay.style.display = "grid"; return;
     }
+const vpnGuideBtn = target.closest('#vpn-guide-btn');
+
+if (vpnGuideBtn) {
+  vpnGuideBtn.classList.add('tap-anim');
+
+  setTimeout(() => {
+    vpnGuideBtn.classList.remove('tap-anim');
+  }, 120);
+
+  window.open(
+    'https://t.me/BLUELAMP1/411',
+    '_blank',
+    'noopener,noreferrer'
+  );
+
+  return;
+}
     const whyBuyBtn = target.closest('#why-buy-btn');
     if (whyBuyBtn) {
       whyBuyBtn.classList.add('tap-anim'); setTimeout(() => whyBuyBtn.classList.remove('tap-anim'), 120);

@@ -478,10 +478,19 @@
       }, {
         "duration": "1 Month",
         "price": "15,000 Kyats"
+      }, {
+        "duration": "3 Months",
+        "price": "45,000 Kyats"
+      }, {
+        "duration": "9 Months",
+        "price": "126,000 Kyats"
       }],
       "Private Own Mail": [{
         "duration": "1 Month",
         "price": "18,000 Kyats"
+      }, {
+        "duration": "1 Year",
+        "price": "180,000 Kyats"
       }]
     },
     "AlightMotion": {
@@ -612,18 +621,15 @@
       "Private": [{
         "duration": "3 Days",
         "price": "3,000 Kyats"
+      }, {
+        "duration": "1 Month",
+        "price": "10,000 Kyats"
       }]
     },
     "Surfshark Vpn": {
       "Share": [{
         "duration": "Phone 2 Months",
         "price": "5,000 Kyats"
-      }, {
-        "duration": "Windows 2 Months",
-        "price": "6,000 Kyats"
-      }, {
-        "duration": "Linux 2 Months",
-        "price": "6,000 Kyats"
       }, {
         "duration": "MacOs 2 Months",
         "price": "6,000 Kyats"
@@ -733,8 +739,11 @@
     },
     "Apple Music": {
       "Private": [{
-        "duration": "1 Month (Can renew)",
+        "duration": "1 Month(Android)",
         "price": "7,500 Kyats"
+      }, {
+        "duration": "3 Months(Android)",
+        "price": "22,500 Kyats"
       }]
     },
     "Qobuz": {
@@ -5163,6 +5172,294 @@ const checkResult =
         setTimeout(() => addBtn.textContent = "Add to Cart", 1000);
       });
     }
+
+// --- CAPCUT: CUSTOM MONTHS ---
+if (productName === "CapCut") {
+
+  const CAPCUT_PRIVATE_SECTION = "Private";
+  const CAPCUT_OWNMAIL_SECTION = "Private Own Mail";
+
+  function getCapCutPrivateCustomPrice(months) {
+    if (months >= 1 && months <= 3) return months * 15000;
+    if (months >= 4 && months <= 8) return months * 14500;
+    if (months >= 9 && months <= 12) return months * 14000;
+    return 0;
+  }
+
+  function getCapCutOwnMailCustomPrice(months) {
+    if (months >= 1 && months <= 3) return months * 17000;
+    if (months >= 4 && months <= 9) return months * 16000;
+    if (months >= 10 && months <= 12) return months * 15000;
+    return 0;
+  }
+
+  function mountCapCutMonthsBox({
+    title,
+    section,
+    inputId,
+    priceId,
+    buttonId,
+    getPrice
+  }) {
+    const html = `
+      <div class="plan-box">
+        <div class="plan-title">${title}</div>
+
+        <div style="padding:10px; display:flex; flex-direction:column; gap:10px;">
+
+          <label style="font-size:14px; color:#ccc;">
+            Enter Months (1 - 12)
+          </label>
+
+          <div style="display:flex; gap:10px;">
+            <input
+              type="number"
+              id="${inputId}"
+              min="1"
+              max="12"
+              placeholder="1-12"
+              style="flex:1; padding:12px; border-radius:8px; border:1px solid rgba(255,255,255,0.2); background:rgba(255,255,255,0.05); color:white; font-size:16px;"
+            />
+
+            <div
+              id="${priceId}"
+              style="align-self:center; font-weight:bold; color:#00e676; min-width:120px; text-align:right;"
+            >
+              0 Kyats
+            </div>
+          </div>
+
+          <button
+            id="${buttonId}"
+            class="btn btn-primary"
+            style="width:100%;"
+          >
+            Add to Cart
+          </button>
+
+        </div>
+      </div>
+    `;
+
+    const popularSection =
+      dom.views.product.querySelector(".popular-section");
+
+    if (!popularSection) return;
+
+    popularSection.insertAdjacentHTML("beforebegin", html);
+
+    const input = document.getElementById(inputId);
+    const priceDisplay = document.getElementById(priceId);
+    const addBtn = document.getElementById(buttonId);
+
+    input.addEventListener("input", () => {
+      const months = parseInt(input.value, 10);
+
+      if (!months || months < 1 || months > 12) {
+        addBtn.style.backgroundColor = "#ff4444";
+        addBtn.textContent = "⚠️ Limit: 1 - 12";
+        priceDisplay.textContent = "0 Kyats";
+        return;
+      }
+
+      addBtn.style.removeProperty("background-color");
+      addBtn.textContent = "Add to Cart";
+      priceDisplay.textContent =
+        formatKyats(getPrice(months));
+    });
+
+    addBtn.addEventListener("click", () => {
+      const months = parseInt(input.value, 10);
+
+      if (!months || months < 1 || months > 12) return;
+
+      const totalPrice = getPrice(months);
+
+      const item = {
+        product: "CapCut",
+        section,
+        duration:
+          `${months} Month${months > 1 ? "s" : ""}`,
+        unitPrice: totalPrice,
+        priceText: formatKyats(totalPrice)
+      };
+
+      addToCart(item);
+
+      input.value = "";
+      priceDisplay.textContent = "0 Kyats";
+      addBtn.style.removeProperty("background-color");
+
+      addBtn.textContent = "Added!";
+
+      setTimeout(() => {
+        addBtn.textContent = "Add to Cart";
+      }, 1000);
+    });
+  }
+
+  mountCapCutMonthsBox({
+    title: "More Months (Private)",
+    section: CAPCUT_PRIVATE_SECTION,
+    inputId: "capcut-private-months-input",
+    priceId: "capcut-private-calc-price",
+    buttonId: "btn-add-capcut-private-months",
+    getPrice: getCapCutPrivateCustomPrice
+  });
+
+  mountCapCutMonthsBox({
+    title: "More Months (Private Own Mail)",
+    section: CAPCUT_OWNMAIL_SECTION,
+    inputId: "capcut-ownmail-months-input",
+    priceId: "capcut-ownmail-calc-price",
+    buttonId: "btn-add-capcut-ownmail-months",
+    getPrice: getCapCutOwnMailCustomPrice
+  });
+
+}
+
+// --- APPLE MUSIC: CUSTOM MONTHS ---
+if (productName === "Apple Music") {
+
+  const APPLE_MUSIC_SECTION = "Private";
+
+  function getAppleMusicCustomPrice(months) {
+    if (months >= 1 && months <= 12) {
+      return months * 7500;
+    }
+
+    return 0;
+  }
+
+  const appleMusicHTML = `
+    <div class="plan-box">
+
+      <div class="plan-title">
+        More Months (Android)
+      </div>
+
+      <div style="padding:10px; display:flex; flex-direction:column; gap:10px;">
+
+        <label style="font-size:14px; color:#ccc;">
+          Enter Months (1 - 12)
+        </label>
+
+        <div style="display:flex; gap:10px;">
+
+          <input
+            type="number"
+            id="apple-music-months-input"
+            min="1"
+            max="12"
+            placeholder="1-12"
+            style="flex:1; padding:12px; border-radius:8px; border:1px solid rgba(255,255,255,0.2); background:rgba(255,255,255,0.05); color:white; font-size:16px;"
+          />
+
+          <div
+            id="apple-music-calc-price"
+            style="align-self:center; font-weight:bold; color:#00e676; min-width:120px; text-align:right;"
+          >
+            0 Kyats
+          </div>
+
+        </div>
+
+        <button
+          id="btn-add-apple-music-months"
+          class="btn btn-primary"
+          style="width:100%;"
+        >
+          Add to Cart
+        </button>
+
+      </div>
+    </div>
+  `;
+
+  const popularSection =
+    dom.views.product.querySelector(".popular-section");
+
+  if (popularSection) {
+
+    popularSection.insertAdjacentHTML(
+      "beforebegin",
+      appleMusicHTML
+    );
+
+    const input =
+      document.getElementById("apple-music-months-input");
+
+    const priceDisplay =
+      document.getElementById("apple-music-calc-price");
+
+    const addBtn =
+      document.getElementById("btn-add-apple-music-months");
+
+
+    input.addEventListener("input", () => {
+
+      const months =
+        parseInt(input.value, 10);
+
+      if (!months || months < 1 || months > 12) {
+
+        addBtn.style.backgroundColor = "#ff4444";
+        addBtn.textContent = "⚠️ Limit: 1 - 12";
+        priceDisplay.textContent = "0 Kyats";
+
+        return;
+      }
+
+      addBtn.style.removeProperty("background-color");
+      addBtn.textContent = "Add to Cart";
+
+      priceDisplay.textContent =
+        formatKyats(
+          getAppleMusicCustomPrice(months)
+        );
+
+    });
+
+
+    addBtn.addEventListener("click", () => {
+
+      const months =
+        parseInt(input.value, 10);
+
+      if (!months || months < 1 || months > 12) {
+        return;
+      }
+
+      const totalPrice =
+        getAppleMusicCustomPrice(months);
+
+      const item = {
+        product: "Apple Music",
+        section: APPLE_MUSIC_SECTION,
+        duration:
+          `${months} Month${months > 1 ? "s" : ""} (Android)`,
+        unitPrice: totalPrice,
+        priceText: formatKyats(totalPrice)
+      };
+
+      addToCart(item);
+
+      input.value = "";
+      priceDisplay.textContent = "0 Kyats";
+
+      addBtn.style.removeProperty("background-color");
+
+      addBtn.textContent = "Added!";
+
+      setTimeout(() => {
+        addBtn.textContent = "Add to Cart";
+      }, 1000);
+
+    });
+
+  }
+}
+    
     // --- NETFLIX: CUSTOM MONTHS (UHD ONLY) ---
 if (productName === "Netflix") {
 

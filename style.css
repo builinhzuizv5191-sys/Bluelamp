@@ -374,33 +374,76 @@ main#home-view > .popular-section {
 
 /* --- VERTICAL BUTTON STACK FIX --- */
 /* The buttons are now naturally block elements, stacking vertically. */
-.product-hero .hero-more, #why-buy-btn {
-    /* Ensures buttons take 100% of the constrained .product-hero width */
-    display: block; 
-    width: 100%; 
+.product-hero .hero-more,
+#why-buy-btn {
+    display: block;
+    width: 100%;
+
     margin-left: 0;
     margin-right: 0;
-    margin-bottom: 8px; /* Spacing between stacked buttons */
-    /* FIX 2: Ensure default More Details button matches requested subtle style */
-    border-width: 1px; /* Subtle outline */
-    border-radius: 10px; /* Softer corners */
+    margin-bottom: 8px;
+
+    border-width: 1px;
+    border-radius: 10px;
+
     text-shadow: none;
     box-shadow: none;
 }
-
 /* --- WHY BUY BUTTON NEON GLOW (UPDATED) --- */
-#why-buy-btn {
-    /* Using btn-outline base plus specific color override */
+#why-buy-btn,
+#vpn-guide-btn {
     background: transparent;
-    color: var(--accent); /* SETTING VISIBLE COLOR */
+    color: var(--accent);
     border: 1px solid var(--accent); 
-    /* Neon glow effect: 0 0 5px outer, 0 0 5px inner */
-    box-shadow: 0 0 5px rgba(56, 189, 248, 0.25), inset 0 0 5px rgba(56, 189, 248, 0.15); 
+    box-shadow:
+        0 0 5px rgba(56, 189, 248, 0.25),
+        inset 0 0 5px rgba(56, 189, 248, 0.15); 
     transition: all 0.3s ease;
 }
-#why-buy-btn:hover {
+
+#why-buy-btn:hover,
+#vpn-guide-btn:hover {
     background: rgba(56, 189, 248, 0.1);
-    box-shadow: 0 0 10px rgba(56, 189, 248, 0.5), inset 0 0 10px rgba(56, 189, 248, 0.3);
+    box-shadow:
+        0 0 10px rgba(56, 189, 248, 0.5),
+        inset 0 0 10px rgba(56, 189, 248, 0.3);
+}
+
+#vpn-guide-btn {
+    width: min(100%, 320px);
+    min-height: 46px;
+
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 8px;
+
+    padding: 9px 18px;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    font-family: 'Noto Serif Myanmar', 'Chivo', sans-serif;
+    font-size: 12.5px;
+    font-weight: 700;
+    line-height: 1.7;
+
+    text-align: center;
+
+    white-space: normal;
+    word-break: normal;
+    overflow-wrap: break-word;
+
+    border-radius: 12px;
+}
+
+.vpn-guide-label {
+    display: block;
+    line-height: 1.7;
+    text-align: center;
+
+    /* Optical correction for Myanmar font metrics */
+    transform: translateY(2px);
 }
 /* --- END WHY BUY BUTTON --- */
 

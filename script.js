@@ -3162,20 +3162,16 @@ const popupTextByProduct = {
     nextText: "ဘာတေကွာလဲ?",
     backText: "Back",
     steps: [
-    "Gemini Pro မာကရ္စေးချယ်စရာ Plan 2 ခုပဲရှိတာပါ။<br>OwnMail Invite & Private Head",
-    "ဘာကွာလဲဆိုရင် Invite OwnMail ဆိုတာကဝယ်သူရဲ့ Email ကို Pro လုပ်ပေးတာပါ။ Region မတူတေတေဘာတေဖြစ်ပီးဝင်မရရင်ကျနော်ဝင်လုပ်ပေးဖို့လိုပါတယ်။ Password တေပေးရမာပါ။",
-    "Privacy တေဘာတေရှိလို့ပေးဝင်လို့မရဘူးဆိုတဲ့သူတေကတော့ခုထဲကမဝယ်လို့ရပါပီ။ ကျနော်ကတော့လုပ်စရာရှိတာလုပ်ပီးပြန်ထွက်မာပါပဲ။ မယုံရင်တော့ Private Head ပဲယူပါ။",
-    "Private Head ဆိုတာက ကျနော်ဒီကအကောင့်ပေးမာပါ။ အဲ့အကောင့်ကနေ OwnMail invite plan လိုမျိုး Email 5ခုကိုပြန် Invite လို့ရပါတယ်။ ဒါပေမဲ့ Region တေပြောင်းတတ်မရမာပါ။ ဝင်မဲ့သူတေက Head account နဲ့ Region တူမရမာကိုပြောတာပါ။",
-    "ဘာဝယ်သင့်လဲဆိုရင်တော့ Gemini Pro features တေကတူတူပါပဲကွာသွားတာက Ai Credit ကို OwnMail Plan က Share သုံးရတာပါ။ Private ကတော့ကိုယ်တယောက်ထဲသုံးရတာပါ။ အဲ့ Credit ကဘာအတွက်လဲဆိုတာမသိရင်တော့ OwnMail Plan ကိုသာရွေးလိုက်ပါ။",
-    "ပီးတော့ Private မာက 5 TB ကိုကိုယ်‌တယောက်ထဲသုံးရမာဖြစ်ပီး၊ OwnMail Planမာတော့ Sharing သဘောပါ။ ဒါပေမဲ့ကိုယ်တိုင်တာတေကိုဘယ်သူမမြင်ရပါဘူး။ Storage ပြည့်ပီးစာမဝင်တော့တဲ့သူတေအတွက်အသုံးဝင်ပါတယ်။",
+    "Gemini Pro မာကရ္စေးချယ်စရာ Plan 2 ခုပဲရှိတာပါ။<br>OwnMail Invite Private & Private Head",
+    "ဘာကွာလဲဆိုရင် Invite OwnMail ဆိုတာကဝယ်သူရဲ့ Email ကို Pro လုပ်ပေးတာပါ။ Region မတူတေတေဘာတေဖြစ်ပီးဝင်မရရင်ကျနော်ဝင်လုပ်ပေးဖို့လိုပါတယ်။ Password ပေးရမာပါ။ Account ကိုဝင်လုပ်ရင် 3 to 5 minutes လောက်ပဲကြာတာပါ Hack လဲမ Hack ပါဘူး။ ဘာမလဲဝင်မကြည့်ပါဘူး။",
+    "Invite Plan က Share Plan မျိုးမဟုတ်ပါဘူး။ ကိုယ့် Email နဲ့ကိုယ် သုံးရတာမလို့ Private ပါပဲ။ Monthly Credit 1,000 နဲ့ Storage ကပဲ Share အနေနဲ့သုံးရမာပါ။ Storage က Share ဆိုပေမဲ့ကိုယ်တိုင်ထားတာတေက ကိုယ်ပဲမြင်ရမာပါ။ 5TB မာ 1ယောက် 1TB လိုပုံစံ Share ရလို့ Share လို့ခေါ်တာပါ။",
+    "Private Head ကတော့ကျန်တာအကုန်တူတူပါပဲ Invite ထက်ပိုကောင်းသွားတာက Credit 1,000 နဲ့ Storage 5 TB ကိုကိုယ်တယောက်ထဲသုံးရတာမျိုးဖြစ်သွားတာပဲရှိတာပါ။ User တေအတွက်က OwnMail Plan နဲ့တင်အဆင်ပြေပါတယ်။",
     "Android, iOS, PC, Laptop အကုန်ရပါတယ်။ Official App တေ Website တေမာပဲသုံးရမာပါ။"
   ],
     stepButtons: [
     "ဘာတေကွာလဲ?",
     "ဆက်ရန်",
     "Private Head<br>ဆိုတာက?",
-    "ဘာဝယ်သင့်လဲ?",
-    "ဆက်ရန်",
     "All Devices<br>ရလား?"
   ]
   },

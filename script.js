@@ -140,7 +140,6 @@
     "YouTube Premium": "https://ik.imagekit.io/dkdlgynlu/New-Project-52-2-DCD6-D5.png",
     "YouTube Music": "https://ik.imagekit.io/dkdlgynlu/ICON%20_646108C_.png?updatedAt=1784222599196",
     "Tidal Music": "https://ik.imagekit.io/dkdlgynlu/ICON%20_FF5CFDB_.png?updatedAt=1779179229139",
-    "Tinder": "https://ik.imagekit.io/dkdlgynlu/New-Project-52-DCDE0-B9.png",
     "Telegram Premium": "https://ik.imagekit.io/dkdlgynlu/New-Project-52-A162-FC1.png",
     "Discord": "https://ik.imagekit.io/dkdlgynlu/New-Project-52-D060367.png",
     "Perplexity Ai": "https://ik.imagekit.io/dkdlgynlu/New-Project-52-F59-EE5-A.png",
@@ -158,6 +157,9 @@
     "SCRIBD": "https://ik.imagekit.io/dkdlgynlu/New-Project-52-2-FA4502.png",
     "WPS Office": "https://ik.imagekit.io/dkdlgynlu/New-Project-52-49DAE75.png",
     "TradingView": "https://ik.imagekit.io/dkdlgynlu/Picsart-25-11-10-18-02-36-751.png",
+    "Chess.com": "https://ik.imagekit.io/dkdlgynlu/Chess.com",
+    "Smule": "https://ik.imagekit.io/dkdlgynlu/Smulee?updatedAt=1788515244797",
+    "Minecraft": "https://ik.imagekit.io/dkdlgynlu/Minecraftt?updatedAt=1788515324511",
     "TeraBox": "https://ik.imagekit.io/dkdlgynlu/Picsart-25-11-10-18-01-52-861.png",
     "PaySafeCard": "https://ik.imagekit.io/dkdlgynlu/New-Project-52-478-B983.png",
     "TikTok Official": "https://ik.imagekit.io/dkdlgynlu/New-Project-52-B93-FC6-C.png",
@@ -1083,6 +1085,10 @@
       }]
     },
     "Telegram Premium": {
+      "SmS Fee": [{
+        "duration": "1 Week",
+        "price": "8,000 Kyats"
+      }],
       "Login": [{
         "duration": "1 Month",
         "price": "21,000 Kyats"
@@ -1102,13 +1108,13 @@
       }],
       "Link Plan": [{
         "duration": "3 Months",
-        "price": "49,500 Kyats"
+        "price": "Out Of Stock"
       }, {
         "duration": "6 Months",
-        "price": "68,500 Kyats"
+        "price": "Out Of Stock"
       }, {
         "duration": "12 Months",
-        "price": "124,000 Kyats"
+        "price": "Out Of Stock"
       }]
     },
     "Discord": {
@@ -1196,6 +1202,86 @@
         "Private Premium": [{
         "duration": "1 Month",
         "price": "30,000 Kyats"
+      }]
+    },
+    "Smule": {
+      "Private": [{
+         "duration": "1 Week",
+         "price": "4,000 Kyats"
+      }]
+    },
+    "Chess.com": {
+      "OwnMail Private Gold": [{
+         "duration": "1 Month",
+         "price": "20,000 Kyats"
+      }, {
+        "duration": "1 Year",
+        "price": "120,000 Kyats"
+      }],
+      "OwnMail Private Platinum": [{
+         "duration": "1 Month",
+         "price": "35,000 Kyats"
+      }, {
+        "duration": "1 Year",
+        "price": "149,000 Kyats"
+      }],
+      "OwnMail Private Diamond": [{
+         "duration": "1 Month",
+         "price": "50,000 Kyats"
+      }, {
+        "duration": "1 Year",
+        "price": "330,000 Kyats"
+      }],
+      "OwnMail Private Family": [{
+         "duration": "1 Year",
+         "price": "450,000 Kyats"
+      }]
+    },
+    "Minecraft": {
+      "Java & Bedrock Standard Edition": [{
+         "duration": "Windows",
+         "price": "160,000 Kyats"
+      }],
+      "Java & Bedrock Deluxe Collection": [{
+         "duration": "Windows",
+         "price": "210,000 Kyats"
+      }],
+      "Java & Bedrock Ultimate Collection": [{
+         "duration": "Windows",
+         "price": "260,000 Kyats"
+      }],
+      "Java Standard Edition": [{
+         "duration": "Mac & Linux",
+         "price": "160,000 Kyats"
+      }],
+      "Java Deluxe Collection": [{
+         "duration": "Mac & Linux",
+         "price": "210,000 Kyats"
+      }],
+      "Java Ultimate Collection": [{
+         "duration": "Mac & Linux",
+         "price": "260,000 Kyats"
+      }],
+      "Minecraft Standard Edition": [{
+         "duration": "X-Box",
+         "price": "110,000 Kyats"
+      }, {
+        "duration": "PlayStation",
+        "price": "110,000 Kyats"
+      }],
+      "Minecraft Deluxe Collection": [{
+         "duration": "X-Box",
+         "price": "160,000 Kyats"
+      }, {
+        "duration": "PlayStation",
+        "price": "160,000 Kyats"
+      }],
+      "Minecraft Ultimate Collection": [{
+         "duration": "X-Box",
+         "price": "210,000 Kyats"
+      }, {
+        "duration": "PlayStation",
+        "price": "210,000 Kyats"
       }]
     },
     "PaySafeCard": {
@@ -2573,6 +2659,8 @@
     "SCRIBD": ["android", "ios", "pc"],
     "WPS Office": ["android", "ios", "pc"],
     "TradingView": ["android", "ios", "pc"],
+    "Smule": ["android", "ios", "pc"],
+    "Chess.com": ["android", "ios", "pc"],
     "PaySafeCard": [],
     "TikTok Official": ["android", "ios", "pc"],
     "TikTok Non Official": ["android", "ios", "pc"],
@@ -4272,7 +4360,7 @@ if (regionalProducts[productName]) {
             title += ' <span style="background:#000000; color:#ffffff; padding:2px 6px; border-radius:4px; font-size:11px; margin-left:8px; font-weight:900; box-shadow:0 0 6px #666666;">Pro Subscription</span>';
           }
           } else if (productName === 'Telegram Premium') {
-         if (sectionName === 'Login' || sectionName === 'Gift Plan' || sectionName === 'Link Plan') {
+         if (sectionName === 'SmS Fee' || sectionName === 'Login' || sectionName === 'Gift Plan' || sectionName === 'Link Plan') {
             title += ' <span style="background:#bae6fd; color:#082f49; padding:2px 6px; border-radius:4px; font-size:11px; margin-left:8px; font-weight:900; box-shadow:0 0 6px #bae6fd;">Premium Subscription</span>';
           }
           } else if (productName === 'Microsoft 365') {
@@ -4353,6 +4441,40 @@ if (regionalProducts[productName]) {
             title = 'Private <span style="background:#000000; color:#ffffff; padding:2px 6px; border-radius:4px; font-size:11px; margin-left:8px; font-weight:900; box-shadow:0 0 6px #666666;">Plus Subscription</span>';
           } else if (sectionName === 'Private Premium') {
             title = 'Private <span style="background:#000000; color:#ffffff; padding:2px 6px; border-radius:4px; font-size:11px; margin-left:8px; font-weight:900; box-shadow:0 0 6px #666666;">Premium Subscription</span>';
+          }
+          } else if (productName === 'Minecraft') {
+         if (sectionName === 'Java & Bedrock Standard Edition') {
+            title = 'Java & Bedrock <span style="background:#5eead4; color:#042f2e; padding:2px 6px; border-radius:4px; font-size:11px; margin-left:8px; font-weight:900; box-shadow:0 0 6px #5eead4;">Standard Edition</span>';
+          } else if (sectionName === 'Java & Bedrock Deluxe Collection') {
+            title = 'Java & Bedrock <span style="background:#ffd166; color:#2b1900; padding:2px 6px; border-radius:4px; font-size:11px; margin-left:8px; font-weight:900; box-shadow:0 0 6px #ffd166;">Deluxe Collection</span>';
+          } else if (sectionName === 'Java & Bedrock Ultimate Collection') {
+            title = 'Java & Bedrock <span style="background:#c084fc; color:#2e1065; padding:2px 6px; border-radius:4px; font-size:11px; margin-left:8px; font-weight:900; box-shadow:0 0 6px #c084fc;">Ultimate Collection</span>';
+          } else if (sectionName === 'Java Standard Edition') {
+            title = 'Java <span style="background:#5eead4; color:#042f2e; padding:2px 6px; border-radius:4px; font-size:11px; margin-left:8px; font-weight:900; box-shadow:0 0 6px #5eead4;">Standard Edition</span>';
+          } else if (sectionName === 'Java Deluxe Collection') {
+            title = 'Java <span style="background:#ffd166; color:#2b1900; padding:2px 6px; border-radius:4px; font-size:11px; margin-left:8px; font-weight:900; box-shadow:0 0 6px #ffd166;">Deluxe Collection</span>';
+          } else if (sectionName === 'Java Ultimate Collection') {
+            title = 'Java <span style="background:#c084fc; color:#2e1065; padding:2px 6px; border-radius:4px; font-size:11px; margin-left:8px; font-weight:900; box-shadow:0 0 6px #c084fc;">Ultimate Collection</span>';
+          } else if (sectionName === 'Minecraft Standard Edition') {
+            title = 'Minecraft <span style="background:#5eead4; color:#042f2e; padding:2px 6px; border-radius:4px; font-size:11px; margin-left:8px; font-weight:900; box-shadow:0 0 6px #5eead4;">Standard Edition</span>';
+          } else if (sectionName === 'Minecraft Deluxe Collection') {
+            title = 'Minecraft <span style="background:#ffd166; color:#2b1900; padding:2px 6px; border-radius:4px; font-size:11px; margin-left:8px; font-weight:900; box-shadow:0 0 6px #ffd166;">Deluxe Collection</span>';
+          } else if (sectionName === 'Minecraft Ultimate Collection') {
+            title = 'Minecraft <span style="background:#c084fc; color:#2e1065; padding:2px 6px; border-radius:4px; font-size:11px; margin-left:8px; font-weight:900; box-shadow:0 0 6px #c084fc;">Ultimate Collection</span>';
+          }
+          } else if (productName === 'Chess.com') {
+         if (sectionName === 'OwnMail Private Gold') {
+            title = 'OwnMail Private <span style="background:#d4af37; color:#1a1200; padding:2px 6px; border-radius:4px; font-size:11px; margin-left:8px; font-weight:900; box-shadow:0 0 6px #ffd700;">Gold Subscription</span>';
+          } else if (sectionName === 'OwnMail Private Platinum') {
+            title = 'OwnMail Private <span style="background:#dbeafe; color:#172554; padding:2px 6px; border-radius:4px; font-size:11px; margin-left:8px; font-weight:900; box-shadow:0 0 6px #ffffff;">Platinum Subscription</span>';
+          } else if (sectionName === 'OwnMail Private Diamond') {
+            title = 'OwnMail Private <span style="background:#bfdbfe; color:#1e3a8a; padding:2px 6px; border-radius:4px; font-size:11px; margin-left:8px; font-weight:900; box-shadow:0 0 6px #93c5fd;">Diamond Subscription</span>';
+          } else if (sectionName === 'OwnMail Private Family') {
+            title = 'OwnMail Private <span style="background:#ffffff; color:#000000; padding:2px 6px; border-radius:4px; font-size:11px; margin-left:8px; font-weight:900; box-shadow:0 0 6px #ffffff;">Family Subscription</span>';
+          }
+          } else if (productName === 'Smule') {
+         if (sectionName === 'Private') {
+            title += ' <span style="background:#fbcfe8; color:#831843; padding:2px 6px; border-radius:4px; font-size:11px; margin-left:8px; font-weight:900; box-shadow:0 0 6px #f9a8d4;">Vip Subscription</span>';
           }
           } else if (productName === 'WPS Office') {
          if (sectionName === 'Share') {

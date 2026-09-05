@@ -834,6 +834,89 @@ main#home-view > .popular-section {
   color: #fecdd3;
 }
 
+/* =========================
+   PAYMENT METHODS
+   MOBILE SCALE FIX
+   Keep desktop design/layout
+   ========================= */
+
+@media (max-width: 560px) {
+
+  .payment-methods-card {
+    padding: 10px;
+    border-radius: 12px;
+  }
+
+  .payment-methods-head {
+    gap: 8px;
+    margin-bottom: 10px;
+  }
+
+  .payment-methods-title {
+    font-size: 13px;
+    white-space: nowrap;
+  }
+
+  .payment-methods-subtitle {
+    font-size: 9px;
+    white-space: nowrap;
+    text-align: right;
+  }
+
+  .payment-methods-grid {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+    gap: 7px;
+  }
+
+  .payment-method-item {
+    gap: 7px;
+    padding: 8px;
+    border-radius: 10px;
+    min-width: 0;
+  }
+
+  .payment-method-logo {
+    width: 34px;
+    height: 34px;
+    flex: 0 0 34px;
+  }
+
+  .payment-method-name {
+    font-size: 10px;
+    margin-bottom: 1px;
+    white-space: nowrap;
+  }
+
+  .payment-method-number {
+    font-size: 10px;
+    white-space: nowrap;
+  }
+
+  .payment-method-owner {
+    margin-top: 1px;
+    font-size: 8.5px;
+    white-space: nowrap;
+  }
+
+  .payment-scam-warning {
+    gap: 7px;
+    margin-top: 9px;
+    padding: 8px 9px;
+    border-radius: 9px;
+  }
+
+  .payment-scam-icon {
+    font-size: 12px;
+    line-height: 1.3;
+  }
+
+  .payment-scam-text {
+    gap: 2px;
+    font-size: 9px;
+    line-height: 1.35;
+  }
+}
+
 .note-text > .payment-methods-card {
   background:
     linear-gradient(

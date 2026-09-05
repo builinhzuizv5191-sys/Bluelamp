@@ -610,6 +610,196 @@ main#home-view > .popular-section {
 #note-ok-btn{margin:auto;display:inline-block}
 #note-step, #receipt-step, #receipt-single, #receipt-multi, #next-btn { display: none; }
 
+/* =========================
+   NOTE PRODUCT CARD
+   CONCEPT A
+   ========================= */
+
+.note-product-card {
+  margin-bottom: 12px;
+  padding: 14px;
+
+  background: rgba(15, 23, 42, 0.55);
+
+  border: 1px solid rgba(148, 163, 184, 0.12);
+  border-radius: 14px;
+
+  box-sizing: border-box;
+}
+
+
+/* TOP ROW */
+
+.note-product-top {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+
+  gap: 10px;
+
+  margin-bottom: 10px;
+}
+
+.note-product-title {
+  min-width: 0;
+
+  color: #f8fafc;
+
+  font-size: 15px;
+  font-weight: 900;
+  line-height: 1.35;
+}
+
+
+/* WARRANTY / INFO BADGE */
+
+.note-product-badge {
+  flex: 0 0 auto;
+
+  padding: 4px 8px;
+
+  border: 1px solid rgba(56, 189, 248, 0.22);
+  border-radius: 999px;
+
+  background: rgba(56, 189, 248, 0.08);
+
+  color: #bae6fd;
+
+  font-size: 10px;
+  font-weight: 900;
+  line-height: 1.2;
+
+  white-space: nowrap;
+}
+
+
+/* ENGLISH DETAIL LIST */
+
+.note-detail-list {
+  display: flex;
+  flex-direction: column;
+
+  gap: 7px;
+}
+
+.note-detail-row {
+  display: flex;
+  align-items: flex-start;
+
+  gap: 8px;
+}
+
+.note-detail-dot {
+  flex: 0 0 auto;
+
+  color: #38bdf8;
+
+  font-size: 14px;
+  font-weight: 900;
+
+  line-height: 1.45;
+}
+
+.note-detail-text {
+  color: #e2e8f0;
+
+  font-size: 13px;
+  font-weight: 600;
+  line-height: 1.5;
+
+  word-break: break-word;
+}
+
+
+/* BURMESE INFO PANEL */
+
+.note-info-panel {
+  margin-top: 11px;
+  padding: 10px 11px;
+
+  background: rgba(56, 189, 248, 0.06);
+
+  border: 1px solid rgba(56, 189, 248, 0.16);
+  border-radius: 10px;
+
+  color: #7dd3fc;
+}
+
+.note-info-line {
+  font-size: 12.5px;
+  font-weight: 700;
+  line-height: 1.75;
+
+  word-break: break-word;
+  overflow-wrap: anywhere;
+}
+
+.note-info-line + .note-info-line {
+  margin-top: 5px;
+}
+.note-text > .note-product-card {
+  margin-top: 0;
+  margin-bottom: 12px;
+
+  padding: 14px;
+
+  background: rgba(15, 23, 42, 0.55);
+
+  border: 1px solid rgba(148, 163, 184, 0.12);
+  border-radius: 14px;
+}
+
+@media (max-width: 560px) {
+
+  .note-product-card,
+  .note-text > .note-product-card {
+    padding: 10px;
+    border-radius: 12px;
+  }
+
+  .note-product-top {
+    gap: 8px;
+    margin-bottom: 8px;
+  }
+
+  .note-product-title {
+    font-size: 12px;
+  }
+
+  .note-product-badge {
+    padding: 3px 6px;
+    font-size: 8.5px;
+  }
+
+  .note-detail-list {
+    gap: 5px;
+  }
+
+  .note-detail-row {
+    gap: 6px;
+  }
+
+  .note-detail-dot {
+    font-size: 11px;
+  }
+
+  .note-detail-text {
+    font-size: 10px;
+    line-height: 1.45;
+  }
+
+  .note-info-panel {
+    margin-top: 8px;
+    padding: 8px 9px;
+    border-radius: 9px;
+  }
+
+  .note-info-line {
+    font-size: 10px;
+    line-height: 1.65;
+  }
+}
+
 /* note intro text */
 .checkout-card h2 span {
   display: block; margin-top: 5px; font-size: 16px;

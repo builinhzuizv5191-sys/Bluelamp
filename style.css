@@ -1672,3 +1672,131 @@ main#home-view > .popular-section {
 #next-btn:focus-visible {
   outline: none;
 }
+/* =========================
+   MORE DETAILS
+   OPTION A - TEXT CARDS ONLY
+   ========================= */
+
+.more-details-clean {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+
+  margin-bottom: 0;
+}
+
+
+/* =========================
+   EACH PLAN CARD
+   ========================= */
+
+.more-details-section {
+  padding: 13px 14px;
+
+  background:
+    rgba(255, 255, 255, 0.025);
+
+  border:
+    1px solid
+    rgba(148, 163, 184, 0.10);
+
+  border-radius: 12px;
+}
+
+
+/* PLAN TITLE */
+
+.more-details-section-title {
+  margin-bottom: 8px;
+
+  color: #22d3ee;
+
+  font-size: 15px;
+  font-weight: 900;
+
+  line-height: 1.35;
+}
+
+
+/* PLAN DETAILS */
+
+.more-details-section-content {
+  display: flex;
+  flex-direction: column;
+
+  gap: 5px;
+}
+
+
+.more-details-line {
+  color: #e2e8f0;
+
+  font-size: 13px;
+  font-weight: 600;
+
+  line-height: 1.55;
+
+  word-break: break-word;
+  overflow-wrap: anywhere;
+}
+
+
+/* BURMESE DETAIL */
+
+.more-details-line.burmese-font {
+  color: #7dd3fc !important;
+
+  font-size: 13px;
+
+  line-height: 1.75 !important;
+
+  text-shadow:
+    0 0 6px
+    rgba(125, 211, 252, 0.22);
+}
+
+
+/* =========================
+   MOBILE
+   ========================= */
+
+@media (max-width: 560px) {
+
+  .more-details-clean {
+    gap: 10px;
+  }
+
+
+  .more-details-section {
+    padding: 11px 12px;
+
+    border-radius: 11px;
+  }
+
+
+  .more-details-section-title {
+    margin-bottom: 7px;
+
+    font-size: 14px;
+  }
+
+
+  .more-details-section-content {
+    gap: 4px;
+  }
+
+
+  .more-details-line {
+    font-size: 12px;
+
+    line-height: 1.5;
+  }
+
+
+  .more-details-line.burmese-font {
+    font-size: 12px;
+
+    line-height: 1.7 !important;
+  }
+
+}

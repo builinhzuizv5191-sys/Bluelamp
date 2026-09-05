@@ -6687,10 +6687,15 @@ if (productName === "Express Vpn" && item.section === "Share" && /^phone/i.test(
     });
 const noteBlocks = Array.from(uniqueProductNotes.values()).map(({ item, noteContent }) => {
 
-  const noteLines = noteContent
-    .split('\n')
-    .map(line => line.trim())
-    .filter(Boolean);
+const cleanedNoteContent = String(noteContent)
+  .replace(/<div[^>]*>/gi, '')
+  .replace(/<\/div>/gi, '')
+  .replace(/<br\s*\/?>/gi, '\n');
+
+const noteLines = cleanedNoteContent
+  .split('\n')
+  .map(line => line.trim())
+  .filter(Boolean);
 
   const englishLines = [];
   const burmeseLines = [];

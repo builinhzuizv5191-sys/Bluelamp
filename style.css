@@ -760,53 +760,66 @@ main#home-view > .popular-section {
 
   .note-product-card,
   .note-text > .note-product-card {
-    padding: 10px;
+    padding: 12px;
     border-radius: 12px;
   }
 
   .note-product-top {
     gap: 8px;
-    margin-bottom: 8px;
+    margin-bottom: 10px;
   }
 
   .note-product-title {
-    font-size: 12px;
+    font-size: 14px;
   }
 
   .note-product-badge {
-    padding: 3px 6px;
-    font-size: 8.5px;
+    padding: 4px 7px;
+    font-size: 9.5px;
   }
 
   .note-detail-list {
-    gap: 5px;
+    gap: 7px;
   }
 
   .note-detail-row {
-    gap: 6px;
+    gap: 7px;
   }
 
   .note-detail-dot {
-    font-size: 11px;
+    font-size: 13px;
+    line-height: 1.5;
   }
 
   .note-detail-text {
-    font-size: 10px;
-    line-height: 1.45;
+    font-size: 12px;
+    line-height: 1.5;
   }
 
-  .note-info-panel {
-    margin-top: 8px;
-    padding: 8px 9px;
-    border-radius: 9px;
-  }
+.note-info-panel {
+  margin-top: 10px;
+  margin-bottom: 0;
 
-  .note-info-line {
-    font-size: 10px;
-    line-height: 1.65;
-  }
+  padding: 6px 11px;
+
+  border-radius: 10px;
 }
 
+.note-info-line {
+  font-size: 12px;
+  line-height: 1.7;
+
+  transform: translateY(3px);
+}
+
+  .note-product-card > :first-child {
+    margin-top: 0;
+  }
+
+  .note-product-card > :last-child {
+    margin-bottom: 0;
+  }
+}
 /* note intro text */
 .checkout-card h2 span {
   display: block; margin-top: 5px; font-size: 16px;
@@ -1055,11 +1068,12 @@ main#home-view > .popular-section {
     white-space: nowrap;
   }
 
-  .payment-methods-subtitle {
-    font-size: 9px;
-    white-space: nowrap;
-    text-align: right;
-  }
+.payment-methods-subtitle {
+  font-size: 10.5px;
+  font-weight: 700;
+  white-space: nowrap;
+  text-align: right;
+}
 
   .payment-methods-grid {
     grid-template-columns: repeat(2, minmax(0, 1fr));
@@ -1079,40 +1093,44 @@ main#home-view > .popular-section {
     flex: 0 0 34px;
   }
 
-  .payment-method-name {
-    font-size: 10px;
-    margin-bottom: 1px;
-    white-space: nowrap;
-  }
+.payment-method-name {
+  font-size: 10px;
+  margin-bottom: 1px;
+  white-space: nowrap;
+}
 
-  .payment-method-number {
-    font-size: 10px;
-    white-space: nowrap;
-  }
+.payment-method-number {
+  font-size: 10px;
+  white-space: nowrap;
+}
 
-  .payment-method-owner {
-    margin-top: 1px;
-    font-size: 8.5px;
-    white-space: nowrap;
-  }
+.payment-method-owner {
+  margin-top: 1px;
+  font-size: 8.5px;
+  white-space: nowrap;
+}
 
-  .payment-scam-warning {
-    gap: 7px;
-    margin-top: 9px;
-    padding: 8px 9px;
-    border-radius: 9px;
-  }
+.payment-scam-warning {
+  display: flex;
+  align-items: center;
 
-  .payment-scam-icon {
-    font-size: 12px;
-    line-height: 1.3;
-  }
+  gap: 8px;
+  margin-top: 9px;
+  padding: 9px 10px;
 
-  .payment-scam-text {
-    gap: 2px;
-    font-size: 9px;
-    line-height: 1.35;
-  }
+  border-radius: 9px;
+}
+
+.payment-scam-icon {
+  font-size: 14px;
+  line-height: 1;
+}
+
+.payment-scam-text {
+  gap: 3px;
+  font-size: 10.5px;
+  line-height: 1.4;
+}
 }
 
 .note-text > .payment-methods-card {

@@ -1833,3 +1833,13 @@ body::-webkit-scrollbar {
 .explain-card::-webkit-scrollbar {
   display: none;
 }
+/* =========================
+   DISABLE TEXT SELECTION
+   ========================= */
+
+body,
+body * {
+  -webkit-user-select: none;
+  user-select: none;
+  -webkit-touch-callout: none;
+}

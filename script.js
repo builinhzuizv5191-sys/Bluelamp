@@ -52,56 +52,538 @@
     }
   };
 
-  /* =========================
-      STARFIELD BACKGROUND
-      ========================= */
-  (function starfield() {
-    const canvas = document.getElementById('starfield');
-    if (!canvas) return;
-    const ctx = canvas.getContext('2d');
-    let W, H, stars = [];
+(function starfield() {
+  const canvas = document.getElementById('starfield');
+  if (!canvas) return;
 
-    function resize() {
-      W = canvas.width = window.innerWidth;
-      H = canvas.height = window.innerHeight;
-      const n = Math.min(350, Math.floor((W * H) / 8000));
-      stars = Array.from({
-        length: n
-      }, () => ({
+  const ctx = canvas.getContext('2d');
+
+  let W = 0;
+  let H = 0;
+  let DPR = 1;
+
+  let stars = [];
+  let starfalls = [];
+
+  let lastTime = performance.now();
+  let nextStarfallAt = performance.now() + 700;
+
+
+  /* =========================
+     CREATE FLOATING STARS
+     ========================= */
+
+  function createStars() {
+    const amount = Math.min(
+      350,
+      Math.max(70, Math.floor((W * H) / 8000))
+    );
+
+    stars = Array.from({ length: amount }, () => {
+      const bright = Math.random() < 0.18;
+
+      return {
         x: Math.random() * W,
         y: Math.random() * H,
-        r: Math.random() * 1.2 + .4,
-        s: Math.random() * .6 + .2,
-        a: Math.random() * .6 + .4
-      }));
+
+        radius: bright
+          ? Math.random() * 1.2 + 0.7
+          : Math.random() * 0.75 + 0.25,
+
+        alpha: Math.random() * 0.55 + 0.25,
+
+        phase: Math.random() * Math.PI * 2,
+
+        twinkleSpeed:
+          Math.random() * 1.3 + 0.7,
+
+        driftX:
+          (Math.random() - 0.5) * 3.2,
+
+        driftY:
+          Math.random() * 2.6 + 0.8,
+
+        glow: bright
+      };
+    });
+  }
+
+
+  /* =========================
+     RESIZE
+     ========================= */
+
+  function resize() {
+    DPR = Math.min(window.devicePixelRatio || 1, 2);
+
+    W = window.innerWidth;
+    H = window.innerHeight;
+
+    canvas.width = Math.round(W * DPR);
+    canvas.height = Math.round(H * DPR);
+
+    canvas.style.width = W + 'px';
+    canvas.style.height = H + 'px';
+
+    ctx.setTransform(
+      DPR,
+      0,
+      0,
+      DPR,
+      0,
+      0
+    );
+
+    createStars();
+  }
+
+
+  /* =========================
+     SPAWN REALISTIC STARFALL
+     ========================= */
+
+  function spawnStarfall(now) {
+
+    /*
+      Starts near top of screen.
+
+      Direction:
+      mostly DOWN
+      slightly RIGHT
+
+      This creates the movement
+      from the reference video.
+    */
+
+    const startX =
+      W * (0.05 + Math.random() * 0.72);
+
+    const startY =
+      H * (0.02 + Math.random() * 0.23);
+
+
+    /*
+      Around 43° - 52° downward.
+
+      NOT sideways.
+    */
+
+    const angle =
+      (43 + Math.random() * 9) *
+      Math.PI / 180;
+
+
+    const speed =
+      390 + Math.random() * 150;
+
+
+    starfalls.push({
+      x: startX,
+      y: startY,
+
+      vx: Math.cos(angle) * speed,
+      vy: Math.sin(angle) * speed,
+
+      tailLength:
+        42 + Math.random() * 34,
+
+      age: 0,
+
+      lifetime:
+        0.55 + Math.random() * 0.25,
+
+      alpha: 0
+    });
+
+
+    /*
+      Random delay until next starfall.
+
+      Keeps it calm instead of
+      constantly raining.
+    */
+
+    nextStarfallAt =
+      now +
+      1100 +
+      Math.random() * 2700;
+  }
+
+
+  /* =========================
+     DRAW FLOATING STAR
+     ========================= */
+
+  function drawStar(star, time, dt) {
+
+    star.x += star.driftX * dt;
+    star.y += star.driftY * dt;
+
+
+    if (star.y > H + 3) {
+      star.y = -3;
     }
 
-    function draw() {
-      ctx.clearRect(0, 0, W, H);
-      for (const s of stars) {
-        s.y += s.s;
-        s.x += s.s * .15;
-        if (s.y > H) s.y = -2;
-        if (s.x > W) s.x = -2;
-        const tw = s.a + Math.sin((s.x + s.y) * .01) * .25;
-        ctx.globalAlpha = Math.max(.15, Math.min(1, tw));
-        ctx.beginPath();
-        ctx.arc(s.x, s.y, s.r, 0, Math.PI * 2);
-        ctx.fillStyle = '#cfe9ff';
-        ctx.fill();
-        ctx.globalAlpha = tw * .25;
-        ctx.beginPath();
-        ctx.arc(s.x, s.y, s.r * 3, 0, Math.PI * 2);
-        ctx.fillStyle = '#7fbfff';
-        ctx.fill();
-      }
-      ctx.globalAlpha = 1;
-      requestAnimationFrame(draw);
+    if (star.x < -3) {
+      star.x = W + 3;
     }
-    window.addEventListener('resize', resize);
-    resize();
-    draw();
-  })();
+
+    if (star.x > W + 3) {
+      star.x = -3;
+    }
+
+
+    const twinkle =
+      Math.sin(
+        time *
+        0.001 *
+        star.twinkleSpeed +
+        star.phase
+      );
+
+
+    const alpha =
+      Math.max(
+        0.12,
+        Math.min(
+          1,
+          star.alpha +
+          twinkle * 0.18
+        )
+      );
+
+
+    /* star */
+
+    ctx.beginPath();
+
+    ctx.arc(
+      star.x,
+      star.y,
+      star.radius,
+      0,
+      Math.PI * 2
+    );
+
+    ctx.fillStyle =
+      `rgba(220, 240, 255, ${alpha})`;
+
+    ctx.fill();
+
+
+    /* tiny glow for brighter stars */
+
+    if (star.glow) {
+
+      ctx.beginPath();
+
+      ctx.arc(
+        star.x,
+        star.y,
+        star.radius * 3,
+        0,
+        Math.PI * 2
+      );
+
+      ctx.fillStyle =
+        `rgba(
+          125,
+          211,
+          252,
+          ${alpha * 0.12}
+        )`;
+
+      ctx.fill();
+    }
+  }
+
+
+  /* =========================
+     DRAW STARFALL
+     ========================= */
+
+  function drawStarfall(starfall, dt) {
+
+    starfall.age += dt;
+
+    starfall.x +=
+      starfall.vx * dt;
+
+    starfall.y +=
+      starfall.vy * dt;
+
+
+    const progress =
+      starfall.age /
+      starfall.lifetime;
+
+
+    /*
+      Quick fade-in,
+      then smooth fade-out.
+    */
+
+    if (progress < 0.16) {
+
+      starfall.alpha =
+        progress / 0.16;
+
+    } else if (progress > 0.68) {
+
+      starfall.alpha =
+        Math.max(
+          0,
+          (1 - progress) / 0.32
+        );
+
+    } else {
+
+      starfall.alpha = 1;
+    }
+
+
+    const magnitude =
+      Math.hypot(
+        starfall.vx,
+        starfall.vy
+      );
+
+
+    const unitX =
+      starfall.vx /
+      magnitude;
+
+    const unitY =
+      starfall.vy /
+      magnitude;
+
+
+    /*
+      Tail stays behind the star.
+    */
+
+    const tailX =
+      starfall.x -
+      unitX *
+      starfall.tailLength;
+
+    const tailY =
+      starfall.y -
+      unitY *
+      starfall.tailLength;
+
+
+    const gradient =
+      ctx.createLinearGradient(
+        tailX,
+        tailY,
+        starfall.x,
+        starfall.y
+      );
+
+
+    gradient.addColorStop(
+      0,
+      'rgba(255,255,255,0)'
+    );
+
+    gradient.addColorStop(
+      0.45,
+      `rgba(
+        180,
+        215,
+        245,
+        ${starfall.alpha * 0.18}
+      )`
+    );
+
+    gradient.addColorStop(
+      0.84,
+      `rgba(
+        220,
+        240,
+        255,
+        ${starfall.alpha * 0.78}
+      )`
+    );
+
+    gradient.addColorStop(
+      1,
+      `rgba(
+        255,
+        255,
+        255,
+        ${starfall.alpha}
+      )`
+    );
+
+
+    ctx.save();
+
+    ctx.lineCap = 'round';
+
+    ctx.lineWidth = 1.15;
+
+    ctx.strokeStyle =
+      gradient;
+
+    ctx.shadowBlur = 5;
+
+    ctx.shadowColor =
+      `rgba(
+        125,
+        211,
+        252,
+        ${starfall.alpha * 0.5}
+      )`;
+
+
+    ctx.beginPath();
+
+    ctx.moveTo(
+      tailX,
+      tailY
+    );
+
+    ctx.lineTo(
+      starfall.x,
+      starfall.y
+    );
+
+    ctx.stroke();
+
+
+    /*
+      Small bright star head.
+    */
+
+    ctx.shadowBlur = 7;
+
+    ctx.fillStyle =
+      `rgba(
+        255,
+        255,
+        255,
+        ${starfall.alpha}
+      )`;
+
+
+    ctx.beginPath();
+
+    ctx.arc(
+      starfall.x,
+      starfall.y,
+      1.3,
+      0,
+      Math.PI * 2
+    );
+
+    ctx.fill();
+
+    ctx.restore();
+  }
+
+
+  /* =========================
+     MAIN ANIMATION
+     ========================= */
+
+  function draw(now) {
+
+    const dt =
+      Math.min(
+        (now - lastTime) / 1000,
+        0.033
+      );
+
+    lastTime = now;
+
+
+    ctx.clearRect(
+      0,
+      0,
+      W,
+      H
+    );
+
+
+    /* floating stars */
+
+    for (const star of stars) {
+      drawStar(
+        star,
+        now,
+        dt
+      );
+    }
+
+
+    /* spawn starfall */
+
+    if (now >= nextStarfallAt) {
+      spawnStarfall(now);
+    }
+
+
+    /* draw active starfalls */
+
+    for (
+      let i = starfalls.length - 1;
+      i >= 0;
+      i--
+    ) {
+
+      const starfall =
+        starfalls[i];
+
+
+      drawStarfall(
+        starfall,
+        dt
+      );
+
+
+      /*
+        Remove finished starfalls.
+      */
+
+      if (
+        starfall.age >
+          starfall.lifetime ||
+
+        starfall.x >
+          W + 100 ||
+
+        starfall.y >
+          H + 100
+      ) {
+
+        starfalls.splice(
+          i,
+          1
+        );
+      }
+    }
+
+
+    requestAnimationFrame(draw);
+  }
+
+
+  /* =========================
+     START
+     ========================= */
+
+  window.addEventListener(
+    'resize',
+    resize
+  );
+
+  resize();
+
+  requestAnimationFrame(draw);
+
+})();
 
   /* =========================
       PRODUCT DATA & ASSETS
@@ -6872,17 +7354,106 @@ dom.checkout.nextBtn.style.display = "inline-flex";
 
   }
 
-  function formatDetails(raw) {
-    const headers = /^(Share|Private|SemiPrivate|FullPrivate|Tinder Plus Share|Login|Gift Plan & Link Plan|Gift Plan|Link Plan|Views \(NoDrop\)|Likes \(NoDrop\)|Package Plan|Livestream Views|Livestream Likes|Livestream Share|Post Views|Positive Reactions|Negative Reactions|Members \(30Days Refill\)|Comment - Impression Type|Comment - Custom Type|Video Views|Post Like|Profile Followers|Page follower|Live Stream Views|Video Views & Reels|Likes|Share|Save|Reach|Followers|Personal Plus|Business|Private Own Mail|Private \(Own Mail\)|Base Service|Normal Plan|Family Head|Invite Private|Web Private|App&Web Private|Pro Share|Pro Private|Lifetime Premium|Educational|Individual|Stars|Japan Region|US Region|UK Region|Custom Amount|Turkey Region|Indonesia Region|Brazil Region|Korea Region|India Region|Australia Region|Germany Region|France Region|Italy Region|Switzerland Region|Canada Region|Poland Region|UAE Region|Nitro)/i;
-    let mainDetails = raw.replace(/CAN'T USE IN MYANMAR/g, '').replace(generalDetailsBlock, '').trim();
-    const mainHtml = mainDetails.split(/\n+/).map(line => {
-      let t = line.trim(); if (!t) return "";
-      if (headers.test(t)) return `<div class="md-h">${escapeHTML(t)}</div>`;
-      const isBurmese = /[\u1000-\u109F]/.test(t) || t.includes('Kyats') || t.includes('Login');
-      return `<div class="md-p${isBurmese ? ' burmese-font' : ''}">${escapeHTML(t)}</div>`;
-    }).join("");
-    return mainHtml + renderPaymentMethodsBlock();
+function formatDetails(raw) {
+
+  const headers =
+    /^(Share|Share Plan|Share Business|Own Mail|Private|Private VIP|Private VIP Plus|SemiPrivate|FullPrivate|Tinder Plus Share|Login|Gift Plan & Link Plan|Gift Plan|Link Plan|Views \(NoDrop\)|Likes \(NoDrop\)|Package Plan|Livestream Views|Livestream Likes|Livestream Share|Post Views|Positive Reactions|Negative Reactions|Members \(30Days Refill\)|Comment - Impression Type|Comment - Custom Type|Video Views|Post Like|Profile Followers|Page follower|Live Stream Views|Video Views & Reels|Likes|Save|Reach|Followers|Personal Plus|Business|Private Own Mail|Private \(Own Mail\)|Base Service|Normal Plan|Family Head|Invite Private|Web Private|App&Web Private|Pro Share|Pro Private|Lifetime Premium|Educational|Individual|Stars|Japan Region|US Region|UK Region|Custom Amount|Turkey Region|Indonesia Region|Brazil Region|Korea Region|India Region|Australia Region|Germany Region|France Region|Italy Region|Switzerland Region|Canada Region|Poland Region|UAE Region|Nitro)/i;
+
+
+  const mainDetails = String(raw)
+    .replace(/CAN'T USE IN MYANMAR/g, '')
+    .replace(generalDetailsBlock, '')
+    .trim();
+
+
+  const lines = mainDetails
+    .split(/\n+/)
+    .map(line => line.trim())
+    .filter(Boolean);
+
+
+  const sections = [];
+
+  let currentSection = null;
+
+
+  lines.forEach(line => {
+
+    if (headers.test(line)) {
+
+      if (currentSection) {
+        sections.push(currentSection);
+      }
+
+      currentSection = {
+        title: line,
+        lines: []
+      };
+
+      return;
+    }
+
+
+    if (!currentSection) {
+      currentSection = {
+        title: "Info",
+        lines: []
+      };
+    }
+
+
+    currentSection.lines.push(line);
+  });
+
+
+  if (currentSection) {
+    sections.push(currentSection);
   }
+
+
+  const mainHtml = sections
+    .map(section => {
+
+      const contentHtml = section.lines
+        .map(line => {
+
+          const isBurmese =
+            /[\u1000-\u109F]/.test(line);
+
+          return `
+            <div class="more-details-line${isBurmese ? ' burmese-font' : ''}">
+              ${escapeHTML(line)}
+            </div>
+          `;
+
+        })
+        .join("");
+
+
+      return `
+        <div class="more-details-section">
+
+          <div class="more-details-section-title">
+            ${escapeHTML(section.title)}
+          </div>
+
+          <div class="more-details-section-content">
+            ${contentHtml}
+          </div>
+
+        </div>
+      `;
+
+    })
+    .join("");
+
+
+  return `
+    <div class="more-details-clean">
+      ${mainHtml}
+    </div>
+  ` + renderPaymentMethodsBlock();
+}
 
 function formatNotes(raw) {
   const containsPayment =

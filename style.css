@@ -1805,3 +1805,18 @@ main#home-view > .popular-section {
   }
 
 }
+/* =========================
+   HIDE SCROLLBARS
+   KEEP SCROLLING ENABLED
+   ========================= */
+
+html,
+body {
+  scrollbar-width: none;      /* Firefox */
+  -ms-overflow-style: none;   /* Old Edge / IE */
+}
+
+html::-webkit-scrollbar,
+body::-webkit-scrollbar {
+  display: none;              /* Chrome / Edge / Safari */
+}

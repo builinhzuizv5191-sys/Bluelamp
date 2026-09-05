@@ -7356,8 +7356,8 @@ dom.checkout.nextBtn.style.display = "inline-flex";
 
 function formatDetails(raw) {
 
-  const headers =
-    /^(Share|Share Plan|Share Business|Own Mail|Private|Private VIP|Private VIP Plus|SemiPrivate|FullPrivate|Tinder Plus Share|Login|Gift Plan & Link Plan|Gift Plan|Link Plan|Views \(NoDrop\)|Likes \(NoDrop\)|Package Plan|Livestream Views|Livestream Likes|Livestream Share|Post Views|Positive Reactions|Negative Reactions|Members \(30Days Refill\)|Comment - Impression Type|Comment - Custom Type|Video Views|Post Like|Profile Followers|Page follower|Live Stream Views|Video Views & Reels|Likes|Save|Reach|Followers|Personal Plus|Business|Private Own Mail|Private \(Own Mail\)|Base Service|Normal Plan|Family Head|Invite Private|Web Private|App&Web Private|Pro Share|Pro Private|Lifetime Premium|Educational|Individual|Stars|Japan Region|US Region|UK Region|Custom Amount|Turkey Region|Indonesia Region|Brazil Region|Korea Region|India Region|Australia Region|Germany Region|France Region|Italy Region|Switzerland Region|Canada Region|Poland Region|UAE Region|Nitro)/i;
+const headers =
+  /^(Share|Private|Private Own Mail|Private \(Own Mail\)|Private VIP|Private VIP Plus|Share Plan|Private Plan|Share Business|Own Mail|Private Business|Private Pro|SemiPrivate Premium|SemiPrivate Standard|Whole Account|Plan Basic \(Limited Screen\)|Plan Premium \(No Limit\)|HBO MAX \(Premium\) 1 Month|Private Whole Account Standard\(1 Month\)|Private Whole Account Premium\(1 Month\)|Family Private|Individual Plan|Sharing \(2TB\)|Personal Plus \(Private\)|Business Plus - Invite Own Email|Business Plus Own|Business Plus Own\(Full Warranty\)|Head\(Can Invite 5 Email\)|OwnMail Invite|Private \(Individual Plan\)|Private API Key|Login|Gift Plan & Link Plan|Gift Plan|Link Plan|Nitro \(Key\)|OwnMail Private|Lifetime Premium|Family Head\(Can Invite 5 email\)|Invite Private|Account|My\.ID\/my\.id|Login method|NoLoginBoost|Views \(NoDrop\)|Likes \(NoDrop\)|Package Plan|Base Service|Normal Plan|Web Private|App&Web Private|Tinder Plus Share|Livestream Views|Livestream Likes|Livestream Share|Post Views|Positive Reactions|Negative Reactions|Members \(30Days Refill\)|Comment - Impression Type|Comment - Custom Type|Video Views|Post Like|Profile Followers|Page follower|Live Stream Views|Video Views & Reels|Likes|Save|Reach|Followers|Pro Share|Pro Private|Educational|Individual|Stars|Japan Region|US Region|UK Region|Custom Amount|Turkey Region|Indonesia Region|Brazil Region|Korea Region|India Region|Australia Region|Germany Region|France Region|Italy Region|Switzerland Region|Canada Region|Poland Region|UAE Region)$/i;
 
 
   const mainDetails = String(raw)
@@ -7377,22 +7377,28 @@ function formatDetails(raw) {
   let currentSection = null;
 
 
-  lines.forEach(line => {
+lines.forEach(line => {
 
-    if (headers.test(line)) {
+  const headerMatch = line.match(headers);
 
-      if (currentSection) {
-        sections.push(currentSection);
-      }
+  const isExactHeader =
+    headerMatch &&
+    headerMatch[0].trim().toLowerCase() ===
+    line.trim().toLowerCase();
 
-      currentSection = {
-        title: line,
-        lines: []
-      };
+  if (isExactHeader) {
 
-      return;
+    if (currentSection) {
+      sections.push(currentSection);
     }
 
+    currentSection = {
+      title: line,
+      lines: []
+    };
+
+    return;
+  }
 
     if (!currentSection) {
       currentSection = {

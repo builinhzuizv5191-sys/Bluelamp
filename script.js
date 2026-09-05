@@ -5921,6 +5921,63 @@ if (productName === "Telegram Star") {
       ========================= */
   const paymentInfoBlock = `\n\nWe only accept KBZpay & Wave pay\nWe only use this number for both Payments\nKBZpay-09771664207\n(Name MyinMyintMaw)\nWave - 09771664207\n(Name MyinMyintMaw)\n\nWATCH OUT FOR SCAMMER!!`;
   const generalDetailsBlock = `\n\nWe only accept KBZpay & Wave pay\nWe only use this number for both Payments\nKBZpay-09771664207\n(Name MyinMyintMaw)\nWave - 09771664207\n(Name MyinMyintMaw)\n\nWATCH OUT FOR SCAMMER!!`;
+
+function renderPaymentMethodsBlock() {
+  return `
+    <div class="payment-methods-card">
+
+      <div class="payment-methods-head">
+        <div class="payment-methods-title">
+          Payment Methods
+        </div>
+
+        <div class="payment-methods-subtitle">
+          Only use these official accounts
+        </div>
+      </div>
+
+      <div class="payment-methods-grid">
+
+        <div class="payment-method-item">
+          <div class="payment-method-logo">
+            <img src="./kbzpay.png" alt="KBZPay">
+          </div>
+
+          <div class="payment-method-info">
+            <div class="payment-method-name">KBZPay</div>
+            <div class="payment-method-number">09771664207</div>
+            <div class="payment-method-owner">MyinMyintMaw</div>
+          </div>
+        </div>
+
+        <div class="payment-method-item">
+          <div class="payment-method-logo">
+            <img src="./wavepay.png" alt="Wave Pay">
+          </div>
+
+          <div class="payment-method-info">
+            <div class="payment-method-name">Wave Pay</div>
+            <div class="payment-method-number">09771664207</div>
+            <div class="payment-method-owner">MyinMyintMaw</div>
+          </div>
+        </div>
+
+      </div>
+
+      <div class="payment-scam-warning">
+        <div class="payment-scam-icon">⚠️</div>
+
+        <div class="payment-scam-text">
+          <strong>Watch out for scammers.</strong>
+          <span>
+            We only accept payments to the accounts shown above.
+          </span>
+        </div>
+      </div>
+
+    </div>
+  `;
+}
   
   const expressVpnShareNoteBase = `
 တခါတလေအကောင့်ကထွက်တာမျိုးနေဖြစ်နိုင်တယ်but ပြန်ဝင်လို့ရပါတယ်
@@ -6754,19 +6811,47 @@ dom.checkout.nextBtn.style.display = "inline-flex";
       const isBurmese = /[\u1000-\u109F]/.test(t) || t.includes('Kyats') || t.includes('Login');
       return `<div class="md-p${isBurmese ? ' burmese-font' : ''}">${escapeHTML(t)}</div>`;
     }).join("");
-    return mainHtml + `<div class="payment-warning-block">${generalDetailsBlock.trim().split(/\n+/).map(l => `<div class="md-p">${escapeHTML(l.trim())}</div>`).join("")}</div>`;
+    return mainHtml + renderPaymentMethodsBlock();
   }
 
-  function formatNotes(raw) {
-    const containsPayment = raw.includes(paymentInfoBlock.trim());
-    const lines = String(raw).split(/\n+/).map(line => {
-      const t = line.trim(); if (!t) return "";
-      if (t.includes('CAN\'T USE IN MYANMAR')) return `<div class="vpn-alert">${t}</div>`;
-      const isBurmese = /[\u1000-\u109F]/.test(t) || t.includes('multi-device') || t.includes('•') || t.includes('Share ကတခြားလူ') || t.includes('Deactivate');
-      return `<div class="nt-line${isBurmese ? ' burmese-font' : ''}" style="font-weight:400;opacity:.95;">${t.replace(/(\d+)\s*(‌ယောက်)/g, '$1 $2')}</div>`;
-    }).join("");
-    return containsPayment ? `<div class="payment-warning-block">${lines}</div>` : lines;
+function formatNotes(raw) {
+  const containsPayment =
+    raw.includes(paymentInfoBlock.trim());
+
+  if (containsPayment) {
+    return renderPaymentMethodsBlock();
   }
+
+  const lines = String(raw).split(/\n+/).map(line => {
+    const t = line.trim();
+
+    if (!t) return "";
+
+    if (t.includes('CAN\'T USE IN MYANMAR')) {
+      return `<div class="vpn-alert">${escapeHTML(t)}</div>`;
+    }
+
+    const isBurmese =
+      /[\u1000-\u109F]/.test(t) ||
+      t.includes('multi-device') ||
+      t.includes('•') ||
+      t.includes('Share ကတခြားလူ') ||
+      t.includes('Deactivate');
+
+    return `
+      <div
+        class="nt-line${isBurmese ? ' burmese-font' : ''}"
+        style="font-weight:400;opacity:.95;"
+      >
+        ${escapeHTML(
+          t.replace(/(\d+)\s*(‌ယောက်)/g, '$1 $2')
+        )}
+      </div>
+    `;
+  }).join("");
+
+  return lines;
+}
 
   /* =========================
       EVENT LISTENERS

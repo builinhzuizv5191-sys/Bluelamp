@@ -6685,13 +6685,78 @@ if (productName === "Express Vpn" && item.section === "Share" && /^phone/i.test(
       let noteContent = getNoteForCartItem(item);
       if (noteContent) uniqueProductNotes.set(productKey, { item, noteContent });
     });
-    const noteBlocks = Array.from(uniqueProductNotes.values()).map(({ item, noteContent }) => {
-      return `<div style="margin-bottom:12px"><strong>${escapeHTML(item.product + ' • ' + item.section)}</strong>${noteContent.split('\n').filter(l => l.trim()).map(l => {
-          const t = l.trim();
-          const isBurmese = /[\u1000-\u109F]/.test(t) || t.includes('•') || t.includes('Kyats') || t.includes('renew');
-          return `<div class="nt-line${isBurmese ? ' burmese-font' : ''}" style="font-weight:400;opacity:.95;">${t.replace(/(\d+)\s*(‌ယောက်)/g, '$1 $2')}</div>`;
-      }).join('')}</div>`;
-    }).join('');
+const noteBlocks = Array.from(uniqueProductNotes.values()).map(({ item, noteContent }) => {
+
+  const noteLines = noteContent
+    .split('\n')
+    .map(line => line.trim())
+    .filter(Boolean);
+
+  const englishLines = [];
+  const burmeseLines = [];
+
+  noteLines.forEach(line => {
+    if (/[\u1000-\u109F]/.test(line)) {
+      burmeseLines.push(line);
+    } else {
+      englishLines.push(line);
+    }
+  });
+
+  const hasWarranty = noteLines.some(line =>
+    /warranty/i.test(line)
+  );
+
+  const englishHtml = englishLines.length
+    ? `
+      <div class="note-detail-list">
+        ${englishLines.map(line => `
+          <div class="note-detail-row">
+            <span class="note-detail-dot">•</span>
+
+            <span class="note-detail-text">
+              ${escapeHTML(line.replace(/^•\s*/, ''))}
+            </span>
+          </div>
+        `).join('')}
+      </div>
+    `
+    : '';
+
+  const burmeseHtml = burmeseLines.length
+    ? `
+      <div class="note-info-panel burmese-font">
+        ${burmeseLines.map(line => `
+          <div class="note-info-line">
+            ${escapeHTML(line)}
+          </div>
+        `).join('')}
+      </div>
+    `
+    : '';
+
+  return `
+    <div class="note-product-card">
+
+      <div class="note-product-top">
+
+        <div class="note-product-title">
+          ${escapeHTML(item.product + ' • ' + item.section)}
+        </div>
+
+        <div class="note-product-badge">
+          ${hasWarranty ? 'Warranty' : 'Info'}
+        </div>
+
+      </div>
+
+      ${englishHtml}
+
+      ${burmeseHtml}
+
+    </div>
+  `;
+}).join('');
     let netflixBlock = '';
     dom.checkout.noteText.innerHTML = quantityWarning + noteBlocks + netflixBlock + formatNotes(paymentInfoBlock.trim());
     const telegramCustom = cart.some(i => i.product === 'Telegram Premium' && (i.duration.includes('1 Year') || i.section.includes('Gift') || i.section.includes('Link')));

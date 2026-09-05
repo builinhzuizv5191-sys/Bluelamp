@@ -737,11 +737,9 @@ main#home-view > .popular-section {
 
   flex: 0 0 48px;
 
-  overflow: hidden;
+  overflow: visible;
 
-  border-radius: 12px;
-
-  background: #ffffff;
+  background: transparent;
 }
 
 .payment-method-logo img {
@@ -750,7 +748,7 @@ main#home-view > .popular-section {
 
   display: block;
 
-  object-fit: cover;
+  object-fit: contain;
 }
 
 
@@ -834,38 +832,6 @@ main#home-view > .popular-section {
 
 .payment-scam-text span {
   color: #fecdd3;
-}
-
-
-/* MOBILE */
-
-@media (max-width: 560px) {
-
-  .payment-methods-grid {
-    grid-template-columns: 1fr;
-  }
-
-  .payment-methods-head {
-    align-items: flex-start;
-    flex-direction: column;
-
-    gap: 3px;
-  }
-
-  .payment-methods-subtitle {
-    text-align: left;
-  }
-
-  .payment-method-item {
-    padding: 11px;
-  }
-
-  .payment-method-logo {
-    width: 44px;
-    height: 44px;
-
-    flex-basis: 44px;
-  }
 }
 
 .note-text > .payment-methods-card {

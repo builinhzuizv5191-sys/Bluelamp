@@ -5932,7 +5932,7 @@ function renderPaymentMethodsBlock() {
         </div>
 
         <div class="payment-methods-subtitle">
-          Only use these official accounts
+          We Only use these Payments
         </div>
       </div>
 
@@ -5970,7 +5970,7 @@ function renderPaymentMethodsBlock() {
         <div class="payment-scam-text">
           <strong>Watch out for scammers.</strong>
           <span>
-            We only accept payments to the accounts shown above.
+            We only accept payments shown above.
           </span>
         </div>
       </div>

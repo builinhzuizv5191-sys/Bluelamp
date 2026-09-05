@@ -1714,7 +1714,7 @@ main#home-view > .popular-section {
 .more-details-section-title {
   margin-bottom: 8px;
 
-  color: #22d3ee;
+  color: #fb923c;
 
   font-size: 15px;
   font-weight: 900;
@@ -1734,7 +1734,7 @@ main#home-view > .popular-section {
 
 
 .more-details-line {
-  color: #e2e8f0;
+  color: #bae6fd;
 
   font-size: 13px;
   font-weight: 600;
@@ -1749,7 +1749,7 @@ main#home-view > .popular-section {
 /* BURMESE DETAIL */
 
 .more-details-line.burmese-font {
-  color: #7dd3fc !important;
+  color: #bae6fd !important;
 
   font-size: 13px;
 
@@ -1757,7 +1757,7 @@ main#home-view > .popular-section {
 
   text-shadow:
     0 0 6px
-    rgba(125, 211, 252, 0.22);
+    rgba(186, 230, 253, 0.22);
 }
 
 
@@ -1819,4 +1819,17 @@ body {
 html::-webkit-scrollbar,
 body::-webkit-scrollbar {
   display: none;              /* Chrome / Edge / Safari */
+}
+/* =========================
+   HIDE MORE DETAILS SCROLLBAR
+   KEEP SCROLLING ENABLED
+   ========================= */
+
+.explain-card {
+  scrollbar-width: none;
+  -ms-overflow-style: none;
+}
+
+.explain-card::-webkit-scrollbar {
+  display: none;
 }

@@ -652,6 +652,7 @@ main#home-view > .popular-section {
    PAYMENT METHODS - CONCEPT A
    ========================= */
 
+.note-text > .payment-methods-card,
 .payment-methods-card {
   margin-top: 25px;
   padding: 14px;

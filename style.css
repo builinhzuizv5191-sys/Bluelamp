@@ -552,15 +552,20 @@ main#home-view > .popular-section {
     animation: overlayFadeIn 0.25s ease-out;
 }
 .explain-card{
-    width:min(92vw,520px);
-    background: rgba(15, 23, 42, 1); /* Solid version of card */
-    border:1px solid var(--stroke); 
-    border-radius:14px;
-    padding:20px;
-    max-height: 90vh; 
+    width: min(92vw, 520px);
+    max-width: calc(100vw - 24px);
+
+    box-sizing: border-box;
+
+    background: rgba(15, 23, 42, 1);
+    border: 1px solid var(--stroke);
+    border-radius: 14px;
+
+    padding: 20px;
+
+    max-height: 90vh;
     overflow-y: auto;
-    
-    /* Added Animation for Card Pop-up */
+
     animation: cardSlideUp 0.3s cubic-bezier(0.16, 1, 0.3, 1);
 }
 .explain-text{font-size:15px;line-height:1.7;margin-bottom:14px;color:var(--text)}

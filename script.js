@@ -6477,19 +6477,21 @@ function renderPaymentMethodsBlock() {
 
   const moreDetailsByProduct = {
     "CapCut": `Share
-One device only
-ဖုန်းတလုံးပဲသုံးလို့ရပါတယ် Android & iOS
+One device only. PC, Laptop မရပါ။
+ဖုန်းတလုံးပဲသုံးလို့ရပါတယ် Android or iOS
 • Pro Subscription warranty 25 Days.
 Account Limit 1x Replacement.
 (we fully renew if Pro stops)
 
 Private
-2 to 3 devices. Full warranty for the entire plan duration.
-Can renew after expired.
+2 to 3 devices.
+Full warranty for the entire plan duration.
+ကုန်ရင်လဲ တစ်လ 16,000Ks နှုန်းနဲ့သက်တန်းတိုးလို့ရပါတယ်။
 
 Private Own Mail
-2 to 3 devices. Full warranty for the entire plan duration.
-Can renew after expired.` + generalDetailsBlock,
+2 to 3 devices.
+Full warranty for the entire plan duration.
+ကုန်ရင်လဲ တစ်လ 18,000Ks နှုန်းနဲ့သက်တန်းတိုးလို့ရပါတယ်။` + generalDetailsBlock,
     "AlightMotion": `Share
 Full warranty for 6Months
 Covers premium subscription errors.
@@ -6506,14 +6508,14 @@ Share Plan ရော Private Plan တေရောကဝင်ရတာရှု�
 Private (Own Mail)
 Full warranty for full duration
 8 devices max
-Gmail/Email and password ပေးရပါတယ်။
-အကောင့်ရဲ့ Password ပါ။
-Alight Motionမာထားမဲ့ Password မဟုတ်ပါဘူး။
-Google အကောင့်ကိုဝင်ပီးလုပ်ပေးမာပါ။
-ပီးရင်ပြန်ထွက်မာပါ။` + generalDetailsBlock,
+Gmail and password ပေးရပါတယ်။
+Google အကောင့်ရဲ့ Password ပါ။
+Alight Motion မာထားမဲ့ Password မဟုတ်ပါဘူး။
+Google အကောင့်ကိုဝင်ပီးလုပ်ပေးရမာပါ။` + generalDetailsBlock,
     "Wink": `Share
 One device only
-Full warranty for full duration.
+25 Days warranty.
+Share Plan မို့လို့အနဲဆုံး 25 Days to အများဆုံး 30 Days ရမာပါ။
 
 Private VIP
 Full warranty for full duration.
@@ -6924,11 +6926,10 @@ Domain type nonrenewable
     if (item.section === "Private (Own Mail)" || item.section === "Private (Own Mail)") {
     return `Full warranty for full duration
     8 devices max
-    Gmail/Email and password ပေးရပါတယ်။
-    အကောင့်ရဲ့ Password ပါ။
-    Alight Motionမာထားမဲ့ Password မဟုတ်ပါဘူး။
-    Google အကောင့်ကိုဝင်ပီးလုပ်ပေးမာပါ။
-    ပီးရင်ပြန်ထွက်မာပါ။`;
+    Gmail and password ပေးရပါတယ်။
+    Google အကောင့်ရဲ့ Password ပါ။
+    Alight Motion မာထားမဲ့ Password မဟုတ်ပါဘူး။
+    Google အကောင့်ကိုဝင်ပီးလုပ်ပေးရမာပါ။`;
     }
     }
 
@@ -6936,15 +6937,17 @@ Domain type nonrenewable
     if (productName === "CapCut") {
       // Private 1 Month
    if (item.section === "Private" && item.duration.includes("1 Month")) {
-    return `<div class="burmese-font"> 2 to 3 devices. Full warranty for the entire plan duration.
-    Can renew after expired.
+    return `<div class="burmese-font"> 2 to 3 devices.
+    Full warranty for the entire plan duration.
+    ကုန်ရင်လဲ တစ်လ 16,000Ks နှုန်းနဲ့သက်တန်းတိုးလို့ရပါတယ်။
     </div>`;
    }
      
      // Own Mail 1 Month
    if (item.section === "Private Own Mail" && item.duration.includes("1 Month")) {
-    return `<div class="burmese-font"> 2 to 3 devices. Full warranty for the entire plan duration.
-    Can renew after expired.
+    return `<div class="burmese-font"> 2 to 3 devices.
+    Full warranty for the entire plan duration.
+    ကုန်ရင်လဲ တစ်လ 18,000Ks နှုန်းနဲ့သက်တန်းတိုးလို့ရပါတယ်။
     </div>`;
    }
    }

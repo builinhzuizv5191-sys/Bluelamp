@@ -1031,16 +1031,13 @@
       }, {
         "duration": "1 Month",
         "price": "14,500 Kyats"
-      }, {
-        "duration": "1 Year",
-        "price": "99,000 Kyats"
+      }],
+      "OwnMail": [{
+        "duration": "1 Month",
+        "price": "16,500 Kyats"
       }]
     },
     "PicsArt": {
-      "Share": [{
-        "duration": "1 Month",
-        "price": "Out Of Stock"
-      }],
       "Private": [{
         "duration": "3 Days",
         "price": "1,500 Kyats"
@@ -3544,31 +3541,25 @@ const popupTextByProduct = {
     nextText: "ဘာတေကွာလဲ?",
     backText: "Back",
     steps: [
-    "ဒါက Meitu ရဲ့ VIP Planပါ။ ရွေးစရာကနှစ်ခုပဲရှိပါတယ်။<br>Share & Private.",
-    "VIP ကတူတူပါပဲ။ ကွာတာက Share ဆိုရင် 1Device ပဲဝင်လို့ရမယ်။ တခြားသူတေနဲ့တူတူသုံးရမယ်။<br>(ဒါပေမဲ့ Demand နဲတာကြောင့် Private ပဲရဖို့များပါတယ်။)",
-    "Private ကတော့ 3 devices ဝင်သုံးလို့ရမယ်။ ဒီကပေးတဲ့အကောင့်ကို Meitu App မာထည့်သုံးရုံပါပဲ။ သူက Stock ရှားတာမို့လို့အရင်မေးပီးမဝယ်ပါ။ Full warranty.",
-    "Android ရော iOS ရောနှစ်ခုလုံးရပါတယ်။ Appကတော့ Android ဆိုရင်တော့ကျနော် China version official app ပေးမာပါ။<br>Playstore က App နဲ့က Vip သုံးလိူ့မရလို့ပါ။"
+    "ဒါက Meitu ရဲ့ VIP Planပါ။ ရွေးစရာကနှစ်ခုပဲရှိပါတယ်။<br>Private & Ownmail.",
+    "VIP ကတူတူပါပဲ။ Private ကကျနော်က Meitu Account တခုပေးမာဖြစ်ပီးအဲ့အကောင့်ကို Meitu App မာထည့်သုံးရမာပါ။ OwnMail ကတော့ဝယ်သူရဲ့အကောင့်ထဲကို Vip Subscription ထည့်ပေးတာမျိုးပါ။ Account Password ပေးဖို့လိုပါတယ်။ Plan 2 ခုလုံးကကုန်ရင်လဲသက်တန်းဆက်တိုးလို့ရပါတယ်။",
+    "Private ရော OwnMail ရောက Full Warranty ပါပါတယ်။ Device အနေနဲ့လဲ 3 Devices လောက်ထိဝင်သုံးလို့ရပါတယ်။ Android ရော iOS ရောနှစ်ခုလုံးရပါတယ်။ Appကတော့ Android ဆိုရင်တော့ကျနော် China version official app ပေးမာပါ။ Playstore က App နဲ့က Vip သုံးလိူ့မရလို့ပါ။"
   ],
     stepButtons: [
     "ဘာတေကွာလဲ?",
-    "Private ဆိုတာက?",
-    "All Devices<br>ရလား?"
+    "ဆက်ရန်"
   ]
   },
   "PicsArt": {
     title: "PicsArt Info",
-    button: "Plan 2 ခုကိုရှင်းပြပေးပါ။",
+    button: "ရှင်းပြပေးပါ။",
     nextText: "ဘာတေကွာလဲ?",
     backText: "Back",
     steps: [
-    "PicsArt မာကရ္စေးချယ်စရာ Plan 2 ခုပဲရှိတာပါ။<br>Share & Private",
-    "ဘာကွာလဲဆိုရင် Pro ချင်းတူတူပါပဲ။ Shareဆိုတာကတော့သိတဲ့အတိုင်း 1Device ပဲဝင်လို့ရမယ်။ တခြားသူတေနဲ့တူတူသုံးရမယ်။ Edit History တေလဲရောပါတယ်။ သူ Edit တာလဲကိုယ်မြင်နေရမာဖြစ်သလို၊ကိုယ် Edit တာကိုလဲတခြားသူတေမြင်ရမာပါ။<br>Warranty 15Days.",
-    "Private ကတော့ Total 5 Devices ထိဝင်သုံးလို့ရမယ်။ Private History. ပီးတော့ Full warranty. ကျနော်ပေးတဲ့အကောင့်ကို PicsArt App မာဝင်သုံးရုံပါပဲ။",
+    "ဒါက PicsArt ရဲ့ Pro Subscription ပါ။ Private Account ဖြစ်လို့ Total 5 Devices ထိဝင်သုံးလို့ရပါတယ်။ With Private History. ပီးတော့ Full warranty. ကျနော်ပေးတဲ့အကောင့်ကို PicsArt App မာဝင်သုံးရုံပါပဲ။",
     "Android ရော iOS ရောနှစ်ခုလုံးရပါတယ်။ Playstore & AppStore က official appတေမာပဲသုံးရမာပါ။"
   ],
     stepButtons: [
-    "ဘာတေကွာလဲ?",
-    "Private ဆိုတာက?",
     "All Devices<br>ရလား?"
   ]
   },
@@ -3578,17 +3569,19 @@ const popupTextByProduct = {
     nextText: "ဘာတေကွာလဲ?",
     backText: "Back",
     steps: [
-    "တွေ့ရတဲ့တိုင်း Canva မာရ္စေးချယ်စရာPlan 3 ခုရှိပါတယ်။<br>Share,Private,Educational",
-    "ဘာကွာလဲဆိုရင်တော်တော်ကွာပါတယ်။ ဒီထဲက Share Invite ဆိုတာကဝယ်သူရဲ့ Email ကို invite လုပ်ပေးလိုက်မာပါ။ Pro features တေရတယ်ဆိုပေမဲ့ Members အနေနဲ့မို့လို့ Limited access သဘောပါပဲ(ဥပမာFontတေကိုထည့်ချင်တာထည့်မရတာမျိုးလိုပေါ့။)",
+    "တွေ့ရတဲ့တိုင်း Canva မာရ္စေးချယ်စရာPlan 4 ခုရှိပါတယ်။<br>Share,Private Business, Private Pro<br>And Educational",
+    "ဘာကွာလဲဆိုရင်တော်တော်ကွာပါတယ်။ ဒီထဲက Share Invite ဆိုတာကဝယ်သူရဲ့ Email ကို invite လုပ်ပေးလိုက်မာပါ။ Pro features တေရတယ်ဆိုပေမဲ့ Members အနေနဲ့မို့လို့ Limited access သဘောပါပဲ။ (ဥပမာ Font တေကိုထည့်ချင်တာထည့်မရတာမျိုးလိုပေါ့။)",
     "Total 20~30Daysကြားပဲရမာပါ။ ဒါကဘာကိုပြောတာလဲဆိုရင်ဥပမာကိုယ်က1ရက်နေ့ကဝယ်လိုက်တယ်ဆိုရင် 20 ရက့်နေ့မလဲကုန်နိုင်တယ်အဲ့ကနေ 30 ထိလဲအများဆုံးရနိုင်တယ်။ အနဲဆုံးကတော့ 20 ရက်ပေါ့။",
-    "Private ကတော့သူက Pro features ကိုမ full access ရနေမယ်။ ကျနော်ပေးတဲ့အကောင့်ကို Canva app မာဝင်သုံးရုံပါပဲ။ Email အခု 100 ကို Pro ပြန်ပေးလို့ရတယ်။ ဒါကဘာကိုဆိုလဲလဲဆိုရင် Share 1500 တန်အခု 100 ပေါ့။ ကိုယ့်ရဲ့ Email ကိုလဲ Admin အနေနဲ့ပြန် Invite လို့ရတယ်။",
-    "Educationalဆိုတာကကျောင်းသားတေအတွက်ပါ။ Lifetime ဆိုတော့ Features တေကလဲကျောင်းမာလိုသလောက်ပဲပါတာပါ။ ပြောရရင် Limited Features ပေါ့။ သူကဝယ်သူရဲ့ Email ကို Invite ပေးတာပါ။ Warranty 5 လပေးထားပါတယ်။",
+    "Private Business နဲ့ Private Pro ကအကုန်တူတူနီးပါးပါပဲ။ ဘာကွာသွားလဲဆိုရင်အသိသာဆုံးက Business က Pro ထက် Ai usage 2ဆလောက်များပါတယ်။ ပီးတော့သူက Canva ထဲမာရှိတဲ့အမြင့်ဆုံး Subscription ပါ။",
+    "အဲ့တာကွာတာကလွဲရင်ကျန်တာတေကတူတူပါပဲ။ Pro features ကိုမ full access ရနေမယ်။ ကျနော်ပေးတဲ့အကောင့်ကို Canva app မာဝင်သုံးရုံပါပဲ။ Email အခု 100 ကို Pro ပြန်ပေးလို့ရတယ်။ ဒါကဘာကိုဆိုလဲလဲဆိုရင် Share 1500 တန်အခု 100 ပေါ့။ ကိုယ့်ရဲ့ Email ကိုလဲ Admin အနေနဲ့ပြန် Invite လို့ရတယ်။ ချွင်းချက်ကတော့ Pro 1 Week မာက Invite features မပါပါဘူး။",
+    "Educational ဆိုတာကကျောင်းသားတေအတွက်ပါ။ Lifetime ဆိုတော့ Features တေကလဲကျောင်းမာလိုသလောက်ပဲပါတာပါ။ ပြောရရင် Limited Features ပေါ့။ သူကဝယ်သူရဲ့ Email ကို Invite ပေးတာပါ။ Warranty 5 လပေးထားပါတယ်။",
     "Android ရော iOS ရော PC,laptop အကုန်ရပါတယ်။ Playstore & AppStore က official appတေမာပဲသုံးရမာပါ။"
   ],
     stepButtons: [
     "ဘာတေကွာလဲ?",
     "ဆက်ရန်",
     "Privateကရော?",
+    "ဆက်ရန်",
     "Educational<br>ကရော?",
     "All Devices<br>ရလား?"
   ]
@@ -4769,9 +4762,11 @@ if (regionalProducts[productName]) {
             title = 'Private <span style="background:#000000; color:#ffffff; padding:2px 6px; border-radius:4px; font-size:11px; margin-left:8px; font-weight:900; box-shadow:0 0 6px #666666;">VIP+ Subscription</span>';
           } else if (sectionName === 'Share') {
             title = 'Share <span style="background:#d4d4d8; color:#18181b; padding:2px 6px; border-radius:4px; font-size:11px; margin-left:8px; font-weight:900; box-shadow:0 0 6px #d4d4d8;">VIP Subscription</span>';
+          } else if (sectionName === 'Private (Own Mail)') {
+            title = 'Private (Own Mail) <span style="background:#d4d4d8; color:#18181b; padding:2px 6px; border-radius:4px; font-size:11px; margin-left:8px; font-weight:900; box-shadow:0 0 6px #d4d4d8;">VIP Subscription</span>';
           }
         } else if (productName === 'Meitu') {
-         if (sectionName === 'Private') {
+         if (sectionName === 'Private' || sectionName === 'OwnMail') {
             title += ' <span style="background:#ff4d8d; color:#ffffff; padding:2px 6px; border-radius:4px; font-size:11px; margin-left:8px; font-weight:900; box-shadow:0 0 6px #ff4d8d;">VIP Subscription</span>';
           }
          } else if (productName === 'PhotoRoom') {
@@ -6537,7 +6532,15 @@ Full warranty for full duration.
 
 Private (Own Mail)
 Full warranty for full duration` + generalDetailsBlock,
-    "Meitu": `Share\nOne device only\nFull warranty.\n\nPrivate\nFull warranty.\n3 devices max` + generalDetailsBlock,
+    "Meitu": `Private
+    Full warranty.
+    3 devices max.
+    ကုန်ရင်လဲသက်တန်းတိုးလို့ရပါတယ်။
+    OwnMail
+    Full warranty.
+    3 devices max.
+    OwnMail ဝယ်တာမလို့ Account password ပေးဖို့လိုပါတယ်။ Account မရှိရင်တော့ ဒီကဖွင့်ပေးပါတယ်။
+    ကုန်ရင်လဲသက်တန်းတိုးလို့ရပါတယ်။` + generalDetailsBlock,
     "PicsArt": `Share
 Full warranty for full duration
 One device only
@@ -6561,17 +6564,9 @@ Canva Account တေက device limit ကန့်သတ်ချက်မရှ�
 Private Pro
 Full warranty` + generalDetailsBlock,
     "VSCO": `Share\nFull warranty for full duration\nOne device only` + generalDetailsBlock,
-    "PhotoRoom": `Share\n6-months warranty\nNo warranty ≠ will fail\nOne device only` + generalDetailsBlock,
-    "Remini": `Share
-Website 1-Month: full warranty
-APK 1-Year: 6-months warranty
-One device only
-
-Private
-1 Month (Web)
-5 devices maxသုံးလို့ရပါတယ်။
-Support All device
-Full Warranty` + generalDetailsBlock,
+    "PhotoRoom": `Private Full Warranty.` + generalDetailsBlock,
+    "Remini": `Private Full Warranty.
+    Remini Official Website မာသုံးရမာပါ။ App မာသုံးရမာမဟုတ်ပါဘူး။` + generalDetailsBlock,
     "NordVpn": `Share\n1-Year: 6-months warranty\nOne device only\n\nPrivate\nFull warranty for full duration\nUp to 6 devices` + generalDetailsBlock,
     "Express Vpn": `Share\n7 Days Warranty.\nOne device only\n\nPrivate\nFull warranty for full duration\nUp to 9 devices: 8 Phones & 1 PC or Laptop\nCustom Password` + generalDetailsBlock,
     "Surfshark Vpn": `Share
@@ -6714,10 +6709,10 @@ Can use up to 5 devices.
 Full warranty.
 ကုန်ရင်သက်တန်းတိုးလို့ရပါတယ်။` + generalDetailsBlock,
     "BSTATION": `Private\nFull warranty.` + generalDetailsBlock,
-    "INSHOT": `Lifetime Premium
-Mod appမဟုတ်ပါဘူး။Android onlyပဲသူံးလို့ရပါတယ်။ Playstore ကappမာပဲသုံးလို့ရပါမယ်။
-Warranty 3လပေးပါတယ်။
-Share plan မို့လို့ 1 device ပဲသုံးလို့ရပါမယ်။` + generalDetailsBlock,
+    "INSHOT": `Share
+1 device only.
+3 Months Warranty.
+Mod app မဟုတ်ပါဘူး။ Android only ပဲသူံးလို့ရပါတယ်။ Playstore က Official app မာပဲသုံးလို့ရမာပါ။` + generalDetailsBlock,
     "Duolingo Super": `Family Head(Can Invite 5 email)\nFull warranty for plan duration.\n\nInvite Private\nFull warranty for plan duration.` + generalDetailsBlock,
     "SCRIBD": `Private\nFull warranty for plan duration.` + generalDetailsBlock,
     "WPS Office": `Share
@@ -6961,6 +6956,14 @@ Domain type nonrenewable
     1 Week Plan ဆိုတာက 5 To 7Days ရမာပါ။ အမြဲ 7Days မပြည့်နိုင်ပါဘူး။ ပီးတော့ Android Only ပဲသုံးလို့ရပါတယ်။ Month Plan တေမာပဲ iOS ရတာပါ။ စာသေချာဖတ်ပီးမယူကြပါဗျ။
 </div>`;
    }
+   if (productName === "Wink")
+   if (item.section === "Share" && item.duration.includes("1 Month")) {
+    return `<div class="burmese-font">
+    One device only
+    25 Days warranty.
+    Share Plan မို့လို့အနဲဆုံး 25 Days to အများဆုံး 30 Days ရမာပါ။
+</div>`;
+   }
     if (productName === "CapCut")
    if (item.section === "Private" && item.duration.includes("1 Week")) {
     return `<div class="burmese-font">
@@ -6974,6 +6977,19 @@ Domain type nonrenewable
     return `<div class="burmese-font">
     ဒီကပေးတဲ့ Email and Password ကို PicsArt မာထည့်သုံးရုံပါပဲ။
     5 Days warranty.
+</div>`;
+   }
+    if (productName === "Remini")
+   if (item.section === "Private" && item.duration.includes("1 Week")) {
+    return `<div class="burmese-font">
+    Private Full Warranty.
+    Remini Official Website မာသုံးရမာပါ။ App မာသုံးရမာမဟုတ်ပါဘူး။
+</div>`;
+   }
+    if (productName === "PhotoRoom")
+   if (item.section === "Private" && item.duration.includes("1 Week")) {
+    return `<div class="burmese-font">
+    Private Full Warranty.
 </div>`;
    }
 
@@ -7084,7 +7100,10 @@ if (productName === "Express Vpn" && item.section === "Share" && /^phone/i.test(
     }
     if (productName === "TikTok Non Official" && item.section.toLowerCase().includes("livestream")) return null;
     const fullText = moreDetailsByProduct[forceNoteProductName];
-        if (productName === "INSHOT") return `Mod appမဟုတ်ပါဘူး။Android onlyပဲသူံးလို့ရပါတယ်။ Playstore ကappမာပဲသုံးလို့ရပါမယ်။\nWarranty 3လပေးပါတယ်။\nShare plan မို့လို့ 1 device ပဲသုံးလို့ရပါမယ်။`;
+        if (productName === "INSHOT") return `
+        1 device only.
+        3 Months Warranty.
+        Mod app မဟုတ်ပါဘူး။ Android only ပဲသူံးလို့ရပါတယ်။ Playstore က Official app မာပဲသုံးလို့ရမာပါ။`;
     if (!fullText) return null;
     const rawDetails = fullText.trim();
     const sectionHeaders = /^(Share|Own Mail|Private Business|Private Pro|Private|SemiPrivate Premium|Whole Account Standard|Whole Account Premium|SemiPrivate Standard|SemiPrivate|FullPrivate|Tinder Plus Share|Login|Gift Plan & Link Plan|Gift Plan|Link Plan|Views \(NoDrop\)|Likes \(NoDrop\)|Comment - Emoji Type|Comment - Custom Type|Package Plan|Livestream Views|Livestream Likes|Livestream Share|Post Views|Positive Reactions|Negative Reactions|Custom Reactions|Premium Reactions|Members \(30Days Refill\)|Livestream Views|Comment - Impression Type|Comment - Custom Type|Video Views|Video Likes|Post Likes|Profile Followers|Page Followers|Live Stream Views|Video Views & Reels|Likes|Followers|Personal Plus \(Share\)|Personal Plus \(Private\)|Business Plus - Invite Own Email|Business - Own|Private Own Mail|Private \(Own Mail\)|Base Service|1 Profile\(Semiprivate\)|5 Profiles\(Whole Account\)|Nitro Basic \(Key\)|Individual|Own Mail Invite|Sharing Pro|Plan Basic|Plan Premium|HBO MAX \(Premium\) 1 Month|Private Whole Account \(1 Month\)|1 Profile|Whole Account|OwnMail Private|OwnMail Invite|Individual Plan|Business Own\(Full Warranty\)|Business Plus Own\(Full Warranty\)|Business Plus Own|Normal Plan|Family Head\(Can Invite 5 email\)|Invite Private|Web Private|App&Web Private|Pro Share|Pro Private|Lifetime Premium|Educational\(Invite\)|Individual Plan\(Private\)|Stars|Japan Region \(¥\)|US Region \(\$\)|UK Region \(£\)|Custom Amount|Turkey Region \(TL\)|Indonesia Region \(IDR\)|Brazil Region \(BRL\)|Korea Region \(₩\)|India Region \(₹\)|Australia Region \(A\$\)|Germany Region \(€\)|France Region \(€\)|Italy Region \(€\)|Switzerland Region \(CHF\)|Canada Region \(C\$\)|UAE Region \(AED\)|Poland Region \(PLN\)|Nitro \(Key\))/i;

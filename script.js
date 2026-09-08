@@ -1105,6 +1105,9 @@
       }, {
         "duration": "1 Month",
         "price": "10,000 Kyats"
+      }, {
+        "duration": "3 Months",
+        "price": "29,000 Kyats"
       }]
     },
     "Surfshark Vpn": {
@@ -1295,7 +1298,7 @@
       "duration": "2 Years (+ Gemini Pro)",
         "price": "75,000 Kyats"
       }],
-      "Private": [{
+      "Private Head": [{
         "duration": "3 Months (+ Gemini Pro)",
         "price": "Out Of Stock"
       }]
@@ -1307,41 +1310,17 @@
       }]
     },
     "ChatGPT": {
-      "Private": [{
-        "duration": "3 Months",
-        "price": "Out Of Stock"
+      "Private OwnMail Go Subscription": [{
+        "duration": "1 Months",
+        "price": "33,000 Kyats"
       }],
-      "Personal Plus (Private)": [{
+      "Share Go Subscription": [{
         "duration": "1 Month",
-        "price": "Out Of Stock"
-      },
-      {
-        "duration": "2 Months",
-        "price": "Out Of Stock"
-      },
-      {
-        "duration": "3 Months",
-        "price": "Out Of Stock"
+        "price": "10,000 Kyats"
       }],
-      "Personal Plus(Full Warrenty)": [{
-        "duration": "2 Months",
-        "price": "Out Of Stock"
-      }],
-      "Business Plus - Invite Own Email": [{
+      "Private OwnMail Plus Subscription": [{
         "duration": "1 Month",
-        "price": "Out Of Stock"
-      }],                                     
-      "Business Plus Own": [{
-        "duration": "1 Month",
-        "price": "Out Of Stock"
-      }],
-      "Business Plus Own(Full Warranty)": [{
-        "duration": "1 Month",
-        "price": "Out Of Stock"
-      },
-      {
-        "duration": "3 Months",
-        "price": "Out Of Stock"
+        "price": "115,000 Kyats"
       }]
     },
     "Gemini Pro": {
@@ -1411,7 +1390,7 @@
         "duration": "2 Years",
         "price": "75,000 Kyats"
   }],
-      "Private": [{
+      "Private Head": [{
         "duration": "4 Months",
        "price": "Out Of Stock"
       }]
@@ -3619,11 +3598,11 @@ const popupTextByProduct = {
   ]
 },
   "NordVpn": {
-  title: "ဘာမ မရှင်းပြဘူး ",
+  title: "NordVpn Info",
   button: "Planအကြောင်းရှင်းပြရန်နှိပ်ပါ",
-  doneText: ":)",
+  doneText: "ရပါပီ။",
   steps: [
-    "ခုထိအယုံလွယ်နေတုန်းပဲနော်။ ထားခဲ့ခံရတာလဲမဆန်းပါဘူး။"
+    "NordVPN က Express VPN လိုပါပဲ။ SurfShark လို Windows တေမာသူံးမကောင်းတာမျိုးလဲမရှိဘူး။ HMA VPN လို iOS မရတာမျိုးလဲမရှိဘူး။ အကုန်ကောင်းပါတယ်။ အထူးသဖြင့် Windows User တေအတွက်ပိုပီးအဆင်ပြေပါတယ်။ Private Account တေက 8~10 Devices လောက်ထိဝင်သုံးလို့ရပါတယ်။"
   ]
 },
   "Surfshark Vpn": {
@@ -3686,7 +3665,17 @@ const popupTextByProduct = {
     "ဆက်ရန်"
   ]
   },
-  "ChatGPT": {
+   "ChatGPT": {
+    title: "ChatGPT Info",
+    button: "Plan အကြောင်းရှင်းပြပေးပါ။",
+    nextText: "ဆက်ရန်",
+    backText: "Back",
+    steps: [
+    "ဒါက ChatGpt ရဲ့ Official Plan တေပါ။ Private OwnMail ကဝယ်သူရဲ့အကောင့်ထဲကို Subscription ထည့်ပေးတာပါ။ Official Plan မို့လို့ Full Warranty လဲပေးထားပါတယ်။ Up to 5 Devices ထိလဲသုံးလို့ရပါတယ်။",
+    "Share Plan ကတော့ Warranty 25 Days ပေးထားပါတယ်။ Same Official Plan ပါပဲ။ Private နဲ့မတူတာက Share Plan မာ 1 Device ပဲဝင်သုံးလို့ရပါတယ်။ ကိုယ်ကတခြားသူတေနဲ့တူတူ Share သုံးရမာပါ။ That include Chat History & Subscription Limit."
+  ]
+  },
+  "cegie": {
     title: "ChatGPT Info",
     button: "Planတေကအများရီးပဲနားမလည်ဘူး။",
     nextText: "ဘာတေကွာလဲ?",
@@ -3848,13 +3837,13 @@ const popupTextByProduct = {
     steps: [
     "Flow Ai Plan နှစ်ခုကတော်တော်ကွာပါတယ်။ အဲ့တာတေမပြောခင် Powered By Gemini လို့ရေးထားတာက ဒါဝယ်ရင် Gemini Pro ဝယ်တာနဲ့တူတူပဲလို့ပြောတာပါ။ Gemini Pro အကြောင်းကတော့ Gemini ထဲမာရှင်းပြပေးထားပီးပီမလို့ ဒီမာထက်မပြောတော့ပါဘူး။",
     "အရင်ဆုံး OwnMail Invite Plan ကိုပြောပါမယ်။ သူက Ai Credit တစ်လကို 1000 ရပါတယ်အဲ့ 1000 ကိုကျန်တဲ့ Family Plan ဝယ်ထားတဲ့သူ 5 ယောက်နဲ့တူတူသုံးရမာပါ။ ကိုယ်ကသုံးသုံးတခြားသူကအကုန်သုံးသုံး Credit ကလျှော့နေမာမလို့ သေချာစဉ်းစားပီးမယူပါ။",
-    "Private ဆိုတာကကျကျနော်ဒီကနေအကောင့်ပေးမာပါ။ အဲ့အကောင့်က Family Invite လိုမျိုး Email 5 ခုပြန် Share လို့ရတယ်။ ဒါမဲ့ Region ချိန်းတတ်မ။ Invite နဲ့မတူတာက Credit တေကကိုယ်တယောက်ထဲသုံးရတာမို့လို့ အဆင်ပြေပါတယ်။",
-    "ဘာဝယ်သင့်လဲဆိုရင်တော့ကိုယ်က Video တေများများထုတ်ချင်ရင် Private ယူပါ။ Invite မာက Credit တေက Share use ရတာမို့လို့။ Official Plan ပဲမို့လို့ Any device ဖြစ်ဖြစ်သုံးလို့ရပါတယ်။ Flow Ai Website မာတော့ Vpn ခံသုံးပေးရပါမယ်။"
+    "ဒါပေမဲ့ တချို့က Subscription ကို Gemini Pro သုံးဖို့ Or Google Storage လိုချင်လို့ဝယ်တဲ့သူတေလဲရှိပါတယ်။ သူတို့က Flow Ai ကိုမသုံးကြတာမို့လို့အဲ့လို Members တေနဲ့တွေ့ရင်တော့လတိုင်း Credit 1,000 ကကိုယ်တယောက်ထဲသုံးနေရမာပါ။",
+    "Private Head ဆိုတာက Basically Invite OwnMail နဲ့အကုန်တူတူပါပဲ။ 1,000 Credits ကိုကိုယ်တယောက်ထဲသုံးရတာပဲကွာသွားမာပါ။"
   ],
     stepButtons: [
     "ဆက်ရန်",
-    "Private ဆိုတာက?",
-    "ဘာဝယ်သင့်လဲ?"
+    "ဆက်ရန်",
+    "Private Head<br>ဆိုတာက?",
   ]
   },
   "NotebookLM": {
@@ -4011,15 +4000,15 @@ const popupTextByProduct = {
     nextText: "ဆက်ရန်",
     backText: "Back",
     steps: [
-    "Google One မာရွေးချယ်စရာနှစ်ခုပဲရှိပါတယ်။ OwnMail invite & Private. ဘာကွာလဲဆိုရင် 5TB ချင်းကတူတူပါပဲ။ OwnMail invite ဆိုတာကဝယ်သူရဲ့ Google Account ထဲကို 5TB ထည့်ပေးတာပါ Family အနေနဲ့။",
-    "5TB ကိုတခြား Family Members 5‌ ယောက်နဲ့ Share သုံးရတာဆိုပေမဲ့ကိုယ်သုံးထားတဲ့ Storage တေကိုဘယ်သူမဝင်ကြည့်လို့မရပါဘူး။ Full Private ပါပဲ။ Share လို့ခေါ်ရတာကလဲ 5TB ကိုကိုယ်တယောက်ထဲသုံးနေရတာမဟုတ်ပဲတခြား 4 ယောက်နဲ့တူတူသုံးရတာမလို့ပါ။ ဒါမဲ့ခုဏပြောသလိုပဲ Storage တေကတော့လုံးဝ Private ပါ။",
-    "Private ဆိုတာက Invite Plan မာလိုမျိုးတခြားသူတေမပါတော့ပဲကိုယ်တယောက်သုံးရတာပါ။ Invite တုန်းကလိုပဲ Storage တေက Private ဖြစ်နေအုန်းမယ်။ Invite ရော Private ရော Plan နှစ်ခုလူံးကဝယ်ရင် Gemini Pro subscription ပါတခါထဲရမာပါ။",
-    "ဘာဝယ်သင့်လဲဆိုရင်ကျနော့်အနေနဲ့ကတော့ Invite Plan ကပိုကောင်းတယ်ထင်ပါတယ်။ Mm region google အကောင့်ဆိုရင်ကျနော့်ကို Mail ပေးလိုက်တာနဲ့ရပါပီ။ mm region မဟုတ်ရင်လဲကျနော်အကောင့်ထဲဝင်ပီးပြောင်းပေးတာဖြစ်ဖြစ် Mail change တာဖြစ်ဖြစ်ကြိုက်တာလုပ်လို့ရပါတယ်။ ကုန်သွားရက်လဲလတိုင်းသက်တန်းဆက်တိုးသွားလို့ရပါတယ်။"
+    "Google One မာကရ္စေးချယ်စရာ Plan 2 ခုပဲရှိတာပါ။<br>OwnMail Invite Private & Private Head",
+    "ဘာကွာလဲဆိုရင် Invite OwnMail ဆိုတာကဝယ်သူရဲ့ Email ကို Pro လုပ်ပေးတာပါ။ Region မတူတေတေဘာတေဖြစ်ပီးဝင်မရရင်ကျနော်ဝင်လုပ်ပေးဖို့လိုပါတယ်။ Password ပေးရမာပါ။ Account ကိုဝင်လုပ်ရင် 3 to 5 minutes လောက်ပဲကြာတာပါ Hack လဲမ Hack ပါဘူး။ ဘာမလဲဝင်မကြည့်ပါဘူး။",
+    "Invite Plan က Share Plan မျိုးမဟုတ်ပါဘူး။ ကိုယ့် Email နဲ့ကိုယ် သုံးရတာမလို့ Private ပါပဲ။ Storage က Share ဆိုပေမဲ့ကိုယ်တိုင်ထားတာတေက ကိုယ်ပဲမြင်ရမာပါ။ 5TB မာ 1ယောက် 1TB လိုပုံစံ Share ရလို့ Share လို့ခေါ်တာပါ။",
+    "Private Head ကတော့ကျန်တာအကုန်တူတူပါပဲ Invite ထက်ပိုကောင်းသွားတာက Storage 5 TB ကိုကိုယ်တယောက်ထဲသုံးရတာမျိုးဖြစ်သွားတာပဲရှိတာပါ။ 5TB ဆိုတာ 5,000 GB ပါ။ ဘယ်သူမအဲ့လောက်ထိမသူံးနိုင်ပါဘူး အဲ့တော့ User တေအတွက်က OwnMail Plan နဲ့တင်အဆင်ပြေပါတယ်။"
   ],
     stepButtons: [
+    "ဘာတေကွာလဲ",
     "ဆက်ရန်",
-    "Private<div>ကရော?",
-    "ဘာဝယ်သင့်လဲ?"
+    "Private Head<br>ဆိုတာက?"
   ]
   },
   "Telegram Premium": {
@@ -4741,7 +4730,7 @@ if (regionalProducts[productName]) {
              title += ' <span style="background:#ffeb3b; color:#000; padding:2px 6px; border-radius:4px; font-size:11px; margin-left:8px; font-weight:900; box-shadow:0 0 5px #ffeb3b;">Powered by CreativeCloud</span>';
           }
         } else if (productName === 'Flow AI' || productName === 'NotebookLM') {
-         if (sectionName === 'Invite OwnMail' || sectionName === 'OwnMail Invite' || sectionName === 'Private') {
+         if (sectionName === 'Invite OwnMail' || sectionName === 'OwnMail Invite' || sectionName === 'Private Head') {
             title += ' <span style="background:#ffeb3b; color:#000; padding:2px 6px; border-radius:4px; font-size:11px; margin-left:8px; font-weight:900; box-shadow:0 0 5px #ffeb3b;">Powered By GoogleOneGemini</span>';
           }
         } else if (productName === 'AlightMotion') {
@@ -4786,7 +4775,7 @@ if (regionalProducts[productName]) {
             title += ' <span style="background:#a5b4fc; color:#1e1b4b; padding:2px 6px; border-radius:4px; font-size:11px; margin-left:8px; font-weight:900; box-shadow:0 0 6px #a5b4fc;">Pro Subscription</span>';
           }
         } else if (productName === 'NordVpn') {
-         if (sectionName === 'Share' || sectionName === 'Private') {
+         if (sectionName === 'Private') {
             title += ' <span style="background:#1e90ff; color:#ffffff; padding:2px 6px; border-radius:4px; font-size:11px; margin-left:8px; font-weight:900; box-shadow:0 0 6px #1e90ff;">Pro Subscription</span>';
           }
          } else if (productName === 'Surfshark Vpn') {
@@ -4797,7 +4786,7 @@ if (regionalProducts[productName]) {
          if (sectionName === 'Share Plan' || sectionName === 'Private Plan') {
             title += ' <span style="background:#000000; color:#ffffff; padding:2px 6px; border-radius:4px; font-size:11px; margin-left:8px; font-weight:900; box-shadow:0 0 6px #666666;">Super Subscription</span>';
           }
-        } else if (productName === 'ChatGPT') {
+        } else if (productName === 'gojo4hw4') {
          if (sectionName === 'Personal Plus (Private)' || sectionName === 'Business Plus - Invite Own Email' || sectionName === 'Personal Plus(Full Warrenty)' || sectionName === 'Business Plus Own' || sectionName === 'Business Plus Own(Full Warranty)') {
             title += ' <span style="background:#000000; color:#00ff9c; padding:2px 6px; border-radius:4px; font-size:11px; margin-left:8px; font-weight:900; box-shadow:0 0 6px #00ff9c;">Plus</span>';
           }
@@ -4919,6 +4908,14 @@ if (regionalProducts[productName]) {
           } else if (sectionName === 'Private Premium') {
             title = 'Private <span style="background:#000000; color:#ffffff; padding:2px 6px; border-radius:4px; font-size:11px; margin-left:8px; font-weight:900; box-shadow:0 0 6px #666666;">Premium Subscription</span>';
           }
+          } else if (productName === 'ChatGPT') {
+         if (sectionName === 'Private OwnMail Go Subscription') {
+            title = 'Private OwnMail <span style="background:#000000; color:#00ff9c; padding:2px 6px; border-radius:4px; font-size:11px; margin-left:8px; font-weight:900; box-shadow:0 0 6px #00ff9c;">Go Subscription</span>';
+           } else if (sectionName === 'Share Go Subscription') {
+            title = 'Share <span style="background:#000000; color:#00ff9c; padding:2px 6px; border-radius:4px; font-size:11px; margin-left:8px; font-weight:900; box-shadow:0 0 6px #00ff9c;">Go Subscription</span>';
+          } else if (sectionName === 'Private OwnMail Plus Subscription') {
+            title = 'Private OwnMail <span style="background:#000000; color:#00ff9c; padding:2px 6px; border-radius:4px; font-size:11px; margin-left:8px; font-weight:900; box-shadow:0 0 6px #00ff9c;">Plus Subscription</span>';
+          }
           } else if (productName === 'Minecraft') {
          if (sectionName === 'Java & Bedrock Standard Edition') {
             title = 'Java & Bedrock <span style="background:#5eead4; color:#042f2e; padding:2px 6px; border-radius:4px; font-size:11px; margin-left:8px; font-weight:900; box-shadow:0 0 6px #5eead4;">Standard Edition</span>';
@@ -4977,7 +4974,7 @@ if (regionalProducts[productName]) {
             title += ' <span style="background:#000000; color:#00ff9c; padding:2px 6px; border-radius:4px; font-size:11px; margin-left:8px; font-weight:900; box-shadow:0 0 6px #00ff9c;">Family Subscription</span>';
           }
           } else if (productName === 'Google One') {
-         if (sectionName === 'Private') {
+         if (sectionName === 'Private Head') {
             title += ' <span style="background:#cbd5e1; color:#0f172a; padding:2px 6px; border-radius:4px; font-size:11px; margin-left:8px; font-weight:900; box-shadow:0 0 6px #cbd5e1;">5,000 GB</span>';
           }
          if (sectionName === 'OwnMail invite') {
@@ -5017,7 +5014,7 @@ if (
   heroImageSrc = imageFor["Apple Gift Card"];
 }
     const pageHTML = `
-      <button class="back-btn" id="product-back-btn">← Back</button>
+      <button class="back-btn" id="product-back-btn">Back</button>
       <div class="product-hero">
         <div class="hero-img-wrap"><img src="${heroImageSrc || imageFor['Google Play Gift Card']}" alt="${escapeHTML(productName)} logo" /></div>
         <div class="hero-title">${escapeHTML(productName)}</div>
@@ -6372,7 +6369,7 @@ if (productName === "Telegram Star") {
   // --- Render Region Grid for Gift Cards ---
   function renderRegionalSelector(productName, regions) {
     const pageHTML = `
-      <button class="back-btn" id="product-back-btn">← Back</button>
+      <button class="back-btn" id="product-back-btn">Back</button>
       <div class="product-hero">
         <div class="hero-img-wrap"><img src="${imageFor[productName]}" alt="${escapeHTML(productName)} logo" /></div>
         <div class="hero-title">${escapeHTML(productName)}</div>
@@ -6567,8 +6564,12 @@ Full warranty` + generalDetailsBlock,
     "PhotoRoom": `Private Full Warranty.` + generalDetailsBlock,
     "Remini": `Private Full Warranty.
     Remini Official Website မာသုံးရမာပါ။ App မာသုံးရမာမဟုတ်ပါဘူး။` + generalDetailsBlock,
-    "NordVpn": `Share\n1-Year: 6-months warranty\nOne device only\n\nPrivate\nFull warranty for full duration\nUp to 6 devices` + generalDetailsBlock,
-    "Express Vpn": `Share\n7 Days Warranty.\nOne device only\n\nPrivate\nFull warranty for full duration\nUp to 9 devices: 8 Phones & 1 PC or Laptop\nCustom Password` + generalDetailsBlock,
+    "NordVpn": `Private
+    Full Warranty.
+    Up to 10 Devices.` + generalDetailsBlock,
+    "Express Vpn": `Private
+    Full warranty for full duration
+    Up to 9 devices: 8 Phones & 1 PC or Laptop` + generalDetailsBlock,
     "Surfshark Vpn": `Share
 50 Days Warranty.
 One device only
@@ -6631,7 +6632,21 @@ Full warranty.` + generalDetailsBlock,
     "TeraBox": `Sharing (2TB)
 Shared account. One device only.
 Full warranty for plan duration.` + generalDetailsBlock,
-    "ChatGPT": `Personal Plus (Private)
+    "ChatGPT": `Private OwnMail Go Subscription
+Official Plan.
+Full Warranty.
+Up to 5 Devices.
+
+Share Go Subscription
+Official Plan.
+25 Days Warranty.
+1 Device Only.
+
+Private OwnMail Plus Subscription
+Official Plan.
+Full Warranty.
+Up to 5 Devices.` + generalDetailsBlock,
+    "gojoeeh": `Personal Plus (Private)
 Up to 5 devices (not recommended)
 ${chatGptWarrantyNote}
 
@@ -6646,26 +6661,18 @@ ${chatGptWarrantyNote}
 
 Business Plus Own(Full Warranty)
 Full Warranty for full duration. Deactivateဖြစ်လဲတစ်လပြည့်တဲ့ထိလဲပေးမာပါ။` + generalDetailsBlock,
-    "Gemini Pro": `Head(Can Invite 5 Email)
+    "Gemini Pro": `OwnMail Invite
+ဒါကကိုယ့်ရဲ့ Google Account ကို Pro Subscription ထည့်ပေးတာပါ။ Password က MM Region ဆိုရင်ပေးစရာမလိုပါဘူး။ မဟုတ်လို့ Join မရတာမျိုးဖြစ်ခဲ့ရင်တော့အကောင့်ထဲဝင်လုပ်ပေးရမာမလို့ Password ပေးရပါတယ်။ 5 Minutes လောက်ပဲကြာတာပါ။ Full Warranty.
+
+Head(Can Invite 5 Email)
 Includes 5,000GB Google storage• Unlimited devices
 ဒါမဲ့ဝယ်ရင်စစချင်းသိထားရမာတေရှိပါတယ်။ Admin ပြောပြပါလိမ့်မယ်။
-3 Months (Full Warranty) — 3 Months လုံး Full Warranty ပေးပါတယ်။
-
-OwnMail Invite
-ဒါကကိုယ့်ရဲ့GmailကိုပဲProလုပ်ပေးတာမလို့။အလုပ်လဲမရှုပ်ပါဘူး။ Password လဲပေးစရာမလိုပါဘူး။ Device ကလဲဝင်ထားသလောက်သုံးလို့ရနေမာပါ။ Full Warranty.` + generalDetailsBlock,
+3 Months (Full Warranty) — 3 Months လုံး Full Warranty ပေးပါတယ်။` + generalDetailsBlock,
     "Flow AI": `OwnMail Invite
-ဒီဟာကGoogle One Pro,Gemini Proဝယ်ရင်ပါတဲ့ဟာပါ။
-Invite Planမို့လို့Ai Credit တစ်လ 1000ကိုတော့ Share Useရမာပါ။
-ဆိုလိုတာကတခြားFamily Membersတေသုံးရင်လဲCreditsတေကလျှော့နိုင်ပါတယ်။
-ဒီဟာဝယ်ရင်
-Google One Storage 5 TB 3 Months(Share)
-Gemini Pro 3 Monthsပါရမာပါ။` + generalDetailsBlock,
+Flow Ai ဆိုတာက Google One Pro တို့ Gemini Pro ဝယ်ရင်အလိုလိုပါပါတယ်။ Same Plan လို့ပြောတာပါ။ Invite Plan မို့လို့ Ai Credit တစ်လ 1,000 ကိုတော့ Share Use ရမာပါ။ အသေးစိတ်ကို Plan Explain ထဲမာထည့်ပေးထားပါတယ်။` + generalDetailsBlock,
 
 "NotebookLM": `OwnMail Invite
-ဒီဟာကGoogle One Pro,Gemini Proဝယ်ရင်ပါတဲ့ဟာပါ။
-ဒီဟာဝယ်ရင်
-Google One Storage 5 TB 3 Months(Share)
-Gemini Pro 3 Monthsပါရမာပါ။` + generalDetailsBlock,
+NotebookLM ဆိုတာက Google One Pro တို့ Gemini Pro ဝယ်ရင်အလိုလိုပါပါတယ်။ Same Plan လို့ပြောတာပါ။ အဲ့တာကြောင့်ကိုယ်က Gemini Pro or Google One Pro ဝယ်ထားတာရှိရင်ထက်ဝယ်စရာမလိုပါဘူး။` + generalDetailsBlock,
     "Claude Opus": `Private API Key\nFull warranty` + generalDetailsBlock,
     "Zoom": `Full warranty.\nAll pro features unlock.\nCan use 2-5 devices.` + generalDetailsBlock,
     "YouTube Premium": `Private (Individual Plan)
@@ -7094,7 +7101,7 @@ if (productName === "Express Vpn" && item.section === "Share" && /^phone/i.test(
 
     if (productName === 'Gemini Pro') {
         const standardNote = `Includes 5,000GB Google storage• Unlimited devices\nဒါမဲ့ဝယ်ရင်စစချင်းသိထားရမာတေရှိပါတယ်။ Admin ပြောပြပါလိမ့်မယ်။`;
-        if (item.section.includes('OwnMail')) return `ဒါကကိုယ့်ရဲ့GmailကိုပဲProလုပ်ပေးတာမလို့။အလုပ်လဲမရှုပ်ပါဘူး။ Password လဲပေးစရာမလိုပါဘူး။ Device ကလဲဝင်ထားသလောက်သုံးလို့ရနေမာပါ။ Full Warranty.`;
+        if (item.section.includes('OwnMail')) return `ဒါကကိုယ့်ရဲ့ Google Account ကို Pro Subscription ထည့်ပေးတာပါ။ Password က MM Region ဆိုရင်ပေးစရာမလိုပါဘူး။ မဟုတ်လို့ Join မရတာမျိုးဖြစ်ခဲ့ရင်တော့အကောင့်ထဲဝင်လုပ်ပေးရမာမလို့ Password ပေးရပါတယ်။ 5 Minutes လောက်ပဲကြာတာပါ။ Full Warranty.`;
         if (item.duration.includes('Full Warranty')) return `${standardNote}\n3 Months (Full Warranty) — 3 Months လုံး Full Warranty ပေးပါတယ်။`;
         return standardNote;
     }
@@ -7106,7 +7113,7 @@ if (productName === "Express Vpn" && item.section === "Share" && /^phone/i.test(
         Mod app မဟုတ်ပါဘူး။ Android only ပဲသူံးလို့ရပါတယ်။ Playstore က Official app မာပဲသုံးလို့ရမာပါ။`;
     if (!fullText) return null;
     const rawDetails = fullText.trim();
-    const sectionHeaders = /^(Share|Own Mail|Private Business|Private Pro|Private|SemiPrivate Premium|Whole Account Standard|Whole Account Premium|SemiPrivate Standard|SemiPrivate|FullPrivate|Tinder Plus Share|Login|Gift Plan & Link Plan|Gift Plan|Link Plan|Views \(NoDrop\)|Likes \(NoDrop\)|Comment - Emoji Type|Comment - Custom Type|Package Plan|Livestream Views|Livestream Likes|Livestream Share|Post Views|Positive Reactions|Negative Reactions|Custom Reactions|Premium Reactions|Members \(30Days Refill\)|Livestream Views|Comment - Impression Type|Comment - Custom Type|Video Views|Video Likes|Post Likes|Profile Followers|Page Followers|Live Stream Views|Video Views & Reels|Likes|Followers|Personal Plus \(Share\)|Personal Plus \(Private\)|Business Plus - Invite Own Email|Business - Own|Private Own Mail|Private \(Own Mail\)|Base Service|1 Profile\(Semiprivate\)|5 Profiles\(Whole Account\)|Nitro Basic \(Key\)|Individual|Own Mail Invite|Sharing Pro|Plan Basic|Plan Premium|HBO MAX \(Premium\) 1 Month|Private Whole Account \(1 Month\)|1 Profile|Whole Account|OwnMail Private|OwnMail Invite|Individual Plan|Business Own\(Full Warranty\)|Business Plus Own\(Full Warranty\)|Business Plus Own|Normal Plan|Family Head\(Can Invite 5 email\)|Invite Private|Web Private|App&Web Private|Pro Share|Pro Private|Lifetime Premium|Educational\(Invite\)|Individual Plan\(Private\)|Stars|Japan Region \(¥\)|US Region \(\$\)|UK Region \(£\)|Custom Amount|Turkey Region \(TL\)|Indonesia Region \(IDR\)|Brazil Region \(BRL\)|Korea Region \(₩\)|India Region \(₹\)|Australia Region \(A\$\)|Germany Region \(€\)|France Region \(€\)|Italy Region \(€\)|Switzerland Region \(CHF\)|Canada Region \(C\$\)|UAE Region \(AED\)|Poland Region \(PLN\)|Nitro \(Key\))/i;
+    const sectionHeaders = /^(Share|Own Mail|Private Business|Private Pro|Private|SemiPrivate Premium|Private OwnMail Go Subscription|Whole Account Standard|Whole Account Premium|SemiPrivate Standard|SemiPrivate|FullPrivate|Tinder Plus Share|Login|Gift Plan & Link Plan|Gift Plan|Link Plan|Views \(NoDrop\)|Likes \(NoDrop\)|Comment - Emoji Type|Comment - Custom Type|Package Plan|Livestream Views|Livestream Likes|Livestream Share|Post Views|Positive Reactions|Negative Reactions|Custom Reactions|Premium Reactions|Members \(30Days Refill\)|Livestream Views|Comment - Impression Type|Comment - Custom Type|Video Views|Video Likes|Post Likes|Profile Followers|Page Followers|Live Stream Views|Video Views & Reels|Likes|Followers|Personal Plus \(Share\)|Personal Plus \(Private\)|Business Plus - Invite Own Email|Business - Own|Private Own Mail|Private \(Own Mail\)|Base Service|1 Profile\(Semiprivate\)|5 Profiles\(Whole Account\)|Nitro Basic \(Key\)|Individual|Own Mail Invite|Sharing Pro|Plan Basic|Plan Premium|HBO MAX \(Premium\) 1 Month|Private Whole Account \(1 Month\)|1 Profile|Whole Account|OwnMail Private|OwnMail Invite|Individual Plan|Business Own\(Full Warranty\)|Business Plus Own\(Full Warranty\)|Business Plus Own|Normal Plan|Family Head\(Can Invite 5 email\)|Invite Private|Web Private|App&Web Private|Pro Share|Pro Private|Lifetime Premium|Educational\(Invite\)|Individual Plan\(Private\)|Stars|Japan Region \(¥\)|US Region \(\$\)|UK Region \(£\)|Custom Amount|Turkey Region \(TL\)|Indonesia Region \(IDR\)|Brazil Region \(BRL\)|Korea Region \(₩\)|India Region \(₹\)|Australia Region \(A\$\)|Germany Region \(€\)|France Region \(€\)|Italy Region \(€\)|Switzerland Region \(CHF\)|Canada Region \(C\$\)|UAE Region \(AED\)|Poland Region \(PLN\)|Nitro \(Key\))/i;
     const lines = rawDetails.split('\n').map(l => l.trim()).filter(l => l.length > 0);
     let targetSection = String(forceNoteSectionName).replace(/\s*\(.*\)/, '');
     if (productName === 'HBO Max') targetSection = item.section;
@@ -7379,7 +7386,7 @@ dom.checkout.nextBtn.style.display = "inline-flex";
 function formatDetails(raw) {
 
 const headers =
-  /^(Share|Private|Private Own Mail|Private \(Own Mail\)|Private VIP|Private VIP Plus|Share Plan|Private Plan|Share Business|Own Mail|Private Business|Private Pro|SemiPrivate Premium|SemiPrivate Standard|Whole Account|Plan Basic \(Limited Screen\)|Plan Premium \(No Limit\)|HBO MAX \(Premium\) 1 Month|Private Whole Account Standard\(1 Month\)|Private Whole Account Premium\(1 Month\)|Family Private|Individual Plan|Sharing \(2TB\)|Personal Plus \(Private\)|Business Plus - Invite Own Email|Business Plus Own|Business Plus Own\(Full Warranty\)|Head\(Can Invite 5 Email\)|OwnMail Invite|Private \(Individual Plan\)|Private API Key|Login|Gift Plan & Link Plan|Gift Plan|Link Plan|Nitro \(Key\)|OwnMail Private|Lifetime Premium|Family Head\(Can Invite 5 email\)|Invite Private|Account|My\.ID\/my\.id|Login method|NoLoginBoost|Views \(NoDrop\)|Likes \(NoDrop\)|Package Plan|Base Service|Normal Plan|Web Private|App&Web Private|Tinder Plus Share|Livestream Views|Livestream Likes|Livestream Share|Post Views|Positive Reactions|Negative Reactions|Members \(30Days Refill\)|Comment - Impression Type|Comment - Custom Type|Video Views|Post Like|Profile Followers|Page follower|Live Stream Views|Video Views & Reels|Likes|Save|Reach|Followers|Pro Share|Pro Private|Educational|Individual|Stars|Japan Region|US Region|UK Region|Custom Amount|Turkey Region|Indonesia Region|Brazil Region|Korea Region|India Region|Australia Region|Germany Region|France Region|Italy Region|Switzerland Region|Canada Region|Poland Region|UAE Region)$/i;
+  /^(Share|Private|Private Own Mail|Private \(Own Mail\)|Private VIP|Private VIP Plus|Share Plan|Private OwnMail Go Subscription|Share Go Subscription|Private OwnMail Plus Subscription|Private Plan|Share Business|Own Mail|Private Business|Private Pro|SemiPrivate Premium|SemiPrivate Standard|Whole Account|Plan Basic \(Limited Screen\)|Plan Premium \(No Limit\)|HBO MAX \(Premium\) 1 Month|Private Whole Account Standard\(1 Month\)|Private Whole Account Premium\(1 Month\)|Family Private|Individual Plan|Sharing \(2TB\)|Personal Plus \(Private\)|Business Plus - Invite Own Email|Business Plus Own|Business Plus Own\(Full Warranty\)|Head\(Can Invite 5 Email\)|OwnMail Invite|Private \(Individual Plan\)|Private API Key|Login|Gift Plan & Link Plan|Gift Plan|Link Plan|Nitro \(Key\)|OwnMail Private|Lifetime Premium|Family Head\(Can Invite 5 email\)|Invite Private|Account|My\.ID\/my\.id|Login method|NoLoginBoost|Views \(NoDrop\)|Likes \(NoDrop\)|Package Plan|Base Service|Normal Plan|Web Private|App&Web Private|Tinder Plus Share|Livestream Views|Livestream Likes|Livestream Share|Post Views|Positive Reactions|Negative Reactions|Members \(30Days Refill\)|Comment - Impression Type|Comment - Custom Type|Video Views|Post Like|Profile Followers|Page follower|Live Stream Views|Video Views & Reels|Likes|Save|Reach|Followers|Pro Share|Pro Private|Educational|Individual|Stars|Japan Region|US Region|UK Region|Custom Amount|Turkey Region|Indonesia Region|Brazil Region|Korea Region|India Region|Australia Region|Germany Region|France Region|Italy Region|Switzerland Region|Canada Region|Poland Region|UAE Region)$/i;
 
 
   const mainDetails = String(raw)

@@ -737,6 +737,8 @@ main#home-view > .popular-section {
 
   word-break: break-word;
   overflow-wrap: anywhere;
+
+  transform: translateY(3px);
 }
 
 .note-info-line + .note-info-line {

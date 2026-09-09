@@ -1206,14 +1206,14 @@
       }]
     },
     "Spotify": {
-      "Private": [{
+      "Private Individual Subscription": [{
         "duration": "2 Months",
         "price": "18,000 Kyats"
       }, {
         "duration": "3 Months",
         "price": "25,000 Kyats"
       }],
-      "Family Private": [{
+      "Private Family Subscription": [{
         "duration": "2 Months",
         "price": "17,000 Kyats"
       }, {
@@ -3889,7 +3889,7 @@ const popupTextByProduct = {
     nextText: "ဘာတေကွာလဲ?",
     backText: "Back",
     steps: [
-    "ဒါက Netflix ရဲ့ Official Premium Subscription ပါ။ Premium Subscription ကဘာတေကောင်းလဲဆိုရင် Netflix Subscription ထဲမာသူ့ထက်မြင့်တဲ့ဟာမရှိတော့ပါဘူး။ Semiprivate ဖြစ်လို့ သူများတေနဲ့ Movie တေရောပီး Share ကြည့်စရာလဲမလိုပါဘူး။",
+    "ဒါက Netflix ရဲ့ Official Premium Subscription ပါ။ ဒီ Plan က Trial ယူထားတာမျိုးမဟုတ်ပဲ Official Plan ကို Visa Card fully paid နဲ့ဝယ်ထားတာမို့လို့လတိုင်းသက်တန်းဆက်တိုးသွားလို့လဲရပါတယ်။ Premium Subscription ကဘာတေကောင်းလဲဆိုရင် Netflix Subscription ထဲမာသူ့ထက်မြင့်တဲ့ဟာမရှိတော့ပါဘူး။ Semiprivate ဖြစ်လို့ သူများတေနဲ့ Movie တေရောပီး Share ကြည့်စရာလဲမလိုပါဘူး။",
     "Semiprivate ဆိုတာကကိုယ်က Profile တခုလုံးကိုငှားလိုက်တာပါ။ 1 Profile မာက 2 devices သုံးလို့ရပါတယ်။ ကိုယ်တယောက်ထဲက Profile တခုလုံးသုံးရတာမလို့ Semiprivate လို့ခေါ်တာပါ။ TV လဲ Support ပါတယ်။",
     "Devices တေက Android, iOS, PC, Laptop, Tv အကုန်ရပါတယ်။ Stocks ရှားတာမို့လို့မဝယ်ခင်အရင်မေးပါ။ လအစတေမာတော့ Stock ရှိတတ်ပါတယ်။ Plan တိုင်းကို Full Warranty ပေးထားပါတယ်။"
   ],
@@ -3981,17 +3981,21 @@ const popupTextByProduct = {
     nextText: "ဘာတေကွာလဲ?",
     backText: "Back",
     steps: [
-    "Individual Plan ဆိုတာကကိုယ်တယောက်ထဲသုံးရတာ။ 2~3 Devices လောက်ထိဝင်သုံးလို့ရတယ်။ ဒါပေမဲ့ဒီကပေးတဲ့အကောင့်ကိုဝင်သုံးရမာ။ ကိုယ့်ရှိပီးသားအကောင့်ကို Premium ဝယ်ပေးတာမဟုတ်ပါဘူး။ သေချာပြောတယ်နော်။",
-    "ဒါ‌ပေမဲ့ Old account ရှိရင် Song တေအကုန်ပြောင်းပေးပါတယ်အသစ်ထဲကို။ အဲ့တာကိုမ ကိုယ့်အကောင့်နဲ့ကိုယ် Premium ဘာလို့ဝယ်မရလဲထက်သိချင်ရင်တော့ မရတာမဟုတ်ဘူးရပါတယ်။ တစ်လကို 48K ပေးပီးကိုယ်တိုင် Visa Card နဲ့ဝယ်သုံးရင်ရပါတယ်။",
-    "Family Plan ဆိုတာကအကောင့်ထဲမာတော့ကိုယ်ပဲရှိတာ။ ဒါပေမဲ့ Family ထဲကတခြားလူတေရဲ့ Playlist တေ Fav Song ကိုမြင်နေရမာပါ။ Family Plan သုံးမယ်ဆိုရင်ကိုယ်က Playlist တခုသေချာလုပ်ပီးသုံးမအဆင်ပြေမာပါ။ Family Plan ကလဲဒီကအကောင့်ပေးတာပါပဲ။",
-    "Family Plan ကကုန်သွားလဲတကောင့်ထဲကိုပဲသက်တန်းတိုးလို့ရပါတယ်။ Individual ကတော့မရပါဘူးသက်တန်းတိုးလို့။ Family Plan ကိုလဲ Full Warranty ပေးထားပါတယ်။ Individual Plan လိုပဲ 2~3 Devices လောက်သုံးလို့ရပါတယ်။",
-    "Android ရော iOS ရော PC, Laptop အကုန်ရပါတယ်။ Official App and Website တေမာပဲသုံးရမာပါ"
+    "Individual Plan ဆိုတာကကိုယ်တယောက်ထဲသုံးရတာ။ 2~3 Devices လောက်ထိဝင်သုံးလို့ရတယ်။ ဒါပေမဲ့ဒီကပေးတဲ့အကောင့်ကိုဝင်သုံးရမာ။ ကိုယ့်ရှိပီးသားအကောင့်ကို Premium ဝယ်ပေးတာမဟုတ်ပါဘူး။ သေချာပြောတယ်နော်။ ပီးတော့ 2~3 Devices ဆိုတာကလူ 2 ယောက် 3 ယောက်ကိုတူတူသုံးလို့ရတယ်ပြောတာမျိုးမဟုတ်ပါဘူး။",
+    "နားလည်အောင်ပြောရရင် ကိုယ်က Phone တခုရှိမယ် Laptop တခုရှိမယ် Pc တခုရှိတယ်ဆိုရင်အဲ့ 3 ခုမာဝင်သူံးလိုက်တာမျိုးက 3 Devices နဲ့တူတူပါပဲ။ ဝင်ထားလို့ရပေမဲ့ဘယ်သူက Phone မာသီချင်းနားထောင်ရင်းနဲ့ Laptop မာလဲထက်ဖွင့်မာမဟုတ်လို့တချိန်ထဲမာ ပြိုင်တူသုံးလို့မရပါဘူး။ Family Plan ရဲ့ Device limit ကလဲဒီလိုမျိုးပါပဲ။",
+    "Family Plan ဆိုတာကို‌တော်တော်များများက Share account လို့ထင်နေကြပါတယ်။ တကယ်ကမဟုတ်ပါဘူး။ အကောင့်ထဲမာတော့ကိုယ်ပဲရှိတာ။ ဒါပေမဲ့ Family ထဲကတခြားလူတေရဲ့ Playlist တေ Fav Song ကိုမြင်နေရမာပါ။ အဲ့လိုပဲသူတို့ကလဲကိုယ့် Playlist တေကိုပြန်ပီးမြင်နေရမာပါ။ Family Plan သုံးမယ်ဆိုရင်ကိုယ်က Playlist တခုသေချာလုပ်ပီးသုံးမအဆင်ပြေမာပါ။ Family Plan ကလဲဒီကအကောင့်ပေးတာပါပဲ။",
+    "ဒီကအကောင့်ပေးတယ်ဆိုပေမဲ့ Old account ရှိရင် Song တေကိုဝယ်ထားတဲ့အကောင့်အသစ်ထဲပြောင်းထည့်ပေးပါတယ်။ အဲ့တာကိုမ ကိုယ့်ရှိပီးသားအကောင့်နဲ့ကိုယ် Premium ဘာလို့ဝယ်မရလဲထက်သိချင်ရင်တော့ မရတာမဟုတ်ဘူးရပါတယ်။ တစ်လကို 48K ပေးပီးကိုယ်တိုင် Visa Card နဲ့ဝယ်သုံးရင်ရပါတယ်။",
+    "Family Plan ကကုန်သွားလဲသက်တန်းတိုးလို့ရပါတယ်။ မကုန်ခင် 1 Week တော့ကြိုပြောပေးမ ရမာပါ။ Individual ကတော့သက်တန်းတိုးလို့မရပါဘူး။ Warranty ကလဲ Family Plan ကို Full Warranty ပေးထားပီး Individual Plan ကိုတော့ 2 ခါပဲပြန်လဲပေးပါတယ်။",
+    "ဆိုလိုချင်တာက ကိုယ်က Family Plan ဝယ်ထားပီးအကောင့်ကအကြောင်းတခုခုကြောင့်ပျက်တာဖြစ်ဖြစ် Subscription မရတော့ရင်သက်တန်းအပြည့် Full warranty ပေးထားတာမို့လို့မပြည့်မချင်းလဲပေးမာပါ။  Individual Plan ကျတော့ 2 ခါပဲလဲပေးတာဖြစ်လို့ အဲ့ 2 ခါပီးရင်ပျက်သွားလဲ Warranty မရတော့ပါဘူး။",
+    "ကျနော့်အနေနဲ့က Full Warranty ပါတဲ့ Family Plan ကိုပဲရွေးစေချင်ပါတယ်။ Playlist လေးရောတာလောက်နဲ့ Full Warranty မပေးတဲ့ Individual Plan ကိုမရွေးစေချင်ပါဘူး။ Android ရော iOS ရော PC, Laptop အကုန်ရပါတယ်။ Official App and Website တေမာပဲသုံးရမာပါ"
   ],
     stepButtons: [
     "ဆက်ရန်",
     "Family Plan<div>ကရော?",
     "ဆက်ရန်",
-    "All Devices<br>ရလား?"
+    "ဆက်ရန်",
+    "ဆက်ရန်",
+    "ဘာဝယ်သင့်လဲ?"
   ]
   },
   "Google One": {
@@ -4967,9 +4971,11 @@ if (regionalProducts[productName]) {
             title += ' <span style="background:#2e1065; color:#ffffff; padding:2px 6px; border-radius:4px; font-size:11px; margin-left:8px; font-weight:900; box-shadow:0 0 6px #c084fc;">Super Subscription</span>';
           }
           } else if (productName === 'Spotify') {
-         if (sectionName === 'Private') {
-            title += ' <span style="background:#000000; color:#00ff9c; padding:2px 6px; border-radius:4px; font-size:11px; margin-left:8px; font-weight:900; box-shadow:0 0 6px #00ff9c;">Individual Subscription</span>';
-          }
+         if (sectionName === 'Private Individual Subscription') {
+            title = 'Private <span style="background:#000000; color:#00ff9c; padding:2px 6px; border-radius:4px; font-size:11px; margin-left:8px; font-weight:900; box-shadow:0 0 6px #00ff9c;">Individual Subscription</span>';
+          } if (sectionName === 'Private Family Subscription') {
+            title = 'Private <span style="background:#000000; color:#00ff9c; padding:2px 6px; border-radius:4px; font-size:11px; margin-left:8px; font-weight:900; box-shadow:0 0 6px #00ff9c;">Family Subscription</span>';
+          } 
          if (sectionName === 'Family Private') {
             title += ' <span style="background:#000000; color:#00ff9c; padding:2px 6px; border-radius:4px; font-size:11px; margin-left:8px; font-weight:900; box-shadow:0 0 6px #00ff9c;">Family Subscription</span>';
           }
@@ -6588,15 +6594,9 @@ Own Mail Invite
 Private Head
 Microsoft 365 ရဲ့ Family Subscription ပါ။ ကျနော်ပေးမဲ့ Head အကောင့်အပါအဝင်တခြား email 5ခုလုံးက(Word, Excel, etc.) and 1TB of OneDrive storageစတဲ့ Microsoft Family မာပါတဲ့ features တေအကုန်သုံးလို့ရသွားမာပါ။` + generalDetailsBlock,
     "Netflix": `SemiPrivate Premium
-Own 1 profile you can use 2 devices.Tv Support.
-Full Warranty.
-
-SemiPrivate Standard
-Own 1 profile you can use 2 devices.Tv Support.
-Full Warranty.
-
-Whole Account
-Own 5 profiles you can use 10 devices` + generalDetailsBlock,
+Own 1 profile you can use 2 devices.
+Tv Support.
+Full Warranty.` + generalDetailsBlock,
     "Disney+": `Plan Basic (Limited Screen)
 Sharing up to 6 users.
 
@@ -6612,11 +6612,13 @@ Private Whole Account Standard(1 Month)
 Private Whole Account Premium(1 Month)
 5 Profile` + generalDetailsBlock,
     "Prime Video": `Share\nFull warranty • One device only\n\nPrivate\nFull warranty • Up to 3 devices` + generalDetailsBlock,
-    "Spotify": `Private
-• Private Plan မို့လို့ 1 person 1 device ပဲသုံးသင့်ပါတယ်။ Official appမာသုံးရတာဆိုပေမဲ့တစ်လကို$11.99ပေးပီးဝယ်တာမဟုတ်လို့ Risk ကတော့ရှိပါတယ်။အဆင်ပြေတယ်ဆိုမယူပါ။ Old account က Playlist, Favorite Artist, Favorite Songs, Favorite albums,Liked Songsအကုန်အကာင့်အသစ်ကိုပြောင်းပေးပါတယ်။ 2 Months အတွင်း full warranty ဖြစ်လို့တခုခုဖြစ်ခဲ့ရင် warranty အနေနဲ့တခုပြန်လဲ ပေးမာပါ တခါပဲလဲ ပေးမာပါ။ Setting ထဲသွားပီး account delete တာတို့တော့မပါပါဘူး။
+    "Spotify": `Private Individual Subscription
+2x Warranty Replacement.
+Can use up to 3 Devices.
 
-Family Private
-• Official appမာသုံးရတာဆိုပေမဲ့တစ်လကို$11.99ပေးပီးဝယ်တာမဟုတ်လို့ Risk ကတော့ရှိပါတယ်။အဆင်ပြေတယ်ဆိုမယူပါ။ ဝယ်ထားတဲ့အကောင့်ကိုပဲကုန်ရင်သက်တန်းတိုးလို့ရပါတယ်။ Full warranty.` + generalDetailsBlock,
+Private Family Subscription
+Full Warranty.
+Can use up to 3 Devices.` + generalDetailsBlock,
     "Apple Music": `Individual Plan
 Only for Android.
 This did not work on iOS.
@@ -6877,14 +6879,6 @@ if (
 ) {
   return `<div class="burmese-font">Full Warranty for full duration. Deactivateဖြစ်လဲတစ်လပြည့်တဲ့ထိလဲပေးမာပါ။</div>`;
 }
-    // ✅ Spotify checkout notes
-    if (productName === "Spotify" && item.section === "Private") {
-    return `<div class="burmese-font">• Private Plan မို့လို့ 1 person 1 device ပဲသုံးသင့်ပါတယ်။ Official appမာသုံးရတာဆိုပေမဲ့တစ်လကို$11.99ပေးပီးဝယ်တာမဟုတ်လို့ Risk ကတော့ရှိပါတယ်။အဆင်ပြေတယ်ဆိုမယူပါ။ Old account က Playlist, Favorite Artist, Favorite Songs, Favorite albums,Liked Songsအကုန်အကာင့်အသစ်ကိုပြောင်းပေးပါတယ်။ 2 Months အတွင်း full warranty ဖြစ်လို့တခုခုဖြစ်ခဲ့ရင် warranty အနေနဲ့တခုပြန်လဲ ပေးမာပါ တခါပဲလဲ ပေးမာပါ။ Setting ထဲသွားပီး account delete တာတို့တော့မပါပါဘူး။</div>`;
-    }
- 
-    if (productName === "Spotify" && item.section === "Family Private") {
-    return `<div class="burmese-font">• Official appမာသုံးရတာဆိုပေမဲ့တစ်လကို$11.99ပေးပီးဝယ်တာမဟုတ်လို့ Risk ကတော့ရှိပါတယ်။အဆင်ပြေတယ်ဆိုမယူပါ။ ဝယ်ထားတဲ့အကောင့်ကိုပဲကုန်ရင်သက်တန်းတိုးလို့ရပါတယ်။ Full warranty.</div>`;
-    }
 
 if (
   productName === "Domain" &&
@@ -7042,6 +7036,28 @@ Domain type nonrenewable
     return `Microsoft 365 ရဲ့ Personal Subscription ပါ။ OwnMail လို့ရေးမထားတာမလို့ဒီကအကောင့်ပေးတာပါ။ စာသေချာဖတ်ပီးမယူပေးကြပါဗျ။ Max 5 Devices လောက်ထိသုံးလို့ရပါတယ်။`;
     }
     }
+     if (productName === "Spotify") {
+    if (item.section === "Private Individual Subscription") {
+    return `2x Warranty Replacement.
+    Can use up to 3 Devices.
+    Individual Plan က Family Plan လို Full warranty မပါဘူးမို့လို့မဝယ်ခင်ရှင်းပြတဲ့ထဲမာ Warranty အကြောင်းတေသေချာဖတ်ပီးမယူပေးပါ။`;
+    }
+    }
+     if (productName === "Spotify") {
+    if (item.section === "Private Family Subscription") {
+    return `Full Warranty.
+    Can use up to 3 Devices.
+    ကုန်ရင်သက်တန်းတိုးလို့ရပါတယ်။ မကုန်ခင် 1 Week အလိုလာတိုးရမာပါ။`;
+    }
+    }
+         if (productName === "Netflix") {
+    if (item.section === "SemiPrivate Premium") {
+    return `Own 1 profile you can use 2 devices.
+Tv Support.
+Full Warranty.
+Official Plan မို့လို့ကုန်ရင်လဲသက်တန်းဆက်တိုးသွားလို့ရပါတယ်။`;
+    }
+    }
     
     
    // ================= YOUTUBE PREMIUM CHECKOUT NOTES =================
@@ -7113,7 +7129,7 @@ if (productName === "Express Vpn" && item.section === "Share" && /^phone/i.test(
         Mod app မဟုတ်ပါဘူး။ Android only ပဲသူံးလို့ရပါတယ်။ Playstore က Official app မာပဲသုံးလို့ရမာပါ။`;
     if (!fullText) return null;
     const rawDetails = fullText.trim();
-    const sectionHeaders = /^(Share|Own Mail|Private Business|Private Pro|Private|SemiPrivate Premium|Private OwnMail Go Subscription|Whole Account Standard|Whole Account Premium|SemiPrivate Standard|SemiPrivate|FullPrivate|Tinder Plus Share|Login|Gift Plan & Link Plan|Gift Plan|Link Plan|Views \(NoDrop\)|Likes \(NoDrop\)|Comment - Emoji Type|Comment - Custom Type|Package Plan|Livestream Views|Livestream Likes|Livestream Share|Post Views|Positive Reactions|Negative Reactions|Custom Reactions|Premium Reactions|Members \(30Days Refill\)|Livestream Views|Comment - Impression Type|Comment - Custom Type|Video Views|Video Likes|Post Likes|Profile Followers|Page Followers|Live Stream Views|Video Views & Reels|Likes|Followers|Personal Plus \(Share\)|Personal Plus \(Private\)|Business Plus - Invite Own Email|Business - Own|Private Own Mail|Private \(Own Mail\)|Base Service|1 Profile\(Semiprivate\)|5 Profiles\(Whole Account\)|Nitro Basic \(Key\)|Individual|Own Mail Invite|Sharing Pro|Plan Basic|Plan Premium|HBO MAX \(Premium\) 1 Month|Private Whole Account \(1 Month\)|1 Profile|Whole Account|OwnMail Private|OwnMail Invite|Individual Plan|Business Own\(Full Warranty\)|Business Plus Own\(Full Warranty\)|Business Plus Own|Normal Plan|Family Head\(Can Invite 5 email\)|Invite Private|Web Private|App&Web Private|Pro Share|Pro Private|Lifetime Premium|Educational\(Invite\)|Individual Plan\(Private\)|Stars|Japan Region \(¥\)|US Region \(\$\)|UK Region \(£\)|Custom Amount|Turkey Region \(TL\)|Indonesia Region \(IDR\)|Brazil Region \(BRL\)|Korea Region \(₩\)|India Region \(₹\)|Australia Region \(A\$\)|Germany Region \(€\)|France Region \(€\)|Italy Region \(€\)|Switzerland Region \(CHF\)|Canada Region \(C\$\)|UAE Region \(AED\)|Poland Region \(PLN\)|Nitro \(Key\))/i;
+    const sectionHeaders = /^(Share|Own Mail|Private Business|Private Pro|Private|Private Individual Subscription|Private Family Subscription|SemiPrivate Premium|Private OwnMail Go Subscription|Whole Account Standard|Whole Account Premium|SemiPrivate Standard|SemiPrivate|FullPrivate|Tinder Plus Share|Login|Gift Plan & Link Plan|Gift Plan|Link Plan|Views \(NoDrop\)|Likes \(NoDrop\)|Comment - Emoji Type|Comment - Custom Type|Package Plan|Livestream Views|Livestream Likes|Livestream Share|Post Views|Positive Reactions|Negative Reactions|Custom Reactions|Premium Reactions|Members \(30Days Refill\)|Livestream Views|Comment - Impression Type|Comment - Custom Type|Video Views|Video Likes|Post Likes|Profile Followers|Page Followers|Live Stream Views|Video Views & Reels|Likes|Followers|Personal Plus \(Share\)|Personal Plus \(Private\)|Business Plus - Invite Own Email|Business - Own|Private Own Mail|Private \(Own Mail\)|Base Service|1 Profile\(Semiprivate\)|5 Profiles\(Whole Account\)|Nitro Basic \(Key\)|Individual|Own Mail Invite|Sharing Pro|Plan Basic|Plan Premium|HBO MAX \(Premium\) 1 Month|Private Whole Account \(1 Month\)|1 Profile|Whole Account|OwnMail Private|OwnMail Invite|Individual Plan|Business Own\(Full Warranty\)|Business Plus Own\(Full Warranty\)|Business Plus Own|Normal Plan|Family Head\(Can Invite 5 email\)|Invite Private|Web Private|App&Web Private|Pro Share|Pro Private|Lifetime Premium|Educational\(Invite\)|Individual Plan\(Private\)|Stars|Japan Region \(¥\)|US Region \(\$\)|UK Region \(£\)|Custom Amount|Turkey Region \(TL\)|Indonesia Region \(IDR\)|Brazil Region \(BRL\)|Korea Region \(₩\)|India Region \(₹\)|Australia Region \(A\$\)|Germany Region \(€\)|France Region \(€\)|Italy Region \(€\)|Switzerland Region \(CHF\)|Canada Region \(C\$\)|UAE Region \(AED\)|Poland Region \(PLN\)|Nitro \(Key\))/i;
     const lines = rawDetails.split('\n').map(l => l.trim()).filter(l => l.length > 0);
     let targetSection = String(forceNoteSectionName).replace(/\s*\(.*\)/, '');
     if (productName === 'HBO Max') targetSection = item.section;
@@ -7150,10 +7166,6 @@ if (productName === "Express Vpn" && item.section === "Share" && /^phone/i.test(
         if (item.section === "Private") filteredNotes = filteredNotes.filter(line => !line.toLowerCase().includes("own mail"));
       } else if (productName === 'Netflix') {
         if (item.section === "Whole Account") filteredNotes = filteredNotes.filter(line => !line.includes("warrantyအပြည့်ပေး"));
-        // ✅ Spotify Family Plan checkout note
-        if (productName === "Spotify" && item.section === "Family Private") {
-        return "Full Warranty.";
-        }
       } else {
         const durationRegex = /\b(\d+\s*(?:Month|Months|Year|Week|Lifetime|Days|Stars|TL|IDR|BRL|₹|₩|\$|£|€|CHF|C\$|AED|PLN)):?.*|6-Months accounts are rare.*/gi;
         filteredNotes = filteredNotes.filter(line => {
@@ -7386,7 +7398,7 @@ dom.checkout.nextBtn.style.display = "inline-flex";
 function formatDetails(raw) {
 
 const headers =
-  /^(Share|Private|Private Own Mail|Private \(Own Mail\)|Private VIP|Private VIP Plus|Share Plan|Private OwnMail Go Subscription|Share Go Subscription|Private OwnMail Plus Subscription|Private Plan|Share Business|Own Mail|Private Business|Private Pro|SemiPrivate Premium|SemiPrivate Standard|Whole Account|Plan Basic \(Limited Screen\)|Plan Premium \(No Limit\)|HBO MAX \(Premium\) 1 Month|Private Whole Account Standard\(1 Month\)|Private Whole Account Premium\(1 Month\)|Family Private|Individual Plan|Sharing \(2TB\)|Personal Plus \(Private\)|Business Plus - Invite Own Email|Business Plus Own|Business Plus Own\(Full Warranty\)|Head\(Can Invite 5 Email\)|OwnMail Invite|Private \(Individual Plan\)|Private API Key|Login|Gift Plan & Link Plan|Gift Plan|Link Plan|Nitro \(Key\)|OwnMail Private|Lifetime Premium|Family Head\(Can Invite 5 email\)|Invite Private|Account|My\.ID\/my\.id|Login method|NoLoginBoost|Views \(NoDrop\)|Likes \(NoDrop\)|Package Plan|Base Service|Normal Plan|Web Private|App&Web Private|Tinder Plus Share|Livestream Views|Livestream Likes|Livestream Share|Post Views|Positive Reactions|Negative Reactions|Members \(30Days Refill\)|Comment - Impression Type|Comment - Custom Type|Video Views|Post Like|Profile Followers|Page follower|Live Stream Views|Video Views & Reels|Likes|Save|Reach|Followers|Pro Share|Pro Private|Educational|Individual|Stars|Japan Region|US Region|UK Region|Custom Amount|Turkey Region|Indonesia Region|Brazil Region|Korea Region|India Region|Australia Region|Germany Region|France Region|Italy Region|Switzerland Region|Canada Region|Poland Region|UAE Region)$/i;
+  /^(Share|Private|Private Individual Subscription|Private Family Subscription|Private Own Mail|Private \(Own Mail\)|Private VIP|Private VIP Plus|Share Plan|Private OwnMail Go Subscription|Share Go Subscription|Private OwnMail Plus Subscription|Private Plan|Share Business|Own Mail|Private Business|Private Pro|SemiPrivate Premium|SemiPrivate Standard|Whole Account|Plan Basic \(Limited Screen\)|Plan Premium \(No Limit\)|HBO MAX \(Premium\) 1 Month|Private Whole Account Standard\(1 Month\)|Private Whole Account Premium\(1 Month\)|Family Private|Individual Plan|Sharing \(2TB\)|Personal Plus \(Private\)|Business Plus - Invite Own Email|Business Plus Own|Business Plus Own\(Full Warranty\)|Head\(Can Invite 5 Email\)|OwnMail Invite|Private \(Individual Plan\)|Private API Key|Login|Gift Plan & Link Plan|Gift Plan|Link Plan|Nitro \(Key\)|OwnMail Private|Lifetime Premium|Family Head\(Can Invite 5 email\)|Invite Private|Account|My\.ID\/my\.id|Login method|NoLoginBoost|Views \(NoDrop\)|Likes \(NoDrop\)|Package Plan|Base Service|Normal Plan|Web Private|App&Web Private|Tinder Plus Share|Livestream Views|Livestream Likes|Livestream Share|Post Views|Positive Reactions|Negative Reactions|Members \(30Days Refill\)|Comment - Impression Type|Comment - Custom Type|Video Views|Post Like|Profile Followers|Page follower|Live Stream Views|Video Views & Reels|Likes|Save|Reach|Followers|Pro Share|Pro Private|Educational|Individual|Stars|Japan Region|US Region|UK Region|Custom Amount|Turkey Region|Indonesia Region|Brazil Region|Korea Region|India Region|Australia Region|Germany Region|France Region|Italy Region|Switzerland Region|Canada Region|Poland Region|UAE Region)$/i;
 
 
   const mainDetails = String(raw)

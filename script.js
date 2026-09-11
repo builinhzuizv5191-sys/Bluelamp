@@ -7044,6 +7044,14 @@ Domain type nonrenewable
     Individual Plan က Family Plan လို Full warranty မပါဘူးမို့လို့မဝယ်ခင်ရှင်းပြတဲ့ထဲမာ Warranty အကြောင်းတေသေချာဖတ်ပီးမယူပေးပါ။`;
     }
     }
+     if (productName === "ChatGPT") {
+    if (item.section === "Share Go Subscription") {
+    return `Official Plan.
+    25 Days Warranty.
+    1 Device Only.
+    Share Plan ဒီကပေးတဲ့အကောင့်ထဲမာဝင်သုံးရမာပါ။ ဝယ်သူရဲ့အကောင့်လုံးဝမဟုတ်ပါဘူး။`;
+    }
+    }
      if (productName === "Spotify") {
     if (item.section === "Private Family Subscription") {
     return `Full Warranty.

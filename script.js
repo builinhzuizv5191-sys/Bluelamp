@@ -3671,7 +3671,7 @@ const popupTextByProduct = {
     nextText: "ဆက်ရန်",
     backText: "Back",
     steps: [
-    "ဒါက ChatGpt ရဲ့ Official Plan တေပါ။ Private OwnMail ကဝယ်သူရဲ့အကောင့်ထဲကို Subscription ထည့်ပေးတာပါ။ Official Plan မို့လို့ Full Warranty လဲပေးထားပါတယ်။ Up to 5 Devices ထိလဲသုံးလို့ရပါတယ်။",
+    "ဒါက ChatGpt ရဲ့ Official Plan တေပါ။ Private OwnMail ကဝယ်သူရဲ့အကောင့်ထဲကို Subscription ထည့်ပေးတာပါ။ Account Mail And Password ပေးရပါတယ်။ Official Plan မို့လို့ Full Warranty လဲပေးထားပါတယ်။ Up to 5 Devices ထိလဲသုံးလို့ရပါတယ်။",
     "Share Plan ကတော့ Warranty 25 Days ပေးထားပါတယ်။ Same Official Plan ပါပဲ။ Private နဲ့မတူတာက Share Plan မာ 1 Device ပဲဝင်သုံးလို့ရပါတယ်။ ဒီကပေးတဲ့အကောင့်ထဲမာဝင်သုံးရမာပါ။ ဝယ်သူရဲ့အကောင့်လုံးဝမဟုတ်ပါဘူး။ ကိုယ်ကတခြားသူတေနဲ့တူတူ Share သုံးရမာပါ။ That include Chat History & Subscription Limit."
   ]
   },

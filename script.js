@@ -7044,12 +7044,43 @@ Domain type nonrenewable
     Individual Plan က Family Plan လို Full warranty မပါဘူးမို့လို့မဝယ်ခင်ရှင်းပြတဲ့ထဲမာ Warranty အကြောင်းတေသေချာဖတ်ပီးမယူပေးပါ။`;
     }
     }
+    if (productName === "Surfshark Vpn")
+   if (item.section === "Share" && item.duration.includes("Phone 2 Months")) {
+    return `<div class="burmese-font">
+    50 Days Warranty.
+    One device only
+    Android or iOS Device တခုမာပဲသုံးလို့ရပါတယ်။ MacBook အတွက်ဆို 6000 တန်ကိုရွေးပါ။ Window, Linux တေဆိုရင် NordVPN ကိုရွေးပါ။
+</div>`;
+   }
+    if (productName === "Surfshark Vpn")
+   if (item.section === "Share" && item.duration.includes("MacOs 2 Months")) {
+    return `<div class="burmese-font">
+    50 Days Warranty.
+    One device only
+</div>`;
+   }
      if (productName === "ChatGPT") {
     if (item.section === "Share Go Subscription") {
     return `Official Plan.
     25 Days Warranty.
     1 Device Only.
     Share Plan ဒီကပေးတဲ့အကောင့်ထဲမာဝင်သုံးရမာပါ။ ဝယ်သူရဲ့အကောင့်လုံးဝမဟုတ်ပါဘူး။`;
+    }
+    }
+     if (productName === "ChatGPT") {
+    if (item.section === "Private OwnMail Go Subscription") {
+    return `Official Plan.
+    25 Days Warranty.
+    1 Device Only.
+    Official Plan မို့လို့ကုန်ရင်လဲသက်တန်းတိုးလို့ရပါတယ်။`;
+    }
+    }
+     if (productName === "ChatGPT") {
+    if (item.section === "Private OwnMail Plus Subscription") {
+    return `Official Plan.
+    25 Days Warranty.
+    1 Device Only.
+    Official Plan မို့လို့ကုန်ရင်လဲသက်တန်းတိုးလို့ရပါတယ်။`;
     }
     }
      if (productName === "Spotify") {

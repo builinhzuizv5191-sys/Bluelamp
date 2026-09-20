@@ -2451,171 +2451,53 @@
 "Apple United States": {
   "United States (USD)": [{
     "duration": "$2",
-    "price": "9,700 Kyats"
+    "price": "10,500 Kyats"
   }, {
     "duration": "$5",
-    "price": "24,300 Kyats"
+    "price": "25,500 Kyats"
   }, {
     "duration": "$10",
-    "price": "48,500 Kyats"
-  }, {
-    "duration": "$20",
-    "price": "97,000 Kyats"
-  }, {
-    "duration": "$25",
-    "price": "121,300 Kyats"
-  }, {
-    "duration": "$40",
-    "price": "194,000 Kyats"
-  }, {
-    "duration": "$50",
-    "price": "242,500 Kyats"
-  }, {
-    "duration": "$60",
-    "price": "291,000 Kyats"
-  }, {
-    "duration": "$100",
-    "price": "485,000 Kyats"
-  }, {
-    "duration": "$150",
-    "price": "727,600 Kyats"
-  }, {
-    "duration": "$200",
-    "price": "970,000 Kyats"
-  }, {
-    "duration": "$250",
-    "price": "1,210,000 Kyats"
-  }, {
-    "duration": "$300",
-    "price": "1,450,000 Kyats"
-  }, {
-    "duration": "$400",
-    "price": "1,920,000 Kyats"
-  }, {
-    "duration": "$500",
-    "price": "2,400,000 Kyats"
+    "price": "51,000 Kyats"
   }]
 },
 "Apple Japan": {
   "Japan Region (JPY)": [
     {
       "duration": "500 JPY",
-      "price": "16,700 Kyats"
+      "price": "17,500 Kyats"
     },
     {
       "duration": "1,000 JPY",
-      "price": "33,400 Kyats"
-    },
-    {
-      "duration": "2,000 JPY",
-      "price": "66,900 Kyats"
-    },
-    {
-      "duration": "3,000 JPY",
-      "price": "100,300 Kyats"
-    },
-    {
-      "duration": "4,000 JPY",
-      "price": "131,200 Kyats"
+      "price": "34,500 Kyats"
     },
     {
       "duration": "5,000 JPY",
-      "price": "167,200 Kyats"
-    },
-    {
-      "duration": "10,000 JPY",
-      "price": "334,300 Kyats"
-    },
-    {
-      "duration": "30,000 JPY",
-      "price": "983,700 Kyats"
-    },
-    {
-      "duration": "50,000 JPY",
-      "price": "1,639,000 Kyats"
-    },
-    {
-      "duration": "70,000 JPY",
-      "price": "2,295,200 Kyats"
+      "price": "173,000 Kyats"
     }
   ]
 },
 "Apple DenMark": {
   "DenMark Region (DKK)": [{
     "duration": "20 DKK",
-    "price": "16,100 Kyats"
-  }, {
-    "duration": "25 DKK",
-    "price": "20,200 Kyats"
-  }, {
-    "duration": "30 DKK",
-    "price": "24,100 Kyats"
-  }, {
-    "duration": "40 DKK",
-    "price": "32,200 Kyats"
+    "price": "16,150 Kyats"
   }, {
     "duration": "50 DKK",
-    "price": "40,300 Kyats"
-  }, {
-    "duration": "100 DKK",
-    "price": "80,500 Kyats"
-  }, {
-    "duration": "150 DKK",
-    "price": "120,800 Kyats"
-  }, {
-    "duration": "200 DKK",
-    "price": "161,000 Kyats"
-  }, {
-    "duration": "250 DKK",
-    "price": "201,200 Kyats"
-  }, {
-    "duration": "300 DKK",
-    "price": "241,500 Kyats"
-  }, {
-    "duration": "400 DKK",
-    "price": "322,000 Kyats"
+    "price": "40,400 Kyats"
   }, {
     "duration": "500 DKK",
-    "price": "402,400 Kyats"
-  }, {
-    "duration": "1000 DKK",
-    "price": "804,900 Kyats"
+    "price": "404,000 Kyats"
   }]
 },
 "Apple Norway": {
   "Norway Region (NOK)": [{
     "duration": "20 NOK",
-    "price": "10,800 Kyats"
-  }, {
-    "duration": "30 NOK",
-    "price": "16,200 Kyats"
-  }, {
-    "duration": "40 NOK",
-    "price": "21,600 Kyats"
+    "price": "11,150 Kyats"
   }, {
     "duration": "50 NOK",
-    "price": "27,100 Kyats"
-  }, {
-    "duration": "100 NOK",
-    "price": "54,100 Kyats"
-  }, {
-    "duration": "150 NOK",
-    "price": "81,100 Kyats"
-  }, {
-    "duration": "200 NOK",
-    "price": "108,200 Kyats"
-  }, {
-    "duration": "250 NOK",
-    "price": "135,200 Kyats"
-  }, {
-    "duration": "300 NOK",
-    "price": "161,900 Kyats"
+    "price": "27,950 Kyats"
   }, {
     "duration": "500 NOK",
-    "price": "270,400 Kyats"
-  }, {
-    "duration": "1000 NOK",
-    "price": "540,800 Kyats"
+    "price": "279,500 Kyats"
   }]
 },
 "Apple Sweden": {

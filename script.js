@@ -625,7 +625,7 @@
     "Telegram Premium": "https://ik.imagekit.io/dkdlgynlu/New-Project-52-A162-FC1.png",
     "Discord": "https://ik.imagekit.io/dkdlgynlu/New-Project-52-D060367.png",
     "Perplexity Ai": "https://ik.imagekit.io/dkdlgynlu/New-Project-52-F59-EE5-A.png",
-    "DouWan": "./douWan.png",
+    "DouWan": "./douwan.png",
     "Grammarly": "./grammarly.png",
     "QuillBot": "./quillbot.png",
     "Flow AI": "https://ik.imagekit.io/dkdlgynlu/Wattpad%20_A4B3FC6_.png?updatedAt=1768837724112",

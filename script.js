@@ -625,6 +625,9 @@
     "Telegram Premium": "https://ik.imagekit.io/dkdlgynlu/New-Project-52-A162-FC1.png",
     "Discord": "https://ik.imagekit.io/dkdlgynlu/New-Project-52-D060367.png",
     "Perplexity Ai": "https://ik.imagekit.io/dkdlgynlu/New-Project-52-F59-EE5-A.png",
+    "DouWan": "./douWan.png",
+    "Grammarly": "./grammarly.png",
+    "QuillBot": "./quillbot.png",
     "Flow AI": "https://ik.imagekit.io/dkdlgynlu/Wattpad%20_A4B3FC6_.png?updatedAt=1768837724112",
     "NotebookLM": "https://ik.imagekit.io/dkdlgynlu/Wattpad%20_363313A_.png?updatedAt=1768837724010",
     "Claude Opus": "https://ik.imagekit.io/dkdlgynlu/New-Project-52-087-AC47.png?updatedAt=1764609026634",
@@ -1626,15 +1629,8 @@
     },
     "Duolingo Super": {
       "Individual Private": [{
-        "duration": "1 Month",
-        "price": "5,000 Kyats"
-      }],
-        "Family Head": [{
-        "duration": "14 Days",
-        "price": "Not For Sale"
-      }, {
-        "duration": "1 Month",
-        "price": "Not For Sale"
+        "duration": "1 Year",
+        "price": "39,000 Kyats"
       }]
     },
     "SCRIBD": {
@@ -1646,12 +1642,32 @@
     "WPS Office": {
       "Share": [{
         "duration": "1 Month",
-        "price": "Out Of Stock"
+        "price": "6,000 Kyats"
       }, {
         "duration": "1 Year",
         "price": "Out Of Stock"
       }]
     },
+"DouWan": {
+  "Private": [{
+    "duration": "1 Year",
+    "price": "59,000 Kyats"
+  }]
+},
+
+"Grammarly": {
+  "Share": [{
+    "duration": "1 Month",
+    "price": "10,000 Kyats"
+  }]
+},
+
+"QuillBot": {
+  "Share": [{
+    "duration": "1 Month",
+    "price": "10,000 Kyats"
+  }]
+},
     "TradingView": {
       "Private Plus": [{
          "duration": "1 Month",
@@ -2998,6 +3014,9 @@
     "Duolingo Super": ["android", "ios", "pc"],
     "SCRIBD": ["android", "ios", "pc"],
     "WPS Office": ["android", "ios", "pc"],
+    "DouWan": ["android", "ios", "pc"],
+    "Grammarly": ["android", "ios", "pc"],
+    "QuillBot": ["android", "ios", "pc"],
     "TradingView": ["android", "ios", "pc"],
     "Smule": ["android", "ios", "pc"],
     "Chess.com": ["android", "ios", "pc"],
@@ -3259,7 +3278,7 @@ const helperDisabledProducts = [
   "Telegram Star",
   "TeraBox",
   "iCloud",
-  "WPS Office",
+  "DouWan",
   "Photoshop",
   "LightRoom",
   "Premiere Pro",
@@ -3966,6 +3985,30 @@ const popupTextByProduct = {
     "Bstation ရဲ့ Premium Subscription ပါ။ Private အကောင့်ပါဒီကပေးတဲ့ Email and Password ကို Bstation ရဲ့ Official App & Web မာထည့်သူံးရုံပါပဲ။ Support Android,iOS,Mac, Windows."
   ]
 },
+  "WPS Office": {
+  title: "WPS Office Info",
+  button: "ဒါရှင်းပြပေးပါ။",
+  doneText: "ဟုတ်ပီဟုတ်ပီ",
+  steps: [
+    "WPS ရဲ့ Pro subscription ပါ။ Share Plan ဖြစ်လို့ 1 Devices ပဲဝင်သုံးလို့ရပါတယ်။ Android, iOS, Windows, MacBook Support. Warranty 20 Days လဲပါပါတယ်။"
+  ]
+},
+  "Grammarly": {
+  title: "Grammarly Info",
+  button: "ဒါရှင်းပြပေးပါ။",
+  doneText: "ဟုတ်ပီဟုတ်ပီ",
+  steps: [
+    "Grammarly Ai ရဲ့ Pro subscription ပါ။ Share Plan ဖြစ်လို့ 1 Devices ပဲဝင်သုံးလို့ရပါတယ်။ Android, iOS, Windows, MacBook Support. Warranty 20 Days လဲပါပါတယ်။"
+  ]
+},
+  "QuillBot": {
+  title: "QuillBot Info",
+  button: "ဒါရှင်းပြပေးပါ။",
+  doneText: "ဟုတ်ပီဟုတ်ပီ",
+  steps: [
+    "Quillbot ရဲ့ Premium subscription ပါ။ Share Plan ဖြစ်လို့ 1 Devices ပဲဝင်သုံးလို့ရပါတယ်။ Android, iOS, Windows, MacBook Support. Warranty 20 Days လဲပါပါတယ်။"
+  ]
+},
   "Grok": {
     title: "Grok Info",
     button: "ဒါရှင်းပြပေးပါ။",
@@ -4007,15 +4050,13 @@ const popupTextByProduct = {
   ]
   },
   "Duolingo Super": {
-    title: "Duolingo Super Info",
-    button: "ဝယ်လို့မရဘူးလား",
-    nextText: "ဆက်ရန်",
-    backText: "Back",
-    steps: [
-    "Duolingo ကအကောင့်တခုကတစ်ခါပဲ famplan join လို့ရပါတယ်။ ဝယ်ထားတာကုန်လို့နောက်လတေသက်တန်းတိုးချင်ရင်တိုးလို့မရပါဘူး။ နောက်တကောင့်အသစ်ဖြစ်သွားမာမလို့သင်ထားတဲ့ Progress တေကအကုန်အစပြန်ရောက်သွားမာပါ။ စမ်းသုံးတဲ့သူတေအတွက်က တစ်လကုန်သွားလဲဘာမမဖြစ်ပေမဲ့တကယ်သင်တဲ့သူတေအတွက်ဆိုအဆင်မပြေပါဘူး။",
-    "အဲ့တာတေကြောင့်မရောင်းပေးတာပါ။ မရောင်းပဲဘာလို့တင်ထားလဲဆိုရင်။ ဒီမာမဝယ်ပဲတခြားစီမာဝယ်ရင်လဲ သေချာမေးပီးဝယ်တတ်အောင်တင်ထားတာပါ။ Seller တေကိုနောက်ပိုင်းသက်တန်းဆက်တိုးလို့ရလား သေချာမေးပီးမဝယ်ကြပါ။"
+  title: "Duolingo Info",
+  button: "ဒါရှင်းပြပေးပါ။",
+  doneText: "ဟုတ်ပီဟုတ်ပီ",
+  steps: [
+    "Duolingo ရဲ့ Super Subscription ပါ။ ဝယ်သူရဲ့အကောင့်ကို Login ဝင်ပီးဝယ်ပေးတာပါ။ 3~5 Minutes လောက်ပဲကြာပါတယ်။ Full warranty."
   ]
-  },
+},
   "Google Drive": {
   title: "Google Drive Info",
   button: "ဒါရှင်းပြပေးပါ။",
@@ -4787,6 +4828,18 @@ if (regionalProducts[productName]) {
           } else if (productName === 'SCRIBD') {
          if (sectionName === 'Private') {
             title += ' <span style="background:#0f766e; color:#ffffff; padding:2px 6px; border-radius:4px; font-size:11px; margin-left:8px; font-weight:900; box-shadow:0 0 6px #2dd4bf;">Premium Subscription</span>';
+          }
+          } else if (productName === 'DouWan') {
+         if (sectionName === 'Private') {
+            title += ' <span style="background:#dc2626; color:#ffffff; padding:2px 6px; border-radius:4px; font-size:11px; margin-left:8px; font-weight:900; box-shadow:0 0 6px #dc2626;">VIP Subscription</span>';
+          }
+          } else if (productName === 'Grammarly') {
+         if (sectionName === 'Share') {
+            title += ' <span style="background:#10b981; color:#022c22; padding:2px 6px; border-radius:4px; font-size:11px; margin-left:8px; font-weight:900; box-shadow:0 0 6px #10b981;">Pro Subscription</span>';
+          }
+          } else if (productName === 'QuillBot') {
+         if (sectionName === 'Share') {
+            title += ' <span style="background:#22c55e; color:#052e16; padding:2px 6px; border-radius:4px; font-size:11px; margin-left:8px; font-weight:900; box-shadow:0 0 6px #22c55e;">Premium Subscription</span>';
           }
           } else if (productName === 'TradingView') {
          if (sectionName === 'Private Plus') {
@@ -6605,12 +6658,28 @@ Full warranty.
 1 device only.
 3 Months Warranty.
 Mod app မဟုတ်ပါဘူး။ Android only ပဲသူံးလို့ရပါတယ်။ Playstore က Official app မာပဲသုံးလို့ရမာပါ။` + generalDetailsBlock,
-    "Duolingo Super": `Family Head(Can Invite 5 email)\nFull warranty for plan duration.\n\nInvite Private\nFull warranty for plan duration.` + generalDetailsBlock,
+    "Duolingo Super": `Individual Private
+    Full Warranty.
+    ဝယ်သူရဲ့အကောင့်ကိုဝင်ဝယ်ပေးတာပါ။
+    ကြာချိန် 3 to 5 Minutes.
+    ကျနော်‌တို့ဘက်ကပေးတဲ့အကောင့်ကိုယူလဲရပါတယ်။
+    ` + generalDetailsBlock,
     "SCRIBD": `Private\nFull warranty for plan duration.` + generalDetailsBlock,
     "WPS Office": `Share
-Full warranty for full duration.
+20 Days warranty.
 One device only.
 Includes all premium features in WPS. (Word, Spreadsheets, Presentation, PDF tools)` + generalDetailsBlock,
+"DouWan": `Private
+Full Warranty.
+Official Plan.` + generalDetailsBlock,
+
+"Grammarly": `Share
+20 Days warranty.
+One device only.` + generalDetailsBlock,
+
+"QuillBot": `Share
+20 Days warranty.
+One device only.` + generalDetailsBlock,
     "TradingView": `Private
 Full warranty for full duration.
 Supports all devices.` + generalDetailsBlock,

@@ -1673,7 +1673,7 @@
   }],
   "Private": [{
     "duration": "1 Month",
-    "price": "20,000 Kyats"
+    "price": "23,000 Kyats"
   }]
 },
     "TradingView": {
@@ -6683,11 +6683,19 @@ Official Plan.` + generalDetailsBlock,
 
 "Grammarly": `Share
 20 Days warranty.
-One device only.` + generalDetailsBlock,
+One device only.
+
+Private
+Full warranty.
+Up to 5 Devices.` + generalDetailsBlock,
 
 "QuillBot": `Share
 20 Days warranty.
-One device only.` + generalDetailsBlock,
+One device only.
+
+Private
+Full warranty.
+Up to 10 Devices.` + generalDetailsBlock,
     "TradingView": `Private
 Full warranty for full duration.
 Supports all devices.` + generalDetailsBlock,

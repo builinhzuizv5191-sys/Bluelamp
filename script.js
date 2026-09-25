@@ -1659,6 +1659,10 @@
   "Share": [{
     "duration": "1 Month",
     "price": "10,000 Kyats"
+  }],
+  "Private": [{
+    "duration": "1 Month",
+    "price": "20,000 Kyats"
   }]
 },
 
@@ -1666,6 +1670,10 @@
   "Share": [{
     "duration": "1 Month",
     "price": "10,000 Kyats"
+  }],
+  "Private": [{
+    "duration": "1 Month",
+    "price": "20,000 Kyats"
   }]
 },
     "TradingView": {
@@ -4834,11 +4842,11 @@ if (regionalProducts[productName]) {
             title += ' <span style="background:#dc2626; color:#ffffff; padding:2px 6px; border-radius:4px; font-size:11px; margin-left:8px; font-weight:900; box-shadow:0 0 6px #dc2626;">VIP Subscription</span>';
           }
           } else if (productName === 'Grammarly') {
-         if (sectionName === 'Share') {
+         if (sectionName === 'Share' || sectionName === 'Private') {
             title += ' <span style="background:#10b981; color:#022c22; padding:2px 6px; border-radius:4px; font-size:11px; margin-left:8px; font-weight:900; box-shadow:0 0 6px #10b981;">Pro Subscription</span>';
           }
           } else if (productName === 'QuillBot') {
-         if (sectionName === 'Share') {
+         if (sectionName === 'Share' || sectionName === 'Private') {
             title += ' <span style="background:#22c55e; color:#052e16; padding:2px 6px; border-radius:4px; font-size:11px; margin-left:8px; font-weight:900; box-shadow:0 0 6px #22c55e;">Premium Subscription</span>';
           }
           } else if (productName === 'TradingView') {

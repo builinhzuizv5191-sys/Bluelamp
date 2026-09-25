@@ -3503,7 +3503,7 @@ const popupTextByProduct = {
   button: "Planအကြောင်းရှင်းပြရန်နှိပ်ပါ",
   doneText: "ရပါပီ။",
   steps: [
-    "NordVPN က Express VPN လိုပါပဲ။ SurfShark လို Windows တေမာသူံးမကောင်းတာမျိုးလဲမရှိဘူး။ HMA VPN လို iOS မရတာမျိုးလဲမရှိဘူး။ အကုန်ကောင်းပါတယ်။ အထူးသဖြင့် Windows User တေအတွက်ပိုပီးအဆင်ပြေပါတယ်။ Private Account တေက 8~10 Devices လောက်ထိဝင်သုံးလို့ရပါတယ်။"
+    "NordVPN က Express VPN လိုပါပဲ။ SurfShark လို Windows တေမာသူံးမကောင်းတာမျိုးလဲမရှိဘူး။ HMA VPN လို iOS မရတာမျိုးလဲမရှိဘူး။ အကုန်ကောင်းပါတယ်။ အထူးသဖြင့် Windows User တေအတွက်ပိုပီးအဆင်ပြေပါတယ်။ Private Account တေက 5~6 Devices လောက်ထိဝင်သုံးလို့ရပါတယ်။"
   ]
 },
   "Surfshark Vpn": {
@@ -6507,7 +6507,7 @@ Full warranty` + generalDetailsBlock,
     Remini Official Website မာသုံးရမာပါ။ App မာသုံးရမာမဟုတ်ပါဘူး။` + generalDetailsBlock,
     "NordVpn": `Private
     Full Warranty.
-    Up to 10 Devices.` + generalDetailsBlock,
+    Up to 6 Devices.` + generalDetailsBlock,
     "Express Vpn": `Private
     Full warranty for full duration
     Up to 9 devices: 8 Phones & 1 PC or Laptop` + generalDetailsBlock,

@@ -1033,11 +1033,11 @@
         "price": "Out Of Stocks"
       }, {
         "duration": "1 Month",
-        "price": "14,500 Kyats"
+        "price": "19,000 Kyats"
       }],
       "OwnMail": [{
         "duration": "1 Month",
-        "price": "16,500 Kyats"
+        "price": "21,000 Kyats"
       }]
     },
     "PicsArt": {
@@ -7279,7 +7279,7 @@ const noteLines = cleanedNoteContent
     let netflixBlock = '';
     dom.checkout.noteText.innerHTML = quantityWarning + noteBlocks + netflixBlock + formatNotes(paymentInfoBlock.trim());
     const telegramCustom = cart.some(i => i.product === 'Telegram Premium' && (i.duration.includes('1 Year') || i.section.includes('Gift') || i.section.includes('Link')));
-    dom.checkout.nextBtn.href = telegramCustom ? 'https://t.me/Fury_edtz' : 'https://t.me/leokron';
+    dom.checkout.nextBtn.href = 'https://t.me/leokron';
     dom.checkout.noteStep.style.display = 'block';
     dom.checkout.receiptStep.style.display = 'none';
     dom.checkout.nextBtn.style.display = 'none';

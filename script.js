@@ -630,9 +630,7 @@
     "QuillBot": "./quillbot.png",
     "Flow AI": "https://ik.imagekit.io/dkdlgynlu/Wattpad%20_A4B3FC6_.png?updatedAt=1768837724112",
     "NotebookLM": "https://ik.imagekit.io/dkdlgynlu/Wattpad%20_363313A_.png?updatedAt=1768837724010",
-    "Claude Opus": "https://ik.imagekit.io/dkdlgynlu/New-Project-52-087-AC47.png?updatedAt=1764609026634",
-    "Claude Fable": "https://ik.imagekit.io/dkdlgynlu/New-Project-52-087-AC47.png?updatedAt=1764609026634",
-    "Claude Sonnet": "https://ik.imagekit.io/dkdlgynlu/New-Project-52-087-AC47.png?updatedAt=1764609026634",
+    "Claude": "https://ik.imagekit.io/dkdlgynlu/New-Project-52-087-AC47.png?updatedAt=1764609026634",
     "ChatGPT API": "https://ik.imagekit.io/dkdlgynlu/New-Project-52-6-CB3-A91-1.png?updatedAt=1764609028617",
     "Qwen": "https://ik.imagekit.io/dkdlgynlu/ICON%20_C2FF1C4_.png?updatedAt=1784197274777",
     "DeepSeek": "https://ik.imagekit.io/dkdlgynlu/ICON%20_E12731D_.png?updatedAt=1784197015433",
@@ -1421,20 +1419,7 @@
         "price": "75,000 Kyats"
   }]
 },
-
-    "Claude Opus": {
-      "Global API 30Days": [{
-        "duration": "10K Credits",
-        "price": "5,000 Kyats"
-      }, {
-        "duration": "20K Credits",
-        "price": "10,000 Kyats"
-      }, {
-        "duration": "30K Credits",
-        "price": "15,000 Kyats"
-      }]
-    },
-    "Claude Fable": {
+    "Claude": {
       "Global API 30Days": [{
         "duration": "10K Credits",
         "price": "5,000 Kyats"
@@ -1458,41 +1443,28 @@
         "price": "15,000 Kyats"
       }]
     },
-
-"Claude Sonnet": {
-      "1 Billion token": [{
-        "duration": "3 Days",
-        "price": "10,000 Kyats"
-      }, {
-        "duration": "10 Days",
-        "price": "15,000 Kyats"
-      }, {
-        "duration": "1 Month",
-        "price": "30,000 Kyats"
-      }]
-    },
 "Qwen": {
-      "1 Billion token": [{
-        "duration": "3 Days",
+      "Global API 30Days": [{
+        "duration": "10K Credits",
+        "price": "5,000 Kyats"
+      }, {
+        "duration": "20K Credits",
         "price": "10,000 Kyats"
       }, {
-        "duration": "10 Days",
+        "duration": "30K Credits",
         "price": "15,000 Kyats"
-      }, {
-        "duration": "1 Month",
-        "price": "30,000 Kyats"
       }]
     },
 "DeepSeek": {
-      "1 Billion token": [{
-        "duration": "3 Days",
+      "Global API 30Days": [{
+        "duration": "10K Credits",
+        "price": "5,000 Kyats"
+      }, {
+        "duration": "20K Credits",
         "price": "10,000 Kyats"
       }, {
-        "duration": "10 Days",
+        "duration": "30K Credits",
         "price": "15,000 Kyats"
-      }, {
-        "duration": "1 Month",
-        "price": "30,000 Kyats"
       }]
     },
     "Zoom": {
@@ -3001,9 +2973,7 @@
     "ChatGPT": ["android", "ios", "pc"],
     "Grok": ["android", "ios", "pc"],
     "Gemini Pro": ["android", "ios", "pc"],
-    "Claude Opus": ["pc"],
-    "Claude Fable": ["pc"],
-    "Claude Sonnet": ["pc"],
+    "Claude": ["pc"],
     "DeepSeek": ["pc"],
     "Qwen": ["pc"],
     "ChatGPT API": ["pc"],
@@ -3636,48 +3606,19 @@ const popupTextByProduct = {
     "All Devices<br>ရလား?"
   ]
   },
-  "Claude Opus": {
-    title: "Claude Opus Info",
+  "Claude": {
+    title: "Claude Info",
     button: "ဒါရှင်းပြပေးပါ။",
     nextText: "ဆက်ရန်",
     backText: "Back",
     steps: [
-    "Desktop Device တေမာပဲ VS Code နဲ့သုံးလိုရပါမယ်။ Laptop or PC တခုထဲကသုံးရတာမျိုးမဟုတ်ဘူး Multiple Laptop and PC API setup ပီးသုံးလိုရပါတယ်။ 3 Devices လောက်ရပေမဲ့ တချိန်ထဲတော့တူတူသူံးလို့မရပါဘူး။ ဟိုလို Claude Website မာသုံးရတဲ့အကောင့်လဲမဟုတ်ပါဘူး။ ကိုယ့် VS Code account ထဲမာ API ထည့်ပီးသုံးရတာမျိုးပါ။",
-    "ဒီ API ထဲမာ Claude ရဲ့ Opus (5, 4-8, 4-7, 4-6, 5-thinking), Sonnet (5, 4-6, 5-thinking), Haiku (4-5), Fable-5 အပြင် GPT ရဲ့ 5.4, 5.5, 5.5-xhigh, 5.6-luna, 5.6-sol, 5.6-terra, DeepSeek ရဲ့ V4 Pro, V4 Flash, Qwen ရဲ့ Max, Plus, Flash, Coder Plus, Kimi ရဲ့ K3, K2.7-Code နဲ့ GLM ရဲ့ 5.1, 5.2, 5.3, 5-Turbo တေလဲအကုန်ပါပါတယ်။",
-    "ဒီ API က Claude Opus လို့ရေးထားပေမဲ့ Global API ချင်းတူတူပဲမလို့ တခြား model တေနဲ့ ဈေးတေ Plan တေတူနေတာပါ။ Global Plan တေက Claude Sonnet API တေလိုမဟုတ်ပါဘူး။ ကိုယ်ဝယ်ထားတဲ့ Credit ကို Time Limit 30 Days အတွင်းသုံးရတာပါ။ For example ခု ကိုယ်က Credits 10,000 ဝယ်လိုက်ပီထားပါဆို အဲ့တာကကိုယ်မသုံးမချင်း မကုန်ပါဘူး 30 ရက်မြောက်နေ့ထိမသုံးပဲထားရင်တော့သူ့ဘသူကုန်သွားမာမျိုးကိုပြောတာပါ။",
-    "ဆိုတော့ 1Month ပြည့်ရင်ကုန်ရင်လဲကုန်မယ် Credit ကုန်ရင်လဲကုန်ပါမယ်။ Credit နဲ့မလို့ဘယ်လောက်ကုန်မလဲမသိတာတေတွက်ဖို့လဲ Channel မာ model Cost တေတင်ပေးထားပါတယ်။ မတွေ့ရင် Admin ကိုမေးပီးပြခိုင်းပါ။"
+    "ဒီ API က Global API Type ပါ။ ဒီ Category ထဲမာပါတဲ့ ChatGpt, Claude, DeepSeek, Qwen အကုန်လုံးကတူတူပါပဲ။ အဲ့တာကြောင့်ဈေးတေတူနေတာပါ။ Global API တေက ကိုယ်ဝယ်ထားတဲ့ Credit ကို Time Limit 30 Days အတွင်းသုံးရတာပါ။ For example ခု ကိုယ်က Credits 10,000 ဝယ်လိုက်ပီဆိုရင် အဲ့တာကကိုယ်မသုံးမချင်း မကုန်ပါဘူး 30 ရက်မြောက်နေ့ထိမသုံးပဲထားရင်တော့သူ့ဘသူကုန်သွားမာမျိုးကိုပြောတာပါ။",
+    "ဒီ Global API ထဲမာ Claude ရဲ့ Fable 5.1 & Fable 5, Opus (5, 4.8, 4.7, 4.6,), Sonnet (5, 4.6,), Haiku (4.5) အပြင် GPT ရဲ့  Astra, 5.6 luna,sol,terra, 5.4, 5.5, DeepSeek ရဲ့ V4 Pro, V4.1~V4 Flash, Qwen ရဲ့ Max, Plus, Flash, Coder Plus, Kimi ရဲ့ K3, K2.7 Code နဲ့ GLM ရဲ့ 5.1, 5.2, 5.3, 5Turbo တေလဲအကုန်ပါပါတယ်။",
+    "Credit Cost တေသိချင်ရင် Admin ကိုမေးကြည့်လို့ရပါတယ်။ Desktop Device တေမာပဲ VS Code နဲ့တွဲသုံးရမာပါ။ Laptop or PC တခုထဲကသုံးရတာမျိုးမဟုတ်ဘူး Multiple Laptop and PC API setup ပီးသုံးလိုရပါတယ်။ 3 Devices လောက်ရပေမဲ့ တချိန်ထဲတော့တူတူသူံးလို့မရပါဘူး။ ဟိုလို Claude Website မာသုံးရတဲ့အကောင့်လဲမဟုတ်ပါဘူး။ ကိုယ့် VS Code account ထဲမာ API ထည့်ပီးသုံးရတာမျိုးပါ။"
   ],
     stepButtons: [
     "ဆက်ရန်",
-    "ဆက်ရန်",
     "Credit Cost ကရော?"
-  ]
-  },
-  "Claude Fable": {
-    title: "Claude Fable Info",
-    button: "ဒါရှင်းပြပေးပါ။",
-    nextText: "ဆက်ရန်",
-    backText: "Back",
-    steps: [
-    "Desktop Device တေမာပဲ VS Code နဲ့သုံးလိုရပါမယ်။ Laptop or PC တခုထဲကသုံးရတာမျိုးမဟုတ်ဘူး Multiple Laptop and PC API setup ပီးသုံးလိုရပါတယ်။ 3 Devices လောက်ရပေမဲ့ တချိန်ထဲတော့တူတူသူံးလို့မရပါဘူး။ ဟိုလို Claude Website မာသုံးရတဲ့အကောင့်လဲမဟုတ်ပါဘူး။ ကိုယ့် VS Code account ထဲမာ API ထည့်ပီးသုံးရတာမျိုးပါ။",
-    "ဒီ API ထဲမာ Claude ရဲ့ Fable-5, Opus (5, 4-8, 4-7, 4-6, 5-thinking), Sonnet (5, 4-6, 5-thinking), Haiku (4-5) အပြင် GPT ရဲ့ 5.4, 5.5, 5.5-xhigh, 5.6-luna, 5.6-sol, 5.6-terra, DeepSeek ရဲ့ V4 Pro, V4 Flash, Qwen ရဲ့ Max, Plus, Flash, Coder Plus, Kimi ရဲ့ K3, K2.7-Code နဲ့ GLM ရဲ့ 5.1, 5.2, 5.3, 5-Turbo တေလဲအကုန်ပါပါတယ်။",
-    "ဒီ API က Claude fable လို့ရေးထားပေမဲ့ Global API ချင်းတူတူပဲမလို့ တခြား model တေနဲ့ ဈေးတေ Plan တေတူနေတာပါ။ Global Plan တေက Claude Sonnet API တေလိုမဟုတ်ပါဘူး။ ကိုယ်ဝယ်ထားတဲ့ Credit ကို Time Limit 30 Days အတွင်းသုံးရတာပါ။ For example ခု ကိုယ်က Credits 10,000 ဝယ်လိုက်ပီထားပါဆို အဲ့တာကကိုယ်မသုံးမချင်း မကုန်ပါဘူး 30 ရက်မြောက်နေ့ထိမသုံးပဲထားရင်တော့သူ့ဘသူကုန်သွားမာမျိုးကိုပြောတာပါ။",
-    "ဆိုတော့ 1Month ပြည့်ရင်ကုန်ရင်လဲကုန်မယ် Credit ကုန်ရင်လဲကုန်ပါမယ်။ Credit နဲ့မလို့ဘယ်လောက်ကုန်မလဲမသိတာတေတွက်ဖို့လဲ Channel မာ model Cost တေတင်ပေးထားပါတယ်။ မတွေ့ရင် Admin ကိုမေးပီးပြခိုင်းပါ။"
-  ],
-    stepButtons: [
-    "ဆက်ရန်",
-    "ဆက်ရန်",
-    "Credit Cost ကရော?"
-  ]
-  },
-  "Claude Sonnet": {
-    title: "Claude Sonnet Info",
-    button: "ဒါရှင်းပြပေးပါ။",
-    nextText: "ဆက်ရန်",
-    backText: "Back",
-    steps: [
-    "Desktop Device တေမာပဲ VS Code နဲ့သုံးလိုရပါမယ်။ Laptop or PC တခုထဲကသုံးရတာမျိုးမဟုတ်ဘူး Multiple Laptop and PC API setup ပီးသုံးလိုရပါတယ်။ 3 Devices လောက်ရပေမဲ့ တချိန်ထဲတော့တူတူသူံးလို့မရပါဘူး။ ဟိုလို Claude Website မာသုံးရတဲ့အကောင့်လဲမဟုတ်ပါဘူး။ ကိုယ့် VS Code account ထဲမာ API ထည့်ပီးသုံးရတာမျိုးပါ။",
-    "ဒီ API ထဲမာ Claude ရဲ့ Sonnet, Haiku အပြင် DeepSeek V3, V4 ,Flash, V4 Pro ,Qwen Max, Plus, Turbo, Flash, Coder Plus ,GLM 5.2 တေလဲအကုန်ပါပါတယ်။ ဒီ API က 1 Billion ဆိုပေမဲ့ Opus API ထက် Token ပိုစားပါတယ်။ အဲ့တော့နဲနဲလေးအကုန်ပိုမြန်တယ်။"
   ]
   },
   "ChatGPT API": {
@@ -3686,13 +3627,11 @@ const popupTextByProduct = {
     nextText: "ဆက်ရန်",
     backText: "Back",
     steps: [
-    "Desktop Device တေမာပဲ VS Code နဲ့သုံးလိုရပါမယ်။ Laptop or PC တခုထဲကသုံးရတာမျိုးမဟုတ်ဘူး Multiple Laptop and PC API setup ပီးသုံးလိုရပါတယ်။ 3 Devices လောက်ရပေမဲ့ တချိန်ထဲတော့တူတူသူံးလို့မရပါဘူး။ ဟိုလို Claude Website မာသုံးရတဲ့အကောင့်လဲမဟုတ်ပါဘူး။ ကိုယ့် VS Code account ထဲမာ API ထည့်ပီးသုံးရတာမျိုးပါ။",
-    "ဒီ API ထဲမာ GPT ရဲ့ 5.4, 5.5, 5.5-xhigh, 5.6-luna, 5.6-sol, 5.6-terra အပြင် Claude ရဲ့ Opus (5, 4-8, 4-7, 4-6, 5-thinking), Sonnet (5, 4-6, 5-thinking), Haiku (4-5), Fable-5, DeepSeek ရဲ့ V4 Pro, V4 Flash, Qwen ရဲ့ Max, Plus, Flash, Coder Plus, Kimi ရဲ့ K3, K2.7-Code နဲ့ GLM ရဲ့ 5.1, 5.2, 5.3, 5-Turbo တေလဲအကုန်ပါပါတယ်။",
-    "ဒီ API က ChatGPT API လို့ရေးထားပေမဲ့ Global API ချင်းတူတူပဲမလို့ တခြား model တေနဲ့ ဈေးတေ Plan တေတူနေတာပါ။model တေနဲ့ ဈေးတေ Plan တေတူနေတာပါ။ Global Plan တေက Claude Sonnet API တေလိုမဟုတ်ပါဘူး။ ကိုယ်ဝယ်ထားတဲ့ Credit ကို Time Limit 30 Days အတွင်းသုံးရတာပါ။ For example ခု ကိုယ်က Credits 10,000 ဝယ်လိုက်ပီထားပါဆို အဲ့တာကကိုယ်မသုံးမချင်း မကုန်ပါဘူး 30 ရက်မြောက်နေ့ထိမသုံးပဲထားရင်တော့သူ့ဘသူကုန်သွားမာမျိုးကိုပြောတာပါ။",
-    "ဆိုတော့ 1Month ပြည့်ရင်ကုန်ရင်လဲကုန်မယ် Credit ကုန်ရင်လဲကုန်ပါမယ်။ Credit နဲ့မလို့ဘယ်လောက်ကုန်မလဲမသိတာတေတွက်ဖို့လဲ Channel မာ model Cost တေတင်ပေးထားပါတယ်။ မတွေ့ရင် Admin ကိုမေးပီးပြခိုင်းပါ။"
+    "ဒီ API က Global API Type ပါ။ ဒီ Category ထဲမာပါတဲ့ ChatGpt, Claude, DeepSeek, Qwen အကုန်လုံးကတူတူပါပဲ။ အဲ့တာကြောင့်ဈေးတေတူနေတာပါ။ Global API တေက ကိုယ်ဝယ်ထားတဲ့ Credit ကို Time Limit 30 Days အတွင်းသုံးရတာပါ။ For example ခု ကိုယ်က Credits 10,000 ဝယ်လိုက်ပီဆိုရင် အဲ့တာကကိုယ်မသုံးမချင်း မကုန်ပါဘူး 30 ရက်မြောက်နေ့ထိမသုံးပဲထားရင်တော့သူ့ဘသူကုန်သွားမာမျိုးကိုပြောတာပါ။",
+    "ဒီ Global API ထဲမာ ChatGpt ရဲ့ GPT 6 Astra, 5.6 Luna,Sol,Terra, 5.4, 5.5 အပြင် Claude Fable 5.1 & 5, Opus (5, 4.8, 4.7, 4.6,), Sonnet (5, 4.6,), Haiku (4.5), DeepSeek ရဲ့ V4 Pro, V4.1~V4 Flash, Qwen ရဲ့ Max, Plus, Flash, Coder Plus, Kimi ရဲ့ K3, K2.7 Code နဲ့ GLM ရဲ့ 5.1, 5.2, 5.3, 5 Turbo တေလဲအကုန်ပါပါတယ်။",
+    "Credit Cost တေသိချင်ရင် Admin ကိုမေးကြည့်လို့ရပါတယ်။ Desktop Device တေမာပဲ VS Code နဲ့တွဲသုံးရမာပါ။ Laptop or PC တခုထဲကသုံးရတာမျိုးမဟုတ်ဘူး Multiple Laptop and PC API setup ပီးသုံးလိုရပါတယ်။ 3 Devices လောက်ရပေမဲ့ တချိန်ထဲတော့တူတူသူံးလို့မရပါဘူး။ ဟိုလို Claude Website မာသုံးရတဲ့အကောင့်လဲမဟုတ်ပါဘူး။ ကိုယ့် VS Code account ထဲမာ API ထည့်ပီးသုံးရတာမျိုးပါ။"
   ],
     stepButtons: [
-    "ဆက်ရန်",
     "ဆက်ရန်",
     "Credit Cost ကရော?"
   ]
@@ -3703,8 +3642,13 @@ const popupTextByProduct = {
     nextText: "ဆက်ရန်",
     backText: "Back",
     steps: [
-    "Desktop Device တေမာပဲ VS Code နဲ့သုံးလိုရပါမယ်။ Laptop or PC တခုထဲကသုံးရတာမျိုးမဟုတ်ဘူး Multiple Laptop and PC API setup ပီးသုံးလိုရပါတယ်။ 3 Devices လောက်ရပေမဲ့ တချိန်ထဲတော့တူတူသူံးလို့မရပါဘူး။ ဟိုလို Qwen Website မာသုံးရတဲ့အကောင့်လဲမဟုတ်ပါဘူး။ ကိုယ့် VS Code account ထဲမာ API ထည့်ပီးသုံးရတာမျိုးပါ။",
-    "ဒီ API ထဲမာ Qwen3 Coder အပြင် DeepSeek 3.2 ,Claude Sonnet, Haiku, Turbo, Flash, Coder Plus ,GLM 5.2 တေလဲအကုန်ပါပါတယ်။ ဒီ API က Claude Sonnet API ပါပဲ။ အဲ့တာကြောင့်ဈေးတေ Plan တေတူနေတာပါ။"
+    "ဒီ API က Global API Type ပါ။ ဒီ Category ထဲမာပါတဲ့ ChatGpt, Claude, DeepSeek, Qwen အကုန်လုံးကတူတူပါပဲ။ အဲ့တာကြောင့်ဈေးတေတူနေတာပါ။ Global API တေက ကိုယ်ဝယ်ထားတဲ့ Credit ကို Time Limit 30 Days အတွင်းသုံးရတာပါ။ For example ခု ကိုယ်က Credits 10,000 ဝယ်လိုက်ပီဆိုရင် အဲ့တာကကိုယ်မသုံးမချင်း မကုန်ပါဘူး 30 ရက်မြောက်နေ့ထိမသုံးပဲထားရင်တော့သူ့ဘသူကုန်သွားမာမျိုးကိုပြောတာပါ။",
+    "ဒီ Global API ထဲမာ Qwen ရဲ့ Max, Plus, Flash, Coder Plus, OpenAi ရဲ့ GPT 6 Astra, 5.6 Luna,Sol,Terra, 5.4, 5.5 အပြင် Claude Fable 5.1 & 5, Opus (5, 4.8, 4.7, 4.6,), Sonnet (5, 4.6,), Haiku (4.5), DeepSeek ရဲ့ V4 Pro, V4.1~V4 Flash, Kimi ရဲ့ K3, K2.7 Code နဲ့ GLM ရဲ့ 5.1, 5.2, 5.3, 5 Turbo တေလဲအကုန်ပါပါတယ်။",
+    "Credit Cost တေသိချင်ရင် Admin ကိုမေးကြည့်လို့ရပါတယ်။ Desktop Device တေမာပဲ VS Code နဲ့တွဲသုံးရမာပါ။ Laptop or PC တခုထဲကသုံးရတာမျိုးမဟုတ်ဘူး Multiple Laptop and PC API setup ပီးသုံးလိုရပါတယ်။ 3 Devices လောက်ရပေမဲ့ တချိန်ထဲတော့တူတူသူံးလို့မရပါဘူး။ ဟိုလို Claude Website မာသုံးရတဲ့အကောင့်လဲမဟုတ်ပါဘူး။ ကိုယ့် VS Code account ထဲမာ API ထည့်ပီးသုံးရတာမျိုးပါ။"
+  ],
+    stepButtons: [
+    "ဆက်ရန်",
+    "Credit Cost ကရော?"
   ]
   },
     "DeepSeek": {
@@ -3713,8 +3657,13 @@ const popupTextByProduct = {
     nextText: "ဆက်ရန်",
     backText: "Back",
     steps: [
-    "Desktop Device တေမာပဲ VS Code နဲ့သုံးလိုရပါမယ်။ Laptop or PC တခုထဲကသုံးရတာမျိုးမဟုတ်ဘူး Multiple Laptop and PC API setup ပီးသုံးလိုရပါတယ်။ 3 Devices လောက်ရပေမဲ့ တချိန်ထဲတော့တူတူသူံးလို့မရပါဘူး။ ဟိုလို DeepSeek Website မာသုံးရတဲ့အကောင့်လဲမဟုတ်ပါဘူး။ ကိုယ့် VS Code account ထဲမာ API ထည့်ပီးသုံးရတာမျိုးပါ။",
-    "ဒီ API ထဲမာ DeepSeek 3.2 အပြင် Qwen3 Coder ,Claude Sonnet, Haiku, Turbo, Flash, Coder Plus ,GLM 5.2 တေလဲအကုန်ပါပါတယ်။ ဒီ API က Claude Sonnet API ပါပဲ။ အဲ့တာကြောင့်ဈေးတေ Plan တေတူနေတာပါ။"
+    "ဒီ API က Global API Type ပါ။ ဒီ Category ထဲမာပါတဲ့ ChatGpt, Claude, DeepSeek, Qwen အကုန်လုံးကတူတူပါပဲ။ အဲ့တာကြောင့်ဈေးတေတူနေတာပါ။ Global API တေက ကိုယ်ဝယ်ထားတဲ့ Credit ကို Time Limit 30 Days အတွင်းသုံးရတာပါ။ For example ခု ကိုယ်က Credits 10,000 ဝယ်လိုက်ပီဆိုရင် အဲ့တာကကိုယ်မသုံးမချင်း မကုန်ပါဘူး 30 ရက်မြောက်နေ့ထိမသုံးပဲထားရင်တော့သူ့ဘသူကုန်သွားမာမျိုးကိုပြောတာပါ။",
+    "ဒီ Global API ထဲမာ DeepSeek ရဲ့ V4 Pro, V4.1~V4 Flash, OpenAi ရဲ့ GPT 6 Astra, 5.6 Luna,Sol,Terra, 5.4, 5.5 အပြင် Claude Fable 5.1 & 5, Opus (5, 4.8, 4.7, 4.6,), Sonnet (5, 4.6,), Haiku (4.5), Qwen ရဲ့ Max, Plus, Flash, Coder Plus, Kimi ရဲ့ K3, K2.7 Code နဲ့ GLM ရဲ့ 5.1, 5.2, 5.3, 5 Turbo တေလဲအကုန်ပါပါတယ်။",
+    "Credit Cost တေသိချင်ရင် Admin ကိုမေးကြည့်လို့ရပါတယ်။ Desktop Device တေမာပဲ VS Code နဲ့တွဲသုံးရမာပါ။ Laptop or PC တခုထဲကသုံးရတာမျိုးမဟုတ်ဘူး Multiple Laptop and PC API setup ပီးသုံးလိုရပါတယ်။ 3 Devices လောက်ရပေမဲ့ တချိန်ထဲတော့တူတူသူံးလို့မရပါဘူး။ ဟိုလို Claude Website မာသုံးရတဲ့အကောင့်လဲမဟုတ်ပါဘူး။ ကိုယ့် VS Code account ထဲမာ API ထည့်ပီးသုံးရတာမျိုးပါ။"
+  ],
+    stepButtons: [
+    "ဆက်ရန်",
+    "Credit Cost ကရော?"
   ]
   },
   "Perplexity Ai": {
@@ -4732,11 +4681,7 @@ if (regionalProducts[productName]) {
          if (sectionName === 'Head(Can Invite 5 Email)' || sectionName === 'OwnMail Invite') {
             title += ' <span style="background:#67e8f9; color:#083344; padding:2px 6px; border-radius:4px; font-size:11px; margin-left:8px; font-weight:900; box-shadow:0 0 6px #67e8f9;">Pro Subscription</span>';
           }
-          } else if (productName === 'Claude Opus') {
-         if (sectionName === 'Global API 30Days') {
-            title += ' <span style="background:#f97316; color:#ffffff; padding:2px 6px; border-radius:4px; font-size:11px; margin-left:8px; font-weight:900; box-shadow:0 0 6px #f97316;">Private API Key</span>';
-          }
-          } else if (productName === 'Claude Fable') {
+          } else if (productName === 'Claude') {
          if (sectionName === 'Global API 30Days') {
             title += ' <span style="background:#f97316; color:#ffffff; padding:2px 6px; border-radius:4px; font-size:11px; margin-left:8px; font-weight:900; box-shadow:0 0 6px #f97316;">Private API Key</span>';
           }
@@ -4744,16 +4689,12 @@ if (regionalProducts[productName]) {
          if (sectionName === 'Global API 30Days') {
             title += ' <span style="background:#000000; color:#00ff9c; padding:2px 6px; border-radius:4px; font-size:11px; margin-left:8px; font-weight:900; box-shadow:0 0 6px #00ff9c;">Private API Key</span>';
           }
-          } else if (productName === 'Claude Sonnet') {
-         if (sectionName === '1 Billion token') {
-            title += ' <span style="background:#f97316; color:#ffffff; padding:2px 6px; border-radius:4px; font-size:11px; margin-left:8px; font-weight:900; box-shadow:0 0 6px #f97316;">Private API Key</span>';
-          }
           } else if (productName === 'Qwen') {
-         if (sectionName === '1 Billion token') {
+         if (sectionName === 'Global API 30Days') {
             title += ' <span style="background:#2e1065; color:#ffffff; padding:2px 6px; border-radius:4px; font-size:11px; margin-left:8px; font-weight:900; box-shadow:0 0 6px #c084fc;">Private API Key</span>';
           }
           } else if (productName === 'DeepSeek') {
-         if (sectionName === '1 Billion token') {
+         if (sectionName === 'Global API 30Days') {
             title += ' <span style="background:#1e90ff; color:#ffffff; padding:2px 6px; border-radius:4px; font-size:11px; margin-left:8px; font-weight:900; box-shadow:0 0 6px #1e90ff;">Private API Key</span>';
           }
           } else if (productName === 'Perplexity Ai') {
@@ -6211,6 +6152,221 @@ if (productName === "TikTok Official") {
     });
   }
 }
+
+// =========================
+// GLOBAL API: CUSTOM CREDITS
+// =========================
+
+const globalApiProducts = [
+  "Claude",
+  "ChatGPT API",
+  "Qwen",
+  "DeepSeek"
+];
+
+if (globalApiProducts.includes(productName)) {
+
+  const GLOBAL_API_SECTION = "Global API 30Days";
+
+  // Current store rate:
+  // 10,000 Credits = 5,000 Kyats
+  const CREDITS_PER_1K = 1000;
+  const PRICE_PER_1K = 500;
+
+  const MIN_CREDITS = 10000;
+  const MAX_CREDITS = 1000000;
+
+  const globalApiCustomHTML = `
+    <div class="plan-box">
+
+      <div class="plan-title">
+        Custom Credit Amount
+      </div>
+
+      <div style="
+        padding:10px;
+        display:flex;
+        flex-direction:column;
+        gap:10px;
+      ">
+
+        <label style="
+          font-size:14px;
+          color:#ccc;
+        ">
+          Enter Credits (${MIN_CREDITS.toLocaleString()} - ${MAX_CREDITS.toLocaleString()})
+        </label>
+
+        <div style="
+          display:flex;
+          gap:10px;
+        ">
+
+          <input
+            type="number"
+            id="global-api-credit-input"
+            min="${MIN_CREDITS}"
+            max="${MAX_CREDITS}"
+            step="1"
+            placeholder="10000"
+            style="
+              flex:1;
+              padding:12px;
+              border-radius:8px;
+              border:1px solid rgba(255,255,255,0.2);
+              background:rgba(255,255,255,0.05);
+              color:white;
+              font-size:16px;
+            "
+          />
+
+          <div
+            id="global-api-credit-price"
+            style="
+              align-self:center;
+              font-weight:bold;
+              color:#00e676;
+              min-width:120px;
+              text-align:right;
+            "
+          >
+            0 Kyats
+          </div>
+
+        </div>
+
+        <div style="
+          font-size:12px;
+          opacity:.75;
+          line-height:1.4;
+        ">
+          Example: 10K Credits = enter 10000
+        </div>
+
+        <button
+          id="btn-add-global-api-credit"
+          class="btn btn-primary"
+          style="width:100%;"
+        >
+          Add to Cart
+        </button>
+
+      </div>
+    </div>
+  `;
+
+  const popularSection =
+    dom.views.product.querySelector(".popular-section");
+
+  if (popularSection) {
+
+    popularSection.insertAdjacentHTML(
+      "beforebegin",
+      globalApiCustomHTML
+    );
+
+    const input =
+      document.getElementById("global-api-credit-input");
+
+    const priceDisplay =
+      document.getElementById("global-api-credit-price");
+
+    const addBtn =
+      document.getElementById("btn-add-global-api-credit");
+
+
+    function getGlobalApiCreditPrice(credits) {
+      return (credits / CREDITS_PER_1K) * PRICE_PER_1K;
+    }
+
+
+    input.addEventListener("input", () => {
+
+      const credits =
+        parseInt(input.value, 10);
+
+const invalid =
+  !credits ||
+  credits < MIN_CREDITS ||
+  credits > MAX_CREDITS;
+
+      if (invalid) {
+
+        addBtn.style.backgroundColor = "#ff4444";
+
+        addBtn.textContent =
+          "Limit: 10,000 - 1,000,000";
+
+        priceDisplay.textContent =
+          "0 Kyats";
+
+        return;
+      }
+
+      addBtn.style.removeProperty(
+        "background-color"
+      );
+
+      addBtn.textContent =
+        "Add to Cart";
+
+      const totalPrice =
+        getGlobalApiCreditPrice(credits);
+
+      priceDisplay.textContent =
+        formatKyats(totalPrice);
+
+    });
+
+
+    addBtn.addEventListener("click", () => {
+
+      const credits =
+        parseInt(input.value, 10);
+
+if (
+  !credits ||
+  credits < MIN_CREDITS ||
+  credits > MAX_CREDITS
+) {
+  return;
+}
+
+      const totalPrice =
+        getGlobalApiCreditPrice(credits);
+
+      const item = {
+        product: productName,
+        section: GLOBAL_API_SECTION,
+        duration: `${credits.toLocaleString()} Credits`,
+        unitPrice: totalPrice,
+        priceText: formatKyats(totalPrice)
+      };
+
+      addToCart(item);
+
+      input.value = "";
+
+      priceDisplay.textContent =
+        "0 Kyats";
+
+      addBtn.style.removeProperty(
+        "background-color"
+      );
+
+      addBtn.textContent =
+        "Added!";
+
+      setTimeout(() => {
+        addBtn.textContent =
+          "Add to Cart";
+      }, 1000);
+
+    });
+
+  }
+}
+    
     // --- TELEGRAM STAR: CUSTOM STARS (like TikTok custom coins) ---
 if (productName === "Telegram Star") {
   // Base: use your existing "50 Stars" price as reference
@@ -6453,7 +6609,19 @@ Gmail and password ပေးရပါတယ်။
 Google အကောင့်ရဲ့ Password ပါ။
 Alight Motion မာထားမဲ့ Password မဟုတ်ပါဘူး။
 Google အကောင့်ကိုဝင်ပီးလုပ်ပေးရမာပါ။` + generalDetailsBlock,
-    "Wink": `Share
+"Claude": `Global API 30Days
+API Provider : OpenAI Compatible
+Duration : 1Month` + generalDetailsBlock,
+"ChatGPT API": `Global API 30Days
+API Provider : OpenAI Compatible
+Duration : 1Month` + generalDetailsBlock,
+"Qwen": `Global API 30Days
+API Provider : OpenAI Compatible
+Duration : 1Month` + generalDetailsBlock,
+"DeepSeek": `Global API 30Days
+API Provider : OpenAI Compatible
+Duration : 1Month` + generalDetailsBlock,
+"Wink": `Share
 One device only
 25 Days warranty.
 Share Plan မို့လို့အနဲဆုံး 25 Days to အများဆုံး 30 Days ရမာပါ။
@@ -7002,6 +7170,34 @@ Domain type nonrenewable
      if (productName === "Microsoft 365") {
     if (item.section === "Private") {
     return `Microsoft 365 ရဲ့ Personal Subscription ပါ။ OwnMail လို့ရေးမထားတာမလို့ဒီကအကောင့်ပေးတာပါ။ စာသေချာဖတ်ပီးမယူပေးကြပါဗျ။ Max 5 Devices လောက်ထိသုံးလို့ရပါတယ်။`;
+    }
+    }
+     if (productName === "Claude") {
+    if (item.section === "Global API 30Days") {
+    return `API Provider : OpenAI Compatible
+    Duration : 1Month
+    Desktop Devices တေမာပဲ VS Code နဲ့သုံးလိုရပါတယ်။ Mobile version မရသေးပါဘူး။`;
+    }
+    }
+     if (productName === "ChatGPT API") {
+    if (item.section === "Global API 30Days") {
+    return `API Provider : OpenAI Compatible
+    Duration : 1Month
+    Desktop Devices တေမာပဲ VS Code နဲ့သုံးလိုရပါတယ်။ Mobile version မရသေးပါဘူး။`;
+    }
+    }
+     if (productName === "Qwen") {
+    if (item.section === "Global API 30Days") {
+    return `API Provider : OpenAI Compatible
+    Duration : 1Month
+    Desktop Devices တေမာပဲ VS Code နဲ့သုံးလိုရပါတယ်။ Mobile version မရသေးပါဘူး။`;
+    }
+    }
+     if (productName === "DeepSeek") {
+    if (item.section === "Global API 30Days") {
+    return `API Provider : OpenAI Compatible
+    Duration : 1Month
+    Desktop Devices တေမာပဲ VS Code နဲ့သုံးလိုရပါတယ်။ Mobile version မရသေးပါဘူး။`;
     }
     }
      if (productName === "Spotify") {

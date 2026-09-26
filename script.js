@@ -6971,8 +6971,15 @@ InDesign → design posters, books, layouts
 Acrobat Pro → edit & sign PDFs
 
 စတဲ့ App တေရဲ့ Pro version တေအပြင်တခြား audio, animation, UI design, and content creationလုပ်ဖို့လိုတဲ့ Appတေပါပါမာပါ။` + generalDetailsBlock,
-    "HMA VPN": `Can use 5 to 10 devices.
-Can't use on iOS devices.` + generalDetailsBlock,
+    "HMA VPN": `Private
+    Can use devices max.
+    Can't use on iOS devices.
+    
+    Share
+    Can use only 1 Device.
+    Can't use on iOS devices.
+    Cheapest Budget Option.
+    Share is Definitely not the best plan.` + generalDetailsBlock,
     "Crunchyroll": `Share\n5-Months warranty • One device only` + generalDetailsBlock,
     "Telegram Star": `Usernameပဲလိုပါမယ်` + generalDetailsBlock,
     "Google Play Turkey": "Region: Turkey (TL)\nBuy specific amounts for Turkey Region accounts." + generalDetailsBlock,

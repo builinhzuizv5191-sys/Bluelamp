@@ -6979,7 +6979,7 @@ Acrobat Pro → edit & sign PDFs
     Can use only 1 Device.
     Can't use on iOS devices.
     Cheapest Budget Option.
-    Share is Definitely not the best plan.` + generalDetailsBlock,
+    Definitely not the best plan.` + generalDetailsBlock,
     "Crunchyroll": `Share\n5-Months warranty • One device only` + generalDetailsBlock,
     "Telegram Star": `Usernameပဲလိုပါမယ်` + generalDetailsBlock,
     "Google Play Turkey": "Region: Turkey (TL)\nBuy specific amounts for Turkey Region accounts." + generalDetailsBlock,

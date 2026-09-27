@@ -1215,11 +1215,17 @@
         "price": "25,000 Kyats"
       }],
       "Private Family Subscription": [{
+        "duration": "1 Month",
+        "price": "10,000 Kyats"
+      }, {
         "duration": "2 Months",
         "price": "17,000 Kyats"
       }, {
         "duration": "3 Months",
         "price": "23,000 Kyats"
+      }, {
+        "duration": "6 Months",
+        "price": "49,000 Kyats"
       }]
     },
     "Apple Music": {

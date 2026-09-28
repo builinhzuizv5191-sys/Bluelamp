@@ -1011,14 +1011,14 @@
       }],
       "Private VIP": [{
         "duration": "1 Week",
-        "price": "3,000 Kyats"
+        "price": "Out Of Stock"
       }, {
         "duration": "1 Month",
         "price": "18,000 Kyats"
       }],
       "Private VIP Plus": [{
         "duration": "1 Week",
-        "price": "4,000 Kyats"
+        "price": "Out Of Stock"
       }],
       "Private (Own Mail)": [{
         "duration": "1 Month",

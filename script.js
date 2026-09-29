@@ -1490,8 +1490,8 @@
         "duration": "1 Month",
         "price": "Out Of Stock"
       }, {
-        "duration": "3 Months",
-        "price": "20,000 Kyats"
+        "duration": "2 Months",
+        "price": "16,000 Kyats"
       }],
       "OwnMail": [{
         "duration": "3 Months",
@@ -1503,8 +1503,8 @@
         "duration": "1 Month",
         "price": "Out Of Stock"
       }, {
-        "duration": "3 Months",
-        "price": "20,000 Kyats"
+        "duration": "2 Months",
+        "price": "16,000 Kyats"
       }],
       "OwnMail": [{
         "duration": "3 Months",

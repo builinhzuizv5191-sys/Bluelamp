@@ -1118,6 +1118,9 @@
       }, {
         "duration": "MacOs 2 Months",
         "price": "6,000 Kyats"
+      }, {
+        "duration": "Linux 2 Months",
+        "price": "6,000 Kyats"
       }],
       "Private": [{
         "duration": "2 Months",

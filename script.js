@@ -1102,10 +1102,10 @@
     "NordVpn": {
       "Private": [{
         "duration": "10 Days",
-        "price": "5,000 Kyats"
+        "price": "Out Of Stock"
       }, {
         "duration": "1 Month",
-        "price": "10,000 Kyats"
+        "price": "Out Of Stock"
       }, {
         "duration": "3 Months",
         "price": "29,000 Kyats"

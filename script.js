@@ -3623,7 +3623,7 @@ const popupTextByProduct = {
     steps: [
     "ဒီ API က Global API Type ပါ။ ဒီ Category ထဲမာပါတဲ့ ChatGpt, Claude, DeepSeek, Qwen အကုန်လုံးကတူတူပါပဲ။ အဲ့တာကြောင့်ဈေးတေတူနေတာပါ။ Global API တေက ကိုယ်ဝယ်ထားတဲ့ Credit ကို Time Limit 30 Days အတွင်းသုံးရတာပါ။ For example ခု ကိုယ်က Credits 10,000 ဝယ်လိုက်ပီဆိုရင် အဲ့တာကကိုယ်မသုံးမချင်း မကုန်ပါဘူး 30 ရက်မြောက်နေ့ထိမသုံးပဲထားရင်တော့သူ့ဘသူကုန်သွားမာမျိုးကိုပြောတာပါ။",
     "ဒီ Global API ထဲမာ Claude ရဲ့ Fable 5.1 & Fable 5, Opus (5, 4.8, 4.7, 4.6,), Sonnet (5, 4.6,), Haiku (4.5) အပြင် GPT ရဲ့  Astra, 5.6 luna,sol,terra, 5.4, 5.5, DeepSeek ရဲ့ V4 Pro, V4.1~V4 Flash, Qwen ရဲ့ Max, Plus, Flash, Coder Plus, Kimi ရဲ့ K3, K2.7 Code နဲ့ GLM ရဲ့ 5.1, 5.2, 5.3, 5Turbo တေလဲအကုန်ပါပါတယ်။",
-    "Credit Cost တေသိချင်ရင် Admin ကိုမေးကြည့်လို့ရပါတယ်။ Desktop Device တေမာပဲ VS Code နဲ့တွဲသုံးရမာပါ။ Laptop or PC တခုထဲကသုံးရတာမျိုးမဟုတ်ဘူး Multiple Laptop and PC API setup ပီးသုံးလိုရပါတယ်။ 3 Devices လောက်ရပေမဲ့ တချိန်ထဲတော့တူတူသူံးလို့မရပါဘူး။ ဟိုလို Claude Website မာသုံးရတဲ့အကောင့်လဲမဟုတ်ပါဘူး။ ကိုယ့် VS Code account ထဲမာ API ထည့်ပီးသုံးရတာမျိုးပါ။"
+    "Credit Cost တေသိချင်ရင် Admin ကိုမေးကြည့်လို့ရပါတယ်။ Desktop Device တေမာပဲ VS Code နဲ့တွဲသုံးရမာပါ။ Laptop or PC တခုထဲကသုံးရတာမျိုးမဟုတ်ဘူး Multiple Laptop and PC API setup ပီးသုံးလိုရပါတယ်။ 10 Devices ထိသုံးလို့ရပေမဲ့ တချိန်ထဲတူတူသုံးတာကတော့ 5 Devices ပဲသုံးလို့ရပါတယ်။ ဟိုလို Claude Website မာသုံးရတဲ့အကောင့်လဲမဟုတ်ပါဘူး။ ကိုယ့် VS Code account ထဲမာ API ထည့်ပီးသုံးရတာမျိုးပါ။"
   ],
     stepButtons: [
     "ဆက်ရန်",
@@ -3638,7 +3638,7 @@ const popupTextByProduct = {
     steps: [
     "ဒီ API က Global API Type ပါ။ ဒီ Category ထဲမာပါတဲ့ ChatGpt, Claude, DeepSeek, Qwen အကုန်လုံးကတူတူပါပဲ။ အဲ့တာကြောင့်ဈေးတေတူနေတာပါ။ Global API တေက ကိုယ်ဝယ်ထားတဲ့ Credit ကို Time Limit 30 Days အတွင်းသုံးရတာပါ။ For example ခု ကိုယ်က Credits 10,000 ဝယ်လိုက်ပီဆိုရင် အဲ့တာကကိုယ်မသုံးမချင်း မကုန်ပါဘူး 30 ရက်မြောက်နေ့ထိမသုံးပဲထားရင်တော့သူ့ဘသူကုန်သွားမာမျိုးကိုပြောတာပါ။",
     "ဒီ Global API ထဲမာ ChatGpt ရဲ့ GPT 6 Astra, 5.6 Luna,Sol,Terra, 5.4, 5.5 အပြင် Claude Fable 5.1 & 5, Opus (5, 4.8, 4.7, 4.6,), Sonnet (5, 4.6,), Haiku (4.5), DeepSeek ရဲ့ V4 Pro, V4.1~V4 Flash, Qwen ရဲ့ Max, Plus, Flash, Coder Plus, Kimi ရဲ့ K3, K2.7 Code နဲ့ GLM ရဲ့ 5.1, 5.2, 5.3, 5 Turbo တေလဲအကုန်ပါပါတယ်။",
-    "Credit Cost တေသိချင်ရင် Admin ကိုမေးကြည့်လို့ရပါတယ်။ Desktop Device တေမာပဲ VS Code နဲ့တွဲသုံးရမာပါ။ Laptop or PC တခုထဲကသုံးရတာမျိုးမဟုတ်ဘူး Multiple Laptop and PC API setup ပီးသုံးလိုရပါတယ်။ 3 Devices လောက်ရပေမဲ့ တချိန်ထဲတော့တူတူသူံးလို့မရပါဘူး။ ဟိုလို Claude Website မာသုံးရတဲ့အကောင့်လဲမဟုတ်ပါဘူး။ ကိုယ့် VS Code account ထဲမာ API ထည့်ပီးသုံးရတာမျိုးပါ။"
+    "Credit Cost တေသိချင်ရင် Admin ကိုမေးကြည့်လို့ရပါတယ်။ Desktop Device တေမာပဲ VS Code နဲ့တွဲသုံးရမာပါ။ Laptop or PC တခုထဲကသုံးရတာမျိုးမဟုတ်ဘူး Multiple Laptop and PC API setup ပီးသုံးလိုရပါတယ်။ 10 Devices ထိသုံးလို့ရပေမဲ့ တချိန်ထဲတူတူသုံးတာကတော့ 5 Devices ပဲသုံးလို့ရပါတယ်။ ဟိုလို Claude Website မာသုံးရတဲ့အကောင့်လဲမဟုတ်ပါဘူး။ ကိုယ့် VS Code account ထဲမာ API ထည့်ပီးသုံးရတာမျိုးပါ။"
   ],
     stepButtons: [
     "ဆက်ရန်",
@@ -3653,7 +3653,7 @@ const popupTextByProduct = {
     steps: [
     "ဒီ API က Global API Type ပါ။ ဒီ Category ထဲမာပါတဲ့ ChatGpt, Claude, DeepSeek, Qwen အကုန်လုံးကတူတူပါပဲ။ အဲ့တာကြောင့်ဈေးတေတူနေတာပါ။ Global API တေက ကိုယ်ဝယ်ထားတဲ့ Credit ကို Time Limit 30 Days အတွင်းသုံးရတာပါ။ For example ခု ကိုယ်က Credits 10,000 ဝယ်လိုက်ပီဆိုရင် အဲ့တာကကိုယ်မသုံးမချင်း မကုန်ပါဘူး 30 ရက်မြောက်နေ့ထိမသုံးပဲထားရင်တော့သူ့ဘသူကုန်သွားမာမျိုးကိုပြောတာပါ။",
     "ဒီ Global API ထဲမာ Qwen ရဲ့ Max, Plus, Flash, Coder Plus, OpenAi ရဲ့ GPT 6 Astra, 5.6 Luna,Sol,Terra, 5.4, 5.5 အပြင် Claude Fable 5.1 & 5, Opus (5, 4.8, 4.7, 4.6,), Sonnet (5, 4.6,), Haiku (4.5), DeepSeek ရဲ့ V4 Pro, V4.1~V4 Flash, Kimi ရဲ့ K3, K2.7 Code နဲ့ GLM ရဲ့ 5.1, 5.2, 5.3, 5 Turbo တေလဲအကုန်ပါပါတယ်။",
-    "Credit Cost တေသိချင်ရင် Admin ကိုမေးကြည့်လို့ရပါတယ်။ Desktop Device တေမာပဲ VS Code နဲ့တွဲသုံးရမာပါ။ Laptop or PC တခုထဲကသုံးရတာမျိုးမဟုတ်ဘူး Multiple Laptop and PC API setup ပီးသုံးလိုရပါတယ်။ 3 Devices လောက်ရပေမဲ့ တချိန်ထဲတော့တူတူသူံးလို့မရပါဘူး။ ဟိုလို Claude Website မာသုံးရတဲ့အကောင့်လဲမဟုတ်ပါဘူး။ ကိုယ့် VS Code account ထဲမာ API ထည့်ပီးသုံးရတာမျိုးပါ။"
+    "Credit Cost တေသိချင်ရင် Admin ကိုမေးကြည့်လို့ရပါတယ်။ Desktop Device တေမာပဲ VS Code နဲ့တွဲသုံးရမာပါ။ Laptop or PC တခုထဲကသုံးရတာမျိုးမဟုတ်ဘူး Multiple Laptop and PC API setup ပီးသုံးလိုရပါတယ်။ 10 Devices ထိသုံးလို့ရပေမဲ့ တချိန်ထဲတူတူသုံးတာကတော့ 5 Devices ပဲသုံးလို့ရပါတယ်။ ဟိုလို Claude Website မာသုံးရတဲ့အကောင့်လဲမဟုတ်ပါဘူး။ ကိုယ့် VS Code account ထဲမာ API ထည့်ပီးသုံးရတာမျိုးပါ။"
   ],
     stepButtons: [
     "ဆက်ရန်",
@@ -3668,7 +3668,7 @@ const popupTextByProduct = {
     steps: [
     "ဒီ API က Global API Type ပါ။ ဒီ Category ထဲမာပါတဲ့ ChatGpt, Claude, DeepSeek, Qwen အကုန်လုံးကတူတူပါပဲ။ အဲ့တာကြောင့်ဈေးတေတူနေတာပါ။ Global API တေက ကိုယ်ဝယ်ထားတဲ့ Credit ကို Time Limit 30 Days အတွင်းသုံးရတာပါ။ For example ခု ကိုယ်က Credits 10,000 ဝယ်လိုက်ပီဆိုရင် အဲ့တာကကိုယ်မသုံးမချင်း မကုန်ပါဘူး 30 ရက်မြောက်နေ့ထိမသုံးပဲထားရင်တော့သူ့ဘသူကုန်သွားမာမျိုးကိုပြောတာပါ။",
     "ဒီ Global API ထဲမာ DeepSeek ရဲ့ V4 Pro, V4.1~V4 Flash, OpenAi ရဲ့ GPT 6 Astra, 5.6 Luna,Sol,Terra, 5.4, 5.5 အပြင် Claude Fable 5.1 & 5, Opus (5, 4.8, 4.7, 4.6,), Sonnet (5, 4.6,), Haiku (4.5), Qwen ရဲ့ Max, Plus, Flash, Coder Plus, Kimi ရဲ့ K3, K2.7 Code နဲ့ GLM ရဲ့ 5.1, 5.2, 5.3, 5 Turbo တေလဲအကုန်ပါပါတယ်။",
-    "Credit Cost တေသိချင်ရင် Admin ကိုမေးကြည့်လို့ရပါတယ်။ Desktop Device တေမာပဲ VS Code နဲ့တွဲသုံးရမာပါ။ Laptop or PC တခုထဲကသုံးရတာမျိုးမဟုတ်ဘူး Multiple Laptop and PC API setup ပီးသုံးလိုရပါတယ်။ 3 Devices လောက်ရပေမဲ့ တချိန်ထဲတော့တူတူသူံးလို့မရပါဘူး။ ဟိုလို Claude Website မာသုံးရတဲ့အကောင့်လဲမဟုတ်ပါဘူး။ ကိုယ့် VS Code account ထဲမာ API ထည့်ပီးသုံးရတာမျိုးပါ။"
+    "Credit Cost တေသိချင်ရင် Admin ကိုမေးကြည့်လို့ရပါတယ်။ Desktop Device တေမာပဲ VS Code နဲ့တွဲသုံးရမာပါ။ Laptop or PC တခုထဲကသုံးရတာမျိုးမဟုတ်ဘူး Multiple Laptop and PC API setup ပီးသုံးလိုရပါတယ်။ 10 Devices ထိသုံးလို့ရပေမဲ့ တချိန်ထဲတူတူသုံးတာကတော့ 5 Devices ပဲသုံးလို့ရပါတယ်။ ဟိုလို Claude Website မာသုံးရတဲ့အကောင့်လဲမဟုတ်ပါဘူး။ ကိုယ့် VS Code account ထဲမာ API ထည့်ပီးသုံးရတာမျိုးပါ။"
   ],
     stepButtons: [
     "ဆက်ရန်",

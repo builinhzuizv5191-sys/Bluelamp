@@ -1061,7 +1061,7 @@
      }],
      "Private Business": [{
         "duration": "1 Week",
-        "price": "3,500 Kyats"
+        "price": "Out Of Stock"
       }, {
         "duration": "1 Month",
         "price": "6,000 Kyats"
@@ -1071,7 +1071,7 @@
       }],
       "Private Pro": [{
         "duration": "1 Week",
-        "price": "3,000 Kyats"
+        "price": "Out Of Stock"
       }]
    },
     "PhotoRoom": {

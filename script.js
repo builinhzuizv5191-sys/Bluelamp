@@ -1095,8 +1095,8 @@
     },
     "Express Vpn": {
       "Private": [{
-        "duration": "5 Days",
-        "price": "2,500 Kyats"
+        "duration": "3 Days",
+        "price": "1,500 Kyats"
       }]
     },
     "NordVpn": {

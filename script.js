@@ -1160,10 +1160,10 @@
        "price": "15,000 Kyats"
      }, {
        "duration": "(1 Profile 2 Months)",
-       "price": "27,000 Kyats"
+       "price": "29,000 Kyats"
      }, {
        "duration": "(1 Profile 3 Months)",
-       "price": "39,000 Kyats"
+       "price": "42,900 Kyats"
      }]
    },
     "Disney+": {
@@ -5978,13 +5978,13 @@ if (productName === "Netflix") {
   const UHD_SECTION = "SemiPrivate Premium";
   const FHD_SECTION = "SemiPrivate Standard";
 
-  function getNetflixUhdCustomPrice(months) {
-    if (months === 1) return 15000;
-    if (months === 2) return 27000;
-    if (months === 3) return 39000;
-    if (months >= 4) return months * 13000;
-    return 0;
-  }
+function getNetflixUhdCustomPrice(months) {
+  if (months === 1) return 15000;
+  if (months === 2) return months * 14500;
+  if (months === 3) return months * 14300;
+  if (months >= 4) return months * 14000;
+  return 0;
+}
   function mountNetflixUhdMonthsBox() {
     const html = `
       <div class="plan-box">

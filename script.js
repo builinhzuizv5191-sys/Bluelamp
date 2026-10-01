@@ -1059,7 +1059,7 @@
        "duration": "Lifetime",
        "price": "5,000 Kyats"
      }],
-     "Private Business": [{
+     "OwnMail Private Business": [{
         "duration": "1 Week",
         "price": "Out Of Stock"
       }, {
@@ -3450,7 +3450,7 @@ const popupTextByProduct = {
     nextText: "ဘာတေကွာလဲ?",
     backText: "Back",
     steps: [
-    "တွေ့ရတဲ့တိုင်း Canva မာရ္စေးချယ်စရာPlan 4 ခုရှိပါတယ်။<br>Share,Private Business, Private Pro<br>And Educational",
+    "တွေ့ရတဲ့တိုင်း Canva မာရ္စေးချယ်စရာPlan 4 ခုရှိပါတယ်။<br>Share,OwnMail Private Business, Private Pro<br>And Educational",
     "ဘာကွာလဲဆိုရင်တော်တော်ကွာပါတယ်။ ဒီထဲက Share Invite ဆိုတာကဝယ်သူရဲ့ Email ကို invite လုပ်ပေးလိုက်မာပါ။ Pro features တေရတယ်ဆိုပေမဲ့ Members အနေနဲ့မို့လို့ Limited access သဘောပါပဲ။ (ဥပမာ Font တေကိုထည့်ချင်တာထည့်မရတာမျိုးလိုပေါ့။)",
     "Total 20~30Daysကြားပဲရမာပါ။ ဒါကဘာကိုပြောတာလဲဆိုရင်ဥပမာကိုယ်က1ရက်နေ့ကဝယ်လိုက်တယ်ဆိုရင် 20 ရက့်နေ့မလဲကုန်နိုင်တယ်အဲ့ကနေ 30 ထိလဲအများဆုံးရနိုင်တယ်။ အနဲဆုံးကတော့ 20 ရက်ပေါ့။",
     "Private Business နဲ့ Private Pro ကအကုန်တူတူနီးပါးပါပဲ။ ဘာကွာသွားလဲဆိုရင်အသိသာဆုံးက Business က Pro ထက် Ai usage 2ဆလောက်များပါတယ်။ ပီးတော့သူက Canva ထဲမာရှိတဲ့အမြင့်ဆုံး Subscription ပါ။",
@@ -4759,8 +4759,8 @@ if (regionalProducts[productName]) {
           } else if (productName === 'Canva') {
          if (sectionName === 'Private Pro') {
             title = 'Private <span style="background:#38bdf8; color:#020617; padding:2px 6px; border-radius:4px; font-size:11px; margin-left:8px; font-weight:900; box-shadow:0 0 6px #38bdf8;">Pro Subscription</span>';
-          } else if (sectionName === 'Private Business') {
-            title = 'Private <span style="background:#38bdf8; color:#020617; padding:2px 6px; border-radius:4px; font-size:11px; margin-left:8px; font-weight:900; box-shadow:0 0 6px #38bdf8;">Business Subscription</span>';
+          } else if (sectionName === 'OwnMail Private Business') {
+            title = 'OwnMail Private <span style="background:#38bdf8; color:#020617; padding:2px 6px; border-radius:4px; font-size:11px; margin-left:8px; font-weight:900; box-shadow:0 0 6px #38bdf8;">Business Subscription</span>';
           } else if (sectionName === 'Own Mail') {
             title = 'Own Mail(Invite) <span style="background:#38bdf8; color:#020617; padding:2px 6px; border-radius:4px; font-size:11px; margin-left:8px; font-weight:900; box-shadow:0 0 6px #38bdf8;">Educational</span>';
           } else if (sectionName === 'Share') {
@@ -6703,7 +6703,7 @@ Up to 5 devices` + generalDetailsBlock,
 Own Mail
 Education edition (limited features). 5 Months Warranty.
 
-Private Business
+OwnMail Private Business
 Full warranty
 Up to 100 accounts via invite email
 Canva Account တေက device limit ကန့်သတ်ချက်မရှိလို့ကြိုက်သလောက်သုံးလို့ရပါတယ် email တခုကို။
@@ -7183,7 +7183,7 @@ Domain type nonrenewable
    }
 
     if (productName === "Canva")
-   if (item.section === "Private business" && item.duration.includes("2 Weeks")) {
+   if (item.section === "OwnMail Private Business" && item.duration.includes("2 Weeks")) {
     return `<div class="burmese-font">
     Full warranty
     Up to 100 accounts via invite email
@@ -7384,7 +7384,7 @@ if (productName === "Express Vpn" && item.section === "Share" && /^phone/i.test(
         Mod app မဟုတ်ပါဘူး။ Android only ပဲသူံးလို့ရပါတယ်။ Playstore က Official app မာပဲသုံးလို့ရမာပါ။`;
     if (!fullText) return null;
     const rawDetails = fullText.trim();
-    const sectionHeaders = /^(Share|Own Mail|Private Business|Sever Boost|Private Pro|Private|Private Trial|Private Nitro|Private Basic|Private Individual Subscription|Private Family Subscription|SemiPrivate Premium|Private OwnMail Go Subscription|Whole Account Standard|Whole Account Premium|SemiPrivate Standard|SemiPrivate|FullPrivate|Tinder Plus Share|Login|Gift Plan & Link Plan|Gift Plan|Link Plan|Views \(NoDrop\)|Likes \(NoDrop\)|Comment - Emoji Type|Comment - Custom Type|Package Plan|Livestream Views|Livestream Likes|Livestream Share|Post Views|Positive Reactions|Negative Reactions|Custom Reactions|Premium Reactions|Members \(30Days Refill\)|Livestream Views|Comment - Impression Type|Comment - Custom Type|Video Views|Video Likes|Post Likes|Profile Followers|Page Followers|Live Stream Views|Video Views & Reels|Likes|Followers|Personal Plus \(Share\)|Personal Plus \(Private\)|Business Plus - Invite Own Email|Business - Own|Private Own Mail|Private \(Own Mail\)|Base Service|1 Profile\(Semiprivate\)|5 Profiles\(Whole Account\)|Nitro Basic \(Key\)|Individual|Own Mail Invite|Sharing Pro|Plan Basic|Plan Premium|HBO MAX \(Premium\) 1 Month|Private Whole Account \(1 Month\)|1 Profile|Whole Account|OwnMail Private|OwnMail Invite|Individual Plan|Business Own\(Full Warranty\)|Business Plus Own\(Full Warranty\)|Business Plus Own|Normal Plan|Family Head\(Can Invite 5 email\)|Invite Private|Web Private|App&Web Private|Pro Share|Pro Private|Lifetime Premium|Educational\(Invite\)|Individual Plan\(Private\)|Stars|Japan Region \(¥\)|US Region \(\$\)|UK Region \(£\)|Custom Amount|Turkey Region \(TL\)|Indonesia Region \(IDR\)|Brazil Region \(BRL\)|Korea Region \(₩\)|India Region \(₹\)|Australia Region \(A\$\)|Germany Region \(€\)|France Region \(€\)|Italy Region \(€\)|Switzerland Region \(CHF\)|Canada Region \(C\$\)|UAE Region \(AED\)|Poland Region \(PLN\)|Nitro \(Key\))/i;
+    const sectionHeaders = /^(Share|Own Mail|OwnMail Private Business|Sever Boost|Private Pro|Private|Private Trial|Private Nitro|Private Basic|Private Individual Subscription|Private Family Subscription|SemiPrivate Premium|Private OwnMail Go Subscription|Whole Account Standard|Whole Account Premium|SemiPrivate Standard|SemiPrivate|FullPrivate|Tinder Plus Share|Login|Gift Plan & Link Plan|Gift Plan|Link Plan|Views \(NoDrop\)|Likes \(NoDrop\)|Comment - Emoji Type|Comment - Custom Type|Package Plan|Livestream Views|Livestream Likes|Livestream Share|Post Views|Positive Reactions|Negative Reactions|Custom Reactions|Premium Reactions|Members \(30Days Refill\)|Livestream Views|Comment - Impression Type|Comment - Custom Type|Video Views|Video Likes|Post Likes|Profile Followers|Page Followers|Live Stream Views|Video Views & Reels|Likes|Followers|Personal Plus \(Share\)|Personal Plus \(Private\)|Business Plus - Invite Own Email|Business - Own|Private Own Mail|Private \(Own Mail\)|Base Service|1 Profile\(Semiprivate\)|5 Profiles\(Whole Account\)|Nitro Basic \(Key\)|Individual|Own Mail Invite|Sharing Pro|Plan Basic|Plan Premium|HBO MAX \(Premium\) 1 Month|Private Whole Account \(1 Month\)|1 Profile|Whole Account|OwnMail Private|OwnMail Invite|Individual Plan|Business Own\(Full Warranty\)|Business Plus Own\(Full Warranty\)|Business Plus Own|Normal Plan|Family Head\(Can Invite 5 email\)|Invite Private|Web Private|App&Web Private|Pro Share|Pro Private|Lifetime Premium|Educational\(Invite\)|Individual Plan\(Private\)|Stars|Japan Region \(¥\)|US Region \(\$\)|UK Region \(£\)|Custom Amount|Turkey Region \(TL\)|Indonesia Region \(IDR\)|Brazil Region \(BRL\)|Korea Region \(₩\)|India Region \(₹\)|Australia Region \(A\$\)|Germany Region \(€\)|France Region \(€\)|Italy Region \(€\)|Switzerland Region \(CHF\)|Canada Region \(C\$\)|UAE Region \(AED\)|Poland Region \(PLN\)|Nitro \(Key\))/i;
     const lines = rawDetails.split('\n').map(l => l.trim()).filter(l => l.length > 0);
     let targetSection = String(forceNoteSectionName).replace(/\s*\(.*\)/, '');
     if (productName === 'HBO Max') targetSection = item.section;
@@ -7653,7 +7653,7 @@ dom.checkout.nextBtn.style.display = "inline-flex";
 function formatDetails(raw) {
 
 const headers =
-  /^(Share|Private|Private Individual Subscription|Private Trial|Sever Boost|Private Nitro|Private Basic|Private Family Subscription|Private Own Mail|Private \(Own Mail\)|Private VIP|Private VIP Plus|Share Plan|Private OwnMail Go Subscription|Share Go Subscription|Private OwnMail Plus Subscription|Private Plan|Share Business|Own Mail|Private Business|Private Pro|SemiPrivate Premium|SemiPrivate Standard|Whole Account|Plan Basic \(Limited Screen\)|Plan Premium \(No Limit\)|HBO MAX \(Premium\) 1 Month|Private Whole Account Standard\(1 Month\)|Private Whole Account Premium\(1 Month\)|Family Private|Individual Plan|Sharing \(2TB\)|Personal Plus \(Private\)|Business Plus - Invite Own Email|Business Plus Own|Business Plus Own\(Full Warranty\)|Head\(Can Invite 5 Email\)|OwnMail Invite|Private \(Individual Plan\)|Private API Key|Login|Gift Plan & Link Plan|Gift Plan|Link Plan|Nitro \(Key\)|OwnMail Private|Lifetime Premium|Family Head\(Can Invite 5 email\)|Invite Private|Account|My\.ID\/my\.id|Login method|NoLoginBoost|Views \(NoDrop\)|Likes \(NoDrop\)|Package Plan|Base Service|Normal Plan|Web Private|App&Web Private|Tinder Plus Share|Livestream Views|Livestream Likes|Livestream Share|Post Views|Positive Reactions|Negative Reactions|Members \(30Days Refill\)|Comment - Impression Type|Comment - Custom Type|Video Views|Post Like|Profile Followers|Page follower|Live Stream Views|Video Views & Reels|Likes|Save|Reach|Followers|Pro Share|Pro Private|Educational|Individual|Stars|Japan Region|US Region|UK Region|Custom Amount|Turkey Region|Indonesia Region|Brazil Region|Korea Region|India Region|Australia Region|Germany Region|France Region|Italy Region|Switzerland Region|Canada Region|Poland Region|UAE Region)$/i;
+  /^(Share|Private|Private Individual Subscription|Private Trial|Sever Boost|Private Nitro|Private Basic|Private Family Subscription|Private Own Mail|Private \(Own Mail\)|Private VIP|Private VIP Plus|Share Plan|Private OwnMail Go Subscription|Share Go Subscription|Private OwnMail Plus Subscription|Private Plan|Share Business|Own Mail|OwnMail Private Business|Private Pro|SemiPrivate Premium|SemiPrivate Standard|Whole Account|Plan Basic \(Limited Screen\)|Plan Premium \(No Limit\)|HBO MAX \(Premium\) 1 Month|Private Whole Account Standard\(1 Month\)|Private Whole Account Premium\(1 Month\)|Family Private|Individual Plan|Sharing \(2TB\)|Personal Plus \(Private\)|Business Plus - Invite Own Email|Business Plus Own|Business Plus Own\(Full Warranty\)|Head\(Can Invite 5 Email\)|OwnMail Invite|Private \(Individual Plan\)|Private API Key|Login|Gift Plan & Link Plan|Gift Plan|Link Plan|Nitro \(Key\)|OwnMail Private|Lifetime Premium|Family Head\(Can Invite 5 email\)|Invite Private|Account|My\.ID\/my\.id|Login method|NoLoginBoost|Views \(NoDrop\)|Likes \(NoDrop\)|Package Plan|Base Service|Normal Plan|Web Private|App&Web Private|Tinder Plus Share|Livestream Views|Livestream Likes|Livestream Share|Post Views|Positive Reactions|Negative Reactions|Members \(30Days Refill\)|Comment - Impression Type|Comment - Custom Type|Video Views|Post Like|Profile Followers|Page follower|Live Stream Views|Video Views & Reels|Likes|Save|Reach|Followers|Pro Share|Pro Private|Educational|Individual|Stars|Japan Region|US Region|UK Region|Custom Amount|Turkey Region|Indonesia Region|Brazil Region|Korea Region|India Region|Australia Region|Germany Region|France Region|Italy Region|Switzerland Region|Canada Region|Poland Region|UAE Region)$/i;
 
 
   const mainDetails = String(raw)

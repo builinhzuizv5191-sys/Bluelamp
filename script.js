@@ -1559,19 +1559,33 @@
         "price": "Out Of Stock"
       }]
     },
-    "Discord": {
-      "Private": [{
-        "duration": "3 Months",
-        "price": "29,500 Kyats"
-      }],
-      "Sever Boost": [{
-        "duration": "1 Month 14 Boost",
-        "price": "36,000 Kyats"
-      }, {
-        "duration": "3 Months 14 Boost",
-        "price": "78,000 Kyats"
-      }]
-    },
+"Discord": {
+  "Private Trial": [{
+    "duration": "3 Months",
+    "price": "29,500 Kyats"
+  }],
+
+  "Private Nitro": [{
+    "duration": "1 Month",
+    "price": "29,500 Kyats"
+  }, {
+    "duration": "12 Months",
+    "price": "299,500 Kyats"
+  }],
+
+  "Private Basic": [{
+    "duration": "1 Month",
+    "price": "15,000 Kyats"
+  }],
+
+  "Sever Boost": [{
+    "duration": "1 Month 14 Boost",
+    "price": "36,000 Kyats"
+  }, {
+    "duration": "3 Months 14 Boost",
+    "price": "78,000 Kyats"
+  }]
+},
     "Perplexity Ai": {
       "Share": [{
         "duration": "1 Week",
@@ -3998,11 +4012,15 @@ const popupTextByProduct = {
   "Discord": {
     title: "Discord Info",
     button: "ဒါရှင်းပြပေးပါ။",
-    nextText: "ဝယ်ရင်ရော?",
+    nextText: "ဆက်ရန်",
     backText: "Back",
     steps: [
-    "ဒါက Discord ရဲ့  Nitro Subscription ပါ။ Nitro Basic မဟုတ်ပါဘူး။ ဒါဝယ်ဖို့ဆိုရင် သင့်ရဲ့ Discord account က အနဲဆုံး 1Month သက်တန်းရှိဖို့လိုပါမယ်။ ပီးတော့ Discord Subscription တခါမမဝယ်ဖူးတဲ့အကောင့်ဖြစ်မရမာပါ။",
-    "ဝယ်ရင် ကျနော်ကအကောင့်ထဲ Login ဝင်ပီးလုပ်ပေးမာပါ။ လုပ်စရာရှိတာလုပ်ပီးရင်ပြန်ထွက်မာဆိုပေမဲ့ Privacy တေဘာတေရှိလို့အဆင်မပြေဘူးဆိုရင်တော့မဝယ်သင့်ပါဘူး။"
+    "အရင်ဆုံး Nitro Trail နဲ့ Nitro Subscription ကဘာကွာလဲမေးရင်ဘာမမကွာပါဘူး Nitro ချင်းတူတူပါပဲ။ Nitro Trial ဆို‌တာက ဒီ Plan ကိုဝယ်ဖို့အတွက် Discord Account က အနဲဆုံး 1 Month သက်တန်းရှိနေဖို့လိုပါတယ်။ Discord ရဲ့ Subscription တေလဲတခါမဝယ်မထားဖူးတဲ့အကောင့်ဖြစ် ဖို့လိုပါတယ်။",
+    "Nitro Subscription ကကျဘယ်လိုအကောင့်မျိုးဖြစ်ဖြစ်ဝယ်လို့ရပီးလတိုင်းလဲသက်တန်းတိုးလို့ရပါတယ်။ ဘယ် Plan ယူယူအကုန်လုံးက Login ဝင်ပီးဝယ်ပေးရမာပါ။ Trial ကတော့ 1 to 2 Days ကြာနိုင်ပါတယ်။ Official ဝယ်တာကတော့ 10 minutes ပဲကြာပါတယ်။ Login ပေးဝင်လို့မရဘူးဆို‌ရင်တော့မယူသင့်ပါဘူး။",
+    "Nitro Basic က Nitro Subscription လိုပဲအကုန်တူတူပါပဲ။ Basic နဲ့ Nitro ပဲကွာတာပါ။ အကြံပေးရရင်ကိုယ့်အကောင့်က Nitro Trial ဝယ်လို့ရရင် Trial အရင်ယူလိုက်တာကပိုကောင်းပါတယ်။ နောက်မ Trial ကုန်ရင် Official ထက်ဝယ်ပီးဆက်သုံးသွားလို့ရတော့။ Plan တိုင်းကို Full Warranty ပေးပါတယ်။"
+  ],
+    stepButtons: [
+    "ဆက်ရန်"
   ]
   },
   "TradingView": {
@@ -4725,6 +4743,19 @@ if (regionalProducts[productName]) {
          if (sectionName === 'SemiPrivate Premium') {
             title = 'SemiPrivate <span style="background:#000000; color:#ff3131; padding:2px 6px; border-radius:4px; font-size:11px; margin-left:8px; font-weight:900; box-shadow:0 0 6px #ff3131;">Premium Subscription</span>';
           }
+          } else if (productName === 'Discord') {
+         if (sectionName === 'Private Trial') {
+            title = 'Private <span style="background:#a855f7; color:#ffffff; padding:2px 6px; border-radius:4px; font-size:11px; margin-left:8px; font-weight:900; box-shadow:0 0 6px #a855f7;">Nitro Trial</span>';
+          }
+          if (sectionName === 'Private Nitro') {
+            title = 'Private <span style="background:#a855f7; color:#ffffff; padding:2px 6px; border-radius:4px; font-size:11px; margin-left:8px; font-weight:900; box-shadow:0 0 6px #a855f7;">Nitro Subscription</span>';
+          }
+          if (sectionName === 'Private Basic') {
+            title = 'Private <span style="background:#60a5fa; color:#0f172a; padding:2px 6px; border-radius:4px; font-size:11px; margin-left:8px; font-weight:900; box-shadow:0 0 6px #60a5fa;">Nitro Basic</span>';
+          }
+          if (sectionName === 'Sever Boost') {
+            title = 'Sever Boost <span style="background:#a855f7; color:#ffffff; padding:2px 6px; border-radius:4px; font-size:11px; margin-left:8px; font-weight:900; box-shadow:0 0 6px #a855f7;">Nitro</span>';
+          }
           } else if (productName === 'Canva') {
          if (sectionName === 'Private Pro') {
             title = 'Private <span style="background:#38bdf8; color:#020617; padding:2px 6px; border-radius:4px; font-size:11px; margin-left:8px; font-weight:900; box-shadow:0 0 6px #38bdf8;">Pro Subscription</span>';
@@ -4878,13 +4909,6 @@ if (regionalProducts[productName]) {
           }
          if (sectionName === 'OwnMail invite') {
             title += ' <span style="background:#cbd5e1; color:#0f172a; padding:2px 6px; border-radius:4px; font-size:11px; margin-left:8px; font-weight:900; box-shadow:0 0 6px #cbd5e1;">5,000 GB</span>';
-          }
-          } else if (productName === 'Discord') {
-         if (sectionName === 'Private') {
-            title += ' <span style="background:#a855f7; color:#ffffff; padding:2px 6px; border-radius:4px; font-size:11px; margin-left:8px; font-weight:900; box-shadow:0 0 6px #a855f7;">Nitro Subscription</span>';
-          }
-         if (sectionName === 'Sever Boost') {
-            title += ' <span style="background:#a855f7; color:#ffffff; padding:2px 6px; border-radius:4px; font-size:11px; margin-left:8px; font-weight:900; box-shadow:0 0 6px #a855f7;">Nitro</span>';
           }
         } else if (productName === 'Gemini Pro') {
           if (sectionName.includes('OwnMail')) {
@@ -6717,6 +6741,24 @@ Microsoft 365 ရဲ့ Family Subscription ပါ။ ကျနော်ပေ�
 Own 1 profile you can use 2 devices.
 Tv Support.
 Full Warranty.` + generalDetailsBlock,
+"Discord": `Private Trial
+This Plan can only be used on accounts that are at least one month old.
+The account have to never subscribed to Discord Nitro nor Nitro Basic. 
+
+Private Nitro
+OwnMail Priavte, Login Plan
+Official Method.
+Full Warranty.
+Official Subscription ကိုဝယ်တာဖြစ်လို့ ကုန်ရင်သက်တန်းတိုးလို့ရပါတယ်။
+
+Private Basic
+OwnMail Priavte, Login Plan
+Official Method.
+Full Warranty.
+Official Subscription ကိုဝယ်တာဖြစ်လို့ ကုန်ရင်သက်တန်းတိုးလို့ရပါတယ်။
+
+Sever Boost
+Full Warranty.` + generalDetailsBlock,
     "Disney+": `Plan Basic (Limited Screen)
 Sharing up to 6 users.
 
@@ -6819,12 +6861,6 @@ No ads with all YouTube premium features.
 Gift Plan & Link Plan
 GiftPlan and Link Plan are same premium features.
 Contact admin for more details.` + generalDetailsBlock,
-    "Discord": `Nitro (Key)
-This code can only be used on accounts that are at least one month old and have never subscribed to Discord Nitro. 
-An active payment method is required to activate the code. 
-The code can only be activated once per IP address or payment method. 
-The code must be used within 1 week. 
-The code must be activated via the https://discord.com/billing/promotions/(YOURKEY)` + generalDetailsBlock,
     "Perplexity Ai": `Share
 One device only
 Full warranty.
@@ -7348,7 +7384,7 @@ if (productName === "Express Vpn" && item.section === "Share" && /^phone/i.test(
         Mod app မဟုတ်ပါဘူး။ Android only ပဲသူံးလို့ရပါတယ်။ Playstore က Official app မာပဲသုံးလို့ရမာပါ။`;
     if (!fullText) return null;
     const rawDetails = fullText.trim();
-    const sectionHeaders = /^(Share|Own Mail|Private Business|Private Pro|Private|Private Individual Subscription|Private Family Subscription|SemiPrivate Premium|Private OwnMail Go Subscription|Whole Account Standard|Whole Account Premium|SemiPrivate Standard|SemiPrivate|FullPrivate|Tinder Plus Share|Login|Gift Plan & Link Plan|Gift Plan|Link Plan|Views \(NoDrop\)|Likes \(NoDrop\)|Comment - Emoji Type|Comment - Custom Type|Package Plan|Livestream Views|Livestream Likes|Livestream Share|Post Views|Positive Reactions|Negative Reactions|Custom Reactions|Premium Reactions|Members \(30Days Refill\)|Livestream Views|Comment - Impression Type|Comment - Custom Type|Video Views|Video Likes|Post Likes|Profile Followers|Page Followers|Live Stream Views|Video Views & Reels|Likes|Followers|Personal Plus \(Share\)|Personal Plus \(Private\)|Business Plus - Invite Own Email|Business - Own|Private Own Mail|Private \(Own Mail\)|Base Service|1 Profile\(Semiprivate\)|5 Profiles\(Whole Account\)|Nitro Basic \(Key\)|Individual|Own Mail Invite|Sharing Pro|Plan Basic|Plan Premium|HBO MAX \(Premium\) 1 Month|Private Whole Account \(1 Month\)|1 Profile|Whole Account|OwnMail Private|OwnMail Invite|Individual Plan|Business Own\(Full Warranty\)|Business Plus Own\(Full Warranty\)|Business Plus Own|Normal Plan|Family Head\(Can Invite 5 email\)|Invite Private|Web Private|App&Web Private|Pro Share|Pro Private|Lifetime Premium|Educational\(Invite\)|Individual Plan\(Private\)|Stars|Japan Region \(¥\)|US Region \(\$\)|UK Region \(£\)|Custom Amount|Turkey Region \(TL\)|Indonesia Region \(IDR\)|Brazil Region \(BRL\)|Korea Region \(₩\)|India Region \(₹\)|Australia Region \(A\$\)|Germany Region \(€\)|France Region \(€\)|Italy Region \(€\)|Switzerland Region \(CHF\)|Canada Region \(C\$\)|UAE Region \(AED\)|Poland Region \(PLN\)|Nitro \(Key\))/i;
+    const sectionHeaders = /^(Share|Own Mail|Private Business|Sever Boost|Private Pro|Private|Private Trial|Private Nitro|Private Basic|Private Individual Subscription|Private Family Subscription|SemiPrivate Premium|Private OwnMail Go Subscription|Whole Account Standard|Whole Account Premium|SemiPrivate Standard|SemiPrivate|FullPrivate|Tinder Plus Share|Login|Gift Plan & Link Plan|Gift Plan|Link Plan|Views \(NoDrop\)|Likes \(NoDrop\)|Comment - Emoji Type|Comment - Custom Type|Package Plan|Livestream Views|Livestream Likes|Livestream Share|Post Views|Positive Reactions|Negative Reactions|Custom Reactions|Premium Reactions|Members \(30Days Refill\)|Livestream Views|Comment - Impression Type|Comment - Custom Type|Video Views|Video Likes|Post Likes|Profile Followers|Page Followers|Live Stream Views|Video Views & Reels|Likes|Followers|Personal Plus \(Share\)|Personal Plus \(Private\)|Business Plus - Invite Own Email|Business - Own|Private Own Mail|Private \(Own Mail\)|Base Service|1 Profile\(Semiprivate\)|5 Profiles\(Whole Account\)|Nitro Basic \(Key\)|Individual|Own Mail Invite|Sharing Pro|Plan Basic|Plan Premium|HBO MAX \(Premium\) 1 Month|Private Whole Account \(1 Month\)|1 Profile|Whole Account|OwnMail Private|OwnMail Invite|Individual Plan|Business Own\(Full Warranty\)|Business Plus Own\(Full Warranty\)|Business Plus Own|Normal Plan|Family Head\(Can Invite 5 email\)|Invite Private|Web Private|App&Web Private|Pro Share|Pro Private|Lifetime Premium|Educational\(Invite\)|Individual Plan\(Private\)|Stars|Japan Region \(¥\)|US Region \(\$\)|UK Region \(£\)|Custom Amount|Turkey Region \(TL\)|Indonesia Region \(IDR\)|Brazil Region \(BRL\)|Korea Region \(₩\)|India Region \(₹\)|Australia Region \(A\$\)|Germany Region \(€\)|France Region \(€\)|Italy Region \(€\)|Switzerland Region \(CHF\)|Canada Region \(C\$\)|UAE Region \(AED\)|Poland Region \(PLN\)|Nitro \(Key\))/i;
     const lines = rawDetails.split('\n').map(l => l.trim()).filter(l => l.length > 0);
     let targetSection = String(forceNoteSectionName).replace(/\s*\(.*\)/, '');
     if (productName === 'HBO Max') targetSection = item.section;
@@ -7617,7 +7653,7 @@ dom.checkout.nextBtn.style.display = "inline-flex";
 function formatDetails(raw) {
 
 const headers =
-  /^(Share|Private|Private Individual Subscription|Private Family Subscription|Private Own Mail|Private \(Own Mail\)|Private VIP|Private VIP Plus|Share Plan|Private OwnMail Go Subscription|Share Go Subscription|Private OwnMail Plus Subscription|Private Plan|Share Business|Own Mail|Private Business|Private Pro|SemiPrivate Premium|SemiPrivate Standard|Whole Account|Plan Basic \(Limited Screen\)|Plan Premium \(No Limit\)|HBO MAX \(Premium\) 1 Month|Private Whole Account Standard\(1 Month\)|Private Whole Account Premium\(1 Month\)|Family Private|Individual Plan|Sharing \(2TB\)|Personal Plus \(Private\)|Business Plus - Invite Own Email|Business Plus Own|Business Plus Own\(Full Warranty\)|Head\(Can Invite 5 Email\)|OwnMail Invite|Private \(Individual Plan\)|Private API Key|Login|Gift Plan & Link Plan|Gift Plan|Link Plan|Nitro \(Key\)|OwnMail Private|Lifetime Premium|Family Head\(Can Invite 5 email\)|Invite Private|Account|My\.ID\/my\.id|Login method|NoLoginBoost|Views \(NoDrop\)|Likes \(NoDrop\)|Package Plan|Base Service|Normal Plan|Web Private|App&Web Private|Tinder Plus Share|Livestream Views|Livestream Likes|Livestream Share|Post Views|Positive Reactions|Negative Reactions|Members \(30Days Refill\)|Comment - Impression Type|Comment - Custom Type|Video Views|Post Like|Profile Followers|Page follower|Live Stream Views|Video Views & Reels|Likes|Save|Reach|Followers|Pro Share|Pro Private|Educational|Individual|Stars|Japan Region|US Region|UK Region|Custom Amount|Turkey Region|Indonesia Region|Brazil Region|Korea Region|India Region|Australia Region|Germany Region|France Region|Italy Region|Switzerland Region|Canada Region|Poland Region|UAE Region)$/i;
+  /^(Share|Private|Private Individual Subscription|Private Trial|Sever Boost|Private Nitro|Private Basic|Private Family Subscription|Private Own Mail|Private \(Own Mail\)|Private VIP|Private VIP Plus|Share Plan|Private OwnMail Go Subscription|Share Go Subscription|Private OwnMail Plus Subscription|Private Plan|Share Business|Own Mail|Private Business|Private Pro|SemiPrivate Premium|SemiPrivate Standard|Whole Account|Plan Basic \(Limited Screen\)|Plan Premium \(No Limit\)|HBO MAX \(Premium\) 1 Month|Private Whole Account Standard\(1 Month\)|Private Whole Account Premium\(1 Month\)|Family Private|Individual Plan|Sharing \(2TB\)|Personal Plus \(Private\)|Business Plus - Invite Own Email|Business Plus Own|Business Plus Own\(Full Warranty\)|Head\(Can Invite 5 Email\)|OwnMail Invite|Private \(Individual Plan\)|Private API Key|Login|Gift Plan & Link Plan|Gift Plan|Link Plan|Nitro \(Key\)|OwnMail Private|Lifetime Premium|Family Head\(Can Invite 5 email\)|Invite Private|Account|My\.ID\/my\.id|Login method|NoLoginBoost|Views \(NoDrop\)|Likes \(NoDrop\)|Package Plan|Base Service|Normal Plan|Web Private|App&Web Private|Tinder Plus Share|Livestream Views|Livestream Likes|Livestream Share|Post Views|Positive Reactions|Negative Reactions|Members \(30Days Refill\)|Comment - Impression Type|Comment - Custom Type|Video Views|Post Like|Profile Followers|Page follower|Live Stream Views|Video Views & Reels|Likes|Save|Reach|Followers|Pro Share|Pro Private|Educational|Individual|Stars|Japan Region|US Region|UK Region|Custom Amount|Turkey Region|Indonesia Region|Brazil Region|Korea Region|India Region|Australia Region|Germany Region|France Region|Italy Region|Switzerland Region|Canada Region|Poland Region|UAE Region)$/i;
 
 
   const mainDetails = String(raw)

@@ -1105,7 +1105,7 @@
         "price": "Out Of Stock"
       }, {
         "duration": "1 Month",
-        "price": "Out Of Stock"
+        "price": "10,000 Kyats"
       }, {
         "duration": "3 Months",
         "price": "29,000 Kyats"

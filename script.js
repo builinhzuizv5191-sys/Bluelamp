@@ -1837,41 +1837,45 @@
       }]
     },
     "Telegram Boosting": {
-      "Post Views": [{
+      "Post Views Cheapest": [{
+        "duration": "100,000 Views",
+        "price": "5,000 Kyats"
+      }, {
+        "duration": "1,000,000 Views",
+        "price": "40,000 Kyats"
+      }],
+      "Post Views Normal": [{
         "duration": "1,000 Views",
         "price": "500 Kyats"
       }, {
         "duration": "10,000 Views",
-        "price": "1,000 Kyats"
-      }, {
-        "duration": "100,000 Views",
         "price": "5,000 Kyats"
       }],
       "Positive Reactions": [{
         "duration": "1,000 Reactions",
-        "price": "500 Kyats"
+        "price": "1,000 Kyats"
       }, {
         "duration": "10,000 Reactions",
-        "price": "3,500 Kyats"
+        "price": "9,000 Kyats"
       }],
       "Negative Reactions": [{
         "duration": "1,000 Reactions",
-        "price": "500 Kyats"
+        "price": "1,000 Kyats"
       }, {
         "duration": "10,000 Reactions",
-        "price": "500 Kyats"
+        "price": "9,000 Kyats"
       }],
       "Custom Reactions": [{
         "duration": "1,000 Reactions",
-        "price": "500 Kyats"
-      }],
-      "Premium Reactions": [{
-        "duration": "1,000 Reactions",
         "price": "1,000 Kyats"
       }],
-      "Members (30Days Refill)": [{
+      "Members Normal": [{
         "duration": "1,000 Members",
-        "price": "8,000 Kyats"
+        "price": "5,000 Kyats"
+      }],
+      "Members Premium": [{
+        "duration": "1,000 Members",
+        "price": "15,000 Kyats"
       }]
     },
     "YouTube Boosting": {
@@ -4756,6 +4760,28 @@ if (regionalProducts[productName]) {
           if (sectionName === 'Sever Boost') {
             title = 'Sever Boost <span style="background:#a855f7; color:#ffffff; padding:2px 6px; border-radius:4px; font-size:11px; margin-left:8px; font-weight:900; box-shadow:0 0 6px #a855f7;">Nitro</span>';
           }
+          } else if (productName === 'Telegram Boosting') {
+         if (sectionName === 'Post Views Cheapest') {
+            title = 'Post Views <span style="background:#000000; color:#ffffff; padding:2px 6px; border-radius:4px; font-size:11px; margin-left:8px; font-weight:900; box-shadow:0 0 6px #666666;">Cheapest</span>';
+          }
+          if (sectionName === 'Post Views Normal') {
+            title = 'Post Views <span style="background:#000000; color:#ffffff; padding:2px 6px; border-radius:4px; font-size:11px; margin-left:8px; font-weight:900; box-shadow:0 0 6px #666666;">Normal</span>';
+          }
+          if (sectionName === 'Positive Reactions') {
+            title = 'Reaction+Views <span style="background:#000000; color:#ffffff; padding:2px 6px; border-radius:4px; font-size:11px; margin-left:8px; font-weight:900; box-shadow:0 0 6px #666666;">Positive</span>';
+          }
+          if (sectionName === 'Negative Reactions') {
+            title = 'Reaction+Views <span style="background:#000000; color:#ffffff; padding:2px 6px; border-radius:4px; font-size:11px; margin-left:8px; font-weight:900; box-shadow:0 0 6px #666666;">Negative</span>';
+          }
+          if (sectionName === 'Custom Reactions') {
+            title = 'Reaction+Views <span style="background:#000000; color:#ffffff; padding:2px 6px; border-radius:4px; font-size:11px; margin-left:8px; font-weight:900; box-shadow:0 0 6px #666666;">Custom</span>';
+          }
+          if (sectionName === 'Members Normal') {
+            title = 'Members <span style="background:#000000; color:#ffffff; padding:2px 6px; border-radius:4px; font-size:11px; margin-left:8px; font-weight:900; box-shadow:0 0 6px #666666;">Normal</span>';
+          }
+          if (sectionName === 'Members Premium') {
+            title = 'Members <span style="background:#000000; color:#ffffff; padding:2px 6px; border-radius:4px; font-size:11px; margin-left:8px; font-weight:900; box-shadow:0 0 6px #666666;">Premium</span>';
+          }
           } else if (productName === 'Canva') {
          if (sectionName === 'Private Pro') {
             title = 'Private <span style="background:#38bdf8; color:#020617; padding:2px 6px; border-radius:4px; font-size:11px; margin-left:8px; font-weight:900; box-shadow:0 0 6px #38bdf8;">Pro Subscription</span>';
@@ -4916,7 +4942,187 @@ if (regionalProducts[productName]) {
             style = 'style="color: #ffeb3b;"';
           }
         }
-        return `<div class="plan-box"><div class="plan-title" ${style}>${title}</div><div class="plan-rows">${rows}</div></div>`;
+let telegramBoostCustomHTML = '';
+
+if (productName === 'Telegram Boosting') {
+
+  const telegramBoostConfigs = {
+    'Post Views Cheapest': {
+      min: 100000,
+      max: 1000000,
+      unit: 'Views',
+      id: 'tg-boost-post-cheapest'
+    },
+
+    'Post Views Normal': {
+      min: 1000,
+      max: 1000000,
+      unit: 'Views',
+      id: 'tg-boost-post-normal'
+    },
+
+    'Positive Reactions': {
+      min: 1000,
+      max: 1000000,
+      unit: 'Reactions',
+      id: 'tg-boost-positive'
+    },
+
+    'Negative Reactions': {
+      min: 1000,
+      max: 1000000,
+      unit: 'Reactions',
+      id: 'tg-boost-negative'
+    },
+
+    'Custom Reactions': {
+      min: 1000,
+      max: 1000000,
+      unit: 'Reactions',
+      id: 'tg-boost-custom-reactions'
+    },
+
+    'Members Normal': {
+      min: 1000,
+      max: 1000000,
+      unit: 'Members',
+      id: 'tg-boost-members-normal'
+    },
+
+    'Members Premium': {
+      min: 1000,
+      max: 1000000,
+      unit: 'Members',
+      id: 'tg-boost-members-premium'
+    }
+  };
+
+  const boostConfig =
+    telegramBoostConfigs[sectionName];
+
+  if (boostConfig) {
+
+    const {
+      min,
+      max,
+      unit,
+      id
+    } = boostConfig;
+
+    telegramBoostCustomHTML = `
+      <div
+        class="telegram-boost-custom"
+        data-boost-section="${escapeHTML(sectionName)}"
+        data-min="${min}"
+        data-max="${max}"
+        data-unit="${unit}"
+        data-custom-id="${id}"
+        style="
+          padding:18px 10px 12px;
+          display:flex;
+          flex-direction:column;
+          gap:12px;
+        "
+      >
+
+        <div style="
+          display:flex;
+          align-items:center;
+          justify-content:space-between;
+          gap:10px;
+        ">
+
+          <div style="
+            font-size:14px;
+            font-weight:800;
+          ">
+            Custom Amount
+          </div>
+
+          <div style="
+            font-size:11px;
+            opacity:.55;
+            white-space:nowrap;
+          ">
+            Max 1M
+          </div>
+
+        </div>
+
+        <label style="
+          font-size:12px;
+          opacity:.7;
+          margin-top:-4px;
+        ">
+          Enter ${unit}
+          (${min.toLocaleString()} - ${max.toLocaleString()})
+        </label>
+
+        <div style="
+          display:flex;
+          gap:12px;
+          align-items:center;
+        ">
+
+          <input
+            type="number"
+            id="${id}-input"
+            min="${min}"
+            max="${max}"
+            step="1"
+            placeholder="${min.toLocaleString()}"
+            style="
+              flex:1;
+              min-width:0;
+              height:46px;
+              padding:0 14px;
+              border-radius:10px;
+              border:1px solid rgba(255,255,255,.16);
+              background:rgba(255,255,255,.045);
+              color:white;
+              font-size:15px;
+              outline:none;
+            "
+          />
+
+          <div
+            id="${id}-price"
+            style="
+              min-width:96px;
+              text-align:right;
+              font-size:14px;
+              font-weight:800;
+              color:#00e676;
+              white-space:nowrap;
+            "
+          >
+            0 Kyats
+          </div>
+
+        </div>
+
+        <button
+          id="${id}-add"
+          class="btn btn-primary"
+          style="
+            width:100%;
+            margin-top:2px;
+          "
+        >
+          Add to Cart
+        </button>
+
+      </div>
+    `;
+  }
+}
+return `
+  <div class="plan-box">
+    <div class="plan-title" ${style}>${title}</div>
+    <div class="plan-rows">${rows}</div>
+    ${telegramBoostCustomHTML}
+  </div>
+`;
       }).join("");
     }
 
@@ -4978,6 +5184,259 @@ if (
 
     dom.views.product.innerHTML = pageHTML;
 
+// ==================================
+// TELEGRAM BOOSTING CUSTOM AMOUNTS
+// ==================================
+if (productName === "Telegram Boosting") {
+
+  const customBoostBoxes =
+    dom.views.product.querySelectorAll(
+      ".telegram-boost-custom"
+    );
+
+  customBoostBoxes.forEach(box => {
+
+    const section =
+      box.dataset.boostSection;
+
+    const unit =
+      box.dataset.unit;
+
+    const customId =
+      box.dataset.customId;
+
+    const minAmount =
+      parseInt(box.dataset.min, 10);
+
+    const maxAmount =
+      parseInt(box.dataset.max, 10);
+
+    const input =
+      document.getElementById(
+        `${customId}-input`
+      );
+
+    const priceDisplay =
+      document.getElementById(
+        `${customId}-price`
+      );
+
+    const addBtn =
+      document.getElementById(
+        `${customId}-add`
+      );
+
+
+    function getTelegramBoostPrice(amount) {
+
+      // =========================
+      // POST VIEWS CHEAPEST
+      // =========================
+      if (section === "Post Views Cheapest") {
+
+        // Existing:
+        // 100,000 = 5,000
+        // 1,000,000 = 40,000
+
+        if (amount >= 1000000) {
+          return 40000;
+        }
+
+        return Math.round(
+          amount * 0.05
+        );
+      }
+
+
+      // =========================
+      // POST VIEWS NORMAL
+      // =========================
+      if (section === "Post Views Normal") {
+
+        // Existing:
+        // 1,000 = 500
+        // 10,000 = 5,000
+
+        return Math.round(
+          amount * 0.5
+        );
+      }
+
+
+      // =========================
+      // POSITIVE REACTIONS
+      // =========================
+      if (section === "Positive Reactions") {
+
+        // Existing:
+        // 1,000 = 1,000
+        // 10,000 = 9,000
+
+        if (amount >= 10000) {
+          return Math.round(
+            amount * 0.9
+          );
+        }
+
+        return amount;
+      }
+
+
+      // =========================
+      // NEGATIVE REACTIONS
+      // =========================
+      if (section === "Negative Reactions") {
+
+        // Existing:
+        // 1,000 = 1,000
+        // 10,000 = 9,000
+
+        if (amount >= 10000) {
+          return Math.round(
+            amount * 0.9
+          );
+        }
+
+        return amount;
+      }
+
+
+      // =========================
+      // CUSTOM REACTIONS
+      // =========================
+      if (section === "Custom Reactions") {
+
+        // Existing:
+        // 1,000 = 1,000
+
+        return amount;
+      }
+
+
+      // =========================
+      // MEMBERS NORMAL
+      // =========================
+      if (section === "Members Normal") {
+
+        // Existing:
+        // 1,000 = 5,000
+
+        return Math.round(
+          amount * 5
+        );
+      }
+
+
+      // =========================
+      // MEMBERS PREMIUM
+      // =========================
+      if (section === "Members Premium") {
+
+        // Existing:
+        // 1,000 = 15,000
+
+        return Math.round(
+          amount * 15
+        );
+      }
+
+
+      return 0;
+    }
+
+
+    input.addEventListener(
+      "input",
+      () => {
+
+        const amount =
+          parseInt(input.value, 10);
+
+        if (
+          !amount ||
+          amount < minAmount ||
+          amount > maxAmount
+        ) {
+
+          priceDisplay.textContent =
+            "0 Kyats";
+
+          addBtn.style.backgroundColor =
+            "#ff4444";
+
+          addBtn.textContent =
+            `Limit: ${minAmount.toLocaleString()} - ${maxAmount.toLocaleString()}`;
+
+          return;
+        }
+
+        const price =
+          getTelegramBoostPrice(amount);
+
+        priceDisplay.textContent =
+          formatKyats(price);
+
+        addBtn.style.removeProperty(
+          "background-color"
+        );
+
+        addBtn.textContent =
+          "Add to Cart";
+      }
+    );
+
+
+    addBtn.addEventListener(
+      "click",
+      () => {
+
+        const amount =
+          parseInt(input.value, 10);
+
+        if (
+          !amount ||
+          amount < minAmount ||
+          amount > maxAmount
+        ) {
+          return;
+        }
+
+        const totalPrice =
+          getTelegramBoostPrice(amount);
+
+        const item = {
+          product: "Telegram Boosting",
+          section: section,
+          duration:
+            `${amount.toLocaleString()} ${unit}`,
+          unitPrice: totalPrice,
+          priceText:
+            formatKyats(totalPrice)
+        };
+
+        addToCart(item);
+
+        input.value = "";
+
+        priceDisplay.textContent =
+          "0 Kyats";
+
+        addBtn.style.removeProperty(
+          "background-color"
+        );
+
+        addBtn.textContent =
+          "Added!";
+
+        setTimeout(() => {
+          addBtn.textContent =
+            "Add to Cart";
+        }, 1000);
+      }
+    );
+
+  });
+}
     if (helperDisabledProducts.includes(productName)) {
       removeProductHelper();
     } else {
@@ -6622,6 +7081,41 @@ Private Own Mail
 2 to 3 devices.
 Full warranty for the entire plan duration.
 ကုန်ရင်လဲ တစ်လ 18,000Ks နှုန်းနဲ့သက်တန်းတိုးလို့ရပါတယ်။` + generalDetailsBlock,
+"Telegram Boosting": `Post Views Cheapest
+Channel & Group Post Only!
+No Warranty.
+Waiting Time 2 to 7 Days.
+
+Post Views Normal
+Channel & Group Post Only!
+1 Year Warranty.
+Waiting Time 1Hour to 3 Days.
+
+Positive Reactions
+This package include views+reactions
+Channel & Group Post Only!
+365 Days Warranty.
+Waiting Time 1Hour to 3 Days.
+
+Negative Reactions
+This package include views+reactions
+Channel & Group Post Only!
+365 Days Warranty.
+Waiting Time 1Hour to 3 Days.
+
+Custom Reactions
+This package include views+reactions
+Channel & Group Post Only!
+365 Days Warranty.
+Waiting Time 1Hour to 3 Days.
+
+Members Normal
+30 Days Warranty.
+Waiting Time 1Hour to 3 Days.
+
+Members Premium
+365 Days Warranty.
+Waiting Time 1Hour to 3 Days.` + generalDetailsBlock,
     "AlightMotion": `Share
 Full warranty for 6Months
 Covers premium subscription errors.
@@ -6934,7 +7428,6 @@ Please contact admin for usage details.` + generalDetailsBlock,
         
     Package Plan
     No dropဆိုပေမဲ့ TikTok ကစာပို့ပီးဖျက်ချသွားရင်တာ့ပြန်မထည့်ပေးပါဘူး။ထည့်ရင်လဲအကောင့် warning ထိမာပါ။` + generalDetailsBlock,
-    "Telegram Boosting": `Post Reactions are Lifetime No-Drop. Members have a 30-day refill guarantee.` + generalDetailsBlock,
     "YouTube Boosting": `Livestream Views are Impression type, please contact admin for specific details before purchasing.` + generalDetailsBlock,
     "Facebook Boosting": `Various boosting services for views, likes, and followers. Please provide the correct link/URL for the service.` + generalDetailsBlock,
     "Instagram Boosting": `Views, Likes, and Followers services. Please provide the correct link/URL for the service.` + generalDetailsBlock,
@@ -7305,6 +7798,62 @@ Domain type nonrenewable
     ကုန်ရင်သက်တန်းတိုးလို့ရပါတယ်။ မကုန်ခင် 1 Week အလိုလာတိုးရမာပါ။`;
     }
     }
+     if (productName === "Telegram Boosting") {
+    if (item.section === "Post Views Cheapest") {
+    return `No Warranty.
+    Channel & Group Post Only!
+    Waiting Time 2 to 7 Days.
+    Lastest Post ကိုပဲ Boost လို့ရပါတယ်။
+    Post Link ပဲပေးရမာပါ။ ကျန်တာမလိုပါဘူး။`;
+    }
+    }
+     if (productName === "Telegram Boosting") {
+    if (item.section === "Post Views Normal") {
+    return `1 Year Warranty.
+Channel & Group Post Only!
+Waiting Time 1Hour to 3 Days.
+Post Link ပဲပေးရမာပါ။ ကျန်တာမလိုပါဘူး။`;
+    }
+    }
+     if (productName === "Telegram Boosting") {
+    if (item.section === "Positive Reactions") {
+    return `This package include views+reactions
+Channel & Group Post Only!
+365 Days Warranty.
+Waiting Time 1Hour to 3 Days.
+Post Link ပဲပေးရမာပါ။ ကျန်တာမလိုပါဘူး။`;
+    }
+    }
+     if (productName === "Telegram Boosting") {
+    if (item.section === "Custom Reactions") {
+    return `This package include views+reactions
+Channel & Group Post Only!
+365 Days Warranty.
+Waiting Time 1Hour to 3 Days.
+Post Link ပဲပေးရမာပါ။ ကျန်တာမလိုပါဘူး။`;
+    }
+    }
+     if (productName === "Telegram Boosting") {
+    if (item.section === "Members Normal") {
+    return `30 Days Warranty.
+Waiting Time 1Hour to 3 Days.`;
+    }
+    }
+     if (productName === "Telegram Boosting") {
+    if (item.section === "Members Premium") {
+    return `365 Days Warranty.
+Waiting Time 1Hour to 3 Days`;
+    }
+    }
+     if (productName === "Telegram Boosting") {
+    if (item.section === "Negative Reactions") {
+    return `This package include views+reactions
+Channel & Group Post Only!
+365 Days Warranty.
+Waiting Time 1Hour to 3 Days.
+Post Link ပဲပေးရမာပါ။ ကျန်တာမလိုပါဘူး။`;
+    }
+    }
          if (productName === "Netflix") {
     if (item.section === "SemiPrivate Premium") {
     return `Own 1 profile you can use 2 devices.
@@ -7384,7 +7933,7 @@ if (productName === "Express Vpn" && item.section === "Share" && /^phone/i.test(
         Mod app မဟုတ်ပါဘူး။ Android only ပဲသူံးလို့ရပါတယ်။ Playstore က Official app မာပဲသုံးလို့ရမာပါ။`;
     if (!fullText) return null;
     const rawDetails = fullText.trim();
-    const sectionHeaders = /^(Share|Own Mail|OwnMail Private Business|Sever Boost|Private Pro|Private|Private Trial|Private Nitro|Private Basic|Private Individual Subscription|Private Family Subscription|SemiPrivate Premium|Private OwnMail Go Subscription|Whole Account Standard|Whole Account Premium|SemiPrivate Standard|SemiPrivate|FullPrivate|Tinder Plus Share|Login|Gift Plan & Link Plan|Gift Plan|Link Plan|Views \(NoDrop\)|Likes \(NoDrop\)|Comment - Emoji Type|Comment - Custom Type|Package Plan|Livestream Views|Livestream Likes|Livestream Share|Post Views|Positive Reactions|Negative Reactions|Custom Reactions|Premium Reactions|Members \(30Days Refill\)|Livestream Views|Comment - Impression Type|Comment - Custom Type|Video Views|Video Likes|Post Likes|Profile Followers|Page Followers|Live Stream Views|Video Views & Reels|Likes|Followers|Personal Plus \(Share\)|Personal Plus \(Private\)|Business Plus - Invite Own Email|Business - Own|Private Own Mail|Private \(Own Mail\)|Base Service|1 Profile\(Semiprivate\)|5 Profiles\(Whole Account\)|Nitro Basic \(Key\)|Individual|Own Mail Invite|Sharing Pro|Plan Basic|Plan Premium|HBO MAX \(Premium\) 1 Month|Private Whole Account \(1 Month\)|1 Profile|Whole Account|OwnMail Private|OwnMail Invite|Individual Plan|Business Own\(Full Warranty\)|Business Plus Own\(Full Warranty\)|Business Plus Own|Normal Plan|Family Head\(Can Invite 5 email\)|Invite Private|Web Private|App&Web Private|Pro Share|Pro Private|Lifetime Premium|Educational\(Invite\)|Individual Plan\(Private\)|Stars|Japan Region \(¥\)|US Region \(\$\)|UK Region \(£\)|Custom Amount|Turkey Region \(TL\)|Indonesia Region \(IDR\)|Brazil Region \(BRL\)|Korea Region \(₩\)|India Region \(₹\)|Australia Region \(A\$\)|Germany Region \(€\)|France Region \(€\)|Italy Region \(€\)|Switzerland Region \(CHF\)|Canada Region \(C\$\)|UAE Region \(AED\)|Poland Region \(PLN\)|Nitro \(Key\))/i;
+    const sectionHeaders = /^(Share|Own Mail|OwnMail Private Business|Sever Boost|Private Pro|Private|Private Trial|Private Nitro|Private Basic|Private Individual Subscription|Private Family Subscription|SemiPrivate Premium|Private OwnMail Go Subscription|Whole Account Standard|Whole Account Premium|SemiPrivate Standard|SemiPrivate|FullPrivate|Tinder Plus Share|Login|Gift Plan & Link Plan|Gift Plan|Link Plan|Views \(NoDrop\)|Likes \(NoDrop\)|Comment - Emoji Type|Comment - Custom Type|Package Plan|Livestream Views|Livestream Likes|Livestream Share|Post Views Cheapest|Post Views Normal|Post Views Quality|Positive Reactions|Negative Reactions|Custom Reactions|Members Premium|Members Normal|Livestream Views|Comment - Impression Type|Comment - Custom Type|Video Views|Video Likes|Post Likes|Profile Followers|Page Followers|Live Stream Views|Video Views & Reels|Likes|Followers|Personal Plus \(Share\)|Personal Plus \(Private\)|Business Plus - Invite Own Email|Business - Own|Private Own Mail|Private \(Own Mail\)|Base Service|1 Profile\(Semiprivate\)|5 Profiles\(Whole Account\)|Nitro Basic \(Key\)|Individual|Own Mail Invite|Sharing Pro|Plan Basic|Plan Premium|HBO MAX \(Premium\) 1 Month|Private Whole Account \(1 Month\)|1 Profile|Whole Account|OwnMail Private|OwnMail Invite|Individual Plan|Business Own\(Full Warranty\)|Business Plus Own\(Full Warranty\)|Business Plus Own|Normal Plan|Family Head\(Can Invite 5 email\)|Invite Private|Web Private|App&Web Private|Pro Share|Pro Private|Lifetime Premium|Educational\(Invite\)|Individual Plan\(Private\)|Stars|Japan Region \(¥\)|US Region \(\$\)|UK Region \(£\)|Custom Amount|Turkey Region \(TL\)|Indonesia Region \(IDR\)|Brazil Region \(BRL\)|Korea Region \(₩\)|India Region \(₹\)|Australia Region \(A\$\)|Germany Region \(€\)|France Region \(€\)|Italy Region \(€\)|Switzerland Region \(CHF\)|Canada Region \(C\$\)|UAE Region \(AED\)|Poland Region \(PLN\)|Nitro \(Key\))/i;
     const lines = rawDetails.split('\n').map(l => l.trim()).filter(l => l.length > 0);
     let targetSection = String(forceNoteSectionName).replace(/\s*\(.*\)/, '');
     if (productName === 'HBO Max') targetSection = item.section;
@@ -7653,7 +8202,7 @@ dom.checkout.nextBtn.style.display = "inline-flex";
 function formatDetails(raw) {
 
 const headers =
-  /^(Share|Private|Private Individual Subscription|Private Trial|Sever Boost|Private Nitro|Private Basic|Private Family Subscription|Private Own Mail|Private \(Own Mail\)|Private VIP|Private VIP Plus|Share Plan|Private OwnMail Go Subscription|Share Go Subscription|Private OwnMail Plus Subscription|Private Plan|Share Business|Own Mail|OwnMail Private Business|Private Pro|SemiPrivate Premium|SemiPrivate Standard|Whole Account|Plan Basic \(Limited Screen\)|Plan Premium \(No Limit\)|HBO MAX \(Premium\) 1 Month|Private Whole Account Standard\(1 Month\)|Private Whole Account Premium\(1 Month\)|Family Private|Individual Plan|Sharing \(2TB\)|Personal Plus \(Private\)|Business Plus - Invite Own Email|Business Plus Own|Business Plus Own\(Full Warranty\)|Head\(Can Invite 5 Email\)|OwnMail Invite|Private \(Individual Plan\)|Private API Key|Login|Gift Plan & Link Plan|Gift Plan|Link Plan|Nitro \(Key\)|OwnMail Private|Lifetime Premium|Family Head\(Can Invite 5 email\)|Invite Private|Account|My\.ID\/my\.id|Login method|NoLoginBoost|Views \(NoDrop\)|Likes \(NoDrop\)|Package Plan|Base Service|Normal Plan|Web Private|App&Web Private|Tinder Plus Share|Livestream Views|Livestream Likes|Livestream Share|Post Views|Positive Reactions|Negative Reactions|Members \(30Days Refill\)|Comment - Impression Type|Comment - Custom Type|Video Views|Post Like|Profile Followers|Page follower|Live Stream Views|Video Views & Reels|Likes|Save|Reach|Followers|Pro Share|Pro Private|Educational|Individual|Stars|Japan Region|US Region|UK Region|Custom Amount|Turkey Region|Indonesia Region|Brazil Region|Korea Region|India Region|Australia Region|Germany Region|France Region|Italy Region|Switzerland Region|Canada Region|Poland Region|UAE Region)$/i;
+  /^(Share|Private|Private Individual Subscription|Private Trial|Sever Boost|Private Nitro|Private Basic|Private Family Subscription|Private Own Mail|Private \(Own Mail\)|Private VIP|Private VIP Plus|Share Plan|Private OwnMail Go Subscription|Share Go Subscription|Private OwnMail Plus Subscription|Private Plan|Share Business|Own Mail|OwnMail Private Business|Private Pro|SemiPrivate Premium|SemiPrivate Standard|Whole Account|Plan Basic \(Limited Screen\)|Plan Premium \(No Limit\)|HBO MAX \(Premium\) 1 Month|Private Whole Account Standard\(1 Month\)|Private Whole Account Premium\(1 Month\)|Family Private|Individual Plan|Sharing \(2TB\)|Personal Plus \(Private\)|Business Plus - Invite Own Email|Business Plus Own|Business Plus Own\(Full Warranty\)|Head\(Can Invite 5 Email\)|OwnMail Invite|Private \(Individual Plan\)|Private API Key|Login|Gift Plan & Link Plan|Gift Plan|Link Plan|Nitro \(Key\)|OwnMail Private|Lifetime Premium|Family Head\(Can Invite 5 email\)|Invite Private|Account|My\.ID\/my\.id|Login method|NoLoginBoost|Views \(NoDrop\)|Likes \(NoDrop\)|Package Plan|Base Service|Normal Plan|Web Private|App&Web Private|Tinder Plus Share|Livestream Views|Livestream Likes|Livestream Share|Post Views Cheapest|Post Views Normal|Post Views Quality|Positive Reactions|Negative Reactions|Custom Reactions|Members Premium|Members Normal|Comment - Impression Type|Comment - Custom Type|Video Views|Post Like|Profile Followers|Page follower|Live Stream Views|Video Views & Reels|Likes|Save|Reach|Followers|Pro Share|Pro Private|Educational|Individual|Stars|Japan Region|US Region|UK Region|Custom Amount|Turkey Region|Indonesia Region|Brazil Region|Korea Region|India Region|Australia Region|Germany Region|France Region|Italy Region|Switzerland Region|Canada Region|Poland Region|UAE Region)$/i;
 
 
   const mainDetails = String(raw)

@@ -2474,13 +2474,13 @@
 "Apple United States": {
   "United States (USD)": [{
     "duration": "$2",
-    "price": "10,500 Kyats"
+    "price": "12,000 Kyats"
   }, {
     "duration": "$5",
-    "price": "25,500 Kyats"
+    "price": "28,000 Kyats"
   }, {
     "duration": "$10",
-    "price": "51,000 Kyats"
+    "price": "55,000 Kyats"
   }]
 },
 "Apple Japan": {

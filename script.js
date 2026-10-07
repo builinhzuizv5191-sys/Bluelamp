@@ -1101,14 +1101,14 @@
     },
     "NordVpn": {
       "Private": [{
-        "duration": "10 Days",
-        "price": "Out Of Stock"
+        "duration": "3 Days",
+        "price": "3,000 Ks"
       }, {
         "duration": "1 Month",
-        "price": "10,000 Kyats"
+        "price": "12,000 Kyats"
       }, {
         "duration": "3 Months",
-        "price": "29,000 Kyats"
+        "price": "Out Of Stock"
       }]
     },
     "Surfshark Vpn": {

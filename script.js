@@ -2478,6 +2478,9 @@
   }, {
     "duration": "$10",
     "price": "55,000 Kyats"
+  }, {
+    "duration": "$50",
+    "price": "265,000 Kyats"
   }]
 },
 "Apple Japan": {

@@ -964,11 +964,8 @@
         "duration": "1 Month",
         "price": "15,000 Kyats"
       }, {
-        "duration": "3 Months",
-        "price": "45,000 Kyats"
-      }, {
-        "duration": "9 Months",
-        "price": "126,000 Kyats"
+        "duration": "12 Months",
+        "price": "168,000 Kyats"
       }],
       "Private Own Mail": [{
         "duration": "1 Month",
@@ -6195,52 +6192,109 @@ if (productName === "CapCut") {
     buttonId,
     getPrice
   }) {
-    const html = `
-      <div class="plan-box">
-        <div class="plan-title">${title}</div>
+const html = `
+  <div
+    class="capcut-custom-months"
+    style="
+      padding:18px 10px 12px;
+      display:flex;
+      flex-direction:column;
+      gap:10px;
+    "
+  >
 
-        <div style="padding:10px; display:flex; flex-direction:column; gap:10px;">
+    <div style="
+      font-size:14px;
+      font-weight:800;
+    ">
+      ${title}
+    </div>
 
-          <label style="font-size:14px; color:#ccc;">
-            Enter Months (1 - 12)
-          </label>
+    <label style="
+      font-size:12px;
+      color:#ccc;
+    ">
+      Enter Months (1 - 12)
+    </label>
 
-          <div style="display:flex; gap:10px;">
-            <input
-              type="number"
-              id="${inputId}"
-              min="1"
-              max="12"
-              placeholder="1-12"
-              style="flex:1; padding:12px; border-radius:8px; border:1px solid rgba(255,255,255,0.2); background:rgba(255,255,255,0.05); color:white; font-size:16px;"
-            />
+    <div style="
+      display:flex;
+      gap:10px;
+      align-items:center;
+    ">
 
-            <div
-              id="${priceId}"
-              style="align-self:center; font-weight:bold; color:#00e676; min-width:120px; text-align:right;"
-            >
-              0 Kyats
-            </div>
-          </div>
+      <input
+        type="number"
+        id="${inputId}"
+        min="1"
+        max="12"
+        placeholder="1-12"
+        style="
+          flex:1;
+          min-width:0;
+          padding:12px;
+          border-radius:8px;
+          border:1px solid rgba(255,255,255,0.2);
+          background:rgba(255,255,255,0.05);
+          color:white;
+          font-size:16px;
+        "
+      />
 
-          <button
-            id="${buttonId}"
-            class="btn btn-primary"
-            style="width:100%;"
-          >
-            Add to Cart
-          </button>
-
-        </div>
+      <div
+        id="${priceId}"
+        style="
+          align-self:center;
+          font-weight:bold;
+          color:#00e676;
+          min-width:120px;
+          text-align:right;
+        "
+      >
+        0 Kyats
       </div>
-    `;
 
-    const popularSection =
-      dom.views.product.querySelector(".popular-section");
+    </div>
 
-    if (!popularSection) return;
+    <button
+      id="${buttonId}"
+      class="btn btn-primary"
+      style="width:100%;"
+    >
+      Add to Cart
+    </button>
 
-    popularSection.insertAdjacentHTML("beforebegin", html);
+  </div>
+`;
+const planBoxes =
+  dom.views.product.querySelectorAll(".plan-box");
+
+const targetPlanBox =
+  Array.from(planBoxes).find(box => {
+
+    const planTitle =
+      box.querySelector(".plan-title");
+
+    if (!planTitle) return false;
+
+    const cleanTitle =
+      planTitle.cloneNode(true);
+
+    cleanTitle
+      .querySelectorAll("span")
+      .forEach(span => span.remove());
+
+    return (
+      cleanTitle.textContent.trim() === section
+    );
+  });
+
+if (!targetPlanBox) return;
+
+targetPlanBox.insertAdjacentHTML(
+  "beforeend",
+  html
+);
 
     const input = document.getElementById(inputId);
     const priceDisplay = document.getElementById(priceId);

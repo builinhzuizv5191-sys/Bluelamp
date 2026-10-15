@@ -1324,6 +1324,9 @@
       "Share Go Subscription": [{
         "duration": "1 Month",
         "price": "10,000 Kyats"
+        }, {
+        "duration": "3 Months",
+        "price": "15,000 Kyats"
       }],
       "Private OwnMail Plus Subscription": [{
         "duration": "1 Month",
@@ -7825,26 +7828,35 @@ Domain type nonrenewable
 </div>`;
    }
      if (productName === "ChatGPT") {
-    if (item.section === "Share Go Subscription") {
-    return `Official Plan.
-    25 Days Warranty.
-    1 Device Only.
-    Share Plan ဒီကပေးတဲ့အကောင့်ထဲမာဝင်သုံးရမာပါ။ ဝယ်သူရဲ့အကောင့်လုံးဝမဟုတ်ပါဘူး။`;
-    }
-    }
-     if (productName === "ChatGPT") {
     if (item.section === "Private OwnMail Go Subscription") {
     return `Official Plan.
-    25 Days Warranty.
-    1 Device Only.
+    Full Warranty.
+    Up to 5 Devices.
     Official Plan မို့လို့ကုန်ရင်လဲသက်တန်းတိုးလို့ရပါတယ်။`;
     }
     }
+    if (productName === "ChatGPT") {
+   if (item.section === "Share Go Subscription" && item.duration.includes("3 Months")) {
+    return `<div class="burmese-font">60 Days Warranty.
+    1 Device Only.
+    Share Plan ဒီကပေးတဲ့အကောင့်ထဲမာဝင်သုံးရမာပါ။ ဝယ်သူရဲ့အကောင့်လုံးဝမဟုတ်ပါဘူး။
+    </div>`;
+   }
+   }
+    if (productName === "ChatGPT") {
+   if (item.section === "Share Go Subscription" && item.duration.includes("1 Month")) {
+    return `<div class="burmese-font">Official Plan.
+    25 Days Warranty.
+    1 Device Only.
+    Share Plan ဒီကပေးတဲ့အကောင့်ထဲမာဝင်သုံးရမာပါ။ ဝယ်သူရဲ့အကောင့်လုံးဝမဟုတ်ပါဘူး။
+    </div>`;
+   }
+   }
      if (productName === "ChatGPT") {
     if (item.section === "Private OwnMail Plus Subscription") {
     return `Official Plan.
-    25 Days Warranty.
-    1 Device Only.
+    Full Warranty.
+    Up to 5 Devices.
     Official Plan မို့လို့ကုန်ရင်လဲသက်တန်းတိုးလို့ရပါတယ်။`;
     }
     }

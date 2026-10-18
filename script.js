@@ -2473,18 +2473,15 @@
     },
 "Apple United States": {
   "United States (USD)": [{
-    "duration": "$2",
-    "price": "12,000 Kyats"
-  }, {
-    "duration": "$5",
-    "price": "28,000 Kyats"
-  }, {
-    "duration": "$10",
-    "price": "55,000 Kyats"
-  }, {
-    "duration": "$50",
-    "price": "265,000 Kyats"
-  }]
+        "duration": "$2",
+        "price": "10,500 Kyats"
+      }, {
+        "duration": "$5",
+        "price": "26,250 Kyats"
+      }, {
+        "duration": "$10",
+        "price": "52,000 Kyats"
+      }]
 },
 "Apple Japan": {
   "Japan Region (JPY)": [

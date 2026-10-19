@@ -1207,12 +1207,12 @@
       }]
     },
     "Spotify": {
-      "Private Individual Subscription": [{
-        "duration": "2 Months",
+      "Private Student Subscription": [{
+        "duration": "1 Months",
         "price": "18,000 Kyats"
       }, {
         "duration": "3 Months",
-        "price": "25,000 Kyats"
+        "price": "54,000 Kyats"
       }],
       "Private Family Subscription": [{
         "duration": "1 Month",
@@ -4921,8 +4921,8 @@ if (regionalProducts[productName]) {
             title += ' <span style="background:#2e1065; color:#ffffff; padding:2px 6px; border-radius:4px; font-size:11px; margin-left:8px; font-weight:900; box-shadow:0 0 6px #c084fc;">Super Subscription</span>';
           }
           } else if (productName === 'Spotify') {
-         if (sectionName === 'Private Individual Subscription') {
-            title = 'Private <span style="background:#000000; color:#00ff9c; padding:2px 6px; border-radius:4px; font-size:11px; margin-left:8px; font-weight:900; box-shadow:0 0 6px #00ff9c;">Individual Subscription</span>';
+         if (sectionName === 'Private Student Subscription') {
+            title = 'Private <span style="background:#000000; color:#00ff9c; padding:2px 6px; border-radius:4px; font-size:11px; margin-left:8px; font-weight:900; box-shadow:0 0 6px #00ff9c;">Student Subscription</span>';
           } if (sectionName === 'Private Family Subscription') {
             title = 'Private <span style="background:#000000; color:#00ff9c; padding:2px 6px; border-radius:4px; font-size:11px; margin-left:8px; font-weight:900; box-shadow:0 0 6px #00ff9c;">Family Subscription</span>';
           } 
@@ -7325,7 +7325,7 @@ Private Whole Account Standard(1 Month)
 Private Whole Account Premium(1 Month)
 5 Profile` + generalDetailsBlock,
     "Prime Video": `Share\nFull warranty • One device only\n\nPrivate\nFull warranty • Up to 3 devices` + generalDetailsBlock,
-    "Spotify": `Private Individual Subscription
+    "Spotify": `Private Student Subscription
 2x Warranty Replacement.
 Can use up to 3 Devices.
 
@@ -7803,7 +7803,7 @@ Domain type nonrenewable
     }
     }
      if (productName === "Spotify") {
-    if (item.section === "Private Individual Subscription") {
+    if (item.section === "Private Student Subscription") {
     return `2x Warranty Replacement.
     Can use up to 3 Devices.
     Individual Plan က Family Plan လို Full warranty မပါဘူးမို့လို့မဝယ်ခင်ရှင်းပြတဲ့ထဲမာ Warranty အကြောင်းတေသေချာဖတ်ပီးမယူပေးပါ။`;
@@ -7999,7 +7999,7 @@ if (productName === "Express Vpn" && item.section === "Share" && /^phone/i.test(
         Mod app မဟုတ်ပါဘူး။ Android only ပဲသူံးလို့ရပါတယ်။ Playstore က Official app မာပဲသုံးလို့ရမာပါ။`;
     if (!fullText) return null;
     const rawDetails = fullText.trim();
-    const sectionHeaders = /^(Share|Own Mail|OwnMail Private Business|Sever Boost|Private Pro|Private|Private Trial|Private Nitro|Private Basic|Private Individual Subscription|Private Family Subscription|SemiPrivate Premium|Private OwnMail Go Subscription|Whole Account Standard|Whole Account Premium|SemiPrivate Standard|SemiPrivate|FullPrivate|Tinder Plus Share|Login|Gift Plan & Link Plan|Gift Plan|Link Plan|Views \(NoDrop\)|Likes \(NoDrop\)|Comment - Emoji Type|Comment - Custom Type|Package Plan|Livestream Views|Livestream Likes|Livestream Share|Post Views Cheapest|Post Views Normal|Post Views Quality|Positive Reactions|Negative Reactions|Custom Reactions|Members Premium|Members Normal|Livestream Views|Comment - Impression Type|Comment - Custom Type|Video Views|Video Likes|Post Likes|Profile Followers|Page Followers|Live Stream Views|Video Views & Reels|Likes|Followers|Personal Plus \(Share\)|Personal Plus \(Private\)|Business Plus - Invite Own Email|Business - Own|Private Own Mail|Private \(Own Mail\)|Base Service|1 Profile\(Semiprivate\)|5 Profiles\(Whole Account\)|Nitro Basic \(Key\)|Individual|Own Mail Invite|Sharing Pro|Plan Basic|Plan Premium|HBO MAX \(Premium\) 1 Month|Private Whole Account \(1 Month\)|1 Profile|Whole Account|OwnMail Private|OwnMail Invite|Individual Plan|Business Own\(Full Warranty\)|Business Plus Own\(Full Warranty\)|Business Plus Own|Normal Plan|Family Head\(Can Invite 5 email\)|Invite Private|Web Private|App&Web Private|Pro Share|Pro Private|Lifetime Premium|Educational\(Invite\)|Individual Plan\(Private\)|Stars|Japan Region \(¥\)|US Region \(\$\)|UK Region \(£\)|Custom Amount|Turkey Region \(TL\)|Indonesia Region \(IDR\)|Brazil Region \(BRL\)|Korea Region \(₩\)|India Region \(₹\)|Australia Region \(A\$\)|Germany Region \(€\)|France Region \(€\)|Italy Region \(€\)|Switzerland Region \(CHF\)|Canada Region \(C\$\)|UAE Region \(AED\)|Poland Region \(PLN\)|Nitro \(Key\))/i;
+    const sectionHeaders = /^(Share|Own Mail|OwnMail Private Business|Sever Boost|Private Pro|Private|Private Trial|Private Nitro|Private Basic|Private Student Subscription|Private Family Subscription|SemiPrivate Premium|Private OwnMail Go Subscription|Whole Account Standard|Whole Account Premium|SemiPrivate Standard|SemiPrivate|FullPrivate|Tinder Plus Share|Login|Gift Plan & Link Plan|Gift Plan|Link Plan|Views \(NoDrop\)|Likes \(NoDrop\)|Comment - Emoji Type|Comment - Custom Type|Package Plan|Livestream Views|Livestream Likes|Livestream Share|Post Views Cheapest|Post Views Normal|Post Views Quality|Positive Reactions|Negative Reactions|Custom Reactions|Members Premium|Members Normal|Livestream Views|Comment - Impression Type|Comment - Custom Type|Video Views|Video Likes|Post Likes|Profile Followers|Page Followers|Live Stream Views|Video Views & Reels|Likes|Followers|Personal Plus \(Share\)|Personal Plus \(Private\)|Business Plus - Invite Own Email|Business - Own|Private Own Mail|Private \(Own Mail\)|Base Service|1 Profile\(Semiprivate\)|5 Profiles\(Whole Account\)|Nitro Basic \(Key\)|Individual|Own Mail Invite|Sharing Pro|Plan Basic|Plan Premium|HBO MAX \(Premium\) 1 Month|Private Whole Account \(1 Month\)|1 Profile|Whole Account|OwnMail Private|OwnMail Invite|Individual Plan|Business Own\(Full Warranty\)|Business Plus Own\(Full Warranty\)|Business Plus Own|Normal Plan|Family Head\(Can Invite 5 email\)|Invite Private|Web Private|App&Web Private|Pro Share|Pro Private|Lifetime Premium|Educational\(Invite\)|Individual Plan\(Private\)|Stars|Japan Region \(¥\)|US Region \(\$\)|UK Region \(£\)|Custom Amount|Turkey Region \(TL\)|Indonesia Region \(IDR\)|Brazil Region \(BRL\)|Korea Region \(₩\)|India Region \(₹\)|Australia Region \(A\$\)|Germany Region \(€\)|France Region \(€\)|Italy Region \(€\)|Switzerland Region \(CHF\)|Canada Region \(C\$\)|UAE Region \(AED\)|Poland Region \(PLN\)|Nitro \(Key\))/i;
     const lines = rawDetails.split('\n').map(l => l.trim()).filter(l => l.length > 0);
     let targetSection = String(forceNoteSectionName).replace(/\s*\(.*\)/, '');
     if (productName === 'HBO Max') targetSection = item.section;
@@ -8268,7 +8268,7 @@ dom.checkout.nextBtn.style.display = "inline-flex";
 function formatDetails(raw) {
 
 const headers =
-  /^(Share|Private|Private Individual Subscription|Private Trial|Sever Boost|Private Nitro|Private Basic|Private Family Subscription|Private Own Mail|Private \(Own Mail\)|Private VIP|Private VIP Plus|Share Plan|Private OwnMail Go Subscription|Share Go Subscription|Private OwnMail Plus Subscription|Private Plan|Share Business|Own Mail|OwnMail Private Business|Private Pro|SemiPrivate Premium|SemiPrivate Standard|Whole Account|Plan Basic \(Limited Screen\)|Plan Premium \(No Limit\)|HBO MAX \(Premium\) 1 Month|Private Whole Account Standard\(1 Month\)|Private Whole Account Premium\(1 Month\)|Family Private|Individual Plan|Sharing \(2TB\)|Personal Plus \(Private\)|Business Plus - Invite Own Email|Business Plus Own|Business Plus Own\(Full Warranty\)|Head\(Can Invite 5 Email\)|OwnMail Invite|Private \(Individual Plan\)|Private API Key|Login|Gift Plan & Link Plan|Gift Plan|Link Plan|Nitro \(Key\)|OwnMail Private|Lifetime Premium|Family Head\(Can Invite 5 email\)|Invite Private|Account|My\.ID\/my\.id|Login method|NoLoginBoost|Views \(NoDrop\)|Likes \(NoDrop\)|Package Plan|Base Service|Normal Plan|Web Private|App&Web Private|Tinder Plus Share|Livestream Views|Livestream Likes|Livestream Share|Post Views Cheapest|Post Views Normal|Post Views Quality|Positive Reactions|Negative Reactions|Custom Reactions|Members Premium|Members Normal|Comment - Impression Type|Comment - Custom Type|Video Views|Post Like|Profile Followers|Page follower|Live Stream Views|Video Views & Reels|Likes|Save|Reach|Followers|Pro Share|Pro Private|Educational|Individual|Stars|Japan Region|US Region|UK Region|Custom Amount|Turkey Region|Indonesia Region|Brazil Region|Korea Region|India Region|Australia Region|Germany Region|France Region|Italy Region|Switzerland Region|Canada Region|Poland Region|UAE Region)$/i;
+  /^(Share|Private|Private Student Subscription|Private Trial|Sever Boost|Private Nitro|Private Basic|Private Family Subscription|Private Own Mail|Private \(Own Mail\)|Private VIP|Private VIP Plus|Share Plan|Private OwnMail Go Subscription|Share Go Subscription|Private OwnMail Plus Subscription|Private Plan|Share Business|Own Mail|OwnMail Private Business|Private Pro|SemiPrivate Premium|SemiPrivate Standard|Whole Account|Plan Basic \(Limited Screen\)|Plan Premium \(No Limit\)|HBO MAX \(Premium\) 1 Month|Private Whole Account Standard\(1 Month\)|Private Whole Account Premium\(1 Month\)|Family Private|Individual Plan|Sharing \(2TB\)|Personal Plus \(Private\)|Business Plus - Invite Own Email|Business Plus Own|Business Plus Own\(Full Warranty\)|Head\(Can Invite 5 Email\)|OwnMail Invite|Private \(Individual Plan\)|Private API Key|Login|Gift Plan & Link Plan|Gift Plan|Link Plan|Nitro \(Key\)|OwnMail Private|Lifetime Premium|Family Head\(Can Invite 5 email\)|Invite Private|Account|My\.ID\/my\.id|Login method|NoLoginBoost|Views \(NoDrop\)|Likes \(NoDrop\)|Package Plan|Base Service|Normal Plan|Web Private|App&Web Private|Tinder Plus Share|Livestream Views|Livestream Likes|Livestream Share|Post Views Cheapest|Post Views Normal|Post Views Quality|Positive Reactions|Negative Reactions|Custom Reactions|Members Premium|Members Normal|Comment - Impression Type|Comment - Custom Type|Video Views|Post Like|Profile Followers|Page follower|Live Stream Views|Video Views & Reels|Likes|Save|Reach|Followers|Pro Share|Pro Private|Educational|Individual|Stars|Japan Region|US Region|UK Region|Custom Amount|Turkey Region|Indonesia Region|Brazil Region|Korea Region|India Region|Australia Region|Germany Region|France Region|Italy Region|Switzerland Region|Canada Region|Poland Region|UAE Region)$/i;
 
 
   const mainDetails = String(raw)

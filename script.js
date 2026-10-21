@@ -3866,20 +3866,19 @@ const popupTextByProduct = {
     nextText: "ဘာတေကွာလဲ?",
     backText: "Back",
     steps: [
-    "Individual Plan ဆိုတာကကိုယ်တယောက်ထဲသုံးရတာ။ 2~3 Devices လောက်ထိဝင်သုံးလို့ရတယ်။ ဒါပေမဲ့ဒီကပေးတဲ့အကောင့်ကိုဝင်သုံးရမာ။ ကိုယ့်ရှိပီးသားအကောင့်ကို Premium ဝယ်ပေးတာမဟုတ်ပါဘူး။ သေချာပြောတယ်နော်။ ပီးတော့ 2~3 Devices ဆိုတာကလူ 2 ယောက် 3 ယောက်ကိုတူတူသုံးလို့ရတယ်ပြောတာမျိုးမဟုတ်ပါဘူး။",
-    "နားလည်အောင်ပြောရရင် ကိုယ်က Phone တခုရှိမယ် Laptop တခုရှိမယ် Pc တခုရှိတယ်ဆိုရင်အဲ့ 3 ခုမာဝင်သူံးလိုက်တာမျိုးက 3 Devices နဲ့တူတူပါပဲ။ ဝင်ထားလို့ရပေမဲ့ဘယ်သူက Phone မာသီချင်းနားထောင်ရင်းနဲ့ Laptop မာလဲထက်ဖွင့်မာမဟုတ်လို့တချိန်ထဲမာ ပြိုင်တူသုံးလို့မရပါဘူး။ Family Plan ရဲ့ Device limit ကလဲဒီလိုမျိုးပါပဲ။",
-    "Family Plan ဆိုတာကို‌တော်တော်များများက Share account လို့ထင်နေကြပါတယ်။ တကယ်ကမဟုတ်ပါဘူး။ အကောင့်ထဲမာတော့ကိုယ်ပဲရှိတာ။ ဒါပေမဲ့ Family ထဲကတခြားလူတေရဲ့ Playlist တေ Fav Song ကိုမြင်နေရမာပါ။ အဲ့လိုပဲသူတို့ကလဲကိုယ့် Playlist တေကိုပြန်ပီးမြင်နေရမာပါ။ Family Plan သုံးမယ်ဆိုရင်ကိုယ်က Playlist တခုသေချာလုပ်ပီးသုံးမအဆင်ပြေမာပါ။ Family Plan ကလဲဒီကအကောင့်ပေးတာပါပဲ။",
-    "ဒီကအကောင့်ပေးတယ်ဆိုပေမဲ့ Old account ရှိရင် Song တေကိုဝယ်ထားတဲ့အကောင့်အသစ်ထဲပြောင်းထည့်ပေးပါတယ်။ အဲ့တာကိုမ ကိုယ့်ရှိပီးသားအကောင့်နဲ့ကိုယ် Premium ဘာလို့ဝယ်မရလဲထက်သိချင်ရင်တော့ မရတာမဟုတ်ဘူးရပါတယ်။ တစ်လကို 48K ပေးပီးကိုယ်တိုင် Visa Card နဲ့ဝယ်သုံးရင်ရပါတယ်။",
-    "Family Plan ကကုန်သွားလဲသက်တန်းတိုးလို့ရပါတယ်။ မကုန်ခင် 1 Week တော့ကြိုပြောပေးမ ရမာပါ။ Individual ကတော့သက်တန်းတိုးလို့မရပါဘူး။ Warranty ကလဲ Family Plan ကို Full Warranty ပေးထားပီး Individual Plan ကိုတော့ 2 ခါပဲပြန်လဲပေးပါတယ်။",
-    "ဆိုလိုချင်တာက ကိုယ်က Family Plan ဝယ်ထားပီးအကောင့်ကအကြောင်းတခုခုကြောင့်ပျက်တာဖြစ်ဖြစ် Subscription မရတော့ရင်သက်တန်းအပြည့် Full warranty ပေးထားတာမို့လို့မပြည့်မချင်းလဲပေးမာပါ။  Individual Plan ကျတော့ 2 ခါပဲလဲပေးတာဖြစ်လို့ အဲ့ 2 ခါပီးရင်ပျက်သွားလဲ Warranty မရတော့ပါဘူး။",
-    "ကျနော့်အနေနဲ့က Full Warranty ပါတဲ့ Family Plan ကိုပဲရွေးစေချင်ပါတယ်။ Playlist လေးရောတာလောက်နဲ့ Full Warranty မပေးတဲ့ Individual Plan ကိုမရွေးစေချင်ပါဘူး။ Android ရော iOS ရော PC, Laptop အကုန်ရပါတယ်။ Official App and Website တေမာပဲသုံးရမာပါ"
+    "အရင်ဆုံး Plan 2 ခုမာ Student Plan ဆိုတာက Individual Plan နဲ့တူတူပါပဲ။ ပီးတော့ Official Full Paid Subscription ပါ။ ဒါကဘာကိုပြောတာလဲဆိုရင် Family Plan က Official Plan မဟုတ်တော့ Official App တေမာသုံးလို့မရပဲ Mod App တေနဲ့သုံးရမယ်ပြောတာမဟုတ်ပါဘူး။ Student Individual ရော Family ရောက Official Playstore, Appstore က App တေမာသုံးရမာပါ။",
+    "ဘာကွာသွားလဲဆိုရင်ခုဏပြောသလိုပဲ Student Individual က Full Paid Official ဝယ်တာမို့လို့ကိုယ့် Spotify Account မာပဲဝယ်လို့ရပါတယ်။‌ ပြောရရင် OwnMail ပေါ့။ ပီးတော့ အကောင့် Subscription ပျက်တာမျိုးတေလဲလုံးဝမရှိပါဘူး။ Full warranty ပေးပါတယ်။ အဲ့လိုပြောလို့ Family Plan က Full warranty မပါတာမဟုတ်ပါဘူး။ Family Plan ကိုလဲ Full warranty ပေးပါတယ်။",
+    "Family Plan က Official Full Paid မဟုတ်တော့တခါတလေအကောင့်ပျက်တာမျိုးတေရှိနိုင်ပါတယ်။ ပျက်ရင်ကျနော်ကပြန်လုပ်ပေးမာဆိုပေမဲ့ ကြာချိန် 24 Hours လောက်ကြာနိုင်ပါတယ်။ အကောင့်လဲရရင် Playlist တေလဲပျောက်သွားမာပါ။ ပီးတော့ Individual နဲ့မတူတာက Family မာက Playlist တေရောပါတယ်။ Individual မာကကိုယ့် Playlist ကိုယ့် Favorite songs တေနဲ့သုံးရမာပါ။",
+    "Family Plan ကဒီကအကောင့်ပေးတာပါ။ Student Individual ကဒီကပေးတာယူလို့လဲရသလို ကိုယ့်အကောင့်ထဲထည့်လို့လဲရပါတယ်။ ဒီကအကောင့်ပေးတယ်ဆိုပေမဲ့ Old account ရှိရင် Song တေကိုဝယ်ထားတဲ့အကောင့်အသစ်ထဲပြောင်းထည့်ပေးပါတယ်။ Plan 2 ခုလုံးက ကုန်သွားရင်သက်တန်းတိုးလို့ရပါတယ်။ Family Plan ကမကုန်ခင် 1 Week တော့ကြိုပြောပေးမ ရမာပါ။ Individual ကပြောစရာမလိုပါဘူး။",
+    "Plan 2 ခုလုံးက Up to 3 Devices ထိရပါတယ်။ 3 Devices ဆိုတာကလူ 2 ယောက် 3 ယောက်ကိုတူတူသုံးလို့ရတယ်ပြောတာမျိုးမဟုတ်ပါဘူး။ နားလည်အောင်ပြောရရင် ကိုယ်က Phone တခုရှိမယ် Laptop တခုရှိမယ် Pc တခုရှိတယ်ဆိုရင်အဲ့ 3 ခုမာဝင်သူံးလိုက်တာမျိုးက 3 Devices နဲ့တူတူပါပဲ။ ဝင်ထားလို့ရပေမဲ့ဘယ်သူက Phone မာသီချင်းနားထောင်ရင်းနဲ့ Laptop မာလဲထက်ဖွင့်မာမဟုတ်လို့တချိန်ထဲမာ ပြိုင်တူသုံးလို့မရပါဘူး။",
+    "ကျနော့်အနေနဲ့က 2 ခုလုံးက Full Warranty ပါတာပဲဆိုတော့ ကိုယ်က Account တေပျက်လို့ပြန်လဲရတာတေ၊ Playlist Share သုံးရတာတေအဆင်ပြေတယ်ဆိုရင် Family Plan ကိုပဲရွေးစေချင်ပါတယ်။ Official Plan ထက်အများရီးသက်သာတာမို့လို့။ ဒါမဲ့ကိုယ်ကဘာ Error မမကြိုက်ဘူးတခါဝယ်ပီးကုန်တဲ့ထိအေးဆေးသုံးချင်တာဆိုရင်တော့ Official Plan ကိုယူပါ။"
   ],
     stepButtons: [
-    "ဆက်ရန်",
-    "Family Plan<div>ကရော?",
-    "ဆက်ရန်",
-    "ဆက်ရန်",
-    "ဆက်ရန်",
+    "ဘာတေကွာလဲ?",
+    "ဆက်ရန်2",
+    "ဆက်ရန်3",
+    "ဆက်ရန်4",
+    "ဆက်ရန်5",
     "ဘာဝယ်သင့်လဲ?"
   ]
   },
@@ -7326,7 +7325,8 @@ Private Whole Account Premium(1 Month)
 5 Profile` + generalDetailsBlock,
     "Prime Video": `Share\nFull warranty • One device only\n\nPrivate\nFull warranty • Up to 3 devices` + generalDetailsBlock,
     "Spotify": `Private Student Subscription
-2x Warranty Replacement.
+Full Warranty.
+Official Plan.
 Can use up to 3 Devices.
 
 Private Family Subscription
@@ -7804,9 +7804,10 @@ Domain type nonrenewable
     }
      if (productName === "Spotify") {
     if (item.section === "Private Student Subscription") {
-    return `2x Warranty Replacement.
+    return `Full Warranty.
+    Official Plan.
     Can use up to 3 Devices.
-    Individual Plan က Family Plan လို Full warranty မပါဘူးမို့လို့မဝယ်ခင်ရှင်းပြတဲ့ထဲမာ Warranty အကြောင်းတေသေချာဖတ်ပီးမယူပေးပါ။`;
+    ကုန်ရင်လဲသက်တန်းတိုးလို့ရပါတယ်။`;
     }
     }
     if (productName === "Surfshark Vpn")

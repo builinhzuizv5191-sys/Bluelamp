@@ -1540,13 +1540,13 @@
       }],
       "Gift Plan": [{
         "duration": "3 Months",
-        "price": "58,500 Kyats"
+        "price": "63,000 Kyats"
       }, {
         "duration": "6 Months",
-        "price": "76,500 Kyats"
+        "price": "83,000 Kyats"
       }, {
         "duration": "12 Months",
-        "price": "138,000 Kyats"
+        "price": "144,500 Kyats"
       }],
       "Link Plan": [{
         "duration": "3 Months",

@@ -1110,14 +1110,14 @@
     },
     "Surfshark Vpn": {
       "Share": [{
-        "duration": "Phone 2 Months",
-        "price": "5,000 Kyats"
+        "duration": "Phone 3 Months",
+        "price": "7,500 Kyats"
       }, {
-        "duration": "MacOs 2 Months",
-        "price": "6,000 Kyats"
+        "duration": "MacOs 3 Months",
+        "price": "9,000 Kyats"
       }, {
-        "duration": "Linux 2 Months",
-        "price": "6,000 Kyats"
+        "duration": "Linux 3 Months",
+        "price": "9,000 Kyats"
       }],
       "Private": [{
         "duration": "2 Months",
@@ -7271,7 +7271,7 @@ Full warranty` + generalDetailsBlock,
     Full warranty for full duration
     Up to 9 devices: 8 Phones & 1 PC or Laptop` + generalDetailsBlock,
     "Surfshark Vpn": `Share
-50 Days Warranty.
+75 Days Warranty.
 One device only
 
 Private
@@ -7821,7 +7821,7 @@ Domain type nonrenewable
     if (productName === "Surfshark Vpn")
    if (item.section === "Share" && item.duration.includes("MacOs 2 Months")) {
     return `<div class="burmese-font">
-    50 Days Warranty.
+    75 Days Warranty.
     One device only
 </div>`;
    }

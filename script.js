@@ -1211,8 +1211,11 @@
         "duration": "1 Months",
         "price": "18,000 Kyats"
       }, {
+        "duration": "2 Months",
+        "price": "34,000 Kyats"
+      }, {
         "duration": "3 Months",
-        "price": "54,000 Kyats"
+        "price": "51,000 Kyats"
       }],
       "Private Family Subscription": [{
         "duration": "1 Month",
@@ -7807,7 +7810,7 @@ Domain type nonrenewable
     return `Full Warranty.
     Official Plan.
     Can use up to 3 Devices.
-    ကုန်ရင်လဲသက်တန်းတိုးလို့ရပါတယ်။`;
+    ကုန်ရင်လဲ1Month 18,000Ks နဲ့သက်တန်းတိုးလို့ရပါတယ်။`;
     }
     }
     if (productName === "Surfshark Vpn")

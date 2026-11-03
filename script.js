@@ -1327,9 +1327,6 @@
       "Share Go Subscription": [{
         "duration": "1 Month",
         "price": "10,000 Kyats"
-        }, {
-        "duration": "3 Months",
-        "price": "15,000 Kyats"
       }],
       "Private OwnMail Plus Subscription": [{
         "duration": "1 Month",

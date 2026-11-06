@@ -2088,29 +2088,29 @@
 
   "Global Domain": [{
     "duration": "1 Year (.com)",
-    "price": "15,000 Kyats"
+    "price": "Out Of Stock"
   }, {
     "duration": "1 Year (.xyz)",
-    "price": "15,000 Kyats"
+    "price": "Out Of Stock"
   }, {
     "duration": "1 Year (.net)",
-    "price": "18,000 Kyats"
+    "price": "Out Of Stock"
   }, {
     "duration": "1 Year (.org)",
-    "price": "17,000 Kyats"
+    "price": "Out Of Stock"
   }, {
     "duration": "1 Year (.link)",
-    "price": "17,000 Kyats"
+    "price": "Out Of Stock"
   }]
 },
     "LightRoom": {
       "Share": [{
-        "duration": "1 Year",
-        "price": "Out Of Stock"
+        "duration": "1 Month",
+        "price": "10,000 Kyats"
       }],
       "App&Web Private": [{
         "duration": "4 Months",
-        "price": "40,000 Kyats"
+        "price": "Out Of Stock"
       }]
     },
     "Photoshop": {
@@ -5476,6 +5476,8 @@ if (productName === "Domain") {
     }
   };
 
+const GLOBAL_DOMAIN_OUT_OF_STOCK = true;
+
   // Store the original plan boxes before adding checker boxes.
   const domainPlanBoxes =
     dom.views.product.querySelectorAll(".plan-box");
@@ -5579,9 +5581,10 @@ if (productName === "Domain") {
         </label>
 
 <div style="display:flex; gap:10px; align-items:center;">
-  <input
-    id="global-domain-check-input"
-    placeholder="example: bluelamp"
+<input
+  id="global-domain-check-input"
+  placeholder="example: bluelamp"
+  ${GLOBAL_DOMAIN_OUT_OF_STOCK ? 'disabled' : ''}
     style="flex:1; min-width:0; padding:12px; border-radius:8px; border:1px solid rgba(255,255,255,0.2); background:rgba(255,255,255,0.05); color:white; font-size:16px;"
   />
 
@@ -5589,9 +5592,10 @@ if (productName === "Domain") {
     id="global-domain-extension-wrap"
     style="position:relative; width:110px; flex-shrink:0;"
   >
-    <button
-      type="button"
-      id="global-domain-extension-btn"
+<button
+  type="button"
+  id="global-domain-extension-btn"
+  ${GLOBAL_DOMAIN_OUT_OF_STOCK ? 'disabled' : ''}
       style="
         width:100%;
         padding:12px;
@@ -5688,20 +5692,27 @@ if (productName === "Domain") {
   </div>
 </div>
 
-        <div
-          id="global-domain-selected-price"
-          style="font-size:14px; font-weight:800; opacity:.85;"
-        >
-          1 Year — 15,000 Kyats
-        </div>
+<div
+  id="global-domain-selected-price"
+  style="font-size:14px; font-weight:800; opacity:.85;"
+>
+  ${GLOBAL_DOMAIN_OUT_OF_STOCK
+    ? 'Out Of Stock'
+    : '1 Year — 15,000 Kyats'
+  }
+</div>
 
-        <button
-          id="global-domain-check-btn"
-          class="btn btn-primary"
-          style="width:100%;"
-        >
-          Check
-        </button>
+<button
+  id="global-domain-check-btn"
+  class="btn btn-primary"
+  style="width:100%;"
+  ${GLOBAL_DOMAIN_OUT_OF_STOCK ? 'disabled' : ''}
+>
+  ${GLOBAL_DOMAIN_OUT_OF_STOCK
+    ? 'Out Of Stock'
+    : 'Check'
+  }
+</button>
 
         <div
           id="global-domain-check-result"
@@ -6019,9 +6030,20 @@ document.addEventListener("click", event => {
   // =========================
   // GLOBAL CHECK BUTTON
   // =========================
-  globalCheckBtn.addEventListener("click", async () => {
+globalCheckBtn.addEventListener("click", async () => {
+
+  if (GLOBAL_DOMAIN_OUT_OF_STOCK) {
     resetGlobalCheck();
 
+    renderGlobalResult(
+      "bad",
+      "Global Domain is currently Out Of Stock"
+    );
+
+    return;
+  }
+
+  resetGlobalCheck();
     globalCheckBtn.textContent = "Checking...";
     globalCheckBtn.disabled = true;
     globalResult.textContent = "";
@@ -6083,13 +6105,18 @@ const checkResult =
   // =========================
   // GLOBAL ADD TO CART
   // =========================
-  globalAddBtn.addEventListener("click", () => {
-    if (
-      !lastAvailableGlobalDomain ||
-      !lastAvailableGlobalExtension
-    ) {
-      return;
-    }
+globalAddBtn.addEventListener("click", () => {
+
+  if (GLOBAL_DOMAIN_OUT_OF_STOCK) {
+    return;
+  }
+
+  if (
+    !lastAvailableGlobalDomain ||
+    !lastAvailableGlobalExtension
+  ) {
+    return;
+  }
 
     const selectedPrice =
       GLOBAL_DOMAIN_PRICES[

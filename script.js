@@ -1533,10 +1533,10 @@
       }],
       "Login": [{
         "duration": "1 Month",
-        "price": "21,000 Kyats"
+        "price": "Out Of Stock"
       }, {
         "duration": "1 Year",
-        "price": "112,000 Kyats"
+        "price": "Out Of Stock"
       }],
       "Gift Plan": [{
         "duration": "3 Months",
@@ -2188,10 +2188,10 @@
     "Telegram Star": {
       "Stars": [{
         "duration": "50 Stars",
-        "price": "4,000 Kyats"
+        "price": "4,200 Kyats"
       }, {
         "duration": "100 Stars",
-        "price": "8,000 Kyats"
+        "price": "8,400 Kyats"
       }]
     },
     "Google Play Gift Card": {
